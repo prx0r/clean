@@ -526,6 +526,65 @@ One account. One philosophy. One attention budget. One data sovereign identity.
 
 You join for the content. You stay for the community. You find your people. You fund what matters. You live your philosophy, not just consume it.
 
+## The Live Hypothesis Engine — User Questions as Research Fuel
+
+Every user question on Satsang becomes a truth map query. If the truth map has an answer, the user gets the best current answer with evidence. If it doesn't, the question enters the research pipeline.
+
+### Flow
+
+```
+User asks: "Is consciousness fundamental according to both Trika and Neoplatonism?"
+  → Truth map lookup: q:consciousness-fundamental
+  → Has evidence? Yes → Return best answer + linked ROs/essays/videos
+  → Has evidence? No → Create new truth map entry (q:user-question-slug)
+    → Hypothesis engine: "New question detected — find relevant ROs"
+    → Research Factory: extracts from existing ROs
+    → If ROs exist → create EO → route to writing factory
+    → If no ROs exist → route to ACQUIRE (find new source material)
+    → Full pipeline produces answer
+    → User notified: "Your question has been researched. Read the essay."
+```
+
+This turns passive consumption into active research direction. Every user question that the truth map can't answer becomes a research proposal. The more people use the platform, the smarter it gets.
+
+### Graph Architecture for the Feed
+
+Powered by the [GeometricEngine](https://github.com/prx0r/geometricengine) pattern — no LLM in the cognition path.
+
+```
+User behavior (watched content, liked scholars, preferred traditions, shader params)
+  → Trained weight graph
+  → Graph selects next content (not an LLM call)
+  → Fast, cheap, predictable
+
+Content nodes: ROs, essays, videos, scholars, traditions, concepts
+Edge weights: user engagement, explicit preferences, co-watch patterns
+Inference: given a user's current node, traverse highest-weighted edges
+```
+
+This replaces the expensive LLM-based recommendation with a trained graph that gets smarter with every user interaction, without costing API credits per request.
+
+---
+
+## GoodGrails — The Marketplace of Ideas
+
+Like Facebook has Marketplace, Satsang has **GoodGrails** — a separate but connected product for physical goods that align with the platform's values.
+
+Not random junk. Curated, meaningful physical artifacts:
+- **Books** — philosophy, spirituality, contemplative practice (ingested via the GoodGrails ISBN pipeline)
+- **Art** — from the platform's own art library, printed on demand
+- **Ritual objects** — ethically sourced malas, incense, meditation supplies
+- **Retreats / experiences** — listed by verified teachers on the platform
+- **Donations to causes** — one-click giving to vetted foundations, directly from the GoodGrails interface
+
+The [GoodGrails_Pipeline](https://github.com/prx0r/GoodGrails_Pipeline) is the ingestion engine — it takes an ISBN, fetches metadata from Open Library + Google Books, enriches with AI (vibe tags, emotional tone), stores covers in R2, creates a database record, and queues it for admin review → approval → publishing. Same Cloudflare stack as the rest of Satsang.
+
+GoodGrails is physically separate because:
+- Different regulatory requirements (commerce vs content)
+- Different user trust model (financial transactions need different guarantees)
+- Different pacing (shopping is a different rhythm than learning)
+But it shares the same user identity, the same attention budget, and the same value alignment.
+
 ### Data Sovereignty
 
 GreenScreen is built on a radically different data model:

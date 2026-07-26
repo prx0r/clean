@@ -116,6 +116,103 @@ CONCEPT (abstract)
 | **Quote Budget Gates** | FACTORY-SPEC.md | No validation scripts exist for quote-word-count / total-word-count ratio. |
 | **Source Metaphysics Dashboard** | Never | No public view of the truth map. No one outside the project can see what questions are being tracked. |
 
+## The Graph Architecture — Feeding the Geometric Engine
+
+The [GeometricEngine](https://github.com/prx0r/geometricengine) pattern is critical for the GreenScreen feed and truth map inference. No LLM in the cognition path — a trained weight graph selects the next move.
+
+### What We Need to Build for This to Work
+
+1. **Claim-level data storage.** Every claim in every RO, EO, essay, and video needs to be extractable as a node in the graph. Currently claims are embedded in prose. They need to be structured: `{ subject, predicate, object, confidence, source }`. e.g. `{ "consciousness", "is", "fundamental", 0.6, "ro:matter-of-wonder" }`.
+
+2. **User interaction graph.** Every user action (watched video, liked essay, followed scholar, preferred shader style) trains edges between nodes. The graph gets heavier where users find value.
+
+3. **Inference without LLM.** Given a user's current context (what they're watching, what they asked), the graph traverses from the current node to the highest-weighted neighbor. This returns the next content to show. No API call. No latency. No cost.
+
+4. **Truth map as graph anchor.** The truth map questions are the root nodes. Every RO, essay, and video links to a question. The graph naturally clusters evidence around questions. A user query about consciousness traverses from q:consciousness-fundamental to all linked evidence.
+
+### The User Query → Research Pipeline (Live Hypothesis Engine)
+
+```
+User asks a question
+  → Truth map lookup
+  → Has answer? Return best answer + evidence chain
+  → No answer? Create truth map entry
+    → Search existing ROs for relevance
+    → ROs found? Create EO → Writing Factory produces essay
+    → No ROs? ACQUIRE new source material → EXTRACT new RO → proceed
+  → User notified when answer is ready
+```
+
+Every unanswered question is a research proposal. The pipeline is the same as the content factory, but the trigger is a user query instead of a hypothesis engine scan.
+
+## The TPN Architecture — Feed Algorithm as Pathway Network
+
+The [GeometricEngine](https://github.com/prx0r/geometricengine) TPN (Therapeutic Pathway Networks) architecture is the feed algorithm GreenScreen needs. The core formula:
+
+```
+P(content_B | content_A, user_profile, context)
+```
+
+Every content interaction becomes a training event for a graph. The graph IS the recommendation engine. No LLM in the cognition path.
+
+### How It Maps
+
+| TPN Concept | Our System |
+|-------------|-----------|
+| Pathway neuron | RO, essay, video, truth map question |
+| Transition probability | Edge weight trained from user behavior |
+| User profile (U) | Watch history, preferred traditions, birth chart |
+| Context (C) | Current feed position, time of day, astrological season |
+| Dual retrieval | TCL (our ROs) + Super-Graph (trained behavior weights) |
+| Safety governor | Quote budget gates, Green Filter, truth map confidence thresholds |
+
+### The Functions Taxonomy
+
+From `functions taxonomy 3.2.txt` — 18 allowed "moves" across 4 phases. For our content:
+
+| Phase | Move | Example |
+|-------|------|---------|
+| Unmaking | definition_collapse | "What do you actually mean by 'consciousness'?" |
+| Unmaking | structure_dismantle | "Here's why icchā-jñāna-kriyā might be anthropomorphic projection" |
+| Remaking | model_build | "Here's how active inference maps to the Trika triad" |
+| Remaking | distinction_draw | "Here's where Trika and Neoplatonism diverge" |
+| Self-Making | user_integrate | "What does this mean for your practice?" |
+| Meta | process_explain | "Here's how we arrived at this conclusion" |
+
+This lets the feed recommend not just "more of the same topic" but a different *kind of move* — if the user just watched an explainer, recommend a challenge.
+
+### Training Loop
+
+```
+User watches video about icchā-jñāna-kriyā
+  → Edge weight increases between that RO and the user's profile
+  → Next request: traverse from user's current node
+  → Query highest-weighted neighbor that's a different move type
+  → Recommend: "Now that you've seen the explainer, here's the challenge"
+  → User engages or doesn't → weight updates
+  → Graph gets smarter with every interaction
+```
+
+No API calls. No LLM latency. No cost per recommendation.
+
+## The Auto-Respond Loop — Content-on-Demand
+
+When a user asks a question and the truth map has an answer, the system responds with the best existing content (video, essay, RO). But if no content exists and the question has genuine tension:
+
+```
+User asks: "How does Trika's concept of time compare to Husserl's?"
+  → Truth map: q:time-trika-husserl — status: unasked
+  → No content exists
+  → Question is novel and has genuine comparative tension
+  → Auto-queue: create EO → route to writing factory → route to video factory
+  → User gets notified: "Great question. We're producing content on this now."
+  → When ready: user gets the video/essay embedded in their feed
+```
+
+This turns the platform from a passive library into an on-demand research engine. Every good question generates its own answer. The more people use the platform, the more complete the coverage becomes.
+
+The feed algorithm surfaces these new answers to users who asked similar questions. The truth map updates when the content publishes. The loop closes without human intervention — except for the creative work of making the content, which the factories handle.
+
 ### Things We've Never Even Discussed
 
 **1. The Content Review DAO**
