@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Concept source retained beside its generative-film shader adaptation.
 """
 MEMORY BEFORE BRAINS
 A Michael Levin–themed Platinum-house procedural visual essay.
