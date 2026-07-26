@@ -1,306 +1,293 @@
 #!/usr/bin/env python3
-"""
-render_harness.py — ModernGL headless GPU render pipeline.
+"""Compile, audit, and preview the standalone beautify fragment shaders.
 
-Discovers platinum packs, loads scene data, renders each frame via GLSL
-fragment shaders on GPU, outputs PNG frames, assembles MP4 with ffmpeg.
+Examples:
+    python beautify/render_harness.py --audit
+    python beautify/render_harness.py --pack 02 --audit
+    python beautify/render_harness.py --pack 02 --preview --u 0.72
+    python beautify/render_harness.py --pack 03 --shader vis_vagus_highway --preview
 
-Usage on GPU box:
-    pip install moderngl numpy pillow
-    python render_harness.py --pack life_crosses_barriers --preview
-    python render_harness.py --pack life_crosses_barriers --render --fps 24
-    python render_harness.py --all --output /mnt/output --fps 24 --width 1920
+ModernGL is imported only for previews. Static audits remain available on machines
+without an EGL/OpenGL runtime.
 """
-import argparse, json, math, os, re, shutil, subprocess, sys, time
+from __future__ import annotations
+
+import argparse
+import os
+import re
+import shutil
+import subprocess
+import sys
+import tempfile
+from dataclasses import dataclass
 from pathlib import Path
 
-import moderngl
-import numpy as np
-from PIL import Image
-
-from renderer.text_overlay import compose_label
-
-
-ROOT = Path(__file__).resolve().parent.parent
-PACKS_DIR = ROOT / "goldrender"
-SHADER_DIR = ROOT / "moderngl" / "shaders"
-OUTPUT_DIR = Path("/mnt/output") if os.path.exists("/mnt") else ROOT / "moderngl" / "output"
-
-
-def require(cmd): return shutil.which(cmd) or sys.exit(f"Missing: {cmd}")
+ROOT = Path(__file__).resolve().parent
+INCLUDE_DIR = ROOT / "include"
+PACK_DIRS = {
+    "01": ROOT / "glsl-reference",
+    "02": ROOT / "02_beliefs_create_biology",
+    "03": ROOT / "03_voice_inside_chest",
+    "04": ROOT / "04_dreams_create_worlds",
+    "05": ROOT / "05_time_is_produced_by_forgetting",
+}
+UNIFORMS = ("iResolution", "u", "t", "u_audioVolume", "u_audioBeat")
+INCLUDE_RE = re.compile(r'^\s*#include\s+"([^"]+)"\s*$', re.MULTILINE)
 
 
-def discover_packs():
-    return sorted(PACKS_DIR.glob("*_platinum.py"))
+@dataclass(frozen=True)
+class AuditResult:
+    shader: Path
+    errors: tuple[str, ...]
 
 
-def load_shader_source(name: str) -> str:
-    path = SHADER_DIR / f"{name}.glsl"
-    if not path.exists():
-        raise FileNotFoundError(f"Shader: {path}")
-    src = path.read_text()
-    # Resolve #include directives with multiple search paths
-    include_paths = [
-        SHADER_DIR / "include",
-        ROOT / "moderngl" / "lygia",
-    ]
-    def _inc(m):
-        inc_name = m.group(1)
-        for base in include_paths:
-            inc_path = base / inc_name
-            if inc_path.exists():
-                return inc_path.read_text()
-        # Try nested under lygia/ for paths like "sdf/circle.glsl"
-        for base in include_paths:
-            inc_path = base / "lygia" / inc_name
-            if inc_path.exists():
-                return inc_path.read_text()
-        return f"// missing: {inc_name}"
-    src = re.sub(r'#include\s+"([^"]+)"', _inc, src)
-    return src
-
-
-class GPUEngine:
-    def __init__(self, width=1280, height=720, ssaa=2):
-        self.width = width * ssaa
-        self.height = height * ssaa
-        self.out_w = width
-        self.out_h = height
-
-        self.ctx = moderngl.create_standalone_context(backend='egl')
-        self.ctx.enable(moderngl.BLEND)
-        self.ctx.blend_func = moderngl.SRC_ALPHA, moderngl.ONE_MINUS_SRC_ALPHA
-
-        # HDR framebuffer
-        self.hdr = self.ctx.framebuffer([
-            self.ctx.renderbuffer((self.width, self.height), components=4, dtype='f4')
-        ])
-        self.hdr_out = self.ctx.framebuffer([
-            self.ctx.renderbuffer((self.width, self.height), components=4, dtype='f4')
-        ])
-
-        # Fullscreen quad
-        quad = self.ctx.buffer(np.array([
-            -1, -1, 0, 0,   3, -1, 2, 0,  -1, 3, 0, 2
-        ], dtype='f4').tobytes())
-        self.vao = self.ctx.vertex_array(
-            self.ctx.program(
-                vertex_shader='#version 330 core\nin vec2 p;in vec2 u;out vec2 v;void main(){v=u;gl_Position=vec4(p,0,1);}',
-                fragment_shader='#version 330 core\nout vec4 c;void main(){c=vec4(1);}'
-            ),
-            [(quad, '2f 2f', 'p', 'u')]
-        )
-        self.vao.vertices = 3
-
-        # Bloom ping-pong buffers
-        self.bloom_bufs = {}
-        for w, h in [(self.width//2, self.height//2), (self.width//4, self.height//4),
-                      (self.width//8, self.height//8)]:
-            if w > 0 and h > 0:
-                self.bloom_bufs[(w, h)] = self.ctx.framebuffer([
-                    self.ctx.renderbuffer((w, h), components=4, dtype='f4')
-                ])
-
-    def read_pixels(self) -> Image.Image:
-        pixels = self.hdr_out.read(components=4, dtype='f4')
-        img = Image.frombuffer('RGBA', (self.width, self.height), pixels, 'raw', 'RGBA', 0, -1)
-        img = img.transpose(Image.Transpose.FLIP_TOP_BOTTOM)
-        return img
-
-    def render_frame(self, shader: str, u: float, t: float, scene_meta: dict | None = None) -> Image.Image:
-        src = load_shader_source(shader)
-        prog = self.ctx.program(
-            vertex_shader='#version 330 core\nin vec2 p;in vec2 u;out vec2 v;void main(){v=u;gl_Position=vec4(p,0,1);}',
-            fragment_shader=src
-        )
-        vao = self.ctx.vertex_array(prog, [(self.vao.buffer, '2f 2f', 'p', 'u')])
-        vao.vertices = 3
-
-        prog['u'] = u
-        prog['t'] = t
-        prog['iResolution'] = (float(self.width), float(self.height))
-        prog['bloomIntensity'] = 0.3
-        prog['bloomThreshold'] = 0.8
-        if 'u_audioVolume' in prog and hasattr(self, 'audio_features'):
-            fi = min(fi, len(self.audio_features['volume']) - 1)
-            prog['u_audioVolume'] = self.audio_features['volume'][fi]
-            prog['u_audioBeat'] = self.audio_features['beat'][fi]
-            prog['u_audioOnset'] = self.audio_features['onset'][fi]
-            prog['u_audioSpectral'] = self.audio_features['centroid'][fi]
-
-        self.hdr.use()
-        self.ctx.clear(1, 1, 1, 0)
-        vao.render()
-
-        # Bloom: bright pass + gaussian blur + add back
-        self.ctx.copy_framebuffer(self.hdr_out, self.hdr)
-        
-        # Simple bright-pass: any pixel above threshold gets blurred and added back
-        # In a full implementation this would use multi-pass FBO ping-pong
-        # For now, read back and apply bloom in numpy (works, not GPU fast)
-        # GPU path: use framebuffer blit with separate blur shaders
-        # (implemented when GPU box is available)
-        
-        img = self.read_pixels()
-        
-        # Sparse label overlays only (no bottom seal bar)
-        if scene_meta:
-            for label in scene_meta.get('labels', []):
-                img = compose_label(img, label['text'], label['x'], label['y'],
-                                   color=label.get('color', (30, 32, 36)),
-                                   size=label.get('size'))
-        
-        return img
-
-
-def render_pack(pack_path: Path, args):
-    name = pack_path.stem.replace("_platinum", "")
-    slug = name
-
-    # Load the pack
-    code = pack_path.read_text()
-    code = re.sub(r'^from\s+__future__\s+import\s+annotations\s*\n', '', code, flags=re.MULTILINE)
-    mod = type(sys)(name)
-    mod.__dict__.update({"__builtins__": __builtins__, "__file__": str(pack_path), "__name__": name})
-    exec(code, mod.__dict__)
-
-    scenes = mod.SCENES
-    visuals = getattr(mod, 'VISUALS', None)
-
-    out_dir = OUTPUT_DIR / slug
-    (out_dir / "frames").mkdir(parents=True, exist_ok=True)
-
-    eng = GPUEngine(args.width, args.height, ssaa=getattr(args, 'ssaa', 2))
-
-    print(f"\n=== {slug} ({len(scenes)} scenes) ===")
-
-    scene_labels = {
-        'classical_wall': [],
-        'tunnelling': [],
-        'width': [{'text': 'relative probability', 'x': 0.50, 'y': 0.75, 'size': 14}],
-        'mass': [],
-        'landscape': [],
-        'enzyme': [],
-        'isotope': [],
-        'evidence': [
-            {'text': 'MASS', 'x': 0.328, 'y': 0.298, 'color': (191,154,73)},
-            {'text': 'DISTANCE', 'x': 0.672, 'y': 0.298, 'color': (67,157,180)},
-            {'text': 'ELECTROSTATICS', 'x': 0.320, 'y': 0.576, 'color': (56,76,124)},
-            {'text': 'PROTEIN MOTION', 'x': 0.680, 'y': 0.576, 'color': (72,135,101)},
-            {'text': 'BARRIER SHAPE', 'x': 0.500, 'y': 0.630, 'color': (158,57,66)},
-        ],
-        'evolution': [],
-        'form': [],
-        'rates': [],
-        'gate': [],
-        'noise': [],
-        'architecture': [],
-        'warning': [
-            {'text': 'MASS · WIDTH · COUPLING', 'x': 0.25, 'y': 0.475, 'size': 10, 'color': (67,157,180)},
-            {'text': 'MEASURABLE RATE EFFECT', 'x': 0.25, 'y': 0.415, 'size': 10, 'color': (72,135,101)},
-            {'text': 'THOUGHT TUNNELS', 'x': 0.75, 'y': 0.38, 'size': 10, 'color': (158,57,66)},
-            {'text': 'QUANTUM INTENTION', 'x': 0.75, 'y': 0.44, 'size': 10, 'color': (158,57,66)},
-            {'text': 'SPIRITUAL JUMP', 'x': 0.75, 'y': 0.50, 'size': 10, 'color': (158,57,66)},
-        ],
-        'psychology': [],
-        'final': [],
-    }
-
-    for i, scene in enumerate(scenes, 1):
-        visual = getattr(scene, 'visual', None) if not isinstance(scene, dict) else scene.get('visual')
-        dur = getattr(scene, 'duration', 6.0) if not isinstance(scene, dict) else scene.get('duration', 6.0)
-        title = getattr(scene, 'title', f'S{i}') if not isinstance(scene, dict) else scene.get('title', f'S{i}')
-        narration = getattr(scene, 'narration', '') if not isinstance(scene, dict) else scene.get('narration', '')
-
-        shader_name = visual or slug_text
-        if not (SHADER_DIR / f"{shader_name}.glsl").exists():
-            print(f"  [{i:02d}/{len(scenes):02d}] SKIP {title} — no shader {shader_name}.glsl")
+def shader_paths(pack: str | None = None, shader: str | None = None) -> list[Path]:
+    packs = [pack] if pack else ["02", "03", "04", "05"]
+    paths: list[Path] = []
+    for key in packs:
+        directory = PACK_DIRS[key]
+        if not directory.exists():
             continue
+        paths.extend(sorted(directory.glob("*.glsl")))
+    if shader:
+        name = shader if shader.endswith(".glsl") else f"{shader}.glsl"
+        paths = [path for path in paths if path.name == name]
+    return paths
 
-        # Sparse labels only — no subtitle bars
-        scene_meta = {
-            'labels': scene_labels.get(shader_name, []),
+
+def _include_path(name: str, parent: Path) -> Path:
+    candidates = (
+        parent / name,
+        INCLUDE_DIR / name,
+        ROOT / "glsl-reference" / "include" / name,
+    )
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate.resolve()
+    raise FileNotFoundError(f'include "{name}" from {parent}')
+
+
+def resolve_includes(path: Path, stack: tuple[Path, ...] = ()) -> str:
+    path = path.resolve()
+    if path in stack:
+        chain = " -> ".join(item.name for item in (*stack, path))
+        raise RuntimeError(f"cyclic GLSL include: {chain}")
+    source = path.read_text(encoding="utf-8")
+
+    def replace(match: re.Match[str]) -> str:
+        include = _include_path(match.group(1), path.parent)
+        return resolve_includes(include, (*stack, path))
+
+    return INCLUDE_RE.sub(replace, source)
+
+
+def audit_shader(path: Path) -> AuditResult:
+    errors: list[str] = []
+    try:
+        source = resolve_includes(path)
+    except (FileNotFoundError, RuntimeError) as exc:
+        return AuditResult(path, (str(exc),))
+    own_source = path.read_text(encoding="utf-8")
+    if not own_source.lstrip().startswith("#version 330 core"):
+        errors.append("missing '#version 330 core' header")
+    for uniform in UNIFORMS:
+        if not re.search(rf"\buniform\b[^;]*\b{re.escape(uniform)}\b", own_source):
+            errors.append(f"missing uniform {uniform}")
+    if "out vec4 fragColor" not in own_source:
+        errors.append("missing fragColor output")
+    if source.count("{") != source.count("}"):
+        errors.append("unbalanced braces after include expansion")
+    if re.search(r"\btexture2D\s*\(", source):
+        errors.append("uses deprecated texture2D in GLSL 330")
+    return AuditResult(path, tuple(errors))
+
+
+def compile_shader(path: Path, compiler: str) -> tuple[bool, str]:
+    source = resolve_includes(path)
+    with tempfile.NamedTemporaryFile("w", suffix=".frag", encoding="utf-8") as handle:
+        handle.write(source)
+        handle.flush()
+        completed = subprocess.run(
+            (compiler, "-S", "frag", handle.name),
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+    diagnostic = "\n".join(
+        item.strip() for item in (completed.stdout, completed.stderr) if item.strip()
+    )
+    return completed.returncode == 0, diagnostic
+
+
+class PreviewRenderer:
+    VERTEX = """#version 330 core
+in vec2 in_position;
+void main() { gl_Position=vec4(in_position,0.0,1.0); }
+"""
+
+    def __init__(self, width: int, height: int):
+        try:
+            import moderngl
+            import numpy as np
+        except ModuleNotFoundError as exc:
+            raise SystemExit(
+                "Preview rendering needs ModernGL: python -m pip install moderngl"
+            ) from exc
+        self.moderngl = moderngl
+        self.np = np
+        try:
+            self.ctx = moderngl.create_standalone_context(backend="egl")
+        except Exception:
+            self.ctx = moderngl.create_standalone_context()
+        self.width = width
+        self.height = height
+        vertices = np.array((-1.0, -1.0, 3.0, -1.0, -1.0, 3.0), dtype="f4")
+        self.vbo = self.ctx.buffer(vertices.tobytes())
+        self.texture = self.ctx.texture((width, height), 4, dtype="f1")
+        self.fbo = self.ctx.framebuffer((self.texture,))
+
+    def render(
+        self,
+        path: Path,
+        *,
+        u: float,
+        t: float,
+        audio_volume: float,
+        audio_beat: float,
+    ):
+        from PIL import Image
+
+        program = self.ctx.program(
+            vertex_shader=self.VERTEX,
+            fragment_shader=resolve_includes(path),
+        )
+        vao = self.ctx.vertex_array(
+            program,
+            [(self.vbo, "2f", "in_position")],
+        )
+        values = {
+            "iResolution": (float(self.width), float(self.height)),
+            "u": float(u),
+            "t": float(t),
+            "u_audioVolume": float(audio_volume),
+            "u_audioBeat": float(audio_beat),
         }
-
-        if args.preview:
-            # Render 4 keyframes (matching PIL's preview convention)
-            for si, u in enumerate([0.0, 0.35, 0.72, 0.99]):
-                img = eng.render_frame(shader_name, u, u * dur, scene_meta)
-                img = img.resize((args.width, args.height), Image.LANCZOS)
-                img.save(out_dir / "frames" / f"scene_{i:03d}_preview_{si:02d}.png")
-            print(f"  [{i:02d}/{len(scenes):02d}] Preview {title}")
-        else:
-            fps = args.fps
-            frames = max(2, round(dur * fps))
-            scene_dir = out_dir / "frames" / f"scene_{i:03d}"
-            scene_dir.mkdir(exist_ok=True)
-            for fi in range(frames):
-                u = fi / max(1, frames - 1)
-                fpath = scene_dir / f"{fi:05d}.png"
-                if fpath.exists() and args.resume:
-                    continue
-                img = eng.render_frame(shader_name, u, u * dur, scene_meta)
-                img = img.resize((args.width, args.height), Image.LANCZOS)
-                img.save(fpath)
-            # ffmpeg encode
-            ffmpeg = require("ffmpeg")
-            clip = out_dir / "scenes" / f"scene_{i:03d}.mp4"
-            clip.parent.mkdir(exist_ok=True)
-            subprocess.run([
-                ffmpeg, "-y", "-framerate", str(fps),
-                "-i", str(scene_dir / "%05d.png"),
-                "-c:v", "libx264", "-preset", "medium", "-crf", "18",
-                "-pix_fmt", "yuv420p", "-movflags", "+faststart", "-an",
-                str(clip)
-            ], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-            print(f"  [{i:02d}/{len(scenes):02d}] {title} ({dur:.1f}s)")
-
-    # Assemble final
-    if not args.preview:
-        scenes_dir = out_dir / "scenes"
-        clips = sorted(scenes_dir.glob("scene_*.mp4"))
-        if clips:
-            final = out_dir / f"{slug}.mp4"
-            concat = out_dir / "concat.txt"
-            concat.write_text("\n".join(f"file '{c.resolve()}'" for c in clips))
-            subprocess.run([
-                require("ffmpeg"), "-y", "-f", "concat", "-safe", "0",
-                "-i", str(concat), "-c", "copy", "-movflags", "+faststart",
-                str(final)
-            ], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-            print(f"  Final: {final}")
+        for name, value in values.items():
+            if name in program:
+                program[name].value = value
+        self.fbo.use()
+        self.ctx.clear(0.0, 0.0, 0.0, 1.0)
+        vao.render(mode=self.moderngl.TRIANGLES)
+        return Image.frombytes(
+            "RGBA",
+            (self.width, self.height),
+            self.fbo.read(components=4, alignment=1),
+        ).transpose(Image.Transpose.FLIP_TOP_BOTTOM)
 
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--pack", type=str, help="Pack name (stem)")
-    parser.add_argument("--all", action="store_true", help="Render all packs")
+def contact_sheet(images: list[tuple[str, object]], columns: int = 4):
+    from PIL import Image, ImageDraw
+
+    if not images:
+        raise ValueError("no images")
+    thumb_w, thumb_h = images[0][1].size
+    label_h = 30
+    rows = (len(images) + columns - 1) // columns
+    sheet = Image.new("RGB", (columns * thumb_w, rows * (thumb_h + label_h)), "#09070f")
+    draw = ImageDraw.Draw(sheet)
+    for index, (name, image) in enumerate(images):
+        x = (index % columns) * thumb_w
+        y = (index // columns) * (thumb_h + label_h)
+        sheet.paste(image.convert("RGB"), (x, y))
+        draw.text((x + 8, y + thumb_h + 8), name, fill="#e8dfcf")
+    return sheet
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--pack", choices=sorted(PACK_DIRS))
+    parser.add_argument("--shader")
+    parser.add_argument("--audit", action="store_true")
+    parser.add_argument("--compile", action="store_true")
+    parser.add_argument(
+        "--compiler",
+        help="glslangValidator path (or set GLSLANG_VALIDATOR)",
+    )
     parser.add_argument("--preview", action="store_true")
-    parser.add_argument("--render", action="store_true")
-    parser.add_argument("--fps", type=int, default=10)
-    parser.add_argument("--width", type=int, default=1280)
-    parser.add_argument("--height", type=int, default=720)
-    parser.add_argument("--ssaa", type=int, default=2)
-    parser.add_argument("--resume", action="store_true")
-    parser.add_argument("--output", type=str, default=str(OUTPUT_DIR))
-    args = parser.parse_args()
+    parser.add_argument("--width", type=int, default=640)
+    parser.add_argument("--height", type=int, default=360)
+    parser.add_argument("--u", type=float, default=0.72)
+    parser.add_argument("--t", type=float, default=2.75)
+    parser.add_argument("--audio-volume", type=float, default=0.46)
+    parser.add_argument("--audio-beat", type=float, default=0.62)
+    parser.add_argument("--output", type=Path, default=ROOT / "previews")
+    return parser
 
-    global OUTPUT_DIR
-    if args.output:
-        OUTPUT_DIR = Path(args.output)
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    packs = discover_packs()
-    if args.pack:
-        packs = [p for p in packs if args.pack in p.stem]
+def main() -> int:
+    args = build_parser().parse_args()
+    paths = shader_paths(args.pack, args.shader)
+    if not paths:
+        print("No shaders matched.", file=sys.stderr)
+        return 2
 
-    print(f"GPU Renderer — {len(packs)} packs found")
-    for pack in packs:
-        if args.render or args.preview:
-            render_pack(pack, args)
+    results = [audit_shader(path) for path in paths]
+    failed = [result for result in results if result.errors]
+    for result in failed:
+        for error in result.errors:
+            print(f"ERROR {result.shader.relative_to(ROOT)}: {error}", file=sys.stderr)
+    print(f"Audit: {len(results)-len(failed)}/{len(results)} shaders passed")
+    if failed:
+        return 1
 
-    print("\nDone.")
+    if args.compile:
+        compiler = (
+            args.compiler
+            or os.environ.get("GLSLANG_VALIDATOR")
+            or shutil.which("glslangValidator")
+        )
+        if not compiler:
+            print(
+                "Compile validation requested but glslangValidator was not found.",
+                file=sys.stderr,
+            )
+            return 2
+        compile_failures = []
+        for path in paths:
+            passed, diagnostic = compile_shader(path, compiler)
+            if not passed:
+                compile_failures.append(path)
+                print(f"COMPILE ERROR {path.relative_to(ROOT)}", file=sys.stderr)
+                if diagnostic:
+                    print(diagnostic, file=sys.stderr)
+        print(f"Compile: {len(paths)-len(compile_failures)}/{len(paths)} shaders passed")
+        if compile_failures:
+            return 1
+
+    if args.preview:
+        renderer = PreviewRenderer(args.width, args.height)
+        rendered = []
+        for path in paths:
+            image = renderer.render(
+                path,
+                u=args.u,
+                t=args.t,
+                audio_volume=args.audio_volume,
+                audio_beat=args.audio_beat,
+            )
+            relative = path.relative_to(ROOT)
+            destination = args.output / relative.with_suffix(".png")
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            image.save(destination)
+            rendered.append((path.stem, image))
+            print(f"Rendered {destination}")
+        if len(rendered) > 1:
+            pack_name = args.pack or "all"
+            destination = args.output / f"contact-sheet-{pack_name}.jpg"
+            contact_sheet(rendered).save(destination, quality=92)
+            print(f"Rendered {destination}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

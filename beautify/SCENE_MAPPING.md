@@ -32,3 +32,29 @@ add per-frame reactivity.
 - The `u` uniform (0→1) drives per-scene animation independently.
 - Audio uniforms make each scene's response unique per narration take.
 - Shaders with mode branching (`classical_wall` has climb/stop, `psychology` has force/geometry) use `u` progression to switch states.
+
+## Pack 02 · Beliefs Create Biology
+
+Art direction: living stained-glass psychobiology — wine-dark cytoplasm,
+breathing membranes, refracted cognition and gold intention.
+
+| Visual key | GLSL shader | PIL semantic reference |
+|---|---|---|
+| `conventional` | `02_beliefs_create_biology/vis_conventional_view.glsl` | `vis_conventional_view` |
+| `placebo` | `02_beliefs_create_biology/vis_placebo_phenomenon.glsl` | `vis_placebo_phenomenon` |
+| `placebo_growing` | `02_beliefs_create_biology/vis_placebo_growing.glsl` | `vis_placebo_growing` |
+| `seth_claim` | `02_beliefs_create_biology/vis_seth_claim.glsl` | `vis_seth_claim` |
+| `belief_cell` | `02_beliefs_create_biology/vis_belief_shapes_cell.glsl` | `vis_belief_shapes_cell` |
+| `cellular_faith` | `02_beliefs_create_biology/vis_cells_have_beliefs.glsl` | `vis_cells_have_beliefs` |
+| `value_fulfillment` | `02_beliefs_create_biology/val_fulfillment.glsl` | `val_fulfillment` |
+| `cooperation` | `02_beliefs_create_biology/vis_molecular_cooperation.glsl` | `vis_molecular_cooperation` |
+| `dna_antenna` | `02_beliefs_create_biology/vis_dna_antenna.glsl` | `vis_dna_antenna` |
+| `field` | `02_beliefs_create_biology/vis_consciousness_field.glsl` | `vis_consciousness_field` |
+| `illness` | `02_beliefs_create_biology/vis_illness_as_communication.glsl` | `vis_illness_as_communication` |
+| `dreams` | `02_beliefs_create_biology/vis_dreams_source.glsl` | `vis_dreams_source` |
+| `psyche` | `02_beliefs_create_biology/vis_psyche_gestalt.glsl` | `vis_psyche_gestalt` |
+| `free_will` | `02_beliefs_create_biology/vis_free_will_primitive.glsl` | `vis_free_will_primitive` |
+| `vikalpa` | `02_beliefs_create_biology/vis_vikalpa_samskara.glsl` | `vis_vikalpa_samskara` |
+| `healing` | `02_beliefs_create_biology/vis_healing_parity.glsl` | `vis_healing_parity` |
+| `primacy` | `02_beliefs_create_biology/vis_consciousness_before_matter.glsl` | `vis_consciousness_before_matter` |
+| `final` | `02_beliefs_create_biology/vis_final_synthesis.glsl` | `vis_final_synthesis` |
