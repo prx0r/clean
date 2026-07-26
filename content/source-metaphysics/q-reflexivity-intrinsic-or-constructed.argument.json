@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "artifact_type": "argument_fabric_dossier",
+  "question_id": "q:reflexivity-intrinsic-or-constructed",
+  "question": "Is reflexive awareness intrinsic to experience or a constructed higher-order operation?",
+  "why_it_matters": "This is the local crux beneath the broader question of whether consciousness is fundamental. It separates structural reflexivity, intrinsic self-manifestation, Buddhist no-self analysis, and higher-order/self-model accounts.",
+  "status": "live_crux",
+  "resolution_level": "local_argument",
+  "parent_questions": [
+    "q:consciousness-fundamental",
+    "q:prakasa-definition"
+  ],
+  "candidate_explanations": [
+    {
+      "candidate_id": "cand:abh-vimarsa-intrinsic",
+      "tradition_scope": "trika_pratyabhijna",
+      "name": "Intrinsic self-manifestation",
+      "best_case": "Experience is not merely present; its presence is intrinsically self-apprehending. Vimarsha is not a later reflection but the self-disclosure without which manifestation could not be intelligible.",
+      "hard_to_vary_core": [
+        "Manifestness cannot be derived from non-manifest third-person structure alone.",
+        "Recognition requires self-presence, not merely object presentation.",
+        "Prakasha without vimarsha would be inert shining rather than intelligible manifestation."
+      ],
+      "current_problems": [
+        "The universalization from local reflexivity to one ultimate consciousness is not entailed by local phenomenology.",
+        "Brain dependence constrains any account that treats empirical minds as direct windows into ultimate consciousness.",
+        "The account risks using experience as evidence that experience is fundamental without an independent bridge."
+      ],
+      "falsifiers": [
+        {
+          "type": "anumana",
+          "condition": "A complete account of recognition/reflexivity that explains self-presence without intrinsic manifestness.",
+          "status": "untested"
+        },
+        {
+          "type": "prasanga",
+          "condition": "Show that intrinsic self-manifestation can be removed while all phenomena Abhinavagupta uses it to explain remain equally explained.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    },
+    {
+      "candidate_id": "cand:dharmakirti-conditioned-reflexivity",
+      "tradition_scope": "dharmakirti_buddhist",
+      "name": "Conditioned cognition without enduring Self",
+      "best_case": "Cognition can be reflexively structured without requiring a permanent or universal subject. Selfhood is constructed through cognitive operations and exclusion, not discovered as an ultimate owner.",
+      "hard_to_vary_core": [
+        "No enduring self-substance is required for cognition to function.",
+        "Recognition and identity can be explained through structured causal/cognitive relations.",
+        "Apoha and arthakriya shift the burden from metaphysical essence to functional discrimination."
+      ],
+      "current_problems": [
+        "It must explain immediate manifestness without treating it as a mere abstraction.",
+        "It must avoid collapsing reflexivity into eliminativism about experience.",
+        "It must explain why cognition appears self-present, not only successful."
+      ],
+      "falsifiers": [
+        {
+          "type": "anumana",
+          "condition": "A proof that recognition logically requires intrinsic self-manifestation rather than conditioned cognitive structure.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    },
+    {
+      "candidate_id": "cand:nanavira-structural-reflexivity",
+      "tradition_scope": "nanavira_phenomenology",
+      "name": "Structural reflexivity without hidden substance",
+      "best_case": "Experience can include its own occurrence through recursive structure. Identity is preserved through transformation without positing an owner-substance or universal subject.",
+      "hard_to_vary_core": [
+        "Reflexivity is a structural capacity of experience.",
+        "Self-identity can arise from invariance across transformations.",
+        "The owner of reflexivity need not be reified."
+      ],
+      "current_problems": [
+        "Structural reflexivity may describe the form of experience without explaining manifestness itself.",
+        "The account is local and phenomenological, not a full ontology.",
+        "It may be absorbed by Abhinavagupta as finite vimarsha under limitation."
+      ],
+      "falsifiers": [
+        {
+          "type": "phenomenological",
+          "condition": "Show that reflexive experience necessarily introduces a second-order observer that distorts or cannot preserve the original structure.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    },
+    {
+      "candidate_id": "cand:higher-order-self-model",
+      "tradition_scope": "contemporary_philosophy_neuroscience",
+      "name": "Higher-order/self-model construction",
+      "best_case": "Reflexivity is produced by higher-order representation or self-modeling operations. Self-presence is a functional/cognitive achievement, not an intrinsic feature of all experience.",
+      "hard_to_vary_core": [
+        "Reflexivity requires representational architecture.",
+        "Changes to self-model mechanisms should alter reflexive awareness.",
+        "No metaphysical self-manifestation is required."
+      ],
+      "current_problems": [
+        "It may explain report and self-modeling while leaving phenomenal presence underexplained.",
+        "It must avoid redefining manifestness as merely access, report, or representation.",
+        "No-report and minimal phenomenal experience cases place pressure on report-centric versions."
+      ],
+      "falsifiers": [
+        {
+          "type": "empirical",
+          "condition": "Reliable evidence of awareness without any higher-order/self-model operation, with clear controls against report and memory confounds.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    }
+  ],
+  "cruxes": [
+    {
+      "crux_id": "crux:recognition-requires-self-manifestation",
+      "question": "Does recognition require intrinsic self-manifestation?",
+      "candidate_pressure": {
+        "cand:abh-vimarsa-intrinsic": "core support if yes",
+        "cand:dharmakirti-conditioned-reflexivity": "major pressure if yes",
+        "cand:nanavira-structural-reflexivity": "requires clarification of structure vs manifestness",
+        "cand:higher-order-self-model": "pressure if recognition survives without higher-order modeling"
+      }
+    },
+    {
+      "crux_id": "crux:constructed-reflexivity-presupposes-manifestness",
+      "question": "Can constructed reflexivity avoid presupposing manifestness?",
+      "candidate_pressure": {
+        "cand:abh-vimarsa-intrinsic": "core attack on rivals",
+        "cand:dharmakirti-conditioned-reflexivity": "must answer",
+        "cand:higher-order-self-model": "must answer"
+      }
+    },
+    {
+      "crux_id": "crux:local-to-universal",
+      "question": "Does local reflexivity license universal consciousness?",
+      "candidate_pressure": {
+        "cand:abh-vimarsa-intrinsic": "weakest metaphysical step",
+        "cand:dharmakirti-conditioned-reflexivity": "main attack",
+        "cand:nanavira-structural-reflexivity": "denies entailment while preserving local structure"
+      }
+    },
+    {
+      "crux_id": "crux:no-self-target",
+      "question": "Does no-self defeat reflexivity itself, or only the owner-substance interpretation?",
+      "candidate_pressure": {
+        "cand:dharmakirti-conditioned-reflexivity": "core distinction",
+        "cand:abh-vimarsa-intrinsic": "must separate ultimate Self from empirical ego",
+        "cand:nanavira-structural-reflexivity": "likely bridge position"
+      }
+    }
+  ],
+  "initial_state_of_play": {
+    "current_best_answer": "Structural reflexivity is a strong local finding. It does not by itself prove universal consciousness. Abhinavagupta remains live where rivals fail to explain manifestness; Dharmakirti and Nanavira remain live where Abhinavagupta universalizes too quickly.",
+    "confidence_language": "locally promising, globally underdetermined",
+    "solved_at_levels": [
+      "none"
+    ],
+    "open_cruxes": [
+      "crux:recognition-requires-self-manifestation",
+      "crux:constructed-reflexivity-presupposes-manifestness",
+      "crux:local-to-universal",
+      "crux:no-self-target"
+    ],
+    "next_tests": [
+      "Produce a 5-member Nyaya reconstruction of Abhinavagupta's argument from recognition to vimarsha.",
+      "Produce a Dharmakirti counter-reconstruction using arthakriya/apoha.",
+      "Run both through Sanskritree sayability/decomposition and store formal boundary nodes.",
+      "Map each surviving subclaim into the argument fabric before updating any truth-map posterior."
+    ],
+    "implications": [
+      "If local reflexivity survives but universalization fails, B4 must be narrowed: consciousness-first remains live only as manifestness-first, not automatically cosmic-personal idealism.",
+      "If constructed reflexivity explains recognition without residue, D3 intrinsic phenomenality weakens.",
+      "If all constructed accounts presuppose manifestness, D3 strengthens without immediately settling D1 or B4."
+    ]
+  }
+}

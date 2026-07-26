@@ -1,0 +1,28 @@
+Title: II. Dynamic Aspect
+Author: Ñāṇavīra Thera
+Source: https://www.nanavira.org/index.php/notes-on-dhamma/fundamental-structure/ii-dynamic-aspect
+Work: Notes on Dhamma — Fundamental Structure
+
+Full text:
+
+1. Between its appearance and its disappearance a thing endures.
+
+2. To fix the idea of duration we might imagine some rigid object—a lamp, say—together with the ticking of a clock. Both are necessary; for if either is missing the image fails. The image is no doubt rather crude, but will perhaps serve to make it clear that duration—what we sometimes call 'the passage of time'—is a combination of unchange and change. Duration and Invariance under Transformation are one and the same.
+
+3. We saw, in Part I, that a thing can be represented by the four symbols, o, o, o, and x, which pair off to define the operation of interchanging o o and o x. This, we found, can be done in three ways: interchange of columns, of rows, and of both together. We do not need, at present, to distinguish them, and we can take interchange of columns as representative of the whole. When o o is transformed into o x and vice versa, the thing or operation (o, o, o, x) is invariant—all that has happened is that the symbols have rearranged themselves: [fs1.gif] has become [fs7.gif — (o x; o o)]. This is one unit of duration—one moment. Clearly enough we can repeat the operation. It is still the same operation, namely interchange of columns. This gives us a second moment; and by continued repetition we can get as many moments as we please, with the thing as a whole remaining unchanged.
+
+4. We know, however, that the structure is hierarchical; and 'a time must come' when the thing as a whole changes. How many times must the transformation be repeated before the transformation is itself transformed? For how many moments does a thing endure? Let us suppose that it endures for a certain finite number of moments, say a hundred. Then, after a hundred moments the thing changes, and after another hundred moments it changes again... It will be seen that we do not, in fact, have a combination of unchange and change, but two different rates of change, one slow and one fast... To get duration, the difference between the unchanging and the changing must be absolute: the unchanging must be unchanging however much the changing changes. If a thing endures, it endures for ever. A thing is eternal.
+
+5. A thing changes, then, after an infinity of moments. And since the structure is hierarchical, each moment must itself endure for an infinity of moments of lesser order before it can give place to the next moment. And, naturally, the same applies to each of these lesser moments. It might perhaps seem that with such a congestion of eternities no change can ever take place at any level. But we must be careful not to introduce preconceived notions of time: just as the structure is not in space but of space, so the structure is not in time but of time. Thus we are not at all obliged to regard each moment as lasting the same length of absolute time as its predecessor; for we have not encountered 'absolute time'. Naturally, if we regard a given thing as eternal, then each of the infinite moments for which it endures will be of the same duration—one unit. But if this eternal thing is to change (or transform), then clearly the infinite series of moments must accelerate. If each successive moment is a definite fraction (less than unity) of its predecessor, then the whole infinite series will come to an end sooner or later.
+
+6. Now we see that three levels of the hierarchy are involved: on top, at the most general level of the three, we have a thing enduring eternally unchanged; below this, we have a thing changing at regular intervals of one unit of duration, one moment; and below this again, in each of these regular intervals, in each of these moments, we have an infinite series of moments of lesser order accelerating and coming to an end... There is no difficulty in extending the scheme infinitely in both directions of the hierarchy; and when we have done so we see that there is no place for anything absolutely enduring for ever, and that there is no place for anything absolutely without duration.
+
+7. [The relation between O (eternal invariant) and o (lower-level alternating symbols). When interchange takes place, 'this' vanishes entirely, leaving just 'that', which becomes the new 'this'. The system is not reversible: future is future and past is past.]
+
+8. [Intensity/weight distribution. 'This' has twice the intensity of 'that' (2:1 proportion). The total intensity at any time is unity. When 'this' vanishes, the rate of existence doubles to compensate.]
+
+9-10. [The general/particular hierarchy is also the past/present/future hierarchy. Past and future exist in the present as past and as future. The two aspects are rigorously interchangeable. McTaggart's paradox of time is resolved by the hierarchical structure.]
+
+11-13. [Three interchanges (columns, rows, both) with different relative weights. The weight of 'this' is always twice the combined weights of the three 'that'. Over successive moments, the most heavily weighted interchange dominates, drawing all weight to itself through an infinite series of squarings. When one interchange has drawn the entire weight, it takes place at the higher level.]
+
+(UNFINISHED)

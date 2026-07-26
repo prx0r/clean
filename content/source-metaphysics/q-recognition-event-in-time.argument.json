@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "artifact_type": "argument_fabric_dossier",
+  "question_id": "q:recognition-event-in-time",
+  "question": "Is recognition an event in time or recognition of what was never absent?",
+  "why_it_matters": "This question cuts to the heart of Trika soteriology and phenomenology. If recognition (pratyabhijñā) is an event in time, liberation is causally conditioned and impermanent. If it is recognition of what was never absent, liberation is the removal of ignorance rather than the production of a new state. The temporality of recognition determines the entire structure of the path.",
+  "status": "live_crux",
+  "resolution_level": "local_argument",
+  "parent_questions": [
+    "q:consciousness-fundamental",
+    "q:kañcuka-mechanism"
+  ],
+  "candidate_explanations": [
+    {
+      "candidate_id": "cand:recognition-as-event",
+      "tradition_scope": "krama_trika",
+      "name": "Recognition as temporal event",
+      "best_case": "Recognition is a real cognitive event occurring in time. The bound subject undergoes a transformation through practice, grace, and insight. Recognition is a psychological event with causal antecedents and subsequent effects. The temporality is essential to its meaning.",
+      "hard_to_vary_core": [
+        "Recognition is described in the Pratyabhijñā texts as occurring after a period of ignorance and practice.",
+        "The causes of recognition (grace, teacher, scripture, reasoning) are temporal and contingent.",
+        "The experience of recognition has a before and after, implying temporal structure."
+      ],
+      "current_problems": [
+        "If recognition is an event in time, it is impermanent and thus cannot be the ultimate realisation.",
+        "The account must explain how a temporal event can reveal an eternal reality without temporalising that reality.",
+        "It risks conflating the psychological event of recognition with the ontological condition it reveals."
+      ],
+      "falsifiers": [
+        {
+          "type": "phenomenological",
+          "condition": "A first-person report of recognition that includes the experience that what was recognised was genuinely new and had not been present prior to the event.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    },
+    {
+      "candidate_id": "cand:recognition-as-removal-of-veiling",
+      "tradition_scope": "pratyabhijna_orthodox",
+      "name": "Recognition as removal of ignorance",
+      "best_case": "Recognition does not produce something new; it removes the veiling (tirodhāna) that concealed what was always present. The event is epistemic, not ontic. What is recognised was never absent—only ignorance made it seem so. The temporality is in the removal, not the reality.",
+      "hard_to_vary_core": [
+        "Pratyabhijñā is the re-cognition of one's own nature as Śiva, not the acquisition of a new property.",
+        "Ignorance (mala) conceals what is already the case; removal of ignorance does not produce a new ontological state.",
+        "The event of recognition has temporal structure, but what it reveals is timeless."
+      ],
+      "current_problems": [
+        "The distinction between epistemic removal and ontic production is difficult to maintain without a substrate that undergoes change.",
+        "If recognition removes ignorance, why does ignorance arise at all in a nondual reality?",
+        "The account must explain why removal of ignorance appears to have all the marks of a real transformation."
+      ],
+      "falsifiers": [
+        {
+          "type": "prasanga",
+          "condition": "A reconstruction showing that removal-of-veiling entails either a change in the substrate (contradicting nondualism) or a merely apparent change that makes the soteriological path illusory.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    },
+    {
+      "candidate_id": "cand:recognition-as-timeless-awareness",
+      "tradition_scope": "nanavira_phenomenology",
+      "name": "Recognition as timeless structure of awareness",
+      "best_case": "Recognition is not an event but the timeless structure of awareness disclosing itself. What appears as a temporal event is the phenomenal presentation of what is always already the case. The temporality belongs to the appearance, not to the reality. Recognition is the structure of manifestness becoming transparent to itself.",
+      "hard_to_vary_core": [
+        "The structure of awareness is self-disclosing; recognition is the self-disclosure itself, not a separate event.",
+        "Temporal sequence is a feature of the manifest content, not of the ground of manifestation.",
+        "The apparent temporality of recognition is like the temporal structure of a logical proof: the steps are sequential but the entailment is atemporal."
+      ],
+      "current_problems": [
+        "This account must explain the experience of a 'before' and 'after' of recognition without making the path illusory.",
+        "It must distinguish the timeless structure claim from the claim that recognition simply never occurs.",
+        "It must account for the empirical variability of recognition events (some gradual, some sudden) within a timeless framework."
+      ],
+      "falsifiers": [
+        {
+          "type": "phenomenological",
+          "condition": "A demonstration that the temporal features of recognition (anticipation, surprise, relief, novelty) are essential to its character and cannot be reinterpreted as merely apparent.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    }
+  ],
+  "cruxes": [
+    {
+      "crux_id": "crux:event-vs-removal-novelty",
+      "question": "Does recognition introduce something new or remove a veil?",
+      "candidate_pressure": {
+        "cand:recognition-as-event": "introduces new cognitive state",
+        "cand:recognition-as-removal-of-veiling": "removes covering of what was present",
+        "cand:recognition-as-timeless-awareness": "neither—self-disclosure of structure"
+      }
+    },
+    {
+      "crux_id": "crux:path-integrity",
+      "question": "If recognition reveals what was never absent, is the path to realisation meaningful or illusory?",
+      "candidate_pressure": {
+        "cand:recognition-as-event": "path produces event, meaningful",
+        "cand:recognition-as-removal-of-veiling": "path is removal process, meaningful as purification",
+        "cand:recognition-as-timeless-awareness": "path is the appearance of disclosure, needs careful defence"
+      }
+    },
+    {
+      "crux_id": "crux:ignorance-origin",
+      "question": "If reality is nondual consciousness, how does ignorance arise?",
+      "candidate_pressure": {
+        "cand:recognition-as-event": "ignorance is real prior state",
+        "cand:recognition-as-removal-of-veiling": "ignorance is real but removable, not ultimately real",
+        "cand:recognition-as-timeless-awareness": "ignorance is a structural misapprehension within awareness"
+      }
+    }
+  ],
+  "initial_state_of_play": {
+    "current_best_answer": "The removal-of-veiling account is the most orthodox and philosophically defensible. Its main challenge is explaining the origin of the veil in a nondual reality. The event account captures the phenomenology of transformation but struggles with ultimacy. The timeless structure account is elegant but risks intellectualising what is existentially transformative.",
+    "confidence_language": "orthodox view dominant, challengers articulate live problems",
+    "solved_at_levels": [
+      "none"
+    ],
+    "open_cruxes": [
+      "crux:event-vs-removal-novelty",
+      "crux:path-integrity",
+      "crux:ignorance-origin"
+    ],
+    "next_tests": [
+      "Compare Abhinavagupta's treatment of pratyabhijñā in the ĪPV with Utpaladeva's in the ĪPK to trace the temporal language across texts.",
+      "Develop a formal model of recognition as structural disclosure using category theory or temporal logic to test coherence.",
+      "Survey phenomenological accounts of transformative insight across traditions for common temporal structure."
+    ],
+    "implications": [
+      "If recognition is an event, the path is essential to realisation, making Trika a genuine soteriology with causal structure.",
+      "If recognition removes a veil, the question shifts to the metaphysics of concealment: why does nondual reality hide itself?",
+      "If recognition is timeless structure, the path is pedagogical rather than causal, and liberation is always already the case."
+    ]
+  }
+}

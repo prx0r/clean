@@ -2,10 +2,10 @@
 """Compile, audit, and preview the standalone beautify fragment shaders.
 
 Examples:
-    python beautify/render_harness.py --audit
-    python beautify/render_harness.py --pack 02 --audit
-    python beautify/render_harness.py --pack 02 --preview --u 0.72
-    python beautify/render_harness.py --pack 03 --shader vis_vagus_highway --preview
+    python beautify-archive/lib/render_harness.py --audit
+    python beautify-archive/lib/render_harness.py --pack a-dream-becomes --audit
+    python beautify-archive/lib/render_harness.py --pack a-dream-becomes --preview --u 0.72
+    python beautify-archive/lib/render_harness.py --shader v_fragile_path --preview
 
 ModernGL is imported only for previews. Static audits remain available on machines
 without an EGL/OpenGL runtime.
@@ -22,15 +22,9 @@ import tempfile
 from dataclasses import dataclass
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
-INCLUDE_DIR = ROOT / "include"
-PACK_DIRS = {
-    "01": ROOT / "glsl-reference",
-    "02": ROOT / "02_beliefs_create_biology",
-    "03": ROOT / "03_voice_inside_chest",
-    "04": ROOT / "04_dreams_create_worlds",
-    "05": ROOT / "05_time_is_produced_by_forgetting",
-}
+LIB_DIR = Path(__file__).resolve().parent
+REPO_ROOT = LIB_DIR.parent.parent
+SHADER_ROOTS = (REPO_ROOT / "beautify", REPO_ROOT / "beautify-archive")
 UNIFORMS = ("iResolution", "u", "t", "u_audioVolume", "u_audioBeat")
 INCLUDE_RE = re.compile(r'^\s*#include\s+"([^"]+)"\s*$', re.MULTILINE)
 
@@ -41,14 +35,42 @@ class AuditResult:
     errors: tuple[str, ...]
 
 
-def shader_paths(pack: str | None = None, shader: str | None = None) -> list[Path]:
-    packs = [pack] if pack else ["02", "03", "04", "05"]
-    paths: list[Path] = []
-    for key in packs:
-        directory = PACK_DIRS[key]
-        if not directory.exists():
+def _shader_directories() -> list[Path]:
+    directories: set[Path] = set()
+    for root in SHADER_ROOTS:
+        if not root.exists():
             continue
-        paths.extend(sorted(directory.glob("*.glsl")))
+        directories.update(path.parent for path in root.glob("*/glsl/*.glsl"))
+    return sorted(directories)
+
+
+def shader_paths(pack: str | None = None, shader: str | None = None) -> list[Path]:
+    directories = _shader_directories()
+    if pack:
+        needle = pack.lower().replace("_", "-")
+        exact = [
+            directory
+            for directory in directories
+            if needle == directory.parent.name.lower().replace("_", "-")
+        ]
+        directories = exact or [
+            directory
+            for directory in directories
+            if needle in directory.parent.name.lower().replace("_", "-")
+        ]
+    else:
+        # Pack 01 remains the intentionally rough pre-330 style reference.
+        directories = [
+            directory
+            for directory in directories
+            if not directory.parent.name.startswith("01-")
+        ]
+    paths = [
+        path
+        for directory in directories
+        for path in sorted(directory.glob("*.glsl"))
+        if path.parent.name != "include"
+    ]
     if shader:
         name = shader if shader.endswith(".glsl") else f"{shader}.glsl"
         paths = [path for path in paths if path.name == name]
@@ -56,10 +78,12 @@ def shader_paths(pack: str | None = None, shader: str | None = None) -> list[Pat
 
 
 def _include_path(name: str, parent: Path) -> Path:
+    basename = Path(name).name
     candidates = (
         parent / name,
-        INCLUDE_DIR / name,
-        ROOT / "glsl-reference" / "include" / name,
+        parent / "include" / name,
+        LIB_DIR / name,
+        LIB_DIR / basename,
     )
     for candidate in candidates:
         if candidate.exists():
@@ -205,7 +229,10 @@ def contact_sheet(images: list[tuple[str, object]], columns: int = 4):
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--pack", choices=sorted(PACK_DIRS))
+    parser.add_argument(
+        "--pack",
+        help="Pack slug or unique slug fragment, for example 'a-dream-becomes'.",
+    )
     parser.add_argument("--shader")
     parser.add_argument("--audit", action="store_true")
     parser.add_argument("--compile", action="store_true")
@@ -220,7 +247,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--t", type=float, default=2.75)
     parser.add_argument("--audio-volume", type=float, default=0.46)
     parser.add_argument("--audio-beat", type=float, default=0.62)
-    parser.add_argument("--output", type=Path, default=ROOT / "previews")
+    parser.add_argument("--output", type=Path, default=REPO_ROOT / "beautify-previews")
     return parser
 
 
@@ -235,7 +262,7 @@ def main() -> int:
     failed = [result for result in results if result.errors]
     for result in failed:
         for error in result.errors:
-            print(f"ERROR {result.shader.relative_to(ROOT)}: {error}", file=sys.stderr)
+            print(f"ERROR {result.shader.relative_to(REPO_ROOT)}: {error}", file=sys.stderr)
     print(f"Audit: {len(results)-len(failed)}/{len(results)} shaders passed")
     if failed:
         return 1
@@ -257,7 +284,7 @@ def main() -> int:
             passed, diagnostic = compile_shader(path, compiler)
             if not passed:
                 compile_failures.append(path)
-                print(f"COMPILE ERROR {path.relative_to(ROOT)}", file=sys.stderr)
+                print(f"COMPILE ERROR {path.relative_to(REPO_ROOT)}", file=sys.stderr)
                 if diagnostic:
                     print(diagnostic, file=sys.stderr)
         print(f"Compile: {len(paths)-len(compile_failures)}/{len(paths)} shaders passed")
@@ -275,7 +302,7 @@ def main() -> int:
                 audio_volume=args.audio_volume,
                 audio_beat=args.audio_beat,
             )
-            relative = path.relative_to(ROOT)
+            relative = path.relative_to(REPO_ROOT)
             destination = args.output / relative.with_suffix(".png")
             destination.parent.mkdir(parents=True, exist_ok=True)
             image.save(destination)

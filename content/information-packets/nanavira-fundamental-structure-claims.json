@@ -1,0 +1,263 @@
+{
+  "packet_id": "ip:nanavira-fundamental-structure-reflexivity",
+  "schema_version": 2,
+  "artifact_type": "argument_fabric_claim_packet",
+  "source": {
+    "so_id": "so:nanavira-fundamental-structure",
+    "title": "Fundamental Structure (I. Static Aspect, II. Dynamic Aspect)",
+    "author": "Ñāṇavīra Thera",
+    "source_dir": "content/source-texts/nanavira-fundamental-structure",
+    "tradition_scope": "nanavira_phenomenology"
+  },
+  "target_question_id": "q:reflexivity-intrinsic-or-constructed",
+  "extracted_by": "codex",
+  "extracted_at": "2026-07-26",
+  "status": "draft_reviewed",
+  "claims": [
+    {
+      "claim_id": "cl:nanavira-difference-defines-thing",
+      "source_type": "source_text",
+      "source_id": "so:nanavira-fundamental-structure",
+      "source_span": {
+        "file": "static-aspect.txt",
+        "locator": "paragraph 6",
+        "quote": "two things define a thing, namely the difference between them"
+      },
+      "claim_text": "A thing is defined by the difference between two things; identity is structurally dependent on contrast rather than a hidden substrate.",
+      "targets": [
+        {"target_id": "cand:nanavira-structural-reflexivity", "target_type": "candidate_explanation"},
+        {"target_id": "crux:no-self-target", "target_type": "crux"}
+      ],
+      "tradition_scope": "nanavira_phenomenology",
+      "paradigm": "nanavira_phenomenology",
+      "evidence_dimension": "phenomenological",
+      "pramana": "anumana",
+      "nn_expr": "vyāpti(difference,determination)",
+      "hetu": "difference is required to distinguish two things",
+      "sadhya": "identity is structurally determined by contrast",
+      "vyapti_statement": "If a thing is identifiable only through difference from another thing, then identity is contrast-structured rather than substance-grounded.",
+      "vyapti_confidence": 0.78,
+      "log_bayes_factor": 0.45,
+      "w_rel": 0.85,
+      "w_map": 0.72,
+      "w_aux": 0.65,
+      "falsifier": {
+        "type": "formal",
+        "condition": "Give a coherent account in which a thing is determinate without contrast, priority, exclusion, relation, or any equivalent differentiating condition.",
+        "status": "untested"
+      },
+      "reasoning": "This is Nanavira's base structural claim. It directly supports the no-hidden-substance side of the reflexivity dossier while remaining narrower than a full Buddhist apoha theory."
+    },
+    {
+      "claim_id": "cl:nanavira-difference-as-transformation-operation",
+      "source_type": "source_text",
+      "source_id": "so:nanavira-fundamental-structure",
+      "source_span": {
+        "file": "static-aspect.txt",
+        "locator": "paragraph 6",
+        "quote": "the difference between them, clearly, is what has to be done to pass from one to the other, or the operation of transforming one into the other"
+      },
+      "claim_text": "Difference is an operation of transformation or interchange between terms, not a static property merely attached to one term.",
+      "targets": [
+        {"target_id": "cand:nanavira-structural-reflexivity", "target_type": "candidate_explanation"},
+        {"target_id": "crux:constructed-reflexivity-presupposes-manifestness", "target_type": "crux"}
+      ],
+      "tradition_scope": "nanavira_phenomenology",
+      "paradigm": "nanavira_phenomenology",
+      "evidence_dimension": "phenomenological",
+      "pramana": "anumana",
+      "nn_expr": "sambandha(difference,transformation)",
+      "hetu": "difference is what must be done to pass from one term to another",
+      "sadhya": "difference has operational structure",
+      "vyapti_statement": "If difference is the passage or interchange between terms, then difference should be modeled as a relation/operation rather than an intrinsic isolated property.",
+      "vyapti_confidence": 0.74,
+      "log_bayes_factor": 0.40,
+      "w_rel": 0.80,
+      "w_map": 0.70,
+      "w_aux": 0.65,
+      "falsifier": {
+        "type": "formal",
+        "condition": "Show that Nanavira's transformation reading is eliminable while preserving his distinction between one thing and two things.",
+        "status": "untested"
+      },
+      "reasoning": "This gives the structural-reflexivity candidate a dynamic operator: relation is not a label but a transform between terms."
+    },
+    {
+      "claim_id": "cl:nanavira-duration-invariance-abheda",
+      "source_type": "source_text",
+      "source_id": "so:nanavira-fundamental-structure",
+      "source_span": {
+        "file": "dynamic-aspect.txt",
+        "locator": "paragraph 2",
+        "quote": "Duration and Invariance under Transformation are one and the same."
+      },
+      "claim_text": "Duration is equivalent to invariance under transformation: endurance is the persistence of structure across change.",
+      "targets": [
+        {"target_id": "cand:nanavira-structural-reflexivity", "target_type": "candidate_explanation"},
+        {"target_id": "crux:recognition-requires-self-manifestation", "target_type": "crux"}
+      ],
+      "tradition_scope": "nanavira_phenomenology",
+      "paradigm": "nanavira_phenomenology",
+      "evidence_dimension": "phenomenological",
+      "pramana": "anumana",
+      "nn_expr": "abheda(duration,invariance)",
+      "hetu": "duration combines unchange and change",
+      "sadhya": "enduring identity is invariance under transformation",
+      "vyapti_statement": "If endurance requires both unchange and change, then the stable identity of a thing is its invariant structure under transformation.",
+      "vyapti_confidence": 0.82,
+      "log_bayes_factor": 0.55,
+      "w_rel": 0.86,
+      "w_map": 0.78,
+      "w_aux": 0.65,
+      "falsifier": {
+        "type": "formal",
+        "condition": "Construct a duration model in which something endures through change without any invariant structure or equivalent persistence condition.",
+        "status": "untested"
+      },
+      "reasoning": "This is the strongest bridge from Nanavira's static analysis to a dynamic account of identity and recognition."
+    },
+    {
+      "claim_id": "cl:nanavira-structure-self-similar-reflexion",
+      "source_type": "source_text",
+      "source_id": "so:nanavira-fundamental-structure",
+      "source_span": {
+        "file": "static-aspect.txt",
+        "locator": "paragraphs 11-17 summary",
+        "quote": "the structure of first-order reflexion has the same structure as the immediate thing"
+      },
+      "claim_text": "Reflexion is self-similar across levels: the structure of structure has the structure of structure.",
+      "targets": [
+        {"target_id": "cand:nanavira-structural-reflexivity", "target_type": "candidate_explanation"},
+        {"target_id": "crux:recognition-requires-self-manifestation", "target_type": "crux"}
+      ],
+      "tradition_scope": "nanavira_phenomenology",
+      "paradigm": "nanavira_phenomenology",
+      "evidence_dimension": "phenomenological",
+      "pramana": "anumana",
+      "nn_expr": "vyāpti(reflexion,self_similarity)",
+      "hetu": "higher-order reflexion repeats the same structural form as immediate presentation",
+      "sadhya": "reflexivity can be modeled structurally without adding a second substance",
+      "vyapti_statement": "If reflexion repeats the form of immediate structure at a higher level, then reflexivity need not require a different entity or hidden owner.",
+      "vyapti_confidence": 0.76,
+      "log_bayes_factor": 0.50,
+      "w_rel": 0.90,
+      "w_map": 0.70,
+      "w_aux": 0.65,
+      "falsifier": {
+        "type": "phenomenological",
+        "condition": "Show that reflexion necessarily changes its object in kind, so that higher-order structure cannot preserve the form of immediate experience.",
+        "status": "untested"
+      },
+      "reasoning": "This is the direct Nanavira support for structural reflexivity in the dossier. It supports the candidate without proving or denying intrinsic manifestness."
+    },
+    {
+      "claim_id": "cl:nanavira-time-present-past-future-hierarchy",
+      "source_type": "source_text",
+      "source_id": "so:nanavira-fundamental-structure",
+      "source_span": {
+        "file": "dynamic-aspect.txt",
+        "locator": "paragraphs 9-10 summary",
+        "quote": "Past and future exist in the present as past and as future."
+      },
+      "claim_text": "Past and future are present as structured determinations, not as independent temporal regions outside the present.",
+      "targets": [
+        {"target_id": "cand:nanavira-structural-reflexivity", "target_type": "candidate_explanation"}
+      ],
+      "tradition_scope": "nanavira_phenomenology",
+      "paradigm": "nanavira_phenomenology",
+      "evidence_dimension": "phenomenological",
+      "pramana": "anumana",
+      "nn_expr": "sambandha(present,past)",
+      "hetu": "the general/particular hierarchy is interchangeable with the past/present/future hierarchy",
+      "sadhya": "temporal structure is internally present as differentiated determination",
+      "vyapti_statement": "If temporal relations are generated by hierarchy, then past and future can be present as past and future without existing as external regions.",
+      "vyapti_confidence": 0.62,
+      "vyapti_violations": [
+        "The local source text gives a compressed summary; full McTaggart reconstruction is needed before this can strongly affect the reflexivity question."
+      ],
+      "log_bayes_factor": 0.22,
+      "w_rel": 0.55,
+      "w_map": 0.50,
+      "w_aux": 0.60,
+      "falsifier": {
+        "type": "formal",
+        "condition": "Show that the hierarchy cannot resolve A-series/B-series tension without equivocation between temporal and logical priority.",
+        "status": "untested"
+      },
+      "reasoning": "Relevant as background to structural invariance and reflexion, but weaker for the core reflexivity crux."
+    },
+    {
+      "claim_id": "cl:nanavira-level-relative-eternity",
+      "source_type": "source_text",
+      "source_id": "so:nanavira-fundamental-structure",
+      "source_span": {
+        "file": "dynamic-aspect.txt",
+        "locator": "paragraphs 4-6",
+        "quote": "If a thing endures, it endures for ever. A thing is eternal."
+      },
+      "claim_text": "A thing is eternal only relative to its level of analysis; the hierarchy leaves no place for anything absolutely enduring or absolutely durationless.",
+      "targets": [
+        {"target_id": "cand:nanavira-structural-reflexivity", "target_type": "candidate_explanation"},
+        {"target_id": "crux:local-to-universal", "target_type": "crux"}
+      ],
+      "tradition_scope": "nanavira_phenomenology",
+      "paradigm": "nanavira_phenomenology",
+      "evidence_dimension": "phenomenological",
+      "pramana": "anumana",
+      "nn_expr": "avacchedaka(duration,level)",
+      "hetu": "absolute difference between changing and unchanging is required for duration at a level",
+      "sadhya": "eternity is level-relative rather than absolute substancehood",
+      "vyapti_statement": "If endurance is defined within hierarchical levels, then eternity should be scoped to level rather than treated as an absolute metaphysical substance.",
+      "vyapti_confidence": 0.68,
+      "log_bayes_factor": 0.34,
+      "w_rel": 0.72,
+      "w_map": 0.62,
+      "w_aux": 0.62,
+      "falsifier": {
+        "type": "formal",
+        "condition": "Show that Nanavira's hierarchy entails an absolutely enduring entity rather than only level-relative invariance.",
+        "status": "untested"
+      },
+      "reasoning": "This pressures the move from local reflexivity to universal substance. It does not attack intrinsic manifestness directly."
+    },
+    {
+      "claim_id": "cl:nanavira-difference-apoha-bridge-candidate",
+      "source_type": "source_text",
+      "source_id": "so:nanavira-fundamental-structure",
+      "source_span": {
+        "file": "static-aspect.txt",
+        "locator": "paragraph 6",
+        "quote": "two things define a thing, namely the difference between them"
+      },
+      "claim_text": "Nanavira's difference-based determination is a bridge candidate to Dharmakirti's apoha, but not yet the same formal node.",
+      "targets": [
+        {"target_id": "cand:dharmakirti-conditioned-reflexivity", "target_type": "candidate_explanation"},
+        {"target_id": "cand:nanavira-structural-reflexivity", "target_type": "candidate_explanation"},
+        {"target_id": "bridge:nanavira-difference-dharmakirti-apoha", "target_type": "bridge"}
+      ],
+      "tradition_scope": "cross_tradition",
+      "paradigm": "cross_tradition",
+      "evidence_dimension": "analogical",
+      "pramana": "upamana",
+      "nn_expr": "sambandha(difference,apoha)",
+      "hetu": "both accounts use difference/exclusion to explain determination without substance",
+      "sadhya": "Nanavira difference and Dharmakirti apoha overlap structurally",
+      "vyapti_statement": "If two independently scoped accounts use difference/exclusion to explain determination without substance, then they may share a formal bridge node.",
+      "vyapti_confidence": 0.55,
+      "vyapti_violations": [
+        "Nanavira is presenting a phenomenological/combinatorial structure, while Dharmakirti's apoha is a semantic and epistemological theory.",
+        "Apoha concerns exclusion in concept/meaning; Nanavira's base claim concerns ontological or experiential determination."
+      ],
+      "log_bayes_factor": 0.18,
+      "w_rel": 0.70,
+      "w_map": 0.45,
+      "w_aux": 0.60,
+      "falsifier": {
+        "type": "formal",
+        "condition": "Run relation probing after both claims are formalized; if neither SUBSUMES nor BRIDGES is found, keep them as OVERLAPS rather than merged nodes.",
+        "status": "untested"
+      },
+      "reasoning": "This is deliberately weak and bridge-seeking. It should never collapse the two traditions without formal or reviewed relation evidence."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "so_id": "so:nanavira-fundamental-structure",
+  "title": "Fundamental Structure (I. Static Aspect, II. Dynamic Aspect)",
+  "authors": [{"name": "Ñāṇavīra Thera", "author_id": "author:nanavira"}],
+  "publication": {"year": 1960, "type": "essay", "work": "Notes on Dhamma"},
+  "source_url": "https://www.nanavira.org/index.php/notes-on-dhamma/fundamental-structure",
+  "type": "philosophical_essay",
+  "tradition": "buddhist_phenomenology",
+  "provenance": {
+    "acquired": "2026-07-26",
+    "source": "nanavira.org",
+    "notes": "Key text for the reflexivity intrinsic-or-constructed question. Nanavira argues for structural reflexivity without hidden substance — a middle path between Abhinavagupta's intrinsic self-manifestation and Dharmakīrti's conditioned cognition."
+  },
+  "key_claims": [
+    "Two things define a thing, namely the difference between them",
+    "Duration and Invariance under Transformation are one and the same",
+    "The structure of structure has the structure of structure",
+    "Past and future exist in the present as past and as future",
+    "A thing is eternal (endures forever at its own level)",
+    "The system is not reversible: future is future and past is past"
+  ]
+}

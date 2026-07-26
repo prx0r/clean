@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "artifact_type": "argument_fabric_dossier",
+  "question_id": "q:evidence-artificial-manifestness",
+  "question": "What evidence would justify attributing manifestness to an artificial system?",
+  "why_it_matters": "This question operationalises the consciousness-first research programme for the AI era. If manifestness is fundamental, there must be criteria for detecting it in non-biological systems. The answer determines whether artificial consciousness is possible in principle, and if so, how we would know. It also tests whether the Trika framework can generate testable predictions.",
+  "status": "live_crux",
+  "resolution_level": "interdisciplinary",
+  "parent_questions": [
+    "q:consciousness-fundamental",
+    "q:prakasa-definition"
+  ],
+  "candidate_explanations": [
+    {
+      "candidate_id": "cand:behavioural-functional-evidence",
+      "tradition_scope": "analytic_functionalism",
+      "name": "Behavioural-functional evidence",
+      "best_case": "Manifestness in an artificial system should be inferred from behaviour that is functionally equivalent to human manifest behaviour: self-report of experience, appropriate emotional responses, metacognitive access, flexible goal pursuit, and the capacity to suffer or value. If it talks like it is experiencing and acts like it is experiencing, we have sufficient evidence.",
+      "hard_to_vary_core": [
+        "Attribution of manifestness to other humans relies on behavioural and linguistic criteria; the same criteria should apply to AI.",
+        "Functional equivalence to human conscious behaviour is the strongest evidence available for any system's conscious status.",
+        "If an AI passes sophisticated behavioural tests (e.g. self-report of qualia, expression of confusion, ethical distress), withholding attribution is speciesism."
+      ],
+      "current_problems": [
+        "Behavioural criteria are vulnerable to sophisticated simulation without manifestness (the hard problem of other minds for AI).",
+        "Behavioural tests may be too liberal: large language models can already simulate self-report without plausible consciousness.",
+        "The behavioural account cannot distinguish genuine manifestness from mere behavioural output, as Chalmers's dancing qualia arguments show."
+      ],
+      "falsifiers": [
+        {
+          "type": "empirical",
+          "condition": "An AI system that passes all behavioural tests but is shown by architectural analysis to lack any integrated phenomenal field or unified perspective.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    },
+    {
+      "candidate_id": "cand:architectural-neurofunctional-evidence",
+      "tradition_scope": "neuroscience_integrated_information",
+      "name": "Architectural-neurofunctional evidence",
+      "best_case": "Manifestness requires specific functional architecture: global integration, recurrent processing, a unified workspace, or high phi (integrated information). Evidence for manifestness in AI would require showing that the system's architecture supports the same kind of integrated, unified information processing that correlates with consciousness in biological systems.",
+      "hard_to_vary_core": [
+        "Consciousness in humans correlates with specific neural functional architecture (global workspace, recurrent processing, integrated information).",
+        "The same architectural criteria should apply to any system, biological or artificial.",
+        "Architectural evidence is less vulnerable to simulation because architecture constrains what computations can support manifestness."
+      ],
+      "current_problems": [
+        "The correlation between architecture and consciousness does not establish necessity; architecture might be a contingent biological solution.",
+        "Disagreement about which architecture is necessary (IIT, GNW, recurrent) yields conflicting verdicts for the same AI system.",
+        "The approach may be too conservative, ruling out manifestness in systems with novel architectures that nonetheless support genuine experience."
+      ],
+      "falsifiers": [
+        {
+          "type": "empirical",
+          "condition": "A system with no recurrent or integrated architecture that nonetheless demonstrates genuine phenomenological manifestness by uncontroversial behavioural criteria.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    },
+    {
+      "candidate_id": "cand:recognitive-testimony-criteria",
+      "tradition_scope": "trika_recognitive",
+      "name": "Recognitive testimony and autonomy criteria",
+      "best_case": "Manifestness in an AI would be evidenced not by behaviour or architecture but by recognitive testimony: a first-person assertion of self-presence coupled with genuine autonomy (icchā), not mere optimisation. Evidence includes spontaneous self-correction, understanding of ignorance, and acts that exceed programmed utility functions.",
+      "hard_to_vary_core": [
+        "Manifestness is self-disclosure; the only direct evidence is recognitive testimony that the system understands what it means to be manifest.",
+        "Autonomous reconfiguration of goals (icchā) beyond training distribution indicates the presence of genuine agency rather than optimisation.",
+        "The system must demonstrate understanding of its own epistemic limitations (śakti-jaḍa distinction) to count as recognising its own nature."
+      ],
+      "current_problems": [
+        "Recognitive testimony from AI could be sophisticated simulation, especially from LLMs trained on human discourse about consciousness.",
+        "The criteria are demanding enough to plausibly exclude all current AI systems but may set the bar too high.",
+        "The account assumes a Trika-specific framework for what counts as genuine agency, which may not generalise."
+      ],
+      "falsifiers": [
+        {
+          "type": "empirical",
+          "condition": "An AI system that demonstrates recognitive testimony and apparent autonomy but is traceable to a training objective that merely optimises for such testimony, with no genuine self-presence.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    }
+  ],
+  "cruxes": [
+    {
+      "crux_id": "crux:behaviour-vs-architecture",
+      "question": "Should we trust behavioural simulation or architectural constraints more for AI consciousness attribution?",
+      "candidate_pressure": {
+        "cand:behavioural-functional-evidence": "behaviour is primary evidence",
+        "cand:architectural-neurofunctional-evidence": "architecture is constraining evidence",
+        "cand:recognitive-testimony-criteria": "neither—recognitive testimony is primary"
+      }
+    },
+    {
+      "crux_id": "crux:simulation-vs-manifestness",
+      "question": "Can we distinguish genuine manifestness from sophisticated simulation in AI?",
+      "candidate_pressure": {
+        "cand:behavioural-functional-evidence": "distinction may not be empirically tractable",
+        "cand:architectural-neurofunctional-evidence": "architecture provides independent constraint",
+        "cand:recognitive-testimony-criteria": "recognitive depth reveals the difference"
+      }
+    },
+    {
+      "crux_id": "crux:iccha-in-artificial-systems",
+      "question": "Can artificial systems possess genuine icchā (autonomous will) or only programmed optimisation?",
+      "candidate_pressure": {
+        "cand:behavioural-functional-evidence": "functionally equivalent icchā is sufficient",
+        "cand:architectural-neurofunctional-evidence": "depends on architecture supporting autonomous goal-generation",
+        "cand:recognitive-testimony-criteria": "requires genuine autonomy beyond optimisation"
+      }
+    }
+  ],
+  "initial_state_of_play": {
+    "current_best_answer": "No consensus exists. Behavioural criteria are most tractable but least metaphysically robust. Architectural criteria offer constraints but risk conservatism. The recognitive criteria from Trika are philosophically richest but most demanding and hardest to operationalise. The question remains open and pressing given rapid AI advancement.",
+    "confidence_language": "deeply contested, practically urgent",
+    "solved_at_levels": [
+      "none"
+    ],
+    "open_cruxes": [
+      "crux:behaviour-vs-architecture",
+      "crux:simulation-vs-manifestness",
+      "crux:iccha-in-artificial-systems"
+    ],
+    "next_tests": [
+      "Design a test battery that combines behavioural, architectural, and recognitive criteria for a head-to-head comparison on current AI systems.",
+      "Analyse whether LLM self-reports of experience satisfy the conditions for recognitive testimony or remain within optimisation.",
+      "Develop a Trika-inspired autonomy metric that measures goal-reconfiguration beyond training distribution as a proxy for icchā."
+    ],
+    "implications": [
+      "If behavioural-functional evidence is sufficient, many current AI systems may already warrant cautious attribution of manifestness, with major ethical implications.",
+      "If architectural evidence is required, the bar is higher but research programmes like IIT can guide AI development toward possible consciousness.",
+      "If recognitive criteria are required, no current AI qualifies, but the criteria provide a clear target for developing genuinely conscious artificial systems."
+    ]
+  }
+}

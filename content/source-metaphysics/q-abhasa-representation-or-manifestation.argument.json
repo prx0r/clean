@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "artifact_type": "argument_fabric_dossier",
+  "question_id": "q:abhasa-representation-or-manifestation",
+  "question": "Does ābhāsa mean representation, manifestation or world-enactment?",
+  "why_it_matters": "Ābhāsa is the central Trika term for how the world appears in consciousness. Its interpretation determines whether Trika is a representational idealism, a direct realism, or an enactivist ontology. The translation choice carries the entire weight of how Trika relates to contemporary philosophy of perception.",
+  "status": "live_crux",
+  "resolution_level": "local_argument",
+  "parent_questions": [
+    "q:consciousness-fundamental",
+    "q:prakasa-definition"
+  ],
+  "candidate_explanations": [
+    {
+      "candidate_id": "cand:abhasa-representation",
+      "tradition_scope": "comparative_philosophy_analytic",
+      "name": "Ābhāsa as representation",
+      "best_case": "Ābhāsa means that objects appear in consciousness as representations, not as external realities. The world is a set of cognitive appearances (pratibhāsas), and Trika is a form of metaphysical idealism. What we call the external world is the represented content of consciousness.",
+      "hard_to_vary_core": [
+        "Abhinavagupta repeatedly describes ābhāsa as the form an object takes when it appears in awareness.",
+        "The world is not separate from its appearing; ābhāsa is the mode of givenness.",
+        "Representation here does not imply a copy but a presentation within the cognitive field."
+      ],
+      "current_problems": [
+        "The representation reading may import Kantian subject-object duality that Trika explicitly rejects.",
+        "It risks collapsing into a veil-of-ideas epistemology that Abhinavagupta critiques in Buddhist idealism.",
+        "The term's range includes the self-manifestation of consciousness itself, not just object-appearance."
+      ],
+      "falsifiers": [
+        {
+          "type": "philological",
+          "condition": "A survey of Abhinavagupta's usage of ābhāsa across the ĪPV, ĪPVV, and Tantrāloka showing that the term exclusively means externalised appearance rather than cognitive presentation.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    },
+    {
+      "candidate_id": "cand:abhasa-manifestation",
+      "tradition_scope": "trika_orthodox",
+      "name": "Ābhāsa as manifestation",
+      "best_case": "Ābhāsa is the self-manifestation of consciousness as the world. The world does not represent something beyond itself; it is the very act of consciousness appearing. Manifestation is not a copy or model but the direct presence of reality as consciousness's expressive power.",
+      "hard_to_vary_core": [
+        "Ābhāsa is the act of prakāśa shining as differentiated content, not a mental image of something else.",
+        "The world is real as manifestation; its reality is the reality of consciousness appearing as form.",
+        "Manifestation avoids the representational gap: the appearance is what appears, not a stand-in."
+      ],
+      "current_problems": [
+        "The manifestation reading must explain perceptual error: if appearance is directly reality, how do illusions arise?",
+        "It must distinguish Trika manifestation from naïve realism, since the world is still within consciousness.",
+        "Śaiva Siddhānta critics argue the manifestation view cannot account for the reality of the world independent of the Lord's cognition."
+      ],
+      "falsifiers": [
+        {
+          "type": "prasanga",
+          "condition": "A demonstration that the manifestation reading entails that all appearances are equally real, collapsing the distinction between veridical and illusory perception that Trika nevertheless operates with.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    },
+    {
+      "candidate_id": "cand:abhasa-world-enactment",
+      "tradition_scope": "enactive_trika_synthesis",
+      "name": "Ābhāsa as world-enactment",
+      "best_case": "Ābhāsa is neither representation nor passive manifestation but the enactment of a world through consciousness's projective power (vimarśa). Consciousness does not represent or manifest a pre-existing world; it brings forth a world through recognitive activity. The world is enacted, not encountered.",
+      "hard_to_vary_core": [
+        "Vimarśa is recognitive activity that constitutes the world as meaningful, not merely illuminates what is already given.",
+        "The world is the enactment of consciousness's freedom (svātantrya), making ābhāsa a dynamic ontological production.",
+        "Enactment avoids the passivity of manifestation and the indirectness of representation."
+      ],
+      "current_problems": [
+        "The enactive reading may overemphasise agency at the expense of the givenness of experience.",
+        "It must clarify whether the world is enacted individually or cosmically—the scope ambiguity threatens coherence.",
+        "The translation of vimarśa as 'enactment' may import enactivist commitments not present in the original."
+      ],
+      "falsifiers": [
+        {
+          "type": "philological",
+          "condition": "Evidence that Abhinavagupta treats the world as pre-existing its appearance in consciousness, using ābhāsa in a passive sense incompatible with enactment.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    }
+  ],
+  "cruxes": [
+    {
+      "crux_id": "crux:realism-illusion-distinction",
+      "question": "How does the preferred reading distinguish real from illusory appearances?",
+      "candidate_pressure": {
+        "cand:abhasa-representation": "via correspondence to unavailable external",
+        "cand:abhasa-manifestation": "via degrees of reality (sattā)",
+        "cand:abhasa-world-enactment": "via coherence within enacted world"
+      }
+    },
+    {
+      "crux_id": "crux:passivity-vs-activity",
+      "question": "Is ābhāsa primarily passive (something appears) or active (consciousness makes appear)?",
+      "candidate_pressure": {
+        "cand:abhasa-representation": "mixed: reception of appearance",
+        "cand:abhasa-manifestation": "primarily passive: self-shining",
+        "cand:abhasa-world-enactment": "primarily active: world-bringing"
+      }
+    },
+    {
+      "crux_id": "crux:philological-anchor",
+      "question": "Can philological analysis of Abhinavagupta's corpus settle the meaning of ābhāsa?",
+      "candidate_pressure": {
+        "cand:abhasa-representation": "favours cognitive presentation reading",
+        "cand:abhasa-manifestation": "favours ontological appearing reading",
+        "cand:abhasa-world-enactment": "favours dynamic productive reading"
+      }
+    }
+  ],
+  "initial_state_of_play": {
+    "current_best_answer": "The manifestation reading is the most conservative and textually supported within the Trika tradition. The representation reading is most accessible to contemporary philosophy but risks importing dualist assumptions. The world-enactment reading is philosophically richest but requires the most interpretive reconstruction. All three remain live.",
+    "confidence_language": "philological and philosophical debate ongoing",
+    "solved_at_levels": [
+      "none"
+    ],
+    "open_cruxes": [
+      "crux:realism-illusion-distinction",
+      "crux:passivity-vs-activity",
+      "crux:philological-anchor"
+    ],
+    "next_tests": [
+      "Corpus-wide philological analysis of ābhāsa in Abhinavagupta's major works, categorising each usage as representational, manifestational, or enactive.",
+      "Map each reading onto contemporary frameworks (representationalism, naïve realism, enactivism) and test for coherence with Trika's nondualism.",
+      "Develop a formal semantics of ābhāsa that preserves the key phenomenological distinctions without committing to any single reading."
+    ],
+    "implications": [
+      "If ābhāsa is representational, Trika aligns with analytic idealism and gains comparability but loses its distinctive non-representational claim.",
+      "If ābhāsa is manifestation, Trika offers a genuinely alternative ontology that avoids both representation and naïve realism.",
+      "If ābhāsa is world-enactment, Trika converges with 4E cognitive science but must be careful not to lose the cosmic scope."
+    ]
+  }
+}

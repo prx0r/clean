@@ -1,0 +1,134 @@
+{
+  "ro_id": "ro:nanavira-fundamental-structure",
+  "schema_version": 2,
+  "title": "Fundamental Structure — Ñāṇavīra Thera",
+  "subtitle": "Static and Dynamic aspects of the structure of experience",
+  "traditions": ["buddhist_phenomenology", "nanavira"],
+  "status": "published",
+  "current_version": "1.0.0",
+  "summary": {
+    "one_line": "A formal account of the structure of experience: two things define a difference, and that difference is itself a thing of higher order.",
+    "scope": "Full text of both essays. Passages extracted cover the core formal argument: the four-symbol representation, operation invariants, hierarchical reflexion, duration as invariance under transformation, and the past/present/future hierarchy."
+  },
+  "scope": "single_source",
+  "bears_on_questions": [
+    {"question_id": "q:reflexivity-intrinsic-or-constructed", "relevance": "direct", "discriminators": ["D3"]},
+    {"question_id": "q:consciousness-fundamental", "relevance": "indirect", "discriminators": ["D3"]}
+  ],
+  "sources": [
+    {
+      "source_id": "so:nanavira-fundamental-structure",
+      "tier": 1,
+      "label": "Ñāṇavīra Thera, Fundamental Structure, Notes on Dhamma (c. 1960)",
+      "contribution": ["Static Aspect: formal derivation of the structure of a thing", "Dynamic Aspect: duration, past/present/future, invariance under transformation"],
+      "status": "active"
+    }
+  ],
+  "body": [
+    {
+      "passage_id": "p_001",
+      "section": "Static Aspect",
+      "subsection": "The four-symbol representation",
+      "kind": "source",
+      "text": "Let o represent a thing. If we wish to represent another thing, not o, we must represent it by another symbol. To say that o and o are only one thing is to say that there is no difference between them; and to say that o and x are two things is to say that there is a difference between them. In other words, two things define a thing, namely the difference between them. And the difference between them, clearly, is what has to be done to pass from one to the other, or the operation of transforming one into the other.",
+      "source_ids": ["so:nanavira-fundamental-structure"],
+      "locator": "static-aspect.txt §1-6",
+      "topics": ["difference", "operation", "thing", "transformation"]
+    },
+    {
+      "passage_id": "p_002",
+      "section": "Static Aspect",
+      "subsection": "Invariance under transformation",
+      "kind": "source",
+      "text": "It is a characteristic of all these representations that the operation of transforming any given member into any other member of the set transforms every member of the set into another member of the same set. The whole, then, is invariant under transformation. Attention, in other words, can shift from one aspect of a thing to another while the thing as a whole remains absolutely unchanged.",
+      "source_ids": ["so:nanavira-fundamental-structure"],
+      "locator": "static-aspect.txt §14",
+      "topics": ["invariance", "transformation", "attention", "whole"]
+    },
+    {
+      "passage_id": "p_003",
+      "section": "Static Aspect",
+      "subsection": "Structure of reflexion",
+      "kind": "source",
+      "text": "The structure of the structure of a thing is the same as the structure of a thing, or more generally that the structure of structure has the structure of structure. The 16-member representation gives the fundamental structure of first-order reflexion, just as 4 members represent the fundamental structure of immediacy, and the single member represents simply immediacy, the thing.",
+      "source_ids": ["so:nanavira-fundamental-structure"],
+      "locator": "static-aspect.txt §15",
+      "topics": ["reflexion", "structure", "hierarchy", "self-similarity"]
+    },
+    {
+      "passage_id": "p_004",
+      "section": "Static Aspect",
+      "subsection": "Infinite hierarchy",
+      "kind": "source",
+      "text": "The whole (either at the immediate or at any reflexive level) forms a hierarchy infinite in both directions (thus disposing of the current assumptions of absolute smallness and absolute largeness in physics). Successive orders of reflexion generate a hierarchy that is infinite, though in one direction only.",
+      "source_ids": ["so:nanavira-fundamental-structure"],
+      "locator": "static-aspect.txt §16",
+      "topics": ["hierarchy", "infinity", "reflexion", "scale"]
+    },
+    {
+      "passage_id": "p_005",
+      "section": "Dynamic Aspect",
+      "subsection": "Duration as invariance",
+      "kind": "source",
+      "text": "Duration and Invariance under Transformation are one and the same. To get duration, the difference between the unchanging and the changing must be absolute: the unchanging must be unchanging however much the changing changes. If a thing endures, it endures for ever. A thing is eternal.",
+      "source_ids": ["so:nanavira-fundamental-structure"],
+      "locator": "dynamic-aspect.txt §2-4",
+      "topics": ["duration", "invariance", "eternity", "change"]
+    },
+    {
+      "passage_id": "p_006",
+      "section": "Dynamic Aspect",
+      "subsection": "Acceleration and the hierarchy of moments",
+      "kind": "source",
+      "text": "A thing changes after an infinity of moments. Each moment must itself endure for an infinity of moments of lesser order before it can give place to the next moment. If each successive moment is a definite fraction of its predecessor, then the whole infinite series will come to an end sooner or later. Three levels of the hierarchy are involved: a thing enduring eternally unchanged; a thing changing at regular intervals; and an infinite accelerating series coming to an end within each interval.",
+      "source_ids": ["so:nanavira-fundamental-structure"],
+      "locator": "dynamic-aspect.txt §5-6",
+      "topics": ["acceleration", "hierarchy", "moment", "infinity", "change"]
+    },
+    {
+      "passage_id": "p_007",
+      "section": "Dynamic Aspect",
+      "subsection": "Intensity and weight",
+      "kind": "source",
+      "text": "Consciousness of a thing while it endures is constant: this may be counted as unity. The intensity of o is two-thirds of the whole, and of x, one-third. 'This' is necessarily more intense than 'that'. When 'this' vanishes, the rate of existence doubles to compensate. The total intensity at any time must be unity.",
+      "source_ids": ["so:nanavira-fundamental-structure"],
+      "locator": "dynamic-aspect.txt §8",
+      "topics": ["intensity", "weight", "consciousness", "this", "that"]
+    },
+    {
+      "passage_id": "p_008",
+      "section": "Dynamic Aspect",
+      "subsection": "Past, present, future",
+      "kind": "source",
+      "text": "The general/particular hierarchy can equally well be regarded as the past, present, and future at any one level of generality. Past and future exist in the present; but they exist as past and as future. Each 'present' is a self-sufficient totality, complete with the entire past and the entire future. When we discuss past, present, and future, we are discussing the present hierarchy, and when we discuss the present hierarchy we are discussing past, present, and future. The two aspects are rigorously interchangeable.",
+      "source_ids": ["so:nanavira-fundamental-structure"],
+      "locator": "dynamic-aspect.txt §9-10",
+      "topics": ["past", "present", "future", "time", "hierarchy"]
+    },
+    {
+      "passage_id": "p_009",
+      "section": "Dynamic Aspect",
+      "subsection": "Three interchanges and invariant identity",
+      "kind": "source",
+      "text": "The invariance of O is unaffected by the distribution of weight among the three possible interchanges that can take place. However much the relative weights of the three 'that' may vary among themselves, the weight of 'this' remains constant. The present, each time it advances into the future, gains a dimension; immediately future things, when they become present, necessarily appear with one dimension less.",
+      "source_ids": ["so:nanavira-fundamental-structure"],
+      "locator": "dynamic-aspect.txt §11-13",
+      "topics": ["invariance", "interchange", "dimension", "present", "future"]
+    }
+  ],
+  "provenance": {
+    "primary_source_path": "content/source-texts/nanavira-fundamental-structure/",
+    "git_commit": "HEAD",
+    "last_updated": "2026-07-26",
+    "last_updated_by": "agent/research",
+    "gate_version": "1.0"
+  },
+  "versions": [
+    {
+      "version": "1.0.0",
+      "date": "2026-07-26",
+      "changes": "Initial extraction: 9 passages covering static aspect (4), dynamic aspect (5). Source: nanavira.org.",
+      "author": "agent/research"
+    }
+  ]
+}

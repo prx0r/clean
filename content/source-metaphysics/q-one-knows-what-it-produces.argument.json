@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "artifact_type": "argument_fabric_dossier",
+  "question_id": "q:one-knows-what-it-produces",
+  "question": "Does the One know what it produces?",
+  "why_it_matters": "This question separates Neoplatonic from Trika emanationism. In Neoplatonism, the One produces without knowledge of its products because knowledge implies multiplicity. In Trika, Śiva knows the world because manifestation is self-knowledge. The answer determines whether the ultimate principle is personal, transpersonal, or suprapersonal.",
+  "status": "live_crux",
+  "resolution_level": "local_argument",
+  "parent_questions": [
+    "q:platonic-procession-vs-trika-manifestation",
+    "q:prakasa-definition"
+  ],
+  "candidate_explanations": [
+    {
+      "candidate_id": "cand:neoplatonic-unknowing-one",
+      "tradition_scope": "neoplatonism_plotinus",
+      "name": "The One does not know its products",
+      "best_case": "The One, as absolutely simple and beyond being, cannot have knowledge of its products because knowledge is a relation between knower and known, introducing duality. Procession occurs through necessary emanation, not intentional production. The One is beyond knowing as it is beyond being.",
+      "hard_to_vary_core": [
+        "Knowledge implies a subject-object distinction incompatible with the absolute simplicity of the One.",
+        "The One produces by being what it is (perfection overflows), not by intending to produce.",
+        "If the One knew its products, it would be complex in its knowledge, contradicting its simplicity."
+      ],
+      "current_problems": [
+        "If the One does not know what it produces, is the production blind? This seems to make the universe the result of a necessary but unconscious process.",
+        "The account must explain how the One's self-knowledge (nous) emerges from the One without the One having it.",
+        "Critics (especially Trika) argue the unknowing One cannot ground the intelligibility of the world."
+      ],
+      "falsifiers": [
+        {
+          "type": "prasanga",
+          "condition": "A demonstration that the unknowing One cannot ground the intelligibility of the forms in nous, making the procession from One to intellect incoherent.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    },
+    {
+      "candidate_id": "cand:trika-conscious-manifestation",
+      "tradition_scope": "trika_pratyabhijna",
+      "name": "Śiva knows the world as self-knowledge",
+      "best_case": "Manifestation is not production but expression of consciousness. Śiva knows the world because the world is Śiva's own self-articulation. Knowledge is not an accident or subsequent relation but the very nature of manifestation. The world is known because it is consciousness knowing itself as form.",
+      "hard_to_vary_core": [
+        "Manifestation is self-knowledge (vimarśa), not blind emanation.",
+        "If the ultimate were unknowing, the world's intelligibility would be an inexplicable byproduct.",
+        "Consciousness does not lose its nature by differentiating; knowledge and manifestation are the same act."
+      ],
+      "current_problems": [
+        "The account must explain how limited, ignorant subjects exist within a self-knowing consciousness.",
+        "It must show that self-knowledge does not introduce the duality it attributes to Neoplatonism.",
+        "The freedom of manifestation (svātantrya) must be distinguished from both necessity and arbitrariness."
+      ],
+      "falsifiers": [
+        {
+          "type": "prasanga",
+          "condition": "A proof that consciousness-knowing-itself-as-form necessarily entails a subject-object structure that Trika officially denies at the ultimate level.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    },
+    {
+      "candidate_id": "cand:neoplatonic-knowing-by-identity",
+      "tradition_scope": "proclus_erigena",
+      "name": "The One knows by identity with the known",
+      "best_case": "The One knows its products not by intentional relation but by identity: the One is the reality of what it produces. This is a middle position: knowledge without duality because the known is not other than the knower. Proclus and later Christian Neoplatonists (Erigena) develop this line.",
+      "hard_to_vary_core": [
+        "Knowledge by identity avoids the subject-object problem: the One knows by being what is known.",
+        "This preserves simplicity while grounding intelligibility.",
+        "It bridges Neoplatonic and Trika positions without sacrificing absolute simplicity."
+      ],
+      "current_problems": [
+        "If the One is identical with its products, the products are also the One, creating a monism that Neoplatonism officially rejects.",
+        "The account must distinguish knowledge-by-identity from pantheism without collapsing into the original unknowing-One position.",
+        "It is unclear whether knowledge-by-identity is a form of knowledge at all, or a redefinition that loses the cognitive content."
+      ],
+      "falsifiers": [
+        {
+          "type": "philological",
+          "condition": "Evidence that Plotinus and Proclus consistently maintain the unknowing of the One as essential to their system, and that knowledge-by-identity readings are anachronistic.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    }
+  ],
+  "cruxes": [
+    {
+      "crux_id": "crux:intelligibility-grounding",
+      "question": "Can the world's intelligibility be grounded in an unknowing source?",
+      "candidate_pressure": {
+        "cand:neoplatonic-unknowing-one": "intelligibility emerges in nous, not needed in One",
+        "cand:trika-conscious-manifestation": "no, intelligibility requires consciousness at the source",
+        "cand:neoplatonic-knowing-by-identity": "intelligibility is grounded in identity without intentional knowledge"
+      }
+    },
+    {
+      "crux_id": "crux:simplicity-vs-knowledge",
+      "question": "Does knowledge necessarily compromise absolute simplicity?",
+      "candidate_pressure": {
+        "cand:neoplatonic-unknowing-one": "yes, knowledge entails complexity",
+        "cand:trika-conscious-manifestation": "no, self-knowledge is simple for nondual consciousness",
+        "cand:neoplatonic-knowing-by-identity": "knowledge by identity may preserve simplicity"
+      }
+    },
+    {
+      "crux_id": "crux:procession-vs-expression",
+      "question": "Is the world better described as necessary procession or free expression?",
+      "candidate_pressure": {
+        "cand:neoplatonic-unknowing-one": "necessary procession from perfection",
+        "cand:trika-conscious-manifestation": "free expression through autonomy",
+        "cand:neoplatonic-knowing-by-identity": "participates in both: necessary as from One, expressive as manifestation of goodness"
+      }
+    }
+  ],
+  "initial_state_of_play": {
+    "current_best_answer": "The Trika position is stronger on intelligibility-grounding; the Neoplatonic position is stronger on simplicity. The knowledge-by-identity proposal offers an intriguing bridge but requires further development. The debate turns on whether self-knowledge can be non-dual in the way Trika claims.",
+    "confidence_language": "well-structured contest between two traditions, bridge candidate emerging",
+    "solved_at_levels": [
+      "none"
+    ],
+    "open_cruxes": [
+      "crux:intelligibility-grounding",
+      "crux:simplicity-vs-knowledge",
+      "crux:procession-vs-expression"
+    ],
+    "next_tests": [
+      "Map the arguments from Enneads V.3 and ĪPV 1.1 onto each other to identify precise points of divergence.",
+      "Formalise the simplicity constraint using mereology or category theory to test whether self-knowledge entails ontological complexity.",
+      "Develop a knowledge-by-identity model using the identity of indiscernibles and test it against both Neoplatonic and Trika sources."
+    ],
+    "implications": [
+      "If the One does not know, Neoplatonism offers a rigorous apophatic alternative to Trika, but must explain world intelligibility through nous as intermediary.",
+      "If Śiva knows, Trika offers the more integrated account but must address the simplicity concern.",
+      "If knowledge-by-identity succeeds, a synthesis between Neoplatonism and Trika becomes possible, dissolving one of the major historical divides."
+    ]
+  }
+}

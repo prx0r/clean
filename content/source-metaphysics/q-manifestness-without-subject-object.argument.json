@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "artifact_type": "argument_fabric_dossier",
+  "question_id": "q:manifestness-without-subject-object",
+  "question": "Can manifestness exist without a subject-object structure?",
+  "why_it_matters": "This question separates nondual from dualist interpretations of experience. If manifestness requires a subject-object polarity, then consciousness is intrinsically relational and Trika's claim of nondual self-luminosity is incoherent. If manifestness can be non-relational, then subject-object structure is a modification rather than a necessary condition of awareness.",
+  "status": "live_crux",
+  "resolution_level": "phenomenological",
+  "parent_questions": [
+    "q:prakasa-definition",
+    "q:consciousness-fundamental"
+  ],
+  "candidate_explanations": [
+    {
+      "candidate_id": "cand:nondual-self-luminosity",
+      "tradition_scope": "trika_advaita_vedanta",
+      "name": "Nondual self-luminosity",
+      "best_case": "Pure consciousness is self-manifesting without requiring a subject-object split. The subject-object structure arises through vimarśa's projective power (ābhāsa), but the ground of manifestness is contentless awareness that is its own light. Deep sleep, absorption (samādhi), and minimal phenomenal experiences support this.",
+      "hard_to_vary_core": [
+        "Self-luminosity (svaprakāśatva) is not a relation between subject and object but the very nature of consciousness.",
+        "Subject-object duality is a modification within manifestation, not its precondition.",
+        "The fact that we can report on nondual states, however imperfectly, indicates a form of manifestness without subject-object polarisation."
+      ],
+      "current_problems": [
+        "All evidence for nondual awareness is necessarily retrospective and shaped by conceptual recovery.",
+        "It is unclear whether nondual manifestness is a distinct type of awareness or a failure of memory/discrimination.",
+        "The account must explain why subject-object structure is nearly universal without making it necessary."
+      ],
+      "falsifiers": [
+        {
+          "type": "phenomenological",
+          "condition": "A first-person report of manifest awareness that cannot be analysed as involving either a tacit subject position or a minimal self-model.",
+          "status": "untested"
+        },
+        {
+          "type": "empirical",
+          "condition": "Demonstration that all reported nondual states are actually subject-object structures with impaired meta-cognitive access, using real-time neural measures.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    },
+    {
+      "candidate_id": "cand:minimal-subject-necessary",
+      "tradition_scope": "phenomenology_buddhist",
+      "name": "Minimal subject as necessary condition",
+      "best_case": "Every instance of manifestness includes a minimal subject pole—a point of view, a first-person perspective, or a register of 'mineness'—even if not thematised. Nondual states are better described as fusion of subject-object in a field where both poles are present but undifferentiated.",
+      "hard_to_vary_core": [
+        "Any appearance is an appearance to or for someone, even if that someone is not an empirical ego.",
+        "The phenomenological structure of experience always includes an intentional arc or a field-organising centre.",
+        "What Trika calls nondual awareness is the background field, not a state without a point of view altogether."
+      ],
+      "current_problems": [
+        "The minimal subject risks being a posited theoretical entity rather than a phenomenological given.",
+        "It must distinguish the minimal subject from the empirical ego without simply renaming the same structure.",
+        "Deep sleep and anaesthesia cases challenge the claim that a subject pole is universally present."
+      ],
+      "falsifiers": [
+        {
+          "type": "phenomenological",
+          "condition": "A first-person description of experience in which no aspect functions as a point of view, location of awareness, or minimal self, confirmed by independent phenomenological interview.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    },
+    {
+      "candidate_id": "cand:embodied-embedded-manifestness",
+      "tradition_scope": "enactive_embodied_cognition",
+      "name": "Embodied-embedded manifestness",
+      "best_case": "Manifestness is enacted through organism-environment coupling. Subject-object structure emerges from the sensorimotor loop, not as a precondition. Nondual states are modes of enactive coupling where the organism-world distinction is temporarily suspended while manifestness continues.",
+      "hard_to_vary_core": [
+        "Awareness is enacted through bodily interaction, not pre-given as subject-pole.",
+        "The subject-object distinction is a cognitive achievement, not a necessary feature of sentience.",
+        "Absorption states involve a different enactive configuration, not a loss of manifestness."
+      ],
+      "current_problems": [
+        "Enactive accounts explain the structure of perception better than the presence of awareness itself.",
+        "They must account for why manifestness survives when sensorimotor coupling is severely impaired (locked-in, anaesthesia with awareness).",
+        "The account may describe the conditions of manifestation without explaining manifestation."
+      ],
+      "falsifiers": [
+        {
+          "type": "empirical",
+          "condition": "A case of manifest awareness with no sensorimotor coupling or any detectable enactive loop, confirmed by behavioural and neural measures.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    }
+  ],
+  "cruxes": [
+    {
+      "crux_id": "crux:nondual-evidence-retrospective",
+      "question": "Does retrospective report necessarily distort nondual manifestness, or can it be a reliable indicator?",
+      "candidate_pressure": {
+        "cand:nondual-self-luminosity": "must defend reliability despite known confounds",
+        "cand:minimal-subject-necessary": "argues distortion introduces subject pole",
+        "cand:embodied-embedded-manifestness": "neutral, focuses on conditions"
+      }
+    },
+    {
+      "crux_id": "crux:deep-sleep-awareness",
+      "question": "Is there awareness in dreamless sleep, and what does it imply about subject-object necessity?",
+      "candidate_pressure": {
+        "cand:nondual-self-luminosity": "strong supporting case",
+        "cand:minimal-subject-necessary": "must explain or explain away",
+        "cand:embodied-embedded-manifestness": "challenging case for enactive view"
+      }
+    },
+    {
+      "crux_id": "crux:subject-pole-tacit-or-posited",
+      "question": "Is the minimal subject a phenomenological given or a theoretical posit?",
+      "candidate_pressure": {
+        "cand:nondual-self-luminosity": "argues posit",
+        "cand:minimal-subject-necessary": "argues given",
+        "cand:embodied-embedded-manifestness": "intermediate"
+      }
+    }
+  ],
+  "initial_state_of_play": {
+    "current_best_answer": "Nondual self-luminosity remains a live hypothesis supported by a tradition of phenomenological reports and meditative testimony. The minimal-subject response is the most serious challenge and turns on whether deep sleep awareness and nondual states can be shown to involve a tacit subject. Empirical evidence is suggestive but not decisive.",
+    "confidence_language": "philosophically contested, empirically underdetermined",
+    "solved_at_levels": [
+      "none"
+    ],
+    "open_cruxes": [
+      "crux:nondual-evidence-retrospective",
+      "crux:deep-sleep-awareness",
+      "crux:subject-pole-tacit-or-posited"
+    ],
+    "next_tests": [
+      "Systematic review of deep sleep awareness studies (e.g. Tibetan dream yoga, hypnotic suggestibility during sleep) with clear criteria for manifestness vs mere neural activation.",
+      "Phenomenological cross-check: interview experienced meditators on whether nondual states involve a minimal subject, using structured elicitation methods.",
+      "Formalise the subject-pole claim as a testable hypothesis about the necessity of attentional structure for any manifest state."
+    ],
+    "implications": [
+      "If nondual self-luminosity holds, consciousness-first metaphysics gains a direct phenomenological foundation independent of subject-object duality.",
+      "If a minimal subject is necessary, Trika must be revised to treat subject-object as a necessary transcendental structure, weakening its nondual claim.",
+      "If enactive accounts succeed, manifestness is naturalised but consciousness-first is weakened in favour of a broader biopsychological framework."
+    ]
+  }
+}

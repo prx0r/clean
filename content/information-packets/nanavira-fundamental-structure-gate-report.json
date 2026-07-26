@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "artifact_type": "nyaya_truthmap_gate_report",
+  "packet_id": "packet:nanavira-fundamental-structure",
+  "claim_packet": "/root/projects/clean/content/information-packets/nanavira-fundamental-structure-claims.json",
+  "gate_script": "/root/projects/clean/scripts/nyaya-truthmap-gate.py",
+  "gate_version": "nyaya-truthmap-gate-v0.1",
+  "formal_probe": {
+    "enabled": true,
+    "sanskritree_root": "/mnt/HC_Volume_106427611/sanskritree",
+    "summary": "All claims reached Sanskritree fast/dev probing as UNPROVED. This is not a refutation; it means the current formal layer has not proved these English/Nanavira claims."
+  },
+  "summary": {
+    "total_claims": 7,
+    "accepted": 5,
+    "accepted_with_penalty": 2,
+    "hollow": 0,
+    "needs_review": 0,
+    "refuted": 0,
+    "can_update_posterior": 7,
+    "dimensions": {
+      "phenomenological": 6,
+      "analogical": 1
+    },
+    "pramanas": {
+      "anumana": 6,
+      "upamana": 1
+    }
+  },
+  "claim_results": [
+    {
+      "claim_id": "cl:nanavira-difference-defines-thing",
+      "outcome": "accepted",
+      "can_update_posterior": true,
+      "adjusted_lbf_cap": null,
+      "evidence_dimension": "phenomenological",
+      "pramana": "anumana",
+      "tradition_scope": "nanavira_phenomenology",
+      "formal_probe_status": "UNPROVED",
+      "fallacies": [],
+      "tarka_falsifier": "Show a case where difference is required to distinguish two things holds but identity is structurally determined by contrast does not follow."
+    },
+    {
+      "claim_id": "cl:nanavira-difference-as-transformation-operation",
+      "outcome": "accepted",
+      "can_update_posterior": true,
+      "adjusted_lbf_cap": null,
+      "evidence_dimension": "phenomenological",
+      "pramana": "anumana",
+      "tradition_scope": "nanavira_phenomenology",
+      "formal_probe_status": "UNPROVED",
+      "fallacies": [],
+      "tarka_falsifier": "Show a case where difference is what must be done to pass from one term to another holds but difference has operational structure does not follow."
+    },
+    {
+      "claim_id": "cl:nanavira-duration-invariance-abheda",
+      "outcome": "accepted",
+      "can_update_posterior": true,
+      "adjusted_lbf_cap": null,
+      "evidence_dimension": "phenomenological",
+      "pramana": "anumana",
+      "tradition_scope": "nanavira_phenomenology",
+      "formal_probe_status": "UNPROVED",
+      "fallacies": [],
+      "tarka_falsifier": "Show a case where duration combines unchange and change holds but enduring identity is invariance under transformation does not follow."
+    },
+    {
+      "claim_id": "cl:nanavira-structure-self-similar-reflexion",
+      "outcome": "accepted",
+      "can_update_posterior": true,
+      "adjusted_lbf_cap": null,
+      "evidence_dimension": "phenomenological",
+      "pramana": "anumana",
+      "tradition_scope": "nanavira_phenomenology",
+      "formal_probe_status": "UNPROVED",
+      "fallacies": [],
+      "tarka_falsifier": "Show a case where higher-order reflexion repeats the same structural form as immediate presentation holds but reflexivity can be modeled structurally without adding a second substance does not follow."
+    },
+    {
+      "claim_id": "cl:nanavira-time-present-past-future-hierarchy",
+      "outcome": "accepted_with_penalty",
+      "can_update_posterior": true,
+      "adjusted_lbf_cap": 0.35,
+      "evidence_dimension": "phenomenological",
+      "pramana": "anumana",
+      "tradition_scope": "nanavira_phenomenology",
+      "formal_probe_status": "UNPROVED",
+      "fallacies": [
+        {
+          "fallacy_type": "savyabhicara",
+          "severity": "moderate",
+          "rationale": "The claim lists vyapti violations/counterexamples."
+        }
+      ],
+      "tarka_falsifier": "Show a case where the general/particular hierarchy is interchangeable with the past/present/future hierarchy holds but temporal structure is internally present as differentiated determination does not follow."
+    },
+    {
+      "claim_id": "cl:nanavira-level-relative-eternity",
+      "outcome": "accepted",
+      "can_update_posterior": true,
+      "adjusted_lbf_cap": null,
+      "evidence_dimension": "phenomenological",
+      "pramana": "anumana",
+      "tradition_scope": "nanavira_phenomenology",
+      "formal_probe_status": "UNPROVED",
+      "fallacies": [],
+      "tarka_falsifier": "Show a case where absolute difference between changing and unchanging is required for duration at a level holds but eternity is level-relative rather than absolute substancehood does not follow."
+    },
+    {
+      "claim_id": "cl:nanavira-difference-apoha-bridge-candidate",
+      "outcome": "accepted_with_penalty",
+      "can_update_posterior": true,
+      "adjusted_lbf_cap": 0.35,
+      "evidence_dimension": "analogical",
+      "pramana": "upamana",
+      "tradition_scope": "cross_tradition",
+      "formal_probe_status": "UNPROVED",
+      "fallacies": [
+        {
+          "fallacy_type": "savyabhicara",
+          "severity": "moderate",
+          "rationale": "The claim lists vyapti violations/counterexamples."
+        }
+      ],
+      "tarka_falsifier": "Show a case where both accounts use difference/exclusion to explain determination without substance holds but Nanavira difference and Dharmakirti apoha overlap structurally does not follow."
+    }
+  ]
+}

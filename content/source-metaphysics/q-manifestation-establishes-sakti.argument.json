@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "artifact_type": "argument_fabric_dossier",
+  "question_id": "q:manifestation-establishes-sakti",
+  "question": "Does manifestation establish Śakti, while Śakti circularly explains manifestation?",
+  "why_it_matters": "This question tests whether the Trika framework is genuinely explanatory or merely terminological. If manifestation and Śakti are mutually presupposing with no independent anchor, the system risks circularity. If Śakti is independently motivated, it provides a substantive metaphysics of agency rather than a redescription of phenomena.",
+  "status": "live_crux",
+  "resolution_level": "local_argument",
+  "parent_questions": [
+    "q:iccha-jnana-kriya-necessary",
+    "q:svatantrya-explanation"
+  ],
+  "candidate_explanations": [
+    {
+      "candidate_id": "cand:sakti-substantive-explanation",
+      "tradition_scope": "trika_pratyabhijna",
+      "name": "Śakti as genuinely explanatory metaphysical principle",
+      "best_case": "Manifestation is not brute fact; it requires a power (śakti) that accounts for why manifestation occurs at all. Śakti is not a label for manifestation but its ontological ground, independently motivated by the need to explain why reality is not inert.",
+      "hard_to_vary_core": [
+        "Śakti is the capacity of consciousness to manifest without external cause, not a mere redescription of the fact that manifestation occurs.",
+        "Without Śakti, manifestation is either necessary (denying freedom) or arbitrary (denying intelligibility).",
+        "The circularity is virtuous: Śakti explains manifestation while manifestation evidences Śakti, like potency and act in Aristotle."
+      ],
+      "current_problems": [
+        "The distinction between Śakti as ground and Śakti as manifestation is difficult to maintain without introducing a duality.",
+        "Critics argue the account collapses into either occasionalism (if Śakti does all work) or epiphenomenalism (if manifestation does).",
+        "The circularity may merely name the phenomenon rather than explain it, as Nyāya objections to śakty-śaktimad-bheda suggest."
+      ],
+      "falsifiers": [
+        {
+          "type": "prasanga",
+          "condition": "A reconstruction of Trika commitments that eliminates śakti while preserving every explanatory consequence Abhinavagupta derives from it.",
+          "status": "untested"
+        },
+        {
+          "type": "anumana",
+          "condition": "Proof that the śakti-śaktimān relation is either identical (redundancy) or different (duality), with no coherent middle.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    },
+    {
+      "candidate_id": "cand:sakti-terminological-redescription",
+      "tradition_scope": "nyaya_buddhist_critique",
+      "name": "Śakti as terminological redescription",
+      "best_case": "The śakti framework adds no explanatory content beyond asserting that manifestation occurs. It is a projection of human agency categories onto ontology, making reality in the image of the self. Parsimony favours treating manifestation as a brute fact that requires no special power.",
+      "hard_to_vary_core": [
+        "Every explanatory job done by Śakti can be done by causal relations and dispositional properties without invoking a cosmic power.",
+        "The circularity is vicious: manifestation evidences Śakti, which explains manifestation, and no independent evidence breaks the loop.",
+        "The attribution of agency to reality projects the phenomenology of volition onto ontology without warrant."
+      ],
+      "current_problems": [
+        "Brute manifestation fails to address why manifestation has a specific structure (icchā-jñāna-kriyā) rather than any other.",
+        "Eliminating Śakti leaves no account of why manifestation is not merely necessitated or arbitrary.",
+        "The critique must explain why the śakti framework has proven so generative across multiple traditions if it is merely terminological."
+      ],
+      "falsifiers": [
+        {
+          "type": "anumana",
+          "condition": "A demonstration that śakti is required for a non-arbitrary distinction between possible and actual manifestation that no alternative ontology captures.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    },
+    {
+      "candidate_id": "cand:sakti-procedural-formalization",
+      "tradition_scope": "constructor_theory_information",
+      "name": "Śakti as constructor-theoretic power",
+      "best_case": "Śakti maps onto the constructor-theoretic distinction between possible transformation and actual event. Counterfactual possibility is not reducible to law-governed trajectory. Śakti is the substrate-relative power to transform, formalizable without circularity.",
+      "hard_to_vary_core": [
+        "Constructor theory distinguishes possible from impossible transformations irreducibly, mirroring the śakti-kriyā distinction.",
+        "Counterfactual structure is physically substantive, not a mere epistemic gloss on actual events.",
+        "The formalism provides independent motivation for a power ontology that does not depend on Trika's theological commitments."
+      ],
+      "current_problems": [
+        "The mapping may be analogical rather than exact; constructor theory lacks the self-reflexive dimension of vimarśa.",
+        "It remains unclear whether the formalism captures autonomous freedom or merely undetermined variation.",
+        "The translation risks stripping Śakti of its recognitive character, reducing it to blind physical potency."
+      ],
+      "falsifiers": [
+        {
+          "type": "formal",
+          "condition": "A proof that any constructor-theoretic power ontology entails the same commitment to a substrate-power distinction that Trika critics identify as incoherent.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    }
+  ],
+  "cruxes": [
+    {
+      "crux_id": "crux:circularity-virtuous-or-vicious",
+      "question": "Is the manifestation–Śakti circle virtuous (potency-act) or vicious (petition)?",
+      "candidate_pressure": {
+        "cand:sakti-substantive-explanation": "needs virtuous reading",
+        "cand:sakti-terminological-redescription": "core attack",
+        "cand:sakti-procedural-formalization": "attempts independent anchor"
+      }
+    },
+    {
+      "crux_id": "crux:sakti-without-agency-projection",
+      "question": "Can Śakti be motivated without projecting human agency onto reality?",
+      "candidate_pressure": {
+        "cand:sakti-substantive-explanation": "must address",
+        "cand:sakti-terminological-redescription": "core objection",
+        "cand:sakti-procedural-formalization": "offers non-anthropomorphic route"
+      }
+    },
+    {
+      "crux_id": "crux:brute-manifestation-sufficiency",
+      "question": "Is brute manifestation a coherent alternative to Śakti?",
+      "candidate_pressure": {
+        "cand:sakti-substantive-explanation": "argues no",
+        "cand:sakti-terminological-redescription": "argues yes",
+        "cand:sakti-procedural-formalization": "intermediate"
+      }
+    }
+  ],
+  "initial_state_of_play": {
+    "current_best_answer": "The circularity challenge is serious but not fatal. Śakti can be motivated independently through the limitations of brute manifestation accounts and the need for a power ontology. The constructor-theoretic reformulation offers a non-anthropomorphic route but may lose recognitive content. Neither side has decisively refuted the other.",
+    "confidence_language": "circularity diagnosed, resolution pending",
+    "solved_at_levels": [
+      "none"
+    ],
+    "open_cruxes": [
+      "crux:circularity-virtuous-or-vicious",
+      "crux:sakti-without-agency-projection",
+      "crux:brute-manifestation-sufficiency"
+    ],
+    "next_tests": [
+      "Formalize the śakti-śaktimān relation in a paraconsistent or mereological framework to test coherence.",
+      "Extract Abhinavagupta's five arguments for śakti from ĪPV and test each for independent plausibility.",
+      "Compare with Nyāya śakti critique in Gadādhara's Śaktivāda for the strongest formulation of the circularity objection."
+    ],
+    "implications": [
+      "If Śakti is terminological, the Trika system loses its central explanatory principle and reduces to phenomenological description with metaphysical gloss.",
+      "If Śakti is substantive, it provides a rigorous alternative to both necessitarianism and occasionalism, strengthening the consciousness-first research programme.",
+      "If formalized through constructor theory, Śakti becomes exportable to non-Trika metaphysics but risks losing its recognitive and aesthetic character."
+    ]
+  }
+}

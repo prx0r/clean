@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "artifact_type": "argument_fabric_dossier",
+  "question_id": "q:why-not-experience-others-thoughts",
+  "question": "Why do I not experience your thoughts?",
+  "why_it_matters": "This question tests every theory of individuation. If consciousness is universal or nonlocal, the phenomenological fact of private experience requires explanation. The answer determines whether individuation is a fundamental feature of reality or a contingent limitation to be explained away.",
+  "status": "live_crux",
+  "resolution_level": "local_argument",
+  "parent_questions": [
+    "q:consciousness-fundamental",
+    "q:subject-boundary-constitution"
+  ],
+  "candidate_explanations": [
+    {
+      "candidate_id": "cand:contraction-via-kañcukas",
+      "tradition_scope": "trika_pratyabhijna",
+      "name": "Contraction through the kañcukas",
+      "best_case": "Universal consciousness limits itself through the six kañcukas, creating bounded subjects. I do not experience your thoughts because the kañcukas of limitation (niyati), time (kāla), and space (deśa) have contracted the universal into distinct perspectives. The same consciousness appears as many subjects through self-limitation.",
+      "hard_to_vary_core": [
+        "Consciousness is one; the appearance of many subjects is a real limitation (saṃkoca), not an illusion.",
+        "The kañcukas are real principles of limitation that explain why the one appears as many.",
+        "Your thoughts are within the same universal consciousness but under a different contraction; I have no access because the contraction excludes cross-perspectival content."
+      ],
+      "current_problems": [
+        "The account invokes multiple principles (six kañcukas) where parsimony might prefer fewer.",
+        "It must explain why the contraction is stable and why crossing (e.g. telepathy) is rare or requires special conditions.",
+        "The distinction between 'one consciousness under different contractions' and 'many separate consciousnesses' may be terminological."
+      ],
+      "falsifiers": [
+        {
+          "type": "prasanga",
+          "condition": "A proof that the kañcuka framework either reduces to epiphenomenal classification or requires a substrate beyond consciousness that contradicts nondualism.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    },
+    {
+      "candidate_id": "cand:informational-closure",
+      "tradition_scope": "cognitive_science_markov_blankets",
+      "name": "Informational closure via Markov blankets",
+      "best_case": "Subjects are defined by informational boundaries (Markov blankets) that separate internal states from external. I cannot experience your thoughts because our blanket boundaries partition the state space. Experience is tied to the internal states of a system; partition entails privacy.",
+      "hard_to_vary_core": [
+        "A Markov blanket partitions a system into internal and external states that are statistically independent given blanket states.",
+        "Experience supervenes on internal states of a sufficiently organised system.",
+        "Privacy is a necessary consequence of informational closure."
+      ],
+      "current_problems": [
+        "Markov blankets describe statistical boundaries, not phenomenal boundaries; the inference from statistical to experiential closure is contested.",
+        "It is unclear whether Markov blankets individuate subjective perspectives or merely describe the statistical structure of a system's environment.",
+        "The account must explain what additional condition transforms a Markov-blanketed system into a conscious subject."
+      ],
+      "falsifiers": [
+        {
+          "type": "empirical",
+          "condition": "Evidence of direct phenomenal access between systems that are statistically independent under Markov blanket criteria, with controls against inference and communication.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    },
+    {
+      "candidate_id": "cand:dissociation-within-unity",
+      "tradition_scope": "trika_dissociation",
+      "name": "Dissociation within a unified field",
+      "best_case": "I do not experience your thoughts for the same reason that one dissociative identity does not experience another's thoughts: there is one consciousness with dissociated streams. The unity is real at the deepest level; the division is functional and can in principle be overcome through recognition.",
+      "hard_to_vary_core": [
+        "Dissociation explains privacy without multiplying subjects: a single system maintains separate streams.",
+        "The dissociation account naturally accommodates rare cases of boundary crossing (telepathy, nondual insight, shared attention).",
+        "It provides a middle path between absolute unity and absolute plurality."
+      ],
+      "current_problems": [
+        "The analogy with clinical dissociation may be misleading: dissociative identities share a body and brain, while different persons do not.",
+        "It must explain why dissociation is so stable across the entire history of human experience if recognition can overcome it.",
+        "Without an independent criterion, 'dissociation' may merely rename the phenomenon of privacy without explaining its mechanism."
+      ],
+      "falsifiers": [
+        {
+          "type": "empirical",
+          "condition": "Demonstration that two subjects with dissociated phenomenal streams share no underlying unified field, as measured by robust across-subject information sharing that exceeds chance.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    }
+  ],
+  "cruxes": [
+    {
+      "crux_id": "crux:individuation-mechanism",
+      "question": "Is the mechanism of individuation positive (contraction) or negative (partition)?",
+      "candidate_pressure": {
+        "cand:contraction-via-kañcukas": "positive self-limitation",
+        "cand:informational-closure": "negative statistical boundary",
+        "cand:dissociation-within-unity": "functional division within unity"
+      }
+    },
+    {
+      "crux_id": "crux:privacy-fundamental-or-derivative",
+      "question": "Is phenomenal privacy a fundamental feature or a derivative consequence of deeper structures?",
+      "candidate_pressure": {
+        "cand:contraction-via-kañcukas": "fundamental self-limitation",
+        "cand:informational-closure": "derivative from statistical structure",
+        "cand:dissociation-within-unity": "derivative from dissociation within unity"
+      }
+    },
+    {
+      "crux_id": "crux:telepathy-evidence",
+      "question": "Do apparent cases of boundary crossing (telepathy, nondual insight) support unity or can they be explained within plurality?",
+      "candidate_pressure": {
+        "cand:contraction-via-kañcukas": "predicted under special conditions",
+        "cand:informational-closure": "must explain as inference or coincidence",
+        "cand:dissociation-within-unity": "expected if dissociation is not absolute"
+      }
+    }
+  ],
+  "initial_state_of_play": {
+    "current_best_answer": "The dissociation-within-unity account is the most elegant compromise between Trika nondualism and the evident fact of privacy. However, it needs a mechanism. The kañcuka framework provides the richest mechanism but risks overcomplication. Markov blanket approaches naturalise the problem but may settle for describing rather than explaining boundaries.",
+    "confidence_language": "plurality of live candidates, mechanism unresolved",
+    "solved_at_levels": [
+      "none"
+    ],
+    "open_cruxes": [
+      "crux:individuation-mechanism",
+      "crux:privacy-fundamental-or-derivative",
+      "crux:telepathy-evidence"
+    ],
+    "next_tests": [
+      "Formalise the dissociation-within-unity account using the framework of functional integration and segregation in complex systems.",
+      "Review the empirical literature on claimed telepathy/gopi phenomena for robust evidence that exceeds inference-based explanation.",
+      "Compare kañcuka contraction with Markov blanket formalism to see if the former can be mapped onto the latter without losing content."
+    ],
+    "implications": [
+      "If contraction via kañcukas holds, individuation is a positive act of freedom rather than a brute limitation, strengthening Trika's agency-based metaphysics.",
+      "If informational closure is sufficient, consciousness-first must accept that boundaries are statistical and contingent, weakening the strong nondual claim.",
+      "If dissociation within unity holds, the question shifts from 'why privacy' to 'what maintains the dissociation'—a research programme centred on recognition."
+    ]
+  }
+}

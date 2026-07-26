@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "artifact_type": "argument_fabric_dossier",
+  "question_id": "q:brain-if-consciousness-fundamental",
+  "question": "If consciousness is fundamental, what is the brain doing?",
+  "why_it_matters": "This is the single most pressing empirical question for any consciousness-first ontology. Without a positive account of the brain's role, idealism and panpsychism remain speculative. A credible answer transforms the research programme from metaphysical critique to constructive explanation of the body–world relationship.",
+  "status": "live_crux",
+  "resolution_level": "interdisciplinary",
+  "parent_questions": [
+    "q:consciousness-fundamental",
+    "q:kañcuka-mechanism"
+  ],
+  "candidate_explanations": [
+    {
+      "candidate_id": "cand:brain-as-filter",
+      "tradition_scope": "trika_perennialism",
+      "name": "Brain as filter/contractive mechanism",
+      "best_case": "The brain limits and constrains universal consciousness into a finite perspective. It does not generate consciousness but filters it through the kañcukas (limitation principles). Brain injury alters the filter; the analogy is a radio receiver that does not generate the signal but restricts its expression.",
+      "hard_to_vary_core": [
+        "Consciousness is universal; the brain restricts access to a local perspective via the six kañcukas (limitation, time, space, desire, knowledge, agency).",
+        "Brain death removes the filter, so local consciousness ceases while universal consciousness continues.",
+        "Brain damage alters the quality of experience because the filter is damaged, not because consciousness is produced by the damaged tissue."
+      ],
+      "current_problems": [
+        "The filter analogy lacks a mechanism: how does neural tissue restrict universal consciousness?",
+        "It must explain why specific neural correlates produce specific experiential modulations with the precision demanded by neuroscience.",
+        "The view is hard to distinguish from epiphenomenalism if the brain only restricts and does not transform."
+      ],
+      "falsifiers": [
+        {
+          "type": "empirical",
+          "condition": "A demonstration that local neural activity is causally sufficient for the entire content of a conscious experience, with the universal consciousness subtraction leaving no residual explanatory gap.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    },
+    {
+      "candidate_id": "cand:brain-as-interface-generative-model",
+      "tradition_scope": "predictive_processing_idealism",
+      "name": "Brain as generative model / interface",
+      "best_case": "The brain constructs a controlled hallucination or generative model of the world. It does not produce consciousness but structures its appearance. The brain's role is to constrain which possibilities are manifest from the broader space of conscious states, analogous to an interface that organises information.",
+      "hard_to_vary_core": [
+        "The brain is a prediction engine that infers causes of sensory input, generating the experienced world as a controlled hallucination.",
+        "Consciousness is the medium; the brain determines the mode of appearing, not the fact of appearing.",
+        "Brain damage alters the generative model, changing how reality appears, not eliminating the substrate of appearing."
+      ],
+      "current_problems": [
+        "The account inherits the hard problem: predictive processing explains the structure but not the presence of experience.",
+        "It must explain how the generative model relates to the underlying conscious substrate without dualism.",
+        "The 'controlled hallucination' framing may be compatible with physicalism, requiring further commitments to distinguish idealism."
+      ],
+      "falsifiers": [
+        {
+          "type": "empirical",
+          "condition": "A demonstration that neural generative models are sufficient to produce all aspects of experience, including manifestness itself, without appealing to a conscious substrate.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    },
+    {
+      "candidate_id": "cand:brain-as-appearance-only",
+      "tradition_scope": "radical_idealism",
+      "name": "Brain as appearance within consciousness",
+      "best_case": "The brain is itself an appearance within consciousness, not a separate entity that causes or filters it. The correlation is between one appearance (the brain) and another (experience) within the same conscious field. The question 'what is the brain doing' is a category mistake: brains are what consciousness looks like when perceived.",
+      "hard_to_vary_core": [
+        "Brains are known only as objects of experience; positing them as external causes of experience is metaphysical inference beyond the evidence.",
+        "The correlation is between two aspects of experience, not between experience and something outside it.",
+        "Neuroscience studies the appearance of the brain in experience; it does not study a cause of experience."
+      ],
+      "current_problems": [
+        "This view threatens to make neuroscience an illusion or mere appearance study, conflicting with its practical predictive success.",
+        "It must explain why the appearance of neural activity so precisely tracks the appearance of experiential states.",
+        "It is unfalsifiable in principle if all evidence is reinterpreted as within consciousness."
+      ],
+      "falsifiers": [
+        {
+          "type": "prasanga",
+          "condition": "A demonstration that treating the brain as appearance collapses the distinction between veridical perception and hallucination in a way that undermines scientific practice.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    }
+  ],
+  "cruxes": [
+    {
+      "crux_id": "crux:filter-mechanism-requirement",
+      "question": "Does the filter account require a mechanism, or is specifying the filtering principle sufficient?",
+      "candidate_pressure": {
+        "cand:brain-as-filter": "must provide mechanism or accept explanatory gap",
+        "cand:brain-as-interface-generative-model": "offers partial mechanism via predictive processing",
+        "cand:brain-as-appearance-only": "dissolves the question"
+      }
+    },
+    {
+      "crux_id": "crux:neural-correlation-direction",
+      "question": "Do neural correlations reveal production, restriction, or merely parallel structure?",
+      "candidate_pressure": {
+        "cand:brain-as-filter": "argues restriction",
+        "cand:brain-as-interface-generative-model": "argues parallel structuring",
+        "cand:brain-as-appearance-only": "argues intra-experiential correlation"
+      }
+    },
+    {
+      "crux_id": "crux:brain-damage-transformation",
+      "question": "Why does brain damage transform experience so precisely if the brain is not generative?",
+      "candidate_pressure": {
+        "cand:brain-as-filter": "damage alters filter with lawful precision",
+        "cand:brain-as-interface-generative-model": "damage alters generative model",
+        "cand:brain-as-appearance-only": "damage alters one appearance relative to another"
+      }
+    }
+  ],
+  "initial_state_of_play": {
+    "current_best_answer": "No candidate has a decisive advantage. The filter account has historical and intuitive force but lacks mechanism. The generative model account provides the richest engagement with neuroscience but may collapse back into physicalism. The appearance-only view is the most metaphysically parsimonious from the idealist perspective but struggles with scientific traction.",
+    "confidence_language": "all candidates live, no decisive evidence",
+    "solved_at_levels": [
+      "none"
+    ],
+    "open_cruxes": [
+      "crux:filter-mechanism-requirement",
+      "crux:neural-correlation-direction",
+      "crux:brain-damage-transformation"
+    ],
+    "next_tests": [
+      "Derive at least one testable prediction distinguishing filter from generative-model accounts from Trika kañcuka theory in coordination with active inference formalism.",
+      "Map the six kañcukas onto specific neural systems (e.g. temporal gyrus for time-limitation, parietal for space-limitation) to generate lesion-specific predictions.",
+      "Assess whether the 'brain as appearance' view can accommodate the predictive success of neuroscience without reducing it to illusion."
+    ],
+    "implications": [
+      "If the filter account is correct, consciousness-first is directly compatible with neuroscience and brain-damage data—a major defeater to the physicalist objection from neural dependence.",
+      "If the generative model account is correct, consciousness-first merges with predictive processing but risks being absorbed by physicalist interpretations of the same framework.",
+      "If the appearance-only view is correct, the entire neuroscientific framing is a misunderstanding, but the view must demonstrate it can retain practical scientific utility."
+    ]
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "eo_id": "eo:reflexivity-structural-local-v1",
+  "schema_version": 2,
+  "title": "Structural reflexivity is locally strong; universal consciousness is not entailed",
+  "status": "draft",
+  "question": {
+    "question_id": "q:reflexivity-intrinsic-or-constructed",
+    "tension_point": "Is reflexive awareness intrinsic to experience, or can it be explained as a constructed structural operation without a hidden subject?",
+    "why_it_matters": "This is the local crux beneath consciousness-fundamental metaphysics. If reflexivity requires intrinsic manifestness, Abhinavagupta's vimarsa argument strengthens. If reflexivity can be explained structurally, Dharmakirti, Nanavira, and higher-order accounts remain live without granting universal consciousness.",
+    "resolution_level": "local_argument"
+  },
+  "syllogism": {
+    "pratijna": {
+      "proposition": "Structural reflexivity is a strong local finding, but it does not by itself entail universal consciousness.",
+      "what_it_claims": "The EO separates two claims that are often fused: first, experience appears reflexively structured; second, this reflexivity proves a universal consciousness-ground. The first is now well supported as a local argument. The second remains underdetermined."
+    },
+    "hetu": {
+      "evidence": [
+        {
+          "claim": "A thing is defined by the difference between two things; identity is structurally dependent on contrast rather than a hidden substrate.",
+          "pramana": "anumana",
+          "source_id": "so:nanavira-fundamental-structure",
+          "target": "cand:nanavira-structural-reflexivity"
+        },
+        {
+          "claim": "Duration is equivalent to invariance under transformation: endurance is the persistence of structure across change.",
+          "pramana": "anumana",
+          "source_id": "so:nanavira-fundamental-structure",
+          "target": "crux:recognition-requires-self-manifestation"
+        },
+        {
+          "claim": "Reflexion is self-similar across levels: the structure of structure has the structure of structure.",
+          "pramana": "anumana",
+          "source_id": "so:nanavira-fundamental-structure",
+          "target": "cand:nanavira-structural-reflexivity"
+        },
+        {
+          "claim": "Nanavira's difference-based determination overlaps with Dharmakirti's apoha only as a bridge candidate, not as a proven merged node.",
+          "pramana": "upamana",
+          "source_id": "so:nanavira-fundamental-structure",
+          "target": "bridge:nanavira-difference-dharmakirti-apoha"
+        }
+      ],
+      "source_ids": [
+        "so:nanavira-fundamental-structure",
+        "content/source-metaphysics/q-reflexivity-intrinsic-or-constructed.argument.json",
+        "content/source-metaphysics/q-reflexivity-intrinsic-or-constructed.nanavira-map.json",
+        "content/information-packets/delta-nanavira-gated.json"
+      ]
+    },
+    "udaharana": {
+      "examples": [
+        {
+          "scenario": "Nanavira's difference argument: two terms become determinate through the difference between them, and that difference functions as an operation of transformation or interchange.",
+          "what_it_shows": "Identity can be reconstructed as contrastive structure rather than as a self-identical substance or hidden owner."
+        },
+        {
+          "scenario": "Nanavira's duration argument: duration is invariance under transformation, so endurance is level-relative persistence of structure rather than absolute substancehood.",
+          "what_it_shows": "Recognition and continuity can be explained by invariant structure across change, which pressures but does not refute intrinsic-manifestness accounts."
+        },
+        {
+          "scenario": "The attempted bridge to Dharmakirti's apoha is accepted only with penalty because semantic exclusion and Nanavira's structural difference are similar but not identical.",
+          "what_it_shows": "Cross-tradition convergence must be earned by bridge probes and negative controls, not by shared vocabulary."
+        }
+      ]
+    },
+    "upanaya": {
+      "application": "The gated Nanavira claims strengthen the structural-reflexivity candidate and weaken the direct move from local reflexivity to universal consciousness. They do not defeat Abhinavagupta, because a structural account may still presuppose manifestness. They also do not merge Nanavira with Dharmakirti, because the apoha bridge remains analogical and capped.",
+      "cruxes": [
+        "crux:recognition-requires-self-manifestation",
+        "crux:constructed-reflexivity-presupposes-manifestness",
+        "crux:local-to-universal",
+        "crux:no-self-target"
+      ]
+    },
+    "nigamana": {
+      "best_current_answer": "Structural reflexivity is locally promising and now better evidenced through Nanavira's argument patterns. Universal consciousness is not entailed by that local result. The strongest unresolved question is whether structural reflexivity explains manifestness or quietly presupposes it.",
+      "status": "structurally_suggestive",
+      "scope": "Local argument: strengthened. Cross-tradition bridge: overlap only. Global metaphysics: underdetermined."
+    }
+  },
+  "candidates": [
+    {
+      "candidate_id": "cand:abh-vimarsa-intrinsic",
+      "name": "Intrinsic self-manifestation",
+      "tradition": "trika_pratyabhijna",
+      "position": "Experience is not merely present; its presence is intrinsically self-apprehending. Vimarsha is not a later reflection but the self-disclosure without which manifestation could not be intelligible.",
+      "proponent": "Abhinavagupta / Pratyabhijna",
+      "source_ids": [
+        "content/source-metaphysics/q-reflexivity-intrinsic-or-constructed.argument.json"
+      ],
+      "hard_to_vary_core": [
+        "Manifestness cannot be derived from non-manifest third-person structure alone.",
+        "Recognition requires self-presence, not merely object presentation.",
+        "Prakasha without vimarsa would be inert shining rather than intelligible manifestation."
+      ],
+      "current_problems": [
+        "The universalization from local reflexivity to one ultimate consciousness is not entailed by local phenomenology.",
+        "Brain dependence constrains any account that treats empirical minds as direct windows into ultimate consciousness.",
+        "The account risks using experience as evidence that experience is fundamental without an independent bridge."
+      ],
+      "falsifiers": [
+        "A complete account of recognition/reflexivity that explains self-presence without intrinsic manifestness.",
+        "A successful demonstration that intrinsic self-manifestation can be removed while preserving everything the theory uses it to explain."
+      ],
+      "status": "live"
+    },
+    {
+      "candidate_id": "cand:dharmakirti-conditioned-reflexivity",
+      "name": "Conditioned cognition without enduring Self",
+      "tradition": "dharmakirti_buddhist",
+      "position": "Cognition can be reflexively structured without requiring a permanent or universal subject. Selfhood is constructed through cognitive operations and exclusion, not discovered as an ultimate owner.",
+      "proponent": "Dharmakirti",
+      "source_ids": [
+        "content/source-metaphysics/q-reflexivity-intrinsic-or-constructed.argument.json"
+      ],
+      "hard_to_vary_core": [
+        "No enduring self-substance is required for cognition to function.",
+        "Recognition and identity can be explained through structured causal/cognitive relations.",
+        "Apoha and arthakriya shift the burden from metaphysical essence to functional discrimination."
+      ],
+      "current_problems": [
+        "It must explain immediate manifestness without treating it as a mere abstraction.",
+        "It must avoid collapsing reflexivity into eliminativism about experience.",
+        "It must explain why cognition appears self-present, not only successful."
+      ],
+      "falsifiers": [
+        "A proof that recognition logically requires intrinsic self-manifestation rather than conditioned cognitive structure."
+      ],
+      "status": "live"
+    },
+    {
+      "candidate_id": "cand:nanavira-structural-reflexivity",
+      "name": "Structural reflexivity without hidden substance",
+      "tradition": "nanavira_phenomenology",
+      "position": "Experience can include its own occurrence through recursive structure. Identity is preserved through transformation without positing an owner-substance or universal subject.",
+      "proponent": "Nanavira Thera",
+      "source_ids": [
+        "so:nanavira-fundamental-structure",
+        "content/information-packets/nanavira-fundamental-structure-claims.json",
+        "content/information-packets/delta-nanavira-gated.json"
+      ],
+      "hard_to_vary_core": [
+        "Reflexivity is a structural capacity of experience.",
+        "Self-identity can arise from invariance across transformations.",
+        "The owner of reflexivity need not be reified."
+      ],
+      "current_problems": [
+        "Structural reflexivity may describe the form of experience without explaining manifestness itself.",
+        "The account is local and phenomenological, not a full ontology.",
+        "It may be absorbed by Abhinavagupta as finite vimarsa under limitation."
+      ],
+      "falsifiers": [
+        "Show that reflexive experience necessarily introduces a second-order observer that distorts or cannot preserve the original structure.",
+        "Show that structural reflexivity necessarily presupposes intrinsic manifestness."
+      ],
+      "status": "live"
+    },
+    {
+      "candidate_id": "cand:higher-order-self-model",
+      "name": "Higher-order/self-model construction",
+      "tradition": "contemporary_philosophy_neuroscience",
+      "position": "Reflexivity is produced by higher-order representation or self-modeling operations. Self-presence is a functional/cognitive achievement, not an intrinsic feature of all experience.",
+      "proponent": "Contemporary higher-order and self-model theories",
+      "source_ids": [
+        "content/source-metaphysics/q-reflexivity-intrinsic-or-constructed.argument.json"
+      ],
+      "hard_to_vary_core": [
+        "Reflexivity requires representational architecture.",
+        "Changes to self-model mechanisms should alter reflexive awareness.",
+        "No metaphysical self-manifestation is required."
+      ],
+      "current_problems": [
+        "It may explain report and self-modeling while leaving phenomenal presence underexplained.",
+        "It must avoid redefining manifestness as merely access, report, or representation.",
+        "No-report and minimal phenomenal experience cases place pressure on report-centric versions."
+      ],
+      "falsifiers": [
+        "Reliable evidence of awareness without any higher-order/self-model operation, with clear controls against report and memory confounds."
+      ],
+      "status": "live"
+    }
+  ],
+  "state_of_play": {
+    "summary": "Structural reflexivity is now the strongest local result. Nanavira gives it a clear argument pattern: contrastive identity, difference as operation, invariance under transformation, recursive structure, and level-relative endurance.",
+    "what_survives": "All four candidates remain live. Nanavira is strengthened as a local structural account. Abhinavagupta remains live where rivals fail to explain manifestness. Dharmakirti remains live as a no-self account of structured cognition. Higher-order theories remain live for mechanistic modeling.",
+    "what_is_weakened": "The move from local reflexivity to universal consciousness is weakened. The bridge between Nanavira difference and Dharmakirti apoha is weakened as an identity claim and retained only as an overlap/bridge candidate. Purely structural accounts remain pressured by the manifestness crux.",
+    "what_would_change_our_mind": "A structural account that explains manifestness without presupposing it would weaken Abhinavagupta. A proof that every structural or higher-order account presupposes manifestness would strengthen Abhinavagupta. Formal bridge probes could upgrade or downgrade the Nanavira-Dharmakirti overlap.",
+    "open_cruxes": [
+      "Does recognition require intrinsic self-manifestation?",
+      "Can constructed or structural reflexivity avoid presupposing manifestness?",
+      "Does local reflexivity license universal consciousness?",
+      "Does no-self defeat reflexivity itself, or only the owner-substance interpretation?"
+    ],
+    "next_tests": [
+      "Produce a five-member Nyaya reconstruction of Abhinavagupta's argument from recognition to vimarsa.",
+      "Produce a Dharmakirti counter-reconstruction using arthakriya and apoha.",
+      "Formalize NanaviraDifferenceDetermines and DharmakirtiApohaDetermines as scoped NNExpr/Lean candidates.",
+      "Run bridge probes and negative controls before upgrading OVERLAPS to BRIDGES.",
+      "Use the new gated ingestion path for all future reflexivity claims before any posterior update."
+    ],
+    "implications": [
+      {
+        "condition": "If local reflexivity survives but universalization fails",
+        "consequence": "Consciousness-first branches must be narrowed to manifestness-first claims rather than automatic cosmic idealism."
+      },
+      {
+        "condition": "If structural reflexivity explains recognition without residue",
+        "consequence": "D3 intrinsic phenomenality weakens and higher-order/conditioned accounts gain force."
+      },
+      {
+        "condition": "If all constructed accounts presuppose manifestness",
+        "consequence": "D3 strengthens without immediately settling D1 or the global branch question."
+      }
+    ]
+  },
+  "provenance": {
+    "parent_ros": [],
+    "parent_dossier": "content/source-metaphysics/q-reflexivity-intrinsic-or-constructed.argument.json",
+    "created_by": "codex",
+    "last_updated": "2026-07-26T14:40:00Z",
+    "supporting_artifacts": [
+      "content/source-metaphysics/q-reflexivity-intrinsic-or-constructed.nanavira-map.json",
+      "content/information-packets/nanavira-fundamental-structure-claims.json",
+      "content/information-packets/nanavira-fundamental-structure-gate-report.json",
+      "content/information-packets/delta-nanavira-gated.json"
+    ]
+  }
+}

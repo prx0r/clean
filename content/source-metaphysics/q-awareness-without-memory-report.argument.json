@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "artifact_type": "argument_fabric_dossier",
+  "question_id": "q:awareness-without-memory-report",
+  "question": "Can awareness be present without memory, report or attention?",
+  "why_it_matters": "This question isolates the minimal conditions of manifestness. If awareness can persist without memory, report or attention, then consciousness is more elementary than cognitive access and cannot be reduced to access or metacognition. This directly supports the phenomenal consciousness concept and challenges higher-order and global workspace theories.",
+  "status": "live_crux",
+  "resolution_level": "phenomenological",
+  "parent_questions": [
+    "q:prakasa-definition",
+    "q:consciousness-fundamental"
+  ],
+  "candidate_explanations": [
+    {
+      "candidate_id": "cand:phenomenal-consciousness-minimal",
+      "tradition_scope": "block_chalmers_phenomenal",
+      "name": "Phenomenal consciousness without access",
+      "best_case": "Phenomenal consciousness is distinct from access consciousness and can occur without memory encoding, verbal report, or attention. Evidence includes: inattentional blindness paradigms where unreported stimuli may still be experienced briefly, fringe consciousness, and anaesthesia awareness with amnesia. The presence of experience is independent of cognitive access.",
+      "hard_to_vary_core": [
+        "Subliminal and fringe consciousness studies show that experience can occur without report or attention.",
+        "The distinction between phenomenal and access consciousness (Block) is supported by cases where subjects report having experienced something but cannot recall or report what.",
+        "Non-retentive awareness in meditation and absorption states suggests awareness can be present without memory encoding."
+      ],
+      "current_problems": [
+        "All evidence for awareness without report relies on eventual report, creating a verification problem.",
+        "Fringe consciousness still involves attention, even if diffuse; defining awareness without any attention is challenging.",
+        "The phenomenal/access distinction is contested; some theorists argue phenomenal consciousness without access is conceptually incoherent."
+      ],
+      "falsifiers": [
+        {
+          "type": "empirical",
+          "condition": "A demonstration using real-time neural measures that no awareness is present when report, memory, and attention are absent, with controls against confounds.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    },
+    {
+      "candidate_id": "cand:awareness-requires-access",
+      "tradition_scope": "global_workspace_higher_order",
+      "name": "Awareness requires access or higher-order representation",
+      "best_case": "Awareness is constituted by access: whatever is experienced is available for report, reasoning, and action control. The supposed cases of awareness without report are either confabulated or involve brief access that is rapidly forgotten. Global workspace theory and higher-order theories maintain that awareness without access is incoherent.",
+      "hard_to_vary_core": [
+        "The content of awareness is precisely what is available to the cognitive system for flexible use.",
+        "If no report, memory, or attention is present, there is no evidence for awareness and no functional role for it.",
+        "Inattentional blindness shows that unreported stimuli are not experienced, not that they were experienced and forgotten."
+      ],
+      "current_problems": [
+        "The access account must explain anaesthesia awareness with retrograde amnesia: patients who later report awareness but cannot recall at the time.",
+        "It must account for the phenomenological sense that experience is richer than what can be reported.",
+        "The equation of awareness with access may be a methodological convenience rather than a metaphysical truth."
+      ],
+      "falsifiers": [
+        {
+          "type": "empirical",
+          "condition": "A case of awareness confirmed by independent neural signature (e.g. face-specific N170, coherent cortical dynamics) that occurs without any subsequent recall, report, or attentional enhancement.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    },
+    {
+      "candidate_id": "cand:trika-nonintentional-awareness",
+      "tradition_scope": "trika_meditative",
+      "name": "Non-intentional awareness without cognitive operations",
+      "best_case": "Awareness in its pure form (prakāśa) is without object, memory, report, or attention. It is self-luminous contentless awareness, present in deep sleep, samādhi, and between thoughts. Cognitive operations (attention, memory, report) are modifications of this awareness, not its conditions. This awareness is the ground of all cognitive acts but is not itself an act.",
+      "hard_to_vary_core": [
+        "Pure awareness is contentless and non-intentional; it does not require an object for its manifestation.",
+        "Meditative traditions describe states of wakeful awareness without cognitive content, memory, or discursive thought.",
+        "Cognitive operations arise from and subside into this awareness; the awareness persists through their presence and absence."
+      ],
+      "current_problems": [
+        "The report of contentless awareness is paradoxical: how is a state known if it has no content and is not reported?",
+        "Empirical identification of contentless awareness is extremely difficult; most studies rely on retrospective report.",
+        "Critics argue that what meditators call 'contentless awareness' is actually subtle attentional focus on a minimal object (e.g. the breath, the body)."
+      ],
+      "falsifiers": [
+        {
+          "type": "empirical",
+          "condition": "A demonstration that all reported cases of contentless awareness involve measurable neural activity indicative of object-directed attention or working memory, with no periods of genuinely contentless neural dynamics.",
+          "status": "untested"
+        }
+      ],
+      "initial_status": "live"
+    }
+  ],
+  "cruxes": [
+    {
+      "crux_id": "crux:verification-without-report",
+      "question": "Can we verify awareness without relying on eventual report or memory?",
+      "candidate_pressure": {
+        "cand:phenomenal-consciousness-minimal": "neural signatures can serve as independent markers",
+        "cand:awareness-requires-access": "no verification without report = no evidence",
+        "cand:trika-nonintentional-awareness": "self-evident to the subject but requires training to recognise"
+      }
+    },
+    {
+      "crux_id": "crux:inattentional-blindness-interpretation",
+      "question": "Do inattentional blindness experiments show unreported = unexperienced, or briefly experienced then forgotten?",
+      "candidate_pressure": {
+        "cand:phenomenal-consciousness-minimal": "brief experience then forgotten",
+        "cand:awareness-requires-access": "no experience at all",
+        "cand:trika-nonintentional-awareness": "different kind of pre-attentive awareness"
+      }
+    },
+    {
+      "crux_id": "crux:deep-sleep-awareness",
+      "question": "Is there awareness in dreamless sleep, and can it be empirically detected?",
+      "candidate_pressure": {
+        "cand:phenomenal-consciousness-minimal": "possibly, but methodologically challenging",
+        "cand:awareness-requires-access": "no, sleep is unconscious",
+        "cand:trika-nonintentional-awareness": "core case for contentless awareness"
+      }
+    }
+  ],
+  "initial_state_of_play": {
+    "current_best_answer": "The evidence for awareness without report/attention is suggestive but not decisive. Inattentional blindness studies are contested. Anaesthesia awareness with amnesia provides the strongest case but is rare. The Trika claim of contentless awareness faces severe verification challenges but has a rich phenomenological tradition. The phenomenal/access distinction remains contested.",
+    "confidence_language": "empirically contested, philosophically central",
+    "solved_at_levels": [
+      "none"
+    ],
+    "open_cruxes": [
+      "crux:verification-without-report",
+      "crux:inattentional-blindness-interpretation",
+      "crux:deep-sleep-awareness"
+    ],
+    "next_tests": [
+      "Design an experiment using real-time neural markers of awareness (e.g. global ignition, P3b) during inattentional blindness with post-cueing to distinguish brief experience from no experience.",
+      "Systematically review deep sleep awareness studies with clear criteria distinguishing contentless awareness from mere dream recall.",
+      "Develop a neural signature for contentless awareness by subtracting object-directed from resting state dynamics in experienced meditators."
+    ],
+    "implications": [
+      "If phenomenal consciousness without access is confirmed, higher-order and global workspace theories face a serious challenge, favouring first-order and non-representational accounts.",
+      "If awareness requires access, the phenomenal/access distinction collapses, strengthening access-based theories but weakening the case for consciousness as fundamental.",
+      "If Trika non-intentional awareness is confirmed, it provides direct phenomenological evidence for consciousness as a substrate rather than a product of cognition."
+    ]
+  }
+}
