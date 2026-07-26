@@ -1,0 +1,46 @@
+{
+  "packet_id": "ip:arkani-hamed-amplituhedron-2013",
+  "schema_version": 1,
+  "source": {
+    "title": "The Amplituhedron",
+    "authors": [
+      "Nima Arkani-Hamed",
+      "Jaroslav Trnka"
+    ],
+    "arxiv_id": "1312.2007",
+    "year": 2013,
+    "type": "paper"
+  },
+  "extracted_by": "test",
+  "extracted_at": "2026-07-26T12:00:00Z",
+  "version": "1.0.0",
+  "status": "draft",
+  "claims": [
+    {
+      "claim_id": "cl:amplituhedron-spacetime-not-fundamental",
+      "claim_text": "The amplituhedron shows that locality and unitarity are emergent properties of scattering amplitudes, not fundamental axioms of spacetime.",
+      "features": [
+        "F8"
+      ],
+      "question_id": "q:consciousness-fundamental",
+      "log_bayes_factor": 0.45,
+      "w_rel": 0.75,
+      "w_map": 0.6,
+      "w_aux": 0.7,
+      "paradigm": "high_energy_physics",
+      "falsifier": {
+        "type": "formal",
+        "condition": "A derivation showing the amplituhedron reduces to standard QFT without requiring non-spacetime ontology.",
+        "status": "untested"
+      },
+      "evidence_role": "primary",
+      "source_type": "ro",
+      "source_id": "ro:amplituhedron"
+    }
+  ],
+  "review": {
+    "reviewed_by": null,
+    "reviewed_at": null,
+    "corrections": []
+  }
+}
