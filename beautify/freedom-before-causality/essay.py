@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Concept source retained beside its generative-film shader adaptation.
 """
 FREEDOM COMES BEFORE CAUSALITY
 Abhinavagupta on Svātantrya, Spanda, and the Birth of Law
