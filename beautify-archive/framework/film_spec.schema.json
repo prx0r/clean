@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prx0r.github.io/clean/film_spec.schema.json",
+  "title": "Signature GLSL Film Spec",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "pack",
+    "source",
+    "thesis",
+    "continuity_material",
+    "color_roles",
+    "arc",
+    "scenes"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "pack": {"type": "string", "minLength": 3},
+    "source": {"type": "string", "minLength": 3},
+    "thesis": {"type": "string", "minLength": 20},
+    "continuity_material": {
+      "type": "object",
+      "required": ["name", "initial", "stress", "integrated"],
+      "properties": {
+        "name": {"type": "string"},
+        "initial": {"type": "string"},
+        "stress": {"type": "string"},
+        "integrated": {"type": "string"}
+      }
+    },
+    "color_roles": {
+      "type": "object",
+      "minProperties": 3,
+      "additionalProperties": {"type": "string"}
+    },
+    "arc": {
+      "type": "object",
+      "required": ["latent", "formation", "stress", "revision", "integration"],
+      "additionalProperties": {"type": "string"}
+    },
+    "scenes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "shader",
+          "source_visual",
+          "phase",
+          "role",
+          "claim",
+          "verb",
+          "topology",
+          "composition",
+          "material_state",
+          "camera",
+          "u_semantics",
+          "t_semantics",
+          "audio_volume_semantics",
+          "audio_beat_semantics",
+          "glance_thesis",
+          "rationale",
+          "risk",
+          "review_target"
+        ],
+        "properties": {
+          "shader": {"pattern": "^vis_[a-z0-9_]+\\.glsl$"},
+          "source_visual": {"type": "string", "minLength": 3},
+          "phase": {
+            "enum": ["latent", "formation", "stress", "revision", "integration"]
+          },
+          "role": {
+            "enum": [
+              "establish", "perturb", "disclose", "model", "contrast",
+              "deepen", "reverse", "test", "caution", "integrate", "coda"
+            ]
+          },
+          "claim": {"type": "string", "minLength": 8},
+          "verb": {
+            "enum": [
+              "emerge", "gather", "split", "exclude", "bind", "transmit",
+              "remember", "predict", "repair", "compare", "dissolve",
+              "recognize"
+            ]
+          },
+          "topology": {"type": "string", "minLength": 3},
+          "composition": {"type": "string", "minLength": 3},
+          "material_state": {"type": "string", "minLength": 3},
+          "camera": {"type": "string", "minLength": 3},
+          "u_semantics": {"type": "string", "minLength": 8},
+          "t_semantics": {"type": "string", "minLength": 8},
+          "audio_volume_semantics": {"type": "string", "minLength": 8},
+          "audio_beat_semantics": {"type": "string", "minLength": 8},
+          "glance_thesis": {"type": "string", "minLength": 8},
+          "rationale": {"type": "string", "minLength": 12},
+          "risk": {"type": "string", "minLength": 3},
+          "review_target": {"type": "string", "minLength": 8}
+        }
+      }
+    }
+  }
+}
