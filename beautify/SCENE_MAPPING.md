@@ -113,3 +113,36 @@ edges, soft paper currents and half-remembered forms that merge as they move.
 | `universe_dreamed` | `04_dreams_create_worlds/vis_universe_dreamed.glsl` | `vis_universe_dreamed` |
 | `transition` | `04_dreams_create_worlds/vis_waking_to_dream.glsl` | `vis_waking_to_dream` |
 | `final` | `04_dreams_create_worlds/vis_final.glsl` | `vis_final` |
+
+## Pack 05 · Time Is Produced by Forgetting
+
+Art direction: abstract temporal geometry — obsidian depth, gold and cyan
+chronostructures, recursive clocks, discontinuous planes and dissolving ink
+at the limits of sequence.
+
+| Visual key | GLSL shader | PIL semantic reference |
+|---|---|---|
+| `all` | `05_time_is_produced_by_forgetting/vis_all_at_once.glsl` | `vis_all_at_once` |
+| `exclude` | `05_time_is_produced_by_forgetting/vis_exclusion.glsl` | `vis_exclusion` |
+| `sequence` | `05_time_is_produced_by_forgetting/vis_sequence_birth.glsl` | `vis_sequence_birth` |
+| `now` | `05_time_is_produced_by_forgetting/vis_now_slice.glsl` | `vis_now_slice` |
+| `past` | `05_time_is_produced_by_forgetting/vis_past_trace.glsl` | `vis_past_trace` |
+| `future` | `05_time_is_produced_by_forgetting/vis_future_open.glsl` | `vis_future_open` |
+| `desire` | `05_time_is_produced_by_forgetting/vis_desire_clock.glsl` | `vis_desire_clock` |
+| `fear` | `05_time_is_produced_by_forgetting/vis_fear_future.glsl` | `vis_fear_future` |
+| `boredom` | `05_time_is_produced_by_forgetting/vis_boredom.glsl` | `vis_boredom` |
+| `flow` | `05_time_is_produced_by_forgetting/vis_flow_time.glsl` | `vis_flow_time` |
+| `identity` | `05_time_is_produced_by_forgetting/vis_memory_identity.glsl` | `vis_memory_identity` |
+| `tense` | `05_time_is_produced_by_forgetting/vis_language_tense.glsl` | `vis_language_tense` |
+| `clock` | `05_time_is_produced_by_forgetting/vis_clock_vs_lived.glsl` | `vis_clock_vs_lived` |
+| `kala` | `05_time_is_produced_by_forgetting/vis_kanchuka_kala.glsl` | `vis_kanchuka_kala` |
+| `krama` | `05_time_is_produced_by_forgetting/vis_krama.glsl` | `vis_krama` |
+| `akrama` | `05_time_is_produced_by_forgetting/vis_akrama.glsl` | `vis_akrama` |
+| `flash` | `05_time_is_produced_by_forgetting/vis_flash.glsl` | `vis_flash` |
+| `music` | `05_time_is_produced_by_forgetting/vis_music.glsl` | `vis_music` |
+| `death` | `05_time_is_produced_by_forgetting/vis_death_boundary.glsl` | `vis_death_boundary` |
+| `meditation` | `05_time_is_produced_by_forgetting/vis_meditation_gap.glsl` | `vis_meditation_gap` |
+| `recognition` | `05_time_is_produced_by_forgetting/vis_recognition.glsl` | `vis_recognition` |
+| `bridge` | `05_time_is_produced_by_forgetting/vis_science_bridge.glsl` | `vis_science_bridge` |
+| `caution` | `05_time_is_produced_by_forgetting/vis_caution.glsl` | `vis_caution` |
+| `final` | `05_time_is_produced_by_forgetting/vis_final.glsl` | `vis_final` |
