@@ -58,3 +58,28 @@ breathing membranes, refracted cognition and gold intention.
 | `healing` | `02_beliefs_create_biology/vis_healing_parity.glsl` | `vis_healing_parity` |
 | `primacy` | `02_beliefs_create_biology/vis_consciousness_before_matter.glsl` | `vis_consciousness_before_matter` |
 | `final` | `02_beliefs_create_biology/vis_final_synthesis.glsl` | `vis_final_synthesis` |
+
+## Pack 03 · Voice Inside the Chest
+
+Art direction: abyssal bioluminescent anatomy — peristaltic ribbons, neural
+plankton, vagal signal tides and serotonin amber in a black-teal body ocean.
+
+| Visual key | GLSL shader | PIL semantic reference |
+|---|---|---|
+| `architecture` | `03_voice_inside_chest/vis_gut_architecture.glsl` | `vis_gut_architecture` |
+| `neural_crest` | `03_voice_inside_chest/vis_neural_crest_migration.glsl` | `vis_neural_crest_migration` |
+| `reflex` | `03_voice_inside_chest/vis_independent_reflex.glsl` | `vis_independent_reflex` |
+| `serotonin` | `03_voice_inside_chest/vis_serotonin_factory.glsl` | `vis_serotonin_factory` |
+| `vagus` | `03_voice_inside_chest/vis_vagus_highway.glsl` | `vis_vagus_highway` |
+| `microbiome` | `03_voice_inside_chest/vis_microbiome_dialogue.glsl` | `vis_microbiome_dialogue` |
+| `gut_feeling` | `03_voice_inside_chest/vis_gut_feeling.glsl` | `vis_gut_feeling` |
+| `glia` | `03_voice_inside_chest/vis_enteric_glia.glsl` | `vis_enteric_glia` |
+| `stress` | `03_voice_inside_chest/vis_stress_response.glsl` | `vis_stress_response` |
+| `neurogenesis` | `03_voice_inside_chest/vis_neurogenesis.glsl` | `vis_neurogenesis` |
+| `heart` | `03_voice_inside_chest/vis_heart_center.glsl` | `vis_heart_center` |
+| `dual_brain` | `03_voice_inside_chest/vis_dual_brain.glsl` | `vis_dual_brain` |
+| `synthesis` | `03_voice_inside_chest/vis_synthesis.glsl` | `vis_synthesis` |
+| `intelligence` | `03_voice_inside_chest/vis_bodily_intelligence.glsl` | `vis_bodily_intelligence` |
+| `resilience` | `03_voice_inside_chest/vis_resilience.glsl` | `vis_resilience` |
+| `evidence` | `03_voice_inside_chest/vis_human_implication.glsl` | `vis_human_implication` |
+| `final` | `03_voice_inside_chest/vis_final.glsl` | `vis_final` |
