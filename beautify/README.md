@@ -88,3 +88,21 @@ compile through the shared harness.
 | a-temple-teaches-space-how-to-become-a-body | 21 | Impossible sacred architecture and volumetric light |
 
 See `QUEUE-BATCH-1-ART-DIRECTIONS.md` for the creative and technical audit.
+
+### Queue Batch 2 (5 essays)
+
+This batch was developed under a stricter communication-first review: each scene
+must have a readable thesis, causal layout, emotional register, and meaningful
+transformation while remaining part of a distinct visual world.
+
+| Essay | Visual Functions | GLSL Style |
+|-------|------------------|------------|
+| an-image-becomes-imaginal-when-it-begins-to-answer-you | 18 | Responsive enamel icon-world |
+| attention-creates-the-finite-self | 26 | Prismatic attentional aperture |
+| body-electrical-society | 25 | Luminous bioelectric tissue |
+| body-knows-the-shape | 23 | Porcelain morphogenetic landscape |
+| cells-that-solve-problems | 30 | Kinetic multiscale navigation atlas |
+
+All 122 scene shaders were rendered as real WebGL frames for visual review and
+compiled through the shared harness. See
+`QUEUE-BATCH-2-ART-DIRECTIONS.md` for the visual audit and design rationale.
