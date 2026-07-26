@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Concept source retained beside its generative-film shader adaptation.
 """
 THE GODS ARE WHAT CONSCIOUSNESS LOOKS LIKE UNDER PRESSURE
 Abhinavagupta on Terror, Desire, Possession, and the Birth of Divine Forms
