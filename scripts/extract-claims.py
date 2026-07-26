@@ -84,13 +84,13 @@ def extract_claims_via_llm(
 ) -> tuple:
     """Send paper to LLM, get back structured claims.
 
-    Returns (claims_list, packet_id, raw_response).
+    Returns (claims_list, packet_id, raw_response, extraction_meta).
     """
-    prompt = f"""You are a claim extraction system for a truth map. Your job is to read a scientific paper and extract structured claims that bear on specific philosophical/scientific questions tracked by the truth map.
+    prompt = f"""You are a conservative claim-extraction reviewer for a truth-map evidence pipeline.
 
-## Truth Map Discriminators (D1-D5)
+You are given paper metadata and an abstract. Unless the abstract explicitly states a formal theorem, experiment, or central result, treat the output as ABSTRACT-ONLY candidate extraction. Do not imply that you read the full paper.
 
-These are binary questions whose answers eliminate or support entire metaphysical branches:
+## Truth Map Discriminators
 
 D1 — Physical Supervenience: Does every fact about information content, semantic reference, and observer identity supervene on the complete physical causal state and its lawful evolution?
 D2 — Irreducible Macro Causation: Are there macro-scale or process-level causal powers that are not merely compressed descriptions of microphysical transition dynamics?
@@ -98,9 +98,7 @@ D3 — Intrinsic Phenomenality: Must the enabling condition for observer/object 
 D4 — Pattern Space Reality: Do mathematical or computational patterns have truth-making status independent of any particular physical instantiation or observer convention?
 D5 — Substrate-Discontinuous Identity: Can the identity-relevant organization of an observer persist across destruction, replacement, or discontinuity of the original biological substrate?
 
-## Truth Map Features (F1-F8)
-
-These are lower-level evidence dimensions:
+## Lower-Level Features
 
 F1 — consciousness_fundamental
 F2 — pattern_space_real
@@ -111,31 +109,62 @@ F6 — teleology_real
 F7 — cross_life_continuity
 F8 — physical_law_emergent
 
-## Instructions
+## Extraction Policy
 
-Read the paper title, authors, and abstract below. Extract claims that bear on the truth map.
+Classify the whole paper first:
+- "direct": the abstract directly tests or proves something bearing on D1-D5.
+- "indirect": the abstract bears on F1-F8 or background assumptions, but not directly on D1-D5.
+- "auxiliary": useful background only; weak feature claims are allowed, discriminator claims are not.
+- "unrelated": no truth-map claims. Return an empty claims array.
 
-For each claim, output a JSON object with:
-- claim_id: "cl:{paper-slug}-{number}"
-- claim_text: The specific claim from the paper that bears on the truth map
-- targets: list of {{"target_id": "D1-D5 or F1-F8", "target_type": "discriminator" or "feature"}}
-- log_bayes_factor: -10 to +10. How much this claim moves the posterior. +1 = moderately supports, +3 = strongly supports, -1 = moderately undermines.
-- w_rel: 0-1. How directly the evidence bears on the target.
-- w_map: 0-1. How precisely the evidence maps to the claim.
-- w_aux: 0-1. Source reliability (arXiv preprint = 0.5, peer-reviewed = 0.7, landmark = 0.85).
-- paradigm: Which paradigm produced this claim (e.g. "high_energy_physics", "neuroscience", "phenomenology", "trika")
-- falsifier: {{"type": "empirical|formal|textual", "condition": "what would disprove this", "status": "untested"}}
-- evidence_role: "primary" or "interpretation"
-- reasoning: 2-4 sentences explaining WHY this claim bears on the targets and why you assigned these weights.
+Targeting rules:
+- Use a D1-D5 target only when the paper directly bears on the exact binary discriminator.
+- Use F1-F8 targets for lower-level evidence that may later map upward.
+- Do not target B1-B6 directly.
+- A quantum gravity paper may target D4 or F8; it does not target D3/B4 unless it explicitly bears on consciousness or intrinsicality.
+- A neuroscience paper may target D3 only if it bears on intrinsic phenomenality, reportability, substrate identity, or physical sufficiency; otherwise use F1 or auxiliary.
 
-IMPORTANT RULES:
-- Only extract claims that DIRECTLY bear on a discriminator or feature. If the paper is completely unrelated to the truth map, output an empty claims list.
-- Do not overclaim. A paper about quantum gravity does not automatically prove or disprove consciousness-first metaphysics.
-- Be conservative with log_bayes_factor. Most papers provide modest evidence (±0.2 to ±0.8), not decisive proof.
-- Every claim must have a falsifier — what would disprove it.
-- The reasoning field is critical. It's how reviewers validate your weight estimates.
+Weight rules:
+- log_bayes_factor is signed evidence for the target's YES direction. Negative values support the NO direction.
+- Direct discriminator test from abstract: cap abs(log_bayes_factor) at 1.2.
+- Direct feature evidence from abstract: cap abs(log_bayes_factor) at 0.8.
+- Indirect or auxiliary evidence: cap abs(log_bayes_factor) at 0.35.
+- Pure analogy/speculation: cap abs(log_bayes_factor) at 0.15.
+- Use abs(log_bayes_factor) > 1.2 only if the input explicitly reports a decisive formal theorem, no-go result, or replicated direct experiment.
+- w_rel = directness to the target, not importance of the paper.
+- w_map = precision of conceptual mapping; penalize analogy, metaphor, or domain transfer.
+- w_aux = source reliability from this input only. arXiv abstract/preprint normally 0.45-0.60; peer-reviewed or landmark 0.65-0.85; do not use 0.90+ without clear reason.
 
-Output ONLY a JSON array of claim objects. No markdown, no preamble.
+Overclaiming checks:
+- If a claim would require reading methods/results not present in the abstract, either omit it or set evidence_role = "candidate".
+- If the paper is about a formalism in one restricted domain, state the domain limit in reasoning.
+- If the paper supports a branch only after philosophical interpretation, do not emit a discriminator claim; emit a weaker feature claim or auxiliary note.
+- Every reasoning field must include: (1) target fit, (2) key limitation/confound, (3) why the weight is not stronger.
+
+Output ONLY this JSON object, with no markdown:
+
+{{
+  "paper_relevance": "direct|indirect|auxiliary|unrelated",
+  "relevance_reasoning": "1-3 sentences explaining the classification.",
+  "claims": [
+    {{
+      "claim_id": "cl:{slugify(title)}-001",
+      "claim_text": "Specific claim supported by the abstract.",
+      "targets": [
+        {{"target_id": "D1|D2|D3|D4|D5|F1|F2|F3|F4|F5|F6|F7|F8", "target_type": "discriminator|feature"}}
+      ],
+      "log_bayes_factor": 0.0,
+      "w_rel": 0.0,
+      "w_map": 0.0,
+      "w_aux": 0.0,
+      "paradigm": "high_energy_physics|neuroscience|phenomenology|information_theory|complex_systems|philosophy|other",
+      "falsifier": {{"type": "empirical|formal|textual|operational", "condition": "Concrete condition that would defeat or materially weaken the claim.", "status": "untested"}},
+      "evidence_role": "primary|candidate|interpretation|auxiliary",
+      "reasoning": "2-4 sentences with target fit, limitation/confound, and conservative weight rationale."
+    }}
+  ],
+  "review_flags": ["Any concerns reviewers should inspect before ingestion."]
+}}
 
 Paper title: {title}
 Paper authors: {', '.join(authors)}
@@ -164,16 +193,33 @@ Abstract: {abstract}
     raw = re.sub(r'\s*```$', '', raw)
     raw = raw.strip()
 
+    extraction_meta = {
+        "paper_relevance": "unknown",
+        "relevance_reasoning": "",
+        "review_flags": [],
+    }
+
     try:
-        claims = json.loads(raw)
-        if not isinstance(claims, list):
-            claims = [claims]
+        parsed = json.loads(raw)
+        if isinstance(parsed, dict):
+            extraction_meta = {
+                "paper_relevance": parsed.get("paper_relevance", "unknown"),
+                "relevance_reasoning": parsed.get("relevance_reasoning", ""),
+                "review_flags": parsed.get("review_flags", []),
+            }
+            claims = parsed.get("claims", [])
+            if not isinstance(claims, list):
+                claims = []
+        elif isinstance(parsed, list):
+            claims = parsed
+        else:
+            claims = []
     except json.JSONDecodeError:
         print(f"WARNING: LLM returned non-JSON. Raw:\n{raw[:500]}")
         claims = []
 
     packet_slug = slugify(f"{authors[0].split()[-1].lower() if authors else 'unknown'}-{title[:60]}")
-    return claims, packet_slug, raw
+    return claims, packet_slug, raw, extraction_meta
 
 
 def build_packet(
@@ -183,6 +229,7 @@ def build_packet(
     arxiv_id: str,
     year: str,
     packet_id: str,
+    extraction_meta: Optional[dict] = None,
 ) -> dict:
     return {
         "packet_id": f"ip:{packet_id}",
@@ -198,6 +245,7 @@ def build_packet(
         "extracted_at": datetime.now(timezone.utc).isoformat(),
         "version": "1.0.0",
         "status": "draft",
+        "extraction": extraction_meta or {},
         "claims": claims,
         "review": {
             "reviewed_by": None,
@@ -236,7 +284,7 @@ def main():
     print(f"Abstract: {abstract[:200]}...")
     print("Extracting claims via LLM...")
 
-    claims, packet_slug, raw = extract_claims_via_llm(
+    claims, packet_slug, raw, extraction_meta = extract_claims_via_llm(
         title=meta["title"],
         authors=meta["authors"],
         abstract=abstract,
@@ -253,6 +301,7 @@ def main():
         arxiv_id=args.arxiv,
         year=meta["year"],
         packet_id=packet_slug,
+        extraction_meta=extraction_meta,
     )
 
     if args.output:

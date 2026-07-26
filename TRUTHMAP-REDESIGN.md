@@ -263,7 +263,130 @@ These are not in the shortest tree but should be available for expected-informat
 
 ---
 
-## 6. Integration With Existing Engine
+## 6. Calibrated Branch Effect Matrix
+
+Branch multipliers are not evidence weights. They encode how a discriminator answer changes branch viability after the discriminator itself has been updated by claim evidence. Use these bands:
+
+| Band | Multiplier | Meaning |
+|------|------------|---------|
+| Near-mask elimination | 0.05-0.15 | Answer defeats a core branch commitment |
+| Severe penalty | 0.20-0.35 | Branch survives only by major reinterpretation |
+| Strain | 0.45-0.80 | Branch remains live but loses explanatory fit |
+| Neutral-compatible | 0.85-1.05 | Answer is compatible or only weakly relevant |
+| Survivor boost | 1.10-1.50 | Answer directly supports branch commitments |
+
+During ordinary uncertainty, use the expected multiplier. Once a discriminator crosses its answer threshold, use the corresponding answer row directly. Do not hard-set branches to zero unless a formal contradiction is proven; even eliminated branches stay at a small audit-visible floor.
+
+### Matrix
+
+```json
+{
+  "D1_physical_supervenience": {
+    "yes": {"B1": 0.45, "B2": 1.35, "B3": 0.15, "B4": 0.10, "B5": 0.85, "B6": 0.10},
+    "no":  {"B1": 1.05, "B2": 0.10, "B3": 1.25, "B4": 1.25, "B5": 1.15, "B6": 1.20}
+  },
+  "D2_irreducible_macro_causation": {
+    "yes": {"B1": 0.80, "B2": 0.20, "B3": 0.90, "B4": 1.05, "B5": 1.35, "B6": 1.00},
+    "no":  {"B1": 1.10, "B2": 1.25, "B3": 1.05, "B4": 0.80, "B5": 0.15, "B6": 0.75}
+  },
+  "D3_intrinsic_phenomenality": {
+    "yes": {"B1": 0.20, "B2": 0.10, "B3": 0.35, "B4": 1.45, "B5": 0.45, "B6": 0.80},
+    "no":  {"B1": 1.15, "B2": 1.20, "B3": 1.10, "B4": 0.05, "B5": 1.10, "B6": 0.90}
+  },
+  "D4_pattern_space_truthmaking": {
+    "yes": {"B1": 0.70, "B2": 0.25, "B3": 1.40, "B4": 0.85, "B5": 0.90, "B6": 1.15},
+    "no":  {"B1": 1.20, "B2": 1.25, "B3": 0.10, "B4": 1.05, "B5": 1.05, "B6": 0.25}
+  },
+  "D5_substrate_discontinuous_identity": {
+    "yes": {"B1": 0.80, "B2": 0.05, "B3": 1.15, "B4": 1.05, "B5": 0.85, "B6": 1.50},
+    "no":  {"B1": 1.10, "B2": 1.20, "B3": 0.80, "B4": 0.95, "B5": 1.05, "B6": 0.05}
+  }
+}
+```
+
+### Per-Answer Justification
+
+**D1 yes: physical supervenience holds.** B2 gets the strongest boost because this is its central commitment. B5 remains mostly compatible if process is treated as physically realized relational dynamics. B1 is strained because thin formal structure alone does not explain physical semantic/observer facts. B3, B4, and B6 are near-masked because independent pattern truth, intrinsic phenomenal S, and substrate-discontinuous identity all require more than physical supervenience.
+
+**D1 no: physical supervenience fails.** B2 is near-masked unless it becomes non-reductive structural physicalism. B3, B4, B5, and B6 are boosted because they all allow information, observer identity, process, or consciousness to outrun microphysical state description. B1 is only mildly boosted because non-supervenience requires a positive occupant of `S`, not just formal minimality.
+
+**D2 yes: irreducible macro/process causation holds.** B5 is strongly boosted because real process-level causal power is its core discriminator. B2 is severely penalized if it means microphysical sufficiency. B4 is mildly compatible because consciousness-first views can absorb causal emergence as appearance or manifestation. B1/B3 are strained because macro causation may be redescribed formally, but genuine intervention-level irreducibility is more than inert structure.
+
+**D2 no: macro/process causation reduces to microdynamics.** B2 is boosted; B5 is near-masked. B1/B3 are boosted because reductive formal or computational descriptions remain adequate. B4/B6 are mildly penalized because many consciousness-first and continuity mechanisms lean on irreducible organization, though they are not logically identical to process causation.
+
+**D3 yes: S must be intrinsically phenomenal/reflexive.** B4 gets the strongest boost. B1, B2, B3, and B5 are penalized because formal, physical, computational, and process accounts do not by themselves contain intrinsic manifestness. B6 is strained but not eliminated because cross-life continuity can be a mechanism inside a consciousness-first ontology.
+
+**D3 no: intrinsic phenomenality is not required.** B4 is near-masked. B1/B2/B3/B5 are boosted because third-person formal, physical, computational, or process structures can fill `S`. B6 is mildly strained because observer identity can still be pattern-based, but cross-life continuity loses its strongest consciousness-based support.
+
+**D4 yes: pattern-space has truth-making status beyond instantiation.** B3 is strongly boosted. B6 is boosted because substrate-discontinuous identity requires a real pattern carrier. B2 is severely penalized if it denies nonphysical truthmakers. B1 is strained because the answer goes beyond thin formal scaffolding into ontological pattern realism. B4/B5 remain compatible but not primary.
+
+**D4 no: pattern-space is not independently real.** B3 is near-masked and B6 is severely penalized. B2 is boosted because physical implementation carries truth-making. B1 is boosted because thin formalism does not need thick Platonic pattern ontology. B4/B5 remain compatible because they can ground patterns in consciousness or process rather than independent computation.
+
+**D5 yes: observer identity can persist across substrate discontinuity.** B6 is maximally boosted. B2 is near-masked because biological/physical substrate continuity fails as a necessary condition. B3 is boosted because pattern identity becomes plausible, though personal continuity is stronger than abstract pattern recurrence. B4 is compatible if continuity is manifestation within awareness. B1/B5 are strained because thin formalism and process metaphysics need additional identity machinery.
+
+**D5 no: observer identity cannot persist across substrate discontinuity.** B6 is near-masked. B2 is boosted because biological/physical continuity remains decisive. B1/B5 remain compatible. B3 is strained because abstract patterns may remain real without personal continuity. B4 is nearly neutral because nondual awareness can deny personal continuity while preserving universal awareness.
+
+### Falsifiable Science Anchors
+
+| Discriminator | Main scientific anchors |
+|---------------|-------------------------|
+| D1 | Landauer principle, quantum information, black-hole information, substrate-dependence of computation, physical closure of observer reports |
+| D2 | causal emergence, interventionist macro/micro causal models, IIT cause-effect power, downward-causation tests |
+| D3 | IIT intrinsicality/exclusion, report/no-report consciousness paradigms, illusionism, anesthesia/split-brain dissociations, perturbational complexity |
+| D4 | amplituhedron/positive geometry, holography, quantum gravity, computational universe/Ruliad claims, no-go arguments against mathematical Platonism |
+| D5 | gradual replacement/upload cases if operationalized, split-brain, dissociation, verified cross-life memory claims, IIT exclusion borders |
+
+---
+
+## 7. Feature-to-Discriminator Mapping
+
+Use a fixed v1 mapping table. Do not learn this mapping initially. Learned correction is allowed only after there are at least 100 reviewed information packets with human/Codex corrections. The structural mapping is part of the ontology design; learning should adjust calibration residuals, not decide what a feature means.
+
+Each claim can target features, discriminators, or both. If a claim targets only F1-F8, the ingestion layer derives weak discriminator updates through:
+
+```text
+effective_claim_lbf = log_bayes_factor * w_rel * w_map * w_aux * w_dep
+derived_discriminator_lbf =
+  clamp(effective_claim_lbf * mapping_weight * polarity, -0.6, 0.6)
+```
+
+`polarity = +1` means evidence for the feature supports the YES answer to the discriminator. `polarity = -1` means evidence for the feature supports the NO answer. The cap prevents ordinary lower-level claims from acting like direct discriminator tests.
+
+### Mapping Table
+
+| Feature | D1 physical supervenience | D2 macro causation | D3 intrinsic phenomenality | D4 pattern truthmaking | D5 substrate-discontinuous identity |
+|---------|---------------------------|--------------------|----------------------------|------------------------|-------------------------------------|
+| F1 consciousness_fundamental | -0.35 | 0.00 | +0.75 | 0.00 | 0.00 |
+| F2 pattern_space_real | -0.25 | 0.00 | 0.00 | +0.70 | +0.15 |
+| F3 pattern_space_nonphysical | -0.35 | 0.00 | 0.00 | +0.80 | +0.20 |
+| F4 relations_ontologically_basic | -0.15 | +0.70 | 0.00 | 0.00 | 0.00 |
+| F5 information_persists_across_instantiation | -0.45 | 0.00 | 0.00 | +0.20 | +0.75 |
+| F6 teleology_real | -0.20 | +0.35 | +0.20 | 0.00 | 0.00 |
+| F7 cross_life_continuity | -0.35 | 0.00 | +0.10 | +0.15 | +0.90 |
+| F8 physical_law_emergent | -0.10 | +0.15 | 0.00 | +0.45 | 0.00 |
+
+### Direct-vs-Derived Rule
+
+- Direct discriminator claims always win over derived feature mapping.
+- Derived updates are review-visible and tagged `evidence_role = "derived_mapping"`.
+- A single paper should not emit both a direct D target and an automatically derived D target from the same claim unless the direct target is manually approved; otherwise the evidence is double-counted.
+- If a feature claim maps to multiple discriminators, each derived update receives the capped lbf independently.
+
+### Later Learning
+
+After enough reviewed packets exist, train a small calibration model on corrections:
+
+```text
+review_delta = corrected_effective_lbf - initial_effective_lbf
+features = [source_type, field, target_id, abstract_only, source_cluster,
+            method_family, citation_count_bucket, model_confidence]
+```
+
+The learned model may suggest weight corrections. It must not silently rewrite the fixed mapping table.
+
+---
+
+## 8. Integration With Existing Engine
 
 The cascade should sit **above** the current propagation engine. The engine does not need to be replaced. It needs one new layer of data and one new branch scoring step.
 
@@ -279,8 +402,8 @@ The cascade should sit **above** the current propagation engine. The engine does
   "threshold_yes": 0.85,
   "threshold_no": 0.15,
   "branch_effects": {
-    "yes": {"B1": 0.35, "B2": 1.25, "B3": 0.35, "B4": 0.25, "B5": 0.85, "B6": 0.30},
-    "no":  {"B1": 1.10, "B2": 0.20, "B3": 1.15, "B4": 1.15, "B5": 1.10, "B6": 1.10}
+    "yes": {"B1": 0.45, "B2": 1.35, "B3": 0.15, "B4": 0.10, "B5": 0.85, "B6": 0.10},
+    "no":  {"B1": 1.05, "B2": 0.10, "B3": 1.25, "B4": 1.25, "B5": 1.15, "B6": 1.20}
   }
 }
 ```
@@ -335,7 +458,7 @@ This is the binary-search principle made operational.
 
 ---
 
-## 7. Answered Thresholds
+## 9. Answered Thresholds
 
 | Node type | Threshold | Rationale |
 |-----------|-----------|-----------|
@@ -354,7 +477,7 @@ No discriminator counts as answered without:
 
 ---
 
-## 8. What Happens to F1-F8?
+## 10. What Happens to F1-F8?
 
 F1-F8 should remain, but they move down one layer.
 
@@ -375,7 +498,7 @@ The branch layer should stop pretending F1-F8 are independent primitive axes. Th
 
 ---
 
-## 9. Convergence Policy
+## 11. Convergence Policy
 
 The truth map should not try to "resolve to one metaphysics" by default. Level 0 is deliberately neutral: `S => (0 <-> 1)` says every coherent ontology must explain the enabling condition of distinction, observer, and observed. It does not guarantee that one current branch is uniquely correct.
 
@@ -391,7 +514,7 @@ This prevents false certainty while preserving the aim of truth-seeking.
 
 ---
 
-## 10. Immediate Implementation Plan
+## 12. Immediate Implementation Plan
 
 1. Add `discriminators` table:
 
@@ -444,7 +567,7 @@ CREATE TABLE claim_targets (
 
 ---
 
-## 11. Bottom Line
+## 13. Bottom Line
 
 The top truth-map layer is a discrimination cascade over possible fillings of `S`, not a flat Bayesian feature board. The Bayesian engine remains necessary, but it should answer the lower-level question: "given the claims we have, how confident are we in each discriminator answer?"
 
