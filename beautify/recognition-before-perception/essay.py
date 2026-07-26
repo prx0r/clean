@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Concept source retained beside its generative-film shader adaptation.
 """
 RECOGNITION COMES BEFORE PERCEPTION
 Abhinavagupta on Pratyabhijñā, Familiarity, and Why Nothing Appears Raw

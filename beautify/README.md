@@ -106,3 +106,21 @@ transformation while remaining part of a distinct visual world.
 All 122 scene shaders were rendered as real WebGL frames for visual review and
 compiled through the shared harness. See
 `QUEUE-BATCH-2-ART-DIRECTIONS.md` for the visual audit and design rationale.
+
+### Queue Batch 3 (5 essays)
+
+This batch advances from communication-first scenes to continuous generative
+short films. Every pack has its own material, geometry, camera logic, and
+scene-to-scene transformation system.
+
+| Essay | Visual Functions | GLSL Style |
+|-------|------------------|------------|
+| freedom-before-causality | 21 | Lawforge phase-transition cinema |
+| gods-under-pressure | 20 | Volumetric pressure opera |
+| memory-before-brains | 19 | Holographic bioglass memory |
+| reality-localizes-itself | 27 | Non-Euclidean localization optics |
+| recognition-before-perception | 24 | Perceptual crystallization |
+
+All 111 shaders were compiled and rendered at both mature and low-revelation
+states. See `QUEUE-BATCH-3-ART-DIRECTIONS.md` for the film arcs, technical
+grammar, and visual communication review.
