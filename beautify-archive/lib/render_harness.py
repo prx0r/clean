@@ -48,7 +48,12 @@ def shader_paths(pack: str | None = None, shader: str | None = None) -> list[Pat
     directories = _shader_directories()
     if pack:
         needle = pack.lower().replace("_", "-")
-        directories = [
+        exact = [
+            directory
+            for directory in directories
+            if needle == directory.parent.name.lower().replace("_", "-")
+        ]
+        directories = exact or [
             directory
             for directory in directories
             if needle in directory.parent.name.lower().replace("_", "-")
