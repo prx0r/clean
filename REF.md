@@ -8,7 +8,9 @@ Research nucleus for the Trika–Consciousness-Science content pipeline. Everyth
 
 | File | Purpose |
 |------|---------|
-| `RESEARCH_DIRECTIVE.md` | Master agent prompt. Read this first. Defines the research programme, methodology, 72 priority questions, source strategy, essay output structure, quality controls. Every agent should start here. |
+| `ONBOARDING.md` | **Read this first.** Entry point for any new agent. Lists 12 files to read in order to get full context. |
+| `RESEARCH_DIRECTIVE.md` | Master agent prompt. Read after ONBOARDING. Defines the research programme, methodology, 72 priority questions, source strategy, essay output structure, quality controls. |
+| `GRANULAR-SPEC.md` | Next directive: every component needs a full spec before wiring. Priority order for specs. |
 | `REF.md` | This file. Project index. |
 
 ---
@@ -128,20 +130,32 @@ Known datasets: ds001787 (EEG meditation), ds006644 (DMT+meditation fMRI), ds007
 
 ## Agent Quickstart
 
-1. **Read `RESEARCH_DIRECTIVE.md`** — understand the research programme
-2. **Check `magnum-opus/10-FULL-SPEC.md`** for the complete architecture
-3. **Consult `magnum-opus/13-FLAWS.md`** before making architectural decisions
-4. **Use `researchsources/100sources.md`** for paper discovery
-5. **Access datasets via** `neurodatasets/S3-ACCESS.md`
-6. **Find downloaded papers in** `resources/by-scholar/`
-7. **Reference the blog codebase** via `magnum-opus/11-BLOGREF.md`
+1. **Read `ONBOARDING.md`** — entry point for new agents (recommended reading order)
+2. **Read `RESEARCH_DIRECTIVE.md`** — understand the research programme
+3. **Read `GRANULAR-SPEC.md`** — understand the current directive
+4. **Check `magnum-opus/10-FULL-SPEC.md`** for the complete architecture
+5. **Consult `magnum-opus/13-FLAWS.md`** before making architectural decisions
+6. **Browse `specs/`** for granular component specs (being built now)
+7. **Use `researchsources/100sources.md`** for paper discovery
+8. **Access datasets via** `neurodatasets/S3-ACCESS.md`
+9. **Find downloaded papers in** `resources/by-scholar/`
+10. **Reference the blog codebase** via `magnum-opus/11-BLOGREF.md`
 
 ---
+
+## specs/ — Granular Component Specs
+
+| File | Purpose |
+|------|---------|
+| `RO.md` | Research Object spec — versioned, living knowledge unit. The core. |
+| *(More coming — see GRANULAR-SPEC.md for priority order)* |
 
 ## Root Files (New)
 
 | File | Purpose |
 |------|---------|
+| `ONBOARDING.md` | **Entry point.** Read this first as a new agent. |
+| `GRANULAR-SPEC.md` | Current directive: spec every component before wiring. |
 | `FORCODEX.md` | Setup guide for ChatGPT Codex — MCP servers, Cloudflare access, model strategy |
 | `formalsystemnotes.md` | 7 meta-claims (M.1-M.7) with falsifiers. Epistemological foundation. |
 | `formalsystemnotes-raw.md` | Raw synthesis: reality is relation, no foundations, hard problems as framing errors |
