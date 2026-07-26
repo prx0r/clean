@@ -1,0 +1,17 @@
+{
+  "question_id": "q:iccha-jnana-kriya-necessary",
+  "question": "Is icchā-jñāna-kriyā a necessary architecture of manifestation or an anthropomorphic projection of human agency?",
+  "tags": ["trika", "agency", "manifestation", "active-inference"],
+  "status": "underdetermined",
+  "confidence": 0.3,
+  "evidence_for": [],
+  "evidence_against": [],
+  "best_answer": "The triad shows strong structural correspondence with preference-model-policy in active inference, suggesting a minimal architecture of agency. However, Trika asserts this as a cosmic necessity while active inference treats it as organismic. Whether the cosmic claim follows from the phenomenological evidence is unresolved.",
+  "parent_question": null,
+  "sub_questions": [],
+  "related_ros": ["ro:matter-of-wonder", "ro:utpaladeva-ipk", "ro:hermeneutics-of-absolute"],
+  "related_essays": [],
+  "related_videos": [],
+  "last_updated": "2026-07-26",
+  "last_updated_by": "system"
+}

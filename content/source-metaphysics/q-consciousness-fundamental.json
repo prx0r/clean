@@ -1,0 +1,21 @@
+{
+  "question_id": "q:consciousness-fundamental",
+  "question": "Is consciousness fundamental to reality?",
+  "tags": ["metaphysics", "consciousness", "idealism", "trika"],
+  "status": "underdetermined",
+  "confidence": 0.4,
+  "evidence_for": [],
+  "evidence_against": [],
+  "best_answer": "Plausible but underdetermined. Trika claims consciousness (prakāśa-vimarśa) is the ground of all manifestation. Physicalism claims it's emergent. The hard problem remains unresolved, and no decisive experiment distinguishes the positions.",
+  "parent_question": null,
+  "sub_questions": [
+    "q:prakasa-definition",
+    "q:brain-filter-or-appearance",
+    "q:consciousness-necessary-for-being"
+  ],
+  "related_ros": [],
+  "related_essays": [],
+  "related_videos": [],
+  "last_updated": "2026-07-26",
+  "last_updated_by": "system"
+}
