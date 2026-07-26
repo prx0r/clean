@@ -230,3 +230,73 @@ CREATE INDEX idx_eo_question ON essay_objects(truth_map_question_id);
 ## 6. Migration Policy
 
 Same as RO: lazy migration on write, `schema_version` tracking, scripts in `scripts/migrations/`.
+
+---
+
+## 7. Codex Design Decisions
+
+### Hypothesis Confidence
+
+The `hypotheses[].confidence` enum is useful for editorial triage, but it is not the epistemic source of truth. Keep it as a human-readable label and treat it as **derived or review-facing state**, not propagation input.
+
+Add claim linkage when a hypothesis enters the truth map:
+
+```json
+"hypotheses": [
+  {
+    "h_id": "H1",
+    "claim": "The apparent opposition between X and Y dissolves if Z is true.",
+    "confidence": "speculative",
+    "claim_ids": ["cl:..."],
+    "supporting_ros": ["ro:..."],
+    "challenging_ros": ["ro:..."],
+    "falsifier": {
+      "condition": "What observation, source, or formal argument would defeat this hypothesis",
+      "status": "untested"
+    }
+  }
+]
+```
+
+The propagation engine owns log-odds, posterior probability, and status. EO confidence may cache a label for UI, but it must be recomputable from linked claims and truth map question state.
+
+### Tension Point Shape
+
+The string `tension_point` is not sufficient as the canonical representation because validation rule E02 cannot reliably prove that both sides are named. Keep `tension_point` as the display summary, but add a structured `tension` object:
+
+```json
+"tension": {
+  "summary": "A concise statement of the unresolved tension.",
+  "positions": [
+    {
+      "label": "Position A",
+      "claim": "The first live interpretation.",
+      "ro_refs": ["ro:..."],
+      "claim_refs": ["cl:..."]
+    },
+    {
+      "label": "Position B",
+      "claim": "The competing live interpretation.",
+      "ro_refs": ["ro:..."],
+      "claim_refs": ["cl:..."]
+    }
+  ],
+  "shared_assumptions": ["Assumption both sides currently grant."],
+  "discriminating_question": "What would decide between these positions?"
+}
+```
+
+Validation should require at least two `positions[]`, each with either an RO reference or claim reference. The legacy string can be generated from `tension.summary`.
+
+### Truth Map Question Creation
+
+EO creation should automatically create or link a truth map question, but only as an **unasked draft node**. It should not automatically add claims or change posteriors.
+
+Lifecycle:
+
+1. EO proposal accepted.
+2. If no matching `truth_map_question` exists, create `q:{slug}` with status `unasked`, linked `feature_ids`, and `branches`.
+3. Claims are extracted separately through the publish gate.
+4. Propagation runs only after valid claims have been inserted.
+
+This keeps the graph complete without letting speculative EOs become evidence for themselves.

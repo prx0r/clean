@@ -29,9 +29,23 @@ A Claim is the **atomic unit of evidence** in the truth map. Every piece of cont
       "type": "string",
       "enum": ["ro", "eo", "essay", "video", "dataset", "experiment", "translation", "user_report"]
     },
+    "evidence_role": {
+      "type": "string",
+      "enum": ["primary", "synthesis", "interpretation", "restatement", "pointer"],
+      "default": "primary",
+      "description": "Whether this claim is independent evidence or derived content"
+    },
     "source_id": {
       "type": "string",
       "description": "ID of the source entity this claim was extracted from"
+    },
+    "source_cluster": {
+      "type": ["string", "null"],
+      "description": "Shared origin/method/lab/textual lineage used for dependence discounting"
+    },
+    "method_family": {
+      "type": ["string", "null"],
+      "description": "Method class: philology, phenomenology, fMRI, formal proof, survey, etc."
     },
     "target_question_id": {
       "type": "string",
@@ -170,9 +184,11 @@ effective_weight = w_rel * w_map * w_dep * w_aux * log_bayes_factor
 | C02 | log_bayes_factor = 0 | Reject — zero-weight claims are noise |
 | C03 | paradigm is null and claim is from an LLM | Warn — AI-generated claims should be tagged |
 | C04 | is_retracted = true and superseded_by is null | Warn — retracted claims should name their replacement |
-| C05 | |log_bayes_factor| > 5 and w_rel < 0.8 | Reject — strong claims need high relevance |
+| C05 | `abs(log_bayes_factor) > 5` and `w_rel < 0.8` | Reject — strong claims need high relevance |
 | C06 | No falsifier and paradigm is scientific | Warn — scientific claims should be falsifiable |
 | C07 | source_type = "ro" but source RO doesn't exist | Reject — dangling reference |
+| C08 | `evidence_role != "primary"` and `abs(log_bayes_factor) > 0.5` | Reject unless human-reviewed and backed by primary claim refs |
+| C09 | source_type in ["essay", "video", "eo"] and evidence_role = "primary" | Reject — produced content is derived unless it reports a new experiment/dataset |
 
 ---
 
@@ -186,8 +202,10 @@ CREATE TABLE claims (
   schema_version INTEGER NOT NULL DEFAULT 1,
   source_type TEXT NOT NULL,
   source_id TEXT NOT NULL,
+  evidence_role TEXT NOT NULL DEFAULT 'primary',
+  source_cluster TEXT,
+  method_family TEXT,
   target_question_id TEXT,
-  target_feature_ids TEXT NOT NULL,       -- JSON array
   log_bayes_factor REAL NOT NULL,
   w_rel REAL NOT NULL,
   w_map REAL NOT NULL,
@@ -204,11 +222,20 @@ CREATE TABLE claims (
 );
 
 CREATE INDEX idx_claims_question ON claims(target_question_id);
-CREATE INDEX idx_claims_feature ON claims(target_feature_ids);
 CREATE INDEX idx_claims_paradigm ON claims(paradigm);
+CREATE INDEX idx_claims_cluster ON claims(source_cluster);
 CREATE INDEX idx_claims_source ON claims(source_type, source_id);
 CREATE INDEX idx_claims_supersedes ON claims(supersedes);
 CREATE INDEX idx_claims_created ON claims(created_at);
+
+CREATE TABLE claim_features (
+  claim_id TEXT NOT NULL,
+  feature_id TEXT NOT NULL,
+  PRIMARY KEY (claim_id, feature_id),
+  FOREIGN KEY (claim_id) REFERENCES claims(claim_id)
+);
+
+CREATE INDEX idx_claim_features_feature ON claim_features(feature_id);
 ```
 
 ---
@@ -245,3 +272,56 @@ Each source type has a claim extraction protocol:
 ## 7. Migration
 
 No existing claims to migrate — this is a new entity. The current evidence arrays in q-*.json files should be extracted into the D1 claims table as part of the truth map migration (see TRUTH-MAP-QUESTION.md §7).
+
+---
+
+## 8. Codex Design Decisions
+
+### Weight Factor Scope
+
+Keep the multiplicative formula, but make the boundaries explicit:
+
+| Factor | Meaning | Stored? |
+|--------|---------|---------|
+| `log_bayes_factor` | Direction and magnitude of evidential update before discounts | Yes |
+| `w_rel` | Relevance to the target question/feature | Yes |
+| `w_map` | Quality of the conceptual or operational mapping | Yes |
+| `w_aux` | Source reliability and specificity before dependence discount | Yes |
+| `w_dep` | Dynamic dependence discount from the current active claim pool | No |
+
+`w_dep` must be computed dynamically. Do not persist it as a claim property, because supersession, retraction, and new clustered evidence change the correct discount.
+
+The current paradigm-only discount is too coarse. Dependence should group by `(feature_id, paradigm, source_cluster, method_family)` when those fields exist, falling back to `(feature_id, paradigm)` only for older claims. This prevents independent studies within one paradigm from being discounted as if they were one argument, and prevents restatements of the same source lineage from looking independent.
+
+### Supersedes Behavior
+
+Full recompute is the canonical path whenever a claim is retracted, superseded, or materially reweighted. Incremental updates are valid only for strictly additive new claims that do not alter the active set behind prior posteriors.
+
+| Event | Propagation Mode |
+|-------|------------------|
+| New independent claim | Incremental immediately |
+| New derived/synthesis claim | Incremental only if allowed by publish gate |
+| Supersede claim | Full recompute |
+| Retract claim | Full recompute |
+| Weight correction | Insert superseding claim, then full recompute |
+| Nightly maintenance | Full recompute |
+
+This avoids trying to reverse an old weighted contribution whose original dependence context may no longer be valid.
+
+### AI-Generated Content Weighting
+
+Claims extracted from EOs, essays, and videos are usually **derived claims**, not independent evidence. They may help search, explain provenance, or generate new questions, but they should not significantly move the truth map unless they report a new external observation, experiment, dataset, or source analysis.
+
+Default caps:
+
+| Source | Default Evidence Role | LBF Cap |
+|--------|-----------------------|---------|
+| RO from primary text/source | primary | normal |
+| Dataset/experiment | primary | normal |
+| Translation object | interpretation | ±1.0 unless human-reviewed |
+| EO | synthesis | ±0.5 |
+| Essay | restatement/synthesis | ±0.5 |
+| Video | restatement/pointer | ±0.25 |
+| Pure LLM output | pointer | 0 unless independently sourced |
+
+The publish gate should prefer using produced content to create or link questions, not to create self-confirming evidence loops.

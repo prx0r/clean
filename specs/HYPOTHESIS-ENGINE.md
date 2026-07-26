@@ -159,7 +159,7 @@ When two ROs disagree on the same truth map question, that's a tension point wor
 | Novelty scoring | Cosine similarity between proposed tension_point and all existing EO tension_points |
 | Diversity sampling | Track tradition frequency in last 20 proposals. Boost underrepresented traditions by 1.3x |
 | Random offset | Add ±5% random noise to scores to prevent deterministic repetition |
-| Re-open answered questions | If new claims entered evidence_log for a "strongly_supported" question, re-open it |
+| Re-open answered questions | If new claims entered `claims` for a "strongly_supported" question, re-open it |
 | Meta-questions | Every 10th proposal: "what are we not asking?" — uses text analysis of RO corpus to find uncovered topics |
 
 ---
@@ -243,3 +243,80 @@ hermes -z "Review EO proposal prop:iccha-kriya-gap. Attempt to falsify the centr
 3. **Tradition diversity:** Trika has the most ROs and will dominate proposals. Should we implement tradition quotas (guarantee N% proposals from underrepresented traditions) or just boost scores?
 
 4. **Meta-questions:** "What are we not asking?" is a genuinely hard problem. How should the engine identify conceptual gaps that aren't represented anywhere in the truth map?
+
+---
+
+## 10. Codex Design Decisions
+
+### Autonomy vs Garbage
+
+RO disagreement detection is necessary but not sufficient. The engine needs a Critic gate at the proposal stage, but not a permanent human veto gate for every proposal.
+
+Use a two-tier policy:
+
+| Proposal Risk | Gate |
+|---------------|------|
+| Low risk: links existing ROs, has two-sided tension, no publication scheduled | Autonomous Critic approval |
+| Medium risk: creates new truth map question or uses derived claims | Critic approval + delayed implementation queue |
+| High risk: changes posteriors, starts production, or claims novelty without RO support | Human review required |
+
+This preserves autonomy for research discovery while preventing generated questions from turning directly into published epistemic commitments.
+
+Minimum approval checks:
+
+1. At least two live positions or one explicit missing-position gap.
+2. At least one primary RO or source path per live position.
+3. No near-duplicate EO above the novelty threshold.
+4. At least one falsifier or discriminating question.
+5. No direct posterior update from the proposal itself.
+
+### Novelty Scoring Method
+
+At 200+ EOs, do not introduce Cloudflare Vectorize yet. Use deterministic text similarity first:
+
+1. Normalize `tension.summary`, `positions[].claim`, title, and traditions.
+2. Compute TF-IDF or BM25 over existing EOs.
+3. Penalize exact tradition/topic reuse from the last 20 proposals.
+4. Store the top nearest neighbors and similarity scores in the proposal record.
+
+Move to Vectorize only when deterministic similarity produces clear false negatives or the EO count reaches the low thousands. The first implementation benefits more from explainable duplicate detection than semantic recall.
+
+### Tradition Diversity
+
+Use a multiplicative boost, not hard quotas. Quotas can force bad proposals from thin traditions and corrupt the quality signal.
+
+Recommended diversity multiplier:
+
+```python
+representation = recent_tradition_count / max(1, total_recent_proposals)
+target = corpus_tradition_count / max(1, total_ros)
+underrep = max(0.0, target - representation)
+diversity_multiplier = min(1.5, 1.0 + underrep)
+```
+
+Add a floor rule instead of a quota: if a tradition has enough source material for at least one two-sided EO and has had zero proposals in the last N cycles, force it into the candidate set, then let the ranker and Critic decide.
+
+### Meta-Questions
+
+The engine should identify missing questions by comparing corpus coverage against truth-map coverage, not by asking an LLM to brainstorm in the abstract.
+
+Pipeline:
+
+1. Extract topic/tradition/concept facets from ROs and source objects.
+2. Build co-occurrence pairs and triples: `(tradition, concept)`, `(thinker, concept)`, `(concept, question_family)`.
+3. Compare against existing truth map questions and EOs.
+4. Emit gaps only where there is source support but no corresponding question or only one-sided evidence.
+5. Send the gap through Critic as a meta-question proposal.
+
+Meta-question examples should look like:
+
+```json
+{
+  "trigger": "RO corpus has 8 Sufi references to imaginal perception but no question linking imaginal perception to pattern-space ontology.",
+  "missing_axis": ["sufism", "imaginal_perception", "pattern_space"],
+  "supporting_ros": ["ro:..."],
+  "proposed_question": "Does imaginal perception function as evidence for pattern-space realism?"
+}
+```
+
+The key constraint: a meta-question must point to a corpus asymmetry, not merely a clever-sounding absent topic.

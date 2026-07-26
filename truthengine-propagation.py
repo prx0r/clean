@@ -12,7 +12,7 @@ This is the math engine behind the truth map. It implements:
 """
 
 import math
-from typing import Dict, List, Optional, Protocol, Any
+from typing import Dict, List, Optional, Protocol, Any, Iterable
 
 
 # ── Math primitives ─────────────────────────────────────────────────────────
@@ -91,6 +91,9 @@ class ClaimRecord:
         w_aux: float,
         paradigm: Optional[str],
         is_retracted: bool = False,
+        target_question_id: Optional[str] = None,
+        source_cluster: Optional[str] = None,
+        method_family: Optional[str] = None,
     ):
         self.id = id
         self.target_feature_ids = target_feature_ids
@@ -100,6 +103,9 @@ class ClaimRecord:
         self.w_aux = w_aux
         self.paradigm = paradigm
         self.is_retracted = is_retracted
+        self.target_question_id = target_question_id
+        self.source_cluster = source_cluster
+        self.method_family = method_family
         self.w_dep: float = 1.0  # set during propagation
 
     @property
@@ -239,6 +245,8 @@ class PropagationEngine:
 
         self.db.save_features(features)
         self.db.save_branch_probabilities(branch_probs)
+        if hasattr(self.db, "save_question_states"):
+            self.db.save_question_states(features)
 
         return {
             'features': {fid: f.probability for fid, f in features.items()},
@@ -262,15 +270,35 @@ class PropagationEngine:
 
     def _load_paradigm_counts(
         self,
-        feature_ids,
+        feature_ids: Iterable[str],
         new_claims: List[ClaimRecord],
     ) -> Dict[str, Dict[str, int]]:
+        feature_ids = list(feature_ids)
+        excluded_claim_ids = [c.id for c in new_claims]
+        if hasattr(self.db, "bulk_dependence_counts"):
+            return self.db.bulk_dependence_counts(
+                feature_ids=feature_ids,
+                paradigms=sorted(set(c.paradigm for c in new_claims if c.paradigm)),
+                exclude_claim_ids=excluded_claim_ids,
+            )
+
         counts: Dict[str, Dict[str, int]] = {}
         paradigms = set(c.paradigm for c in new_claims if c.paradigm)
+        new_claim_counts: Dict[str, Dict[str, int]] = {}
+        for claim in new_claims:
+            if not claim.paradigm:
+                continue
+            for fid in claim.target_feature_ids:
+                if fid not in new_claim_counts:
+                    new_claim_counts[fid] = {}
+                bucket = new_claim_counts[fid]
+                bucket[claim.paradigm] = bucket.get(claim.paradigm, 0) + 1
+
         for fid in feature_ids:
             counts[fid] = {}
             for paradigm in paradigms:
                 n = self.db.count_claims_by_paradigm(fid, paradigm)
+                n -= new_claim_counts.get(fid, {}).get(paradigm, 0)
                 if n > 0:
                     counts[fid][paradigm] = n
         return counts

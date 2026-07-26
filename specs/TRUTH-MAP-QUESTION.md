@@ -111,14 +111,15 @@ The reconciled model: **questions are git files, claims are D1 records.** The qu
 }
 ```
 
-**Claim records live in D1, not in the question file:**
+**Claim records live in D1, not in the question file.** Multi-feature targeting must be normalized through `claim_features`; do not query JSON arrays with `LIKE`.
 
 ```sql
-CREATE TABLE evidence_log (
-  evidence_id TEXT PRIMARY KEY,
+CREATE TABLE claims (
+  claim_id TEXT PRIMARY KEY,
   question_id TEXT NOT NULL,           -- FK to truth_map_question
   source_type TEXT NOT NULL,           -- 'ro', 'eo', 'essay', 'video', 'dataset'
   source_id TEXT NOT NULL,
+  evidence_role TEXT NOT NULL DEFAULT 'primary',
   paradigm TEXT,                       -- 'trika', 'IIT', 'neuroscience', etc.
   log_bayes_factor REAL NOT NULL,
   w_rel REAL NOT NULL DEFAULT 1.0,    -- relevance
@@ -126,16 +127,24 @@ CREATE TABLE evidence_log (
   w_aux REAL NOT NULL DEFAULT 1.0,    -- source reliability
   lbf_confidence REAL NOT NULL DEFAULT 1.0,
   claim_text TEXT,                     -- human-readable claim
-  falsifier TEXT,                      -- what would disprove this
-  supersedes TEXT,                     -- evidence_id this replaces
-  superseded_by TEXT,                  -- evidence_id that replaced this
+  falsifier TEXT,                      -- structured JSON falsifier
+  supersedes TEXT,                     -- claim_id this replaces
+  superseded_by TEXT,                  -- claim_id that replaced this
   created_at TEXT DEFAULT (datetime('now')),
   FOREIGN KEY (question_id) REFERENCES truth_map_questions(question_id)
 );
 
-CREATE INDEX idx_evidence_question ON evidence_log(question_id);
-CREATE INDEX idx_evidence_paradigm ON evidence_log(paradigm);
-CREATE INDEX idx_evidence_supersedes ON evidence_log(supersedes);
+CREATE TABLE claim_features (
+  claim_id TEXT NOT NULL,
+  feature_id TEXT NOT NULL,
+  PRIMARY KEY (claim_id, feature_id),
+  FOREIGN KEY (claim_id) REFERENCES claims(claim_id)
+);
+
+CREATE INDEX idx_claims_question ON claims(question_id);
+CREATE INDEX idx_claims_paradigm ON claims(paradigm);
+CREATE INDEX idx_claims_supersedes ON claims(supersedes);
+CREATE INDEX idx_claim_features_feature ON claim_features(feature_id);
 ```
 
 ---
@@ -150,7 +159,8 @@ CREATE INDEX idx_evidence_supersedes ON evidence_log(supersedes);
 | T04 | sub_questions includes a question_id that doesn't exist | Auto-create sub-question as "unasked" |
 | T05 | parent_question is set AND status is more certain than parent | Warn — child can't be more certain than parent |
 | T06 | status changes from answered to active without new evidence | Reject — must have new evidence to reopen |
-| T07 | evidence_log entry has no falsifier | Warn — claims without falsifiers are not knowledge |
+| T07 | claims entry has no falsifier | Warn — claims without falsifiers are not knowledge |
+| T08 | branch probabilities are presented as posterior truth | Reject — branches are relative support scores unless a branch likelihood model exists |
 
 ---
 
@@ -170,7 +180,8 @@ Evidence entries are **never deleted** — only superseded via the `supersedes` 
 
 ```
 Path: content/source-metaphysics/q-{slug}.json  (question metadata, git)
-D1:   evidence_log table                          (claims, append-only)
+D1:   claims table                                (claims, append-only)
+D1:   claim_features table                        (claim-to-feature join table)
 D1:   feature_states table                         (computed posteriors)
 ```
 
@@ -199,6 +210,7 @@ CREATE TABLE feature_states (
 CREATE TABLE branch_probabilities (
   branch_id TEXT PRIMARY KEY,    -- B1, B2, ..., B6
   probability REAL NOT NULL,
+  score_type TEXT NOT NULL DEFAULT 'relative_support',
   last_updated TEXT
 );
 ```
@@ -210,7 +222,7 @@ CREATE TABLE branch_probabilities (
 | Operation | Frequency | Source |
 |-----------|-----------|--------|
 | Read question metadata | Every page load | File or D1 cache |
-| Read all claims for a question | Every propagation run | D1 evidence_log |
+| Read all claims for a question | Every propagation run | D1 `claims` + `claim_features` |
 | Add new evidence | Per publish | D1 append |
 | Recompute confidence | Per evidence entry + nightly | Propagation engine |
 | Search across questions | Per user search | D1 |
@@ -222,8 +234,55 @@ CREATE TABLE branch_probabilities (
 
 The 6 existing q-*.json files need:
 1. Add `feature_ids`, `branches`, `provenance.git_commit` fields
-2. Remove inline `evidence_for[]` and `evidence_against[]` — migrate to D1 evidence_log
+2. Remove inline `evidence_for[]` and `evidence_against[]` — migrate to D1 `claims` and `claim_features`
 3. Add `schema_version` field
 4. Bump to v2 format
 
 Migration script: `scripts/migrations/truth_map_v1_to_v2.py`
+
+---
+
+## 8. Codex Design Decisions
+
+### Winning Model
+
+Use **Option C: hybrid**.
+
+Questions remain git files because they are editorial objects: wording, relationships, tags, and best-answer text need reviewable diffs. Claims live in D1 because they are append-only evidence events that must be queryable by question, feature, source, paradigm, and recency. Feature posteriors are computed state. The old `q-*.json` evidence arrays become migration input and optional read views, not the canonical evidence store.
+
+Canonical ownership:
+
+| Data | Owner |
+|------|-------|
+| Question wording, parent/child graph, tags | Git JSON |
+| Claim text, weights, falsifier, source lineage | D1 `claims` |
+| Claim-to-feature mapping | D1 `claim_features` |
+| Confidence/status/posteriors | Propagation engine, cached to D1/git |
+| Branch support display | Derived from feature states |
+
+### Falsifier Structure
+
+Use a structured falsifier object. A plain string is not enough for validation, scheduling, or later test results.
+
+```json
+"falsifier": {
+  "type": "empirical|textual|formal|experiential|comparative|operational|none",
+  "condition": "Specific condition that would defeat or materially weaken the claim.",
+  "observable": "What must be inspected or measured.",
+  "method": "How the test is performed.",
+  "threshold": "Pass/fail criterion when applicable.",
+  "scope": "Which part of the claim the falsifier applies to.",
+  "status": "untested|tested_failed|tested_survived|not_currently_testable|unfalsifiable",
+  "result_ref": null
+}
+```
+
+Unfalsifiable claims may be stored for hermeneutic context, but they must not receive high evidential weight. Scientific or operational claims without a falsifier should fail the publish gate unless explicitly marked `not_currently_testable` with a reason.
+
+### Branch Derivation
+
+The current branch calculation is not a true posterior probability model. Branches overlap and features are not independent, so multiplying feature probabilities and normalizing can create artifacts.
+
+Decision: rename the interpretation as **relative branch support**. It is acceptable for ranking and UI, but it must not be used as calibrated probability or fed back into feature updates.
+
+If calibrated branch probabilities are required later, branches must become explicit hypotheses with `P(feature | branch)` likelihood profiles and either a dependency/covariance model or a deliberately naive-Bayes label.
