@@ -72,3 +72,19 @@ python beautify-archive/lib/render_harness.py --pack 06-death-systems --preview
 ```
 
 Text overlay is handled by the render harness (PIL), not the GLSL shaders.
+
+### Queue Batch 1 (5 essays)
+
+These packs deliberately treat the PIL implementations as conceptual storyboards,
+not visual templates. Each pack has its own rendering grammar and all scene shaders
+compile through the shared harness.
+
+| Essay | Visual Functions | GLSL Style |
+|-------|------------------|------------|
+| a-dream-becomes-a-world-when-it-remembers-where-you-were | 15 | Noctilucent palimpsest cartography |
+| a-mirror-becomes-sacred-when-it-stops-reflecting-only-you | 18 | Liquid-metal catoptrics and thin-film light |
+| a-name-teaches-the-invisible-how-to-answer | 19 | Phononic aurora and cymatic calligraphy |
+| a-ritual-object-teaches-matter-to-remember-heaven | 20 | Raymarched numinous mineral relic |
+| a-temple-teaches-space-how-to-become-a-body | 21 | Impossible sacred architecture and volumetric light |
+
+See `QUEUE-BATCH-1-ART-DIRECTIONS.md` for the creative and technical audit.
