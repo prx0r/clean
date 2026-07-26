@@ -83,3 +83,33 @@ plankton, vagal signal tides and serotonin amber in a black-teal body ocean.
 | `resilience` | `03_voice_inside_chest/vis_resilience.glsl` | `vis_resilience` |
 | `evidence` | `03_voice_inside_chest/vis_human_implication.glsl` | `vis_human_implication` |
 | `final` | `03_voice_inside_chest/vis_final.glsl` | `vis_final` |
+
+## Pack 04 · Dreams Create Worlds
+
+Art direction: wet dream-watercolor — luminous pigment blooms, capillary
+edges, soft paper currents and half-remembered forms that merge as they move.
+
+| Visual key | GLSL shader | PIL semantic reference |
+|---|---|---|
+| `sleep_cycle` | `04_dreams_create_worlds/vis_sleep_cycle.glsl` | `vis_sleep_cycle` |
+| `brain_active` | `04_dreams_create_worlds/vis_brain_active.glsl` | `vis_brain_active` |
+| `not_random` | `04_dreams_create_worlds/vis_dreams_not_random.glsl` | `vis_dreams_not_random` |
+| `two_worlds` | `04_dreams_create_worlds/vis_seth_dream_reality.glsl` | `vis_seth_dream_reality` |
+| `frameworks` | `04_dreams_create_worlds/vis_conventional_versus.glsl` | `vis_conventional_versus` |
+| `wave` | `04_dreams_create_worlds/vis_dream_wave.glsl` | `vis_dream_wave` |
+| `seeding` | `04_dreams_create_worlds/vis_dream_seeding.glsl` | `vis_dream_seeding` |
+| `source` | `04_dreams_create_worlds/vis_dream_source.glsl` | `vis_dream_source` |
+| `primitive` | `04_dreams_create_worlds/vis_primitive_dream.glsl` | `vis_primitive_dream` |
+| `cooperative` | `04_dreams_create_worlds/vis_cooperative_dream.glsl` | `vis_cooperative_dream` |
+| `invention` | `04_dreams_create_worlds/vis_dream_invention.glsl` | `vis_dream_invention` |
+| `extension` | `04_dreams_create_worlds/vis_waking_extension.glsl` | `vis_waking_extension` |
+| `lucid` | `04_dreams_create_worlds/vis_lucid_dream.glsl` | `vis_lucid_dream` |
+| `consciousness_units` | `04_dreams_create_worlds/vis_consciousness_all_species.glsl` | `vis_consciousness_all_species` |
+| `spacious` | `04_dreams_create_worlds/vis_space_present.glsl` | `vis_space_present` |
+| `dialog` | `04_dreams_create_worlds/vis_dialog.glsl` | `vis_dialog` |
+| `inner_senses` | `04_dreams_create_worlds/vis_inner_senses.glsl` | `vis_inner_senses` |
+| `dual_focus` | `04_dreams_create_worlds/vis_dual_focus.glsl` | `vis_dual_focus` |
+| `merge` | `04_dreams_create_worlds/vis_dream_merge.glsl` | `vis_dream_merge` |
+| `universe_dreamed` | `04_dreams_create_worlds/vis_universe_dreamed.glsl` | `vis_universe_dreamed` |
+| `transition` | `04_dreams_create_worlds/vis_waking_to_dream.glsl` | `vis_waking_to_dream` |
+| `final` | `04_dreams_create_worlds/vis_final.glsl` | `vis_final` |
