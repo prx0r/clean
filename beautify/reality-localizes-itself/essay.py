@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Concept source retained beside its generative-film shader adaptation.
 """
 REALITY LOCALIZES ITSELF
 Abhinavagupta, Predictive Processing, and the Construction of a Viewpoint
