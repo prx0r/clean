@@ -1,0 +1,256 @@
+{
+  "version": "1.0",
+  "id": "logicvid-04",
+  "title": "Logicvid 04 \u2014 Why Does Reality Appear?",
+  "description": "Abhinavagupta vs QFT vs Russellian monism on why reality is manifest.",
+  "theme": "ivoryManuscript",
+  "seed": 260727,
+  "render": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "crf": 18,
+    "preset": "medium",
+    "sceneDuration": 12,
+    "transitionDuration": 0.5
+  },
+  "scenes": [
+    {
+      "id": "lv01",
+      "title": "The Question",
+      "subtitle": "Why is any physical process manifest?",
+      "term": "Prak\u0101\u015ba",
+      "devanagari": "\u092a\u094d\u0930\u0915\u093e\u0936",
+      "motif": "argument-diagram",
+      "duration": 10,
+      "params": {
+        "moves": [
+          {
+            "type": "claim",
+            "text": "Physics describes fields,\nrelations and dynamics",
+            "size": 28
+          },
+          {
+            "type": "subclaim",
+            "text": "but not felt presence",
+            "y": 400,
+            "size": 22,
+            "color": "#59646d"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "claim",
+            "text": "Why is any physical process\nmanifest rather than\nmerely occurring?",
+            "size": 30,
+            "status": "highlight"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lv02",
+      "title": "Abhinavagupta",
+      "subtitle": "Three inseparable terms",
+      "term": "Spanda",
+      "devanagari": "\u0938\u094d\u092a\u0928\u094d\u0926",
+      "motif": "argument-diagram",
+      "duration": 12,
+      "params": {
+        "moves": [
+          {
+            "type": "claim",
+            "text": "prak\u0101\u015ba + vimar\u015ba + spanda",
+            "size": 32
+          },
+          {
+            "type": "subclaim",
+            "text": "presence + self-articulation + dynamic pulsation",
+            "y": 380,
+            "size": 18,
+            "color": "#3b7a9e"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "side-by-side",
+            "left": "unity",
+            "right": "multiplicity",
+            "leftColor": "#3b7a9e",
+            "rightColor": "#c4445a"
+          },
+          {
+            "type": "subclaim",
+            "text": "spanda is the active transition between them",
+            "y": 470,
+            "size": 18,
+            "color": "#d2a744"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lv03",
+      "title": "Formal Proof",
+      "subtitle": "A1\u2013A5",
+      "term": "Pram\u0101\u1e47a",
+      "devanagari": "\u092a\u094d\u0930\u092e\u093e\u0923",
+      "motif": "argument-diagram",
+      "duration": 14,
+      "params": {
+        "moves": [
+          {
+            "type": "premises",
+            "premises": [
+              "A1. Experience entails manifestation",
+              "A2. Structure alone does not entail manifestation",
+              "A3. Manifestation cannot be added by another state",
+              "A4. Bare manifestation cannot explain determinate reality",
+              "A5. Differentiation requires dynamism"
+            ],
+            "conclusion": "Reality appears because its nature is self-manifesting, self-articulating pulsation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lv04",
+      "title": "QFT vs Spanda",
+      "subtitle": "Surface similarity, deep difference",
+      "term": "Virodha",
+      "devanagari": "\u0935\u093f\u0930\u094b\u0927",
+      "motif": "argument-diagram",
+      "duration": 10,
+      "params": {
+        "moves": [
+          {
+            "type": "side-by-side",
+            "left": "Quantum fluctuation\nchange in a physical field",
+            "right": "Spanda\nself-manifesting\ndifferentiation",
+            "leftColor": "#59646d",
+            "rightColor": "#3b7a9e"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "claim",
+            "text": "QFT models dynamics\nbut not manifestation",
+            "size": 28,
+            "status": "refuted"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lv05",
+      "title": "Russellian Monism",
+      "subtitle": "Strongest rival",
+      "term": "B\u0101hya",
+      "devanagari": "\u092c\u093e\u0939\u094d\u092f",
+      "motif": "argument-diagram",
+      "duration": 12,
+      "params": {
+        "moves": [
+          {
+            "type": "side-by-side",
+            "left": "Physics reveals\nstructure + dispositions",
+            "right": "Intrinsic nature\ncould be phenomenal",
+            "leftColor": "#59646d",
+            "rightColor": "#d2a744"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "claim",
+            "text": "Gives prak\u0101\u015ba\nbut not vimar\u015ba + spanda",
+            "size": 28,
+            "color": "#c4445a"
+          },
+          {
+            "type": "subclaim",
+            "text": "Intrinsic qualities cannot explain unity, self-apprehension, or agency",
+            "y": 440,
+            "size": 16,
+            "color": "#59646d"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lv06",
+      "title": "EM Field Theories",
+      "subtitle": "A physical candidate",
+      "term": "K\u1e63etra",
+      "devanagari": "\u0915\u094d\u0937\u0947\u0924\u094d\u0930",
+      "motif": "argument-diagram",
+      "duration": 8,
+      "params": {
+        "moves": [
+          {
+            "type": "claim",
+            "text": "Could the brain\u2019s EM field\nbe spanda?",
+            "size": 28,
+            "status": "refuted"
+          },
+          {
+            "type": "subclaim",
+            "text": "Countless EM fields are not plausibly conscious",
+            "y": 400,
+            "size": 18,
+            "color": "#c4445a"
+          },
+          {
+            "type": "subclaim",
+            "text": "Explains vehicle, not manifestation",
+            "y": 440,
+            "size": 16,
+            "color": "#59646d"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lv07",
+      "title": "Verdict",
+      "subtitle": "Three positions",
+      "term": "Nir\u1e47aya",
+      "devanagari": "\u0928\u093f\u0930\u094d\u0923\u092f",
+      "motif": "argument-diagram",
+      "duration": 14,
+      "params": {
+        "moves": [
+          {
+            "type": "branch",
+            "branches": [
+              {
+                "label": "Physical structuralism\norganization \u2192 presence?\nMissing bridge",
+                "color": "#59646d"
+              },
+              {
+                "label": "Russellian monism\nintrinsic qualities \u2192 unity?\nMissing bridge",
+                "color": "#d2a744"
+              },
+              {
+                "label": "Abhinavagupta\nspanda as self-manifestation\nMissing: one universal subject?",
+                "color": "#3b7a9e"
+              }
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "claim",
+            "text": "prak\u0101\u015ba + vimar\u015ba + spanda\nis the most complete architecture",
+            "size": 28,
+            "status": "resolved"
+          }
+        ]
+      }
+    }
+  ]
+}
