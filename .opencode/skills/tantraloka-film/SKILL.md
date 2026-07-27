@@ -6,193 +6,106 @@ description: |
   Works with files under MOTHERFUCKER/.
 ---
 
-# Tantraloka Skia Essay-Film Pipeline
+# Tantraloka Skia Essay-Film Framework
 
-A deterministic, native-Skia motion-graphics framework for turning philosophical essays into narrated visual films.
+Deterministic motion-graphics framework for turning philosophical essays into narrated visual films. Located at `MOTHERFUCKER/`.
 
-## Framework Location
+## Core Principle
 
-All framework files are under `MOTHERFUCKER/` in the project root.
+**Illustrate relations, not nouns.** A viewer should be able to infer the logic of each beat from the motion alone. Do not choose visual mechanisms by keyword — choose the mechanism whose geometry demonstrates the passage's proposition.
 
-## Available Pack Manifests (read these to choose mechanisms)
+## The 4-Pass Decision Protocol
 
-Read the relevant `pack.json` files to see available visual mechanisms:
+Do not collapse passes. Choosing an image while summarizing a paragraph makes the first association feel inevitable.
 
-- `MOTHERFUCKER/capability-packs/base/pack.json` — 15 built-in philosophical mechanisms
-- `MOTHERFUCKER/capability-packs/human-anatomy/pack.json` — body, breath, meditation mechanisms
-- `MOTHERFUCKER/capability-packs/yogic-subtle-body/pack.json` — chakras, nadis, kundalini
-- `MOTHERFUCKER/capability-packs/neurocognition/pack.json` — attention, prediction, memory, learning
-- `MOTHERFUCKER/capability-packs/scientific-diagrams/pack.json` — scientific visual base
-- `MOTHERFUCKER/capability-packs/comparative-epistemology/pack.json` — epistemological comparisons
+### Pass 1: Visual-Free Argument Analysis
 
-## Key Documents (read these for grammar and workflow)
+Read the essay. Remove headings. Number paragraphs 1-N.
 
-- `MOTHERFUCKER/VISUAL_CODING_LANGUAGE.md` — scene composition grammar
-- `MOTHERFUCKER/VISUAL_DECISION_PROTOCOL.md` — 4-pass decision procedure for mapping essay to visuals
-- `MOTHERFUCKER/ESSAY_VISUAL_MODEL_PROMPT.md` — agent prompt for visual program generation
-- `MOTHERFUCKER/VISUAL_DECISION_PROTOCOL.md` — deterministic visual decision protocol
-- `MOTHERFUCKER/extensionpacks/CAPABILITY-PACK-ARCHITECTURE.md` — full architecture
+For each paragraph, identify WITHOUT naming any visual:
+- **Semantic role** — hook, thesis, definition, mechanism, analogy, consequence, objection, reversal, practice, recognition, synthesis, coda
+- **Relation type** — identity-across-change, dependency, interface, emergence, containment, selection, sequence, feedback, transformation, cessation, self-modification, etc.
+- **Source state** → **Target state**
+- **Preserved invariant**
+- **Likely misreading** — what a literal illustration would get wrong
 
-## Built-in 15 Philosophical Mechanisms `MOTHERFUCKER/capability-packs/base/pack.json`
+### Pass 2: Define Continuity Systems (BEFORE mechanisms)
 
-| Mechanism | What it does |
-|---|---|
-| `constraint-field` | An unbounded luminous field concentrates into a local point |
-| `point-of-view` | A centerless field acquires an angle and excluded horizon |
-| `five-lenses` | Five restrictions transform universal powers into local capacities |
-| `local-power` | Universal radial capacity becomes one finite action |
-| `melody-time` | Simultaneity becomes sequence, rhythm, anticipation, memory |
-| `attention-beam` | A narrow act of knowing reveals a foreground and produces a dark |
-| `desire-orbit` | Fullness localizes as a felt gap and reaching movement |
-| `smallness-cage` | The thought "only this" builds a local enclosure |
-| `powered-prison` | Luminous power actively constructs and renews its own limits |
-| `practice-folds` | Body, breath, mantra, attention retrace folds toward source |
-| `upsurge` | A local center reverses into a centerless field |
-| `wave-ocean` | A finite wave keeps its contour while revealing continuity |
-| `textures-display` | One field differentiates into many sensory textures |
-| `limitation-reversal` | A finite condition remains real but loses status as identity |
-| `opening-fist` | Five enclosing arcs relax around the luminous field |
+Choose 2-9 recurring visual systems. Each must have one stable meaning, one stable treatment, and a lifecycle (introduction → development → return → resolution).
 
-## Anatomy Mechanisms `MOTHERFUCKER/capability-packs/human-anatomy/pack.json`
+### Pass 3: Generate Scored Mechanism Candidates
 
-`embodied-awareness-field`, `body-scan`, `meditation-settling`, `breath-cycle`, `breath-attention-coupling`, `nervous-signal-propagation`, `interoceptive-map`, `body-world-interface`, `heart-breath-entrainment`
+For each beat, generate 3+ candidates scored by: relation correspondence (30), motion performs the claim (20), domain/scale match (15), continuity handoff (15), legibility (10), novelty (10). Select only candidates scoring ≥72.
 
-## Neuro Mechanisms `MOTHERFUCKER/capability-packs/neurocognition/pack.json`
+### Pass 4: Audit
 
-`attention-selection`, `predictive-loop`, `pattern-completion`, `memory-consolidation`, `neural-propagation`, `competitive-binding`, `temporal-integration`, `error-driven-learning`
+Every shot needs a rationale stating: what relation, what changes, what persists, why explanatory. Reject "make it beautiful" or "show consciousness."
 
-## Pipeline Steps
+## Available Mechanisms
 
-### Step 1: Read & Analyze the Essay
+Read `MOTHERFUCKER/capability-packs/*/pack.json` for full descriptions and motion proofs.
 
-Read the source essay markdown. Divide it into paragraphs. For each paragraph, identify:
-- The semantic role (thesis, definition, mechanism, analogy, consequence, reversal, recognition, practice, synthesis, coda)
-- The continuity objects that persist across shots
-- The relation type (identity, dependency, emergence, containment, selection, sequence, feedback, transformation, etc.)
+### Base pack (15 mechanisms, always available)
+constraint-field, point-of-view, five-lenses, local-power, melody-time, attention-beam, desire-orbit, smallness-cage, powered-prison, practice-folds, upsurge, wave-ocean, textures-display, limitation-reversal, opening-fist
 
-### Step 2: Choose Continuity Systems
+### Human-anatomy (requires capabilityPacks: ["human-anatomy"])
+embodied-awareness-field, body-scan, meditation-settling, breath-cycle, breath-attention-coupling, nervous-signal-propagation, interoceptive-map, body-world-interface, heart-breath-entrainment
 
-Define 3-6 visual continuity systems with stable meanings. Example:
+### Neurocognition (requires capabilityPacks: ["neurocognition"])
+attention-selection, predictive-loop, pattern-completion, memory-consolidation, neural-propagation, competitive-binding, temporal-integration, error-driven-learning
+
+### Invariant-composition (requires capabilityPacks: ["invariant-composition"])
+transformation-invariance, carrier-transfer, causal-memory, derivative-trajectory, lead-lag-counterpoint, conservation-filter, semantic-transition, polyphonic-identity, recognition-transaction, climax-assimilation, structural-homology, constraint-tournament
+
+## Visual Operators (choose one per shot)
+
+reveal, contract, frame, filter, sequence, select, reach, enclose, construct, unfold, invert, differentiate, recontextualize, open
+
+## Scene Format
+
 ```json
 {
-  "id": "luminous-field",
-  "meaning": "Infinite awareness — centerless, unbounded, always present.",
-  "treatment": "A gold-white radial field that fills frame or appears as a soft glow."
+  "id": "sc01",
+  "title": "Beat name (2-80 chars)",
+  "subtitle": "Interpretive sentence (2-140 chars)",
+  "term": "IAST term (1-50 chars)",
+  "devanagari": "देवनागरी",
+  "motif": "semantic-essay",
+  "duration": 6.0,
+  "params": { "visual": "mechanism-id", "caption": "Short label" }
 }
 ```
 
-### Step 3: Map Paragraphs to Mechanisms
+## Render
 
-For each paragraph, select a visual mechanism from the pack manifests that best encodes the paragraph's relation. Use the `semantic-essay` motif with `params.visual` set to the mechanism ID.
-
-### Step 4: Create a Compiled Scene Pack (not visual program)
-
-The essay compiler has a 30s-per-shot limit. For dense philosophical prose, write the compiled pack JSON directly.
-
-Format:
-```json
-{
-  "version": "1.0",
-  "id": "your-essay-id",
-  "title": "Your Essay Title",
-  "description": "Visual companion to essay.",
-  "theme": "ivoryManuscript",
-  "seed": 123456,
-  "render": {
-    "width": 1280, "height": 720, "fps": 24, "crf": 18,
-    "preset": "medium", "sceneDuration": 8, "transitionDuration": 0.5
-  },
-  "scenes": [
-    {
-      "id": "sc01",
-      "title": "Scene Title",
-      "subtitle": "Scene subtitle (2-140 chars)",
-      "term": "Sanskrit term",
-      "devanagari": "देवनागरी",
-      "motif": "semantic-essay",
-      "duration": 8.0,
-      "params": {
-        "visual": "mechanism-id",
-        "caption": "Short caption shown on screen"
-      }
-    }
-  ]
-}
-```
-
-### Step 5: Render the Video
-
-There are two render paths:
-
-**For packs using only built-in mechanisms (base pack):**
+### Base mechanisms only:
 ```bash
 cd MOTHERFUCKER
-node cli.mjs render packs/your-pack.json --out build/your-film/your-film.mp4
+node cli.mjs render packs/your-pack.json --out build/film.mp4
 ```
 
-**For packs using custom mechanisms (neurocognition, human-anatomy, invariant-composition):**
-The pack JSON must have a `capabilityPacks` array at the top level. Render using a capability-aware loader:
-
+### Custom packs (capabilityPack field in JSON):
 ```js
 import { loadCapabilityScenePack } from "./src/load-capability-scene-pack.mjs";
 import { renderVideo } from "./renderer.mjs";
-
 const pack = await loadCapabilityScenePack("./packs/your-pack.json");
-const result = await renderVideo(pack, "build/your-film/your-film.mp4");
+await renderVideo(pack, "build/film.mp4");
 ```
 
-Or use the included demo render scripts as templates:
-```bash
-node tools/render-invariant-demo.mjs
-node tools/test-neuro-pack.mjs
-node tools/test-anatomy-pack.mjs
-```
+See `MOTHERFUCKER/tools/test-neuro-pack.mjs` and `MOTHERFUCKER/tools/test-anatomy-pack.mjs` for working examples.
 
-### Step 6: Generate TTS Narration
-
-1. Extract plaintext from the essay markdown (strip headers, citations)
-2. Trim to ~1050 words max (fits ~6 min at 180wpm)
-3. Split into ~200-word chunks
-4. Generate each chunk with edge-tts:
-```bash
-edge-tts --voice en-GB-SoniaNeural -f chunk.txt --write-media chunk.mp3
-```
-5. Concatenate chunks:
-```bash
-ffmpeg -f concat -safe 0 -i concat.txt -c copy narration_full.mp3
-```
-
-### Step 7: Mux Audio with Video
-
-Calculate speed ratio = video_duration / audio_duration. Apply atempo filter:
-```bash
-ffmpeg -i video.mp4 -i narration_full.mp3 -c:v copy \
-  -filter:a "atempo=1.11" -c:a aac -map 0:v:0 -map 1:a:0 -shortest \
-  final-film.mp4
-```
-
-### Step 8: Validate
+## TTS + Mux
 
 ```bash
-node cli.mjs validate packs/your-pack.json
-ffprobe final-film.mp4
+edge-tts --voice en-GB-SoniaNeural -f narration.txt --write-media chunk.mp3
+ffmpeg -f concat -safe 0 -i concat.txt -c copy full.mp3
+ffmpeg -i video.mp4 -i full.mp3 -c:v copy -filter:a "atempo=RATIO" -c:a aac -map 0:v:0 -map 1:a:0 -shortest final.mp4
 ```
 
-## Tips
+## Reference Docs
 
-- Keep each shot under 28s if possible (the compiler enforces 30s max)
-- Use `constraint-field` for opening thesis shots (luminous field + local point)
-- Use `opening-fist` or `upsurge` for recognition/climax shots
-- Use `melody-time` for sequencing (four stations, four limbs, etc.)
-- Use `practice-folds` for discipline/effort/training descriptions
-- Use `desire-orbit` for devotion/bhakti/reaching
-- Use `powered-prison` or `smallness-cage` for limitation/bondage descriptions
-- For continuity, always carry the luminous field and local point through multiple shots
-- The `overlays` array can layer assets on top of mechanisms for extra context
-
-## Example: Working Film Packs
-
-- `MOTHERFUCKER/packs/hrdaya-original.json` — 6-scene demo pack
-- `MOTHERFUCKER/packs/magician-compiled.json` — 14-scene Crowley essay pack (366s, with TTS)
-- `MOTHERFUCKER/infinite_learned_film_pack/` — 44-shot validated film
-- `MOTHERFUCKER/film-packs/stones-are-watching/` — 106-shot film
+- `MOTHERFUCKER/VISUAL_DECISION_PROTOCOL.md` — full 4-pass protocol
+- `MOTHERFUCKER/VISUAL_CODING_LANGUAGE.md` — composition grammar
+- `MOTHERFUCKER/ESSAY_VISUAL_MODEL_PROMPT.md` — agent prompt
+- `MOTHERFUCKER/ESSAY_TO_VISUAL_WORKFLOW.md` — end-to-end workflow
+- `MOTHERFUCKER/infinite_learned_film_pack/visual_program.json` — validated 44-shot example
