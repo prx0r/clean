@@ -35,6 +35,7 @@ import {
   renderSemanticEssay,
   semanticVisualDescriptions,
 } from "./semantic-visuals.mjs";
+import { renderArgumentDisplay } from "./src/argument-display.mjs";
 
 function sceneColor(scene, key, fallback) {
   return scene.palette?.[key] ?? scene.params?.[key] ?? fallback;
@@ -512,6 +513,7 @@ function closingHeartSeal(ctx, t, scene, env) {
 export const motifRegistry = Object.freeze({
   composition: renderComposition,
   "semantic-essay": renderSemanticEssay,
+  "logical-argument": renderArgumentDisplay,
   "heart-lattice": heartLattice,
   "attention-lens": attentionLens,
   "phoneme-forge": phonemeForge,
