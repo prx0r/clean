@@ -16,6 +16,7 @@ import {
 } from "./primitives.mjs";
 import { assertPack } from "./schema.mjs";
 import { getTheme } from "./theme.mjs";
+import { loadAudioFeatureManifest, sampleAudioFeatures } from "./src/audio/audio-features.mjs";
 
 export async function loadPack(path) {
   const data = JSON.parse(await readFile(path, "utf8"));
@@ -35,6 +36,7 @@ export class FrameRenderer {
     this.ctx.imageSmoothingEnabled = true;
     this.ctx.imageSmoothingQuality = "high";
     this.backgrounds = new Map();
+    this.audio = options.audio ?? null;
   }
 
   backgroundFor(scene) {
@@ -54,11 +56,13 @@ export class FrameRenderer {
     const theme = getTheme(scene.theme ?? this.pack.theme);
     clearWithBackground(this.ctx, this.backgroundFor(scene), this.width, this.height);
     drawBorder(this.ctx, theme);
+    const seconds = this.frame != null ? this.frame / this.fps : 0;
     renderMotif(this.ctx, t, scene, {
       theme,
       seed: (scene.seed ?? this.pack.seed) >>> 0,
       width: this.width,
       height: this.height,
+      audio: this.audio ? sampleAudioFeatures(this.audio, seconds) : null,
     });
     drawFooter(this.ctx, scene, theme, smoothstep(0.01, 0.12, t));
     return this.canvas;
@@ -79,7 +83,16 @@ async function writeChunk(stream, chunk) {
 
 export async function renderVideo(pack, outputPath, options = {}) {
   assertPack(pack);
-  const renderer = new FrameRenderer(pack, options);
+  let audioManifest = null;
+  if (pack.audioManifest) {
+    try {
+      audioManifest = await loadAudioFeatureManifest(resolve(pack.audioManifest));
+    } catch (e) {
+      console.warn(`Audio manifest not loaded: ${e.message}`);
+    }
+  }
+  const audioOption = audioManifest ?? options.audio ?? null;
+  const renderer = new FrameRenderer(pack, { ...options, audio: audioOption });
   const fps = renderer.fps;
   const crf = options.crf ?? pack.render.crf ?? 16;
   const preset = options.preset ?? pack.render.preset ?? "medium";
@@ -120,12 +133,14 @@ export async function renderVideo(pack, outputPath, options = {}) {
   const compositeContext = composite?.getContext("2d");
   let rendered = 0;
   let nextProgress = 0.1;
+  let globalFrame = 0;
 
   try {
     for (const [sceneIndex, scene] of pack.scenes.entries()) {
       const count = framesPerScene[sceneIndex];
       for (let frame = 0; frame < count; frame += 1) {
         const t = frame / Math.max(1, count - 1);
+        renderer.frame = globalFrame;
         renderer.render(scene, t);
         let pixels = renderer.rgba();
         if (sceneIndex > 0 && frame < Math.min(transitionFrames, count)) {
@@ -147,6 +162,7 @@ export async function renderVideo(pack, outputPath, options = {}) {
         }
         await writeChunk(ffmpeg.stdin, pixels);
         rendered += 1;
+        globalFrame += 1;
         if (rendered / totalFrames >= nextProgress) {
           process.stdout.write(`Rendered ${Math.round(nextProgress * 100)}% (${rendered}/${totalFrames})\n`);
           nextProgress += 0.1;
