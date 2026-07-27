@@ -54,8 +54,14 @@ export class FrameRenderer {
 
   render(scene, t) {
     const theme = getTheme(scene.theme ?? this.pack.theme);
-    clearWithBackground(this.ctx, this.backgroundFor(scene), this.width, this.height);
-    drawBorder(this.ctx, theme);
+    const isClean = scene.motif === "argument-diagram" || scene.motif === "logical-argument";
+    if (isClean) {
+      this.ctx.fillStyle = "#fafaf8";
+      this.ctx.fillRect(0, 0, this.width, this.height);
+    } else {
+      clearWithBackground(this.ctx, this.backgroundFor(scene), this.width, this.height);
+      drawBorder(this.ctx, theme);
+    }
     const seconds = this.frame != null ? this.frame / this.fps : 0;
     renderMotif(this.ctx, t, scene, {
       theme,
@@ -64,7 +70,9 @@ export class FrameRenderer {
       height: this.height,
       audio: this.audio ? sampleAudioFeatures(this.audio, seconds) : null,
     });
-    drawFooter(this.ctx, scene, theme, smoothstep(0.01, 0.12, t));
+    if (!isClean) {
+      drawFooter(this.ctx, scene, theme, smoothstep(0.01, 0.12, t));
+    }
     return this.canvas;
   }
 
