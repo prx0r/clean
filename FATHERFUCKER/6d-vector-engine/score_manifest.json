@@ -1,0 +1,219 @@
+{
+  "composition_id": "the-universe-becomes-small-when-agency-becomes-private",
+  "composition_sha256": "27762ece385145ce1d4a2c2e6fef5559b0de6ffd9825c007d98c4b084c7f3959",
+  "duration_seconds": 600.0,
+  "ticks_per_beat": 480,
+  "track_count": 6,
+  "event_counts": {
+    "note_on": 1533,
+    "tempo": 12,
+    "marker": 12
+  },
+  "silence_windows": [
+    {
+      "start": 526.0,
+      "end": 532.0,
+      "purpose": "Camatkara aperture: cadence decays, geometry loses its object, then the recognition sentence arrives."
+    }
+  ],
+  "mapping": {
+    "metamorphosis": "filament register travel, velocity, and chord displacement",
+    "continuity": "note overlap, common-tone persistence, and voice-entry delay",
+    "centricity": "drone strength and boundary-pulse velocity",
+    "coherence": "sustained chord voicing and recognition-bloom intensity",
+    "periodicity": "bounded rhythmic jitter and pulse-grid reliability",
+    "density": "string voice count, subdivision, and event probability"
+  },
+  "chapters": [
+    {
+      "time": 0.0,
+      "id": "unbounded_field",
+      "bpm": 44,
+      "chord": "D5 open spectrum",
+      "notes": [
+        38,
+        50,
+        57,
+        62,
+        69
+      ]
+    },
+    {
+      "time": 42.0,
+      "id": "first_bias",
+      "bpm": 50,
+      "chord": "D add9 without third",
+      "notes": [
+        38,
+        50,
+        57,
+        64,
+        69
+      ]
+    },
+    {
+      "time": 88.0,
+      "id": "living_boundary",
+      "bpm": 60,
+      "chord": "D minor add9",
+      "notes": [
+        38,
+        50,
+        57,
+        60,
+        64,
+        69
+      ]
+    },
+    {
+      "time": 138.0,
+      "id": "interoceptive_center",
+      "bpm": 56,
+      "chord": "B-flat major seven over D",
+      "notes": [
+        38,
+        50,
+        57,
+        58,
+        62,
+        65,
+        69
+      ]
+    },
+    {
+      "time": 190.0,
+      "id": "counterfactual_futures",
+      "bpm": 74,
+      "chord": "D minor eleven",
+      "notes": [
+        38,
+        50,
+        53,
+        57,
+        60,
+        64,
+        67
+      ]
+    },
+    {
+      "time": 244.0,
+      "id": "private_agency",
+      "bpm": 82,
+      "chord": "C-sharp tension field",
+      "notes": [
+        37,
+        49,
+        55,
+        58,
+        62,
+        64
+      ]
+    },
+    {
+      "time": 294.0,
+      "id": "false_owner",
+      "bpm": 92,
+      "chord": "Chromatic knot around D",
+      "notes": [
+        37,
+        38,
+        49,
+        50,
+        55,
+        58,
+        64
+      ]
+    },
+    {
+      "time": 344.0,
+      "id": "biology_remains",
+      "bpm": 62,
+      "chord": "D minor suspended",
+      "notes": [
+        38,
+        50,
+        53,
+        57,
+        60,
+        62,
+        69
+      ]
+    },
+    {
+      "time": 398.0,
+      "id": "nested_agencies",
+      "bpm": 70,
+      "chord": "G major six over D",
+      "notes": [
+        38,
+        50,
+        55,
+        59,
+        62,
+        64,
+        67
+      ]
+    },
+    {
+      "time": 454.0,
+      "id": "camera_reversal",
+      "bpm": 64,
+      "chord": "D luminous quartal field",
+      "notes": [
+        38,
+        50,
+        57,
+        59,
+        64,
+        66,
+        71
+      ]
+    },
+    {
+      "time": 510.0,
+      "id": "camatkara_aperture",
+      "bpm": 40,
+      "chord": "D harmonic convergence",
+      "notes": [
+        38,
+        50,
+        57,
+        62,
+        66,
+        69,
+        74
+      ]
+    },
+    {
+      "time": 542.0,
+      "id": "transparent_return",
+      "bpm": 52,
+      "chord": "D six-nine",
+      "notes": [
+        38,
+        50,
+        57,
+        62,
+        64,
+        66,
+        69,
+        71
+      ]
+    },
+    {
+      "time": 600.0,
+      "id": "afterimage",
+      "bpm": 44,
+      "chord": "D open spectrum transformed",
+      "notes": [
+        38,
+        50,
+        57,
+        62,
+        64,
+        69,
+        74
+      ]
+    }
+  ]
+}

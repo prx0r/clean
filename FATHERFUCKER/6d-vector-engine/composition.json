@@ -1,0 +1,301 @@
+{
+  "schema_version": "1.0",
+  "id": "the-universe-becomes-small-when-agency-becomes-private",
+  "title": "The Universe Becomes Small When Agency Becomes Private",
+  "duration_seconds": 600.0,
+  "target_fps": 24,
+  "central_question": "Why would consciousness become a bounded biological organism with memory, prediction, need, and a private point of view?",
+  "thesis": "A living boundary does not merely imprison a field; it converts distributed possibility into situated agency. Science can model that localization, while Trika asks whether the localized power was ever separate from the field that appears through it.",
+  "continuity_material": "A luminous, vibrating agency-field that can become bias, membrane, pulse, prediction, attractor, nested boundary, and transparent lens without changing substance.",
+  "artistic_status": {
+    "state_space": "A compositional control system, not a validated psychological measurement model.",
+    "rasa": "A dramaturgical interpretation informed by classical rasa theory, not a claim that rasas reduce to six coordinates.",
+    "tattva": "An artistic constraint ladder. Tattva levels do not historically prescribe visual density, chords, or frequencies.",
+    "symmetry": "Used as a controllable cross-modal quality. The Symmetry Theory of Valence remains a hypothesis and is not asserted as fact.",
+    "science_trika_bridge": "Structural comparison only. Markov blankets and interoceptive inference do not establish Trika metaphysics."
+  },
+  "state_space": {
+    "name": "Aesthetic State Vector",
+    "symbol": "A(t)",
+    "order": [
+      "metamorphosis",
+      "continuity",
+      "centricity",
+      "coherence",
+      "periodicity",
+      "density"
+    ],
+    "axes": [
+      {
+        "symbol": "delta",
+        "name": "metamorphosis",
+        "meaning": "Rate and scale of meaningful change.",
+        "visual": "Domain warp, camera velocity, topology change.",
+        "music": "Chord-space displacement and register travel.",
+        "narrative": "Conceptual turn rate and sentence pressure."
+      },
+      {
+        "symbol": "lambda",
+        "name": "continuity",
+        "meaning": "How much identity survives transformation.",
+        "visual": "Morph smoothness, trace persistence, material conservation.",
+        "music": "Voice-leading economy and sustained common tones.",
+        "narrative": "Referential continuity and length of transitions."
+      },
+      {
+        "symbol": "kappa",
+        "name": "centricity",
+        "meaning": "Strength of a privileged center or attractor.",
+        "visual": "Lens strength, radial pull, figure-ground hierarchy.",
+        "music": "Drone strength, tonal center, bass recurrence.",
+        "narrative": "Strength of the apparent subject or explanatory center."
+      },
+      {
+        "symbol": "sigma",
+        "name": "coherence",
+        "meaning": "Degree of symmetry, consonance, and mutual fit.",
+        "visual": "Bilateral/radial agreement, phase locking, palette concord.",
+        "music": "Interval consonance and spectral alignment.",
+        "narrative": "Resolution versus contradiction."
+      },
+      {
+        "symbol": "rho",
+        "name": "periodicity",
+        "meaning": "Predictability of temporal recurrence.",
+        "visual": "Pulse regularity, rhythmic repetition, temporal jitter.",
+        "music": "Meter stability, syncopation, event-grid regularity.",
+        "narrative": "Cadence regularity and placement of silence."
+      },
+      {
+        "symbol": "eta",
+        "name": "density",
+        "meaning": "Structural and informational multiplicity.",
+        "visual": "Filament count, spatial frequency, nesting depth.",
+        "music": "Note density, orchestral layers, harmonic extensions.",
+        "narrative": "Explanatory granularity and clause density."
+      }
+    ]
+  },
+  "uniform_contract": {
+    "u": "Global film progress from 0 to 1.",
+    "t": "Continuous physical time in seconds.",
+    "u_audioVolume": "Deterministic score energy derived from A(t).",
+    "u_audioBeat": "Score pulse derived from the current tempo and periodicity.",
+    "u_stateA": "[metamorphosis, continuity, centricity, coherence]",
+    "u_stateB": "[periodicity, density]",
+    "u_stage": "Current semantic chapter index.",
+    "u_local": "Progress through the current chapter.",
+    "u_tattva": "Normalized artistic constraint level, 0 dense to 1 open."
+  },
+  "score": {
+    "ticks_per_beat": 480,
+    "tonal_center_midi": 50,
+    "tonal_center_name": "D",
+    "tracks": [
+      "breath field",
+      "continuity strings",
+      "predictive filaments",
+      "boundary pulse",
+      "recognition bloom"
+    ],
+    "silence_windows": [
+      {
+        "start": 526.0,
+        "end": 532.0,
+        "purpose": "Camatkara aperture: cadence decays, geometry loses its object, then the recognition sentence arrives."
+      }
+    ]
+  },
+  "recognition_event": {
+    "visual_dissolve_start": 510.0,
+    "cadence_time": 525.5,
+    "silence_start": 526.0,
+    "key_sentence_time": 532.0,
+    "key_sentence": "The universe did not disappear when you became a person. It learned how to look from here.",
+    "return_time": 542.0
+  },
+  "waypoints": [
+    {
+      "index": 0,
+      "time": 0.0,
+      "id": "unbounded_field",
+      "title": "No privileged here",
+      "rasa": {"dominant": "shanta", "supporting": "adbhuta"},
+      "tattva": {"level": 36, "name": "Shiva", "constraint": 0.0},
+      "state": [0.08, 0.98, 0.08, 0.95, 0.88, 0.08],
+      "camera": "Suspended inside a field with no object and no horizon.",
+      "visual_verb": "inhere",
+      "audience_undergoes": "The eye searches for a figure and discovers only reciprocal depth.",
+      "music": {"bpm": 44, "chord": "D5 open spectrum", "notes": [38, 50, 57, 62, 69]},
+      "narrative_function": "Ask how a field without a privileged center could ever become a point of view."
+    },
+    {
+      "index": 1,
+      "time": 42.0,
+      "id": "first_bias",
+      "title": "The field inclines",
+      "rasa": {"dominant": "adbhuta", "supporting": "shanta"},
+      "tattva": {"level": 34, "name": "Sadashiva", "constraint": 0.08},
+      "state": [0.34, 0.93, 0.24, 0.84, 0.73, 0.18],
+      "camera": "A barely perceptible drift makes one region arrive first.",
+      "visual_verb": "incline",
+      "audience_undergoes": "Difference is felt before an object exists.",
+      "music": {"bpm": 50, "chord": "D add9 without third", "notes": [38, 50, 57, 64, 69]},
+      "narrative_function": "Introduce localization as a bias in a field, not the insertion of a separate thing."
+    },
+    {
+      "index": 2,
+      "time": 88.0,
+      "id": "living_boundary",
+      "title": "A difference begins to maintain itself",
+      "rasa": {"dominant": "vira", "supporting": "adbhuta"},
+      "tattva": {"level": 27, "name": "maya", "constraint": 0.26},
+      "state": [0.58, 0.80, 0.56, 0.68, 0.67, 0.41],
+      "camera": "The drift curls into a porous off-axis membrane.",
+      "visual_verb": "bound",
+      "audience_undergoes": "The boundary is perceived as an active exchange pattern rather than a wall.",
+      "music": {"bpm": 60, "chord": "D minor add9", "notes": [38, 50, 57, 60, 64, 69]},
+      "narrative_function": "Explain statistical and biological boundary-making without identifying it with skin or consciousness."
+    },
+    {
+      "index": 3,
+      "time": 138.0,
+      "id": "interoceptive_center",
+      "title": "The world bends around a need",
+      "rasa": {"dominant": "karuna", "supporting": "shringara"},
+      "tattva": {"level": 20, "name": "purusha", "constraint": 0.46},
+      "state": [0.39, 0.74, 0.70, 0.58, 0.79, 0.52],
+      "camera": "The membrane becomes a chamber of inward-moving pulses.",
+      "visual_verb": "feel",
+      "audience_undergoes": "External depth reorganizes around an interior rhythm.",
+      "music": {"bpm": 56, "chord": "B-flat major seven over D", "notes": [38, 50, 57, 58, 62, 65, 69]},
+      "narrative_function": "Make bodily regulation, affect, and the material self felt before naming them."
+    },
+    {
+      "index": 4,
+      "time": 190.0,
+      "id": "counterfactual_futures",
+      "title": "Prediction grows branches",
+      "rasa": {"dominant": "vira", "supporting": "adbhuta"},
+      "tattva": {"level": 16, "name": "manas", "constraint": 0.58},
+      "state": [0.66, 0.64, 0.68, 0.55, 0.62, 0.69],
+      "camera": "The chamber opens into branching possible futures.",
+      "visual_verb": "predict",
+      "audience_undergoes": "Several futures appear, but action forces only one to become the path.",
+      "music": {"bpm": 74, "chord": "D minor eleven", "notes": [38, 50, 53, 57, 60, 64, 67]},
+      "narrative_function": "Relate preference, model, and action to the finite architecture of agency."
+    },
+    {
+      "index": 5,
+      "time": 244.0,
+      "id": "private_agency",
+      "title": "Power acquires an owner",
+      "rasa": {"dominant": "bhayanaka", "supporting": "karuna"},
+      "tattva": {"level": 10, "name": "indriya field", "constraint": 0.76},
+      "state": [0.75, 0.38, 0.91, 0.29, 0.43, 0.76],
+      "camera": "The aperture contracts and the surrounding field loses authority.",
+      "visual_verb": "appropriate",
+      "audience_undergoes": "A useful center becomes claustrophobically absolute.",
+      "music": {"bpm": 82, "chord": "C-sharp tension field", "notes": [37, 49, 55, 58, 62, 64]},
+      "narrative_function": "Show the transition from situated agency to the belief in private authorship."
+    },
+    {
+      "index": 6,
+      "time": 294.0,
+      "id": "false_owner",
+      "title": "The center explains itself with itself",
+      "rasa": {"dominant": "raudra", "supporting": "bibhatsa"},
+      "tattva": {"level": 6, "name": "tanmatra field", "constraint": 0.88},
+      "state": [0.84, 0.29, 0.86, 0.21, 0.27, 0.90],
+      "camera": "Competing loops knot around an over-bright central token.",
+      "visual_verb": "knot",
+      "audience_undergoes": "The apparent owner is revealed as the most compressed loop in the process.",
+      "music": {"bpm": 92, "chord": "Chromatic knot around D", "notes": [37, 38, 49, 50, 55, 58, 64]},
+      "narrative_function": "Stress-test both simple materialism and an easy consciousness-filter story."
+    },
+    {
+      "index": 7,
+      "time": 344.0,
+      "id": "biology_remains",
+      "title": "Recognition cannot abolish the organism",
+      "rasa": {"dominant": "karuna", "supporting": "vira"},
+      "tattva": {"level": 9, "name": "sensory field", "constraint": 0.80},
+      "state": [0.36, 0.70, 0.72, 0.47, 0.46, 0.63],
+      "camera": "The knot loosens, but the membrane continues to pulse and exchange.",
+      "visual_verb": "endure",
+      "audience_undergoes": "Relief arrives without a fantasy of leaving embodiment.",
+      "music": {"bpm": 62, "chord": "D minor suspended", "notes": [38, 50, 53, 57, 60, 62, 69]},
+      "narrative_function": "State the constraint: hunger, contact, hormones, memory, and prediction continue while alive."
+    },
+    {
+      "index": 8,
+      "time": 398.0,
+      "id": "nested_agencies",
+      "title": "Every center is made of centers",
+      "rasa": {"dominant": "adbhuta", "supporting": "vira"},
+      "tattva": {"level": 19, "name": "buddhi", "constraint": 0.49},
+      "state": [0.56, 0.80, 0.58, 0.73, 0.65, 0.70],
+      "camera": "Scale unfolds outward and inward at once.",
+      "visual_verb": "nest",
+      "audience_undergoes": "The private center becomes one negotiation among many biological scales.",
+      "music": {"bpm": 70, "chord": "G major six over D", "notes": [38, 50, 55, 59, 62, 64, 67]},
+      "narrative_function": "Introduce nested agency and distinguish explanatory models from metaphysical conclusions."
+    },
+    {
+      "index": 9,
+      "time": 454.0,
+      "id": "camera_reversal",
+      "title": "The lens appears inside its own field",
+      "rasa": {"dominant": "adbhuta", "supporting": "shringara"},
+      "tattva": {"level": 29, "name": "shuddhavidya", "constraint": 0.18},
+      "state": [0.72, 0.89, 0.36, 0.87, 0.59, 0.46],
+      "camera": "A radical pullback preserves the organism as a tiny transparent lens.",
+      "visual_verb": "reverse",
+      "audience_undergoes": "Figure and ground exchange roles without either being erased.",
+      "music": {"bpm": 64, "chord": "D luminous quartal field", "notes": [38, 50, 57, 59, 64, 66, 71]},
+      "narrative_function": "Present the strongest Trika interpretation while retaining the unresolved explanatory gap."
+    },
+    {
+      "index": 10,
+      "time": 510.0,
+      "id": "camatkara_aperture",
+      "title": "The object of recognition disappears",
+      "rasa": {"dominant": "adbhuta", "supporting": "shanta"},
+      "tattva": {"level": 36, "name": "Shiva", "constraint": 0.0},
+      "state": [0.90, 0.97, 0.05, 0.98, 0.93, 0.03],
+      "camera": "All scales coincide; contour becomes radiance and radiance loses a center.",
+      "visual_verb": "recognize",
+      "audience_undergoes": "The argument ceases to be an object and becomes the condition of the frame.",
+      "music": {"bpm": 40, "chord": "D harmonic convergence", "notes": [38, 50, 57, 62, 66, 69, 74]},
+      "narrative_function": "Cadence, six seconds of audiovisual space, then the one recognition sentence."
+    },
+    {
+      "index": 11,
+      "time": 542.0,
+      "id": "transparent_return",
+      "title": "A boundary becomes a way of giving",
+      "rasa": {"dominant": "shanta", "supporting": "shringara"},
+      "tattva": {"level": 24, "name": "localized knowing", "constraint": 0.34},
+      "state": [0.21, 0.96, 0.56, 0.91, 0.83, 0.34],
+      "camera": "Return to the living membrane, now transparent to the larger field.",
+      "visual_verb": "participate",
+      "audience_undergoes": "The same organism is felt as a local act of the world rather than an isolated possession.",
+      "music": {"bpm": 52, "chord": "D six-nine", "notes": [38, 50, 57, 62, 64, 66, 69, 71]},
+      "narrative_function": "Integrate science, metaphysical possibility, embodiment, and transformed ownership."
+    },
+    {
+      "index": 12,
+      "time": 600.0,
+      "id": "afterimage",
+      "title": "The field keeps the lens",
+      "rasa": {"dominant": "shanta", "supporting": "adbhuta"},
+      "tattva": {"level": 28, "name": "vidya", "constraint": 0.22},
+      "state": [0.06, 0.99, 0.42, 0.94, 0.89, 0.22],
+      "camera": "The final luminous boundary remains as an afterimage inside open depth.",
+      "visual_verb": "remain",
+      "audience_undergoes": "The opening stillness returns carrying the history of localization.",
+      "music": {"bpm": 44, "chord": "D open spectrum transformed", "notes": [38, 50, 57, 62, 64, 69, 74]},
+      "narrative_function": "End without a logo-like climax or explanatory recap."
+    }
+  ]
+}
