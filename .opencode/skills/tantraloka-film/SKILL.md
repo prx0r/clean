@@ -32,6 +32,7 @@ Do not collapse passes. Choosing a visual while summarizing a paragraph makes th
 Score every candidate on: relation preservation, topology, temporal order, invariant preservation, silent legibility, domain appropriateness, epistemic integrity, novelty relative to adjacent scenes.
 
 Reject any candidate that is merely beautiful and interchangeable.
+No mechanism may be used more than twice in a single film. If a mechanism fits three beats, find a distinct mechanism for at least one of them.
 
 ## Hard failures
 

@@ -133,7 +133,9 @@ function note(ctx, x, y, color, alpha, active = false) {
 function constraintField(ctx, t, scene, env) {
   const { theme } = env;
   const { accent, secondary, gold } = colors(scene, theme);
-  const reveal = revealIn(t);
+  const audio = env.audio ?? null;
+  const pulse = audio ? 0.8 + 0.2 * audio.rms : 1;
+  const reveal = revealIn(t) * pulse;
   const contraction = easeInOutCubic(smoothstep(0.12, 0.78, t));
   fieldNodes(ctx, t, env, { count: 112, alpha: 0.2 + 0.22 * (1 - contraction) });
 
@@ -141,15 +143,16 @@ function constraintField(ctx, t, scene, env) {
     const openRadius = 125 + index * 58;
     const closedRadius = 42 + index * 12;
     const radius = openRadius + (closedRadius - openRadius) * contraction;
+    const audioBoost = audio ? 1 + 0.3 * audio.onset : 1;
     drawEllipseRing(
       ctx,
       640,
       290,
-      radius,
-      radius * (0.72 + index * 0.02),
+      radius * audioBoost,
+      radius * (0.72 + index * 0.02) * audioBoost,
       index % 2 ? secondary : gold,
-      reveal * (0.12 + index * 0.035),
-      index === 0 ? 1.8 : 0.9,
+      reveal * (0.12 + index * 0.035) * (audio ? 0.5 + 0.5 * audio.rms : 1),
+      (index === 0 ? 1.8 : 0.9) * (audio ? 1 + audio.onset * 0.5 : 1),
       t * 0.025 * (index % 2 ? -1 : 1),
     );
   }
@@ -162,10 +165,10 @@ function constraintField(ctx, t, scene, env) {
   ctx.lineWidth = 1.6;
   ctx.strokeRect(640 - frameWidth / 2, 290 - frameHeight / 2, frameWidth, frameHeight);
   ctx.restore();
-  fieldCore(ctx, t, theme, gold, reveal, 33 + 8 * contraction);
+  fieldCore(ctx, t, theme, gold, reveal, (33 + 8 * contraction) * (audio ? 0.8 + 0.2 * audio.rms : 1));
   drawLabel(ctx, scene.params?.centerText ?? "अहम्", 640, 294, {
     devanagari: true,
-    size: 30,
+    size: audio ? 28 + 4 * audio.onset : 30,
     color: secondary,
     alpha: reveal,
   });
