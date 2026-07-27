@@ -1,0 +1,280 @@
+{
+  "version": "1.0",
+  "id": "human-anatomy",
+  "title": "Human Anatomy and Embodiment",
+  "description": "A reusable body coordinate system, physical-system assets, interoceptive and attentional overlays, and semantic mechanisms for embodiment, meditation, breath, regulation and body-world interaction.",
+  "extends": ["base"],
+  "defaultTheme": "anatomyIvory",
+  "runtimeModule": "../../src/anatomy-visuals.mjs",
+  "themes": [
+    {
+      "name": "anatomyIvory",
+      "tokens": {
+        "background": "#f5f4ef",
+        "backgroundLight": "#ffffff",
+        "backgroundEdge": "#e7e8e4",
+        "ink": "#20272d",
+        "structure": "#59646d",
+        "border": "#3f5f78",
+        "accent": "#a94955",
+        "secondary": "#455b94",
+        "luminous": "#d2a744",
+        "panel": "#fbfbf8",
+        "particle": "#6c8f9b",
+        "textureOpacity": 0.018,
+        "chrome": {
+          "borderStyle": "technical",
+          "footerStyle": "technical",
+          "gridOpacity": 0.012,
+          "cornerMarks": true,
+          "calibrationTicks": true
+        },
+        "motion": {
+          "glowScale": 0.8,
+          "pulseRate": 0.72,
+          "defaultTransition": "breath-dissolve"
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "human-standing-outline",
+      "description": "A canonical front-facing human outline anchored to a stable named landmark coordinate system.",
+      "category": "structural-base",
+      "epistemicMode": "structural",
+      "semanticTags": ["body", "human", "standing", "anatomy"],
+      "parameters": {
+        "x": { "type": "number", "default": 640 },
+        "y": { "type": "number", "default": 82 },
+        "scale": { "type": "number", "minimum": 0.45, "maximum": 1.05, "default": 0.91 }
+      },
+      "provenance": ["cosmic_body_pack.py: body map", "dvadasanta_axis_pack.py: vertical body-space axis"]
+    },
+    {
+      "id": "human-seated-outline",
+      "description": "A canonical seated meditation posture with stable head, spine, hands, pelvis and knee geometry.",
+      "category": "structural-base",
+      "epistemicMode": "structural",
+      "semanticTags": ["body", "meditation", "posture", "seated"],
+      "parameters": {
+        "x": { "type": "number", "default": 640 },
+        "y": { "type": "number", "default": 314 },
+        "scale": { "type": "number", "minimum": 0.5, "maximum": 1.2, "default": 1 }
+      },
+      "provenance": ["four_upayas_pack.py: body-breath-mantra instrument"]
+    },
+    {
+      "id": "body-landmarks",
+      "description": "Named bodily coordinates for crown, brow, throat, heart, diaphragm, navel, root, joints and extremities.",
+      "category": "annotation",
+      "epistemicMode": "biomedical-schematic",
+      "semanticTags": ["landmarks", "coordinates", "body", "annotation"],
+      "parameters": {
+        "names": { "type": "array" },
+        "labels": { "type": ["boolean", "object"], "default": false }
+      },
+      "provenance": ["dvadasanta_axis_pack.py: bodily and cranial coordinates"]
+    },
+    {
+      "id": "lungs-diaphragm",
+      "description": "Paired lungs and a moving diaphragm that visibly expand and contract through a respiratory cycle.",
+      "category": "physical-system",
+      "epistemicMode": "biomedical-schematic",
+      "semanticTags": ["lungs", "diaphragm", "breath", "respiration"],
+      "parameters": {
+        "cycles": { "type": "number", "minimum": 0.25, "maximum": 3, "default": 1 },
+        "phase": { "enum": ["cycle", "exhale"], "default": "cycle" }
+      },
+      "provenance": ["pranavicara_breath_axis_pack.py: respiratory cycle"]
+    },
+    {
+      "id": "heart-circulation",
+      "description": "A beating heart with schematic pulse routes toward the head, hands and feet.",
+      "category": "physical-system",
+      "epistemicMode": "biomedical-schematic",
+      "semanticTags": ["heart", "circulation", "pulse", "regulation"],
+      "parameters": {
+        "rate": { "type": "number", "minimum": 0.4, "maximum": 3, "default": 1.3 }
+      },
+      "provenance": ["cosmic_body_pack.py: embodied pulse"]
+    },
+    {
+      "id": "nervous-system",
+      "description": "A central neural axis with peripheral branches and propagating signal points.",
+      "category": "physical-system",
+      "epistemicMode": "biomedical-schematic",
+      "semanticTags": ["nervous-system", "spine", "signal", "propagation"],
+      "parameters": {
+        "alpha": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.75 }
+      },
+      "provenance": ["cosmic_body_pack.py: paths within the body"]
+    },
+    {
+      "id": "body-boundary",
+      "description": "A breathing operational boundary surrounding the body without implying an absolute metaphysical enclosure.",
+      "category": "functional-overlay",
+      "epistemicMode": "functional-model",
+      "semanticTags": ["boundary", "interface", "body", "access"],
+      "parameters": {
+        "rate": { "type": "number", "minimum": 0.2, "maximum": 2, "default": 0.65 }
+      },
+      "provenance": ["malas_three_veils_pack.py: nested observer field"]
+    },
+    {
+      "id": "awareness-halo",
+      "description": "A movable field of emphasis centered on a named bodily landmark or custom coordinate.",
+      "category": "phenomenological-overlay",
+      "epistemicMode": "phenomenological",
+      "semanticTags": ["awareness", "attention", "focus", "felt-location"],
+      "parameters": {
+        "focus": { "type": ["string", "object"], "default": "heart" },
+        "radius": { "type": "number", "minimum": 12, "maximum": 180, "default": 62 }
+      },
+      "provenance": ["perceptibility_matrix_pack.py: observer lens", "dvadasanta_axis_pack.py: bodily attention stations"]
+    },
+    {
+      "id": "body-scan-band",
+      "description": "A moving attention band that traverses the canonical body from crown to feet or in reverse.",
+      "category": "phenomenological-overlay",
+      "epistemicMode": "phenomenological",
+      "semanticTags": ["body-scan", "attention", "sequence", "meditation"],
+      "parameters": {
+        "direction": { "enum": ["down", "up"], "default": "down" },
+        "width": { "type": "number", "minimum": 120, "maximum": 500, "default": 330 }
+      },
+      "provenance": ["four_upayas_pack.py: embodied supports"]
+    },
+    {
+      "id": "flow-particles",
+      "description": "A deterministic particle current moving vertically through or around the body coordinate field.",
+      "category": "motion-overlay",
+      "epistemicMode": "abstract-process",
+      "semanticTags": ["flow", "particles", "current", "energy"],
+      "parameters": {
+        "direction": { "enum": ["up", "down"], "default": "up" },
+        "count": { "type": "integer", "minimum": 4, "maximum": 80, "default": 24 }
+      },
+      "provenance": ["platinum collection: repeated luminous currents and moving particles"]
+    }
+  ],
+  "mechanisms": [
+    {
+      "id": "embodied-awareness-field",
+      "description": "A stable body remains present while a field of relevance moves between bodily regions.",
+      "relations": ["selection", "interface", "inquiry"],
+      "operators": ["select", "frame", "reveal"],
+      "semanticTags": ["awareness", "embodiment", "attention", "felt-location"],
+      "motionProof": "The body remains invariant while the highlighted region changes, proving that felt location is produced by selective relevance rather than a fixed inner observer.",
+      "epistemicMode": "phenomenological",
+      "parameters": {
+        "focuses": { "type": "array", "minItems": 1, "maxItems": 7 }
+      },
+      "provenance": ["perceptibility_matrix_pack.py", "cosmic_body_pack.py"]
+    },
+    {
+      "id": "body-scan",
+      "description": "Attention traverses bodily regions in a visible ordered scan while the whole body remains available as context.",
+      "relations": ["sequence", "selection", "inquiry"],
+      "operators": ["sequence", "select", "reveal"],
+      "semanticTags": ["meditation", "body-scan", "attention", "interoception"],
+      "motionProof": "The moving band creates an ordered sampling of stable bodily regions; a still cannot show which region was attended before or after.",
+      "epistemicMode": "phenomenological",
+      "parameters": {
+        "direction": { "enum": ["down", "up"], "default": "down" }
+      },
+      "provenance": ["four_upayas_pack.py: embodied supports"]
+    },
+    {
+      "id": "meditation-settling",
+      "description": "Many noisy local motions progressively coordinate around a seated body without disappearing.",
+      "relations": ["cessation", "coordination", "emergence"],
+      "operators": ["cool", "coordinate", "emerge"],
+      "semanticTags": ["meditation", "settling", "attention", "coordination"],
+      "motionProof": "Disordered marks reduce their jitter and coordinate into a slower shared rhythm, distinguishing regulation from blankness or annihilation.",
+      "epistemicMode": "phenomenological",
+      "parameters": {},
+      "provenance": ["four_upayas_pack.py: somatic instrument"]
+    },
+    {
+      "id": "breath-cycle",
+      "description": "Air direction, lung volume and diaphragm position form one reversible respiratory cycle.",
+      "relations": ["sequence", "feedback", "transformation"],
+      "operators": ["sequence", "loop", "transform"],
+      "semanticTags": ["breath", "lungs", "diaphragm", "respiration"],
+      "motionProof": "Air reverses direction while lung volume and diaphragm position change together, so the mechanism exists in the coordinated cycle rather than one pose.",
+      "epistemicMode": "biomedical-schematic",
+      "parameters": {
+        "cycles": { "type": "number", "minimum": 0.25, "maximum": 3, "default": 1 }
+      },
+      "provenance": ["pranavicara_breath_axis_pack.py"]
+    },
+    {
+      "id": "breath-attention-coupling",
+      "description": "Respiratory phase and bodily attention change together while remaining distinguishable processes.",
+      "relations": ["coordination", "feedback", "selection"],
+      "operators": ["coordinate", "loop", "select"],
+      "semanticTags": ["breath", "attention", "meditation", "coupling"],
+      "motionProof": "The respiratory volume and attention halo change phase together, making coupling visible without claiming that either process is identical to the other.",
+      "epistemicMode": "phenomenological-plus-biomedical",
+      "parameters": {},
+      "provenance": ["pranavicara_breath_axis_pack.py", "four_upayas_pack.py"]
+    },
+    {
+      "id": "nervous-signal-propagation",
+      "description": "A local stimulus produces timed signals across central and peripheral neural routes.",
+      "relations": ["propagation", "sequence", "dependency"],
+      "operators": ["propagate", "sequence", "coordinate"],
+      "semanticTags": ["nervous-system", "signal", "stimulus", "body"],
+      "motionProof": "A signal begins at one bodily site and reaches distributed pathways at different times, visibly performing propagation rather than merely drawing nerves.",
+      "epistemicMode": "biomedical-schematic",
+      "parameters": {
+        "stimulus": { "type": "string", "default": "leftWrist" }
+      },
+      "provenance": ["cosmic_body_pack.py: paths within the body"]
+    },
+    {
+      "id": "interoceptive-map",
+      "description": "Several internal bodily signals converge into one provisional integrated body-state.",
+      "relations": ["emergence", "translation", "inquiry"],
+      "operators": ["emerge", "translate", "reveal"],
+      "semanticTags": ["interoception", "body-state", "integration", "signals"],
+      "motionProof": "Distinct organ signals travel along different paths and converge into an integrated target, showing reconstruction rather than a pre-existing complete body picture.",
+      "epistemicMode": "biomedical-schematic",
+      "parameters": {},
+      "provenance": ["perceptibility_matrix_pack.py: perceptibility and observer integration"]
+    },
+    {
+      "id": "body-world-interface",
+      "description": "A bodily boundary admits, excludes and redirects environmental signals through selective channels.",
+      "relations": ["interface", "selection", "containment"],
+      "operators": ["filter", "select", "frame"],
+      "semanticTags": ["boundary", "sensation", "environment", "interface"],
+      "motionProof": "Moving marks encounter the same boundary and separate into admitted and rejected outcomes, proving operational selection rather than decorative enclosure.",
+      "epistemicMode": "functional-model",
+      "parameters": {},
+      "provenance": ["malas_three_veils_pack.py", "perceptibility_matrix_pack.py"]
+    },
+    {
+      "id": "heart-breath-entrainment",
+      "description": "Two initially different bodily rhythms progressively coordinate while retaining their separate traces.",
+      "relations": ["coordination", "feedback", "convergence"],
+      "operators": ["coordinate", "loop", "compare"],
+      "semanticTags": ["heart", "breath", "rhythm", "entrainment"],
+      "motionProof": "The two traces begin at different phase and frequency before synchronising, so the temporal approach is the evidence of entrainment.",
+      "epistemicMode": "biomedical-schematic",
+      "parameters": {},
+      "provenance": ["cosmic_body_pack.py: embodied time pulse", "pranavicara_breath_axis_pack.py"]
+    }
+  ],
+  "selectionPolicy": {
+    "captionPolicy": "Use anatomical labels only when they disambiguate a structure; narration carries the prose.",
+    "preferredSemanticTags": ["body", "breath", "attention", "meditation", "regulation", "interoception"],
+    "forbiddenLiteralizations": ["generic stock meditation pose", "brain icon without signal behavior", "glowing body with no encoded relation"],
+    "epistemicRule": "Mark physical schematics, phenomenological reports and symbolic practice-maps separately. Never imply that one category proves another.",
+    "maximumConsecutiveMechanism": 2,
+    "minimumCandidateCount": 3,
+    "requireMotionProof": true,
+    "requireCaptionIndependence": true
+  }
+}

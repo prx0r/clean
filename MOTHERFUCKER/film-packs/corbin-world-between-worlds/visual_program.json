@@ -1,0 +1,3623 @@
+{
+  "schema_version": "2.0-experimental.narration_locked",
+  "scene_id": "expansion-essay12-world-between-worlds",
+  "visual_thesis": "A third world gradually becomes perceptible as the same threshold transforms into eye, north, Guide, thread, face, fire, bridge and reciprocal birth.",
+  "palette": {
+    "paper": "#F4EFE3",
+    "ink": "#1E191B",
+    "porphyry": "#792638",
+    "lapis": "#2A466E",
+    "gold": "#AE8534"
+  },
+  "entities": [
+    {
+      "id": "threshold",
+      "archetype": "threshold",
+      "continuity": "persistent"
+    },
+    {
+      "id": "guide",
+      "archetype": "luminous_counterpart",
+      "continuity": "emerges_and_returns"
+    },
+    {
+      "id": "relation_thread",
+      "archetype": "current",
+      "continuity": "persistent_transformation"
+    },
+    {
+      "id": "inner_eye",
+      "archetype": "eye",
+      "continuity": "threshold_transformation"
+    }
+  ],
+  "operators": [
+    "reveal",
+    "mediate",
+    "orient",
+    "embody",
+    "illuminate",
+    "connect",
+    "cut",
+    "rejoin",
+    "mirror",
+    "radiate",
+    "ascend",
+    "burn",
+    "bridge",
+    "reciprocate",
+    "interiorize"
+  ],
+  "shots": [
+    {
+      "id": "s001",
+      "start": 0,
+      "end": 6.45,
+      "spoken_text": "What if there is a world that is neither physical nor spiritual — but somewhere in between?",
+      "mode": "threshold_triad",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "three apertures and the central room"
+        ]
+      }
+    },
+    {
+      "id": "s002",
+      "start": 6.45,
+      "end": 11.6,
+      "spoken_text": "And what if that world is more real than either?",
+      "mode": "between_worlds",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "three apertures and the central room"
+        ]
+      }
+    },
+    {
+      "id": "s003",
+      "start": 11.6,
+      "end": 19.986,
+      "spoken_text": "Henry Corbin, the great French scholar of Iranian Sufism, spent his life documenting the evidence for this world.",
+      "mode": "corbin_orbit",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "three apertures and the central room"
+        ]
+      }
+    },
+    {
+      "id": "s004",
+      "start": 19.986,
+      "end": 25.136,
+      "spoken_text": "He called it the mundus imaginalis — the imaginal world,",
+      "mode": "room_between",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "three apertures and the central room"
+        ]
+      }
+    },
+    {
+      "id": "s005",
+      "start": 25.136,
+      "end": 30.612,
+      "spoken_text": "and he believed it was the place where everything that matters actually happens.",
+      "mode": "threshold_triad",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "three apertures and the central room"
+        ]
+      }
+    },
+    {
+      "id": "s006",
+      "start": 30.612,
+      "end": 37.186,
+      "spoken_text": "Corbin saw a third world between the material and the spiritual — the mundus imaginalis,",
+      "mode": "three_worlds",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the intermediate domain"
+        ]
+      }
+    },
+    {
+      "id": "s007",
+      "start": 37.186,
+      "end": 42.336,
+      "spoken_text": "the connective tissue between matter and spirit.",
+      "mode": "ninth_sphere",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the intermediate domain"
+        ]
+      }
+    },
+    {
+      "id": "s008",
+      "start": 42.336,
+      "end": 50.628,
+      "spoken_text": "Between the world of pure spiritual Lights, Luces victoriales, the world of the 'Mothers' in the terminology of Ishraq,",
+      "mode": "imaginal_figures",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the intermediate domain"
+        ]
+      }
+    },
+    {
+      "id": "s009",
+      "start": 50.628,
+      "end": 56.599,
+      "spoken_text": "and the sensory universe, at the boundary of the ninth Sphere, the Sphere of Spheres,",
+      "mode": "bridge_tissue",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the intermediate domain"
+        ]
+      }
+    },
+    {
+      "id": "s010",
+      "start": 56.599,
+      "end": 64.343,
+      "spoken_text": "there opens a mundus imaginalis which is a concrete spiritual world of archetype-Figures, apparitional Forms,",
+      "mode": "three_worlds",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the intermediate domain"
+        ]
+      }
+    },
+    {
+      "id": "s011",
+      "start": 64.343,
+      "end": 73.103,
+      "spoken_text": "Angels of species and of individuals; by philosophical dialectics its necessity is deduced and its plane situated;",
+      "mode": "ninth_sphere",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the intermediate domain"
+        ]
+      }
+    },
+    {
+      "id": "s012",
+      "start": 73.103,
+      "end": 79.577,
+      "spoken_text": "vision of it in actuality is vouchsafed to the visionary apperception of the active Imagination.",
+      "mode": "imaginal_figures",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the intermediate domain"
+        ]
+      }
+    },
+    {
+      "id": "s013",
+      "start": 79.577,
+      "end": 86.599,
+      "spoken_text": "The active Imagination is an organ of perception, like the eye or the ear, tuned to a real world —",
+      "mode": "active_eye",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the inner eye"
+        ]
+      }
+    },
+    {
+      "id": "s014",
+      "start": 86.599,
+      "end": 93.009,
+      "spoken_text": "ontologically intermediate between matter and spirit — not make-believe in the modern sense.",
+      "mode": "eye_city",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the inner eye"
+        ]
+      }
+    },
+    {
+      "id": "s015",
+      "start": 93.009,
+      "end": 99.63,
+      "spoken_text": "The figures you see in this world are real beings in a real place, beyond the reach of physical eyes.",
+      "mode": "physical_eyes",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the inner eye"
+        ]
+      }
+    },
+    {
+      "id": "s016",
+      "start": 99.63,
+      "end": 107.492,
+      "spoken_text": "This suprasensory Orient governs the primary phenomenon of the Gnostic's orientation toward his country of origin.",
+      "mode": "cosmic_compass",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the northward axis"
+        ]
+      }
+    },
+    {
+      "id": "s017",
+      "start": 107.492,
+      "end": 114.611,
+      "spoken_text": "The Orient-origin identified with the center, with the heavenly north pole, heralds access to the beyond,",
+      "mode": "orient_path",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the northward axis"
+        ]
+      }
+    },
+    {
+      "id": "s018",
+      "start": 114.611,
+      "end": 123.567,
+      "spoken_text": "where vision becomes real history, the history of the soul, and where every visionary event symbolizes a spiritual state; or,",
+      "mode": "body_spirit_exchange",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the northward axis"
+        ]
+      }
+    },
+    {
+      "id": "s019",
+      "start": 123.567,
+      "end": 128.717,
+      "spoken_text": "as the Ishraqiyun say,",
+      "mode": "map_home",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the northward axis"
+        ]
+      }
+    },
+    {
+      "id": "s020",
+      "start": 128.717,
+      "end": 135.171,
+      "spoken_text": "it is the climate where what is bodily becomes spirit and what is spiritual acquires a body.",
+      "mode": "cosmic_compass",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the northward axis"
+        ]
+      }
+    },
+    {
+      "id": "s021",
+      "start": 135.171,
+      "end": 140.321,
+      "spoken_text": "The imaginal world has its own geography.",
+      "mode": "orient_path",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the northward axis"
+        ]
+      }
+    },
+    {
+      "id": "s022",
+      "start": 140.321,
+      "end": 146.56,
+      "spoken_text": "Its north is not the magnetic pole; it is the cosmic north, the direction of origin,",
+      "mode": "body_spirit_exchange",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the northward axis"
+        ]
+      }
+    },
+    {
+      "id": "s023",
+      "start": 146.56,
+      "end": 151.71,
+      "spoken_text": "the place your soul came from before it entered this body.",
+      "mode": "map_home",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the northward axis"
+        ]
+      }
+    },
+    {
+      "id": "s024",
+      "start": 151.71,
+      "end": 156.86,
+      "spoken_text": "To turn toward the imaginal world is to turn toward home.",
+      "mode": "cosmic_compass",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the northward axis"
+        ]
+      }
+    },
+    {
+      "id": "s025",
+      "start": 156.86,
+      "end": 163.928,
+      "spoken_text": "And in that world, the rules are different: spirit takes on form, and matter becomes luminous.",
+      "mode": "orient_path",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the northward axis"
+        ]
+      }
+    },
+    {
+      "id": "s026",
+      "start": 163.928,
+      "end": 169.435,
+      "spoken_text": "The two poles of existence that seem so separate here are continuous there.",
+      "mode": "body_spirit_exchange",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the northward axis"
+        ]
+      }
+    },
+    {
+      "id": "s027",
+      "start": 169.435,
+      "end": 175.061,
+      "spoken_text": "It is the heavenly entity, the philosopher's Angel, conjoined with his star,",
+      "mode": "angel_star",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the personal Guide"
+        ]
+      }
+    },
+    {
+      "id": "s028",
+      "start": 175.061,
+      "end": 181.333,
+      "spoken_text": "which rules him and opens the doors of wisdom for him, teaches him what is difficult,",
+      "mode": "wisdom_door",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the personal Guide"
+        ]
+      }
+    },
+    {
+      "id": "s029",
+      "start": 181.333,
+      "end": 186.483,
+      "spoken_text": "reveals to him what is right, in sleeping as in waking.",
+      "mode": "sleep_waking",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the personal Guide"
+        ]
+      }
+    },
+    {
+      "id": "s030",
+      "start": 186.483,
+      "end": 192.197,
+      "spoken_text": "This is the Perfect Nature — the being that has been with you since before your birth,",
+      "mode": "person_light",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the personal Guide"
+        ]
+      }
+    },
+    {
+      "id": "s031",
+      "start": 192.197,
+      "end": 197.347,
+      "spoken_text": "the angel that is your personal guide.",
+      "mode": "angel_star",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the personal Guide"
+        ]
+      }
+    },
+    {
+      "id": "s032",
+      "start": 197.347,
+      "end": 205.006,
+      "spoken_text": "The Hermetic tradition called it the philosopher's Angel; in the Sufi tradition, it is the shakhs nurani —",
+      "mode": "wisdom_door",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the personal Guide"
+        ]
+      }
+    },
+    {
+      "id": "s033",
+      "start": 205.006,
+      "end": 210.156,
+      "spoken_text": "the person of light.",
+      "mode": "sleep_waking",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the personal Guide"
+        ]
+      }
+    },
+    {
+      "id": "s034",
+      "start": 210.156,
+      "end": 216.819,
+      "spoken_text": "It is a real being, and you can meet it — neither a symbol nor a psychological projection.",
+      "mode": "person_light",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the personal Guide"
+        ]
+      }
+    },
+    {
+      "id": "s035",
+      "start": 216.819,
+      "end": 224.897,
+      "spoken_text": "Having cut in two the thread spun by a spider, the prince puts it together again, saying: one times one.",
+      "mode": "spider_thread",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the relational filament"
+        ]
+      }
+    },
+    {
+      "id": "s036",
+      "start": 224.897,
+      "end": 230.047,
+      "spoken_text": "This is also the formula that we suggested above,",
+      "mode": "cut_rejoin",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the relational filament"
+        ]
+      }
+    },
+    {
+      "id": "s037",
+      "start": 230.047,
+      "end": 237.782,
+      "spoken_text": "because he who deciphers it holds the key to the secret that preserves him both from pseudomystical monism,",
+      "mode": "formula_one",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the relational filament"
+        ]
+      }
+    },
+    {
+      "id": "s038",
+      "start": 237.782,
+      "end": 242.932,
+      "spoken_text": "whose formula is one equals one,",
+      "mode": "relation_orbit",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the relational filament"
+        ]
+      }
+    },
+    {
+      "id": "s039",
+      "start": 242.932,
+      "end": 251.732,
+      "spoken_text": "and from abstract monotheism which is content to superimpose an Ens supremum on the multitude of beings, n plus one.",
+      "mode": "spider_thread",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the relational filament"
+        ]
+      }
+    },
+    {
+      "id": "s040",
+      "start": 251.732,
+      "end": 256.882,
+      "spoken_text": "The one times one formula is Corbin's master key.",
+      "mode": "cut_rejoin",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the relational filament"
+        ]
+      }
+    },
+    {
+      "id": "s041",
+      "start": 256.882,
+      "end": 264.291,
+      "spoken_text": "You and your Guide are not identical, that would be one equals one, the false merger where you lose yourself.",
+      "mode": "formula_one",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the relational filament"
+        ]
+      }
+    },
+    {
+      "id": "s042",
+      "start": 264.291,
+      "end": 270.471,
+      "spoken_text": "You are not separate, that would be n plus one, the distant God who never touches you.",
+      "mode": "relation_orbit",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the relational filament"
+        ]
+      }
+    },
+    {
+      "id": "s043",
+      "start": 270.471,
+      "end": 278.138,
+      "spoken_text": "You are one times one — a unity that preserves difference, a relationship that does not dissolve the partners.",
+      "mode": "spider_thread",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the relational filament"
+        ]
+      }
+    },
+    {
+      "id": "s044",
+      "start": 278.138,
+      "end": 285.321,
+      "spoken_text": "The spider's thread is the apparent barrier between you and the Angel; the prince cuts it and re-joins it,",
+      "mode": "cut_rejoin",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the relational filament"
+        ]
+      }
+    },
+    {
+      "id": "s045",
+      "start": 285.321,
+      "end": 290.471,
+      "spoken_text": "showing that separation and union are the same act.",
+      "mode": "formula_one",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the relational filament"
+        ]
+      }
+    },
+    {
+      "id": "s046",
+      "start": 290.471,
+      "end": 297.412,
+      "spoken_text": "When the circle of the face has become pure, it effuses lights as a spring pours forth its water.",
+      "mode": "face_spring",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the line of sight"
+        ]
+      }
+    },
+    {
+      "id": "s047",
+      "start": 297.412,
+      "end": 303.821,
+      "spoken_text": "Before you, before your face, there is another Face also of light, irradiating lights.",
+      "mode": "two_faces",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the line of sight"
+        ]
+      }
+    },
+    {
+      "id": "s048",
+      "start": 303.821,
+      "end": 309.856,
+      "spoken_text": "In reality this Face is your own face and this sun is the sun of the Spirit, shams al-ruh,",
+      "mode": "spirit_sun",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the line of sight"
+        ]
+      }
+    },
+    {
+      "id": "s049",
+      "start": 309.856,
+      "end": 315.006,
+      "spoken_text": "that goes to and fro in your body.",
+      "mode": "gaze_relation",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the line of sight"
+        ]
+      }
+    },
+    {
+      "id": "s050",
+      "start": 315.006,
+      "end": 321.729,
+      "spoken_text": "Next, the whole of your person is immersed in purity, and suddenly you are gazing at a person of light,",
+      "mode": "face_spring",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the line of sight"
+        ]
+      }
+    },
+    {
+      "id": "s051",
+      "start": 321.729,
+      "end": 326.879,
+      "spoken_text": "shakhs nurani, who is also irradiating lights.",
+      "mode": "two_faces",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the line of sight"
+        ]
+      }
+    },
+    {
+      "id": "s052",
+      "start": 326.879,
+      "end": 334.199,
+      "spoken_text": "This person of light before you is called in Sufi terminology the suprasensory Guide, moqaddam al-ghayb.",
+      "mode": "spirit_sun",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the line of sight"
+        ]
+      }
+    },
+    {
+      "id": "s053",
+      "start": 334.199,
+      "end": 341.39,
+      "spoken_text": "Najm Kobra, the thirteenth-century Sufi master, described the meeting with terrifying precision.",
+      "mode": "gaze_relation",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the line of sight"
+        ]
+      }
+    },
+    {
+      "id": "s054",
+      "start": 341.39,
+      "end": 350.026,
+      "spoken_text": "The face becomes pure and begins to radiate light. Then another face appears — made of light, radiating light.",
+      "mode": "face_spring",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the line of sight"
+        ]
+      }
+    },
+    {
+      "id": "s055",
+      "start": 350.026,
+      "end": 355.206,
+      "spoken_text": "You realize this face is your own face, but not the one you see in the mirror.",
+      "mode": "two_faces",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the line of sight"
+        ]
+      }
+    },
+    {
+      "id": "s056",
+      "start": 355.206,
+      "end": 360.713,
+      "spoken_text": "It is the face you had before you were born, the face you will have after you die.",
+      "mode": "spirit_sun",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the line of sight"
+        ]
+      }
+    },
+    {
+      "id": "s057",
+      "start": 360.713,
+      "end": 366.246,
+      "spoken_text": "The two faces look at each other, and the looking itself is the relationship.",
+      "mode": "gaze_relation",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the line of sight"
+        ]
+      }
+    },
+    {
+      "id": "s058",
+      "start": 366.246,
+      "end": 373.706,
+      "spoken_text": "Of all spiritual practices, the dhikr is the practice most apt to free spiritual energy, that is,",
+      "mode": "name_spiral",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the ascending Name"
+        ]
+      }
+    },
+    {
+      "id": "s059",
+      "start": 373.706,
+      "end": 379.266,
+      "spoken_text": "to allow the particle of divine light which is in the mystic to rejoin its like.",
+      "mode": "fire_veil",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the ascending Name"
+        ]
+      }
+    },
+    {
+      "id": "s060",
+      "start": 379.266,
+      "end": 386.766,
+      "spoken_text": "The fire of the dhikr is visualized as a pure and ardent blaze, animated by a rapid upward movement.",
+      "mode": "light_upon_light",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the ascending Name"
+        ]
+      }
+    },
+    {
+      "id": "s061",
+      "start": 386.766,
+      "end": 393.612,
+      "spoken_text": "It sets fire to all that is there to be consumed, and sheds light on any darkness it may encounter.",
+      "mode": "door_dissolve",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the ascending Name"
+        ]
+      }
+    },
+    {
+      "id": "s062",
+      "start": 393.612,
+      "end": 400.075,
+      "spoken_text": "If light is there already, the two lights associate with each other and there is light upon light.",
+      "mode": "name_spiral",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the ascending Name"
+        ]
+      }
+    },
+    {
+      "id": "s063",
+      "start": 400.075,
+      "end": 407.704,
+      "spoken_text": "The dhikr — the repetition of divine names — is the technology that opens the door to the imaginal world:",
+      "mode": "fire_veil",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the ascending Name"
+        ]
+      }
+    },
+    {
+      "id": "s064",
+      "start": 407.704,
+      "end": 412.854,
+      "spoken_text": "a fire that burns away the obstacles between you and the Person of Light,",
+      "mode": "light_upon_light",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the ascending Name"
+        ]
+      }
+    },
+    {
+      "id": "s065",
+      "start": 412.854,
+      "end": 418.004,
+      "spoken_text": "more than a mere tool for concentrating the mind.",
+      "mode": "door_dissolve",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the ascending Name"
+        ]
+      }
+    },
+    {
+      "id": "s066",
+      "start": 418.004,
+      "end": 423.707,
+      "spoken_text": "When the fire meets light in you, the two lights combine: light upon light.",
+      "mode": "name_spiral",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the ascending Name"
+        ]
+      }
+    },
+    {
+      "id": "s067",
+      "start": 423.707,
+      "end": 428.857,
+      "spoken_text": "When it meets darkness, it burns it away.",
+      "mode": "fire_veil",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the ascending Name"
+        ]
+      }
+    },
+    {
+      "id": "s068",
+      "start": 428.857,
+      "end": 437.185,
+      "spoken_text": "The dhikr is both the path and the destination — the repetition itself is the ascent, and when it becomes continuous,",
+      "mode": "light_upon_light",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the ascending Name"
+        ]
+      }
+    },
+    {
+      "id": "s069",
+      "start": 437.185,
+      "end": 443.573,
+      "spoken_text": "when the Name is always present in the heart, the door between the worlds dissolves entirely.",
+      "mode": "door_dissolve",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the ascending Name"
+        ]
+      }
+    },
+    {
+      "id": "s070",
+      "start": 443.573,
+      "end": 450.821,
+      "spoken_text": "Then who art thou, whose beauty outshines all other beauty ever contemplated in the terrestrial world?",
+      "mode": "chinvat_bridge",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the bridge and counterpart"
+        ]
+      }
+    },
+    {
+      "id": "s071",
+      "start": 450.821,
+      "end": 456.345,
+      "spoken_text": "I am thine own Daena. I was loved, thou hast made me more loved still.",
+      "mode": "daena_figure",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the bridge and counterpart"
+        ]
+      }
+    },
+    {
+      "id": "s072",
+      "start": 456.345,
+      "end": 461.495,
+      "spoken_text": "I was beautiful, thou hast made me still more beautiful.",
+      "mode": "beauty_growth",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the bridge and counterpart"
+        ]
+      }
+    },
+    {
+      "id": "s073",
+      "start": 461.495,
+      "end": 467.976,
+      "spoken_text": "The Zoroastrian tradition called the Guide the Daena — the soul's own celestial counterpart,",
+      "mode": "shadow_eternity",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the bridge and counterpart"
+        ]
+      }
+    },
+    {
+      "id": "s074",
+      "start": 467.976,
+      "end": 474.659,
+      "spoken_text": "who meets you at the Chinvat Bridge after death. The dialogue is breathtaking: Who art thou?",
+      "mode": "chinvat_bridge",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the bridge and counterpart"
+        ]
+      }
+    },
+    {
+      "id": "s075",
+      "start": 474.659,
+      "end": 479.809,
+      "spoken_text": "I am your own Daena. I was loved, you made me more loved.",
+      "mode": "daena_figure",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the bridge and counterpart"
+        ]
+      }
+    },
+    {
+      "id": "s076",
+      "start": 479.809,
+      "end": 484.959,
+      "spoken_text": "I was beautiful, you made me more beautiful.",
+      "mode": "beauty_growth",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the bridge and counterpart"
+        ]
+      }
+    },
+    {
+      "id": "s077",
+      "start": 484.959,
+      "end": 490.709,
+      "spoken_text": "The Guide grows as you grow; your work on yourself makes the Angel more beautiful.",
+      "mode": "shadow_eternity",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the bridge and counterpart"
+        ]
+      }
+    },
+    {
+      "id": "s078",
+      "start": 490.709,
+      "end": 499.368,
+      "spoken_text": "Corbin insists on a crucial distinction: the Guide is your celestial counterpart, while the shadow belongs to your history.",
+      "mode": "chinvat_bridge",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the bridge and counterpart"
+        ]
+      }
+    },
+    {
+      "id": "s079",
+      "start": 499.368,
+      "end": 506.059,
+      "spoken_text": "The dark envelope of the personal unconscious must be burned away before the Person of Light can appear —",
+      "mode": "daena_figure",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the bridge and counterpart"
+        ]
+      }
+    },
+    {
+      "id": "s080",
+      "start": 506.059,
+      "end": 511.209,
+      "spoken_text": "one belongs to your history, the other to your eternity.",
+      "mode": "beauty_growth",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the bridge and counterpart"
+        ]
+      }
+    },
+    {
+      "id": "s081",
+      "start": 511.209,
+      "end": 517.567,
+      "spoken_text": "Thou, my lord and prince, my most holy angel, my precious spiritual being,",
+      "mode": "parent_child",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "reciprocal generation"
+        ]
+      }
+    },
+    {
+      "id": "s082",
+      "start": 517.567,
+      "end": 524.567,
+      "spoken_text": "Thou art the Spirit who gave birth to me, and Thou art the Child to whom my spirit gives birth.",
+      "mode": "mutual_birth",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "reciprocal generation"
+        ]
+      }
+    },
+    {
+      "id": "s083",
+      "start": 524.567,
+      "end": 529.717,
+      "spoken_text": "Thou who art clothed in the most brilliant of divine Lights,",
+      "mode": "recursive_halo",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "reciprocal generation"
+        ]
+      }
+    },
+    {
+      "id": "s084",
+      "start": 529.717,
+      "end": 536.974,
+      "spoken_text": "may Thou manifest Thyself to me in the most beautiful of epiphanies, show me the light of Thy dazzling face,",
+      "mode": "veil_heart",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "reciprocal generation"
+        ]
+      }
+    },
+    {
+      "id": "s085",
+      "start": 536.974,
+      "end": 542.124,
+      "spoken_text": "be for me the mediator, lift the veils of darkness from my heart.",
+      "mode": "parent_child",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "reciprocal generation"
+        ]
+      }
+    },
+    {
+      "id": "s086",
+      "start": 542.124,
+      "end": 549.889,
+      "spoken_text": "Sohravardi's psalm to his Perfect Nature reveals the paradoxical relationship at the heart of the imaginal world.",
+      "mode": "mutual_birth",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "reciprocal generation"
+        ]
+      }
+    },
+    {
+      "id": "s087",
+      "start": 549.889,
+      "end": 555.039,
+      "spoken_text": "The Angel is both parent and child.",
+      "mode": "recursive_halo",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "reciprocal generation"
+        ]
+      }
+    },
+    {
+      "id": "s088",
+      "start": 555.039,
+      "end": 561.849,
+      "spoken_text": "It gave birth to you, as your celestial origin, and you give birth to it, as your realized Guide.",
+      "mode": "veil_heart",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "reciprocal generation"
+        ]
+      }
+    },
+    {
+      "id": "s089",
+      "start": 561.849,
+      "end": 568.699,
+      "spoken_text": "The relationship is mutual, recursive, and eternal. You and your Angel create each other.",
+      "mode": "parent_child",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "reciprocal generation"
+        ]
+      }
+    },
+    {
+      "id": "s090",
+      "start": 568.699,
+      "end": 576.474,
+      "spoken_text": "The mundus imaginalis is a real world — with its own geography, its own inhabitants, its own laws —",
+      "mode": "world_geography",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the open door"
+        ]
+      }
+    },
+    {
+      "id": "s091",
+      "start": 576.474,
+      "end": 581.624,
+      "spoken_text": "neither a metaphor nor a psychological projection.",
+      "mode": "trained_eye",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the open door"
+        ]
+      }
+    },
+    {
+      "id": "s092",
+      "start": 581.624,
+      "end": 588.558,
+      "spoken_text": "You have access to it right now through the active Imagination, which is perception rather than fantasy.",
+      "mode": "objects_pass",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the open door"
+        ]
+      }
+    },
+    {
+      "id": "s093",
+      "start": 588.558,
+      "end": 593.913,
+      "spoken_text": "Every time you have felt a presence beyond the physical, seen with the inner eye,",
+      "mode": "other_eyes",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the open door"
+        ]
+      }
+    },
+    {
+      "id": "s094",
+      "start": 593.913,
+      "end": 599.315,
+      "spoken_text": "or known something without knowing how — you have touched the edge of that world.",
+      "mode": "world_geography",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the open door"
+        ]
+      }
+    },
+    {
+      "id": "s095",
+      "start": 599.315,
+      "end": 604.465,
+      "spoken_text": "What Corbin offers is a method rather than a belief system.",
+      "mode": "trained_eye",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the open door"
+        ]
+      }
+    },
+    {
+      "id": "s096",
+      "start": 604.465,
+      "end": 609.679,
+      "spoken_text": "The active Imagination can be trained; the dhikr can be practiced;",
+      "mode": "objects_pass",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the open door"
+        ]
+      }
+    },
+    {
+      "id": "s097",
+      "start": 609.679,
+      "end": 614.828,
+      "spoken_text": "the encounter with the Person of Light can be prepared for.",
+      "mode": "other_eyes",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the open door"
+        ]
+      }
+    },
+    {
+      "id": "s098",
+      "start": 614.828,
+      "end": 619.979,
+      "spoken_text": "And when it happens, you will not doubt its reality —",
+      "mode": "world_geography",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the open door"
+        ]
+      }
+    },
+    {
+      "id": "s099",
+      "start": 619.979,
+      "end": 625.129,
+      "spoken_text": "because the mundus imaginalis is more real than the physical world.",
+      "mode": "trained_eye",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the open door"
+        ]
+      }
+    },
+    {
+      "id": "s100",
+      "start": 625.129,
+      "end": 630.278,
+      "spoken_text": "Physical objects pass away; the Person of Light does not.",
+      "mode": "objects_pass",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the open door"
+        ]
+      }
+    },
+    {
+      "id": "s101",
+      "start": 630.278,
+      "end": 635.428,
+      "spoken_text": "The door is always open. The Guide is always waiting.",
+      "mode": "other_eyes",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the open door"
+        ]
+      }
+    },
+    {
+      "id": "s102",
+      "start": 635.428,
+      "end": 641.31,
+      "spoken_text": "The only question is whether you will close your physical eyes and open the other ones.",
+      "mode": "world_geography",
+      "events": [
+        {
+          "op": "develop",
+          "range": [
+            0,
+            0.72
+          ]
+        },
+        {
+          "op": "resolve",
+          "range": [
+            0.72,
+            0.9
+          ]
+        },
+        {
+          "op": "hold",
+          "range": [
+            0.9,
+            1
+          ]
+        }
+      ],
+      "handoff": {
+        "preserve": [
+          "the open door"
+        ]
+      }
+    }
+  ]
+}

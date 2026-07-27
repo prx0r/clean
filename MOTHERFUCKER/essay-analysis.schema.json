@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tantraloka.local/schemas/essay-analysis.schema.json",
+  "title": "Essay Argument Analysis IR",
+  "description": "A visual-free intermediate representation completed before choosing Skia mechanisms.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "essayId", "title", "centralClaim", "sourceUnitCount", "continuityCandidates", "beats"],
+  "properties": {
+    "version": { "const": "1.0" },
+    "essayId": { "type": "string", "pattern": "^[a-z][a-z0-9-]{2,63}$" },
+    "title": { "type": "string", "minLength": 3, "maxLength": 120 },
+    "centralClaim": { "type": "string", "minLength": 20, "maxLength": 1000 },
+    "sourceUnitCount": { "type": "integer", "minimum": 1 },
+    "continuityCandidates": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 9,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "meaning", "firstBeat", "development", "resolution"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]{2,63}$" },
+          "meaning": { "type": "string", "minLength": 12, "maxLength": 300 },
+          "firstBeat": { "type": "string", "pattern": "^[a-z][a-z0-9-]{2,31}$" },
+          "development": { "type": "string", "minLength": 12, "maxLength": 400 },
+          "resolution": { "type": "string", "minLength": 12, "maxLength": 400 }
+        }
+      }
+    },
+    "beats": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "sourceUnits",
+          "sourceUnitTypes",
+          "spokenWordCount",
+          "chapter",
+          "argumentRole",
+          "claim",
+          "relationType",
+          "sourceState",
+          "targetState",
+          "preserves",
+          "whyNow",
+          "misreadRisk",
+          "visualExclusions"
+        ],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]{2,31}$" },
+          "sourceUnits": {
+            "type": "array",
+            "prefixItems": [
+              { "type": "integer", "minimum": 1 },
+              { "type": "integer", "minimum": 1 }
+            ],
+            "items": false
+          },
+          "sourceUnitTypes": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "enum": ["prose", "quotation", "list", "visual-only"] }
+          },
+          "spokenWordCount": { "type": "integer", "minimum": 1 },
+          "chapter": { "type": "string", "minLength": 2, "maxLength": 100 },
+          "argumentRole": {
+            "enum": [
+              "hook", "question", "thesis", "definition", "mechanism", "analogy", "example",
+              "consequence", "objection", "reversal", "comparison", "practice", "recognition",
+              "synthesis", "open-question", "coda"
+            ]
+          },
+          "claim": { "type": "string", "minLength": 12, "maxLength": 360 },
+          "relationType": {
+            "enum": [
+              "identity-across-change", "dependency", "interface", "emergence", "containment",
+              "selection", "sequence", "feedback", "translation", "comparison", "recursion",
+              "propagation", "transformation", "cessation", "inquiry", "divergence",
+              "convergence", "self-modification", "coordination", "differentiation"
+            ]
+          },
+          "sourceState": { "type": "string", "minLength": 3, "maxLength": 240 },
+          "targetState": { "type": "string", "minLength": 3, "maxLength": 240 },
+          "preserves": { "type": "string", "minLength": 3, "maxLength": 240 },
+          "whyNow": { "type": "string", "minLength": 12, "maxLength": 400 },
+          "misreadRisk": { "type": "string", "minLength": 12, "maxLength": 400 },
+          "visualExclusions": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 6,
+            "items": { "type": "string", "minLength": 4, "maxLength": 160 }
+          }
+        }
+      }
+    }
+  }
+}

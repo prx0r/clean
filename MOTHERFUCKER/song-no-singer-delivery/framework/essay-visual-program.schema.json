@@ -1,0 +1,317 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tantrafiles.xyz/schemas/essay-visual-program-1.0.json",
+  "title": "Skia Essay Visual Program",
+  "description": "The narration-to-visual reasoning contract compiled into a renderable Skia scene pack and exact storyboard.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "id",
+    "title",
+    "sourceEssay",
+    "visualThesis",
+    "theme",
+    "seed",
+    "timing",
+    "render",
+    "continuitySystems",
+    "captionPolicy",
+    "shots"
+  ],
+  "properties": {
+    "version": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]{2,63}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 120
+    },
+    "sourceEssay": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 300
+    },
+    "visualThesis": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 1000
+    },
+    "theme": {
+      "enum": ["ivoryManuscript", "whiteScientific", "midnightVellum"]
+    },
+    "seed": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4294967295
+    },
+    "timing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["wordsPerMinute", "tailPadding"],
+      "properties": {
+        "wordsPerMinute": {
+          "type": "number",
+          "minimum": 80,
+          "maximum": 220
+        },
+        "tailPadding": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 4
+        }
+      }
+    },
+    "render": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["width", "height", "fps", "crf", "preset"],
+      "properties": {
+        "width": {
+          "type": "integer",
+          "minimum": 640,
+          "maximum": 7680,
+          "multipleOf": 2
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 360,
+          "maximum": 4320,
+          "multipleOf": 2
+        },
+        "fps": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 60
+        },
+        "crf": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 35
+        },
+        "preset": {
+          "enum": ["ultrafast", "superfast", "veryfast", "faster", "fast", "medium", "slow"]
+        },
+        "transitionDuration": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 2
+        }
+      }
+    },
+    "continuitySystems": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "meaning", "treatment"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{2,63}$"
+          },
+          "meaning": {
+            "type": "string",
+            "minLength": 5,
+            "maxLength": 300
+          },
+          "treatment": {
+            "type": "string",
+            "minLength": 5,
+            "maxLength": 300
+          }
+        }
+      }
+    },
+    "captionPolicy": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 500
+    },
+    "shots": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 100,
+      "items": {
+        "$ref": "#/$defs/shot"
+      }
+    }
+  },
+  "$defs": {
+    "shot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "paragraphs",
+        "chapter",
+        "title",
+        "subtitle",
+        "term",
+        "devanagari",
+        "semanticRole",
+        "visualOperator",
+        "continuityObject",
+        "visualRationale",
+        "visual"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]{2,31}$"
+        },
+        "paragraphs": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "integer",
+              "minimum": 1
+            },
+            {
+              "type": "integer",
+              "minimum": 1
+            }
+          ],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "chapter": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 100
+        },
+        "title": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 80
+        },
+        "subtitle": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 140
+        },
+        "term": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 50
+        },
+        "devanagari": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 50
+        },
+        "semanticRole": {
+          "enum": [
+            "hook",
+            "question",
+            "thesis",
+            "definition",
+            "mechanism",
+            "analogy",
+            "consequence",
+            "objection",
+            "reversal",
+            "practice",
+            "recognition",
+            "synthesis",
+            "coda"
+          ]
+        },
+        "visualOperator": {
+          "enum": [
+            "reveal",
+            "contract",
+            "frame",
+            "filter",
+            "sequence",
+            "select",
+            "reach",
+            "enclose",
+            "construct",
+            "unfold",
+            "invert",
+            "differentiate",
+            "recontextualize",
+            "open"
+          ]
+        },
+        "continuityObject": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 100
+        },
+        "visualRationale": {
+          "type": "string",
+          "minLength": 12,
+          "maxLength": 500
+        },
+        "visual": {
+          "enum": [
+            "constraint-field",
+            "point-of-view",
+            "five-lenses",
+            "local-power",
+            "melody-time",
+            "attention-beam",
+            "desire-orbit",
+            "smallness-cage",
+            "powered-prison",
+            "practice-folds",
+            "upsurge",
+            "wave-ocean",
+            "textures-display",
+            "limitation-reversal",
+            "opening-fist"
+          ]
+        },
+        "duration": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 30
+        },
+        "theme": {
+          "enum": ["ivoryManuscript", "whiteScientific", "midnightVellum"]
+        },
+        "seed": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "palette": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "accent": {
+              "type": "string",
+              "pattern": "^#[0-9A-Fa-f]{6}$"
+            },
+            "secondary": {
+              "type": "string",
+              "pattern": "^#[0-9A-Fa-f]{6}$"
+            },
+            "luminous": {
+              "type": "string",
+              "pattern": "^#[0-9A-Fa-f]{6}$"
+            }
+          }
+        },
+        "params": {
+          "type": "object",
+          "additionalProperties": true
+        },
+        "transition": {
+          "type": "string",
+          "maxLength": 200
+        }
+      }
+    }
+  }
+}

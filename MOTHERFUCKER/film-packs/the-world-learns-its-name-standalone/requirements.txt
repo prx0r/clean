@@ -1,0 +1,5 @@
+# score generation and validation otherwise use only the Python standard library
+numpy>=1.24
+Pillow>=10.0
+moderngl>=5.10
+glcontext>=3.0

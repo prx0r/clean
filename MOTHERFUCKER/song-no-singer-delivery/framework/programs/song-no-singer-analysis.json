@@ -1,0 +1,2139 @@
+{
+  "version": "1.0",
+  "essayId": "song-no-singer",
+  "title": "The Song With No Singer",
+  "centralClaim": "A person, observer, memory, or song is real as a conditioned and transformable pattern, while suffering intensifies when one local enactment claims independent ownership; recognition loosens that claim and becomes compassionate coordination among partial worlds.",
+  "sourceUnitCount": 477,
+  "continuityCandidates": [
+    {
+      "id": "relational-song",
+      "meaning": "The essay's invariant pattern: real only through transformations, never owned by one performance.",
+      "firstBeat": "song-001",
+      "development": "Track this conserved meaning through 13 argumentative beats as its relation, scale, and consequence change.",
+      "resolution": "Resolve it in song-088: There is no final singer outside the performance; the closing invariant is relation becoming able to recognize its own participation."
+    },
+    {
+      "id": "local-interface",
+      "meaning": "The operationally real boundary through which a finite perspective selects and acts.",
+      "firstBeat": "song-006",
+      "development": "Track this conserved meaning through 14 argumentative beats as its relation, scale, and consequence change.",
+      "resolution": "Resolve it in song-084: This life neither owns the music nor stands apart from its conditions, yet its exact performance could occur nowhere else."
+    },
+    {
+      "id": "dependency-field",
+      "meaning": "The enabling network that prevents any participant from becoming an isolated source.",
+      "firstBeat": "song-004",
+      "development": "Track this conserved meaning through 14 argumentative beats as its relation, scale, and consequence change.",
+      "resolution": "Resolve it in song-086: Recognition sees the relational network without installing an independent owner at its centre."
+    },
+    {
+      "id": "ownership-knot",
+      "meaning": "The extra claim that a local self owns, originates, or must permanently secure the process.",
+      "firstBeat": "song-009",
+      "development": "Track this conserved meaning through 21 argumentative beats as its relation, scale, and consequence change.",
+      "resolution": "Resolve it in song-085: The final birthday gesture releases the ownership knot so a bounded performance can listen while it continues."
+    },
+    {
+      "id": "memory-trace",
+      "meaning": "The past surviving as a transformed constraint interpreted by a changed receiver.",
+      "firstBeat": "song-025",
+      "development": "Track this conserved meaning through 10 argumentative beats as its relation, scale, and consequence change.",
+      "resolution": "Resolve it in song-083: Temporal identity is a relay in which changing selves inherit, interpret, and transmit constraints."
+    },
+    {
+      "id": "listening-current",
+      "meaning": "Recognition becoming ethical coordination among partial local worlds.",
+      "firstBeat": "song-015",
+      "development": "Track this conserved meaning through 8 argumentative beats as its relation, scale, and consequence change.",
+      "resolution": "Resolve it in song-087: Compassion is recognition propagated across genuinely different perspectives through deliberate dependent origination."
+    },
+    {
+      "id": "open-frontier",
+      "meaning": "The unresolved disagreement about reflexive manifestation and final ground.",
+      "firstBeat": "song-052",
+      "development": "Track this conserved meaning through 8 argumentative beats as its relation, scale, and consequence change.",
+      "resolution": "Resolve it in song-081: The disciplined function of myth is to sustain an open question without disguising premature closure as knowledge."
+    }
+  ],
+  "beats": [
+    {
+      "id": "song-001",
+      "sourceUnits": [
+        1,
+        4
+      ],
+      "sourceUnitTypes": [
+        "quotation"
+      ],
+      "spokenWordCount": 55,
+      "chapter": "Prologue · Four Starting Coordinates",
+      "argumentRole": "hook",
+      "claim": "The essay begins where four traditions converge on conditioned appearing without yet resolving its ultimate ground.",
+      "relationType": "emergence",
+      "sourceState": "many uncoordinated local processes",
+      "targetState": "a provisional larger-scale centre",
+      "preserves": "the plurality of the contributing processes",
+      "whyNow": "This opening beat establishes the cross-tradition coordinates required by the essay's first question.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-002",
+      "sourceUnits": [
+        5,
+        8
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 50,
+      "chapter": "Preamble · Happy Birthday",
+      "argumentRole": "question",
+      "claim": "A song cannot be reduced to one instrument or one transient acoustic event.",
+      "relationType": "identity-across-change",
+      "sourceState": "material and surface form change",
+      "targetState": "one relational pattern remains recognizable",
+      "preserves": "the invariant relational skeleton",
+      "whyNow": "This beat follows \"Four Coordinates\" by moving from hook to question while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-003",
+      "sourceUnits": [
+        9,
+        10
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 30,
+      "chapter": "Preamble · Happy Birthday",
+      "argumentRole": "objection",
+      "claim": "Treating notation or an imagined perfect performance as the song simply relocates the mistaken container.",
+      "relationType": "containment",
+      "sourceState": "a field without a privileged interior",
+      "targetState": "an operational inside and outside",
+      "preserves": "the field on both sides of the boundary",
+      "whyNow": "This beat follows \"Where Is the Song?\" by moving from question to objection while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-004",
+      "sourceUnits": [
+        11,
+        14
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation",
+        "list"
+      ],
+      "spokenWordCount": 70,
+      "chapter": "Preamble · Happy Birthday",
+      "argumentRole": "mechanism",
+      "claim": "Performances, memories, expectations, and possible transformations coordinate the song without a central owner.",
+      "relationType": "coordination",
+      "sourceState": "many locally active systems",
+      "targetState": "a shared response without erased difference",
+      "preserves": "the agency of each contributor",
+      "whyNow": "This beat follows \"No Hidden Container\" by moving from objection to mechanism while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-005",
+      "sourceUnits": [
+        15,
+        19
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 45,
+      "chapter": "Preamble · Happy Birthday",
+      "argumentRole": "thesis",
+      "claim": "The song is the recognizable invariant across performances, not a hidden object behind them.",
+      "relationType": "identity-across-change",
+      "sourceState": "material and surface form change",
+      "targetState": "one relational pattern remains recognizable",
+      "preserves": "the invariant relational skeleton",
+      "whyNow": "This beat follows \"One Pattern, Many Voices\" by moving from mechanism to thesis while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-006",
+      "sourceUnits": [
+        20,
+        23
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 69,
+      "chapter": "Preamble · Happy Birthday",
+      "argumentRole": "definition",
+      "claim": "An instrument actively selects which version of the pattern can occur through its particular capacities and limits.",
+      "relationType": "interface",
+      "sourceState": "an undivided surrounding field",
+      "targetState": "selective access through a local boundary",
+      "preserves": "the surrounding field and the boundary's operational reality",
+      "whyNow": "This beat follows \"Invariant, Not Substance\" by moving from thesis to definition while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-007",
+      "sourceUnits": [
+        24,
+        26
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 38,
+      "chapter": "Preamble · Happy Birthday",
+      "argumentRole": "example",
+      "claim": "A performance becomes real when material, action, memory, expectation, and listening coordinate for a time.",
+      "relationType": "emergence",
+      "sourceState": "many uncoordinated local processes",
+      "targetState": "a provisional larger-scale centre",
+      "preserves": "the plurality of the contributing processes",
+      "whyNow": "This beat follows \"The Instrument Selects\" by moving from definition to example while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-008",
+      "sourceUnits": [
+        27,
+        28
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 44,
+      "chapter": "Preamble · Happy Birthday",
+      "argumentRole": "mechanism",
+      "claim": "The current performance depends on nested histories and relations that no single participant contains.",
+      "relationType": "dependency",
+      "sourceState": "apparently separate elements",
+      "targetState": "mutually enabling conditions",
+      "preserves": "the reality of each local participant",
+      "whyNow": "This beat follows \"The Event Is Real\" by moving from example to mechanism while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-009",
+      "sourceUnits": [
+        29,
+        33
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation"
+      ],
+      "spokenWordCount": 67,
+      "chapter": "Preamble · Happy Birthday",
+      "argumentRole": "objection",
+      "claim": "The self-like error appears when an instrument turns local disruption into evidence that music itself is owned or damaged.",
+      "relationType": "feedback",
+      "sourceState": "an initiating expectation or disturbance",
+      "targetState": "a result that reinforces its own cause",
+      "preserves": "the distinguishability of each causal stage",
+      "whyNow": "This beat follows \"Nothing Plays Alone\" by moving from mechanism to objection while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-010",
+      "sourceUnits": [
+        34,
+        36
+      ],
+      "sourceUnitTypes": [
+        "quotation",
+        "prose"
+      ],
+      "spokenWordCount": 49,
+      "chapter": "Preamble · Happy Birthday",
+      "argumentRole": "reversal",
+      "claim": "Recognition ends the attempt to possess the process rather than ending the real local performance.",
+      "relationType": "cessation",
+      "sourceState": "a process receiving recurrent fuel",
+      "targetState": "the process continuing without the ownership branch",
+      "preserves": "functional perception and response",
+      "whyNow": "This beat follows \"The Ownership Error\" by moving from objection to reversal while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-011",
+      "sourceUnits": [
+        37,
+        38
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 25,
+      "chapter": "Part I · Seven Remembrances",
+      "argumentRole": "thesis",
+      "claim": "Seven distinct examinations will test how relation, boundary, memory, identity, and recognition actually function.",
+      "relationType": "differentiation",
+      "sourceState": "an apparently uniform field",
+      "targetState": "distinct functions or meanings within it",
+      "preserves": "their membership in one system",
+      "whyNow": "This beat follows \"Music Without Possession\" by moving from reversal to thesis while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-012",
+      "sourceUnits": [
+        39,
+        42
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 47,
+      "chapter": "1 · Nothing Stands by Itself",
+      "argumentRole": "definition",
+      "claim": "Determinate identity is constituted through contrasts and enabling relations from the beginning.",
+      "relationType": "differentiation",
+      "sourceState": "an apparently uniform field",
+      "targetState": "distinct functions or meanings within it",
+      "preserves": "their membership in one system",
+      "whyNow": "This beat follows \"Seven Tests\" by moving from thesis to definition while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-013",
+      "sourceUnits": [
+        43,
+        45
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 38,
+      "chapter": "1 · Nothing Stands by Itself",
+      "argumentRole": "reversal",
+      "claim": "Relational existence is fully real even though no thing first completes itself in isolation.",
+      "relationType": "transformation",
+      "sourceState": "one organized state",
+      "targetState": "a differently organized state",
+      "preserves": "the continuity explicitly named in the beat",
+      "whyNow": "This beat follows \"Identity Begins in Contrast\" by moving from definition to reversal while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-014",
+      "sourceUnits": [
+        46,
+        50
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 64,
+      "chapter": "1 · Nothing Stands by Itself",
+      "argumentRole": "mechanism",
+      "claim": "The cup is possible because it is open to a world of conditions, not because it contains independent cup-substance.",
+      "relationType": "dependency",
+      "sourceState": "apparently separate elements",
+      "targetState": "mutually enabling conditions",
+      "preserves": "the reality of each local participant",
+      "whyNow": "This beat follows \"Relation Does Not Erase Reality\" by moving from reversal to mechanism while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-015",
+      "sourceUnits": [
+        51,
+        57
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 67,
+      "chapter": "2 · Different Worlds of Relevance",
+      "argumentRole": "example",
+      "claim": "Bacterium, plant, tick, bat, and human do not merely hold opinions about one already-finished world.",
+      "relationType": "comparison",
+      "sourceState": "two or more claims shown separately",
+      "targetState": "a visible shared measure and meaningful difference",
+      "preserves": "the integrity of each compared position",
+      "whyNow": "This beat follows \"The Open Cup\" by moving from mechanism to example while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-016",
+      "sourceUnits": [
+        58,
+        64
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "list"
+      ],
+      "spokenWordCount": 67,
+      "chapter": "2 · Different Worlds of Relevance",
+      "argumentRole": "example",
+      "claim": "The same surroundings become different affordances because each organism selects relevance through embodied capacities.",
+      "relationType": "selection",
+      "sourceState": "many simultaneously available differences",
+      "targetState": "a smaller world of present relevance",
+      "preserves": "the unselected field as latent context",
+      "whyNow": "This beat follows \"Five Relevant Worlds\" by moving from example to example while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-017",
+      "sourceUnits": [
+        65,
+        68
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 36,
+      "chapter": "2 · Different Worlds of Relevance",
+      "argumentRole": "synthesis",
+      "claim": "Nature is an interacting ecology of local worlds rather than either a private universe or one perspective-free inventory.",
+      "relationType": "coordination",
+      "sourceState": "many locally active systems",
+      "targetState": "a shared response without erased difference",
+      "preserves": "the agency of each contributor",
+      "whyNow": "This beat follows \"A Boundary Selects\" by moving from example to synthesis while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-018",
+      "sourceUnits": [
+        69,
+        72
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "list"
+      ],
+      "spokenWordCount": 73,
+      "chapter": "3 · Nature Achieves an Observer",
+      "argumentRole": "definition",
+      "claim": "An observer is an achieved organization of processes, not a tiny indivisible spectator added behind the eyes.",
+      "relationType": "emergence",
+      "sourceState": "many uncoordinated local processes",
+      "targetState": "a provisional larger-scale centre",
+      "preserves": "the plurality of the contributing processes",
+      "whyNow": "This beat follows \"Worlds Intermingle\" by moving from synthesis to definition while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-019",
+      "sourceUnits": [
+        73,
+        78
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 50,
+      "chapter": "3 · Nature Achieves an Observer",
+      "argumentRole": "mechanism",
+      "claim": "Organisms continue by coordinating protective activities across nested spatial, behavioural, and autobiographical scales.",
+      "relationType": "coordination",
+      "sourceState": "many locally active systems",
+      "targetState": "a shared response without erased difference",
+      "preserves": "the agency of each contributor",
+      "whyNow": "This beat follows \"No Witness in the Machine\" by moving from definition to mechanism while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-020",
+      "sourceUnits": [
+        79,
+        80
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 31,
+      "chapter": "3 · Nature Achieves an Observer",
+      "argumentRole": "thesis",
+      "claim": "The self is the scale at which distributed concern becomes sufficiently coordinated to act as a provisional one.",
+      "relationType": "emergence",
+      "sourceState": "many uncoordinated local processes",
+      "targetState": "a provisional larger-scale centre",
+      "preserves": "the plurality of the contributing processes",
+      "whyNow": "This beat follows \"Continuation by Activity\" by moving from mechanism to thesis while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-021",
+      "sourceUnits": [
+        81,
+        86
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 56,
+      "chapter": "4 · Boundary Before Perspective",
+      "argumentRole": "definition",
+      "claim": "Inside and outside become operationally different before memory, value, or reflexive modelling create perspective.",
+      "relationType": "interface",
+      "sourceState": "an undivided surrounding field",
+      "targetState": "selective access through a local boundary",
+      "preserves": "the surrounding field and the boundary's operational reality",
+      "whyNow": "This beat follows \"Concern Becomes One\" by moving from thesis to definition while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-022",
+      "sourceUnits": [
+        87,
+        90
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "list"
+      ],
+      "spokenWordCount": 44,
+      "chapter": "4 · Boundary Before Perspective",
+      "argumentRole": "mechanism",
+      "claim": "A boundary partitions causal access, and perspective appears only when further capacities organize that partiality.",
+      "relationType": "selection",
+      "sourceState": "many simultaneously available differences",
+      "targetState": "a smaller world of present relevance",
+      "preserves": "the unselected field as latent context",
+      "whyNow": "This beat follows \"Boundary Before Mind\" by moving from definition to mechanism while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-023",
+      "sourceUnits": [
+        91,
+        96
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 32,
+      "chapter": "4 · Boundary Before Perspective",
+      "argumentRole": "mechanism",
+      "claim": "Here, before, not-yet, better-or-worse, and alterable jointly generate the geometry of a finite agent.",
+      "relationType": "emergence",
+      "sourceState": "many uncoordinated local processes",
+      "targetState": "a provisional larger-scale centre",
+      "preserves": "the plurality of the contributing processes",
+      "whyNow": "This beat follows \"Channels of Partiality\" by moving from mechanism to mechanism while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-024",
+      "sourceUnits": [
+        97,
+        100
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "list"
+      ],
+      "spokenWordCount": 56,
+      "chapter": "4 · Boundary Before Perspective",
+      "argumentRole": "comparison",
+      "claim": "Finitude is a structured set of limiting dimensions that makes a particular perspective possible rather than punishing it.",
+      "relationType": "differentiation",
+      "sourceState": "an apparently uniform field",
+      "targetState": "distinct functions or meanings within it",
+      "preserves": "their membership in one system",
+      "whyNow": "This beat follows \"The Coordinates of Here\" by moving from mechanism to comparison while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-025",
+      "sourceUnits": [
+        101,
+        108
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "list",
+        "quotation"
+      ],
+      "spokenWordCount": 73,
+      "chapter": "5 · Memory as Translation",
+      "argumentRole": "reversal",
+      "claim": "Memory is a transformed message reaching a receiver that did not exist in the same form when the trace was made.",
+      "relationType": "translation",
+      "sourceState": "a trace encoded by an earlier system",
+      "targetState": "meaning reconstructed by a changed receiver",
+      "preserves": "continuity without claiming an intact recording",
+      "whyNow": "This beat follows \"Five Dimensions of Finitude\" by moving from comparison to reversal while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-026",
+      "sourceUnits": [
+        109,
+        114
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 66,
+      "chapter": "5 · Memory as Translation",
+      "argumentRole": "mechanism",
+      "claim": "The present organism translates an earlier alteration through current body, goals, and environment.",
+      "relationType": "translation",
+      "sourceState": "a trace encoded by an earlier system",
+      "targetState": "meaning reconstructed by a changed receiver",
+      "preserves": "continuity without claiming an intact recording",
+      "whyNow": "This beat follows \"The Past Is Not Retrieved\" by moving from reversal to mechanism while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-027",
+      "sourceUnits": [
+        115,
+        119
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "list"
+      ],
+      "spokenWordCount": 61,
+      "chapter": "5 · Memory as Translation",
+      "argumentRole": "example",
+      "claim": "Memory outcomes diverge because the same trace is interpreted inside different present conditions.",
+      "relationType": "differentiation",
+      "sourceState": "an apparently uniform field",
+      "targetState": "distinct functions or meanings within it",
+      "preserves": "their membership in one system",
+      "whyNow": "This beat follows \"A Changed Receiver\" by moving from mechanism to example while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-028",
+      "sourceUnits": [
+        120,
+        124
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation"
+      ],
+      "spokenWordCount": 26,
+      "chapter": "5 · Memory as Translation",
+      "argumentRole": "consequence",
+      "claim": "The deepest memory often acts as a readiness that helps construct the next self and its expected world.",
+      "relationType": "feedback",
+      "sourceState": "an initiating expectation or disturbance",
+      "targetState": "a result that reinforces its own cause",
+      "preserves": "the distinguishability of each causal stage",
+      "whyNow": "This beat follows \"One Trace, Many Futures\" by moving from example to consequence while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-029",
+      "sourceUnits": [
+        125,
+        132
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 53,
+      "chapter": "6 · Identity Through Change",
+      "argumentRole": "thesis",
+      "claim": "Personal identity functions through preserved invariants across change rather than through immobility.",
+      "relationType": "identity-across-change",
+      "sourceState": "material and surface form change",
+      "targetState": "one relational pattern remains recognizable",
+      "preserves": "the invariant relational skeleton",
+      "whyNow": "This beat follows \"Memory Makes a World\" by moving from consequence to thesis while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-030",
+      "sourceUnits": [
+        133,
+        139
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 72,
+      "chapter": "6 · Identity Through Change",
+      "argumentRole": "analogy",
+      "claim": "Flame, melody, river, and person each show how continuity can require ongoing material transformation.",
+      "relationType": "comparison",
+      "sourceState": "two or more claims shown separately",
+      "targetState": "a visible shared measure and meaningful difference",
+      "preserves": "the integrity of each compared position",
+      "whyNow": "This beat follows \"Continuity Through Change\" by moving from thesis to analogy while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-031",
+      "sourceUnits": [
+        140,
+        145
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation"
+      ],
+      "spokenWordCount": 50,
+      "chapter": "6 · Identity Through Change",
+      "argumentRole": "question",
+      "claim": "The practical problem is choosing worthwhile invariants rather than keeping every inherited pattern alive.",
+      "relationType": "identity-across-change",
+      "sourceState": "material and surface form change",
+      "targetState": "one relational pattern remains recognizable",
+      "preserves": "the invariant relational skeleton",
+      "whyNow": "This beat follows \"Flame, Melody, River\" by moving from analogy to question while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-032",
+      "sourceUnits": [
+        146,
+        149
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "list"
+      ],
+      "spokenWordCount": 49,
+      "chapter": "7 · Recognition Without an Owner",
+      "argumentRole": "question",
+      "claim": "Searching for an ultimate inner witness repeatedly turns the proposed witness into another observable object.",
+      "relationType": "recursion",
+      "sourceState": "a model directed outward",
+      "targetState": "the model included inside the field it models",
+      "preserves": "the function of representation",
+      "whyNow": "This beat follows \"Which Invariants Matter?\" by moving from question to question while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-033",
+      "sourceUnits": [
+        150,
+        152
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "list"
+      ],
+      "spokenWordCount": 32,
+      "chapter": "7 · Recognition Without an Owner",
+      "argumentRole": "mechanism",
+      "claim": "The organized process can model the world and aspects of its own modelling without adding an infinite series of watchers.",
+      "relationType": "recursion",
+      "sourceState": "a model directed outward",
+      "targetState": "the model included inside the field it models",
+      "preserves": "the function of representation",
+      "whyNow": "This beat follows \"Every Witness Is Noticed\" by moving from question to mechanism while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-034",
+      "sourceUnits": [
+        153,
+        159
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation",
+        "list"
+      ],
+      "spokenWordCount": 54,
+      "chapter": "7 · Recognition Without an Owner",
+      "argumentRole": "recognition",
+      "claim": "Recognition includes the act of knowing inside the same dependent field it was examining.",
+      "relationType": "recursion",
+      "sourceState": "a model directed outward",
+      "targetState": "the model included inside the field it models",
+      "preserves": "the function of representation",
+      "whyNow": "This beat follows \"One Process Models Both\" by moving from mechanism to recognition while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-035",
+      "sourceUnits": [
+        160,
+        164
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation"
+      ],
+      "spokenWordCount": 36,
+      "chapter": "7 · Recognition Without an Owner",
+      "argumentRole": "reversal",
+      "claim": "Recognition weakens the stance of independent ownership without deleting the useful self-model.",
+      "relationType": "cessation",
+      "sourceState": "a process receiving recurrent fuel",
+      "targetState": "the process continuing without the ownership branch",
+      "preserves": "functional perception and response",
+      "whyNow": "This beat follows \"The Knower Enters the Field\" by moving from recognition to reversal while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-036",
+      "sourceUnits": [
+        165,
+        170
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation"
+      ],
+      "spokenWordCount": 56,
+      "chapter": "Part II · Pattern, Instrument, Performance",
+      "argumentRole": "objection",
+      "claim": "The song must not be pictured as a perfect object stored beyond every performance.",
+      "relationType": "containment",
+      "sourceState": "a field without a privileged interior",
+      "targetState": "an operational inside and outside",
+      "preserves": "the field on both sides of the boundary",
+      "whyNow": "This beat follows \"The Model Remains\" by moving from reversal to objection while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-037",
+      "sourceUnits": [
+        171,
+        177
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "list"
+      ],
+      "spokenWordCount": 48,
+      "chapter": "Part II · Pattern, Instrument, Performance",
+      "argumentRole": "definition",
+      "claim": "The song is real as a reproducible pattern distributed across conditions, none of which contains or owns it completely.",
+      "relationType": "dependency",
+      "sourceState": "apparently separate elements",
+      "targetState": "mutually enabling conditions",
+      "preserves": "the reality of each local participant",
+      "whyNow": "This beat follows \"Correcting the Old Metaphor\" by moving from objection to definition while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-038",
+      "sourceUnits": [
+        178,
+        180
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 33,
+      "chapter": "Part II · Pattern, Instrument, Performance",
+      "argumentRole": "definition",
+      "claim": "The pattern, enabling local structure, and occurring performance must be distinguished to avoid category errors.",
+      "relationType": "differentiation",
+      "sourceState": "an apparently uniform field",
+      "targetState": "distinct functions or meanings within it",
+      "preserves": "their membership in one system",
+      "whyNow": "This beat follows \"Distributed Reproducibility\" by moving from definition to definition while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-039",
+      "sourceUnits": [
+        181,
+        187
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation"
+      ],
+      "spokenWordCount": 38,
+      "chapter": "Part II · Pattern, Instrument, Performance",
+      "argumentRole": "consequence",
+      "claim": "Suffering grows when each functional level recursively claims a privilege its conditions cannot provide.",
+      "relationType": "feedback",
+      "sourceState": "an initiating expectation or disturbance",
+      "targetState": "a result that reinforces its own cause",
+      "preserves": "the distinguishability of each causal stage",
+      "whyNow": "This beat follows \"Three Functional Levels\" by moving from definition to consequence while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-040",
+      "sourceUnits": [
+        188,
+        191
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 54,
+      "chapter": "Part II · Pattern, Instrument, Performance",
+      "argumentRole": "objection",
+      "claim": "Each ownership claim crashes against the event-like and relational structure required for music to exist.",
+      "relationType": "transformation",
+      "sourceState": "one organized state",
+      "targetState": "a differently organized state",
+      "preserves": "the continuity explicitly named in the beat",
+      "whyNow": "This beat follows \"Three Confusions\" by moving from consequence to objection while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-041",
+      "sourceUnits": [
+        192,
+        195
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation"
+      ],
+      "spokenWordCount": 26,
+      "chapter": "Part II · Pattern, Instrument, Performance",
+      "argumentRole": "recognition",
+      "claim": "Liberation recognizes the instrument as one genuine site of music without making it the only source.",
+      "relationType": "identity-across-change",
+      "sourceState": "material and surface form change",
+      "targetState": "one relational pattern remains recognizable",
+      "preserves": "the invariant relational skeleton",
+      "whyNow": "This beat follows \"Impossible Requirements\" by moving from objection to recognition while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-042",
+      "sourceUnits": [
+        196,
+        203
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 55,
+      "chapter": "Part III · Happy Birthday to a World",
+      "argumentRole": "thesis",
+      "claim": "Birth creates a new place from which events can matter rather than an isolated substance.",
+      "relationType": "emergence",
+      "sourceState": "many uncoordinated local processes",
+      "targetState": "a provisional larger-scale centre",
+      "preserves": "the plurality of the contributing processes",
+      "whyNow": "This beat follows \"One Real Place\" by moving from recognition to thesis while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-043",
+      "sourceUnits": [
+        204,
+        210
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation",
+        "list"
+      ],
+      "spokenWordCount": 76,
+      "chapter": "Part III · Happy Birthday to a World",
+      "argumentRole": "mechanism",
+      "claim": "A child's world and sense of mine emerge gradually through relationally coordinated distinctions.",
+      "relationType": "emergence",
+      "sourceState": "many uncoordinated local processes",
+      "targetState": "a provisional larger-scale centre",
+      "preserves": "the plurality of the contributing processes",
+      "whyNow": "This beat follows \"A New Centre of Concern\" by moving from thesis to mechanism while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-044",
+      "sourceUnits": [
+        211,
+        216
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 56,
+      "chapter": "Part III · Happy Birthday to a World",
+      "argumentRole": "reversal",
+      "claim": "Construction does not imply falsity; the error begins only when a constructed pattern claims to stand alone.",
+      "relationType": "dependency",
+      "sourceState": "apparently separate elements",
+      "targetState": "mutually enabling conditions",
+      "preserves": "the reality of each local participant",
+      "whyNow": "This beat follows \"A World Learns Its Centre\" by moving from mechanism to reversal while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-045",
+      "sourceUnits": [
+        217,
+        224
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation"
+      ],
+      "spokenWordCount": 66,
+      "chapter": "Part IV · The Vortex",
+      "argumentRole": "analogy",
+      "claim": "Self-model and world-model arise reciprocally rather than as a finished subject inspecting a finished object.",
+      "relationType": "dependency",
+      "sourceState": "apparently separate elements",
+      "targetState": "mutually enabling conditions",
+      "preserves": "the reality of each local participant",
+      "whyNow": "This beat follows \"Constructed and Real\" by moving from reversal to analogy while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-046",
+      "sourceUnits": [
+        225,
+        235
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "visual-only"
+      ],
+      "spokenWordCount": 48,
+      "chapter": "Part IV · The Vortex",
+      "argumentRole": "mechanism",
+      "claim": "A self-confirming loop rebuilds the expected self and expected world through its own consequences.",
+      "relationType": "feedback",
+      "sourceState": "an initiating expectation or disturbance",
+      "targetState": "a result that reinforces its own cause",
+      "preserves": "the distinguishability of each causal stage",
+      "whyNow": "This beat follows \"Reciprocal Reeds\" by moving from analogy to mechanism while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-047",
+      "sourceUnits": [
+        236,
+        242
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation"
+      ],
+      "spokenWordCount": 54,
+      "chapter": "Part IV · The Vortex",
+      "argumentRole": "reversal",
+      "claim": "Adaptive prediction becomes bondage when the system treats its model as reality rather than as a conditioned instrument.",
+      "relationType": "self-modification",
+      "sourceState": "a system executing inherited dispositions",
+      "targetState": "a system that alters some future dispositions",
+      "preserves": "conditioning rather than impossible independence",
+      "whyNow": "This beat follows \"The Vortex Builds Evidence\" by moving from mechanism to reversal while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-048",
+      "sourceUnits": [
+        243,
+        248
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation"
+      ],
+      "spokenWordCount": 41,
+      "chapter": "Part IV · The Vortex",
+      "argumentRole": "consequence",
+      "claim": "Grasping is pathological self-confirmation in which defensive action makes the feared world more likely.",
+      "relationType": "feedback",
+      "sourceState": "an initiating expectation or disturbance",
+      "targetState": "a result that reinforces its own cause",
+      "preserves": "the distinguishability of each causal stage",
+      "whyNow": "This beat follows \"A Useful Loop Hardens\" by moving from reversal to consequence while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-049",
+      "sourceUnits": [
+        249,
+        257
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "list",
+        "visual-only"
+      ],
+      "spokenWordCount": 56,
+      "chapter": "Part V · The Cooling of Ownership",
+      "argumentRole": "reversal",
+      "claim": "Nibbāna changes the process by cooling the mine-and-becoming branch, not by destroying every boundary or response.",
+      "relationType": "cessation",
+      "sourceState": "a process receiving recurrent fuel",
+      "targetState": "the process continuing without the ownership branch",
+      "preserves": "functional perception and response",
+      "whyNow": "This beat follows \"Grasping Confirms Itself\" by moving from consequence to reversal while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-050",
+      "sourceUnits": [
+        258,
+        263
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation"
+      ],
+      "spokenWordCount": 68,
+      "chapter": "Part V · The Cooling of Ownership",
+      "argumentRole": "mechanism",
+      "claim": "The signal continues to clear response while catastrophic and possessive ownership narratives lose their automatic extension.",
+      "relationType": "sequence",
+      "sourceState": "a set of possible or simultaneous states",
+      "targetState": "an ordered passage through states",
+      "preserves": "causal or melodic adjacency",
+      "whyNow": "This beat follows \"The Branch Cools\" by moving from reversal to mechanism while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-051",
+      "sourceUnits": [
+        264,
+        267
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 41,
+      "chapter": "Part V · The Cooling of Ownership",
+      "argumentRole": "recognition",
+      "claim": "What ceases is the fuel for metaphysical ownership, while embodied regulation remains intact.",
+      "relationType": "cessation",
+      "sourceState": "a process receiving recurrent fuel",
+      "targetState": "the process continuing without the ownership branch",
+      "preserves": "functional perception and response",
+      "whyNow": "This beat follows \"Feeling Without Appropriation\" by moving from mechanism to recognition while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-052",
+      "sourceUnits": [
+        268,
+        272
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "list",
+        "quotation"
+      ],
+      "spokenWordCount": 71,
+      "chapter": "Part VI · The Śaiva Question",
+      "argumentRole": "comparison",
+      "claim": "The traditions share a critique of the empirical ego but diverge over whether a final reflexive ground should be established.",
+      "relationType": "divergence",
+      "sourceState": "shared evidence and practical ground",
+      "targetState": "two interpretations that remain genuinely distinct",
+      "preserves": "the common question and shared evidence",
+      "whyNow": "This beat follows \"Regulation Without Metaphysics\" by moving from recognition to comparison while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-053",
+      "sourceUnits": [
+        273,
+        274
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation"
+      ],
+      "spokenWordCount": 35,
+      "chapter": "Part VI · The Śaiva Question",
+      "argumentRole": "comparison",
+      "claim": "The Śaiva position treats the non-objectifiability of awareness as compatible with intrinsically reflexive manifestation.",
+      "relationType": "divergence",
+      "sourceState": "shared evidence and practical ground",
+      "targetState": "two interpretations that remain genuinely distinct",
+      "preserves": "the common question and shared evidence",
+      "whyNow": "This beat follows \"Shared Ground, First Divergence\" by moving from comparison to comparison while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-054",
+      "sourceUnits": [
+        275,
+        279
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation"
+      ],
+      "spokenWordCount": 49,
+      "chapter": "Part VI · The Śaiva Question",
+      "argumentRole": "synthesis",
+      "claim": "The formal dispute remains open while both views affirm that the local voice is real and not an isolated owner.",
+      "relationType": "convergence",
+      "sourceState": "distinct processes or interpretations",
+      "targetState": "a shared practical consequence",
+      "preserves": "their unresolved theoretical differences",
+      "whyNow": "This beat follows \"Luminous Reflexivity\" by moving from comparison to synthesis while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-055",
+      "sourceUnits": [
+        280,
+        283
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation"
+      ],
+      "spokenWordCount": 43,
+      "chapter": "Part VI · The Śaiva Question",
+      "argumentRole": "objection",
+      "claim": "The Buddhist critique protects reflexive presence from being converted into a reified metaphysical object.",
+      "relationType": "divergence",
+      "sourceState": "shared evidence and practical ground",
+      "targetState": "two interpretations that remain genuinely distinct",
+      "preserves": "the common question and shared evidence",
+      "whyNow": "This beat follows \"One Practical Consequence\" by moving from synthesis to objection while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-056",
+      "sourceUnits": [
+        284,
+        287
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation"
+      ],
+      "spokenWordCount": 35,
+      "chapter": "Part VI · The Śaiva Question",
+      "argumentRole": "open-question",
+      "claim": "The disagreement remains alive because neither objectification nor its failure settles the status of reflexive presence.",
+      "relationType": "divergence",
+      "sourceState": "shared evidence and practical ground",
+      "targetState": "two interpretations that remain genuinely distinct",
+      "preserves": "the common question and shared evidence",
+      "whyNow": "This beat follows \"The Buddhist Warning\" by moving from objection to open-question while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-057",
+      "sourceUnits": [
+        288,
+        293
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 54,
+      "chapter": "Part VII · The Bodhisattva",
+      "argumentRole": "recognition",
+      "claim": "An awakened local performance remains active while becoming more responsive to other partial performances.",
+      "relationType": "coordination",
+      "sourceState": "many locally active systems",
+      "targetState": "a shared response without erased difference",
+      "preserves": "the agency of each contributor",
+      "whyNow": "This beat follows \"The Śaiva Reply\" by moving from open-question to recognition while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-058",
+      "sourceUnits": [
+        294,
+        297
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 45,
+      "chapter": "Part VII · The Bodhisattva",
+      "argumentRole": "consequence",
+      "claim": "Rigid suffering can recursively turn diverse environments into confirmations of one defended pattern.",
+      "relationType": "feedback",
+      "sourceState": "an initiating expectation or disturbance",
+      "targetState": "a result that reinforces its own cause",
+      "preserves": "the distinguishability of each causal stage",
+      "whyNow": "This beat follows \"An Instrument Learns to Listen\" by moving from recognition to consequence while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-059",
+      "sourceUnits": [
+        298,
+        302
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation"
+      ],
+      "spokenWordCount": 37,
+      "chapter": "Part VII · The Bodhisattva",
+      "argumentRole": "reversal",
+      "claim": "The bodhisattva sees a real painful performance whose isolation is less absolute than it appears.",
+      "relationType": "comparison",
+      "sourceState": "two or more claims shown separately",
+      "targetState": "a visible shared measure and meaningful difference",
+      "preserves": "the integrity of each compared position",
+      "whyNow": "This beat follows \"Pain Repeats a Room\" by moving from consequence to reversal while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-060",
+      "sourceUnits": [
+        303,
+        307
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "list"
+      ],
+      "spokenWordCount": 64,
+      "chapter": "Part VII · The Bodhisattva",
+      "argumentRole": "definition",
+      "claim": "The bodhisattva is a finite world transparent enough to its conditions that other worlds no longer appear fundamentally foreign.",
+      "relationType": "interface",
+      "sourceState": "an undivided surrounding field",
+      "targetState": "selective access through a local boundary",
+      "preserves": "the surrounding field and the boundary's operational reality",
+      "whyNow": "This beat follows \"Real Suffering, Porous Isolation\" by moving from reversal to definition while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-061",
+      "sourceUnits": [
+        308,
+        309
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 28,
+      "chapter": "Part VII · The Bodhisattva",
+      "argumentRole": "thesis",
+      "claim": "Compassion follows from relational constitution rather than from claiming that all beings are one numerical person.",
+      "relationType": "dependency",
+      "sourceState": "apparently separate elements",
+      "targetState": "mutually enabling conditions",
+      "preserves": "the reality of each local participant",
+      "whyNow": "This beat follows \"Transparent Local World\" by moving from definition to thesis while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-062",
+      "sourceUnits": [
+        310,
+        318
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 75,
+      "chapter": "Part VII · The Bodhisattva",
+      "argumentRole": "synthesis",
+      "claim": "Liberation propagates through conditions because every attained clarity becomes part of other systems' future support sets.",
+      "relationType": "propagation",
+      "sourceState": "a local change in one participant",
+      "targetState": "altered possibilities across a relational field",
+      "preserves": "local differences among recipients",
+      "whyNow": "This beat follows \"No Private Liberation\" by moving from thesis to synthesis while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-063",
+      "sourceUnits": [
+        319,
+        324
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "list"
+      ],
+      "spokenWordCount": 51,
+      "chapter": "Part VII · The Bodhisattva",
+      "argumentRole": "mechanism",
+      "claim": "A teacher does not insert recognition but participates in conditions that let the learner's own system retune.",
+      "relationType": "coordination",
+      "sourceState": "many locally active systems",
+      "targetState": "a shared response without erased difference",
+      "preserves": "the agency of each contributor",
+      "whyNow": "This beat follows \"Clarity Changes Conditions\" by moving from synthesis to mechanism while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-064",
+      "sourceUnits": [
+        325,
+        329
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 45,
+      "chapter": "Part VII · The Bodhisattva",
+      "argumentRole": "consequence",
+      "claim": "Every relationship participates in determining which local worlds and responses become possible.",
+      "relationType": "propagation",
+      "sourceState": "a local change in one participant",
+      "targetState": "altered possibilities across a relational field",
+      "preserves": "local differences among recipients",
+      "whyNow": "This beat follows \"Tuning the Missing Note\" by moving from mechanism to consequence while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-065",
+      "sourceUnits": [
+        330,
+        335
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 56,
+      "chapter": "Part VIII · Source, Disposition, Runtime",
+      "argumentRole": "analogy",
+      "claim": "The code metaphor becomes useful only when its three levels remain functional and immanent to enactment.",
+      "relationType": "sequence",
+      "sourceState": "a set of possible or simultaneous states",
+      "targetState": "an ordered passage through states",
+      "preserves": "causal or melodic adjacency",
+      "whyNow": "This beat follows \"Relationships Open Worlds\" by moving from consequence to analogy while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-066",
+      "sourceUnits": [
+        336,
+        340
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "list"
+      ],
+      "spokenWordCount": 50,
+      "chapter": "Part VIII · Source, Disposition, Runtime",
+      "argumentRole": "mechanism",
+      "claim": "Past conditions survive not as supernatural data but as altered routing probabilities in the present system.",
+      "relationType": "translation",
+      "sourceState": "a trace encoded by an earlier system",
+      "targetState": "meaning reconstructed by a changed receiver",
+      "preserves": "continuity without claiming an intact recording",
+      "whyNow": "This beat follows \"Three Computational Levels\" by moving from analogy to mechanism while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-067",
+      "sourceUnits": [
+        341,
+        348
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 58,
+      "chapter": "Part VIII · Source, Disposition, Runtime",
+      "argumentRole": "consequence",
+      "claim": "A conditioned process gains finite freedom when its outputs can modify some of its future dispositions.",
+      "relationType": "self-modification",
+      "sourceState": "a system executing inherited dispositions",
+      "targetState": "a system that alters some future dispositions",
+      "preserves": "conditioning rather than impossible independence",
+      "whyNow": "This beat follows \"The Past as Probability\" by moving from mechanism to consequence while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-068",
+      "sourceUnits": [
+        349,
+        354
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation"
+      ],
+      "spokenWordCount": 68,
+      "chapter": "Part VIII · Source, Disposition, Runtime",
+      "argumentRole": "objection",
+      "claim": "The basic error is granting runtime configuration the privileges of an unchanging source for the whole process.",
+      "relationType": "self-modification",
+      "sourceState": "a system executing inherited dispositions",
+      "targetState": "a system that alters some future dispositions",
+      "preserves": "conditioning rather than impossible independence",
+      "whyNow": "This beat follows \"Finite Freedom\" by moving from consequence to objection while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-069",
+      "sourceUnits": [
+        355,
+        357
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 29,
+      "chapter": "Part VIII · Source, Disposition, Runtime",
+      "argumentRole": "recognition",
+      "claim": "The living process is not deleted; its self-model loses the impossible status of independent author.",
+      "relationType": "self-modification",
+      "sourceState": "a system executing inherited dispositions",
+      "targetState": "a system that alters some future dispositions",
+      "preserves": "conditioning rather than impossible independence",
+      "whyNow": "This beat follows \"The Runtime Error\" by moving from objection to recognition while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-070",
+      "sourceUnits": [
+        358,
+        368
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation",
+        "list"
+      ],
+      "spokenWordCount": 57,
+      "chapter": "Part IX · Direct Instruction",
+      "argumentRole": "practice",
+      "claim": "Direct inquiry starts from a present distinction and reveals the many conditions required for it to appear this way.",
+      "relationType": "selection",
+      "sourceState": "many simultaneously available differences",
+      "targetState": "a smaller world of present relevance",
+      "preserves": "the unselected field as latent context",
+      "whyNow": "This beat follows \"Correct the Privilege\" by moving from recognition to practice while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-071",
+      "sourceUnits": [
+        369,
+        373
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "list"
+      ],
+      "spokenWordCount": 46,
+      "chapter": "Part IX · Direct Instruction",
+      "argumentRole": "recognition",
+      "claim": "The act of investigation is itself dependently arisen and cannot stand outside the conditions it reveals.",
+      "relationType": "recursion",
+      "sourceState": "a model directed outward",
+      "targetState": "the model included inside the field it models",
+      "preserves": "the function of representation",
+      "whyNow": "This beat follows \"Begin With One Appearance\" by moving from practice to recognition while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-072",
+      "sourceUnits": [
+        374,
+        380
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "list"
+      ],
+      "spokenWordCount": 57,
+      "chapter": "Part IX · Direct Instruction",
+      "argumentRole": "practice",
+      "claim": "The felt knower can be observed as the system's own representation without inventing another watcher behind it.",
+      "relationType": "recursion",
+      "sourceState": "a model directed outward",
+      "targetState": "the model included inside the field it models",
+      "preserves": "the function of representation",
+      "whyNow": "This beat follows \"Inquiry Has Conditions\" by moving from recognition to practice while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-073",
+      "sourceUnits": [
+        381,
+        387
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation"
+      ],
+      "spokenWordCount": 33,
+      "chapter": "Part IX · Direct Instruction",
+      "argumentRole": "practice",
+      "claim": "The ownership stance becomes visible through the conditioned cascade that follows when the self-model feels threatened.",
+      "relationType": "inquiry",
+      "sourceState": "an apparently self-evident object or knower",
+      "targetState": "its enabling conditions made visible",
+      "preserves": "the reality of the appearance being examined",
+      "whyNow": "This beat follows \"Notice the Observer-Model\" by moving from practice to practice while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-074",
+      "sourceUnits": [
+        388,
+        394
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation",
+        "list"
+      ],
+      "spokenWordCount": 73,
+      "chapter": "Part IX · Direct Instruction",
+      "argumentRole": "practice",
+      "claim": "A response becomes more workable when inquiry unfolds its conditions instead of suppressing or absolutizing it.",
+      "relationType": "inquiry",
+      "sourceState": "an apparently self-evident object or knower",
+      "targetState": "its enabling conditions made visible",
+      "preserves": "the reality of the appearance being examined",
+      "whyNow": "This beat follows \"Threat Reveals Ownership\" by moving from practice to practice while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-075",
+      "sourceUnits": [
+        395,
+        397
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 16,
+      "chapter": "Part IX · Direct Instruction",
+      "argumentRole": "recognition",
+      "claim": "Recognition begins as the loosening of false necessity rather than as a cosmic flash.",
+      "relationType": "transformation",
+      "sourceState": "one organized state",
+      "targetState": "a differently organized state",
+      "preserves": "the continuity explicitly named in the beat",
+      "whyNow": "This beat follows \"Reveal the Support Set\" by moving from practice to recognition while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-076",
+      "sourceUnits": [
+        398,
+        404
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation"
+      ],
+      "spokenWordCount": 56,
+      "chapter": "Part X · What Recognition Is",
+      "argumentRole": "definition",
+      "claim": "Recognition must be distinguished from permanent blankness, cosmic authorship, and a magnified version of the same brittle ego.",
+      "relationType": "differentiation",
+      "sourceState": "an apparently uniform field",
+      "targetState": "distinct functions or meanings within it",
+      "preserves": "their membership in one system",
+      "whyNow": "This beat follows \"Practical Recognition\" by moving from recognition to definition while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-077",
+      "sourceUnits": [
+        405,
+        406
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation"
+      ],
+      "spokenWordCount": 47,
+      "chapter": "Part X · What Recognition Is",
+      "argumentRole": "thesis",
+      "claim": "Recognition holds paired truths together: each finite structure is real, conditioned, changeable, and incomplete.",
+      "relationType": "comparison",
+      "sourceState": "two or more claims shown separately",
+      "targetState": "a visible shared measure and meaningful difference",
+      "preserves": "the integrity of each compared position",
+      "whyNow": "This beat follows \"Neither Blankness Nor Grandeur\" by moving from definition to thesis while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-078",
+      "sourceUnits": [
+        407,
+        410
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "list"
+      ],
+      "spokenWordCount": 50,
+      "chapter": "Part X · What Recognition Is",
+      "argumentRole": "consequence",
+      "claim": "Embodied recognition changes the system's responses while preserving a functional observer and meaningful action.",
+      "relationType": "transformation",
+      "sourceState": "one organized state",
+      "targetState": "a differently organized state",
+      "preserves": "the continuity explicitly named in the beat",
+      "whyNow": "This beat follows \"Real Without Absolute\" by moving from thesis to consequence while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-079",
+      "sourceUnits": [
+        411,
+        418
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "list"
+      ],
+      "spokenWordCount": 64,
+      "chapter": "Part XI · The Open Why",
+      "argumentRole": "open-question",
+      "claim": "Science can model boundary, regulation, memory, action, and observer emergence while the fact of experience remains open.",
+      "relationType": "inquiry",
+      "sourceState": "an apparently self-evident object or knower",
+      "targetState": "its enabling conditions made visible",
+      "preserves": "the reality of the appearance being examined",
+      "whyNow": "This beat follows \"The Observer Becomes Lighter\" by moving from consequence to open-question while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-080",
+      "sourceUnits": [
+        419,
+        424
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 75,
+      "chapter": "Part XI · The Open Why",
+      "argumentRole": "comparison",
+      "claim": "Three interpretations diverge over foundation, reflexive appearing, and introspective representation without closing the question.",
+      "relationType": "divergence",
+      "sourceState": "shared evidence and practical ground",
+      "targetState": "two interpretations that remain genuinely distinct",
+      "preserves": "the common question and shared evidence",
+      "whyNow": "This beat follows \"Why Anything Appears\" by moving from open-question to comparison while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-081",
+      "sourceUnits": [
+        425,
+        430
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation"
+      ],
+      "spokenWordCount": 70,
+      "chapter": "Part XI · The Open Why",
+      "argumentRole": "coda",
+      "claim": "The disciplined function of myth is to sustain an open question without disguising premature closure as knowledge.",
+      "relationType": "inquiry",
+      "sourceState": "an apparently self-evident object or knower",
+      "targetState": "its enabling conditions made visible",
+      "preserves": "the reality of the appearance being examined",
+      "whyNow": "This beat follows \"Three Non-Final Answers\" by moving from comparison to coda while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-082",
+      "sourceUnits": [
+        431,
+        439
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 52,
+      "chapter": "Coda · Happy Birthday, Again",
+      "argumentRole": "analogy",
+      "claim": "A birthday celebrates continuity achieved through transformation rather than an immortal object hidden behind it.",
+      "relationType": "identity-across-change",
+      "sourceState": "material and surface form change",
+      "targetState": "one relational pattern remains recognizable",
+      "preserves": "the invariant relational skeleton",
+      "whyNow": "This beat follows \"Make the Question Inhabitable\" by moving from coda to analogy while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-083",
+      "sourceUnits": [
+        440,
+        448
+      ],
+      "sourceUnitTypes": [
+        "prose",
+        "quotation"
+      ],
+      "spokenWordCount": 59,
+      "chapter": "Coda · Happy Birthday, Again",
+      "argumentRole": "consequence",
+      "claim": "Temporal identity is a relay in which changing selves inherit, interpret, and transmit constraints.",
+      "relationType": "translation",
+      "sourceState": "a trace encoded by an earlier system",
+      "targetState": "meaning reconstructed by a changed receiver",
+      "preserves": "continuity without claiming an intact recording",
+      "whyNow": "This beat follows \"A Pattern Survives a Year\" by moving from analogy to consequence while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-084",
+      "sourceUnits": [
+        449,
+        454
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 59,
+      "chapter": "Coda · Happy Birthday, Again",
+      "argumentRole": "recognition",
+      "claim": "This life neither owns the music nor stands apart from its conditions, yet its exact performance could occur nowhere else.",
+      "relationType": "dependency",
+      "sourceState": "apparently separate elements",
+      "targetState": "mutually enabling conditions",
+      "preserves": "the reality of each local participant",
+      "whyNow": "This beat follows \"Messages Move Both Ways\" by moving from consequence to recognition while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-085",
+      "sourceUnits": [
+        455,
+        460
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 40,
+      "chapter": "Coda · Happy Birthday, Again",
+      "argumentRole": "coda",
+      "claim": "The final birthday gesture releases the ownership knot so a bounded performance can listen while it continues.",
+      "relationType": "cessation",
+      "sourceState": "a process receiving recurrent fuel",
+      "targetState": "the process continuing without the ownership branch",
+      "preserves": "functional perception and response",
+      "whyNow": "This beat follows \"This Performance Is Irreplaceable\" by moving from recognition to coda while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-086",
+      "sourceUnits": [
+        461,
+        468
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 54,
+      "chapter": "Final · Listening Inside the Song",
+      "argumentRole": "synthesis",
+      "claim": "Recognition sees the relational network without installing an independent owner at its centre.",
+      "relationType": "dependency",
+      "sourceState": "apparently separate elements",
+      "targetState": "mutually enabling conditions",
+      "preserves": "the reality of each local participant",
+      "whyNow": "This beat follows \"Listening While Playing\" by moving from coda to synthesis while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-087",
+      "sourceUnits": [
+        469,
+        473
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 74,
+      "chapter": "Final · Listening Inside the Song",
+      "argumentRole": "synthesis",
+      "claim": "Compassion is recognition propagated across genuinely different perspectives through deliberate dependent origination.",
+      "relationType": "coordination",
+      "sourceState": "many locally active systems",
+      "targetState": "a shared response without erased difference",
+      "preserves": "the agency of each contributor",
+      "whyNow": "This beat follows \"No Centre Owns the Network\" by moving from synthesis to synthesis while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    },
+    {
+      "id": "song-088",
+      "sourceUnits": [
+        474,
+        477
+      ],
+      "sourceUnitTypes": [
+        "prose"
+      ],
+      "spokenWordCount": 30,
+      "chapter": "Final · Listening Inside the Song",
+      "argumentRole": "coda",
+      "claim": "There is no final singer outside the performance; the closing invariant is relation becoming able to recognize its own participation.",
+      "relationType": "identity-across-change",
+      "sourceState": "material and surface form change",
+      "targetState": "one relational pattern remains recognizable",
+      "preserves": "the invariant relational skeleton",
+      "whyNow": "This beat follows \"Compassion Enters the Music\" by moving from synthesis to coda while advancing the essay's next stated relation.",
+      "misreadRisk": "The image could be mistaken for a decorative icon or a metaphysical object existing separately from the narrated relation.",
+      "visualExclusions": [
+        "Render the relation as changing geometry; do not substitute a literal stock illustration or place the whole claim on screen."
+      ]
+    }
+  ]
+}

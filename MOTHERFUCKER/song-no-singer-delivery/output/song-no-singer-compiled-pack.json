@@ -1,0 +1,1339 @@
+{
+  "version": "1.0",
+  "id": "song-no-singer",
+  "title": "The Song With No Singer",
+  "description": "A recurring gold interval-pattern passes through indigo interfaces, distributed networks, changing memory traces, and crimson ownership loops. The film never depicts an isolated soul, cosmic singer, or hidden source object. Every shot must perform a relation—dependence, selection, feedback, translation, transformation, divergence, or coordination—and the final return to the ensemble must preserve difference while revealing music as what happens between local performances.",
+  "theme": "ivoryManuscript",
+  "seed": 734901,
+  "render": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "crf": 20,
+    "preset": "medium",
+    "transitionDuration": 0.65,
+    "sceneDuration": 8
+  },
+  "scenes": [
+    {
+      "id": "song-001",
+      "title": "Four Coordinates",
+      "subtitle": "Relation, emptiness, interface, and reflexivity establish the field of inquiry.",
+      "term": "Utpāda",
+      "devanagari": "उत्पादः",
+      "motif": "semantic-essay",
+      "duration": 21.75,
+      "params": {
+        "variant": 1,
+        "centerText": "Four Coordinates",
+        "caption": "Four Coordinates",
+        "visual": "relational-birth"
+      }
+    },
+    {
+      "id": "song-002",
+      "title": "Where Is the Song?",
+      "subtitle": "The melody survives the loss of any piano or passing vibration.",
+      "term": "Anvaya",
+      "devanagari": "अन्वयः",
+      "motif": "semantic-essay",
+      "duration": 19.833333333333332,
+      "params": {
+        "variant": 2,
+        "centerText": "Where Is the Song?",
+        "caption": "Where Is the Song?",
+        "visual": "pattern-ensemble"
+      }
+    },
+    {
+      "id": "song-003",
+      "title": "No Hidden Container",
+      "subtitle": "Neither score nor ideal performance can privately contain the whole pattern.",
+      "term": "Maryādā",
+      "devanagari": "मर्यादा",
+      "motif": "semantic-essay",
+      "duration": 12.083333333333334,
+      "params": {
+        "variant": 3,
+        "centerText": "No Hidden Container",
+        "caption": "No Hidden Container",
+        "visual": "smallness-cage"
+      }
+    },
+    {
+      "id": "song-004",
+      "title": "One Pattern, Many Voices",
+      "subtitle": "Different embodiments preserve enough relation for recognition.",
+      "term": "Saṅghaṭana",
+      "devanagari": "सङ्घटनम्",
+      "motif": "semantic-essay",
+      "duration": 27.583333333333332,
+      "params": {
+        "variant": 4,
+        "centerText": "One Pattern, Many Voices",
+        "caption": "One Pattern, Many Voices",
+        "visual": "dependency-network"
+      }
+    },
+    {
+      "id": "song-005",
+      "title": "Invariant, Not Substance",
+      "subtitle": "Identity persists across transformations but never stands outside them.",
+      "term": "Anvaya",
+      "devanagari": "अन्वयः",
+      "motif": "semantic-essay",
+      "duration": 17.875,
+      "params": {
+        "variant": 5,
+        "centerText": "Invariant, Not Substance",
+        "caption": "Invariant, Not Substance",
+        "visual": "pattern-ensemble"
+      }
+    },
+    {
+      "id": "song-006",
+      "title": "The Instrument Selects",
+      "subtitle": "Construction opens one performable world while excluding others.",
+      "term": "Mukhadvāra",
+      "devanagari": "मुखद्वारम्",
+      "motif": "semantic-essay",
+      "duration": 27.166666666666668,
+      "params": {
+        "variant": 6,
+        "centerText": "The Instrument Selects",
+        "caption": "The Instrument Selects",
+        "visual": "boundary-gates"
+      }
+    },
+    {
+      "id": "song-007",
+      "title": "The Event Is Real",
+      "subtitle": "Temporary coordination is an event, not an illusion.",
+      "term": "Utpāda",
+      "devanagari": "उत्पादः",
+      "motif": "semantic-essay",
+      "duration": 15.166666666666666,
+      "params": {
+        "variant": 7,
+        "centerText": "The Event Is Real",
+        "caption": "The Event Is Real",
+        "visual": "multiscale-agent"
+      }
+    },
+    {
+      "id": "song-008",
+      "title": "Nothing Plays Alone",
+      "subtitle": "Pianist, learning, culture, and contrast enter the sounding event.",
+      "term": "Pratītya-samutpāda",
+      "devanagari": "प्रतीत्यसमुत्पादः",
+      "motif": "semantic-essay",
+      "duration": 17.5,
+      "params": {
+        "variant": 8,
+        "centerText": "Nothing Plays Alone",
+        "caption": "Nothing Plays Alone",
+        "visual": "dependency-network"
+      }
+    },
+    {
+      "id": "song-009",
+      "title": "The Ownership Error",
+      "subtitle": "A local instrument mistakes participation for authorship and permanence.",
+      "term": "Āvarta",
+      "devanagari": "आवर्तः",
+      "motif": "semantic-essay",
+      "duration": 26.416666666666668,
+      "params": {
+        "variant": 9,
+        "centerText": "The Ownership Error",
+        "caption": "The Ownership Error",
+        "visual": "powered-prison"
+      }
+    },
+    {
+      "id": "song-010",
+      "title": "Music Without Possession",
+      "subtitle": "The performance remains while the enclosing claim loses fuel.",
+      "term": "Nibbāna",
+      "devanagari": "निब्बानम्",
+      "motif": "semantic-essay",
+      "duration": 19.458333333333332,
+      "params": {
+        "variant": 10,
+        "centerText": "Music Without Possession",
+        "caption": "Music Without Possession",
+        "visual": "opening-fist"
+      }
+    },
+    {
+      "id": "song-011",
+      "title": "Seven Tests",
+      "subtitle": "The remembrances are observational pressures, not imposed axioms.",
+      "term": "Viśeṣa",
+      "devanagari": "विशेषः",
+      "motif": "semantic-essay",
+      "duration": 10.166666666666666,
+      "params": {
+        "variant": 11,
+        "centerText": "Seven Tests",
+        "caption": "Seven Tests",
+        "visual": "textures-display"
+      }
+    },
+    {
+      "id": "song-012",
+      "title": "Identity Begins in Contrast",
+      "subtitle": "Words, colors, and persons arise inside fields of difference.",
+      "term": "Viśeṣa",
+      "devanagari": "विशेषः",
+      "motif": "semantic-essay",
+      "duration": 18.666666666666668,
+      "params": {
+        "variant": 12,
+        "centerText": "Identity Begins in Contrast",
+        "caption": "Identity Begins in Contrast",
+        "visual": "textures-display"
+      }
+    },
+    {
+      "id": "song-013",
+      "title": "Relation Does Not Erase Reality",
+      "subtitle": "Dependence revises substance without turning the world into nothing.",
+      "term": "Pariṇāma",
+      "devanagari": "परिणामः",
+      "motif": "semantic-essay",
+      "duration": 15.166666666666666,
+      "params": {
+        "variant": 13,
+        "centerText": "Relation Does Not Erase Reality",
+        "caption": "Relation Does Not Erase Reality",
+        "visual": "limitation-reversal"
+      }
+    },
+    {
+      "id": "song-014",
+      "title": "The Open Cup",
+      "subtitle": "Remove clay, hands, use, gravity, and language; no private cup remains.",
+      "term": "Pratītya-samutpāda",
+      "devanagari": "प्रतीत्यसमुत्पादः",
+      "motif": "semantic-essay",
+      "duration": 25.25,
+      "params": {
+        "variant": 14,
+        "centerText": "The Open Cup",
+        "caption": "The Open Cup",
+        "visual": "dependency-network"
+      }
+    },
+    {
+      "id": "song-015",
+      "title": "Five Relevant Worlds",
+      "subtitle": "Different bodies enact different domains of meaningful difference.",
+      "term": "Upamā",
+      "devanagari": "उपमा",
+      "motif": "semantic-essay",
+      "duration": 26.416666666666668,
+      "params": {
+        "variant": 15,
+        "centerText": "Five Relevant Worlds",
+        "caption": "Five Relevant Worlds",
+        "visual": "umwelt-windows"
+      }
+    },
+    {
+      "id": "song-016",
+      "title": "A Boundary Selects",
+      "subtitle": "Sensing, memory, need, and action turn one branch into many meanings.",
+      "term": "Vikalpa",
+      "devanagari": "विकल्पः",
+      "motif": "semantic-essay",
+      "duration": 26.416666666666668,
+      "params": {
+        "variant": 16,
+        "centerText": "A Boundary Selects",
+        "caption": "A Boundary Selects",
+        "visual": "umwelt-windows"
+      }
+    },
+    {
+      "id": "song-017",
+      "title": "Worlds Intermingle",
+      "subtitle": "Local centres remain partial while sharing and altering one nature.",
+      "term": "Saṅghaṭana",
+      "devanagari": "सङ्घटनम्",
+      "motif": "semantic-essay",
+      "duration": 14.416666666666666,
+      "params": {
+        "variant": 17,
+        "centerText": "Worlds Intermingle",
+        "caption": "Worlds Intermingle",
+        "visual": "tuning-network"
+      }
+    },
+    {
+      "id": "song-018",
+      "title": "No Witness in the Machine",
+      "subtitle": "Observation emerges from coordinated discriminating, valuing, remembering, and acting.",
+      "term": "Utpāda",
+      "devanagari": "उत्पादः",
+      "motif": "semantic-essay",
+      "duration": 28.708333333333332,
+      "params": {
+        "variant": 18,
+        "centerText": "No Witness in the Machine",
+        "caption": "No Witness in the Machine",
+        "visual": "multiscale-agent"
+      }
+    },
+    {
+      "id": "song-019",
+      "title": "Continuation by Activity",
+      "subtitle": "Cell, tissue, animal, and person protect different scales of concern.",
+      "term": "Saṅghaṭana",
+      "devanagari": "सङ्घटनम्",
+      "motif": "semantic-essay",
+      "duration": 19.833333333333332,
+      "params": {
+        "variant": 19,
+        "centerText": "Continuation by Activity",
+        "caption": "Continuation by Activity",
+        "visual": "multiscale-agent"
+      }
+    },
+    {
+      "id": "song-020",
+      "title": "Concern Becomes One",
+      "subtitle": "Many processes temporarily treat disturbances as one shared problem.",
+      "term": "Utpāda",
+      "devanagari": "उत्पादः",
+      "motif": "semantic-essay",
+      "duration": 12.458333333333334,
+      "params": {
+        "variant": 20,
+        "centerText": "Concern Becomes One",
+        "caption": "Concern Becomes One",
+        "visual": "multiscale-agent"
+      }
+    },
+    {
+      "id": "song-021",
+      "title": "Boundary Before Mind",
+      "subtitle": "A perimeter first creates selective access, not consciousness.",
+      "term": "Mukhadvāra",
+      "devanagari": "मुखद्वारम्",
+      "motif": "semantic-essay",
+      "duration": 22.166666666666668,
+      "params": {
+        "variant": 21,
+        "centerText": "Boundary Before Mind",
+        "caption": "Boundary Before Mind",
+        "visual": "boundary-gates"
+      }
+    },
+    {
+      "id": "song-022",
+      "title": "Channels of Partiality",
+      "subtitle": "Entry, exclusion, threat, nourishment, and control precede a point of view.",
+      "term": "Vikalpa",
+      "devanagari": "विकल्पः",
+      "motif": "semantic-essay",
+      "duration": 17.5,
+      "params": {
+        "variant": 22,
+        "centerText": "Channels of Partiality",
+        "caption": "Channels of Partiality",
+        "visual": "boundary-gates"
+      }
+    },
+    {
+      "id": "song-023",
+      "title": "The Coordinates of Here",
+      "subtitle": "Boundary, memory, prediction, value, and action construct a provisional centre.",
+      "term": "Utpāda",
+      "devanagari": "उत्पादः",
+      "motif": "semantic-essay",
+      "duration": 12.875,
+      "params": {
+        "variant": 23,
+        "centerText": "The Coordinates of Here",
+        "caption": "The Coordinates of Here",
+        "visual": "local-power"
+      }
+    },
+    {
+      "id": "song-024",
+      "title": "Five Dimensions of Finitude",
+      "subtitle": "The kañcukas describe constraint, time, knowledge, action, and desire as enabling limits.",
+      "term": "Viśeṣa",
+      "devanagari": "विशेषः",
+      "motif": "semantic-essay",
+      "duration": 22.166666666666668,
+      "params": {
+        "variant": 24,
+        "centerText": "Five Dimensions of Finitude",
+        "caption": "Five Dimensions of Finitude",
+        "visual": "five-lenses"
+      }
+    },
+    {
+      "id": "song-025",
+      "title": "The Past Is Not Retrieved",
+      "subtitle": "Earlier encounters leave altered constraints that a later system must read.",
+      "term": "Saṃskāra",
+      "devanagari": "संस्कारः",
+      "motif": "semantic-essay",
+      "duration": 28.708333333333332,
+      "params": {
+        "variant": 25,
+        "centerText": "The Past Is Not Retrieved",
+        "caption": "The Past Is Not Retrieved",
+        "visual": "memory-relay"
+      }
+    },
+    {
+      "id": "song-026",
+      "title": "A Changed Receiver",
+      "subtitle": "Continuity requires interpretation because sender and receiver are not identical.",
+      "term": "Saṃskāra",
+      "devanagari": "संस्कारः",
+      "motif": "semantic-essay",
+      "duration": 26,
+      "params": {
+        "variant": 26,
+        "centerText": "A Changed Receiver",
+        "caption": "A Changed Receiver",
+        "visual": "memory-relay"
+      }
+    },
+    {
+      "id": "song-027",
+      "title": "One Trace, Many Futures",
+      "subtitle": "A constraint can become fear, wisdom, vigilance, compassion, or a released story.",
+      "term": "Viśeṣa",
+      "devanagari": "विशेषः",
+      "motif": "semantic-essay",
+      "duration": 24.083333333333332,
+      "params": {
+        "variant": 27,
+        "centerText": "One Trace, Many Futures",
+        "caption": "One Trace, Many Futures",
+        "visual": "textures-display"
+      }
+    },
+    {
+      "id": "song-028",
+      "title": "Memory Makes a World",
+      "subtitle": "A trace directs attention, expectation, and prepared response.",
+      "term": "Āvarta",
+      "devanagari": "आवर्तः",
+      "motif": "semantic-essay",
+      "duration": 10.541666666666666,
+      "params": {
+        "variant": 28,
+        "centerText": "Memory Makes a World",
+        "caption": "Memory Makes a World",
+        "visual": "causal-vortex"
+      }
+    },
+    {
+      "id": "song-029",
+      "title": "Continuity Through Change",
+      "subtitle": "Matter, perception, belief, and capacity alter while some structure persists.",
+      "term": "Anvaya",
+      "devanagari": "अन्वयः",
+      "motif": "semantic-essay",
+      "duration": 21,
+      "params": {
+        "variant": 29,
+        "centerText": "Continuity Through Change",
+        "caption": "Continuity Through Change",
+        "visual": "morphing-invariant"
+      }
+    },
+    {
+      "id": "song-030",
+      "title": "Flame, Melody, River",
+      "subtitle": "Persistence depends on exchange, movement, and selective preservation.",
+      "term": "Upamā",
+      "devanagari": "उपमा",
+      "motif": "semantic-essay",
+      "duration": 28.333333333333332,
+      "params": {
+        "variant": 30,
+        "centerText": "Flame, Melody, River",
+        "caption": "Flame, Melody, River",
+        "visual": "morphing-invariant"
+      }
+    },
+    {
+      "id": "song-031",
+      "title": "Which Invariants Matter?",
+      "subtitle": "Identity becomes an ethical question about what to preserve and release.",
+      "term": "Anvaya",
+      "devanagari": "अन्वयः",
+      "motif": "semantic-essay",
+      "duration": 19.833333333333332,
+      "params": {
+        "variant": 31,
+        "centerText": "Which Invariants Matter?",
+        "caption": "Which Invariants Matter?",
+        "visual": "pattern-ensemble"
+      }
+    },
+    {
+      "id": "song-032",
+      "title": "Every Witness Is Noticed",
+      "subtitle": "Each candidate observer becomes another appearance in the field.",
+      "term": "Pratyavekṣaṇa",
+      "devanagari": "प्रत्यवेक्षणम्",
+      "motif": "semantic-essay",
+      "duration": 19.458333333333332,
+      "params": {
+        "variant": 32,
+        "centerText": "Every Witness Is Noticed",
+        "caption": "Every Witness Is Noticed",
+        "visual": "recursive-observer"
+      }
+    },
+    {
+      "id": "song-033",
+      "title": "One Process Models Both",
+      "subtitle": "World, body, uncertainty, attention, and ownership enter one representational loop.",
+      "term": "Pratyavekṣaṇa",
+      "devanagari": "प्रत्यवेक्षणम्",
+      "motif": "semantic-essay",
+      "duration": 12.875,
+      "params": {
+        "variant": 33,
+        "centerText": "One Process Models Both",
+        "caption": "One Process Models Both",
+        "visual": "recursive-observer"
+      }
+    },
+    {
+      "id": "song-034",
+      "title": "The Knower Enters the Field",
+      "subtitle": "Self-representation becomes one conditioned event among the known.",
+      "term": "Pratyavekṣaṇa",
+      "devanagari": "प्रत्यवेक्षणम्",
+      "motif": "semantic-essay",
+      "duration": 21.375,
+      "params": {
+        "variant": 34,
+        "centerText": "The Knower Enters the Field",
+        "caption": "The Knower Enters the Field",
+        "visual": "recursive-observer"
+      }
+    },
+    {
+      "id": "song-035",
+      "title": "The Model Remains",
+      "subtitle": "Functional self-representation continues while ownership loosens.",
+      "term": "Nibbāna",
+      "devanagari": "निब्बानम्",
+      "motif": "semantic-essay",
+      "duration": 14.416666666666666,
+      "params": {
+        "variant": 35,
+        "centerText": "The Model Remains",
+        "caption": "The Model Remains",
+        "visual": "opening-fist"
+      }
+    },
+    {
+      "id": "song-036",
+      "title": "Correcting the Old Metaphor",
+      "subtitle": "A pre-existing ideal song would reinstall hidden substance.",
+      "term": "Maryādā",
+      "devanagari": "मर्यादा",
+      "motif": "semantic-essay",
+      "duration": 22.166666666666668,
+      "params": {
+        "variant": 36,
+        "centerText": "Correcting the Old Metaphor",
+        "caption": "Correcting the Old Metaphor",
+        "visual": "smallness-cage"
+      }
+    },
+    {
+      "id": "song-037",
+      "title": "Distributed Reproducibility",
+      "subtitle": "Bodies, scores, habits, memory, expectation, and future enactment sustain the pattern.",
+      "term": "Pratītya-samutpāda",
+      "devanagari": "प्रतीत्यसमुत्पादः",
+      "motif": "semantic-essay",
+      "duration": 19.041666666666668,
+      "params": {
+        "variant": 37,
+        "centerText": "Distributed Reproducibility",
+        "caption": "Distributed Reproducibility",
+        "visual": "dependency-network"
+      }
+    },
+    {
+      "id": "song-038",
+      "title": "Three Functional Levels",
+      "subtitle": "Pattern, instrument, and current event are distinct without becoming separate substances.",
+      "term": "Viśeṣa",
+      "devanagari": "विशेषः",
+      "motif": "semantic-essay",
+      "duration": 13.25,
+      "params": {
+        "variant": 38,
+        "centerText": "Three Functional Levels",
+        "caption": "Three Functional Levels",
+        "visual": "textures-display"
+      }
+    },
+    {
+      "id": "song-039",
+      "title": "Three Confusions",
+      "subtitle": "Performance demands permanence, instrument claims authorship, pattern claims independence.",
+      "term": "Āvarta",
+      "devanagari": "आवर्तः",
+      "motif": "semantic-essay",
+      "duration": 15.166666666666666,
+      "params": {
+        "variant": 39,
+        "centerText": "Three Confusions",
+        "caption": "Three Confusions",
+        "visual": "powered-prison"
+      }
+    },
+    {
+      "id": "song-040",
+      "title": "Impossible Requirements",
+      "subtitle": "Permanence, isolated production, and context-free intelligibility fail in their own terms.",
+      "term": "Pariṇāma",
+      "devanagari": "परिणामः",
+      "motif": "semantic-essay",
+      "duration": 21.375,
+      "params": {
+        "variant": 40,
+        "centerText": "Impossible Requirements",
+        "caption": "Impossible Requirements",
+        "visual": "limitation-reversal"
+      }
+    },
+    {
+      "id": "song-041",
+      "title": "One Real Place",
+      "subtitle": "Finitude is not the error; independence is.",
+      "term": "Anvaya",
+      "devanagari": "अन्वयः",
+      "motif": "semantic-essay",
+      "duration": 10.541666666666666,
+      "params": {
+        "variant": 41,
+        "centerText": "One Real Place",
+        "caption": "One Real Place",
+        "visual": "pattern-ensemble"
+      }
+    },
+    {
+      "id": "song-042",
+      "title": "A New Centre of Concern",
+      "subtitle": "Birth operationally differentiates inside, outside, support, and threat.",
+      "term": "Utpāda",
+      "devanagari": "उत्पादः",
+      "motif": "semantic-essay",
+      "duration": 21.75,
+      "params": {
+        "variant": 42,
+        "centerText": "A New Centre of Concern",
+        "caption": "A New Centre of Concern",
+        "visual": "relational-birth"
+      }
+    },
+    {
+      "id": "song-043",
+      "title": "A World Learns Its Centre",
+      "subtitle": "Touch, voice, object, body, history, and name assemble through interaction.",
+      "term": "Utpāda",
+      "devanagari": "उत्पादः",
+      "motif": "semantic-essay",
+      "duration": 29.875,
+      "params": {
+        "variant": 43,
+        "centerText": "A World Learns Its Centre",
+        "caption": "A World Learns Its Centre",
+        "visual": "relational-birth"
+      }
+    },
+    {
+      "id": "song-044",
+      "title": "Constructed and Real",
+      "subtitle": "Bridge, melody, and self can be constructed while still carrying consequence.",
+      "term": "Pratītya-samutpāda",
+      "devanagari": "प्रतीत्यसमुत्पादः",
+      "motif": "semantic-essay",
+      "duration": 22.166666666666668,
+      "params": {
+        "variant": 44,
+        "centerText": "Constructed and Real",
+        "caption": "Constructed and Real",
+        "visual": "dependency-network"
+      }
+    },
+    {
+      "id": "song-045",
+      "title": "Reciprocal Reeds",
+      "subtitle": "Consciousness and meaningful world lean upon and specify one another.",
+      "term": "Pratītya-samutpāda",
+      "devanagari": "प्रतीत्यसमुत्पादः",
+      "motif": "semantic-essay",
+      "duration": 26,
+      "params": {
+        "variant": 45,
+        "centerText": "Reciprocal Reeds",
+        "caption": "Reciprocal Reeds",
+        "visual": "reciprocal-reeds"
+      }
+    },
+    {
+      "id": "song-046",
+      "title": "The Vortex Builds Evidence",
+      "subtitle": "Expectation directs attention, interpretation, action, and a changed world back into memory.",
+      "term": "Āvarta",
+      "devanagari": "आवर्तः",
+      "motif": "semantic-essay",
+      "duration": 19.041666666666668,
+      "params": {
+        "variant": 46,
+        "centerText": "The Vortex Builds Evidence",
+        "caption": "memory → expectation → attention → action → world",
+        "visual": "causal-vortex"
+      }
+    },
+    {
+      "id": "song-047",
+      "title": "A Useful Loop Hardens",
+      "subtitle": "Inherited expectation saves work until the model hides its own participation.",
+      "term": "Bhāvanā",
+      "devanagari": "भावना",
+      "motif": "semantic-essay",
+      "duration": 21.375,
+      "params": {
+        "variant": 47,
+        "centerText": "A Useful Loop Hardens",
+        "caption": "A Useful Loop Hardens",
+        "visual": "powered-prison"
+      }
+    },
+    {
+      "id": "song-048",
+      "title": "Grasping Confirms Itself",
+      "subtitle": "A threatened identity repeatedly produces the evidence required to protect it.",
+      "term": "Āvarta",
+      "devanagari": "आवर्तः",
+      "motif": "semantic-essay",
+      "duration": 16.333333333333332,
+      "params": {
+        "variant": 48,
+        "centerText": "Grasping Confirms Itself",
+        "caption": "Grasping Confirms Itself",
+        "visual": "causal-vortex"
+      }
+    },
+    {
+      "id": "song-049",
+      "title": "The Branch Cools",
+      "subtitle": "Functional distinctions remain while the ownership route is removed from the chain.",
+      "term": "Nibbāna",
+      "devanagari": "निब्बानम्",
+      "motif": "semantic-essay",
+      "duration": 22.166666666666668,
+      "params": {
+        "variant": 49,
+        "centerText": "The Branch Cools",
+        "caption": "appearance → feeling → clear response",
+        "visual": "cooling-chain"
+      }
+    },
+    {
+      "id": "song-050",
+      "title": "Feeling Without Appropriation",
+      "subtitle": "Pain and pleasure continue without recruiting an identity around repetition or prevention.",
+      "term": "Kāla",
+      "devanagari": "कालः",
+      "motif": "semantic-essay",
+      "duration": 26.791666666666668,
+      "params": {
+        "variant": 50,
+        "centerText": "Feeling Without Appropriation",
+        "caption": "Feeling Without Appropriation",
+        "visual": "cooling-chain"
+      }
+    },
+    {
+      "id": "song-051",
+      "title": "Regulation Without Metaphysics",
+      "subtitle": "The organism acts, but no independent centre must own every node.",
+      "term": "Nibbāna",
+      "devanagari": "निब्बानम्",
+      "motif": "semantic-essay",
+      "duration": 16.333333333333332,
+      "params": {
+        "variant": 51,
+        "centerText": "Regulation Without Metaphysics",
+        "caption": "Regulation Without Metaphysics",
+        "visual": "cooling-chain"
+      }
+    },
+    {
+      "id": "song-052",
+      "title": "Shared Ground, First Divergence",
+      "subtitle": "Buddhism refuses a final ground behind processes already dependently designated.",
+      "term": "Bheda",
+      "devanagari": "भेदः",
+      "motif": "semantic-essay",
+      "duration": 27.958333333333332,
+      "params": {
+        "variant": 52,
+        "centerText": "Shared Ground, First Divergence",
+        "caption": "Shared Ground, First Divergence",
+        "visual": "dialectic-bridge"
+      }
+    },
+    {
+      "id": "song-053",
+      "title": "Luminous Reflexivity",
+      "subtitle": "Pratyabhijñā interprets finite appearing as contraction of universal self-apprehension.",
+      "term": "Bheda",
+      "devanagari": "भेदः",
+      "motif": "semantic-essay",
+      "duration": 14,
+      "params": {
+        "variant": 53,
+        "centerText": "Luminous Reflexivity",
+        "caption": "Luminous Reflexivity",
+        "visual": "open-question"
+      }
+    },
+    {
+      "id": "song-054",
+      "title": "One Practical Consequence",
+      "subtitle": "Song without singer and singing as singer meet at non-ownership.",
+      "term": "Saṅgati",
+      "devanagari": "सङ्गतिः",
+      "motif": "semantic-essay",
+      "duration": 19.458333333333332,
+      "params": {
+        "variant": 54,
+        "centerText": "One Practical Consequence",
+        "caption": "One Practical Consequence",
+        "visual": "dialectic-bridge"
+      }
+    },
+    {
+      "id": "song-055",
+      "title": "The Buddhist Warning",
+      "subtitle": "Luminous appearing must not harden into another eternal substance.",
+      "term": "Bheda",
+      "devanagari": "भेदः",
+      "motif": "semantic-essay",
+      "duration": 17.125,
+      "params": {
+        "variant": 55,
+        "centerText": "The Buddhist Warning",
+        "caption": "The Buddhist Warning",
+        "visual": "dialectic-bridge"
+      }
+    },
+    {
+      "id": "song-056",
+      "title": "The Śaiva Reply",
+      "subtitle": "Failure to objectify awareness does not by itself establish unreality.",
+      "term": "Bheda",
+      "devanagari": "भेदः",
+      "motif": "semantic-essay",
+      "duration": 14,
+      "params": {
+        "variant": 56,
+        "centerText": "The Śaiva Reply",
+        "caption": "The Śaiva Reply",
+        "visual": "open-question"
+      }
+    },
+    {
+      "id": "song-057",
+      "title": "An Instrument Learns to Listen",
+      "subtitle": "Non-ownership improves tuning and permits difference without rivalry.",
+      "term": "Saṅghaṭana",
+      "devanagari": "सङ्घटनम्",
+      "motif": "semantic-essay",
+      "duration": 21.375,
+      "params": {
+        "variant": 57,
+        "centerText": "An Instrument Learns to Listen",
+        "caption": "An Instrument Learns to Listen",
+        "visual": "tuning-network"
+      }
+    },
+    {
+      "id": "song-058",
+      "title": "Pain Repeats a Room",
+      "subtitle": "Damage and one learned chord can make every difference feel threatening.",
+      "term": "Āvarta",
+      "devanagari": "आवर्तः",
+      "motif": "semantic-essay",
+      "duration": 17.875,
+      "params": {
+        "variant": 58,
+        "centerText": "Pain Repeats a Room",
+        "caption": "Pain Repeats a Room",
+        "visual": "causal-vortex"
+      }
+    },
+    {
+      "id": "song-059",
+      "title": "Real Suffering, Porous Isolation",
+      "subtitle": "Compassion rejects both denial and absolute separation.",
+      "term": "Upamā",
+      "devanagari": "उपमा",
+      "motif": "semantic-essay",
+      "duration": 14.791666666666666,
+      "params": {
+        "variant": 59,
+        "centerText": "Real Suffering, Porous Isolation",
+        "caption": "Real Suffering, Porous Isolation",
+        "visual": "limitation-reversal"
+      }
+    },
+    {
+      "id": "song-060",
+      "title": "Transparent Local World",
+      "subtitle": "A boundary remains operational, ethical, and non-absolute.",
+      "term": "Mukhadvāra",
+      "devanagari": "मुखद्वारम्",
+      "motif": "semantic-essay",
+      "duration": 25.25,
+      "params": {
+        "variant": 60,
+        "centerText": "Transparent Local World",
+        "caption": "Transparent Local World",
+        "visual": "boundary-gates"
+      }
+    },
+    {
+      "id": "song-061",
+      "title": "No Private Liberation",
+      "subtitle": "Relationally arisen selves cannot be transformed in complete isolation.",
+      "term": "Pratītya-samutpāda",
+      "devanagari": "प्रतीत्यसमुत्पादः",
+      "motif": "semantic-essay",
+      "duration": 11.291666666666666,
+      "params": {
+        "variant": 61,
+        "centerText": "No Private Liberation",
+        "caption": "No Private Liberation",
+        "visual": "dependency-network"
+      }
+    },
+    {
+      "id": "song-062",
+      "title": "Clarity Changes Conditions",
+      "subtitle": "Language, teaching, calm, truth, and community alter what can arise elsewhere.",
+      "term": "Paramparā",
+      "devanagari": "परम्परा",
+      "motif": "semantic-essay",
+      "duration": 29.5,
+      "params": {
+        "variant": 62,
+        "centerText": "Clarity Changes Conditions",
+        "caption": "Clarity Changes Conditions",
+        "visual": "tuning-network"
+      }
+    },
+    {
+      "id": "song-063",
+      "title": "Tuning the Missing Note",
+      "subtitle": "Another instrument can alter the support-set until reorganization becomes possible.",
+      "term": "Saṅghaṭana",
+      "devanagari": "सङ्घटनम्",
+      "motif": "semantic-essay",
+      "duration": 20.208333333333332,
+      "params": {
+        "variant": 63,
+        "centerText": "Tuning the Missing Note",
+        "caption": "Tuning the Missing Note",
+        "visual": "tuning-network"
+      }
+    },
+    {
+      "id": "song-064",
+      "title": "Relationships Open Worlds",
+      "subtitle": "Help changes probability, environment, attention, and interpretation rather than transmitting substance.",
+      "term": "Paramparā",
+      "devanagari": "परम्परा",
+      "motif": "semantic-essay",
+      "duration": 17.875,
+      "params": {
+        "variant": 64,
+        "centerText": "Relationships Open Worlds",
+        "caption": "Relationships Open Worlds",
+        "visual": "tuning-network"
+      }
+    },
+    {
+      "id": "song-065",
+      "title": "Three Computational Levels",
+      "subtitle": "Reproducible pattern, inherited disposition, and living runtime replace the cosmic source file.",
+      "term": "Kāla",
+      "devanagari": "कालः",
+      "motif": "semantic-essay",
+      "duration": 22.166666666666668,
+      "params": {
+        "variant": 65,
+        "centerText": "Three Computational Levels",
+        "caption": "Three Computational Levels",
+        "visual": "source-compile-runtime"
+      }
+    },
+    {
+      "id": "song-066",
+      "title": "The Past as Probability",
+      "subtitle": "Compiled disposition biases noticing, fear, possibility, and likely action.",
+      "term": "Saṃskāra",
+      "devanagari": "संस्कारः",
+      "motif": "semantic-essay",
+      "duration": 19.833333333333332,
+      "params": {
+        "variant": 66,
+        "centerText": "The Past as Probability",
+        "caption": "The Past as Probability",
+        "visual": "source-compile-runtime"
+      }
+    },
+    {
+      "id": "song-067",
+      "title": "Finite Freedom",
+      "subtitle": "Runtime can notice and reorganize some conditions without escaping causality.",
+      "term": "Bhāvanā",
+      "devanagari": "भावना",
+      "motif": "semantic-essay",
+      "duration": 22.916666666666668,
+      "params": {
+        "variant": 67,
+        "centerText": "Finite Freedom",
+        "caption": "Finite Freedom",
+        "visual": "source-compile-runtime"
+      }
+    },
+    {
+      "id": "song-068",
+      "title": "The Runtime Error",
+      "subtitle": "A provisional model demands permanence, total control, and authorship of its own causes.",
+      "term": "Bhāvanā",
+      "devanagari": "भावना",
+      "motif": "semantic-essay",
+      "duration": 26.791666666666668,
+      "params": {
+        "variant": 68,
+        "centerText": "The Runtime Error",
+        "caption": "The Runtime Error",
+        "visual": "powered-prison"
+      }
+    },
+    {
+      "id": "song-069",
+      "title": "Correct the Privilege",
+      "subtitle": "Recognition keeps the runtime while changing which claims it is allowed to make.",
+      "term": "Bhāvanā",
+      "devanagari": "भावना",
+      "motif": "semantic-essay",
+      "duration": 11.708333333333334,
+      "params": {
+        "variant": 69,
+        "centerText": "Correct the Privilege",
+        "caption": "Correct the Privilege",
+        "visual": "source-compile-runtime"
+      }
+    },
+    {
+      "id": "song-070",
+      "title": "Begin With One Appearance",
+      "subtitle": "Sound, pressure, or word opens into body, environment, attention, memory, and contrast.",
+      "term": "Vikalpa",
+      "devanagari": "विकल्पः",
+      "motif": "semantic-essay",
+      "duration": 22.541666666666668,
+      "params": {
+        "variant": 70,
+        "centerText": "Begin With One Appearance",
+        "caption": "Begin With One Appearance",
+        "visual": "attention-beam"
+      }
+    },
+    {
+      "id": "song-071",
+      "title": "Inquiry Has Conditions",
+      "subtitle": "Language, concepts, reading, body, and history place the knower inside the field.",
+      "term": "Pratyavekṣaṇa",
+      "devanagari": "प्रत्यवेक्षणम्",
+      "motif": "semantic-essay",
+      "duration": 18.291666666666668,
+      "params": {
+        "variant": 71,
+        "centerText": "Inquiry Has Conditions",
+        "caption": "Inquiry Has Conditions",
+        "visual": "recursive-observer"
+      }
+    },
+    {
+      "id": "song-072",
+      "title": "Notice the Observer-Model",
+      "subtitle": "Location, inner voice, tension, and watcher become appearances rather than a second witness.",
+      "term": "Pratyavekṣaṇa",
+      "devanagari": "प्रत्यवेक्षणम्",
+      "motif": "semantic-essay",
+      "duration": 22.541666666666668,
+      "params": {
+        "variant": 72,
+        "centerText": "Notice the Observer-Model",
+        "caption": "Notice the Observer-Model",
+        "visual": "recursive-observer"
+      }
+    },
+    {
+      "id": "song-073",
+      "title": "Threat Reveals Ownership",
+      "subtitle": "Tension, narrowed attention, recruited memory, and catastrophe expose the shift from observer to owner.",
+      "term": "Vicāra",
+      "devanagari": "विचारः",
+      "motif": "semantic-essay",
+      "duration": 13.25,
+      "params": {
+        "variant": 73,
+        "centerText": "Threat Reveals Ownership",
+        "caption": "Threat Reveals Ownership",
+        "visual": "recursive-observer"
+      }
+    },
+    {
+      "id": "song-074",
+      "title": "Reveal the Support Set",
+      "subtitle": "Earlier wound, exhaustion, expectation, sensation, future, and habit loosen false necessity.",
+      "term": "Vicāra",
+      "devanagari": "विचारः",
+      "motif": "semantic-essay",
+      "duration": 28.708333333333332,
+      "params": {
+        "variant": 74,
+        "centerText": "Reveal the Support Set",
+        "caption": "Reveal the Support Set",
+        "visual": "practice-folds"
+      }
+    },
+    {
+      "id": "song-075",
+      "title": "Practical Recognition",
+      "subtitle": "Conditions become visible and an assembled response loses the force of inevitability.",
+      "term": "Pariṇāma",
+      "devanagari": "परिणामः",
+      "motif": "semantic-essay",
+      "duration": 6.666666666666667,
+      "params": {
+        "variant": 75,
+        "centerText": "Practical Recognition",
+        "caption": "Practical Recognition",
+        "visual": "opening-fist"
+      }
+    },
+    {
+      "id": "song-076",
+      "title": "Neither Blankness Nor Grandeur",
+      "subtitle": "Recognition is transparency of enactment, not an extraordinary identity claim.",
+      "term": "Viśeṣa",
+      "devanagari": "विशेषः",
+      "motif": "semantic-essay",
+      "duration": 22.166666666666668,
+      "params": {
+        "variant": 76,
+        "centerText": "Neither Blankness Nor Grandeur",
+        "caption": "Neither Blankness Nor Grandeur",
+        "visual": "textures-display"
+      }
+    },
+    {
+      "id": "song-077",
+      "title": "Real Without Absolute",
+      "subtitle": "Body, identity, boundary, perspective, suffering, and action each keep reality while losing independence.",
+      "term": "Upamā",
+      "devanagari": "उपमा",
+      "motif": "semantic-essay",
+      "duration": 18.666666666666668,
+      "params": {
+        "variant": 77,
+        "centerText": "Real Without Absolute",
+        "caption": "Real Without Absolute",
+        "visual": "limitation-reversal"
+      }
+    },
+    {
+      "id": "song-078",
+      "title": "The Observer Becomes Lighter",
+      "subtitle": "Memory informs, identity changes, uncertainty is tolerated, and action continues.",
+      "term": "Pariṇāma",
+      "devanagari": "परिणामः",
+      "motif": "semantic-essay",
+      "duration": 19.833333333333332,
+      "params": {
+        "variant": 78,
+        "centerText": "The Observer Becomes Lighter",
+        "caption": "The Observer Becomes Lighter",
+        "visual": "morphing-invariant"
+      }
+    },
+    {
+      "id": "song-079",
+      "title": "Why Anything Appears",
+      "subtitle": "Formal models explain function without yet explaining presence from within.",
+      "term": "Vicāra",
+      "devanagari": "विचारः",
+      "motif": "semantic-essay",
+      "duration": 25.25,
+      "params": {
+        "variant": 79,
+        "centerText": "Why Anything Appears",
+        "caption": "Why Anything Appears",
+        "visual": "open-question"
+      }
+    },
+    {
+      "id": "song-080",
+      "title": "Three Non-Final Answers",
+      "subtitle": "Madhyamaka, Pratyabhijñā, and illusionism protect different explanatory risks.",
+      "term": "Bheda",
+      "devanagari": "भेदः",
+      "motif": "semantic-essay",
+      "duration": 29.5,
+      "params": {
+        "variant": 80,
+        "centerText": "Three Non-Final Answers",
+        "caption": "Three Non-Final Answers",
+        "visual": "dialectic-bridge"
+      }
+    },
+    {
+      "id": "song-081",
+      "title": "Make the Question Inhabitable",
+      "subtitle": "Myth may open possibility only while remembering that it is not proof.",
+      "term": "Vicāra",
+      "devanagari": "विचारः",
+      "motif": "semantic-essay",
+      "duration": 27.583333333333332,
+      "params": {
+        "variant": 81,
+        "centerText": "Make the Question Inhabitable",
+        "caption": "Make the Question Inhabitable",
+        "visual": "open-question"
+      }
+    },
+    {
+      "id": "song-082",
+      "title": "A Pattern Survives a Year",
+      "subtitle": "Child, adolescent, adult, body, world, and reconstructed memory all change.",
+      "term": "Anvaya",
+      "devanagari": "अन्वयः",
+      "motif": "semantic-essay",
+      "duration": 20.583333333333332,
+      "params": {
+        "variant": 82,
+        "centerText": "A Pattern Survives a Year",
+        "caption": "A Pattern Survives a Year",
+        "visual": "morphing-invariant"
+      }
+    },
+    {
+      "id": "song-083",
+      "title": "Messages Move Both Ways",
+      "subtitle": "The present receives earlier traces and becomes a sender to later selves.",
+      "term": "Saṃskāra",
+      "devanagari": "संस्कारः",
+      "motif": "semantic-essay",
+      "duration": 23.291666666666668,
+      "params": {
+        "variant": 83,
+        "centerText": "Messages Move Both Ways",
+        "caption": "Messages Move Both Ways",
+        "visual": "memory-relay"
+      }
+    },
+    {
+      "id": "song-084",
+      "title": "This Performance Is Irreplaceable",
+      "subtitle": "Dependence removes ownership without making the local life unreal or disposable.",
+      "term": "Pratītya-samutpāda",
+      "devanagari": "प्रतीत्यसमुत्पादः",
+      "motif": "semantic-essay",
+      "duration": 23.291666666666668,
+      "params": {
+        "variant": 84,
+        "centerText": "This Performance Is Irreplaceable",
+        "caption": "This Performance Is Irreplaceable",
+        "visual": "dependency-network"
+      }
+    },
+    {
+      "id": "song-085",
+      "title": "Listening While Playing",
+      "subtitle": "A living relation and finite world open beyond isolated possession.",
+      "term": "Nibbāna",
+      "devanagari": "निब्बानम्",
+      "motif": "semantic-essay",
+      "duration": 15.958333333333334,
+      "params": {
+        "variant": 85,
+        "centerText": "Listening While Playing",
+        "caption": "Listening While Playing",
+        "visual": "opening-fist"
+      }
+    },
+    {
+      "id": "song-086",
+      "title": "No Centre Owns the Network",
+      "subtitle": "Memory, identity, observer, and action arise collaboratively inside changing conditions.",
+      "term": "Pratītya-samutpāda",
+      "devanagari": "प्रतीत्यसमुत्पादः",
+      "motif": "semantic-essay",
+      "duration": 21.375,
+      "params": {
+        "variant": 86,
+        "centerText": "No Centre Owns the Network",
+        "caption": "No Centre Owns the Network",
+        "visual": "dependency-network"
+      }
+    },
+    {
+      "id": "song-087",
+      "title": "Compassion Enters the Music",
+      "subtitle": "Partial instruments help one another hear and change without becoming identical.",
+      "term": "Saṅghaṭana",
+      "devanagari": "सङ्घटनम्",
+      "motif": "semantic-essay",
+      "duration": 29.125,
+      "params": {
+        "variant": 87,
+        "centerText": "Compassion Enters the Music",
+        "caption": "Compassion Enters the Music",
+        "visual": "tuning-network"
+      }
+    },
+    {
+      "id": "song-088",
+      "title": "Listening Is in the Song",
+      "subtitle": "Singing and listening close the film as mutually arising parts of one performance.",
+      "term": "Anvaya",
+      "devanagari": "अन्वयः",
+      "motif": "semantic-essay",
+      "duration": 12.083333333333334,
+      "params": {
+        "variant": 88,
+        "centerText": "Listening Is in the Song",
+        "caption": "Listening Is in the Song",
+        "visual": "pattern-ensemble"
+      }
+    }
+  ]
+}

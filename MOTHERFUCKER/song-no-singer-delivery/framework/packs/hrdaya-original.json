@@ -1,0 +1,116 @@
+{
+  "version": "1.0",
+  "id": "hrdaya-original",
+  "title": "Hṛdaya — The Heart That Contains the World",
+  "description": "Six original Skia scenes exploring the heart, attention, word, reflexivity, recognition, and the whole.",
+  "theme": "ivoryManuscript",
+  "seed": 42110817,
+  "render": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "sceneDuration": 4.8,
+    "crf": 16,
+    "preset": "medium"
+  },
+  "scenes": [
+    {
+      "id": "hr01",
+      "title": "The Unmeasured Heart",
+      "subtitle": "The centre gathers the field without enclosing it.",
+      "term": "Hṛdaya",
+      "devanagari": "हृदयम्",
+      "motif": "heart-lattice",
+      "palette": {
+        "accent": "#9a3042",
+        "secondary": "#394976",
+        "luminous": "#ebce80"
+      },
+      "params": {
+        "centerText": "हृ",
+        "density": 0.86
+      }
+    },
+    {
+      "id": "hr02",
+      "title": "Attention Draws a Horizon",
+      "subtitle": "Selection makes a world legible by bringing relations into focus.",
+      "term": "Avadhāna",
+      "devanagari": "अवधानम्",
+      "motif": "attention-lens",
+      "palette": {
+        "accent": "#913442",
+        "secondary": "#40527f",
+        "luminous": "#e7c878"
+      },
+      "params": {
+        "centerText": "अवधानम्",
+        "speed": 0.28
+      }
+    },
+    {
+      "id": "hr03",
+      "title": "The Word Takes Shape",
+      "subtitle": "A current of articulated powers condenses into visible structure.",
+      "term": "Vāc",
+      "devanagari": "वाक्",
+      "motif": "phoneme-forge",
+      "palette": {
+        "accent": "#a23d4e",
+        "secondary": "#3d5684",
+        "luminous": "#edcf7e"
+      },
+      "params": {
+        "phonemes": ["अ", "आ", "इ", "उ", "ऋ", "क", "च", "ट", "त", "प", "श", "ह"]
+      }
+    },
+    {
+      "id": "hr04",
+      "title": "The World Looks Back",
+      "subtitle": "Subject and object complete a circuit of reflexive disclosure.",
+      "term": "Vimarśa",
+      "devanagari": "विमर्शः",
+      "motif": "reflexive-mirror",
+      "palette": {
+        "accent": "#963043",
+        "secondary": "#354b78",
+        "luminous": "#ebcd7d"
+      },
+      "params": {}
+    },
+    {
+      "id": "hr05",
+      "title": "Recognition Reverses the Current",
+      "subtitle": "The path of manifestation becomes a path of return without erasing the world.",
+      "term": "Pratyabhijñā",
+      "devanagari": "प्रत्यभिज्ञा",
+      "motif": "return-current",
+      "palette": {
+        "accent": "#a03549",
+        "secondary": "#3c4d78",
+        "luminous": "#efd481"
+      },
+      "params": {
+        "nodes": 10
+      }
+    },
+    {
+      "id": "hr06",
+      "title": "The Heart Is the Whole",
+      "subtitle": "Every distinction remains threaded through one luminous centre.",
+      "term": "Sarvaṃ Hṛdayam",
+      "devanagari": "सर्वं हृदयम्",
+      "motif": "closing-heart-seal",
+      "palette": {
+        "accent": "#942f42",
+        "secondary": "#344a78",
+        "luminous": "#efd383"
+      },
+      "params": {
+        "centerText": "हृदयम्",
+        "outerNodes": 24,
+        "ringWords": ["cit", "spanda", "śakti", "vāc", "kāla", "deha", "jagat", "ānanda"]
+      }
+    }
+  ]
+}

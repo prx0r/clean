@@ -1,0 +1,133 @@
+{
+  "version": "1.0",
+  "id": "science-blue-capabilities",
+  "title": "Science Blue Capability Proof",
+  "description": "Nine original Skia scenes proving inherited technical chrome and domain mechanisms from the science-blue, bio-quantum, and temporal-cognition capability packs.",
+  "capabilityPacks": ["bio-quantum", "temporal-cognition"],
+  "theme": "scienceBlue",
+  "seed": 260727,
+  "render": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "sceneDuration": 6,
+    "transitionDuration": 0.35,
+    "crf": 17,
+    "preset": "medium"
+  },
+  "scenes": [
+    {
+      "id": "sci-rate",
+      "title": "A Condition Changes the Rate",
+      "subtitle": "Competing response curves share one calibrated operating point.",
+      "term": "Pramāṇa",
+      "devanagari": "प्रमाण",
+      "motif": "semantic-essay",
+      "params": {
+        "visual": "technical-rate-plot",
+        "xLabel": "condition",
+        "yLabel": "response",
+        "equation": "response = f(condition)"
+      }
+    },
+    {
+      "id": "sci-evidence",
+      "title": "Evidence Accumulates by Constraint",
+      "subtitle": "Confidence rises through replication, mechanism, and prediction.",
+      "term": "Yukti",
+      "devanagari": "युक्ति",
+      "motif": "semantic-essay",
+      "params": {
+        "visual": "evidence-ladder",
+        "selected": 3
+      }
+    },
+    {
+      "id": "sci-phase",
+      "title": "Different Histories Find One Attractor",
+      "subtitle": "A shared dynamical field coordinates distinct initial states.",
+      "term": "Gati",
+      "devanagari": "गति",
+      "motif": "semantic-essay",
+      "params": {
+        "visual": "phase-space-trajectories",
+        "xLabel": "state x",
+        "yLabel": "state y"
+      }
+    },
+    {
+      "id": "sci-tunnel",
+      "title": "Life Crosses a Barrier",
+      "subtitle": "A classical path stops while finite wave amplitude continues.",
+      "term": "Avāraṇa",
+      "devanagari": "आवरण",
+      "motif": "semantic-essay",
+      "params": {
+        "visual": "barrier-tunnelling",
+        "barrierLabel": "energy barrier"
+      }
+    },
+    {
+      "id": "sci-landscape",
+      "title": "Structure Shapes the Route",
+      "subtitle": "Stable states remain distinct from the transition between them.",
+      "term": "Pariṇāma",
+      "devanagari": "परिणाम",
+      "motif": "semantic-essay",
+      "params": {
+        "visual": "energy-landscape",
+        "leftLabel": "donor",
+        "rightLabel": "acceptor"
+      }
+    },
+    {
+      "id": "sci-gate",
+      "title": "Architecture Selects Possibility",
+      "subtitle": "One gate admits some trajectories and redirects others.",
+      "term": "Niyati",
+      "devanagari": "नियति",
+      "motif": "semantic-essay",
+      "params": {
+        "visual": "molecular-gate",
+        "particles": 11,
+        "gateLabel": "selective channel"
+      }
+    },
+    {
+      "id": "sci-window",
+      "title": "The Present Is a Moving Window",
+      "subtitle": "Events persist while access reorganises what counts as now.",
+      "term": "Kāla",
+      "devanagari": "काल",
+      "motif": "semantic-essay",
+      "params": {
+        "visual": "moving-time-window",
+        "events": ["trace", "signal", "model", "choice", "action", "revision"]
+      }
+    },
+    {
+      "id": "sci-sequence",
+      "title": "Sequence Emerges from a Field",
+      "subtitle": "The same events become ordered without changing membership.",
+      "term": "Krama",
+      "devanagari": "क्रम",
+      "motif": "semantic-essay",
+      "params": {
+        "visual": "simultaneity-sequence",
+        "count": 12
+      }
+    },
+    {
+      "id": "sci-future",
+      "title": "Action Narrows the Possible",
+      "subtitle": "One branch brightens without pretending alternatives never existed.",
+      "term": "Bhaviṣya",
+      "devanagari": "भविष्य",
+      "motif": "semantic-essay",
+      "params": {
+        "visual": "branching-future",
+        "selectedBranch": 2
+      }
+    }
+  ]
+}

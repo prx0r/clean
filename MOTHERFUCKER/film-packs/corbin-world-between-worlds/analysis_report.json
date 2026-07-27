@@ -1,0 +1,478 @@
+{
+  "pack": "corbin_world_between_worlds_film_pack",
+  "shots": {
+    "count": 102,
+    "runtime_seconds": 641.3,
+    "runtime_minutes": 10.7,
+    "avg_shot_seconds": 6.3,
+    "fps": 8,
+    "resolution": [
+      1280,
+      720
+    ]
+  },
+  "chapters": [
+    {
+      "id": "opening",
+      "title": "The World Between Worlds",
+      "shot_count": 5,
+      "duration_seconds": 30.6,
+      "duration_percent": 4.8
+    },
+    {
+      "id": "third",
+      "title": "The Third World",
+      "shot_count": 7,
+      "duration_seconds": 49.0,
+      "duration_percent": 7.6
+    },
+    {
+      "id": "imagination",
+      "title": "The Organ of Perception",
+      "shot_count": 3,
+      "duration_seconds": 20.1,
+      "duration_percent": 3.1
+    },
+    {
+      "id": "north",
+      "title": "The Suprasensory Orient",
+      "shot_count": 11,
+      "duration_seconds": 69.8,
+      "duration_percent": 10.9
+    },
+    {
+      "id": "guide",
+      "title": "The Philosopher’s Angel",
+      "shot_count": 8,
+      "duration_seconds": 47.4,
+      "duration_percent": 7.4
+    },
+    {
+      "id": "thread",
+      "title": "One Times One",
+      "shot_count": 11,
+      "duration_seconds": 73.7,
+      "duration_percent": 11.5
+    },
+    {
+      "id": "faces",
+      "title": "The Face of Light",
+      "shot_count": 12,
+      "duration_seconds": 75.8,
+      "duration_percent": 11.8
+    },
+    {
+      "id": "dhikr",
+      "title": "The Fire of Dhikr",
+      "shot_count": 12,
+      "duration_seconds": 77.3,
+      "duration_percent": 12.1
+    },
+    {
+      "id": "daena",
+      "title": "The Daena Speaks",
+      "shot_count": 11,
+      "duration_seconds": 67.6,
+      "duration_percent": 10.5
+    },
+    {
+      "id": "recursive",
+      "title": "Parent and Child",
+      "shot_count": 9,
+      "duration_seconds": 57.5,
+      "duration_percent": 9.0
+    },
+    {
+      "id": "return",
+      "title": "A Real World",
+      "shot_count": 13,
+      "duration_seconds": 72.6,
+      "duration_percent": 11.3
+    }
+  ],
+  "visual_modes": {
+    "unique_count": 43,
+    "modes": [
+      {
+        "mode": "world_geography",
+        "count": 4,
+        "total_seconds": 24.2
+      },
+      {
+        "mode": "cosmic_compass",
+        "count": 3,
+        "total_seconds": 19.5
+      },
+      {
+        "mode": "orient_path",
+        "count": 3,
+        "total_seconds": 19.3
+      },
+      {
+        "mode": "body_spirit_exchange",
+        "count": 3,
+        "total_seconds": 20.7
+      },
+      {
+        "mode": "spider_thread",
+        "count": 3,
+        "total_seconds": 24.5
+      },
+      {
+        "mode": "cut_rejoin",
+        "count": 3,
+        "total_seconds": 17.5
+      },
+      {
+        "mode": "formula_one",
+        "count": 3,
+        "total_seconds": 20.3
+      },
+      {
+        "mode": "face_spring",
+        "count": 3,
+        "total_seconds": 22.3
+      },
+      {
+        "mode": "two_faces",
+        "count": 3,
+        "total_seconds": 16.7
+      },
+      {
+        "mode": "spirit_sun",
+        "count": 3,
+        "total_seconds": 18.9
+      },
+      {
+        "mode": "gaze_relation",
+        "count": 3,
+        "total_seconds": 17.9
+      },
+      {
+        "mode": "name_spiral",
+        "count": 3,
+        "total_seconds": 19.6
+      },
+      {
+        "mode": "fire_veil",
+        "count": 3,
+        "total_seconds": 18.3
+      },
+      {
+        "mode": "light_upon_light",
+        "count": 3,
+        "total_seconds": 21.0
+      },
+      {
+        "mode": "door_dissolve",
+        "count": 3,
+        "total_seconds": 18.4
+      },
+      {
+        "mode": "chinvat_bridge",
+        "count": 3,
+        "total_seconds": 22.6
+      },
+      {
+        "mode": "daena_figure",
+        "count": 3,
+        "total_seconds": 17.4
+      },
+      {
+        "mode": "beauty_growth",
+        "count": 3,
+        "total_seconds": 15.5
+      },
+      {
+        "mode": "parent_child",
+        "count": 3,
+        "total_seconds": 18.4
+      },
+      {
+        "mode": "trained_eye",
+        "count": 3,
+        "total_seconds": 15.4
+      },
+      {
+        "mode": "objects_pass",
+        "count": 3,
+        "total_seconds": 17.3
+      },
+      {
+        "mode": "other_eyes",
+        "count": 3,
+        "total_seconds": 15.7
+      },
+      {
+        "mode": "threshold_triad",
+        "count": 2,
+        "total_seconds": 11.9
+      },
+      {
+        "mode": "three_worlds",
+        "count": 2,
+        "total_seconds": 14.3
+      },
+      {
+        "mode": "ninth_sphere",
+        "count": 2,
+        "total_seconds": 13.9
+      },
+      {
+        "mode": "imaginal_figures",
+        "count": 2,
+        "total_seconds": 14.8
+      },
+      {
+        "mode": "map_home",
+        "count": 2,
+        "total_seconds": 10.3
+      },
+      {
+        "mode": "angel_star",
+        "count": 2,
+        "total_seconds": 10.8
+      },
+      {
+        "mode": "wisdom_door",
+        "count": 2,
+        "total_seconds": 13.9
+      },
+      {
+        "mode": "sleep_waking",
+        "count": 2,
+        "total_seconds": 10.3
+      },
+      {
+        "mode": "person_light",
+        "count": 2,
+        "total_seconds": 12.4
+      },
+      {
+        "mode": "relation_orbit",
+        "count": 2,
+        "total_seconds": 11.3
+      },
+      {
+        "mode": "shadow_eternity",
+        "count": 2,
+        "total_seconds": 12.2
+      },
+      {
+        "mode": "mutual_birth",
+        "count": 2,
+        "total_seconds": 14.8
+      },
+      {
+        "mode": "recursive_halo",
+        "count": 2,
+        "total_seconds": 10.3
+      },
+      {
+        "mode": "veil_heart",
+        "count": 2,
+        "total_seconds": 14.1
+      },
+      {
+        "mode": "between_worlds",
+        "count": 1,
+        "total_seconds": 5.2
+      },
+      {
+        "mode": "corbin_orbit",
+        "count": 1,
+        "total_seconds": 8.4
+      },
+      {
+        "mode": "room_between",
+        "count": 1,
+        "total_seconds": 5.2
+      },
+      {
+        "mode": "bridge_tissue",
+        "count": 1,
+        "total_seconds": 6.0
+      },
+      {
+        "mode": "active_eye",
+        "count": 1,
+        "total_seconds": 7.0
+      },
+      {
+        "mode": "eye_city",
+        "count": 1,
+        "total_seconds": 6.4
+      },
+      {
+        "mode": "physical_eyes",
+        "count": 1,
+        "total_seconds": 6.6
+      }
+    ]
+  },
+  "transitions": {
+    "in": [
+      {
+        "type": "continuous motif transformation",
+        "count": 101
+      },
+      {
+        "type": "opening from blank field",
+        "count": 1
+      }
+    ],
+    "out": [
+      {
+        "type": "preserve the open door",
+        "count": 13
+      },
+      {
+        "type": "preserve the line of sight",
+        "count": 12
+      },
+      {
+        "type": "preserve the ascending Name",
+        "count": 12
+      },
+      {
+        "type": "preserve the northward axis",
+        "count": 11
+      },
+      {
+        "type": "preserve the relational filament",
+        "count": 11
+      }
+    ]
+  },
+  "continuity": [
+    {
+      "object": "the open door",
+      "shots": 13
+    },
+    {
+      "object": "the line of sight",
+      "shots": 12
+    },
+    {
+      "object": "the ascending Name",
+      "shots": 12
+    },
+    {
+      "object": "the northward axis",
+      "shots": 11
+    },
+    {
+      "object": "the relational filament",
+      "shots": 11
+    }
+  ],
+  "visual_program": {
+    "schema": "2.0-experimental.narration_locked",
+    "thesis": "A third world gradually becomes perceptible as the same threshold transforms into eye, north, Guide, thread, face, fire, bridge and reciprocal birth.",
+    "palette": {
+      "paper": "#F4EFE3",
+      "ink": "#1E191B",
+      "porphyry": "#792638",
+      "lapis": "#2A466E",
+      "gold": "#AE8534"
+    },
+    "entities": [
+      {
+        "id": "threshold",
+        "archetype": "threshold",
+        "continuity": "persistent"
+      },
+      {
+        "id": "guide",
+        "archetype": "luminous_counterpart",
+        "continuity": "emerges_and_returns"
+      },
+      {
+        "id": "relation_thread",
+        "archetype": "current",
+        "continuity": "persistent_transformation"
+      },
+      {
+        "id": "inner_eye",
+        "archetype": "eye",
+        "continuity": "threshold_transformation"
+      }
+    ],
+    "operators": [
+      "reveal",
+      "mediate",
+      "orient",
+      "embody",
+      "illuminate",
+      "connect",
+      "cut",
+      "rejoin",
+      "mirror",
+      "radiate",
+      "ascend",
+      "burn",
+      "bridge",
+      "reciprocate",
+      "interiorize"
+    ]
+  },
+  "source": {
+    "words": 1516,
+    "chars": 8839,
+    "lines": 54
+  },
+  "render": {
+    "scene_functions": 0,
+    "lines": 379
+  },
+  "clips": {
+    "count": 102,
+    "sample": [
+      {
+        "name": "s042_relation_orbit.mp4",
+        "size_kb": 103
+      },
+      {
+        "name": "s101_other_eyes.mp4",
+        "size_kb": 105
+      },
+      {
+        "name": "s009_bridge_tissue.mp4",
+        "size_kb": 218
+      },
+      {
+        "name": "s056_spirit_sun.mp4",
+        "size_kb": 100
+      },
+      {
+        "name": "s026_body_spirit_exchange.mp4",
+        "size_kb": 138
+      }
+    ],
+    "total_mb": 11.4
+  },
+  "audio": {
+    "segments": 102
+  },
+  "final_film": {
+    "file": "the_world_between_worlds_full_film.mp4",
+    "size_mb": 11.3,
+    "duration_seconds": 639.5
+  },
+  "quality": {
+    "total_score": 115,
+    "max_score": 100,
+    "percentage": 115,
+    "grade": "GOLD",
+    "notes": [
+      "✅ Shot count (102) meets gold standard (80+). Score +20",
+      "✅ Avg shot (6.3s) in ideal range (5-10s). Score +20",
+      "✅ Runtime (10.7min) in ideal range (8-25min). Score +20",
+      "✅ 43 unique visual modes. Excellent variety. Score +15",
+      "✅ Palette defined in visual program. Score +10",
+      "✅ 4 continuity entities. Score +10",
+      "✅ 15 operators. Rich visual grammar. Score +10",
+      "✅ 11 chapters. Clear narrative structure. Score +10"
+    ]
+  }
+}

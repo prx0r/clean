@@ -1,0 +1,173 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tantraloka.local/schemas/essay-visual-program-v2.schema.json",
+  "title": "Deterministic Essay Visual Program v2",
+  "type": "object",
+  "required": [
+    "version", "id", "title", "sourceEssay", "visualThesis", "timing", "render",
+    "continuitySystems", "captionPolicy", "shots"
+  ],
+  "properties": {
+    "version": { "const": "2.0" },
+    "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]{2,63}$" },
+    "title": { "type": "string", "minLength": 3, "maxLength": 120 },
+    "sourceEssay": { "type": "string", "minLength": 3, "maxLength": 300 },
+    "visualThesis": { "type": "string", "minLength": 20, "maxLength": 1000 },
+    "theme": { "type": "string" },
+    "seed": { "type": "integer" },
+    "timing": {
+      "type": "object",
+      "required": ["wordsPerMinute", "tailPadding"],
+      "properties": {
+        "wordsPerMinute": { "type": "number", "minimum": 80, "maximum": 220 },
+        "tailPadding": { "type": "number", "minimum": 0, "maximum": 4 }
+      }
+    },
+    "render": {
+      "type": "object",
+      "required": ["width", "height", "fps"],
+      "properties": {
+        "width": { "type": "integer", "minimum": 640, "maximum": 7680 },
+        "height": { "type": "integer", "minimum": 360, "maximum": 4320 },
+        "fps": { "type": "integer", "minimum": 1, "maximum": 60 },
+        "crf": { "type": "number", "minimum": 0, "maximum": 51 },
+        "preset": { "type": "string" },
+        "transitionDuration": { "type": "number", "minimum": 0, "maximum": 4 }
+      }
+    },
+    "continuitySystems": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 9,
+      "items": {
+        "type": "object",
+        "required": ["id", "meaning", "treatment"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]{2,63}$" },
+          "meaning": { "type": "string", "minLength": 12, "maxLength": 300 },
+          "treatment": { "type": "string", "minLength": 12, "maxLength": 400 }
+        }
+      }
+    },
+    "captionPolicy": { "type": "string", "minLength": 20, "maxLength": 1000 },
+    "shots": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 100,
+      "items": { "$ref": "#/$defs/shot" }
+    }
+  },
+  "$defs": {
+    "semanticRole": {
+      "enum": [
+        "hook", "question", "thesis", "definition", "mechanism", "analogy", "example",
+        "consequence", "objection", "reversal", "comparison", "practice", "recognition",
+        "synthesis", "open-question", "coda"
+      ]
+    },
+    "relationType": {
+      "enum": [
+        "identity-across-change", "dependency", "interface", "emergence", "containment",
+        "selection", "sequence", "feedback", "translation", "comparison", "recursion",
+        "propagation", "transformation", "cessation", "inquiry", "divergence",
+        "convergence", "self-modification", "coordination", "differentiation"
+      ]
+    },
+    "visualOperator": {
+      "enum": [
+        "reveal", "contract", "frame", "filter", "sequence", "select", "reach", "enclose",
+        "construct", "unfold", "invert", "differentiate", "recontextualize", "open",
+        "coordinate", "propagate", "translate", "loop", "compare", "recurse", "cool",
+        "tune", "emerge", "transform"
+      ]
+    },
+    "encoding": {
+      "type": "object",
+      "required": ["concept", "mark", "channel"],
+      "properties": {
+        "concept": { "type": "string", "minLength": 2, "maxLength": 100 },
+        "mark": { "type": "string", "minLength": 2, "maxLength": 140 },
+        "channel": {
+          "enum": [
+            "position", "containment", "connection", "direction", "sequence", "repetition",
+            "shape", "scale", "color", "opacity", "rhythm", "motion", "text"
+          ]
+        }
+      }
+    },
+    "alternative": {
+      "type": "object",
+      "required": ["visual", "score", "rejectedBecause"],
+      "properties": {
+        "visual": { "type": "string" },
+        "score": { "type": "number", "minimum": 0, "maximum": 100 },
+        "rejectedBecause": { "type": "string", "minLength": 12, "maxLength": 300 }
+      }
+    },
+    "shot": {
+      "type": "object",
+      "required": [
+        "id", "paragraphs", "chapter", "title", "subtitle", "term", "devanagari",
+        "semanticRole", "claim", "relationType", "sourceState", "targetState", "preserves",
+        "visualOperator", "continuityObject", "continuityAction", "visualEncoding",
+        "motionProof", "misreadRisk", "antiLiteral", "visualRationale", "visual",
+        "candidateAudit"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]{2,31}$" },
+        "paragraphs": {
+          "type": "array",
+          "prefixItems": [
+            { "type": "integer", "minimum": 1 },
+            { "type": "integer", "minimum": 1 }
+          ],
+          "items": false
+        },
+        "chapter": { "type": "string", "minLength": 2, "maxLength": 100 },
+        "title": { "type": "string", "minLength": 2, "maxLength": 80 },
+        "subtitle": { "type": "string", "minLength": 2, "maxLength": 140 },
+        "term": { "type": "string", "minLength": 1, "maxLength": 50 },
+        "devanagari": { "type": "string", "pattern": "[ऀ-ॿ]" },
+        "semanticRole": { "$ref": "#/$defs/semanticRole" },
+        "claim": { "type": "string", "minLength": 12, "maxLength": 360 },
+        "relationType": { "$ref": "#/$defs/relationType" },
+        "sourceState": { "type": "string", "minLength": 3, "maxLength": 240 },
+        "targetState": { "type": "string", "minLength": 3, "maxLength": 240 },
+        "preserves": { "type": "string", "minLength": 3, "maxLength": 240 },
+        "visualOperator": { "$ref": "#/$defs/visualOperator" },
+        "continuityObject": { "type": "string", "pattern": "^[a-z][a-z0-9-]{2,63}$" },
+        "continuityAction": {
+          "enum": ["introduce", "develop", "contrast", "invert", "return", "resolve"]
+        },
+        "visualEncoding": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 8,
+          "items": { "$ref": "#/$defs/encoding" }
+        },
+        "motionProof": { "type": "string", "minLength": 20, "maxLength": 600 },
+        "misreadRisk": { "type": "string", "minLength": 12, "maxLength": 400 },
+        "antiLiteral": { "type": "string", "minLength": 12, "maxLength": 400 },
+        "visualRationale": { "type": "string", "minLength": 12, "maxLength": 500 },
+        "visual": { "type": "string" },
+        "params": { "type": "object" },
+        "candidateAudit": {
+          "type": "object",
+          "required": ["selectedScore", "selectedReason", "alternatives"],
+          "properties": {
+            "selectedScore": { "type": "number", "minimum": 0, "maximum": 100 },
+            "selectedReason": { "type": "string", "minLength": 20, "maxLength": 500 },
+            "alternatives": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 4,
+              "items": { "$ref": "#/$defs/alternative" }
+            }
+          }
+        },
+        "transition": { "type": "string" },
+        "duration": { "type": "number", "minimum": 1, "maximum": 30 }
+      }
+    }
+  }
+}

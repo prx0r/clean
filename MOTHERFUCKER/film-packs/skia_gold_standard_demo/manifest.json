@@ -1,0 +1,46 @@
+{
+  "pack_id": "amrtasiddhi_skia_gold_demo",
+  "renderer": "skia-canvas",
+  "resolution": [
+    1280,
+    720
+  ],
+  "fps": 12,
+  "palette": {
+    "paper": "#F8F6F0",
+    "ink": "#171719",
+    "muted": "#AAA69E",
+    "gold": "#C99B3F",
+    "goldSoft": "rgba(201,155,63,0.22)",
+    "crimson": "#8D2C39",
+    "crimsonSoft": "rgba(141,44,57,0.14)",
+    "blue": "#4F6682",
+    "white": "#FFFFFF"
+  },
+  "scenes": [
+    {
+      "shot_id": "skia_01",
+      "title": "The expenditure of the drop",
+      "duration_seconds": 6,
+      "renderer": "skia-custom-v1"
+    },
+    {
+      "shot_id": "skia_02",
+      "title": "Seal and reversal",
+      "duration_seconds": 6,
+      "renderer": "skia-custom-v1"
+    },
+    {
+      "shot_id": "skia_03",
+      "title": "Two currents become a central route",
+      "duration_seconds": 6,
+      "renderer": "skia-custom-v1"
+    },
+    {
+      "shot_id": "skia_04",
+      "title": "The vessel becomes a circuit",
+      "duration_seconds": 6,
+      "renderer": "skia-custom-v1"
+    }
+  ]
+}

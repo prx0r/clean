@@ -1,0 +1,19 @@
+{
+  "name": "@tantraloka/skia-framework",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Deterministic Skia motion-graphics framework for Tantraloka visual packs.",
+  "scripts": {
+    "render": "node src/cli.mjs render",
+    "poster": "node src/cli.mjs poster",
+    "validate": "node src/cli.mjs validate",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "1.0.2"
+  }
+}

@@ -1,0 +1,1850 @@
+{
+  "schema_version": "2.0-experimental",
+  "film_id": "expansion-essay46",
+  "title": "The Stones Are Watching You",
+  "visual_thesis": "Matter is rendered as patient formative intelligence: stone, seed, lattice, celestial signature, field observation, vessel, and unfinished human form continuously transform into one another.",
+  "style": {
+    "field": "ivory mineral parchment",
+    "materials": [
+      "earth",
+      "water",
+      "stone",
+      "silver",
+      "tarnished gold",
+      "lapis",
+      "crimson fire"
+    ],
+    "continuity_rules": [
+      "Stones repeatedly reveal interior lattices rather than acting as inert props.",
+      "Gold lines represent formative or celestial causality.",
+      "Earth and water begin as elemental fields and return in salts and vessels.",
+      "The stone-eye becomes the observing bishop's eye and finally the human unfinished form.",
+      "Alchemy is shown as preparation of conditions, not forceful command."
+    ],
+    "caption_policy": "Narration carries prose. Visuals carry formation, relation, correspondence, and transformation."
+  },
+  "chapters": {
+    "I. The Patient Life of Stone": [
+      1,
+      5,
+      7
+    ],
+    "IX. The Intermediate Substance": [
+      2,
+      3,
+      4,
+      6,
+      9,
+      10,
+      11,
+      13,
+      14,
+      15,
+      17,
+      18,
+      19,
+      20,
+      23,
+      25,
+      26,
+      28,
+      31,
+      33,
+      36,
+      39,
+      40,
+      46,
+      51,
+      55,
+      58,
+      60,
+      65,
+      66,
+      67,
+      79,
+      80,
+      82,
+      84,
+      86,
+      90,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      103,
+      104,
+      105,
+      106
+    ],
+    "II. Mineralizing Intelligence": [
+      8,
+      12,
+      16,
+      21
+    ],
+    "III. Form Is Power": [
+      22,
+      24,
+      27,
+      29,
+      30,
+      54,
+      83
+    ],
+    "IV. The Marriage of Metals": [
+      32,
+      34,
+      35,
+      37,
+      38,
+      41,
+      42,
+      43,
+      44,
+      102
+    ],
+    "V. The Living Lapidary": [
+      45,
+      47,
+      48,
+      49,
+      50,
+      52,
+      53,
+      56,
+      57
+    ],
+    "VI. Stone and Star": [
+      59,
+      61,
+      62,
+      63,
+      64,
+      68,
+      69,
+      70,
+      71,
+      72
+    ],
+    "VII. The Bishop in the Mines": [
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      81
+    ],
+    "VIII. Art Imitates Nature": [
+      85,
+      87,
+      88,
+      89,
+      91,
+      92,
+      100
+    ]
+  },
+  "shots": [
+    {
+      "id": "stone-film-001",
+      "start": 0.0,
+      "end": 5.15,
+      "spoken_passage": "A 13th-century bishop wrote a book about stones.",
+      "semantic_relation": "bishop_codex",
+      "visual_operator": "form",
+      "continuity_object": "illuminated folio",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-002",
+      "start": 5.15,
+      "end": 11.15,
+      "spoken_passage": "He classified them by their powers, their origins, their correspondences to the stars.",
+      "semantic_relation": "inner_lattice",
+      "visual_operator": "correspond",
+      "continuity_object": "substantial lattice",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-003",
+      "start": 11.15,
+      "end": 17.9,
+      "spoken_passage": "He believed stones have life — not the life of plants or animals, but a life proper to stone,",
+      "semantic_relation": "watching_stones",
+      "visual_operator": "condense",
+      "continuity_object": "stone-eye",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-004",
+      "start": 17.9,
+      "end": 23.05,
+      "spoken_passage": "slow and patient and aware in a way we have forgotten.",
+      "semantic_relation": "watching_stones",
+      "visual_operator": "transform",
+      "continuity_object": "stone-eye",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-005",
+      "start": 23.05,
+      "end": 30.05,
+      "spoken_passage": "Albertus Magnus was the most learned man of his age — teacher of Thomas Aquinas, bishop of Regensburg,",
+      "semantic_relation": "bishop_codex",
+      "visual_operator": "reveal",
+      "continuity_object": "illuminated folio",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-006",
+      "start": 30.05,
+      "end": 35.2,
+      "spoken_passage": "master of everything that could be known in the 13th century.",
+      "semantic_relation": "bishop_codex",
+      "visual_operator": "form",
+      "continuity_object": "illuminated folio",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-007",
+      "start": 35.2,
+      "end": 44.7,
+      "spoken_passage": "His Book of Minerals, the first systematic Christian treatise on mineralogy, organized the entire mineral kingdom through Aristotle's four causes:",
+      "semantic_relation": "bishop_codex",
+      "visual_operator": "correspond",
+      "continuity_object": "illuminated folio",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-008",
+      "start": 44.7,
+      "end": 49.95,
+      "spoken_passage": "\"The material of all stone is either some form of Earth or some form of Water.",
+      "semantic_relation": "earth_water",
+      "visual_operator": "condense",
+      "continuity_object": "mineral seed",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-009",
+      "start": 49.95,
+      "end": 55.1,
+      "spoken_passage": "For one or the other of these elements predominates in stones.",
+      "semantic_relation": "stone_star",
+      "visual_operator": "transform",
+      "continuity_object": "frequency thread",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-010",
+      "start": 55.1,
+      "end": 61.475,
+      "spoken_passage": "Evidence of this is that nearly all kinds of stones sink in water — they must be rich in Earth.",
+      "semantic_relation": "earth_water",
+      "visual_operator": "reveal",
+      "continuity_object": "mineral seed",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-011",
+      "start": 61.475,
+      "end": 67.1,
+      "spoken_passage": "No kind of stone floats, unless it is spongy or burnt, like pumice.",
+      "semantic_relation": "earth_water",
+      "visual_operator": "form",
+      "continuity_object": "mineral seed",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-012",
+      "start": 67.1,
+      "end": 74.35,
+      "spoken_passage": "The efficient cause of stones is a mineralizing power, common to the production of both stones and metals.",
+      "semantic_relation": "crystal_growth",
+      "visual_operator": "correspond",
+      "continuity_object": "forming crystal",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-013",
+      "start": 74.35,
+      "end": 80.6,
+      "spoken_passage": "Just as in an animal's seed, there comes from the seminal vessels a force capable of forming an animal,",
+      "semantic_relation": "seed_form",
+      "visual_operator": "condense",
+      "continuity_object": "mineral seed",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-014",
+      "start": 80.6,
+      "end": 86.35,
+      "spoken_passage": "so in material suitable for stones there is a power that forms and produces stones,",
+      "semantic_relation": "stone_star",
+      "visual_operator": "transform",
+      "continuity_object": "frequency thread",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-015",
+      "start": 86.35,
+      "end": 91.5,
+      "spoken_passage": "and develops the form of this stone or that.\"",
+      "semantic_relation": "watching_stones",
+      "visual_operator": "reveal",
+      "continuity_object": "stone-eye",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-016",
+      "start": 91.5,
+      "end": 97.875,
+      "spoken_passage": "Matter is alive: the mineralizing power is the same kind of force that shapes a living body —",
+      "semantic_relation": "crystal_growth",
+      "visual_operator": "form",
+      "continuity_object": "forming crystal",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-017",
+      "start": 97.875,
+      "end": 104.0,
+      "spoken_passage": "a formative intelligence working through the elements to produce structure, color, and power.",
+      "semantic_relation": "crystal_growth",
+      "visual_operator": "correspond",
+      "continuity_object": "forming crystal",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-018",
+      "start": 104.0,
+      "end": 109.25,
+      "spoken_passage": "Albert compares this power to the force in an animal's seed that forms its body.",
+      "semantic_relation": "seed_form",
+      "visual_operator": "condense",
+      "continuity_object": "mineral seed",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-019",
+      "start": 109.25,
+      "end": 115.5,
+      "spoken_passage": "The stone is the outcome of a specific intention carried through the elements by a power that knows what it",
+      "semantic_relation": "stone_star",
+      "visual_operator": "transform",
+      "continuity_object": "frequency thread",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-020",
+      "start": 115.5,
+      "end": 120.65,
+      "spoken_passage": "is doing — not a product of random chance.",
+      "semantic_relation": "watching_stones",
+      "visual_operator": "reveal",
+      "continuity_object": "stone-eye",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-021",
+      "start": 120.65,
+      "end": 128.275,
+      "spoken_passage": "The mineralizing power is the world-soul at work in the mineral kingdom, shaping Earth and Water into the forms that",
+      "semantic_relation": "crystal_growth",
+      "visual_operator": "form",
+      "continuity_object": "forming crystal",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-022",
+      "start": 128.275,
+      "end": 137.15,
+      "spoken_passage": "express its inner structure. Albert affirmed the powers of stones — their ability to heal, protect, attract, repel —",
+      "semantic_relation": "inner_lattice",
+      "visual_operator": "correspond",
+      "continuity_object": "substantial lattice",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-023",
+      "start": 137.15,
+      "end": 143.275,
+      "spoken_passage": "against skeptics who denied they could do anything at all. His argument was subtle:",
+      "semantic_relation": "crystal_growth",
+      "visual_operator": "condense",
+      "continuity_object": "forming crystal",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-024",
+      "start": 143.275,
+      "end": 148.65,
+      "spoken_passage": "\"The power of stones is caused by the specific substantial form of the stone.",
+      "semantic_relation": "inner_lattice",
+      "visual_operator": "transform",
+      "continuity_object": "substantial lattice",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-025",
+      "start": 148.65,
+      "end": 153.9,
+      "spoken_passage": "There are some powers of mixed bodies that are caused by the constituents in the mixture,",
+      "semantic_relation": "watching_stones",
+      "visual_operator": "reveal",
+      "continuity_object": "stone-eye",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-026",
+      "start": 153.9,
+      "end": 159.05,
+      "spoken_passage": "and some caused by the specific form itself.",
+      "semantic_relation": "inner_lattice",
+      "visual_operator": "form",
+      "continuity_object": "substantial lattice",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-027",
+      "start": 159.05,
+      "end": 166.675,
+      "spoken_passage": "Stones have no souls — but they do have substantial forms, imparted by the powers of heaven and by the",
+      "semantic_relation": "inner_lattice",
+      "visual_operator": "correspond",
+      "continuity_object": "substantial lattice",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-028",
+      "start": 166.675,
+      "end": 175.925,
+      "spoken_passage": "particular mixture of their elements. The powers are not magical in the sense of being supernatural. They are the natural actions of the form.",
+      "semantic_relation": "crystal_growth",
+      "visual_operator": "condense",
+      "continuity_object": "forming crystal",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-029",
+      "start": 175.925,
+      "end": 185.05,
+      "spoken_passage": "The magnet attracts iron because its form IS that relation. The sapphire cools inflammation because its form IS that cooling.\"",
+      "semantic_relation": "magnet_relation",
+      "visual_operator": "transform",
+      "continuity_object": "relational line",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-030",
+      "start": 185.05,
+      "end": 191.425,
+      "spoken_passage": "Every power a stone possesses is a direct expression of what it IS at the level of its essential form.",
+      "semantic_relation": "inner_lattice",
+      "visual_operator": "reveal",
+      "continuity_object": "substantial lattice",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-031",
+      "start": 191.425,
+      "end": 198.8,
+      "spoken_passage": "The magnet magnetizes because magnetism is what the form of magnetite IS — no mysterious force emitted.",
+      "semantic_relation": "magnet_relation",
+      "visual_operator": "form",
+      "continuity_object": "relational line",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-032",
+      "start": 198.8,
+      "end": 204.8,
+      "spoken_passage": "The heart of Albert's theory was the Sulphur-Quicksilver model he inherited from Arabic alchemy —",
+      "semantic_relation": "sulphur_fire",
+      "visual_operator": "correspond",
+      "continuity_object": "solar current",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-033",
+      "start": 204.8,
+      "end": 209.95,
+      "spoken_passage": "the idea that all metals are composed of two principles:",
+      "semantic_relation": "crystal_growth",
+      "visual_operator": "condense",
+      "continuity_object": "forming crystal",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-034",
+      "start": 209.95,
+      "end": 218.2,
+      "spoken_passage": "\"Sulphur is the Father and Quicksilver the Mother of metals. Sulphur liquefies by dry heat and congeals by cold.",
+      "semantic_relation": "sulphur_fire",
+      "visual_operator": "transform",
+      "continuity_object": "solar current",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-035",
+      "start": 218.2,
+      "end": 227.7,
+      "spoken_passage": "It is divided into 'live' sulphur and 'fused' sulphur. Quicksilver contains two principal substances: Water and Earth.",
+      "semantic_relation": "sulphur_fire",
+      "visual_operator": "reveal",
+      "continuity_object": "solar current",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-036",
+      "start": 227.7,
+      "end": 233.075,
+      "spoken_passage": "It is to the material substance of metals as the menstrual fluid is to the embryo.",
+      "semantic_relation": "bishop_codex",
+      "visual_operator": "form",
+      "continuity_object": "illuminated folio",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-037",
+      "start": 233.075,
+      "end": 240.45,
+      "spoken_passage": "The planets determine the specific form of each metal — gold is the Sun, silver the Moon, iron Mars,",
+      "semantic_relation": "planetary_metals",
+      "visual_operator": "correspond",
+      "continuity_object": "sevenfold orbit",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-038",
+      "start": 240.45,
+      "end": 245.7,
+      "spoken_passage": "copper Venus, tin Jupiter, lead Saturn, quicksilver Mercury.",
+      "semantic_relation": "mercury_flow",
+      "visual_operator": "condense",
+      "continuity_object": "lunar current",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-039",
+      "start": 245.7,
+      "end": 252.45,
+      "spoken_passage": "Every metal is a marriage of the active and passive principles under a particular celestial signature.\"",
+      "semantic_relation": "stone_star",
+      "visual_operator": "transform",
+      "continuity_object": "frequency thread",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-040",
+      "start": 252.45,
+      "end": 257.6,
+      "spoken_passage": "The same pattern appears in the subtle body:",
+      "semantic_relation": "watching_stones",
+      "visual_operator": "reveal",
+      "continuity_object": "stone-eye",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-041",
+      "start": 257.6,
+      "end": 263.6,
+      "spoken_passage": "piṅgalā (solar, active) = Sulphur;",
+      "semantic_relation": "sulphur_fire",
+      "visual_operator": "form",
+      "continuity_object": "solar current",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-042",
+      "start": 263.6,
+      "end": 269.475,
+      "spoken_passage": "iḍā (lunar, receptive) = Quicksilver.",
+      "semantic_relation": "mercury_flow",
+      "visual_operator": "correspond",
+      "continuity_object": "lunar current",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-043",
+      "start": 269.475,
+      "end": 276.1,
+      "spoken_passage": "Their union in suṣumṇā is the birth of the",
+      "semantic_relation": "subtle_body",
+      "visual_operator": "condense",
+      "continuity_object": "central axis",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-044",
+      "start": 276.1,
+      "end": 283.1,
+      "spoken_passage": "completed metal — the lapis, the body of light. The alchemical marriage is happening in your spine.",
+      "semantic_relation": "subtle_body",
+      "visual_operator": "transform",
+      "continuity_object": "central axis",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-045",
+      "start": 283.1,
+      "end": 290.1,
+      "spoken_passage": "Albert's alphabetical lapidary — twenty chapters describing individual stones and their powers —",
+      "semantic_relation": "lapidary_pages",
+      "visual_operator": "reveal",
+      "continuity_object": "catalog stone",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-046",
+      "start": 290.1,
+      "end": 295.25,
+      "spoken_passage": "reads like a catalog of a world where matter is saturated with meaning:",
+      "semantic_relation": "lapidary_pages",
+      "visual_operator": "form",
+      "continuity_object": "catalog stone",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-047",
+      "start": 295.25,
+      "end": 300.75,
+      "spoken_passage": "\"ABESTON — Asbestos. Once kindled it can hardly ever be quenched.",
+      "semantic_relation": "eternal_fibre",
+      "visual_operator": "correspond",
+      "continuity_object": "kindled thread",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-048",
+      "start": 300.75,
+      "end": 307.125,
+      "spoken_passage": "Has the nature of a wool called 'salamander's down.' ADAMAS — An extremely hard stone,",
+      "semantic_relation": "adamant",
+      "visual_operator": "condense",
+      "continuity_object": "diamond edge",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-049",
+      "start": 307.125,
+      "end": 316.375,
+      "spoken_passage": "so solid that neither fire nor iron can soften it. Pierces iron and all other gems but not steel. AGATHES — Agate.",
+      "semantic_relation": "adamant",
+      "visual_operator": "transform",
+      "continuity_object": "diamond edge",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-050",
+      "start": 316.375,
+      "end": 323.125,
+      "spoken_passage": "When placed under the head of a sleeper it is said to show him many dreams. AMETHYSTUS — Amethyst.",
+      "semantic_relation": "dream_stone",
+      "visual_operator": "reveal",
+      "continuity_object": "dream aperture",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-051",
+      "start": 323.125,
+      "end": 328.875,
+      "spoken_passage": "Counteracts drunkenness, keeps one awake at night, represses evil thoughts.",
+      "semantic_relation": "bishop_codex",
+      "visual_operator": "form",
+      "continuity_object": "illuminated folio",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-052",
+      "start": 328.875,
+      "end": 334.125,
+      "spoken_passage": "BERYLLUS — Beryl. Effective against peril from enemies and disputes.",
+      "semantic_relation": "inner_lattice",
+      "visual_operator": "correspond",
+      "continuity_object": "substantial lattice",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-053",
+      "start": 334.125,
+      "end": 342.375,
+      "spoken_passage": "CARBUNCULUS — Carbuncle. When really good it shines in the dark like a live coal. SMARAGDUS — Emerald.",
+      "semantic_relation": "carbuncle_coal",
+      "visual_operator": "condense",
+      "continuity_object": "living coal",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-054",
+      "start": 342.375,
+      "end": 349.25,
+      "spoken_passage": "Strengthens weak sight, improves memory, averts tempests. SAPHIRUS — Sapphire.",
+      "semantic_relation": "cooling_stone",
+      "visual_operator": "transform",
+      "continuity_object": "blue current",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-055",
+      "start": 349.25,
+      "end": 354.4,
+      "spoken_passage": "Makes a man chaste and cools internal heat. Cures headache.",
+      "semantic_relation": "watching_stones",
+      "visual_operator": "reveal",
+      "continuity_object": "stone-eye",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-056",
+      "start": 354.4,
+      "end": 362.4,
+      "spoken_passage": "MAGNES — Magnet. Has a wonderful power of attracting iron. If rubbed with garlic it does not attract.\"",
+      "semantic_relation": "magnet_relation",
+      "visual_operator": "form",
+      "continuity_object": "relational line",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-057",
+      "start": 362.4,
+      "end": 370.65,
+      "spoken_passage": "Each stone is a specific contraction of consciousness into matter — a tattva, a particular divine name made visible.",
+      "semantic_relation": "consciousness_condenses",
+      "visual_operator": "correspond",
+      "continuity_object": "descending name",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-058",
+      "start": 370.65,
+      "end": 377.025,
+      "spoken_passage": "The stone IS the power condensed into a form that can be held in the hand, not merely a symbol of it.",
+      "semantic_relation": "crystal_growth",
+      "visual_operator": "condense",
+      "continuity_object": "forming crystal",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-059",
+      "start": 377.025,
+      "end": 382.175,
+      "spoken_passage": "Albert included a complete astrological lapidary —",
+      "semantic_relation": "stone_star",
+      "visual_operator": "transform",
+      "continuity_object": "frequency thread",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-060",
+      "start": 382.175,
+      "end": 388.8,
+      "spoken_passage": "instructions for engraving specific images on specific stones under specific planetary hours:",
+      "semantic_relation": "engraving",
+      "visual_operator": "reveal",
+      "continuity_object": "incised line",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-061",
+      "start": 388.8,
+      "end": 396.8,
+      "spoken_passage": "\"The 12 Signs of the Zodiac by triplicity, the Northern and Southern constellations, and the seven planets —",
+      "semantic_relation": "twelvefold",
+      "visual_operator": "form",
+      "continuity_object": "twelvefold wheel",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-062",
+      "start": 396.8,
+      "end": 402.675,
+      "spoken_passage": "each with specific images to be engraved on specific stones for specific effects.",
+      "semantic_relation": "engraving",
+      "visual_operator": "correspond",
+      "continuity_object": "incised line",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-063",
+      "start": 402.675,
+      "end": 411.3,
+      "spoken_passage": "The image of a lion on a carbuncle makes the wearer victorious in battle. The image of a serpent on an agate protects against poison.",
+      "semantic_relation": "dream_stone",
+      "visual_operator": "condense",
+      "continuity_object": "dream aperture",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-064",
+      "start": 411.3,
+      "end": 417.675,
+      "spoken_passage": "The image of a woman with a mirror on a beryl reveals hidden things. The images are not decorations.",
+      "semantic_relation": "mirror_seal",
+      "visual_operator": "transform",
+      "continuity_object": "reflective seal",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-065",
+      "start": 417.675,
+      "end": 423.05,
+      "spoken_passage": "They are the signature of the celestial power that activated the stone at its formation,",
+      "semantic_relation": "watching_stones",
+      "visual_operator": "reveal",
+      "continuity_object": "stone-eye",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-066",
+      "start": 423.05,
+      "end": 428.2,
+      "spoken_passage": "re-inscribed by the artisan to call that power forth again.\"",
+      "semantic_relation": "bishop_codex",
+      "visual_operator": "form",
+      "continuity_object": "illuminated folio",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-067",
+      "start": 428.2,
+      "end": 436.575,
+      "spoken_passage": "The image on the stone is a key — not a symbol — reconnecting the stone to the celestial configuration that gave it its power.",
+      "semantic_relation": "inner_lattice",
+      "visual_operator": "correspond",
+      "continuity_object": "substantial lattice",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-068",
+      "start": 436.575,
+      "end": 443.2,
+      "spoken_passage": "You are wearing a fixed point in the heavens, petrified into visibility — not a pretty gem.",
+      "semantic_relation": "crystal_growth",
+      "visual_operator": "condense",
+      "continuity_object": "forming crystal",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-069",
+      "start": 443.2,
+      "end": 450.325,
+      "spoken_passage": "The 12 signs of the zodiac mapped to the 12 tribes of Israel, the 12 gates of the New Jerusalem,",
+      "semantic_relation": "twelvefold",
+      "visual_operator": "transform",
+      "continuity_object": "twelvefold wheel",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-070",
+      "start": 450.325,
+      "end": 458.45,
+      "spoken_passage": "the 12 edges of the star tetrahedron — the same structure appears at every level because the same pattern organizes",
+      "semantic_relation": "twelvefold",
+      "visual_operator": "reveal",
+      "continuity_object": "twelvefold wheel",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-071",
+      "start": 458.45,
+      "end": 467.575,
+      "spoken_passage": "matter at every density. The astrological lapidary is a map of correspondences that extends from the center of the earth to the highest heaven.",
+      "semantic_relation": "bishop_codex",
+      "visual_operator": "form",
+      "continuity_object": "illuminated folio",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-072",
+      "start": 467.575,
+      "end": 473.2,
+      "spoken_passage": "The stone in your hand and the star in the sky are the same thing at different frequencies.",
+      "semantic_relation": "stone_star",
+      "visual_operator": "correspond",
+      "continuity_object": "frequency thread",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-073",
+      "start": 473.2,
+      "end": 482.325,
+      "spoken_passage": "One of Albert's most remarkable passages describes his field observations — the bishop was also a field geologist who walked",
+      "semantic_relation": "bishop_codex",
+      "visual_operator": "condense",
+      "continuity_object": "illuminated folio",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-074",
+      "start": 482.325,
+      "end": 491.2,
+      "spoken_passage": "through the mining districts of Germany: \"I have seen pure gold formed in the sands of rivers, and in our own country both in the Rhine",
+      "semantic_relation": "river_gold",
+      "visual_operator": "transform",
+      "continuity_object": "gold grain",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-075",
+      "start": 491.2,
+      "end": 498.575,
+      "spoken_passage": "and the Elbe. I myself have found silver as a sort of vein extending throughout the substance of the stone.",
+      "semantic_relation": "river_gold",
+      "visual_operator": "reveal",
+      "continuity_object": "gold grain",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-076",
+      "start": 498.575,
+      "end": 504.95,
+      "spoken_passage": "At Freiberg it is sometimes found as soft as a firm mush — the purest and best kind.",
+      "semantic_relation": "silver_vein",
+      "visual_operator": "form",
+      "continuity_object": "metallic vein",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-077",
+      "start": 504.95,
+      "end": 510.575,
+      "spoken_passage": "I have seen in Swabia a stone upon which more than fifty serpents had collected.",
+      "semantic_relation": "serpent_stone",
+      "visual_operator": "correspond",
+      "continuity_object": "living geology",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-078",
+      "start": 510.575,
+      "end": 515.725,
+      "spoken_passage": "There is at Cologne, in the shrine of the Three Kings, an onyx of large size,",
+      "semantic_relation": "onyx_faces",
+      "visual_operator": "condense",
+      "continuity_object": "natural image",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-079",
+      "start": 515.725,
+      "end": 522.1,
+      "spoken_passage": "having the breadth of a man's hand or more; and on it, upon the material of the onyx stone,",
+      "semantic_relation": "onyx_faces",
+      "visual_operator": "transform",
+      "continuity_object": "natural image",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-080",
+      "start": 522.1,
+      "end": 527.25,
+      "spoken_passage": "are pictured in pure white the heads of two young men.\"",
+      "semantic_relation": "onyx_faces",
+      "visual_operator": "reveal",
+      "continuity_object": "natural image",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-081",
+      "start": 527.25,
+      "end": 532.5,
+      "spoken_passage": "Pictures on stones. Silver soft as mush. Gold in river sand.",
+      "semantic_relation": "onyx_faces",
+      "visual_operator": "form",
+      "continuity_object": "natural image",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-082",
+      "start": 532.5,
+      "end": 538.875,
+      "spoken_passage": "The bishop saw these things with his own eyes and recorded them with the same care he gave to the",
+      "semantic_relation": "bishop_codex",
+      "visual_operator": "correspond",
+      "continuity_object": "illuminated folio",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-083",
+      "start": 538.875,
+      "end": 545.875,
+      "spoken_passage": "theory of substantial forms. The Book of Minerals is both a work of philosophy and a field journal.",
+      "semantic_relation": "bishop_codex",
+      "visual_operator": "condense",
+      "continuity_object": "illuminated folio",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-084",
+      "start": 545.875,
+      "end": 551.025,
+      "spoken_passage": "On transmutation, Albert was cautious but open:",
+      "semantic_relation": "stone_star",
+      "visual_operator": "transform",
+      "continuity_object": "frequency thread",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-085",
+      "start": 551.025,
+      "end": 559.275,
+      "spoken_passage": "\"Let practitioners of alchemy know that they cannot transmute one form of metal into another, but only make something similar —",
+      "semantic_relation": "watching_stones",
+      "visual_operator": "reveal",
+      "continuity_object": "stone-eye",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-086",
+      "start": 559.275,
+      "end": 564.425,
+      "spoken_passage": "as when they colour a red metal with yellow so that it may appear to be gold.",
+      "semantic_relation": "false_gold",
+      "visual_operator": "form",
+      "continuity_object": "surface colour",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-087",
+      "start": 564.425,
+      "end": 572.925,
+      "spoken_passage": "Specific forms are not transmuted unless perhaps they are first reduced to prime matter and then developed into the specific",
+      "semantic_relation": "prime_matter",
+      "visual_operator": "correspond",
+      "continuity_object": "dark substrate",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-088",
+      "start": 572.925,
+      "end": 582.175,
+      "spoken_passage": "form of the metal they want. For whatever the elemental and celestial powers produce in natural vessels they also produce in artificial vessels,",
+      "semantic_relation": "twin_vessels",
+      "visual_operator": "condense",
+      "continuity_object": "paired vessel",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-089",
+      "start": 582.175,
+      "end": 587.325,
+      "spoken_passage": "provided the artificial vessels are formed just like the natural ones.",
+      "semantic_relation": "twin_vessels",
+      "visual_operator": "transform",
+      "continuity_object": "paired vessel",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-090",
+      "start": 587.325,
+      "end": 592.95,
+      "spoken_passage": "Art can imitate nature, but it cannot reach the full perfection of nature.\"",
+      "semantic_relation": "watching_stones",
+      "visual_operator": "reveal",
+      "continuity_object": "stone-eye",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-091",
+      "start": 592.95,
+      "end": 600.95,
+      "spoken_passage": "The alchemist creates the conditions under which nature transforms itself — rather than forcing a transformation.",
+      "semantic_relation": "bishop_codex",
+      "visual_operator": "form",
+      "continuity_object": "illuminated folio",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-092",
+      "start": 600.95,
+      "end": 607.575,
+      "spoken_passage": "The vessel must be exactly right; the heat must match the sun. Then nature does the work.",
+      "semantic_relation": "solar_furnace",
+      "visual_operator": "correspond",
+      "continuity_object": "measured heat",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-093",
+      "start": 607.575,
+      "end": 612.725,
+      "spoken_passage": "Albert's book ends with the \"intermediates\" —",
+      "semantic_relation": "crystal_growth",
+      "visual_operator": "condense",
+      "continuity_object": "forming crystal",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-094",
+      "start": 612.725,
+      "end": 620.6,
+      "spoken_passage": "substances between stones and metals — salts, vitriols, alums, marchasitas, electrum.",
+      "semantic_relation": "electrum",
+      "visual_operator": "transform",
+      "continuity_object": "double metal",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-095",
+      "start": 620.6,
+      "end": 625.75,
+      "spoken_passage": "These are incomplete substances whose forms remain unfixed:",
+      "semantic_relation": "unfixed_forms",
+      "visual_operator": "reveal",
+      "continuity_object": "mutable lattice",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-096",
+      "start": 625.75,
+      "end": 630.9,
+      "spoken_passage": "\"Electrum is a mixture of gold and silver.",
+      "semantic_relation": "electrum",
+      "visual_operator": "form",
+      "continuity_object": "double metal",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-097",
+      "start": 630.9,
+      "end": 638.025,
+      "spoken_passage": "There are two kinds: one artificial, made by mixing silver and gold; the other a natural mineral,",
+      "semantic_relation": "inner_lattice",
+      "visual_operator": "correspond",
+      "continuity_object": "substantial lattice",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-098",
+      "start": 638.025,
+      "end": 643.175,
+      "spoken_passage": "which the ancients declared to be the best of all metals.",
+      "semantic_relation": "crystal_growth",
+      "visual_operator": "condense",
+      "continuity_object": "forming crystal",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-099",
+      "start": 643.175,
+      "end": 652.05,
+      "spoken_passage": "Salt of Ammon, sal naphticum, Indian salt — all are composed of something earthy, moistened and mixed with something burnt.",
+      "semantic_relation": "salt_crucible",
+      "visual_operator": "transform",
+      "continuity_object": "unfixed salts",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-100",
+      "start": 652.05,
+      "end": 658.925,
+      "spoken_passage": "These intermediary substances are capable of being transmuted because their forms are not fully fixed.",
+      "semantic_relation": "watching_stones",
+      "visual_operator": "reveal",
+      "continuity_object": "stone-eye",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-101",
+      "start": 658.925,
+      "end": 665.05,
+      "spoken_passage": "They are still becoming what they will be.\" The intermediates are the matter of the alchemical work.",
+      "semantic_relation": "unfixed_forms",
+      "visual_operator": "form",
+      "continuity_object": "mutable lattice",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-102",
+      "start": 665.05,
+      "end": 670.425,
+      "spoken_passage": "They are what must be dissolved and coagulated to produce the completed lapis.",
+      "semantic_relation": "lapis_birth",
+      "visual_operator": "correspond",
+      "continuity_object": "completed stone",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-103",
+      "start": 670.425,
+      "end": 678.425,
+      "spoken_passage": "They are also what you are — still forming, your specific form still settling, capable of becoming something else.",
+      "semantic_relation": "human_intermediate",
+      "visual_operator": "condense",
+      "continuity_object": "unfinished figure",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-104",
+      "start": 678.425,
+      "end": 683.575,
+      "spoken_passage": "The stones know what they are. Their forms are complete.",
+      "semantic_relation": "stone_star",
+      "visual_operator": "transform",
+      "continuity_object": "frequency thread",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-105",
+      "start": 683.575,
+      "end": 690.575,
+      "spoken_passage": "You are the intermediate substance between what you were and what you will become. The fire is already kindled.",
+      "semantic_relation": "eternal_fibre",
+      "visual_operator": "reveal",
+      "continuity_object": "kindled thread",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    },
+    {
+      "id": "stone-film-106",
+      "start": 690.575,
+      "end": 698.2,
+      "spoken_passage": "The vessel is prepared. Nature is waiting for you to stop resisting and become what you were always meant to be.",
+      "semantic_relation": "final_vessel",
+      "visual_operator": "form",
+      "continuity_object": "prepared vessel",
+      "backend": {
+        "current": "pillow",
+        "future": [
+          "coldtype",
+          "blender"
+        ]
+      }
+    }
+  ]
+}

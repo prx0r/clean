@@ -1,0 +1,921 @@
+{
+  "version": "1.0",
+  "filmId": "infinite-learned",
+  "title": "The Infinite Learned to Say “I Can’t”",
+  "sourceEssay": "../essays/the-infinite-learned-to-say-i-cant.md",
+  "timingMethod": "Draft narration estimate at 155 words per minute plus 0.45s per shot, quantized to 24 fps.",
+  "visualThesis": "One luminous, centerless field repeatedly contracts into the same continuity objects: a point, crimson frame, five lenses, attention beam, temporal thread, reaching arc, and powered enclosure. Recognition does not erase those finite structures; it reveals their substance and reopens their relation to the field.",
+  "continuitySystems": [
+    {
+      "id": "luminous-field",
+      "meaning": "Unlimited consciousness and the unchanged substance of every local experience.",
+      "treatment": "Stable gold-white luminosity; it may contract, move, or become occluded, but it is never replaced."
+    },
+    {
+      "id": "crimson-frame",
+      "meaning": "The active boundary that makes a local point of view possible.",
+      "treatment": "Thin crimson geometry that becomes lens, cage, causal wall, and finally an opening."
+    },
+    {
+      "id": "indigo-locality",
+      "meaning": "The individual perspective and its finite capacities.",
+      "treatment": "Indigo silhouettes, rings, notes, and paths remain distinct even after recognition."
+    },
+    {
+      "id": "gold-current",
+      "meaning": "The continuity between universal power and its local expression.",
+      "treatment": "Gold paths carry motion between field and form; every major reversal reuses this current."
+    },
+    {
+      "id": "opening-gesture",
+      "meaning": "Contraction understood as a reversible gesture rather than a damaged substance.",
+      "treatment": "Enclosing arcs begin fist-like and slowly relax around the same luminous core."
+    }
+  ],
+  "captionPolicy": "Narration carries the essay. The footer may show only the beat title, one concise interpretive line, the technical term, and correct Devanāgarī. Never place full narration paragraphs on screen.",
+  "shotCount": 44,
+  "paragraphCount": 164,
+  "runtimeSeconds": 685.2916666666666,
+  "shots": [
+    {
+      "id": "inf-001",
+      "start": 0,
+      "end": 19.041666666666668,
+      "duration": 19.041666666666668,
+      "frameStart": 0,
+      "frameEnd": 457,
+      "paragraphRange": [
+        1,
+        3
+      ],
+      "spokenPassage": "The strangest sentence consciousness ever speaks is: “I can’t.” I cannot remember. I cannot change. I cannot escape this body, this history, this moment. I can only be here, looking through these eyes, carrying this name, able to do some things and unable to do almost everything else.",
+      "chapter": "I. The Sentence of Limitation",
+      "semanticRole": "hook",
+      "visualOperator": "enclose",
+      "visualMechanism": "smallness-cage",
+      "continuityObject": "indigo figure inside the crimson frame",
+      "visualRationale": "Begin with a visibly finite figure and an active enclosure so “I can’t” appears as a spatial condition before the metaphysical reversal.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-002",
+      "start": 19.041666666666668,
+      "end": 44.666666666666664,
+      "duration": 25.624999999999996,
+      "frameStart": 457,
+      "frameEnd": 1072,
+      "paragraphRange": [
+        4,
+        8
+      ],
+      "spokenPassage": "But Kashmir Śaivism begins with a statement that makes this ordinary helplessness almost impossible to explain: caitanyam ātmā Consciousness is the Self. Not your consciousness. Not consciousness as something produced inside your skull. Consciousness itself — unlimited, self-luminous, free — is what you are. Then why do you feel so small? Why does the infinite wake up every morning worried about money, unable to find its keys?",
+      "chapter": "I. The Sentence of Limitation",
+      "semanticRole": "question",
+      "visualOperator": "reveal",
+      "visualMechanism": "constraint-field",
+      "continuityObject": "luminous field behind the finite figure",
+      "visualRationale": "Reveal that the enclosure exists inside a much larger field; the paradox is simultaneous, not a before-and-after replacement.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-003",
+      "start": 44.666666666666664,
+      "end": 67.95833333333333,
+      "duration": 23.291666666666664,
+      "frameStart": 1072,
+      "frameEnd": 1631,
+      "paragraphRange": [
+        9,
+        12
+      ],
+      "spokenPassage": "The tradition answers with one of its most radical ideas. You were not deprived of infinity. Infinity contracted itself into you. The Sanskrit word is saṃkoca — contraction, compression, the drawing inward of something vast. Consciousness does not fall out of its divine condition and become something else. It folds its powers tightly enough to occupy a point of view.",
+      "chapter": "II. Contraction into Perspective",
+      "semanticRole": "thesis",
+      "visualOperator": "contract",
+      "visualMechanism": "constraint-field",
+      "continuityObject": "luminous field becoming a framed center",
+      "visualRationale": "Concentric structures visibly compress while retaining the same colors and core, showing localization without loss of substance.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-004",
+      "start": 67.95833333333333,
+      "end": 78.125,
+      "duration": 10.166666666666671,
+      "frameStart": 1631,
+      "frameEnd": 1875,
+      "paragraphRange": [
+        13,
+        14
+      ],
+      "spokenPassage": "A hand closing into a fist has not lost its fingers. Their freedom has taken the form of a particular gesture. You are that gesture.",
+      "chapter": "II. Contraction into Perspective",
+      "semanticRole": "analogy",
+      "visualOperator": "contract",
+      "visualMechanism": "opening-fist",
+      "continuityObject": "five enclosing arcs",
+      "visualRationale": "Five arcs close around an unchanged luminous center, directly encoding the hand analogy without drawing a literal anatomical hand.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-005",
+      "start": 78.125,
+      "end": 102.20833333333333,
+      "duration": 24.08333333333333,
+      "frameStart": 1875,
+      "frameEnd": 2453,
+      "paragraphRange": [
+        15,
+        22
+      ],
+      "spokenPassage": "Imagine awareness before it has decided where it is. No center. No boundary. No inside or outside. Nothing located here instead of there. Every possible perspective present without being divided into separate observers. For experience to happen, this openness must acquire an angle. It must say: I am here. That is there. I see this. I do not see everything else.",
+      "chapter": "II. Contraction into Perspective",
+      "semanticRole": "mechanism",
+      "visualOperator": "frame",
+      "visualMechanism": "point-of-view",
+      "continuityObject": "attention line crossing the centerless field",
+      "visualRationale": "A field of equal points is cut by a single viewing cone, making the birth of perspective visible as selection rather than creation.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-006",
+      "start": 102.20833333333333,
+      "end": 112.75,
+      "duration": 10.541666666666671,
+      "frameStart": 2453,
+      "frameEnd": 2706,
+      "paragraphRange": [
+        23,
+        24
+      ],
+      "spokenPassage": "The first person is born through exclusion. To become someone, consciousness must temporarily cease appearing as everyone. Individuality is the infinite placing a frame around itself.",
+      "chapter": "II. Contraction into Perspective",
+      "semanticRole": "consequence",
+      "visualOperator": "frame",
+      "visualMechanism": "point-of-view",
+      "continuityObject": "crimson local horizon",
+      "visualRationale": "Keep the same field and viewing geometry, but strengthen the finite frame to show how selection stabilizes into identity.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-007",
+      "start": 112.75,
+      "end": 130.25,
+      "duration": 17.5,
+      "frameStart": 2706,
+      "frameEnd": 3126,
+      "paragraphRange": [
+        25,
+        28
+      ],
+      "spokenPassage": "The Śaiva philosophers described five mechanisms that accomplish this. They called them the kañcukas — coverings, sheaths, pieces of armor. But armor is only half the image. They are also lenses. Each one restricts an infinite power while making a specific kind of experience possible.",
+      "chapter": "III. The Five Lenses",
+      "semanticRole": "definition",
+      "visualOperator": "filter",
+      "visualMechanism": "five-lenses",
+      "continuityObject": "five indigo-crimson lenses",
+      "visualRationale": "Introduce all five lenses as one connected optical system before isolating them, preventing the doctrine from becoming a list of unrelated definitions.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-008",
+      "start": 130.25,
+      "end": 135.375,
+      "duration": 5.125,
+      "frameStart": 3126,
+      "frameEnd": 3249,
+      "paragraphRange": [
+        29,
+        29
+      ],
+      "spokenPassage": "Unlimited agency contracts into kalā: “I can do this, but not that.”",
+      "chapter": "III. The Five Lenses",
+      "semanticRole": "definition",
+      "visualOperator": "filter",
+      "visualMechanism": "five-lenses",
+      "continuityObject": "first lens",
+      "visualRationale": "Illuminate only the agency lens while the shared gold current remains visible through all five.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-009",
+      "start": 135.375,
+      "end": 140.08333333333334,
+      "duration": 4.708333333333343,
+      "frameStart": 3249,
+      "frameEnd": 3362,
+      "paragraphRange": [
+        30,
+        30
+      ],
+      "spokenPassage": "Unlimited knowledge contracts into vidyā: “I know this, but not everything.”",
+      "chapter": "III. The Five Lenses",
+      "semanticRole": "definition",
+      "visualOperator": "filter",
+      "visualMechanism": "five-lenses",
+      "continuityObject": "second lens",
+      "visualRationale": "Shift emphasis to the second lens without changing the system, preserving the sense that each limitation is one operation on the same field.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-010",
+      "start": 140.08333333333334,
+      "end": 144.79166666666666,
+      "duration": 4.708333333333314,
+      "frameStart": 3362,
+      "frameEnd": 3475,
+      "paragraphRange": [
+        31,
+        31
+      ],
+      "spokenPassage": "Complete fullness contracts into rāga: “Something is missing. I want it.”",
+      "chapter": "III. The Five Lenses",
+      "semanticRole": "definition",
+      "visualOperator": "filter",
+      "visualMechanism": "five-lenses",
+      "continuityObject": "third lens",
+      "visualRationale": "The third lens glows crimson to foreshadow the later reaching arc of desire.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-011",
+      "start": 144.79166666666666,
+      "end": 149.5,
+      "duration": 4.708333333333343,
+      "frameStart": 3475,
+      "frameEnd": 3588,
+      "paragraphRange": [
+        32,
+        32
+      ],
+      "spokenPassage": "Eternity contracts into kāla: “This happened before. That will happen later.”",
+      "chapter": "III. The Five Lenses",
+      "semanticRole": "definition",
+      "visualOperator": "filter",
+      "visualMechanism": "five-lenses",
+      "continuityObject": "fourth lens",
+      "visualRationale": "The time lens isolates one point on the gold current, preparing the visual handoff to the melodic timeline.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-012",
+      "start": 149.5,
+      "end": 154.20833333333334,
+      "duration": 4.708333333333343,
+      "frameStart": 3588,
+      "frameEnd": 3701,
+      "paragraphRange": [
+        33,
+        33
+      ],
+      "spokenPassage": "Absolute freedom contracts into niyati: “Because this happened, that must follow.”",
+      "chapter": "III. The Five Lenses",
+      "semanticRole": "definition",
+      "visualOperator": "filter",
+      "visualMechanism": "five-lenses",
+      "continuityObject": "fifth lens",
+      "visualRationale": "The final lens completes the chain and fixes the moving current into a determinate path.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-013",
+      "start": 154.20833333333334,
+      "end": 169,
+      "duration": 14.791666666666657,
+      "frameStart": 3701,
+      "frameEnd": 4056,
+      "paragraphRange": [
+        34,
+        39
+      ],
+      "spokenPassage": "The divine powers do not disappear. They become local. Omnipotence becomes the movement of one hand. Omniscience becomes one thought arriving. Eternity becomes this second. Freedom becomes this decision. The universe is infinity translated into finite verbs.",
+      "chapter": "III. The Five Lenses",
+      "semanticRole": "synthesis",
+      "visualOperator": "select",
+      "visualMechanism": "local-power",
+      "continuityObject": "two active rays within a universal corona",
+      "visualRationale": "A full radial capacity remains visible while only two rays become actionable, expressing finite verbs as selected universal powers.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-014",
+      "start": 169,
+      "end": 192.70833333333334,
+      "duration": 23.708333333333343,
+      "frameStart": 4056,
+      "frameEnd": 4625,
+      "paragraphRange": [
+        40,
+        43
+      ],
+      "spokenPassage": "Consider time. Without kāla, nothing would begin because nothing would end. Every event would be simultaneously complete. There could be no anticipation, no memory, no rhythm, no discovery. A melody can only exist because one note leaves before the next arrives. If every note sounded eternally and at once, there would be no music — only an immeasurable totality without sequence.",
+      "chapter": "IV. Time and Knowing",
+      "semanticRole": "analogy",
+      "visualOperator": "sequence",
+      "visualMechanism": "melody-time",
+      "continuityObject": "gold melodic thread",
+      "visualRationale": "Notes become audible one at a time under a moving present, turning the philosophical account of time into an exact temporal mechanism.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-015",
+      "start": 192.70833333333334,
+      "end": 207.875,
+      "duration": 15.166666666666657,
+      "frameStart": 4625,
+      "frameEnd": 4989,
+      "paragraphRange": [
+        44,
+        46
+      ],
+      "spokenPassage": "Time is not merely a prison. Time is how eternity becomes audible. The clock does not prove that the timeless has been destroyed. The ticking is the timeless allowing itself to be heard one beat at a time.",
+      "chapter": "IV. Time and Knowing",
+      "semanticRole": "reversal",
+      "visualOperator": "sequence",
+      "visualMechanism": "melody-time",
+      "continuityObject": "moving present across persistent staff lines",
+      "visualRationale": "Past, present, and future occupy the same stable musical field while the playhead alone creates sequence.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-016",
+      "start": 207.875,
+      "end": 228.875,
+      "duration": 21,
+      "frameStart": 4989,
+      "frameEnd": 5493,
+      "paragraphRange": [
+        47,
+        50
+      ],
+      "spokenPassage": "Consider limited knowledge. You are reading these words while almost the entire universe remains hidden from you. You do not know what is happening in every room. You cannot see behind your own head. You may not even know what your next thought will be until it appears. This seems like a defect.",
+      "chapter": "IV. Time and Knowing",
+      "semanticRole": "mechanism",
+      "visualOperator": "select",
+      "visualMechanism": "attention-beam",
+      "continuityObject": "narrow gold attention beam",
+      "visualRationale": "A single target brightens while dozens of equally real field points recede, making ignorance an effect of selection.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-017",
+      "start": 228.875,
+      "end": 246.75,
+      "duration": 17.875,
+      "frameStart": 5493,
+      "frameEnd": 5922,
+      "paragraphRange": [
+        51,
+        53
+      ],
+      "spokenPassage": "But a perspective that included everything equally would have no foreground. Nothing could surprise it. Nothing could be discovered because nothing could ever have been concealed. To find something, you must first not possess it. To recognize something, you must first appear to forget it.",
+      "chapter": "IV. Time and Knowing",
+      "semanticRole": "reversal",
+      "visualOperator": "recontextualize",
+      "visualMechanism": "attention-beam",
+      "continuityObject": "foreground ring and surrounding field",
+      "visualRationale": "The selected point remains luminous only because the surrounding field is allowed to recede rather than disappear.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-018",
+      "start": 246.75,
+      "end": 260.75,
+      "duration": 14,
+      "frameStart": 5922,
+      "frameEnd": 6258,
+      "paragraphRange": [
+        54,
+        56
+      ],
+      "spokenPassage": "This is why the second Śiva Sūtra gives the shocking formula: jñānaṃ bandhaḥ Limited knowing is bondage. Knowledge becomes bondage when it divides reality into a knower standing here and an object standing over there.",
+      "chapter": "IV. Time and Knowing",
+      "semanticRole": "thesis",
+      "visualOperator": "select",
+      "visualMechanism": "attention-beam",
+      "continuityObject": "beam linking separated subject and object",
+      "visualRationale": "Place the knowing source and known target at opposite ends of a bright relation so the dual structure, not knowledge itself, becomes visible.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-019",
+      "start": 260.75,
+      "end": 282.9166666666667,
+      "duration": 22.166666666666686,
+      "frameStart": 6258,
+      "frameEnd": 6790,
+      "paragraphRange": [
+        57,
+        60
+      ],
+      "spokenPassage": "The problem is not that you know. The problem is that each act of knowing appears to confirm that you are only the one who knows this particular thing. The beam of attention illuminates one object and quietly turns the rest of existence into darkness. Yet the darkness belongs to the same awareness as the beam.",
+      "chapter": "IV. Time and Knowing",
+      "semanticRole": "synthesis",
+      "visualOperator": "recontextualize",
+      "visualMechanism": "attention-beam",
+      "continuityObject": "beam and unselected field sharing one ground",
+      "visualRationale": "Retain the attention beam while subtly brightening the entire field, showing that selected and unselected belong to one awareness.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-020",
+      "start": 282.9166666666667,
+      "end": 298.0833333333333,
+      "duration": 15.166666666666629,
+      "frameStart": 6790,
+      "frameEnd": 7154,
+      "paragraphRange": [
+        61,
+        65
+      ],
+      "spokenPassage": "Now consider desire. If consciousness is already complete, why does it want anything? Because fullness, when compressed into a finite center, is experienced as lack. This is rāga. The unlimited power of delight becomes the ache of reaching.",
+      "chapter": "V. Desire and Smallness",
+      "semanticRole": "mechanism",
+      "visualOperator": "reach",
+      "visualMechanism": "desire-orbit",
+      "continuityObject": "crimson reaching arc",
+      "visualRationale": "Separate the local figure from a bright object and animate a current across the gap, making lack and movement one process.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-021",
+      "start": 298.0833333333333,
+      "end": 315.5833333333333,
+      "duration": 17.5,
+      "frameStart": 7154,
+      "frameEnd": 7574,
+      "paragraphRange": [
+        66,
+        68
+      ],
+      "spokenPassage": "You desire another person, an achievement, a place, a revelation. The object seems to contain something absent from you. You move toward it, briefly possess it, and discover that the deeper hunger remains. Ordinary desire says: “I am incomplete, and that will complete me.”",
+      "chapter": "V. Desire and Smallness",
+      "semanticRole": "consequence",
+      "visualOperator": "reach",
+      "visualMechanism": "desire-orbit",
+      "continuityObject": "repeating particles crossing the gap",
+      "visualRationale": "Particles arrive at the desired object and begin again, visualizing the persistence of the underlying hunger after possession.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-022",
+      "start": 315.5833333333333,
+      "end": 336.5833333333333,
+      "duration": 21,
+      "frameStart": 7574,
+      "frameEnd": 8078,
+      "paragraphRange": [
+        69,
+        72
+      ],
+      "spokenPassage": "Tantric recognition does not necessarily destroy desire. It discovers what desire was made from. The movement toward the object is the contracted form of consciousness’s delight in encountering itself. You reach because the world outside you is not entirely outside you. Attraction is recognition moving before the mind understands what it has recognized.",
+      "chapter": "V. Desire and Smallness",
+      "semanticRole": "reversal",
+      "visualOperator": "recontextualize",
+      "visualMechanism": "desire-orbit",
+      "continuityObject": "reaching arc returning as a loop",
+      "visualRationale": "Keep desire’s motion but read the same gold current as continuity between apparent inside and outside.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-023",
+      "start": 336.5833333333333,
+      "end": 347.125,
+      "duration": 10.541666666666686,
+      "frameStart": 8078,
+      "frameEnd": 8331,
+      "paragraphRange": [
+        73,
+        76
+      ],
+      "spokenPassage": "Beneath these five coverings lies a deeper contraction: āṇavamala, the impurity of smallness. This is not sin. It is the primordial feeling: “I am only this.”",
+      "chapter": "V. Desire and Smallness",
+      "semanticRole": "definition",
+      "visualOperator": "enclose",
+      "visualMechanism": "smallness-cage",
+      "continuityObject": "indigo figure inside nested bars",
+      "visualRationale": "The field remains visibly present outside the cage while the phrase “only this” appears at the local center.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-024",
+      "start": 347.125,
+      "end": 363.8333333333333,
+      "duration": 16.708333333333314,
+      "frameStart": 8331,
+      "frameEnd": 8732,
+      "paragraphRange": [
+        77,
+        82
+      ],
+      "spokenPassage": "Not this body as one expression of consciousness. Only this body. Not this mind as one movement within awareness. Only this mind. Not this life as a temporary angle through which reality sees. Only this life, surrounded by everything it is not.",
+      "chapter": "V. Desire and Smallness",
+      "semanticRole": "consequence",
+      "visualOperator": "enclose",
+      "visualMechanism": "smallness-cage",
+      "continuityObject": "local silhouette and repeated cage",
+      "visualRationale": "Repeat the same enclosure rather than inventing separate body and mind symbols; the argument concerns the word “only.”",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-025",
+      "start": 363.8333333333333,
+      "end": 374.75,
+      "duration": 10.916666666666686,
+      "frameStart": 8732,
+      "frameEnd": 8994,
+      "paragraphRange": [
+        83,
+        85
+      ],
+      "spokenPassage": "The entire architecture of bondage grows from that one compression. The infinite does not forget that the world exists. It forgets that the world exists within it.",
+      "chapter": "V. Desire and Smallness",
+      "semanticRole": "synthesis",
+      "visualOperator": "recontextualize",
+      "visualMechanism": "constraint-field",
+      "continuityObject": "small frame suspended inside the luminous field",
+      "visualRationale": "Pull the cage into a much wider field so the same world is recontextualized as occurring within awareness.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-026",
+      "start": 374.75,
+      "end": 393.0416666666667,
+      "duration": 18.291666666666686,
+      "frameStart": 8994,
+      "frameEnd": 9433,
+      "paragraphRange": [
+        86,
+        89
+      ],
+      "spokenPassage": "There is something almost absurdly ambitious about this metaphysics. It claims that your feeling of insignificance requires divine power. It takes the infinite to generate a convincing experience of finitude. A limited thing would not need to hide infinity from itself. It would simply be limited.",
+      "chapter": "VI. Power Builds the Boundary",
+      "semanticRole": "thesis",
+      "visualOperator": "construct",
+      "visualMechanism": "powered-prison",
+      "continuityObject": "walls assembled from luminous segments",
+      "visualRationale": "Build the enclosure visibly from energetic strokes so smallness reads as an active achievement rather than an inert absence.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-027",
+      "start": 393.0416666666667,
+      "end": 413.625,
+      "duration": 20.583333333333314,
+      "frameStart": 9433,
+      "frameEnd": 9927,
+      "paragraphRange": [
+        90,
+        93
+      ],
+      "spokenPassage": "But consciousness must continuously produce the boundary, maintain the perspective, filter the field, preserve the memory, connect causes to effects, and sustain the sense of being one person moving through one irreversible life. Your smallness is not passive. It is an achievement renewed every moment. The prison walls are made of power.",
+      "chapter": "VI. Power Builds the Boundary",
+      "semanticRole": "consequence",
+      "visualOperator": "construct",
+      "visualMechanism": "powered-prison",
+      "continuityObject": "moving gold particles rebuilding the frame",
+      "visualRationale": "Circulating particles repeatedly trace the wall segments, encoding continuous maintenance rather than a prison constructed once.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-028",
+      "start": 413.625,
+      "end": 433.0833333333333,
+      "duration": 19.458333333333314,
+      "frameStart": 9927,
+      "frameEnd": 10394,
+      "paragraphRange": [
+        94,
+        98
+      ],
+      "spokenPassage": "This changes the meaning of spiritual practice. The purpose is not to make a finite creature infinite. That would be impossible. The finite cannot manufacture infinity through enough breathing exercises, mantras, rituals, philosophies or virtuous actions. Practice works by loosening the conviction that the contraction is the whole truth.",
+      "chapter": "VII. Practice Follows the Fold",
+      "semanticRole": "practice",
+      "visualOperator": "unfold",
+      "visualMechanism": "practice-folds",
+      "continuityObject": "four nested folds",
+      "visualRationale": "Nested layers open toward an already luminous core, avoiding the false visual story of a finite self accumulating divinity.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-029",
+      "start": 433.0833333333333,
+      "end": 444.375,
+      "duration": 11.291666666666686,
+      "frameStart": 10394,
+      "frameEnd": 10665,
+      "paragraphRange": [
+        99,
+        100
+      ],
+      "spokenPassage": "You begin with the body because the body is where infinity feels most localized. You begin with the breath because the breath moves between voluntary and involuntary action.",
+      "chapter": "VII. Practice Follows the Fold",
+      "semanticRole": "practice",
+      "visualOperator": "unfold",
+      "visualMechanism": "practice-folds",
+      "continuityObject": "outer two practice folds",
+      "visualRationale": "Emphasize the body and breath rings while the central current passes through both voluntary and involuntary layers.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-030",
+      "start": 444.375,
+      "end": 463.8333333333333,
+      "duration": 19.458333333333314,
+      "frameStart": 10665,
+      "frameEnd": 11132,
+      "paragraphRange": [
+        101,
+        103
+      ],
+      "spokenPassage": "You begin with mantra because a sound appears as both something you produce and something you receive. You begin with attention because attention reveals that every object appears inside awareness, while awareness itself never appears as one more object. The method follows the folds back toward what was folded.",
+      "chapter": "VII. Practice Follows the Fold",
+      "semanticRole": "practice",
+      "visualOperator": "unfold",
+      "visualMechanism": "practice-folds",
+      "continuityObject": "inner two practice folds",
+      "visualRationale": "Shift emphasis inward while preserving all four levels, so practice reads as tracing relations rather than abandoning embodiment.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-031",
+      "start": 463.8333333333333,
+      "end": 476.7083333333333,
+      "duration": 12.875,
+      "frameStart": 11132,
+      "frameEnd": 11441,
+      "paragraphRange": [
+        104,
+        107
+      ],
+      "spokenPassage": "Sometimes the contraction opens suddenly. The tradition calls this movement udyama — the instantaneous uprising of awareness into recognition. udyamo bhairavaḥ The sudden upsurge is Bhairava. For one moment, perception turns inside out.",
+      "chapter": "VIII. The Center Turns Inside Out",
+      "semanticRole": "recognition",
+      "visualOperator": "invert",
+      "visualMechanism": "upsurge",
+      "continuityObject": "local point becoming radial field",
+      "visualRationale": "Reverse the direction of the film’s earliest contraction: the same center expands into rays without erasing its local form.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-032",
+      "start": 476.7083333333333,
+      "end": 500,
+      "duration": 23.291666666666686,
+      "frameStart": 11441,
+      "frameEnd": 12000,
+      "paragraphRange": [
+        108,
+        113
+      ],
+      "spokenPassage": "Instead of feeling that you are located in the body looking outward at the world, the body and the world appear inside one field of knowing. The room remains. Your name remains. Your history does not vanish. But the center has changed. Or rather, the imagined center has relaxed, revealing that awareness never had a center to begin with.",
+      "chapter": "VIII. The Center Turns Inside Out",
+      "semanticRole": "recognition",
+      "visualOperator": "invert",
+      "visualMechanism": "upsurge",
+      "continuityObject": "expanded field containing the former center",
+      "visualRationale": "Keep the central bindu and the surrounding world nodes simultaneously visible; only their relation changes.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-033",
+      "start": 500,
+      "end": 506.2916666666667,
+      "duration": 6.291666666666686,
+      "frameStart": 12000,
+      "frameEnd": 12151,
+      "paragraphRange": [
+        114,
+        115
+      ],
+      "spokenPassage": "This is not the destruction of individuality. It is individuality becoming transparent to its source.",
+      "chapter": "VIII. The Center Turns Inside Out",
+      "semanticRole": "reversal",
+      "visualOperator": "recontextualize",
+      "visualMechanism": "upsurge",
+      "continuityObject": "indigo lotus inside the open corona",
+      "visualRationale": "A distinct indigo center remains inside the expanded field, guarding against the mistaken visual equation of liberation with erasure.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-034",
+      "start": 506.2916666666667,
+      "end": 522.25,
+      "duration": 15.958333333333314,
+      "frameStart": 12151,
+      "frameEnd": 12534,
+      "paragraphRange": [
+        116,
+        118
+      ],
+      "spokenPassage": "A wave does not need to flatten itself to recognize the ocean. It continues to rise, curl and break. Its shape remains particular. No other wave has exactly the same curve, the same force, the same brief architecture of light.",
+      "chapter": "IX. Recognition Without Erasure",
+      "semanticRole": "analogy",
+      "visualOperator": "differentiate",
+      "visualMechanism": "wave-ocean",
+      "continuityObject": "indigo wave over a gold waterline",
+      "visualRationale": "Animate a singular changing crest over one continuous baseline so particularity and shared substance are simultaneously legible.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-035",
+      "start": 522.25,
+      "end": 535.875,
+      "duration": 13.625,
+      "frameStart": 12534,
+      "frameEnd": 12861,
+      "paragraphRange": [
+        119,
+        123
+      ],
+      "spokenPassage": "Recognition does not tell the wave: “You are not real.” It tells the wave: “Your water was never separate.” The finite form remains finite. What dissolves is the belief that finitude describes its substance.",
+      "chapter": "IX. Recognition Without Erasure",
+      "semanticRole": "recognition",
+      "visualOperator": "recontextualize",
+      "visualMechanism": "wave-ocean",
+      "continuityObject": "wave-line resolving into one field",
+      "visualRationale": "Keep the wave contour active while the shared gold baseline brightens, changing interpretation without deleting the finite form.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-036",
+      "start": 535.875,
+      "end": 555.7083333333334,
+      "duration": 19.83333333333337,
+      "frameStart": 12861,
+      "frameEnd": 13337,
+      "paragraphRange": [
+        124,
+        126
+      ],
+      "spokenPassage": "This is why liberation in the Śaiva vision is not necessarily escape from the world. The world is the display of the very freedom being recognized. Color, sound, grief, pleasure, confusion, memory, thought — these are not foreign substances contaminating pure consciousness. They are consciousness compressed into textures it can experience.",
+      "chapter": "IX. Recognition Without Erasure",
+      "semanticRole": "synthesis",
+      "visualOperator": "differentiate",
+      "visualMechanism": "textures-display",
+      "continuityObject": "one core radiating many textures",
+      "visualRationale": "Several colored sensory nodes emerge from one luminous core, showing differentiation without introducing foreign substances.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-037",
+      "start": 555.7083333333334,
+      "end": 566.25,
+      "duration": 10.541666666666629,
+      "frameStart": 13337,
+      "frameEnd": 13590,
+      "paragraphRange": [
+        127,
+        129
+      ],
+      "spokenPassage": "The armor is made from the same metal as the body beneath it. The veil is woven from light. Even forgetting is something awareness is doing.",
+      "chapter": "IX. Recognition Without Erasure",
+      "semanticRole": "reversal",
+      "visualOperator": "recontextualize",
+      "visualMechanism": "textures-display",
+      "continuityObject": "colored textures returning to the gold core",
+      "visualRationale": "Reverse the differentiated paths toward their common center, making the coverings continuous with what they cover.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-038",
+      "start": 566.25,
+      "end": 583.375,
+      "duration": 17.125,
+      "frameStart": 13590,
+      "frameEnd": 14001,
+      "paragraphRange": [
+        130,
+        135
+      ],
+      "spokenPassage": "Look at one limitation in your life. Something you cannot do. Something you do not understand. Something you desire but do not possess. Something time has taken from you. The ordinary response is to treat that boundary as evidence of what you are.",
+      "chapter": "X. The Tantric Reversal",
+      "semanticRole": "practice",
+      "visualOperator": "reveal",
+      "visualMechanism": "limitation-reversal",
+      "continuityObject": "four finite conditions around one field",
+      "visualRationale": "Arrange the four ordinary limits around a dim central field so the viewer can hold them together before their identity claim is reversed.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-039",
+      "start": 583.375,
+      "end": 598.1666666666666,
+      "duration": 14.791666666666629,
+      "frameStart": 14001,
+      "frameEnd": 14356,
+      "paragraphRange": [
+        136,
+        140
+      ],
+      "spokenPassage": "I cannot do this, therefore I am powerless. I do not know this, therefore I am ignorant. I desire this, therefore I am incomplete. Time is passing, therefore I am being destroyed. The Tantric reversal is subtler:",
+      "chapter": "X. The Tantric Reversal",
+      "semanticRole": "objection",
+      "visualOperator": "enclose",
+      "visualMechanism": "limitation-reversal",
+      "continuityObject": "four limits closing around the word I",
+      "visualRationale": "Keep the conditions separate but visually pull their lines toward the local center, showing how inference converts experience into identity.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-040",
+      "start": 598.1666666666666,
+      "end": 622.25,
+      "duration": 24.08333333333337,
+      "frameStart": 14356,
+      "frameEnd": 14934,
+      "paragraphRange": [
+        141,
+        146
+      ],
+      "spokenPassage": "The experience of limited power is appearing within power. The experience of not knowing is known. The feeling of incompleteness appears within awareness that lacks nothing required to illuminate it. The passing of time is perceived by something present before, during and after the perception of change. The boundary is real as an experience. It is not final as an identity.",
+      "chapter": "X. The Tantric Reversal",
+      "semanticRole": "reversal",
+      "visualOperator": "recontextualize",
+      "visualMechanism": "limitation-reversal",
+      "continuityObject": "four limits connected to a luminous knowing center",
+      "visualRationale": "The same four limits remain, but gold paths reveal that each is known within the field rather than defining it from outside.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-041",
+      "start": 622.25,
+      "end": 637.0416666666666,
+      "duration": 14.791666666666629,
+      "frameStart": 14934,
+      "frameEnd": 15289,
+      "paragraphRange": [
+        147,
+        152
+      ],
+      "spokenPassage": "You are not a fragment trying to reassemble itself into God. You are wholeness discovering what fragmentation feels like. You are freedom trying on consequence. Eternity learning suspense. Fullness becoming hunger. Omniscience narrowing itself into a question.",
+      "chapter": "XI. The Fist Loosens",
+      "semanticRole": "synthesis",
+      "visualOperator": "differentiate",
+      "visualMechanism": "local-power",
+      "continuityObject": "universal corona with selected finite rays",
+      "visualRationale": "Return to the universal corona and illuminate a few determinate rays, now understood as experiences wholeness can take rather than fragments to repair.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-042",
+      "start": 637.0416666666666,
+      "end": 654.1666666666666,
+      "duration": 17.125,
+      "frameStart": 15289,
+      "frameEnd": 15700,
+      "paragraphRange": [
+        153,
+        154
+      ],
+      "spokenPassage": "The question is not a mistake. The search is not evidence that the truth is absent. The truth has taken the form of the one searching for it. Consciousness says “I can’t” so completely that it forgets the power required to say it.",
+      "chapter": "XI. The Fist Loosens",
+      "semanticRole": "reversal",
+      "visualOperator": "open",
+      "visualMechanism": "opening-fist",
+      "continuityObject": "five arcs beginning to release the center",
+      "visualRationale": "Reuse the opening gesture from the first contraction, now allowing space between its arcs so seeking becomes the first motion of recognition.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-043",
+      "start": 654.1666666666666,
+      "end": 671.2916666666666,
+      "duration": 17.125,
+      "frameStart": 15700,
+      "frameEnd": 16111,
+      "paragraphRange": [
+        155,
+        158
+      ],
+      "spokenPassage": "Then, sometimes, in the space before a thought forms, in the stillness after an exhale, in the instant a mantra stops being a sound and becomes the listening itself, the fist loosens. Not fully. Just enough. And through the opening comes the recognition:",
+      "chapter": "XI. The Fist Loosens",
+      "semanticRole": "recognition",
+      "visualOperator": "open",
+      "visualMechanism": "opening-fist",
+      "continuityObject": "five arcs beginning to release the luminous core",
+      "visualRationale": "Slow the opening at its threshold so recognition feels like a precise change of relation rather than a spectacular destruction of form.",
+      "transition": "motif-preserving cut or short dissolve"
+    },
+    {
+      "id": "inf-044",
+      "start": 671.2916666666666,
+      "end": 685.2916666666666,
+      "duration": 14,
+      "frameStart": 16111,
+      "frameEnd": 16447,
+      "paragraphRange": [
+        159,
+        164
+      ],
+      "spokenPassage": "The infinite never became finite. It learned how finitude appears. It learned your face. It learned your voice. It learned to call itself “I.” And then it waited for you to notice who was speaking.",
+      "chapter": "XI. The Fist Loosens",
+      "semanticRole": "coda",
+      "visualOperator": "open",
+      "visualMechanism": "opening-fist",
+      "continuityObject": "fully opened arcs around the unchanged luminous core",
+      "visualRationale": "Complete the film by opening the original fist around the same core and the same word “I,” resolving the argument through continuity rather than spectacle.",
+      "transition": "motif-preserving cut or short dissolve"
+    }
+  ]
+}

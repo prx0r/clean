@@ -1,0 +1,796 @@
+{
+  "version": "1.0",
+  "id": "infinite-learned",
+  "title": "The Infinite Learned to Say “I Can’t”",
+  "sourceEssay": "../essays/the-infinite-learned-to-say-i-cant.md",
+  "visualThesis": "One luminous, centerless field repeatedly contracts into the same continuity objects: a point, crimson frame, five lenses, attention beam, temporal thread, reaching arc, and powered enclosure. Recognition does not erase those finite structures; it reveals their substance and reopens their relation to the field.",
+  "theme": "ivoryManuscript",
+  "seed": 274819,
+  "timing": {
+    "wordsPerMinute": 155,
+    "tailPadding": 0.45
+  },
+  "render": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "crf": 18,
+    "preset": "medium",
+    "transitionDuration": 0.65
+  },
+  "continuitySystems": [
+    {
+      "id": "luminous-field",
+      "meaning": "Unlimited consciousness and the unchanged substance of every local experience.",
+      "treatment": "Stable gold-white luminosity; it may contract, move, or become occluded, but it is never replaced."
+    },
+    {
+      "id": "crimson-frame",
+      "meaning": "The active boundary that makes a local point of view possible.",
+      "treatment": "Thin crimson geometry that becomes lens, cage, causal wall, and finally an opening."
+    },
+    {
+      "id": "indigo-locality",
+      "meaning": "The individual perspective and its finite capacities.",
+      "treatment": "Indigo silhouettes, rings, notes, and paths remain distinct even after recognition."
+    },
+    {
+      "id": "gold-current",
+      "meaning": "The continuity between universal power and its local expression.",
+      "treatment": "Gold paths carry motion between field and form; every major reversal reuses this current."
+    },
+    {
+      "id": "opening-gesture",
+      "meaning": "Contraction understood as a reversible gesture rather than a damaged substance.",
+      "treatment": "Enclosing arcs begin fist-like and slowly relax around the same luminous core."
+    }
+  ],
+  "captionPolicy": "Narration carries the essay. The footer may show only the beat title, one concise interpretive line, the technical term, and correct Devanāgarī. Never place full narration paragraphs on screen.",
+  "shots": [
+    {
+      "id": "inf-001",
+      "paragraphs": [1, 3],
+      "chapter": "I. The Sentence of Limitation",
+      "title": "The Strangest Sentence",
+      "subtitle": "A local self is defined by the powers it cannot exercise.",
+      "term": "Aśakti",
+      "devanagari": "अशक्तिः",
+      "semanticRole": "hook",
+      "visualOperator": "enclose",
+      "continuityObject": "indigo figure inside the crimson frame",
+      "visualRationale": "Begin with a visibly finite figure and an active enclosure so “I can’t” appears as a spatial condition before the metaphysical reversal.",
+      "visual": "smallness-cage",
+      "params": {
+        "centerText": "I can’t"
+      }
+    },
+    {
+      "id": "inf-002",
+      "paragraphs": [4, 8],
+      "chapter": "I. The Sentence of Limitation",
+      "title": "Consciousness Is the Self",
+      "subtitle": "The axiom makes ordinary smallness a problem requiring explanation.",
+      "term": "Caitanyam ātmā",
+      "devanagari": "चैतन्यमात्मा",
+      "semanticRole": "question",
+      "visualOperator": "reveal",
+      "continuityObject": "luminous field behind the finite figure",
+      "visualRationale": "Reveal that the enclosure exists inside a much larger field; the paradox is simultaneous, not a before-and-after replacement.",
+      "visual": "constraint-field",
+      "params": {
+        "centerText": "चित्"
+      }
+    },
+    {
+      "id": "inf-003",
+      "paragraphs": [9, 12],
+      "chapter": "II. Contraction into Perspective",
+      "title": "Infinity Contracts",
+      "subtitle": "Nothing is removed; vast capacity takes the form of a point.",
+      "term": "Saṃkoca",
+      "devanagari": "सङ्कोचः",
+      "semanticRole": "thesis",
+      "visualOperator": "contract",
+      "continuityObject": "luminous field becoming a framed center",
+      "visualRationale": "Concentric structures visibly compress while retaining the same colors and core, showing localization without loss of substance.",
+      "visual": "constraint-field",
+      "params": {
+        "centerText": "अहम्"
+      }
+    },
+    {
+      "id": "inf-004",
+      "paragraphs": [13, 14],
+      "chapter": "II. Contraction into Perspective",
+      "title": "The Gesture of a Fist",
+      "subtitle": "Freedom remains present as the capacity held inside one gesture.",
+      "term": "Mudrā",
+      "devanagari": "मुद्रा",
+      "semanticRole": "analogy",
+      "visualOperator": "contract",
+      "continuityObject": "five enclosing arcs",
+      "visualRationale": "Five arcs close around an unchanged luminous center, directly encoding the hand analogy without drawing a literal anatomical hand.",
+      "visual": "opening-fist",
+      "params": {
+        "centerText": "gesture"
+      }
+    },
+    {
+      "id": "inf-005",
+      "paragraphs": [15, 22],
+      "chapter": "II. Contraction into Perspective",
+      "title": "Before the Angle",
+      "subtitle": "A centerless field acquires here, there, foreground, and exclusion.",
+      "term": "Ananta",
+      "devanagari": "अनन्तम्",
+      "semanticRole": "mechanism",
+      "visualOperator": "frame",
+      "continuityObject": "attention line crossing the centerless field",
+      "visualRationale": "A field of equal points is cut by a single viewing cone, making the birth of perspective visible as selection rather than creation.",
+      "visual": "point-of-view",
+      "params": {
+        "leftText": "here",
+        "rightText": "there"
+      }
+    },
+    {
+      "id": "inf-006",
+      "paragraphs": [23, 24],
+      "chapter": "II. Contraction into Perspective",
+      "title": "The First Person",
+      "subtitle": "Individuality is a frame the infinite places around itself.",
+      "term": "Aham-idam",
+      "devanagari": "अहम् इदम्",
+      "semanticRole": "consequence",
+      "visualOperator": "frame",
+      "continuityObject": "crimson local horizon",
+      "visualRationale": "Keep the same field and viewing geometry, but strengthen the finite frame to show how selection stabilizes into identity.",
+      "visual": "point-of-view",
+      "params": {
+        "leftText": "aham",
+        "rightText": "idam"
+      }
+    },
+    {
+      "id": "inf-007",
+      "paragraphs": [25, 28],
+      "chapter": "III. The Five Lenses",
+      "title": "Armor That Also Sees",
+      "subtitle": "Each covering restricts a power and enables a kind of experience.",
+      "term": "Kañcuka",
+      "devanagari": "कञ्चुकम्",
+      "semanticRole": "definition",
+      "visualOperator": "filter",
+      "continuityObject": "five indigo-crimson lenses",
+      "visualRationale": "Introduce all five lenses as one connected optical system before isolating them, preventing the doctrine from becoming a list of unrelated definitions.",
+      "visual": "five-lenses"
+    },
+    {
+      "id": "inf-008",
+      "paragraphs": [29, 29],
+      "chapter": "III. The Five Lenses",
+      "title": "Power Becomes Capacity",
+      "subtitle": "Unlimited agency narrows into this action and not every action.",
+      "term": "Kalā",
+      "devanagari": "कला",
+      "semanticRole": "definition",
+      "visualOperator": "filter",
+      "continuityObject": "first lens",
+      "visualRationale": "Illuminate only the agency lens while the shared gold current remains visible through all five.",
+      "visual": "five-lenses",
+      "params": {
+        "focus": 0
+      }
+    },
+    {
+      "id": "inf-009",
+      "paragraphs": [30, 30],
+      "chapter": "III. The Five Lenses",
+      "title": "Knowing Becomes This",
+      "subtitle": "Unlimited knowledge narrows into one disclosure.",
+      "term": "Vidyā",
+      "devanagari": "विद्या",
+      "semanticRole": "definition",
+      "visualOperator": "filter",
+      "continuityObject": "second lens",
+      "visualRationale": "Shift emphasis to the second lens without changing the system, preserving the sense that each limitation is one operation on the same field.",
+      "visual": "five-lenses",
+      "params": {
+        "focus": 1
+      }
+    },
+    {
+      "id": "inf-010",
+      "paragraphs": [31, 31],
+      "chapter": "III. The Five Lenses",
+      "title": "Fullness Becomes Want",
+      "subtitle": "The complete field is experienced locally as something missing.",
+      "term": "Rāga",
+      "devanagari": "रागः",
+      "semanticRole": "definition",
+      "visualOperator": "filter",
+      "continuityObject": "third lens",
+      "visualRationale": "The third lens glows crimson to foreshadow the later reaching arc of desire.",
+      "visual": "five-lenses",
+      "params": {
+        "focus": 2
+      }
+    },
+    {
+      "id": "inf-011",
+      "paragraphs": [32, 32],
+      "chapter": "III. The Five Lenses",
+      "title": "Eternity Becomes Sequence",
+      "subtitle": "The total event is distributed into before and after.",
+      "term": "Kāla",
+      "devanagari": "कालः",
+      "semanticRole": "definition",
+      "visualOperator": "filter",
+      "continuityObject": "fourth lens",
+      "visualRationale": "The time lens isolates one point on the gold current, preparing the visual handoff to the melodic timeline.",
+      "visual": "five-lenses",
+      "params": {
+        "focus": 3
+      }
+    },
+    {
+      "id": "inf-012",
+      "paragraphs": [33, 33],
+      "chapter": "III. The Five Lenses",
+      "title": "Freedom Becomes Consequence",
+      "subtitle": "An open field narrows into this necessary succession.",
+      "term": "Niyati",
+      "devanagari": "नियतिः",
+      "semanticRole": "definition",
+      "visualOperator": "filter",
+      "continuityObject": "fifth lens",
+      "visualRationale": "The final lens completes the chain and fixes the moving current into a determinate path.",
+      "visual": "five-lenses",
+      "params": {
+        "focus": 4
+      }
+    },
+    {
+      "id": "inf-013",
+      "paragraphs": [34, 39],
+      "chapter": "III. The Five Lenses",
+      "title": "The Powers Become Local",
+      "subtitle": "One hand, one thought, one second, one decision.",
+      "term": "Śakti",
+      "devanagari": "शक्तिः",
+      "semanticRole": "synthesis",
+      "visualOperator": "select",
+      "continuityObject": "two active rays within a universal corona",
+      "visualRationale": "A full radial capacity remains visible while only two rays become actionable, expressing finite verbs as selected universal powers.",
+      "visual": "local-power",
+      "params": {
+        "centerText": "शक्ति",
+        "active": 3
+      }
+    },
+    {
+      "id": "inf-014",
+      "paragraphs": [40, 43],
+      "chapter": "IV. Time and Knowing",
+      "title": "A Note Must Leave",
+      "subtitle": "Sequence makes rhythm, anticipation, memory, and discovery possible.",
+      "term": "Krama",
+      "devanagari": "क्रमः",
+      "semanticRole": "analogy",
+      "visualOperator": "sequence",
+      "continuityObject": "gold melodic thread",
+      "visualRationale": "Notes become audible one at a time under a moving present, turning the philosophical account of time into an exact temporal mechanism.",
+      "visual": "melody-time"
+    },
+    {
+      "id": "inf-015",
+      "paragraphs": [44, 46],
+      "chapter": "IV. Time and Knowing",
+      "title": "Eternity Becomes Audible",
+      "subtitle": "The ticking does not abolish the timeless; it articulates it.",
+      "term": "Kāla",
+      "devanagari": "कालः",
+      "semanticRole": "reversal",
+      "visualOperator": "sequence",
+      "continuityObject": "moving present across persistent staff lines",
+      "visualRationale": "Past, present, and future occupy the same stable musical field while the playhead alone creates sequence.",
+      "visual": "melody-time",
+      "params": {
+        "notes": [0, 1, 3, 2, 4, 1, 2, 0]
+      }
+    },
+    {
+      "id": "inf-016",
+      "paragraphs": [47, 50],
+      "chapter": "IV. Time and Knowing",
+      "title": "Almost Everything Is Hidden",
+      "subtitle": "A finite viewpoint knows one disclosure inside an immense unselected field.",
+      "term": "Ajñāta",
+      "devanagari": "अज्ञातम्",
+      "semanticRole": "mechanism",
+      "visualOperator": "select",
+      "continuityObject": "narrow gold attention beam",
+      "visualRationale": "A single target brightens while dozens of equally real field points recede, making ignorance an effect of selection.",
+      "visual": "attention-beam",
+      "params": {
+        "foreground": "this disclosure"
+      }
+    },
+    {
+      "id": "inf-017",
+      "paragraphs": [51, 53],
+      "chapter": "IV. Time and Knowing",
+      "title": "Concealment Creates Discovery",
+      "subtitle": "Without background there can be no foreground, surprise, or recognition.",
+      "term": "Prakāśa",
+      "devanagari": "प्रकाशः",
+      "semanticRole": "reversal",
+      "visualOperator": "recontextualize",
+      "continuityObject": "foreground ring and surrounding field",
+      "visualRationale": "The selected point remains luminous only because the surrounding field is allowed to recede rather than disappear.",
+      "visual": "attention-beam",
+      "params": {
+        "foreground": "foreground"
+      }
+    },
+    {
+      "id": "inf-018",
+      "paragraphs": [54, 56],
+      "chapter": "IV. Time and Knowing",
+      "title": "Limited Knowing Is Bondage",
+      "subtitle": "Knowing divides a local knower from a disclosed object.",
+      "term": "Jñānaṃ bandhaḥ",
+      "devanagari": "ज्ञानं बन्धः",
+      "semanticRole": "thesis",
+      "visualOperator": "select",
+      "continuityObject": "beam linking separated subject and object",
+      "visualRationale": "Place the knowing source and known target at opposite ends of a bright relation so the dual structure, not knowledge itself, becomes visible.",
+      "visual": "attention-beam",
+      "params": {
+        "foreground": "known object"
+      }
+    },
+    {
+      "id": "inf-019",
+      "paragraphs": [57, 60],
+      "chapter": "IV. Time and Knowing",
+      "title": "The Darkness Is Also Awareness",
+      "subtitle": "Attention selects one object but does not create a second substance.",
+      "term": "Avadhāna",
+      "devanagari": "अवधानम्",
+      "semanticRole": "synthesis",
+      "visualOperator": "recontextualize",
+      "continuityObject": "beam and unselected field sharing one ground",
+      "visualRationale": "Retain the attention beam while subtly brightening the entire field, showing that selected and unselected belong to one awareness.",
+      "visual": "attention-beam",
+      "params": {
+        "foreground": "one object"
+      }
+    },
+    {
+      "id": "inf-020",
+      "paragraphs": [61, 65],
+      "chapter": "V. Desire and Smallness",
+      "title": "Fullness Feels Like Lack",
+      "subtitle": "A complete field compressed into a center experiences a gap.",
+      "term": "Rāga",
+      "devanagari": "रागः",
+      "semanticRole": "mechanism",
+      "visualOperator": "reach",
+      "continuityObject": "crimson reaching arc",
+      "visualRationale": "Separate the local figure from a bright object and animate a current across the gap, making lack and movement one process.",
+      "visual": "desire-orbit",
+      "params": {
+        "gapText": "felt lack"
+      }
+    },
+    {
+      "id": "inf-021",
+      "paragraphs": [66, 68],
+      "chapter": "V. Desire and Smallness",
+      "title": "The Object Promises Completion",
+      "subtitle": "Possession changes the object but not the deeper geometry of hunger.",
+      "term": "Abhāva",
+      "devanagari": "अभावः",
+      "semanticRole": "consequence",
+      "visualOperator": "reach",
+      "continuityObject": "repeating particles crossing the gap",
+      "visualRationale": "Particles arrive at the desired object and begin again, visualizing the persistence of the underlying hunger after possession.",
+      "visual": "desire-orbit",
+      "params": {
+        "gapText": "incomplete → complete?"
+      }
+    },
+    {
+      "id": "inf-022",
+      "paragraphs": [69, 72],
+      "chapter": "V. Desire and Smallness",
+      "title": "Attraction Moves Before Thought",
+      "subtitle": "Desire is contracted delight reaching toward its own unrecognized field.",
+      "term": "Pratyabhijñā",
+      "devanagari": "प्रत्यभिज्ञा",
+      "semanticRole": "reversal",
+      "visualOperator": "recontextualize",
+      "continuityObject": "reaching arc returning as a loop",
+      "visualRationale": "Keep desire’s motion but read the same gold current as continuity between apparent inside and outside.",
+      "visual": "desire-orbit",
+      "params": {
+        "gapText": "recognition in motion"
+      }
+    },
+    {
+      "id": "inf-023",
+      "paragraphs": [73, 76],
+      "chapter": "V. Desire and Smallness",
+      "title": "The Impurity of Smallness",
+      "subtitle": "The deepest contraction is the conviction: I am only this.",
+      "term": "Āṇavamala",
+      "devanagari": "आणवमलम्",
+      "semanticRole": "definition",
+      "visualOperator": "enclose",
+      "continuityObject": "indigo figure inside nested bars",
+      "visualRationale": "The field remains visibly present outside the cage while the phrase “only this” appears at the local center.",
+      "visual": "smallness-cage",
+      "params": {
+        "centerText": "only this"
+      }
+    },
+    {
+      "id": "inf-024",
+      "paragraphs": [77, 82],
+      "chapter": "V. Desire and Smallness",
+      "title": "Only This Body, Mind, Life",
+      "subtitle": "Expressions of awareness harden into exclusive identity.",
+      "term": "Deha",
+      "devanagari": "देहः",
+      "semanticRole": "consequence",
+      "visualOperator": "enclose",
+      "continuityObject": "local silhouette and repeated cage",
+      "visualRationale": "Repeat the same enclosure rather than inventing separate body and mind symbols; the argument concerns the word “only.”",
+      "visual": "smallness-cage",
+      "params": {
+        "centerText": "body · mind · life"
+      }
+    },
+    {
+      "id": "inf-025",
+      "paragraphs": [83, 85],
+      "chapter": "V. Desire and Smallness",
+      "title": "The World Is Forgotten Within",
+      "subtitle": "Bondage forgets containment, not the existence of the world.",
+      "term": "Antarjagat",
+      "devanagari": "अन्तर्जगत्",
+      "semanticRole": "synthesis",
+      "visualOperator": "recontextualize",
+      "continuityObject": "small frame suspended inside the luminous field",
+      "visualRationale": "Pull the cage into a much wider field so the same world is recontextualized as occurring within awareness.",
+      "visual": "constraint-field",
+      "params": {
+        "centerText": "जगत्"
+      }
+    },
+    {
+      "id": "inf-026",
+      "paragraphs": [86, 89],
+      "chapter": "VI. Power Builds the Boundary",
+      "title": "Finitude Requires Power",
+      "subtitle": "Only the infinite needs to generate a convincing experience of limitation.",
+      "term": "Śakti",
+      "devanagari": "शक्तिः",
+      "semanticRole": "thesis",
+      "visualOperator": "construct",
+      "continuityObject": "walls assembled from luminous segments",
+      "visualRationale": "Build the enclosure visibly from energetic strokes so smallness reads as an active achievement rather than an inert absence.",
+      "visual": "powered-prison",
+      "params": {
+        "centerText": "finitude is produced"
+      }
+    },
+    {
+      "id": "inf-027",
+      "paragraphs": [90, 93],
+      "chapter": "VI. Power Builds the Boundary",
+      "title": "The Walls Are Renewed",
+      "subtitle": "Boundary, memory, causality, and identity are maintained every moment.",
+      "term": "Bandha",
+      "devanagari": "बन्धः",
+      "semanticRole": "consequence",
+      "visualOperator": "construct",
+      "continuityObject": "moving gold particles rebuilding the frame",
+      "visualRationale": "Circulating particles repeatedly trace the wall segments, encoding continuous maintenance rather than a prison constructed once.",
+      "visual": "powered-prison",
+      "params": {
+        "centerText": "power maintains the boundary"
+      }
+    },
+    {
+      "id": "inf-028",
+      "paragraphs": [94, 98],
+      "chapter": "VII. Practice Follows the Fold",
+      "title": "Practice Does Not Manufacture Infinity",
+      "subtitle": "It loosens the belief that contraction is the whole truth.",
+      "term": "Sādhanā",
+      "devanagari": "साधना",
+      "semanticRole": "practice",
+      "visualOperator": "unfold",
+      "continuityObject": "four nested folds",
+      "visualRationale": "Nested layers open toward an already luminous core, avoiding the false visual story of a finite self accumulating divinity.",
+      "visual": "practice-folds"
+    },
+    {
+      "id": "inf-029",
+      "paragraphs": [99, 100],
+      "chapter": "VII. Practice Follows the Fold",
+      "title": "Body and Breath",
+      "subtitle": "Localization is felt in the body; agency crosses its border in breath.",
+      "term": "Deha-prāṇa",
+      "devanagari": "देहः प्राणः",
+      "semanticRole": "practice",
+      "visualOperator": "unfold",
+      "continuityObject": "outer two practice folds",
+      "visualRationale": "Emphasize the body and breath rings while the central current passes through both voluntary and involuntary layers.",
+      "visual": "practice-folds",
+      "params": {
+        "focus": 1
+      }
+    },
+    {
+      "id": "inf-030",
+      "paragraphs": [101, 103],
+      "chapter": "VII. Practice Follows the Fold",
+      "title": "Mantra and Attention",
+      "subtitle": "Sound and seeing are followed back toward the awareness receiving them.",
+      "term": "Mantra-avadhāna",
+      "devanagari": "मन्त्रः अवधानम्",
+      "semanticRole": "practice",
+      "visualOperator": "unfold",
+      "continuityObject": "inner two practice folds",
+      "visualRationale": "Shift emphasis inward while preserving all four levels, so practice reads as tracing relations rather than abandoning embodiment.",
+      "visual": "practice-folds",
+      "params": {
+        "focus": 3
+      }
+    },
+    {
+      "id": "inf-031",
+      "paragraphs": [104, 107],
+      "chapter": "VIII. The Center Turns Inside Out",
+      "title": "The Sudden Upsurge",
+      "subtitle": "Contraction opens in an instantaneous movement of recognition.",
+      "term": "Udyama",
+      "devanagari": "उद्यमः",
+      "semanticRole": "recognition",
+      "visualOperator": "invert",
+      "continuityObject": "local point becoming radial field",
+      "visualRationale": "Reverse the direction of the film’s earliest contraction: the same center expands into rays without erasing its local form.",
+      "visual": "upsurge",
+      "params": {
+        "centerText": "उद्यमः"
+      }
+    },
+    {
+      "id": "inf-032",
+      "paragraphs": [108, 113],
+      "chapter": "VIII. The Center Turns Inside Out",
+      "title": "The World Appears Inside Knowing",
+      "subtitle": "Room, name, and history remain while the imagined center relaxes.",
+      "term": "Bhairava",
+      "devanagari": "भैरवः",
+      "semanticRole": "recognition",
+      "visualOperator": "invert",
+      "continuityObject": "expanded field containing the former center",
+      "visualRationale": "Keep the central bindu and the surrounding world nodes simultaneously visible; only their relation changes.",
+      "visual": "upsurge",
+      "params": {
+        "centerText": "भैरवः"
+      }
+    },
+    {
+      "id": "inf-033",
+      "paragraphs": [114, 115],
+      "chapter": "VIII. The Center Turns Inside Out",
+      "title": "Individuality Becomes Transparent",
+      "subtitle": "The local form survives as a permeable expression of its source.",
+      "term": "Svātantrya",
+      "devanagari": "स्वातन्त्र्यम्",
+      "semanticRole": "reversal",
+      "visualOperator": "recontextualize",
+      "continuityObject": "indigo lotus inside the open corona",
+      "visualRationale": "A distinct indigo center remains inside the expanded field, guarding against the mistaken visual equation of liberation with erasure.",
+      "visual": "upsurge",
+      "params": {
+        "centerText": "अहम्"
+      }
+    },
+    {
+      "id": "inf-034",
+      "paragraphs": [116, 118],
+      "chapter": "IX. Recognition Without Erasure",
+      "title": "The Wave Keeps Its Curve",
+      "subtitle": "Recognition does not flatten the finite form.",
+      "term": "Taraṅga",
+      "devanagari": "तरङ्गः",
+      "semanticRole": "analogy",
+      "visualOperator": "differentiate",
+      "continuityObject": "indigo wave over a gold waterline",
+      "visualRationale": "Animate a singular changing crest over one continuous baseline so particularity and shared substance are simultaneously legible.",
+      "visual": "wave-ocean",
+      "params": {
+        "waveText": "this curve",
+        "oceanText": "one water"
+      }
+    },
+    {
+      "id": "inf-035",
+      "paragraphs": [119, 123],
+      "chapter": "IX. Recognition Without Erasure",
+      "title": "Your Water Was Never Separate",
+      "subtitle": "Finitude remains a shape, not the final description of substance.",
+      "term": "Samudra",
+      "devanagari": "समुद्रः",
+      "semanticRole": "recognition",
+      "visualOperator": "recontextualize",
+      "continuityObject": "wave-line resolving into one field",
+      "visualRationale": "Keep the wave contour active while the shared gold baseline brightens, changing interpretation without deleting the finite form.",
+      "visual": "wave-ocean",
+      "params": {
+        "waveText": "finite form",
+        "oceanText": "never separate"
+      }
+    },
+    {
+      "id": "inf-036",
+      "paragraphs": [124, 126],
+      "chapter": "IX. Recognition Without Erasure",
+      "title": "The World Is Freedom Displayed",
+      "subtitle": "Color, sound, feeling, memory, and thought are differentiated textures.",
+      "term": "Jagat",
+      "devanagari": "जगत्",
+      "semanticRole": "synthesis",
+      "visualOperator": "differentiate",
+      "continuityObject": "one core radiating many textures",
+      "visualRationale": "Several colored sensory nodes emerge from one luminous core, showing differentiation without introducing foreign substances.",
+      "visual": "textures-display"
+    },
+    {
+      "id": "inf-037",
+      "paragraphs": [127, 129],
+      "chapter": "IX. Recognition Without Erasure",
+      "title": "The Veil Is Woven from Light",
+      "subtitle": "Armor, body, veil, and forgetting share one luminous material.",
+      "term": "Prakāśa",
+      "devanagari": "प्रकाशः",
+      "semanticRole": "reversal",
+      "visualOperator": "recontextualize",
+      "continuityObject": "colored textures returning to the gold core",
+      "visualRationale": "Reverse the differentiated paths toward their common center, making the coverings continuous with what they cover.",
+      "visual": "textures-display",
+      "params": {
+        "labels": ["armor", "body", "veil", "memory", "thought", "forgetting"]
+      }
+    },
+    {
+      "id": "inf-038",
+      "paragraphs": [130, 135],
+      "chapter": "X. The Tantric Reversal",
+      "title": "Look at One Limitation",
+      "subtitle": "Power, knowledge, desire, and time each present a finite boundary.",
+      "term": "Sīmā",
+      "devanagari": "सीमा",
+      "semanticRole": "practice",
+      "visualOperator": "reveal",
+      "continuityObject": "four finite conditions around one field",
+      "visualRationale": "Arrange the four ordinary limits around a dim central field so the viewer can hold them together before their identity claim is reversed.",
+      "visual": "limitation-reversal",
+      "params": {
+        "labels": ["cannot", "unknown", "want", "time"],
+        "centerText": "experience"
+      }
+    },
+    {
+      "id": "inf-039",
+      "paragraphs": [136, 140],
+      "chapter": "X. The Tantric Reversal",
+      "title": "Boundary Becomes Identity",
+      "subtitle": "The ordinary inference turns each condition into evidence of what I am.",
+      "term": "Ahaṃkāra",
+      "devanagari": "अहङ्कारः",
+      "semanticRole": "objection",
+      "visualOperator": "enclose",
+      "continuityObject": "four limits closing around the word I",
+      "visualRationale": "Keep the conditions separate but visually pull their lines toward the local center, showing how inference converts experience into identity.",
+      "visual": "limitation-reversal",
+      "params": {
+        "labels": ["powerless", "ignorant", "incomplete", "destroyed"],
+        "centerText": "I am"
+      }
+    },
+    {
+      "id": "inf-040",
+      "paragraphs": [141, 146],
+      "chapter": "X. The Tantric Reversal",
+      "title": "The Limit Appears Within",
+      "subtitle": "The boundary is real as experience and nonfinal as identity.",
+      "term": "Pratyabhijñā",
+      "devanagari": "प्रत्यभिज्ञा",
+      "semanticRole": "reversal",
+      "visualOperator": "recontextualize",
+      "continuityObject": "four limits connected to a luminous knowing center",
+      "visualRationale": "The same four limits remain, but gold paths reveal that each is known within the field rather than defining it from outside.",
+      "visual": "limitation-reversal",
+      "params": {
+        "labels": ["limited power", "not knowing", "incompleteness", "change"],
+        "centerText": "known"
+      }
+    },
+    {
+      "id": "inf-041",
+      "paragraphs": [147, 152],
+      "chapter": "XI. The Fist Loosens",
+      "title": "Wholeness Tries on Finitude",
+      "subtitle": "Freedom becomes consequence; eternity learns suspense.",
+      "term": "Pūrṇatā",
+      "devanagari": "पूर्णता",
+      "semanticRole": "synthesis",
+      "visualOperator": "differentiate",
+      "continuityObject": "universal corona with selected finite rays",
+      "visualRationale": "Return to the universal corona and illuminate a few determinate rays, now understood as experiences wholeness can take rather than fragments to repair.",
+      "visual": "local-power",
+      "params": {
+        "centerText": "पूर्ण",
+        "active": 7
+      }
+    },
+    {
+      "id": "inf-042",
+      "paragraphs": [153, 154],
+      "chapter": "XI. The Fist Loosens",
+      "title": "The Truth Takes the Form of a Question",
+      "subtitle": "The search itself is one contraction of the power it seeks.",
+      "term": "Praśna",
+      "devanagari": "प्रश्नः",
+      "semanticRole": "reversal",
+      "visualOperator": "open",
+      "continuityObject": "five arcs beginning to release the center",
+      "visualRationale": "Reuse the opening gesture from the first contraction, now allowing space between its arcs so seeking becomes the first motion of recognition.",
+      "visual": "opening-fist",
+      "params": {
+        "centerText": "?"
+      }
+    },
+    {
+      "id": "inf-043",
+      "paragraphs": [155, 158],
+      "chapter": "XI. The Fist Loosens",
+      "title": "Just Enough",
+      "subtitle": "In the stillness after breath and mantra, the enclosing gesture relaxes.",
+      "term": "Unmeṣa",
+      "devanagari": "उन्मेषः",
+      "semanticRole": "recognition",
+      "visualOperator": "open",
+      "continuityObject": "five arcs beginning to release the luminous core",
+      "visualRationale": "Slow the opening at its threshold so recognition feels like a precise change of relation rather than a spectacular destruction of form.",
+      "visual": "opening-fist",
+      "params": {
+        "centerText": "listen"
+      }
+    },
+    {
+      "id": "inf-044",
+      "paragraphs": [159, 164],
+      "chapter": "XI. The Fist Loosens",
+      "title": "Who Was Speaking?",
+      "subtitle": "The infinite never became finite; it learned how finitude appears as I.",
+      "term": "Aham",
+      "devanagari": "अहम्",
+      "semanticRole": "coda",
+      "visualOperator": "open",
+      "continuityObject": "fully opened arcs around the unchanged luminous core",
+      "visualRationale": "Complete the film by opening the original fist around the same core and the same word “I,” resolving the argument through continuity rather than spectacle.",
+      "visual": "opening-fist",
+      "params": {
+        "centerText": "I"
+      }
+    }
+  ]
+}

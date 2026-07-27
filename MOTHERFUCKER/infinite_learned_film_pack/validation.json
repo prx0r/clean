@@ -1,0 +1,44 @@
+{
+  "program": "infinite-learned-visual-program.json",
+  "render": {
+    "outputPath": "/workspace/scratch/a4cc7fe14254/repo/skia-framework/build/infinite-learned/infinite-learned.mp4",
+    "frames": 16447,
+    "fps": 24,
+    "width": 1280,
+    "height": 720,
+    "duration": 685.2916666666666
+  },
+  "storyboard": {
+    "shots": 44,
+    "runtimeSeconds": 685.2916666666666,
+    "timingMethod": "Draft narration estimate at 155 words per minute plus 0.45s per shot, quantized to 24 fps."
+  },
+  "fonts": {
+    "latinFamily": "Tantra Garamond",
+    "devanagariFamily": "Tantra Devanagari",
+    "latinRegistered": true,
+    "devanagariRegistered": true
+  },
+  "validation": {
+    "valid": true,
+    "errors": [],
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 720,
+          "pix_fmt": "yuv420p",
+          "r_frame_rate": "24/1",
+          "avg_frame_rate": "24/1",
+          "nb_frames": "16447"
+        }
+      ],
+      "format": {
+        "duration": "685.291667",
+        "size": "23893439"
+      }
+    }
+  }
+}

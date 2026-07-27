@@ -1,0 +1,477 @@
+{
+  "schema_version": "2.0",
+  "id": "the-world-learns-its-own-name",
+  "title": "The World Learns Its Own Name",
+  "duration_seconds": 600.0,
+  "fps_reference": 24,
+  "central_question": "How can pressure in air become a word that means something, and why does meaning arrive as recognition rather than as a sequence of acoustic pieces?",
+  "thesis": "Meaning is neither a substance stored inside sound nor a private object added after hearing. It is an event in which embodied prediction, shared use, context, and reflexive awareness make a temporal pattern intelligible as a whole.",
+  "artistic_world": {
+    "name": "phononic cathedral",
+    "continuity_object": "one copper breath-thread",
+    "material": "obsidian liquid glass carrying spectral pressure, caustic refraction, granular breath and luminous semantic weather",
+    "camera_rule": "the camera is progressively implicated in the utterance: witness, resonator, predictor, speaker, then the field in which speaking and hearing meet",
+    "palette": {
+      "unspoken": "#050513",
+      "breath": "#f39a52",
+      "vowel": "#36d6e7",
+      "consonant": "#ff4f86",
+      "context": "#75e6a4",
+      "meaning": "#fff0c9",
+      "silence": "#100824"
+    },
+    "forbidden": [
+      "caption-led explanation",
+      "repeated centered rings",
+      "literal brain diagrams",
+      "four levels of speech shown as a stacked infographic",
+      "white-flash enlightenment",
+      "audio uniforms used only as exposure controls"
+    ]
+  },
+  "state_space": {
+    "name": "Meaning State Vector",
+    "order": [
+      "articulation",
+      "continuity",
+      "deixis",
+      "resonance",
+      "prosody",
+      "semantic_density"
+    ],
+    "axes": {
+      "articulation": {
+        "low": "continuous breath and undivided spectrum",
+        "high": "sharp phonemic, visual and harmonic differentiation",
+        "visual": "edge acuity, spectral separation and glyph-like segmentation",
+        "music": "attack precision, register contrast and interval definition",
+        "narrative": "degree to which claims and images become explicitly discriminated"
+      },
+      "continuity": {
+        "low": "fragments are heard and seen as separate events",
+        "high": "successive events are carried as one evolving gesture",
+        "visual": "trail persistence, field advection and morph duration",
+        "music": "common tones, legato overlap and motif retention",
+        "narrative": "sentence span and the amount of unresolved material carried forward"
+      },
+      "deixis": {
+        "low": "no privileged speaker, object or here",
+        "high": "the utterance points strongly toward an owner or named object",
+        "visual": "directional convergence, aperture bias and local framing",
+        "music": "tonic insistence, register anchoring and call-response asymmetry",
+        "narrative": "intensity of I, you, this and named identity"
+      },
+      "resonance": {
+        "low": "modalities and partials disagree",
+        "high": "sound, image, expectation and harmony reinforce one another",
+        "visual": "phase-locking, coherent caustics and cross-modal color agreement",
+        "music": "spectral consonance and alignment of motif voices",
+        "narrative": "felt fit between evidence, metaphor and claim"
+      },
+      "prosody": {
+        "low": "irregular timing without a reliable stress contour",
+        "high": "strong pulse, recurrence and phrase-shaped expectation",
+        "visual": "wave spacing, breath accents and travelling pressure fronts",
+        "music": "grid reliability, meter and phrase periodicity",
+        "narrative": "cadence, pause placement and rhetorical recurrence"
+      },
+      "semantic_density": {
+        "low": "sound has little recoverable context",
+        "high": "many relations are compressed into each event",
+        "visual": "nested interference, contextual echoes and relational topology",
+        "music": "polyphony, harmonic extension and motivic implication",
+        "narrative": "conceptual compression and dependence on earlier passages"
+      }
+    },
+    "warning": "These axes are compositional controls. They are not measurements of consciousness, meaning, neural activity or rasa."
+  },
+  "rasa_model": {
+    "method": "Each interval has a dominant and supporting rasa. The pair governs the relation among movement, color, register, pacing and narrative address; it is not converted into coordinates.",
+    "global_arc": "shanta -> adbhuta -> shringara -> hasya -> vira -> bhayanaka -> karuna -> adbhuta -> raudra -> adbhuta -> shanta -> shringara",
+    "intended_aftertaste": "Speech returns ordinary and miraculous: not a code pasted onto reality, but reality becoming answerable and shareable."
+  },
+  "tattva_model": {
+    "method": "Tattva level is used as an explicitly artistic constraint index: higher values open the field and reduce object-bound geometry; lower values condense it into sequential, sensory form.",
+    "warning": "The selected levels do not claim historical correspondences between tattvas, phonemes, MIDI notes, brain states or visual density. Conventional Earth=1 and Shiva=36 numbering is used."
+  },
+  "waypoints": [
+    {
+      "index": 0,
+      "time": 0.0,
+      "id": "unspoken_breath",
+      "title": "Before sound knows it is a word",
+      "rasa": {
+        "dominant": "shanta",
+        "supporting": "adbhuta"
+      },
+      "tattva": {
+        "level": 36,
+        "name": "Shiva",
+        "constraint": 0.0
+      },
+      "state": [0.05, 0.97, 0.05, 0.84, 0.16, 0.03],
+      "camera": "Suspended inside black-violet breath with no visible source.",
+      "visual_verb": "suspend",
+      "audience_undergoes": "The ear and eye search for a signal but meet a living continuum.",
+      "music": {
+        "bpm": 38,
+        "chord": "A open breath spectrum",
+        "notes": [33, 45, 52, 57, 64]
+      },
+      "narrative_function": "Separate physical vibration from meaning without making either feel dead."
+    },
+    {
+      "index": 1,
+      "time": 46.0,
+      "id": "recurring_difference",
+      "title": "A recurrence begins to ask for memory",
+      "rasa": {
+        "dominant": "adbhuta",
+        "supporting": "shanta"
+      },
+      "tattva": {
+        "level": 35,
+        "name": "Shakti",
+        "constraint": 0.06
+      },
+      "state": [0.23, 0.91, 0.13, 0.75, 0.43, 0.09],
+      "camera": "A copper filament repeats across depth, never from exactly the same place.",
+      "visual_verb": "recur",
+      "audience_undergoes": "Difference becomes expectation before it becomes a phoneme.",
+      "music": {
+        "bpm": 46,
+        "chord": "A suspended second",
+        "notes": [33, 45, 52, 59, 64]
+      },
+      "narrative_function": "Make temporal comparison and memory prerequisites for hearing form."
+    },
+    {
+      "index": 2,
+      "time": 94.0,
+      "id": "vowel_chamber",
+      "title": "The body gives vibration a chamber",
+      "rasa": {
+        "dominant": "shringara",
+        "supporting": "adbhuta"
+      },
+      "tattva": {
+        "level": 34,
+        "name": "Sadashiva",
+        "constraint": 0.16
+      },
+      "state": [0.54, 0.86, 0.26, 0.82, 0.64, 0.23],
+      "camera": "The field passes through a vast off-axis glass throat whose shape continuously tunes it.",
+      "visual_verb": "resonate",
+      "audience_undergoes": "Breath acquires color, pitch and intimacy through a body.",
+      "music": {
+        "bpm": 58,
+        "chord": "A major add nine",
+        "notes": [45, 52, 57, 59, 61, 64, 69]
+      },
+      "narrative_function": "Show articulation as embodied filtering rather than a symbolic label added to air."
+    },
+    {
+      "index": 3,
+      "time": 144.0,
+      "id": "context_hears",
+      "title": "What surrounds a sound enters what is heard",
+      "rasa": {
+        "dominant": "hasya",
+        "supporting": "adbhuta"
+      },
+      "tattva": {
+        "level": 10,
+        "name": "shabda-tanmatra",
+        "constraint": 0.48
+      },
+      "state": [0.68, 0.63, 0.41, 0.47, 0.56, 0.40],
+      "camera": "Two incompatible visual articulators refract one ambiguous acoustic ribbon into a third event.",
+      "visual_verb": "reinterpret",
+      "audience_undergoes": "Perception becomes playful and unreliable without becoming arbitrary.",
+      "music": {
+        "bpm": 66,
+        "chord": "F major over A with shifting third",
+        "notes": [45, 52, 53, 57, 60, 64, 69]
+      },
+      "narrative_function": "Introduce multisensory integration, predictive context and phonemic restoration."
+    },
+    {
+      "index": 4,
+      "time": 198.0,
+      "id": "name_cuts_world",
+      "title": "A name makes one difference portable",
+      "rasa": {
+        "dominant": "vira",
+        "supporting": "adbhuta"
+      },
+      "tattva": {
+        "level": 21,
+        "name": "manas",
+        "constraint": 0.58
+      },
+      "state": [0.83, 0.56, 0.74, 0.51, 0.72, 0.62],
+      "camera": "A flowing world crystallizes into mobile categorical facets around the copper thread.",
+      "visual_verb": "differentiate",
+      "audience_undergoes": "Naming feels empowering because it preserves a distinction across absence.",
+      "music": {
+        "bpm": 76,
+        "chord": "A minor six with sharpened edge",
+        "notes": [45, 52, 57, 60, 61, 64, 66]
+      },
+      "narrative_function": "Explain categories as acts that stabilize relevance, not mirrors that copy ready-made essences."
+    },
+    {
+      "index": 5,
+      "time": 252.0,
+      "id": "inner_speaker",
+      "title": "The word returns without entering the air",
+      "rasa": {
+        "dominant": "bhayanaka",
+        "supporting": "karuna"
+      },
+      "tattva": {
+        "level": 22,
+        "name": "ahamkara",
+        "constraint": 0.70
+      },
+      "state": [0.76, 0.67, 0.93, 0.48, 0.57, 0.77],
+      "camera": "The breath-thread folds behind the camera and becomes a silent Möbius voice around a dark local aperture.",
+      "visual_verb": "internalize",
+      "audience_undergoes": "A useful inner rehearsal begins to feel like a private speaker sealed inside.",
+      "music": {
+        "bpm": 84,
+        "chord": "E-flat tension folded over A",
+        "notes": [45, 51, 52, 57, 63, 68]
+      },
+      "narrative_function": "Treat inner speech as heterogeneous self-generated activity, then expose the owner it appears to install."
+    },
+    {
+      "index": 6,
+      "time": 306.0,
+      "id": "sentence_organism",
+      "title": "The end of a sentence changes its beginning",
+      "rasa": {
+        "dominant": "shringara",
+        "supporting": "vira"
+      },
+      "tattva": {
+        "level": 23,
+        "name": "buddhi",
+        "constraint": 0.54
+      },
+      "state": [0.61, 0.95, 0.52, 0.85, 0.76, 0.86],
+      "camera": "Separated spectral shards travel across time and disclose one large moving organism only when the final shard arrives.",
+      "visual_verb": "integrate",
+      "audience_undergoes": "Meaning is felt retroactively as a whole that reorganizes its own parts.",
+      "music": {
+        "bpm": 70,
+        "chord": "A six-nine sentence field",
+        "notes": [45, 52, 57, 59, 61, 64, 66, 69]
+      },
+      "narrative_function": "Prepare Bhartṛhari's sentence holism through temporal experience rather than definition."
+    },
+    {
+      "index": 7,
+      "time": 362.0,
+      "id": "semantic_flash",
+      "title": "The whole flashes—but what flashed?",
+      "rasa": {
+        "dominant": "adbhuta",
+        "supporting": "raudra"
+      },
+      "tattva": {
+        "level": 32,
+        "name": "shuddhavidya",
+        "constraint": 0.28
+      },
+      "state": [0.82, 0.44, 0.65, 0.43, 0.29, 0.95],
+      "camera": "The sentence-organism flashes into total coherence, then fractures into rival explanations without losing its afterimage.",
+      "visual_verb": "flash",
+      "audience_undergoes": "Wonder and intellectual conflict arrive in the same instant.",
+      "music": {
+        "bpm": 88,
+        "chord": "Chromatic argument around A",
+        "notes": [44, 45, 51, 52, 58, 59, 64, 69]
+      },
+      "narrative_function": "Present sphota and pratibha, then state that Pratyabhijna thinkers did not simply accept sphota."
+    },
+    {
+      "index": 8,
+      "time": 418.0,
+      "id": "speech_deepens",
+      "title": "Speech is deeper than the audible word",
+      "rasa": {
+        "dominant": "adbhuta",
+        "supporting": "shringara"
+      },
+      "tattva": {
+        "level": 33,
+        "name": "Ishvara",
+        "constraint": 0.20
+      },
+      "state": [0.72, 0.83, 0.31, 0.84, 0.52, 0.67],
+      "camera": "The camera passes obliquely through four continuously connected material regimes, never four labeled floors.",
+      "visual_verb": "deepen",
+      "audience_undergoes": "Audible sequence opens into silent organization, then into a nonsequential capacity for expression.",
+      "music": {
+        "bpm": 62,
+        "chord": "A quartal descent and return",
+        "notes": [45, 52, 57, 62, 67, 72]
+      },
+      "narrative_function": "Use vaikharī, madhyamā, paśyantī and parā as a metaphysical-linguistic descent while refusing brain-region equivalence."
+    },
+    {
+      "index": 9,
+      "time": 474.0,
+      "id": "listener_reversal",
+      "title": "The listener appears inside the utterance",
+      "rasa": {
+        "dominant": "adbhuta",
+        "supporting": "karuna"
+      },
+      "tattva": {
+        "level": 25,
+        "name": "purusha",
+        "constraint": 0.38
+      },
+      "state": [0.47, 0.93, 0.17, 0.91, 0.37, 0.53],
+      "camera": "A vast pressure corridor turns through the viewpoint; the apparent receiver becomes one fold in the wave.",
+      "visual_verb": "reverse",
+      "audience_undergoes": "Hearing ceases to feel like an outside object delivered to an inner spectator.",
+      "music": {
+        "bpm": 52,
+        "chord": "E major color over A",
+        "notes": [45, 52, 56, 59, 64, 68, 71]
+      },
+      "narrative_function": "Move from language processing to the Pratyabhijna claim that awareness is reflexive and self-articulating."
+    },
+    {
+      "index": 10,
+      "time": 526.0,
+      "id": "wordless_recognition",
+      "title": "Meaning loses its container",
+      "rasa": {
+        "dominant": "adbhuta",
+        "supporting": "shanta"
+      },
+      "tattva": {
+        "level": 36,
+        "name": "Shiva",
+        "constraint": 0.01
+      },
+      "state": [0.06, 0.99, 0.03, 0.99, 0.07, 0.02],
+      "camera": "All phonemic objects become one deep violet standing wave; at the end of silence, a copper seam learns to point without enclosing.",
+      "visual_verb": "recognize",
+      "audience_undergoes": "The absence of sound is heard as the shared capacity from which sound and meaning arise.",
+      "music": {
+        "bpm": 36,
+        "chord": "A harmonic convergence",
+        "notes": [33, 45, 52, 57, 61, 64, 69, 76]
+      },
+      "narrative_function": "Let the audiovisual system enact the thesis before the key sentence names it."
+    },
+    {
+      "index": 11,
+      "time": 558.0,
+      "id": "transparent_speech",
+      "title": "The world speaks without becoming a cage",
+      "rasa": {
+        "dominant": "shringara",
+        "supporting": "shanta"
+      },
+      "tattva": {
+        "level": 10,
+        "name": "shabda-tanmatra",
+        "constraint": 0.32
+      },
+      "state": [0.38, 0.97, 0.41, 0.93, 0.68, 0.49],
+      "camera": "Open calligraphic flocks cross a permeable copper horizon and remain visibly made from the original breath.",
+      "visual_verb": "share",
+      "audience_undergoes": "Language feels finite, embodied and participatory rather than false or absolute.",
+      "music": {
+        "bpm": 54,
+        "chord": "A major six-nine with open eleven",
+        "notes": [45, 52, 57, 59, 61, 64, 66, 69, 71]
+      },
+      "narrative_function": "Return ordinary words as gifts that coordinate worlds while remaining transparent to what exceeds them."
+    },
+    {
+      "index": 12,
+      "time": 600.0,
+      "id": "aftertone",
+      "title": "Breath keeps the meaning",
+      "rasa": {
+        "dominant": "shanta",
+        "supporting": "adbhuta"
+      },
+      "tattva": {
+        "level": 35,
+        "name": "Shakti",
+        "constraint": 0.08
+      },
+      "state": [0.17, 0.99, 0.22, 0.94, 0.42, 0.26],
+      "camera": "The last semantic flock becomes breath again, but its relational afterimage remains in the whole field.",
+      "visual_verb": "remain",
+      "audience_undergoes": "Silence after speech is not the silence before it.",
+      "music": {
+        "bpm": 42,
+        "chord": "A open spectrum transformed",
+        "notes": [33, 45, 52, 57, 59, 61, 64, 69]
+      },
+      "narrative_function": "Close the loop without erasing articulation, embodiment or plurality."
+    }
+  ],
+  "recognition_event": {
+    "visual_unbinding_start": 526.0,
+    "cadence_time": 540.5,
+    "silence_start": 541.0,
+    "key_sentence_time": 547.0,
+    "key_sentence": "A word is not a container. It is the world arriving in a form it can recognize.",
+    "return_time": 558.0
+  },
+  "score": {
+    "ticks_per_beat": 480,
+    "tonal_center_midi": 45,
+    "tonal_center_name": "A",
+    "continuity_motif": [45, 52, 59, 61],
+    "tracks": [
+      "breath spectrum",
+      "vowel pillars",
+      "consonant glass",
+      "syntax braid",
+      "semantic bloom"
+    ],
+    "silence_windows": [
+      {
+        "start": 541.0,
+        "end": 547.0,
+        "purpose": "Camatkara aperture: the sentence cadence decays into a dark standing wave; the key line and completed motif return together."
+      }
+    ]
+  },
+  "visual_contract": {
+    "uniforms": [
+      "u",
+      "t",
+      "u_audioVolume",
+      "u_audioBeat",
+      "u_stateA",
+      "u_stateB",
+      "u_stage",
+      "u_local",
+      "u_tattva"
+    ],
+    "semantic_intervals": 12,
+    "transition_rule": "Each material transformation begins causally inside the current one. Crossfades may carry history but may not replace the field with a new scene.",
+    "audio_rule": "Audio features alter pressure, wave speed, segmentation, travel and phase-locking. They must never function only as final brightness multipliers.",
+    "text_rule": "No on-screen explanatory text is required. The image must retain a coherent silent-viewing argument."
+  },
+  "epistemic_limits": [
+    "Phonemic restoration and audiovisual speech effects show constructive, contextual perception; they do not show that sensory evidence is irrelevant.",
+    "Predictive processing models mechanisms of inference and integration; it does not by itself explain why meaning is consciously experienced.",
+    "Bhartṛhari's sentence holism and pratibha are not neural theories.",
+    "Utpaladeva and Abhinavagupta drew deeply on Bhartṛhari while rejecting sphota; the film preserves that disagreement.",
+    "The four levels of speech are not mapped onto four brain regions or processing stages.",
+    "The Pratyabhijna claim that consciousness is reflexive and language-imbued is metaphysical and philosophical, not an empirical deduction from speech neuroscience."
+  ]
+}

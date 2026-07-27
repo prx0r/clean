@@ -1,0 +1,333 @@
+{
+  "composition_id": "the-world-learns-its-own-name",
+  "composition_sha256": "9d9272d564ce0b53d8cb738d3b96851bfe142cfa72fc8999a0953ea8e48b5be8",
+  "duration_seconds": 600.0,
+  "ticks_per_beat": 480,
+  "track_count": 6,
+  "event_counts": {
+    "note_on": 1166,
+    "tempo": 12,
+    "marker": 12
+  },
+  "continuity_motif": [
+    45,
+    52,
+    59,
+    61
+  ],
+  "motif_appearances": [
+    {
+      "waypoint": "unspoken_breath",
+      "available_notes": [
+        45
+      ],
+      "events": 13
+    },
+    {
+      "waypoint": "recurring_difference",
+      "available_notes": [
+        45
+      ],
+      "events": 21
+    },
+    {
+      "waypoint": "vowel_chamber",
+      "available_notes": [
+        45,
+        52
+      ],
+      "events": 35
+    },
+    {
+      "waypoint": "context_hears",
+      "available_notes": [
+        45,
+        52
+      ],
+      "events": 39
+    },
+    {
+      "waypoint": "name_cuts_world",
+      "available_notes": [
+        45,
+        52,
+        59
+      ],
+      "events": 55
+    },
+    {
+      "waypoint": "inner_speaker",
+      "available_notes": [
+        45,
+        52,
+        59
+      ],
+      "events": 50
+    },
+    {
+      "waypoint": "sentence_organism",
+      "available_notes": [
+        45,
+        52,
+        59,
+        61
+      ],
+      "events": 55
+    },
+    {
+      "waypoint": "semantic_flash",
+      "available_notes": [
+        45,
+        52,
+        59,
+        61
+      ],
+      "events": 41
+    },
+    {
+      "waypoint": "speech_deepens",
+      "available_notes": [
+        45,
+        52,
+        59
+      ],
+      "events": 36
+    },
+    {
+      "waypoint": "listener_reversal",
+      "available_notes": [
+        45,
+        52,
+        59
+      ],
+      "events": 24
+    },
+    {
+      "waypoint": "wordless_recognition",
+      "available_notes": [
+        45
+      ],
+      "events": 8
+    },
+    {
+      "waypoint": "transparent_speech",
+      "available_notes": [
+        45,
+        52
+      ],
+      "events": 29
+    }
+  ],
+  "silence_windows": [
+    {
+      "start": 541.0,
+      "end": 547.0,
+      "purpose": "Camatkara aperture: the sentence cadence decays into a dark standing wave; the key line and completed motif return together."
+    }
+  ],
+  "mapping": {
+    "articulation": "consonant attack density, voice-entry precision and spectral edge",
+    "continuity": "note overlap, motif sustain and phrase carry",
+    "deixis": "root pressure, local register anchoring and call-response bias",
+    "resonance": "vowel voice strength, harmonic agreement and semantic bloom",
+    "prosody": "grid reliability, motif spacing and accent regularity",
+    "semantic_density": "polyphony, available motif notes and harmonic extension"
+  },
+  "chapters": [
+    {
+      "time": 0.0,
+      "id": "unspoken_breath",
+      "bpm": 38,
+      "chord": "A open breath spectrum",
+      "notes": [
+        33,
+        45,
+        52,
+        57,
+        64
+      ]
+    },
+    {
+      "time": 46.0,
+      "id": "recurring_difference",
+      "bpm": 46,
+      "chord": "A suspended second",
+      "notes": [
+        33,
+        45,
+        52,
+        59,
+        64
+      ]
+    },
+    {
+      "time": 94.0,
+      "id": "vowel_chamber",
+      "bpm": 58,
+      "chord": "A major add nine",
+      "notes": [
+        45,
+        52,
+        57,
+        59,
+        61,
+        64,
+        69
+      ]
+    },
+    {
+      "time": 144.0,
+      "id": "context_hears",
+      "bpm": 66,
+      "chord": "F major over A with shifting third",
+      "notes": [
+        45,
+        52,
+        53,
+        57,
+        60,
+        64,
+        69
+      ]
+    },
+    {
+      "time": 198.0,
+      "id": "name_cuts_world",
+      "bpm": 76,
+      "chord": "A minor six with sharpened edge",
+      "notes": [
+        45,
+        52,
+        57,
+        60,
+        61,
+        64,
+        66
+      ]
+    },
+    {
+      "time": 252.0,
+      "id": "inner_speaker",
+      "bpm": 84,
+      "chord": "E-flat tension folded over A",
+      "notes": [
+        45,
+        51,
+        52,
+        57,
+        63,
+        68
+      ]
+    },
+    {
+      "time": 306.0,
+      "id": "sentence_organism",
+      "bpm": 70,
+      "chord": "A six-nine sentence field",
+      "notes": [
+        45,
+        52,
+        57,
+        59,
+        61,
+        64,
+        66,
+        69
+      ]
+    },
+    {
+      "time": 362.0,
+      "id": "semantic_flash",
+      "bpm": 88,
+      "chord": "Chromatic argument around A",
+      "notes": [
+        44,
+        45,
+        51,
+        52,
+        58,
+        59,
+        64,
+        69
+      ]
+    },
+    {
+      "time": 418.0,
+      "id": "speech_deepens",
+      "bpm": 62,
+      "chord": "A quartal descent and return",
+      "notes": [
+        45,
+        52,
+        57,
+        62,
+        67,
+        72
+      ]
+    },
+    {
+      "time": 474.0,
+      "id": "listener_reversal",
+      "bpm": 52,
+      "chord": "E major color over A",
+      "notes": [
+        45,
+        52,
+        56,
+        59,
+        64,
+        68,
+        71
+      ]
+    },
+    {
+      "time": 526.0,
+      "id": "wordless_recognition",
+      "bpm": 36,
+      "chord": "A harmonic convergence",
+      "notes": [
+        33,
+        45,
+        52,
+        57,
+        61,
+        64,
+        69,
+        76
+      ]
+    },
+    {
+      "time": 558.0,
+      "id": "transparent_speech",
+      "bpm": 54,
+      "chord": "A major six-nine with open eleven",
+      "notes": [
+        45,
+        52,
+        57,
+        59,
+        61,
+        64,
+        66,
+        69,
+        71
+      ]
+    },
+    {
+      "time": 600.0,
+      "id": "aftertone",
+      "bpm": 42,
+      "chord": "A open spectrum transformed",
+      "notes": [
+        33,
+        45,
+        52,
+        57,
+        59,
+        61,
+        64,
+        69
+      ]
+    }
+  ]
+}

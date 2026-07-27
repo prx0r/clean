@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "id": "yogic-subtle-body",
+  "title": "Yogic Subtle-Body Maps",
+  "description": "A child of human-anatomy adding chakras, central and paired channels, nāḍī networks, kuṇḍalinī, prāṇa-apāna balance, dvādaśānta ascent and explicit physical-versus-subtle comparison.",
+  "extends": ["human-anatomy"],
+  "defaultTheme": "anatomyIvory",
+  "runtimeModule": "../../src/anatomy-visuals.mjs",
+  "themes": [],
+  "assets": [
+    {
+      "id": "central-channel",
+      "description": "A luminous central practice-axis joining the root and crown landmarks.",
+      "category": "subtle-body-structure",
+      "epistemicMode": "yogic-contemplative-model",
+      "semanticTags": ["sushumna", "central-channel", "axis", "subtle-body"],
+      "parameters": {
+        "width": { "type": "number", "minimum": 0.5, "maximum": 6, "default": 2.2 }
+      },
+      "provenance": ["dvadasanta_axis_pack.py", "cosmic_body_pack.py"]
+    },
+    {
+      "id": "chakra-stack",
+      "description": "Seven parametrically animated lotus centers anchored to the canonical body coordinate system.",
+      "category": "subtle-body-structure",
+      "epistemicMode": "yogic-contemplative-model",
+      "semanticTags": ["chakra", "lotus", "axis", "subtle-body"],
+      "parameters": {
+        "active": { "type": "integer", "minimum": 0, "maximum": 6 },
+        "labels": { "type": "boolean", "default": false }
+      },
+      "provenance": ["cosmic_body_pack.py", "dvadasanta_axis_pack.py"]
+    },
+    {
+      "id": "ida-pingala",
+      "description": "Paired oscillating channels weave around the central axis and carry opposing timed pulses.",
+      "category": "subtle-body-structure",
+      "epistemicMode": "yogic-contemplative-model",
+      "semanticTags": ["ida", "pingala", "nadi", "channels"],
+      "parameters": {
+        "turns": { "type": "number", "minimum": 1, "maximum": 7, "default": 3.5 },
+        "amplitude": { "type": "number", "minimum": 8, "maximum": 60, "default": 27 }
+      },
+      "provenance": ["cosmic_body_pack.py: paths within the body"]
+    },
+    {
+      "id": "nadi-network",
+      "description": "A fine branching channel network links axial centers with limbs and extremities.",
+      "category": "subtle-body-structure",
+      "epistemicMode": "yogic-contemplative-model",
+      "semanticTags": ["nadi", "network", "channels", "flow"],
+      "parameters": {},
+      "provenance": ["cosmic_body_pack.py: six channels in body"]
+    },
+    {
+      "id": "kundalini-coil",
+      "description": "A coiled root current gradually uncoils and lifts toward the central axis.",
+      "category": "subtle-body-motion",
+      "epistemicMode": "yogic-symbolic-model",
+      "semanticTags": ["kundalini", "coil", "root", "ascent"],
+      "parameters": {
+        "uncoil": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "provenance": ["dvadasanta_axis_pack.py: rising current"]
+    },
+    {
+      "id": "crown-field",
+      "description": "An expanding field of ellipses and luminosity opens above the crown coordinate.",
+      "category": "subtle-body-motion",
+      "epistemicMode": "yogic-symbolic-model",
+      "semanticTags": ["crown", "expansion", "field", "opening"],
+      "parameters": {},
+      "provenance": ["dvadasanta_axis_pack.py: crown opening and external stations"]
+    }
+  ],
+  "mechanisms": [
+    {
+      "id": "chakra-axis",
+      "description": "Seven lotus centers activate in sequence along a shared contemplative body-axis.",
+      "relations": ["sequence", "coordination", "containment"],
+      "operators": ["sequence", "coordinate", "frame"],
+      "semanticTags": ["chakras", "axis", "meditation", "subtle-body"],
+      "motionProof": "Centers activate in ordered relation along one stable axis, turning a list of chakras into a staged practice-map.",
+      "epistemicMode": "yogic-contemplative-model",
+      "parameters": {
+        "labels": { "type": "boolean", "default": true }
+      },
+      "provenance": ["cosmic_body_pack.py", "dvadasanta_axis_pack.py"]
+    },
+    {
+      "id": "nadi-flow",
+      "description": "Paired lateral currents weave around a central channel while timed pulses preserve their difference.",
+      "relations": ["coordination", "propagation", "sequence"],
+      "operators": ["coordinate", "propagate", "sequence"],
+      "semanticTags": ["nadi", "ida", "pingala", "sushumna", "flow"],
+      "motionProof": "Opposed pulses travel through different woven routes around one stable center, making channel coordination visible across time.",
+      "epistemicMode": "yogic-contemplative-model",
+      "parameters": {},
+      "provenance": ["cosmic_body_pack.py: paths within the body"]
+    },
+    {
+      "id": "kundalini-ascent",
+      "description": "A coiled root current uncoils and rises through staged centers before opening into a crown field.",
+      "relations": ["transformation", "sequence", "propagation"],
+      "operators": ["transform", "sequence", "propagate"],
+      "semanticTags": ["kundalini", "ascent", "chakra", "transformation"],
+      "motionProof": "The root coil changes topology, traverses the stable axis and opens at the crown; the argument is the transformation, not a glowing snake icon.",
+      "epistemicMode": "yogic-symbolic-model",
+      "parameters": {},
+      "provenance": ["dvadasanta_axis_pack.py: ascent stations"]
+    },
+    {
+      "id": "subtle-circulation",
+      "description": "A current rises centrally and returns around the body, preserving cyclic return rather than treating ascent as escape.",
+      "relations": ["feedback", "propagation", "sequence"],
+      "operators": ["loop", "propagate", "sequence"],
+      "semanticTags": ["circulation", "prana", "return", "energy"],
+      "motionProof": "Multiple pulses complete the full route and visibly return to their origin, distinguishing circulation from one-way ascent.",
+      "epistemicMode": "yogic-contemplative-model",
+      "parameters": {},
+      "provenance": ["pranavicara_breath_axis_pack.py: respiratory reversals", "cakrodaya_mantra_cycles_pack.py"]
+    },
+    {
+      "id": "physical-subtle-compare",
+      "description": "Parallel bodies keep biomedical systems and yogic practice-maps distinct while allowing functional comparison.",
+      "relations": ["comparison", "divergence", "convergence"],
+      "operators": ["compare", "differentiate", "coordinate"],
+      "semanticTags": ["science", "subtle-body", "comparison", "epistemology"],
+      "motionProof": "Physical rhythms and subtle currents animate independently on aligned bodies, revealing possible functional correspondences without merging their ontological status.",
+      "epistemicMode": "explicit-category-comparison",
+      "parameters": {},
+      "provenance": ["human-anatomy pack plus yogic-subtle-body pack"]
+    },
+    {
+      "id": "dvadasanta-ascent",
+      "description": "Twelve named contemplative stations unfold from the heart through bodily, cranial and exterior coordinates.",
+      "relations": ["sequence", "transformation", "containment"],
+      "operators": ["sequence", "transform", "open"],
+      "semanticTags": ["dvadasanta", "heart", "crown", "ascent", "tantraloka"],
+      "motionProof": "A current reaches each station in strict order and then crosses the body boundary, so the sequence and change of containment are both visible.",
+      "epistemicMode": "textual-yogic-map",
+      "parameters": {},
+      "provenance": ["dvadasanta_axis_pack.py: fourteen-scene source pack"]
+    },
+    {
+      "id": "prana-apana-balance",
+      "description": "Descending and ascending currents converge at the navel into a temporary luminous equilibrium.",
+      "relations": ["convergence", "coordination", "transformation"],
+      "operators": ["coordinate", "compare", "transform"],
+      "semanticTags": ["prana", "apana", "navel", "balance", "breath"],
+      "motionProof": "Opposed directional currents visibly approach the same center and reorganise as a larger shared field.",
+      "epistemicMode": "yogic-contemplative-model",
+      "parameters": {},
+      "provenance": ["pranavicara_breath_axis_pack.py: opposing vector balance"]
+    }
+  ],
+  "selectionPolicy": {
+    "captionPolicy": "Use short Sanskrit terms or anatomical landmarks as seals, never paragraphs.",
+    "preferredSemanticTags": ["chakra", "nadi", "kundalini", "prana", "meditation", "tantraloka"],
+    "forbiddenLiteralizations": ["chakras presented as anatomical organs", "kundalini presented as measured neural fluid", "generic rainbow silhouette without a relation"],
+    "epistemicRule": "Every subtle-body scene must be identified as a textual, contemplative, phenomenological or symbolic model unless the narration explicitly discusses empirical evidence.",
+    "maximumConsecutiveMechanism": 2
+  }
+}

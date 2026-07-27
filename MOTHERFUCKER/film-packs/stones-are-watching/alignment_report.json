@@ -1,0 +1,10 @@
+{
+  "video_duration_seconds": 697.583089,
+  "audio_duration_seconds": 697.671202,
+  "absolute_difference_seconds": 0.0881130000000212,
+  "planned_runtime_seconds": 698.2,
+  "shot_count": 106,
+  "visual_lead_seconds": 0,
+  "draft_frame_quantization_seconds": 0.125,
+  "method": "Audio-first per-shot timing. Each visual is generated only after exact shot audio duration is known."
+}

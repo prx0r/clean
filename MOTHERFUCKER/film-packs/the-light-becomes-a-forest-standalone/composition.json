@@ -1,0 +1,447 @@
+{
+  "schema_version": 1,
+  "id": "the-light-becomes-a-forest",
+  "title": "The Light Becomes a Forest",
+  "duration_seconds": 600.0,
+  "fps_reference": 24,
+  "central_question": "If Śiva is complete and free, why does consciousness appear as finite living beings with hunger, limits, conflict, care, and biological drives?",
+  "thesis": "Biology can explain how bounded systems maintain themselves through gradients, prediction, action, and multiscale cooperation. Trika makes a different metaphysical wager: limitation is not alien matter imposed on consciousness but freedom becoming local enough for difference, relation, and care. The film preserves the gap between those claims while making their tension experientially intelligible.",
+  "artistic_world": {
+    "name": "the contrapuntal forest",
+    "continuity_object": "one five-lobed white-gold seed whose veins become every later scale of life",
+    "material": "midnight mineral water becoming translucent seed, cell, root, leaf, weather, animal trace, constellation, and forest without leaving one living stained-glass continuum",
+    "camera_rule": "the camera begins as open radiance, is successively localized inside seed, cell, appetite, organism, ecosystem, and heart, then discovers that every local view is a voice within one polyphonic field",
+    "palette": {
+      "void": "#030715",
+      "radiance": "#ffe9a6",
+      "will": "#ff785f",
+      "knowledge": "#59cfff",
+      "action": "#7cf28f",
+      "earth": "#6f4cff",
+      "care": "#ffb4d9",
+      "afterlight": "#f7fff0"
+    },
+    "forbidden": [
+      "a phononic cathedral or copper horizon",
+      "caption-led explanation",
+      "repeated centered mandalas",
+      "literal brain or chakra diagrams",
+      "nature used as decorative wallpaper",
+      "a drone substituting for composition",
+      "white-flash enlightenment",
+      "scientific mechanisms presented as proof of Trika metaphysics"
+    ]
+  },
+  "state_space": {
+    "name": "Abundance State Vector",
+    "order": [
+      "radiance",
+      "localization",
+      "appetite",
+      "reciprocity",
+      "fecundity",
+      "recognition"
+    ],
+    "axes": {
+      "radiance": {
+        "low": "light is occluded by dense local form and harmonic shadow",
+        "high": "every form is visibly continuous with the luminous field",
+        "visual": "transmission, spectral lift, negative-space luminosity, and shared material",
+        "music": "open upper partials, consonant common tones, and register air",
+        "narrative": "how directly awareness is treated as self-manifesting rather than inferred behind objects"
+      },
+      "localization": {
+        "low": "no voice, body, or camera position owns the field",
+        "high": "strong membranes, registers, perspectives, and independent voices",
+        "visual": "boundary hardness, parallax, aperture scale, and voice separation",
+        "music": "contrapuntal independence, spatial pan, register identity, and cadence ownership",
+        "narrative": "degree of finite point of view and grammatical agency"
+      },
+      "appetite": {
+        "low": "no unresolved gradient demands action",
+        "high": "motion follows urgent differences, suspensions, and unmet tendencies",
+        "visual": "gradient seeking, directional growth, contraction, and resource flow",
+        "music": "dominant pressure, syncopation, chromatic approach, and rhythmic drive",
+        "narrative": "biological need, incompleteness, preference, and directed concern"
+      },
+      "reciprocity": {
+        "low": "voices coexist or compete without changing one another",
+        "high": "each event alters and is altered by the surrounding field",
+        "visual": "exchange, entrainment, mutual deformation, and shared pathways",
+        "music": "imitation, invertible counterpoint, suspensions resolving through another voice, and call-response",
+        "narrative": "care, co-regulation, symbiosis, and second-person address"
+      },
+      "fecundity": {
+        "low": "few forms and sparse event density",
+        "high": "branching, ornament, species, scales, and voices proliferate without losing legibility",
+        "visual": "phyllotaxis, branching depth, particle birth, and nested living geometry",
+        "music": "voice count, ornament density, sequence length, and contrapuntal stretto",
+        "narrative": "the number of scales and consequences carried in each claim"
+      },
+      "recognition": {
+        "low": "the recurring identity is fragmented or mistaken for isolated events",
+        "high": "one subject is recognized across inversion, scale, timbre, body, and perspective",
+        "visual": "motif recurrence across seed, vein, river, flock, and constellation",
+        "music": "completeness and transform-invariance of the fugue subject",
+        "narrative": "the degree to which the listener can feel the whole before it is named"
+      }
+    },
+    "warning": "The axes are authored cross-modal controls. They do not measure consciousness, value, biological agency, rasa, or spiritual attainment."
+  },
+  "rasa_model": {
+    "method": "Dominant and supporting rasa govern the relationship among counterpoint, movement, color, narrative address, and expectation. Rasa is never reduced to a state-vector coordinate.",
+    "global_arc": "shanta -> adbhuta -> vira -> adbhuta -> karuna -> bhayanaka -> vira -> raudra -> shringara -> adbhuta -> shanta -> shringara",
+    "intended_aftertaste": "The viewer returns to ordinary embodiment with renewed tenderness: limitation is not automatically a prison; it is also what makes a promise, a need, an answer, and a shared world possible."
+  },
+  "recognition_event": {
+    "visual_unbinding_start": 516.0,
+    "cadence_time": 539.5,
+    "silence_start": 540.0,
+    "key_sentence_time": 545.0,
+    "key_sentence": "You are not a fragment exiled from the light. You are the light, made local enough to care.",
+    "return_time": 548.0
+  },
+  "visual_contract": {
+    "uniforms": [
+      "u",
+      "t",
+      "u_audioVolume",
+      "u_audioBeat",
+      "u_stateA",
+      "u_stateB",
+      "u_musicA",
+      "u_musicB",
+      "u_stage",
+      "u_local",
+      "u_tattva"
+    ],
+    "semantic_intervals": 12,
+    "transition_rule": "Every new ecology grows from the seed-vein material already present. Crossfades may preserve history but may not replace one scene with an unrelated illustration.",
+    "music_rule": "The score leads formal development. Subject entry, inversion, augmentation, stretto, cadence, and silence alter visual causality and camera behavior, not only exposure.",
+    "audio_rule": "Voice energy, harmonic tension, subject presence, volume, and beat alter branching, exchange, parallax, particle traffic, and material phase before final color treatment.",
+    "text_rule": "No explanatory text is needed in the film. Every interval must communicate a unique causal verb under silent viewing."
+  },
+  "score": {
+    "ticks_per_beat": 480,
+    "tonal_center_midi": 50,
+    "tonal_center_name": "D",
+    "fugue_subject_intervals": [
+      0,
+      7,
+      5,
+      3,
+      2,
+      0,
+      2,
+      3,
+      5,
+      3,
+      2,
+      0
+    ],
+    "fugue_subject_beats": [
+      0.5,
+      0.5,
+      1.0,
+      0.5,
+      0.5,
+      1.0,
+      0.5,
+      0.5,
+      1.0,
+      0.5,
+      0.5,
+      1.0
+    ],
+    "tracks": [
+      "Earth Cello",
+      "Root Viola",
+      "Leaf Violin",
+      "Wind Flute",
+      "Light Oboe",
+      "River Harpsichord"
+    ],
+    "silence_windows": [
+      {
+        "start": 540.0,
+        "end": 545.0,
+        "purpose": "The five contrapuntal voices complete a cadential gathering, then yield five exact seconds in which the forest remains visually alive without musical causation. The complete subject returns with the recognition sentence."
+      }
+    ]
+  },
+  "tattva_model": {
+    "method": "Selected tattvas provide an explicitly philosophical dramatic lens. Their constraint value is an artistic openness control, not a scientific variable or an audiovisual correspondence.",
+    "warning": "Conventional Earth=1 and Shiva=36 numbering is used. Kalā (limited agency, 30) and kāla (time, 27) are kept distinct."
+  },
+  "epistemic_limits": [
+    "Active inference and allostasis model how living systems maintain viable states; they do not explain why consciousness exists or why an absolute would manifest.",
+    "Multiscale competency describes nested biological problem-solving and plasticity; it does not establish that cells possess human-like experience.",
+    "The comparison between biological regulation and icchā-jñāna-kriyā is structural and exploratory, not an identity claim.",
+    "Trika's account of manifestation as svātantrya is metaphysical. It is not a deduction from thermodynamics, morphogenesis, predictive processing, or music.",
+    "Rāga as a kañcuka is not simply a neurotransmitter, reward signal, or homeostatic error.",
+    "The film treats care as the widening of what a system acts to preserve. This is an artistic and philosophical synthesis, not a consensus definition in biology.",
+    "The fugue demonstrates how independence can intensify a whole; it is an analogy, not evidence that the cosmos is literally music."
+  ],
+  "waypoints": [
+    {
+      "index": 0,
+      "time": 0.0,
+      "id": "radiance_without_opposite",
+      "title": "Before the first life, fullness has no opposite",
+      "visual_verb": "pervade",
+      "state": [0.96, 0.02, 0.01, 0.98, 0.03, 0.16],
+      "rasa": {"dominant": "shanta", "supporting": "adbhuta"},
+      "tattva": {"level": 36, "name": "Shiva", "constraint": 0.0},
+      "music": {
+        "bpm": 52,
+        "key": "D",
+        "mode": "luminous Dorian",
+        "chord": "D open spectrum without a cadence",
+        "notes": [38, 45, 50, 57, 62, 65, 69],
+        "progression": [[2, 9, 4], [2, 7, 0], [2, 5, 9], [2, 9, 11]],
+        "fugue_technique": "prelude: subject intervals appear only as dispersed seed-pulses",
+        "subject_voices": []
+      }
+    },
+    {
+      "index": 1,
+      "time": 44.0,
+      "id": "difference_sings",
+      "title": "One difference begins to sing",
+      "visual_verb": "germinate",
+      "state": [0.88, 0.18, 0.10, 0.86, 0.12, 0.28],
+      "rasa": {"dominant": "adbhuta", "supporting": "shanta"},
+      "tattva": {"level": 35, "name": "Shakti", "constraint": 0.05},
+      "music": {
+        "bpm": 64,
+        "key": "D",
+        "mode": "D Dorian",
+        "chord": "D minor subject over open fifths",
+        "notes": [38, 45, 50, 53, 57, 60, 62, 65],
+        "progression": [[2, 5, 9], [7, 10, 2], [0, 4, 7], [9, 0, 4]],
+        "fugue_technique": "first exposition: subject then tonal answer",
+        "subject_voices": [2, 3]
+      }
+    },
+    {
+      "index": 2,
+      "time": 92.0,
+      "id": "three_powers",
+      "title": "Will, knowing, and action enter as one counterpoint",
+      "visual_verb": "differentiate",
+      "state": [0.80, 0.34, 0.24, 0.78, 0.24, 0.43],
+      "rasa": {"dominant": "vira", "supporting": "adbhuta"},
+      "tattva": {"level": 34, "name": "Sadashiva", "constraint": 0.13},
+      "music": {
+        "bpm": 72,
+        "key": "D",
+        "mode": "D Dorian with triadic color",
+        "chord": "three imitative voices around D",
+        "notes": [38, 45, 50, 53, 55, 57, 60, 62, 65, 69],
+        "progression": [[2, 5, 9], [5, 9, 0], [10, 2, 5], [7, 10, 2]],
+        "fugue_technique": "three-power canon: original, answer, and inversion",
+        "subject_voices": [1, 2, 4]
+      }
+    },
+    {
+      "index": 3,
+      "time": 142.0,
+      "id": "freedom_accepts_constraint",
+      "title": "Freedom accepts a location",
+      "visual_verb": "contract",
+      "state": [0.68, 0.70, 0.42, 0.54, 0.34, 0.48],
+      "rasa": {"dominant": "adbhuta", "supporting": "karuna"},
+      "tattva": {"level": 31, "name": "maya", "constraint": 0.48},
+      "music": {
+        "bpm": 84,
+        "key": "D",
+        "mode": "B-flat Lydian shadow over D",
+        "chord": "contracting suspensions and registral cells",
+        "notes": [38, 45, 50, 53, 55, 58, 60, 64, 65],
+        "progression": [[10, 2, 5], [3, 7, 10], [8, 0, 3], [9, 1, 4]],
+        "fugue_technique": "subject compressed into registral compartments",
+        "subject_voices": [0, 2, 3]
+      }
+    },
+    {
+      "index": 4,
+      "time": 194.0,
+      "id": "boundary_learns_care",
+      "title": "A boundary learns what must be kept alive",
+      "visual_verb": "metabolize",
+      "state": [0.62, 0.82, 0.58, 0.52, 0.46, 0.52],
+      "rasa": {"dominant": "karuna", "supporting": "vira"},
+      "tattva": {"level": 30, "name": "kala", "constraint": 0.62},
+      "music": {
+        "bpm": 92,
+        "key": "D",
+        "mode": "D minor",
+        "chord": "walking bass beneath exchanging suspensions",
+        "notes": [38, 45, 50, 53, 57, 60, 62, 64, 69],
+        "progression": [[2, 5, 9], [0, 4, 7], [5, 9, 0], [9, 1, 4]],
+        "fugue_technique": "invertible counterpoint between membrane and resource flow",
+        "subject_voices": [0, 1, 2]
+      }
+    },
+    {
+      "index": 5,
+      "time": 248.0,
+      "id": "hunger_bends_light",
+      "title": "Hunger bends the field toward a future",
+      "visual_verb": "seek",
+      "state": [0.54, 0.88, 0.92, 0.30, 0.54, 0.46],
+      "rasa": {"dominant": "bhayanaka", "supporting": "karuna"},
+      "tattva": {"level": 28, "name": "raga", "constraint": 0.78},
+      "music": {
+        "bpm": 104,
+        "key": "A",
+        "mode": "A Phrygian dominant pressure",
+        "chord": "chromatic dominant sequence refusing arrival",
+        "notes": [40, 45, 49, 52, 55, 58, 61, 64, 67],
+        "progression": [[9, 1, 4], [4, 8, 11], [10, 2, 5], [1, 5, 8]],
+        "fugue_technique": "subject pursued by its chromatic shadow",
+        "subject_voices": [0, 2, 4]
+      }
+    },
+    {
+      "index": 6,
+      "time": 304.0,
+      "id": "selves_within_selves",
+      "title": "Every living self is made of other selves",
+      "visual_verb": "nest",
+      "state": [0.60, 0.74, 0.70, 0.66, 0.66, 0.62],
+      "rasa": {"dominant": "vira", "supporting": "adbhuta"},
+      "tattva": {"level": 25, "name": "purusha", "constraint": 0.54},
+      "music": {
+        "bpm": 88,
+        "key": "D",
+        "mode": "D minor with nested modal answers",
+        "chord": "subjects at three scales over a moving ground",
+        "notes": [38, 45, 50, 53, 55, 57, 60, 62, 65, 69],
+        "progression": [[2, 5, 9], [7, 10, 2], [5, 9, 0], [0, 4, 7]],
+        "fugue_technique": "augmentation, original, and diminution nested together",
+        "subject_voices": [0, 1, 2, 3]
+      }
+    },
+    {
+      "index": 7,
+      "time": 360.0,
+      "id": "many_goals_cross",
+      "title": "Many goods cross without a conductor",
+      "visual_verb": "contend",
+      "state": [0.48, 0.76, 0.84, 0.34, 0.82, 0.48],
+      "rasa": {"dominant": "raudra", "supporting": "vira"},
+      "tattva": {"level": 26, "name": "niyati", "constraint": 0.70},
+      "music": {
+        "bpm": 112,
+        "key": "D",
+        "mode": "chromatic D minor",
+        "chord": "five-voice stretto with unresolved suspensions",
+        "notes": [37, 38, 44, 45, 49, 50, 53, 56, 59, 62, 65],
+        "progression": [[2, 5, 8], [11, 3, 6], [7, 10, 1], [4, 8, 11]],
+        "fugue_technique": "stretto and contrary-motion conflict",
+        "subject_voices": [0, 1, 2, 3, 4]
+      }
+    },
+    {
+      "index": 8,
+      "time": 416.0,
+      "id": "care_widens_self",
+      "title": "Care widens what a self can mean",
+      "visual_verb": "reciprocate",
+      "state": [0.70, 0.52, 0.50, 0.94, 0.86, 0.76],
+      "rasa": {"dominant": "shringara", "supporting": "karuna"},
+      "tattva": {"level": 29, "name": "vidya", "constraint": 0.42},
+      "music": {
+        "bpm": 80,
+        "key": "G",
+        "mode": "G major with D Dorian memory",
+        "chord": "invertible canon resolving across voices",
+        "notes": [43, 47, 50, 55, 57, 59, 62, 66, 67, 71],
+        "progression": [[7, 11, 2], [0, 4, 7], [5, 9, 0], [2, 6, 9]],
+        "fugue_technique": "double canon and exchanged countersubject",
+        "subject_voices": [1, 2, 3, 4]
+      }
+    },
+    {
+      "index": 9,
+      "time": 472.0,
+      "id": "forest_fugue",
+      "title": "The forest composes without becoming one creature",
+      "visual_verb": "orchestrate",
+      "state": [0.82, 0.46, 0.42, 0.92, 0.98, 0.88],
+      "rasa": {"dominant": "adbhuta", "supporting": "shringara"},
+      "tattva": {"level": 32, "name": "shuddhavidya", "constraint": 0.24},
+      "music": {
+        "bpm": 96,
+        "key": "D",
+        "mode": "radiant D Mixolydian",
+        "chord": "six-part ecosystem fugue",
+        "notes": [38, 45, 50, 54, 57, 59, 62, 64, 66, 69, 71, 74],
+        "progression": [[2, 6, 9], [7, 11, 2], [9, 1, 4], [5, 9, 0]],
+        "fugue_technique": "full exposition, sequence, and stretto in a shared harmonic ecology",
+        "subject_voices": [0, 1, 2, 3, 4, 5]
+      }
+    },
+    {
+      "index": 10,
+      "time": 516.0,
+      "id": "heart_hears_whole",
+      "title": "The heart hears what no voice owns",
+      "visual_verb": "remember",
+      "state": [0.90, 0.20, 0.18, 0.98, 0.56, 0.96],
+      "rasa": {"dominant": "shanta", "supporting": "adbhuta"},
+      "tattva": {"level": 36, "name": "Shiva", "constraint": 0.02},
+      "music": {
+        "bpm": 58,
+        "key": "D",
+        "mode": "D minor turning toward major",
+        "chord": "augmented subject gathered into a five-voice chorale",
+        "notes": [38, 45, 50, 53, 57, 62, 66, 69, 74],
+        "progression": [[10, 2, 5], [5, 9, 0], [7, 11, 2], [2, 6, 9]],
+        "fugue_technique": "augmentation, cadential gathering, five-second grand pause",
+        "subject_voices": [0, 1, 2, 3, 4]
+      }
+    },
+    {
+      "index": 11,
+      "time": 548.0,
+      "id": "light_becomes_forest",
+      "title": "Every local light enters the abundance",
+      "visual_verb": "abound",
+      "state": [0.96, 0.40, 0.34, 0.97, 1.0, 1.0],
+      "rasa": {"dominant": "shringara", "supporting": "shanta"},
+      "tattva": {"level": 35, "name": "Shakti", "constraint": 0.06},
+      "music": {
+        "bpm": 72,
+        "key": "D",
+        "mode": "D major with open six and nine",
+        "chord": "grand contrapuntal return without a closed final cadence",
+        "notes": [38, 45, 50, 54, 57, 59, 62, 64, 66, 69, 71, 74, 78],
+        "progression": [[2, 6, 9], [9, 1, 4], [7, 11, 2], [2, 6, 11]],
+        "fugue_technique": "subject, inversion, augmentation, and countersubject flower simultaneously",
+        "subject_voices": [0, 1, 2, 3, 4, 5]
+      }
+    },
+    {
+      "index": 12,
+      "time": 600.0,
+      "id": "afterlight",
+      "title": "The forest continues after the final bar",
+      "visual_verb": "continue",
+      "state": [0.94, 0.28, 0.22, 0.99, 0.72, 0.98],
+      "rasa": {"dominant": "shanta", "supporting": "shringara"},
+      "tattva": {"level": 34, "name": "Sadashiva", "constraint": 0.08},
+      "music": {
+        "bpm": 48,
+        "key": "D",
+        "mode": "open D afterlight",
+        "chord": "breathing D spectrum",
+        "notes": [38, 45, 50, 54, 57, 59, 62, 66, 69, 74],
+        "progression": [[2, 6, 9], [2, 7, 11], [2, 6, 11], [2, 9, 4]],
+        "fugue_technique": "the subject remains inferable after its voices release",
+        "subject_voices": []
+      }
+    }
+  ]
+}

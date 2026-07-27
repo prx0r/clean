@@ -1,0 +1,655 @@
+{
+  "composition_id": "the-light-becomes-a-forest",
+  "composition_sha256": "71a3082fea811f4b3d990d8bb40aaa1db3a9937e5d86a4c450bace1e2b4d5a82",
+  "duration_seconds": 600.0,
+  "ticks_per_beat": 480,
+  "track_count": 7,
+  "event_counts": {
+    "note_on": 7044,
+    "tempo": 12,
+    "marker": 12
+  },
+  "fugue_subject": {
+    "tonal_center": "D",
+    "intervals": [
+      0,
+      7,
+      5,
+      3,
+      2,
+      0,
+      2,
+      3,
+      5,
+      3,
+      2,
+      0
+    ],
+    "beats": [
+      0.5,
+      0.5,
+      1.0,
+      0.5,
+      0.5,
+      1.0,
+      0.5,
+      0.5,
+      1.0,
+      0.5,
+      0.5,
+      1.0
+    ],
+    "appearances": [
+      {
+        "stage": "radiance_without_opposite",
+        "voice": "Light Oboe",
+        "time": 3.462,
+        "transform": "fragment",
+        "notes": 4
+      },
+      {
+        "stage": "radiance_without_opposite",
+        "voice": "Light Oboe",
+        "time": 17.308,
+        "transform": "fragment",
+        "notes": 4
+      },
+      {
+        "stage": "radiance_without_opposite",
+        "voice": "Light Oboe",
+        "time": 31.154,
+        "transform": "fragment",
+        "notes": 4
+      },
+      {
+        "stage": "difference_sings",
+        "voice": "Leaf Violin",
+        "time": 44.938,
+        "end": 49.625,
+        "transform": "original",
+        "notes": 8
+      },
+      {
+        "stage": "difference_sings",
+        "voice": "Wind Flute",
+        "time": 52.147,
+        "end": 56.834,
+        "transform": "original",
+        "notes": 8
+      },
+      {
+        "stage": "three_powers",
+        "voice": "Root Viola",
+        "time": 92.833,
+        "end": 97.833,
+        "transform": "original",
+        "notes": 9
+      },
+      {
+        "stage": "three_powers",
+        "voice": "Leaf Violin",
+        "time": 98.649,
+        "end": 103.649,
+        "transform": "original",
+        "notes": 9
+      },
+      {
+        "stage": "three_powers",
+        "voice": "Light Oboe",
+        "time": 104.465,
+        "end": 109.465,
+        "transform": "inversion",
+        "notes": 9
+      },
+      {
+        "stage": "freedom_accepts_constraint",
+        "voice": "Earth Cello",
+        "time": 142.714,
+        "end": 145.407,
+        "transform": "diminution",
+        "notes": 10
+      },
+      {
+        "stage": "freedom_accepts_constraint",
+        "voice": "Leaf Violin",
+        "time": 147.277,
+        "end": 151.919,
+        "transform": "inversion",
+        "notes": 10
+      },
+      {
+        "stage": "freedom_accepts_constraint",
+        "voice": "Wind Flute",
+        "time": 151.839,
+        "end": 156.482,
+        "transform": "original",
+        "notes": 10
+      },
+      {
+        "stage": "boundary_learns_care",
+        "voice": "Earth Cello",
+        "time": 194.652,
+        "end": 198.891,
+        "transform": "original",
+        "notes": 10
+      },
+      {
+        "stage": "boundary_learns_care",
+        "voice": "Root Viola",
+        "time": 198.354,
+        "end": 202.594,
+        "transform": "inversion",
+        "notes": 10
+      },
+      {
+        "stage": "boundary_learns_care",
+        "voice": "Leaf Violin",
+        "time": 202.057,
+        "end": 206.296,
+        "transform": "original",
+        "notes": 10
+      },
+      {
+        "stage": "hunger_bends_light",
+        "voice": "Earth Cello",
+        "time": 248.577,
+        "end": 252.327,
+        "transform": "original",
+        "notes": 10
+      },
+      {
+        "stage": "hunger_bends_light",
+        "voice": "Leaf Violin",
+        "time": 251.579,
+        "end": 255.329,
+        "transform": "retrograde",
+        "notes": 10
+      },
+      {
+        "stage": "hunger_bends_light",
+        "voice": "Light Oboe",
+        "time": 254.581,
+        "end": 258.331,
+        "transform": "inversion",
+        "notes": 10
+      },
+      {
+        "stage": "selves_within_selves",
+        "voice": "Earth Cello",
+        "time": 304.682,
+        "end": 313.034,
+        "transform": "augmentation",
+        "notes": 11
+      },
+      {
+        "stage": "selves_within_selves",
+        "voice": "Root Viola",
+        "time": 307.745,
+        "end": 312.518,
+        "transform": "original",
+        "notes": 11
+      },
+      {
+        "stage": "selves_within_selves",
+        "voice": "Leaf Violin",
+        "time": 310.808,
+        "end": 313.577,
+        "transform": "diminution",
+        "notes": 11
+      },
+      {
+        "stage": "selves_within_selves",
+        "voice": "Wind Flute",
+        "time": 313.872,
+        "end": 318.644,
+        "transform": "inversion",
+        "notes": 11
+      },
+      {
+        "stage": "many_goals_cross",
+        "voice": "Earth Cello",
+        "time": 360.268,
+        "end": 363.75,
+        "transform": "original",
+        "notes": 10
+      },
+      {
+        "stage": "many_goals_cross",
+        "voice": "Root Viola",
+        "time": 361.296,
+        "end": 364.779,
+        "transform": "inversion",
+        "notes": 10
+      },
+      {
+        "stage": "many_goals_cross",
+        "voice": "Leaf Violin",
+        "time": 362.325,
+        "end": 364.345,
+        "transform": "diminution",
+        "notes": 10
+      },
+      {
+        "stage": "many_goals_cross",
+        "voice": "Wind Flute",
+        "time": 363.354,
+        "end": 366.836,
+        "transform": "retrograde",
+        "notes": 10
+      },
+      {
+        "stage": "many_goals_cross",
+        "voice": "Light Oboe",
+        "time": 364.382,
+        "end": 367.864,
+        "transform": "original",
+        "notes": 10
+      },
+      {
+        "stage": "care_widens_self",
+        "voice": "Root Viola",
+        "time": 416.75,
+        "end": 422.75,
+        "transform": "inversion",
+        "notes": 12
+      },
+      {
+        "stage": "care_widens_self",
+        "voice": "Leaf Violin",
+        "time": 419.232,
+        "end": 425.232,
+        "transform": "original",
+        "notes": 12
+      },
+      {
+        "stage": "care_widens_self",
+        "voice": "Wind Flute",
+        "time": 421.713,
+        "end": 427.713,
+        "transform": "retrograde",
+        "notes": 12
+      },
+      {
+        "stage": "care_widens_self",
+        "voice": "Light Oboe",
+        "time": 424.195,
+        "end": 430.195,
+        "transform": "original",
+        "notes": 12
+      },
+      {
+        "stage": "forest_fugue",
+        "voice": "Earth Cello",
+        "time": 472.312,
+        "end": 477.312,
+        "transform": "original",
+        "notes": 12
+      },
+      {
+        "stage": "forest_fugue",
+        "voice": "Root Viola",
+        "time": 473.937,
+        "end": 478.937,
+        "transform": "inversion",
+        "notes": 12
+      },
+      {
+        "stage": "forest_fugue",
+        "voice": "Leaf Violin",
+        "time": 475.56,
+        "end": 478.46,
+        "transform": "diminution",
+        "notes": 12
+      },
+      {
+        "stage": "forest_fugue",
+        "voice": "Wind Flute",
+        "time": 477.185,
+        "end": 482.185,
+        "transform": "retrograde",
+        "notes": 12
+      },
+      {
+        "stage": "forest_fugue",
+        "voice": "Light Oboe",
+        "time": 478.808,
+        "end": 487.558,
+        "transform": "augmentation",
+        "notes": 12
+      },
+      {
+        "stage": "forest_fugue",
+        "voice": "River Harpsichord",
+        "time": 480.433,
+        "end": 485.433,
+        "transform": "original",
+        "notes": 12
+      },
+      {
+        "stage": "heart_hears_whole",
+        "voice": "Earth Cello",
+        "time": 517.034,
+        "end": 531.517,
+        "transform": "augmentation",
+        "notes": 12
+      },
+      {
+        "stage": "heart_hears_whole",
+        "voice": "Root Viola",
+        "time": 522.207,
+        "end": 536.69,
+        "transform": "inverse-augmentation",
+        "notes": 12
+      },
+      {
+        "stage": "heart_hears_whole",
+        "voice": "Leaf Violin",
+        "time": 527.379,
+        "end": 541.862,
+        "transform": "augmentation",
+        "notes": 11
+      },
+      {
+        "stage": "heart_hears_whole",
+        "voice": "Wind Flute",
+        "time": 532.552,
+        "end": 540.828,
+        "transform": "original",
+        "notes": 12
+      },
+      {
+        "stage": "heart_hears_whole",
+        "voice": "Light Oboe",
+        "time": 537.724,
+        "end": 546.0,
+        "transform": "inversion",
+        "notes": 5
+      },
+      {
+        "stage": "light_becomes_forest",
+        "voice": "Earth Cello",
+        "time": 548.417,
+        "end": 555.083,
+        "transform": "original",
+        "notes": 12
+      },
+      {
+        "stage": "light_becomes_forest",
+        "voice": "Root Viola",
+        "time": 550.483,
+        "end": 557.15,
+        "transform": "inversion",
+        "notes": 12
+      },
+      {
+        "stage": "light_becomes_forest",
+        "voice": "Leaf Violin",
+        "time": 552.55,
+        "end": 564.217,
+        "transform": "augmentation",
+        "notes": 12
+      },
+      {
+        "stage": "light_becomes_forest",
+        "voice": "Wind Flute",
+        "time": 554.617,
+        "end": 558.483,
+        "transform": "diminution",
+        "notes": 12
+      },
+      {
+        "stage": "light_becomes_forest",
+        "voice": "Light Oboe",
+        "time": 556.683,
+        "end": 563.35,
+        "transform": "retrograde",
+        "notes": 12
+      },
+      {
+        "stage": "light_becomes_forest",
+        "voice": "River Harpsichord",
+        "time": 558.75,
+        "end": 565.417,
+        "transform": "original",
+        "notes": 12
+      },
+      {
+        "stage": "recognition_return",
+        "voice": "Leaf Violin",
+        "time": 545.0,
+        "transform": "original",
+        "notes": 12
+      },
+      {
+        "stage": "recognition_return",
+        "voice": "Light Oboe",
+        "time": 545.0,
+        "transform": "inversion",
+        "notes": 12
+      },
+      {
+        "stage": "recognition_return",
+        "voice": "Root Viola",
+        "time": 545.24,
+        "transform": "augmentation",
+        "notes": 12
+      },
+      {
+        "stage": "recognition_return",
+        "voice": "Wind Flute",
+        "time": 545.48,
+        "transform": "original",
+        "notes": 12
+      }
+    ]
+  },
+  "silence_windows": [
+    {
+      "start": 540.0,
+      "end": 545.0,
+      "purpose": "The five contrapuntal voices complete a cadential gathering, then yield five exact seconds in which the forest remains visually alive without musical causation. The complete subject returns with the recognition sentence."
+    }
+  ],
+  "state_mapping": {
+    "radiance": "upper partial openness, common-tone light, and consonant availability",
+    "localization": "registral independence, spatial separation, and subject ownership",
+    "appetite": "dominant pressure, approach tones, syncopation, and walking-bass direction",
+    "reciprocity": "imitation delay, countersubject exchange, overlap, and suspension resolution",
+    "fecundity": "voice count, subdivision, ornament, sequence, and stretto density",
+    "recognition": "subject completeness and invariance across transformation"
+  },
+  "stages": [
+    {
+      "id": "radiance_without_opposite",
+      "time": 0.0,
+      "bpm": 52.0,
+      "harmony": "D open spectrum without a cadence",
+      "technique": "prelude: subject intervals appear only as dispersed seed-pulses",
+      "note_events": 201,
+      "state": [
+        0.96,
+        0.02,
+        0.01,
+        0.98,
+        0.03,
+        0.16
+      ]
+    },
+    {
+      "id": "difference_sings",
+      "time": 44.0,
+      "bpm": 64.0,
+      "harmony": "D minor subject over open fifths",
+      "technique": "first exposition: subject then tonal answer",
+      "note_events": 269,
+      "state": [
+        0.88,
+        0.18,
+        0.1,
+        0.86,
+        0.12,
+        0.28
+      ]
+    },
+    {
+      "id": "three_powers",
+      "time": 92.0,
+      "bpm": 72.0,
+      "harmony": "three imitative voices around D",
+      "technique": "three-power canon: original, answer, and inversion",
+      "note_events": 438,
+      "state": [
+        0.8,
+        0.34,
+        0.24,
+        0.78,
+        0.24,
+        0.43
+      ]
+    },
+    {
+      "id": "freedom_accepts_constraint",
+      "time": 142.0,
+      "bpm": 84.0,
+      "harmony": "contracting suspensions and registral cells",
+      "technique": "subject compressed into registral compartments",
+      "note_events": 391,
+      "state": [
+        0.68,
+        0.7,
+        0.42,
+        0.54,
+        0.34,
+        0.48
+      ]
+    },
+    {
+      "id": "boundary_learns_care",
+      "time": 194.0,
+      "bpm": 92.0,
+      "harmony": "walking bass beneath exchanging suspensions",
+      "technique": "invertible counterpoint between membrane and resource flow",
+      "note_events": 461,
+      "state": [
+        0.62,
+        0.82,
+        0.58,
+        0.52,
+        0.46,
+        0.52
+      ]
+    },
+    {
+      "id": "hunger_bends_light",
+      "time": 248.0,
+      "bpm": 104.0,
+      "harmony": "chromatic dominant sequence refusing arrival",
+      "technique": "subject pursued by its chromatic shadow",
+      "note_events": 633,
+      "state": [
+        0.54,
+        0.88,
+        0.92,
+        0.3,
+        0.54,
+        0.46
+      ]
+    },
+    {
+      "id": "selves_within_selves",
+      "time": 304.0,
+      "bpm": 88.0,
+      "harmony": "subjects at three scales over a moving ground",
+      "technique": "augmentation, original, and diminution nested together",
+      "note_events": 557,
+      "state": [
+        0.6,
+        0.74,
+        0.7,
+        0.66,
+        0.66,
+        0.62
+      ]
+    },
+    {
+      "id": "many_goals_cross",
+      "time": 360.0,
+      "bpm": 112.0,
+      "harmony": "five-voice stretto with unresolved suspensions",
+      "technique": "stretto and contrary-motion conflict",
+      "note_events": 919,
+      "state": [
+        0.48,
+        0.76,
+        0.84,
+        0.34,
+        0.82,
+        0.48
+      ]
+    },
+    {
+      "id": "care_widens_self",
+      "time": 416.0,
+      "bpm": 80.0,
+      "harmony": "invertible canon resolving across voices",
+      "technique": "double canon and exchanged countersubject",
+      "note_events": 1002,
+      "state": [
+        0.7,
+        0.52,
+        0.5,
+        0.94,
+        0.86,
+        0.76
+      ]
+    },
+    {
+      "id": "forest_fugue",
+      "time": 472.0,
+      "bpm": 96.0,
+      "harmony": "six-part ecosystem fugue",
+      "technique": "full exposition, sequence, and stretto in a shared harmonic ecology",
+      "note_events": 972,
+      "state": [
+        0.82,
+        0.46,
+        0.42,
+        0.92,
+        0.98,
+        0.88
+      ]
+    },
+    {
+      "id": "heart_hears_whole",
+      "time": 516.0,
+      "bpm": 58.0,
+      "harmony": "augmented subject gathered into a five-voice chorale",
+      "technique": "augmentation, cadential gathering, five-second grand pause",
+      "note_events": 280,
+      "state": [
+        0.9,
+        0.2,
+        0.18,
+        0.98,
+        0.56,
+        0.96
+      ]
+    },
+    {
+      "id": "light_becomes_forest",
+      "time": 548.0,
+      "bpm": 72.0,
+      "harmony": "grand contrapuntal return without a closed final cadence",
+      "technique": "subject, inversion, augmentation, and countersubject flower simultaneously",
+      "note_events": 868,
+      "state": [
+        0.96,
+        0.4,
+        0.34,
+        0.97,
+        1.0,
+        1.0
+      ]
+    }
+  ]
+}

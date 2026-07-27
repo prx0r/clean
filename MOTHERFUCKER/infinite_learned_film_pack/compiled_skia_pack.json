@@ -1,0 +1,627 @@
+{
+  "version": "1.0",
+  "id": "infinite-learned",
+  "title": "The Infinite Learned to Say “I Can’t”",
+  "description": "One luminous, centerless field repeatedly contracts into the same continuity objects: a point, crimson frame, five lenses, attention beam, temporal thread, reaching arc, and powered enclosure. Recognition does not erase those finite structures; it reveals their substance and reopens their relation to the field.",
+  "theme": "ivoryManuscript",
+  "seed": 274819,
+  "render": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "crf": 18,
+    "preset": "medium",
+    "transitionDuration": 0.65,
+    "sceneDuration": 8
+  },
+  "scenes": [
+    {
+      "id": "inf-001",
+      "title": "The Strangest Sentence",
+      "subtitle": "A local self is defined by the powers it cannot exercise.",
+      "term": "Aśakti",
+      "devanagari": "अशक्तिः",
+      "motif": "semantic-essay",
+      "duration": 19.041666666666668,
+      "params": {
+        "centerText": "I can’t",
+        "visual": "smallness-cage"
+      }
+    },
+    {
+      "id": "inf-002",
+      "title": "Consciousness Is the Self",
+      "subtitle": "The axiom makes ordinary smallness a problem requiring explanation.",
+      "term": "Caitanyam ātmā",
+      "devanagari": "चैतन्यमात्मा",
+      "motif": "semantic-essay",
+      "duration": 25.625,
+      "params": {
+        "centerText": "चित्",
+        "visual": "constraint-field"
+      }
+    },
+    {
+      "id": "inf-003",
+      "title": "Infinity Contracts",
+      "subtitle": "Nothing is removed; vast capacity takes the form of a point.",
+      "term": "Saṃkoca",
+      "devanagari": "सङ्कोचः",
+      "motif": "semantic-essay",
+      "duration": 23.291666666666668,
+      "params": {
+        "centerText": "अहम्",
+        "visual": "constraint-field"
+      }
+    },
+    {
+      "id": "inf-004",
+      "title": "The Gesture of a Fist",
+      "subtitle": "Freedom remains present as the capacity held inside one gesture.",
+      "term": "Mudrā",
+      "devanagari": "मुद्रा",
+      "motif": "semantic-essay",
+      "duration": 10.166666666666666,
+      "params": {
+        "centerText": "gesture",
+        "visual": "opening-fist"
+      }
+    },
+    {
+      "id": "inf-005",
+      "title": "Before the Angle",
+      "subtitle": "A centerless field acquires here, there, foreground, and exclusion.",
+      "term": "Ananta",
+      "devanagari": "अनन्तम्",
+      "motif": "semantic-essay",
+      "duration": 24.083333333333332,
+      "params": {
+        "leftText": "here",
+        "rightText": "there",
+        "visual": "point-of-view"
+      }
+    },
+    {
+      "id": "inf-006",
+      "title": "The First Person",
+      "subtitle": "Individuality is a frame the infinite places around itself.",
+      "term": "Aham-idam",
+      "devanagari": "अहम् इदम्",
+      "motif": "semantic-essay",
+      "duration": 10.541666666666666,
+      "params": {
+        "leftText": "aham",
+        "rightText": "idam",
+        "visual": "point-of-view"
+      }
+    },
+    {
+      "id": "inf-007",
+      "title": "Armor That Also Sees",
+      "subtitle": "Each covering restricts a power and enables a kind of experience.",
+      "term": "Kañcuka",
+      "devanagari": "कञ्चुकम्",
+      "motif": "semantic-essay",
+      "duration": 17.5,
+      "params": {
+        "visual": "five-lenses"
+      }
+    },
+    {
+      "id": "inf-008",
+      "title": "Power Becomes Capacity",
+      "subtitle": "Unlimited agency narrows into this action and not every action.",
+      "term": "Kalā",
+      "devanagari": "कला",
+      "motif": "semantic-essay",
+      "duration": 5.125,
+      "params": {
+        "focus": 0,
+        "visual": "five-lenses"
+      }
+    },
+    {
+      "id": "inf-009",
+      "title": "Knowing Becomes This",
+      "subtitle": "Unlimited knowledge narrows into one disclosure.",
+      "term": "Vidyā",
+      "devanagari": "विद्या",
+      "motif": "semantic-essay",
+      "duration": 4.708333333333333,
+      "params": {
+        "focus": 1,
+        "visual": "five-lenses"
+      }
+    },
+    {
+      "id": "inf-010",
+      "title": "Fullness Becomes Want",
+      "subtitle": "The complete field is experienced locally as something missing.",
+      "term": "Rāga",
+      "devanagari": "रागः",
+      "motif": "semantic-essay",
+      "duration": 4.708333333333333,
+      "params": {
+        "focus": 2,
+        "visual": "five-lenses"
+      }
+    },
+    {
+      "id": "inf-011",
+      "title": "Eternity Becomes Sequence",
+      "subtitle": "The total event is distributed into before and after.",
+      "term": "Kāla",
+      "devanagari": "कालः",
+      "motif": "semantic-essay",
+      "duration": 4.708333333333333,
+      "params": {
+        "focus": 3,
+        "visual": "five-lenses"
+      }
+    },
+    {
+      "id": "inf-012",
+      "title": "Freedom Becomes Consequence",
+      "subtitle": "An open field narrows into this necessary succession.",
+      "term": "Niyati",
+      "devanagari": "नियतिः",
+      "motif": "semantic-essay",
+      "duration": 4.708333333333333,
+      "params": {
+        "focus": 4,
+        "visual": "five-lenses"
+      }
+    },
+    {
+      "id": "inf-013",
+      "title": "The Powers Become Local",
+      "subtitle": "One hand, one thought, one second, one decision.",
+      "term": "Śakti",
+      "devanagari": "शक्तिः",
+      "motif": "semantic-essay",
+      "duration": 14.791666666666666,
+      "params": {
+        "centerText": "शक्ति",
+        "active": 3,
+        "visual": "local-power"
+      }
+    },
+    {
+      "id": "inf-014",
+      "title": "A Note Must Leave",
+      "subtitle": "Sequence makes rhythm, anticipation, memory, and discovery possible.",
+      "term": "Krama",
+      "devanagari": "क्रमः",
+      "motif": "semantic-essay",
+      "duration": 23.708333333333332,
+      "params": {
+        "visual": "melody-time"
+      }
+    },
+    {
+      "id": "inf-015",
+      "title": "Eternity Becomes Audible",
+      "subtitle": "The ticking does not abolish the timeless; it articulates it.",
+      "term": "Kāla",
+      "devanagari": "कालः",
+      "motif": "semantic-essay",
+      "duration": 15.166666666666666,
+      "params": {
+        "notes": [
+          0,
+          1,
+          3,
+          2,
+          4,
+          1,
+          2,
+          0
+        ],
+        "visual": "melody-time"
+      }
+    },
+    {
+      "id": "inf-016",
+      "title": "Almost Everything Is Hidden",
+      "subtitle": "A finite viewpoint knows one disclosure inside an immense unselected field.",
+      "term": "Ajñāta",
+      "devanagari": "अज्ञातम्",
+      "motif": "semantic-essay",
+      "duration": 21,
+      "params": {
+        "foreground": "this disclosure",
+        "visual": "attention-beam"
+      }
+    },
+    {
+      "id": "inf-017",
+      "title": "Concealment Creates Discovery",
+      "subtitle": "Without background there can be no foreground, surprise, or recognition.",
+      "term": "Prakāśa",
+      "devanagari": "प्रकाशः",
+      "motif": "semantic-essay",
+      "duration": 17.875,
+      "params": {
+        "foreground": "foreground",
+        "visual": "attention-beam"
+      }
+    },
+    {
+      "id": "inf-018",
+      "title": "Limited Knowing Is Bondage",
+      "subtitle": "Knowing divides a local knower from a disclosed object.",
+      "term": "Jñānaṃ bandhaḥ",
+      "devanagari": "ज्ञानं बन्धः",
+      "motif": "semantic-essay",
+      "duration": 14,
+      "params": {
+        "foreground": "known object",
+        "visual": "attention-beam"
+      }
+    },
+    {
+      "id": "inf-019",
+      "title": "The Darkness Is Also Awareness",
+      "subtitle": "Attention selects one object but does not create a second substance.",
+      "term": "Avadhāna",
+      "devanagari": "अवधानम्",
+      "motif": "semantic-essay",
+      "duration": 22.166666666666668,
+      "params": {
+        "foreground": "one object",
+        "visual": "attention-beam"
+      }
+    },
+    {
+      "id": "inf-020",
+      "title": "Fullness Feels Like Lack",
+      "subtitle": "A complete field compressed into a center experiences a gap.",
+      "term": "Rāga",
+      "devanagari": "रागः",
+      "motif": "semantic-essay",
+      "duration": 15.166666666666666,
+      "params": {
+        "gapText": "felt lack",
+        "visual": "desire-orbit"
+      }
+    },
+    {
+      "id": "inf-021",
+      "title": "The Object Promises Completion",
+      "subtitle": "Possession changes the object but not the deeper geometry of hunger.",
+      "term": "Abhāva",
+      "devanagari": "अभावः",
+      "motif": "semantic-essay",
+      "duration": 17.5,
+      "params": {
+        "gapText": "incomplete → complete?",
+        "visual": "desire-orbit"
+      }
+    },
+    {
+      "id": "inf-022",
+      "title": "Attraction Moves Before Thought",
+      "subtitle": "Desire is contracted delight reaching toward its own unrecognized field.",
+      "term": "Pratyabhijñā",
+      "devanagari": "प्रत्यभिज्ञा",
+      "motif": "semantic-essay",
+      "duration": 21,
+      "params": {
+        "gapText": "recognition in motion",
+        "visual": "desire-orbit"
+      }
+    },
+    {
+      "id": "inf-023",
+      "title": "The Impurity of Smallness",
+      "subtitle": "The deepest contraction is the conviction: I am only this.",
+      "term": "Āṇavamala",
+      "devanagari": "आणवमलम्",
+      "motif": "semantic-essay",
+      "duration": 10.541666666666666,
+      "params": {
+        "centerText": "only this",
+        "visual": "smallness-cage"
+      }
+    },
+    {
+      "id": "inf-024",
+      "title": "Only This Body, Mind, Life",
+      "subtitle": "Expressions of awareness harden into exclusive identity.",
+      "term": "Deha",
+      "devanagari": "देहः",
+      "motif": "semantic-essay",
+      "duration": 16.708333333333332,
+      "params": {
+        "centerText": "body · mind · life",
+        "visual": "smallness-cage"
+      }
+    },
+    {
+      "id": "inf-025",
+      "title": "The World Is Forgotten Within",
+      "subtitle": "Bondage forgets containment, not the existence of the world.",
+      "term": "Antarjagat",
+      "devanagari": "अन्तर्जगत्",
+      "motif": "semantic-essay",
+      "duration": 10.916666666666666,
+      "params": {
+        "centerText": "जगत्",
+        "visual": "constraint-field"
+      }
+    },
+    {
+      "id": "inf-026",
+      "title": "Finitude Requires Power",
+      "subtitle": "Only the infinite needs to generate a convincing experience of limitation.",
+      "term": "Śakti",
+      "devanagari": "शक्तिः",
+      "motif": "semantic-essay",
+      "duration": 18.291666666666668,
+      "params": {
+        "centerText": "finitude is produced",
+        "visual": "powered-prison"
+      }
+    },
+    {
+      "id": "inf-027",
+      "title": "The Walls Are Renewed",
+      "subtitle": "Boundary, memory, causality, and identity are maintained every moment.",
+      "term": "Bandha",
+      "devanagari": "बन्धः",
+      "motif": "semantic-essay",
+      "duration": 20.583333333333332,
+      "params": {
+        "centerText": "power maintains the boundary",
+        "visual": "powered-prison"
+      }
+    },
+    {
+      "id": "inf-028",
+      "title": "Practice Does Not Manufacture Infinity",
+      "subtitle": "It loosens the belief that contraction is the whole truth.",
+      "term": "Sādhanā",
+      "devanagari": "साधना",
+      "motif": "semantic-essay",
+      "duration": 19.458333333333332,
+      "params": {
+        "visual": "practice-folds"
+      }
+    },
+    {
+      "id": "inf-029",
+      "title": "Body and Breath",
+      "subtitle": "Localization is felt in the body; agency crosses its border in breath.",
+      "term": "Deha-prāṇa",
+      "devanagari": "देहः प्राणः",
+      "motif": "semantic-essay",
+      "duration": 11.291666666666666,
+      "params": {
+        "focus": 1,
+        "visual": "practice-folds"
+      }
+    },
+    {
+      "id": "inf-030",
+      "title": "Mantra and Attention",
+      "subtitle": "Sound and seeing are followed back toward the awareness receiving them.",
+      "term": "Mantra-avadhāna",
+      "devanagari": "मन्त्रः अवधानम्",
+      "motif": "semantic-essay",
+      "duration": 19.458333333333332,
+      "params": {
+        "focus": 3,
+        "visual": "practice-folds"
+      }
+    },
+    {
+      "id": "inf-031",
+      "title": "The Sudden Upsurge",
+      "subtitle": "Contraction opens in an instantaneous movement of recognition.",
+      "term": "Udyama",
+      "devanagari": "उद्यमः",
+      "motif": "semantic-essay",
+      "duration": 12.875,
+      "params": {
+        "centerText": "उद्यमः",
+        "visual": "upsurge"
+      }
+    },
+    {
+      "id": "inf-032",
+      "title": "The World Appears Inside Knowing",
+      "subtitle": "Room, name, and history remain while the imagined center relaxes.",
+      "term": "Bhairava",
+      "devanagari": "भैरवः",
+      "motif": "semantic-essay",
+      "duration": 23.291666666666668,
+      "params": {
+        "centerText": "भैरवः",
+        "visual": "upsurge"
+      }
+    },
+    {
+      "id": "inf-033",
+      "title": "Individuality Becomes Transparent",
+      "subtitle": "The local form survives as a permeable expression of its source.",
+      "term": "Svātantrya",
+      "devanagari": "स्वातन्त्र्यम्",
+      "motif": "semantic-essay",
+      "duration": 6.291666666666667,
+      "params": {
+        "centerText": "अहम्",
+        "visual": "upsurge"
+      }
+    },
+    {
+      "id": "inf-034",
+      "title": "The Wave Keeps Its Curve",
+      "subtitle": "Recognition does not flatten the finite form.",
+      "term": "Taraṅga",
+      "devanagari": "तरङ्गः",
+      "motif": "semantic-essay",
+      "duration": 15.958333333333334,
+      "params": {
+        "waveText": "this curve",
+        "oceanText": "one water",
+        "visual": "wave-ocean"
+      }
+    },
+    {
+      "id": "inf-035",
+      "title": "Your Water Was Never Separate",
+      "subtitle": "Finitude remains a shape, not the final description of substance.",
+      "term": "Samudra",
+      "devanagari": "समुद्रः",
+      "motif": "semantic-essay",
+      "duration": 13.625,
+      "params": {
+        "waveText": "finite form",
+        "oceanText": "never separate",
+        "visual": "wave-ocean"
+      }
+    },
+    {
+      "id": "inf-036",
+      "title": "The World Is Freedom Displayed",
+      "subtitle": "Color, sound, feeling, memory, and thought are differentiated textures.",
+      "term": "Jagat",
+      "devanagari": "जगत्",
+      "motif": "semantic-essay",
+      "duration": 19.833333333333332,
+      "params": {
+        "visual": "textures-display"
+      }
+    },
+    {
+      "id": "inf-037",
+      "title": "The Veil Is Woven from Light",
+      "subtitle": "Armor, body, veil, and forgetting share one luminous material.",
+      "term": "Prakāśa",
+      "devanagari": "प्रकाशः",
+      "motif": "semantic-essay",
+      "duration": 10.541666666666666,
+      "params": {
+        "labels": [
+          "armor",
+          "body",
+          "veil",
+          "memory",
+          "thought",
+          "forgetting"
+        ],
+        "visual": "textures-display"
+      }
+    },
+    {
+      "id": "inf-038",
+      "title": "Look at One Limitation",
+      "subtitle": "Power, knowledge, desire, and time each present a finite boundary.",
+      "term": "Sīmā",
+      "devanagari": "सीमा",
+      "motif": "semantic-essay",
+      "duration": 17.125,
+      "params": {
+        "labels": [
+          "cannot",
+          "unknown",
+          "want",
+          "time"
+        ],
+        "centerText": "experience",
+        "visual": "limitation-reversal"
+      }
+    },
+    {
+      "id": "inf-039",
+      "title": "Boundary Becomes Identity",
+      "subtitle": "The ordinary inference turns each condition into evidence of what I am.",
+      "term": "Ahaṃkāra",
+      "devanagari": "अहङ्कारः",
+      "motif": "semantic-essay",
+      "duration": 14.791666666666666,
+      "params": {
+        "labels": [
+          "powerless",
+          "ignorant",
+          "incomplete",
+          "destroyed"
+        ],
+        "centerText": "I am",
+        "visual": "limitation-reversal"
+      }
+    },
+    {
+      "id": "inf-040",
+      "title": "The Limit Appears Within",
+      "subtitle": "The boundary is real as experience and nonfinal as identity.",
+      "term": "Pratyabhijñā",
+      "devanagari": "प्रत्यभिज्ञा",
+      "motif": "semantic-essay",
+      "duration": 24.083333333333332,
+      "params": {
+        "labels": [
+          "limited power",
+          "not knowing",
+          "incompleteness",
+          "change"
+        ],
+        "centerText": "known",
+        "visual": "limitation-reversal"
+      }
+    },
+    {
+      "id": "inf-041",
+      "title": "Wholeness Tries on Finitude",
+      "subtitle": "Freedom becomes consequence; eternity learns suspense.",
+      "term": "Pūrṇatā",
+      "devanagari": "पूर्णता",
+      "motif": "semantic-essay",
+      "duration": 14.791666666666666,
+      "params": {
+        "centerText": "पूर्ण",
+        "active": 7,
+        "visual": "local-power"
+      }
+    },
+    {
+      "id": "inf-042",
+      "title": "The Truth Takes the Form of a Question",
+      "subtitle": "The search itself is one contraction of the power it seeks.",
+      "term": "Praśna",
+      "devanagari": "प्रश्नः",
+      "motif": "semantic-essay",
+      "duration": 17.125,
+      "params": {
+        "centerText": "?",
+        "visual": "opening-fist"
+      }
+    },
+    {
+      "id": "inf-043",
+      "title": "Just Enough",
+      "subtitle": "In the stillness after breath and mantra, the enclosing gesture relaxes.",
+      "term": "Unmeṣa",
+      "devanagari": "उन्मेषः",
+      "motif": "semantic-essay",
+      "duration": 17.125,
+      "params": {
+        "centerText": "listen",
+        "visual": "opening-fist"
+      }
+    },
+    {
+      "id": "inf-044",
+      "title": "Who Was Speaking?",
+      "subtitle": "The infinite never became finite; it learned how finitude appears as I.",
+      "term": "Aham",
+      "devanagari": "अहम्",
+      "motif": "semantic-essay",
+      "duration": 14,
+      "params": {
+        "centerText": "I",
+        "visual": "opening-fist"
+      }
+    }
+  ]
+}
