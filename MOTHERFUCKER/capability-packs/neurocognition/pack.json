@@ -63,7 +63,8 @@
       "parameters": {
         "layers": { "type": "integer", "minimum": 2, "maximum": 8, "default": 4 },
         "nodesPerLayer": { "type": "integer", "minimum": 2, "maximum": 16, "default": 6 },
-        "density": { "type": "number", "minimum": 0.1, "maximum": 1, "default": 0.6 }
+        "density": { "type": "number", "minimum": 0.1, "maximum": 1, "default": 0.6 },
+        "seed": { "type": "integer", "default": 2607 }
       },
       "provenance": ["cells_solving_problem_platinum.py: distributed computation", "cooperation_platinum.py: collective coordination"]
     },
@@ -102,8 +103,10 @@
       "epistemicMode": "computational-model",
       "semanticTags": ["prediction", "signal", "forward", "top-down", "expectation"],
       "parameters": {
-        "from": { "type": "string", "default": "left" },
-        "to": { "type": "string", "default": "right" },
+        "fromX": { "type": "number", "default": 200 },
+        "fromY": { "type": "number", "default": 320 },
+        "toX": { "type": "number", "default": 1080 },
+        "toY": { "type": "number", "default": 320 },
         "width": { "type": "number", "minimum": 1, "maximum": 8, "default": 3 },
         "style": { "enum": ["wave", "arrow", "pulse"], "default": "wave" }
       },
@@ -118,7 +121,8 @@
       "parameters": {
         "nodes": { "type": "integer", "minimum": 2, "maximum": 12, "default": 5 },
         "decay": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.3 },
-        "reinforce": { "type": "boolean", "default": false }
+        "reinforce": { "type": "boolean", "default": false },
+        "seed": { "type": "integer", "default": 2607 }
       },
       "provenance": ["memory_before_brains_platinum.py: trace as condition of access"]
     },

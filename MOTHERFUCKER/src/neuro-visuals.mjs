@@ -51,10 +51,6 @@ function line(ctx, points, color, width, alpha, dash) {
   ctx.restore();
 }
 
-function localPoint(p, cx, cy, scale) {
-  return { x: (p.x - 640) * scale + cx, y: (p.y - 360) * scale + cy };
-}
-
 function brainPath(cx, cy, scale) {
   const s = scale ?? 1;
   const path = new Path2D();
@@ -274,14 +270,16 @@ function attentionField(ctx, t, params, env) {
 
 function predictionSignal(ctx, t, params, env) {
   const theme = env.theme;
-  const from = params.from ?? { x: 200, y: 320 };
-  const to = params.to ?? { x: 1080, y: 320 };
+  const fromX = params.fromX ?? 200;
+  const fromY = params.fromY ?? 320;
+  const toX = params.toX ?? 1080;
+  const toY = params.toY ?? 320;
   const width = params.width ?? 3;
   const style = params.style ?? "wave";
   const alpha = reveal(t) * (params.alpha ?? 0.8);
   const progress = easeOutCubic(t);
-  const dx = to.x - from.x;
-  const dy = to.y - from.y;
+  const dx = toX - fromX;
+  const dy = toY - fromY;
   ctx.save();
   ctx.globalAlpha = alpha;
   if (style === "wave") {
@@ -289,9 +287,9 @@ function predictionSignal(ctx, t, params, env) {
     const steps = 60;
     for (let i = 0; i <= steps; i++) {
       const p = i / steps;
-      const x = from.x + dx * p;
+      const x = fromX + dx * p;
       const amplitude = 30 * (1 - Math.abs(p - 0.5) * 1.4);
-      const y = from.y + dy * p + amplitude * Math.sin(p * TAU * 4 - t * TAU * 0.8);
+      const y = fromY + dy * p + amplitude * Math.sin(p * TAU * 4 - t * TAU * 0.8);
       points.push({ x, y });
     }
     const drawLen = Math.floor(progress * points.length);
@@ -299,15 +297,16 @@ function predictionSignal(ctx, t, params, env) {
       drawPartialPath(ctx, points.slice(0, drawLen), 1, theme.prediction, width, 0.85 * alpha, { blur: 6 });
     }
   } else if (style === "arrow") {
-    const x = from.x + dx * progress;
-    const y = from.y + dy * progress;
+    const x = fromX + dx * progress;
+    const y = fromY + dy * progress;
     const angle = Math.atan2(dy, dx);
-    line(ctx, [from, { x, y }], theme.prediction, width, alpha);
+    const origin = { x: fromX, y: fromY };
+    line(ctx, [origin, { x, y }], theme.prediction, width, alpha);
     drawArrowHead(ctx, x, y, angle, 14, theme.prediction, alpha);
   } else {
-    const x = from.x + dx * progress;
-    drawGlowOrb(ctx, x, from.y, 10 + 6 * wave(t, 2), theme.prediction, alpha * 0.8);
-    line(ctx, [from, to], theme.prediction, width * 0.3, alpha * 0.2);
+    const x = fromX + dx * progress;
+    drawGlowOrb(ctx, x, fromY, 10 + 6 * wave(t, 2), theme.prediction, alpha * 0.8);
+    line(ctx, [{ x: fromX, y: fromY }, { x: toX, y: toY }], theme.prediction, width * 0.3, alpha * 0.2);
   }
   ctx.restore();
 }
