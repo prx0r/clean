@@ -110,14 +110,9 @@ const LOBE_POLYGONS = {
   occipital: [{ x: 750, y: 250 }, { x: 790, y: 260 }, { x: 770, y: 320 }, { x: 720, y: 340 }, { x: 700, y: 300 }],
 };
 
-let rng;
-
-function seed(s) {
-  rng = seededRandom(s ?? 42);
-}
-
-function rand(min, max) {
-  return rng ? min + rng() * (max - min) : min + Math.random() * (max - min);
+function makeRng(seedVal) {
+  const r = seededRandom(seedVal ?? 2607);
+  return (min, max) => min + r() * (max - min);
 }
 
 function netNodePositions(layers, nodesPerLayer, cx, cy, width, height) {
@@ -187,7 +182,7 @@ function neuralNetwork(ctx, t, params, env) {
   const nodesPerLayer = params.nodesPerLayer ?? 6;
   const density = params.density ?? 0.6;
   const alpha = reveal(t) * (params.alpha ?? 0.85);
-  seed(params.seed ?? 2607);
+  const rand = makeRng(params.seed);
   const pos = netNodePositions(layers, nodesPerLayer, cx, cy, 700, 360);
   const connections = [];
   for (let l = 0; l < layers - 1; l++) {
@@ -325,7 +320,7 @@ function memoryTrace(ctx, t, params, env) {
   const alpha = reveal(t) * (params.alpha ?? 0.8);
   const cx = params.cx ?? 640;
   const cy = params.cy ?? 320;
-  seed(params.seed ?? 2607);
+  const rand = makeRng(params.seed);
   const positions = [];
   for (let i = 0; i < nodes; i++) {
     positions.push({
@@ -522,7 +517,7 @@ function patternCompletion(ctx, t, scene, env) {
   const alpha = reveal(t);
   const count = scene.params?.nodeCount ?? 10;
   const degradation = scene.params?.degradation ?? 0.45;
-  seed(scene.seed ?? 2607);
+  const rand = makeRng(scene.seed);
   const cx = 640;
   const cy = 310;
   const radius = 280;
@@ -562,7 +557,7 @@ function memoryConsolidation(ctx, t, scene, env) {
   const alpha = reveal(t);
   const count = scene.params?.traceCount ?? 10;
   const retention = scene.params?.retention ?? 0.55;
-  seed(scene.seed ?? 2607);
+  const rand = makeRng(scene.seed);
   const cx = 640;
   const cy = 310;
   const traces = [];
@@ -606,7 +601,7 @@ function neuralPropagation(ctx, t, scene, env) {
   const sourceLayer = scene.params?.sourceLayer ?? 0;
   const amplification = scene.params?.amplification ?? 1;
   const pos = netNodePositions(layers, nodesPerLayer, 640, 320, 700, 380);
-  seed(scene.seed ?? 2607);
+  const rand = makeRng(scene.seed);
   const conns = [];
   for (let l = 0; l < layers - 1; l++) {
     for (const src of pos[l]) {
@@ -708,7 +703,7 @@ function temporalIntegration(ctx, t, scene, env) {
     drawNode(ctx, x, cy, 8 + retention * 10, {
       fill: theme.backgroundLight,
       stroke: retention > 0.6 ? luminous : secondary,
-      alpha: alpha * arrival * initial.clamp,
+      alpha: alpha * arrival,
       glow: retention > 0.6 ? luminous : undefined,
     });
     ctx.restore();
