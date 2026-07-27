@@ -4,9 +4,9 @@ import { drawGlowOrb, drawRing, drawNode, drawArrowHead, drawPartialPath } from 
 const CX = 640, CY = 310;
 const FW = 1280, FH = 720;
 
-const FONT_MAIN = '"KaTeX Main", "Source Serif 4", serif';
-const FONT_MATH = '"KaTeX Math", "KaTeX Main", serif';
-const FONT_BOLD = '"KaTeX Main", "Source Serif 4", serif';
+const FONT_MAIN = '"Source Serif 4", "EB Garamond", serif';
+const FONT_MATH = '"KaTeX Math", "Source Serif 4", serif';
+const FONT_BOLD = '"Source Serif 4", "EB Garamond", serif';
 const FONT = FONT_MAIN;
 const MONO = "#1a1a1a";
 const MUTED = "#555555";
@@ -105,7 +105,7 @@ function renderSubclaim(ctx, t, move, theme) {
   const a = smoothstep(0, 0.15, t);
   const size = move.size || 20;
   const color = resolveColor(move);
-  const y = typeof move.y === "number" ? move.y : 410;
+  const y = typeof move.y === "number" ? move.y : 450;
   const drift = move.drift ? 40 * (1 - easeOutCubic(smoothstep(0, 0.3, t))) : 0;
   ctx.save();
   ctx.globalAlpha = a;
