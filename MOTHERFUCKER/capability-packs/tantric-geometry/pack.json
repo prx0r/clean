@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "id": "tantric-geometry",
+  "title": "Tantric Geometry",
+  "description": "Tantric process vocabulary built from PathKit geometry and particle fields.",
+  "extends": [
+    "pathkit-geometry",
+    "particle-fields"
+  ],
+  "defaultTheme": "midnightVellum",
+  "themes": [],
+  "assets": [],
+  "mechanisms": [],
+  "selectionPolicy": {
+    "requireMotionProof": true
+  }
+}

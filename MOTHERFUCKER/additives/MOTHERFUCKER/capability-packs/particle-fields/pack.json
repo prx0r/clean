@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "id": "particle-fields",
+  "title": "Particle Fields",
+  "description": "Reusable deterministic emitters, fields, constraints, trails and particle materials.",
+  "extends": [
+    "base"
+  ],
+  "defaultTheme": "midnightVellum",
+  "themes": [],
+  "assets": [],
+  "mechanisms": [],
+  "selectionPolicy": {
+    "requireMotionProof": true
+  }
+}

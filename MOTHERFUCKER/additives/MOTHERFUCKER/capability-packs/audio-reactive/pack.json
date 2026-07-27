@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "id": "audio-reactive",
+  "title": "Audio Reactive",
+  "description": "Offline audio feature analysis and deterministic frame-addressable routing.",
+  "extends": [
+    "base"
+  ],
+  "defaultTheme": "whiteScientific",
+  "themes": [],
+  "assets": [],
+  "mechanisms": [],
+  "selectionPolicy": {
+    "requireMotionProof": true
+  }
+}

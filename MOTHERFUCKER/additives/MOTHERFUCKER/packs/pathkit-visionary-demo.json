@@ -1,0 +1,60 @@
+{
+  "version": "1.0",
+  "id": "pathkit-visionary-demo",
+  "title": "PathKit Visionary Engine",
+  "description": "Demonstration of computed paths and layered symbolic animation.",
+  "capabilityPacks": [
+    "pathkit-geometry"
+  ],
+  "theme": "midnightVellum",
+  "seed": 260727,
+  "render": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "sceneDuration": 5,
+    "crf": 17,
+    "preset": "medium",
+    "transitionDuration": 0.35
+  },
+  "scenes": [
+    {
+      "id": "g1",
+      "title": "Lotus Unfolds",
+      "subtitle": "Path growth creates emergence without replacing the object.",
+      "term": "Padma",
+      "devanagari": "पद्म",
+      "motif": "semantic-essay",
+      "params": {
+        "visual": "lotus-unfold",
+        "petals": 12
+      },
+      "duration": 5
+    },
+    {
+      "id": "g2",
+      "title": "Yantra Is Constructed",
+      "subtitle": "Each layer inherits the constraints of the previous layer.",
+      "term": "Yantra",
+      "devanagari": "यन्त्र",
+      "motif": "semantic-essay",
+      "params": {
+        "visual": "yantra-construction",
+        "petals": 8
+      },
+      "duration": 5
+    },
+    {
+      "id": "g3",
+      "title": "Mandala Entry",
+      "subtitle": "Attention crosses enclosure, ring, lotus and bindu in sequence.",
+      "term": "Maṇḍala",
+      "devanagari": "मण्डल",
+      "motif": "semantic-essay",
+      "params": {
+        "visual": "mandala-entry"
+      },
+      "duration": 5
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "version": "1.0",
+  "id": "pathkit-geometry",
+  "title": "PathKit Geometry",
+  "description": "Boolean path computation, contour morphing, symmetry, lotus, yantra, flame and mandala construction.",
+  "extends": [
+    "base"
+  ],
+  "defaultTheme": "ivoryManuscript",
+  "runtimeModule": "../../src/capabilities/pathkit-visuals.mjs",
+  "themes": [],
+  "assets": [
+    {
+      "id": "lotus-ring",
+      "description": "Parametric radial lotus geometry with configurable petal count, width and curvature.",
+      "category": "symbolic-geometry",
+      "epistemicMode": "formal-symbolic-model",
+      "semanticTags": [
+        "lotus",
+        "radial",
+        "chakra"
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "yantra-core",
+      "description": "Layered triangle, bindu and enclosure geometry suitable for precise tantric diagrams.",
+      "category": "symbolic-geometry",
+      "epistemicMode": "traditional-iconographic-symbolism",
+      "semanticTags": [
+        "yantra",
+        "triangle",
+        "bindu"
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "flame-aureole",
+      "description": "Parametric ring of flame tongues for deity, ritual and energetic iconography.",
+      "category": "symbolic-geometry",
+      "epistemicMode": "traditional-iconographic-symbolism",
+      "semanticTags": [
+        "flame",
+        "aureole",
+        "deity"
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "mandala-layers",
+      "description": "Independently addressable enclosure, rings, petals, spokes, core and bindu.",
+      "category": "symbolic-geometry",
+      "epistemicMode": "traditional-iconographic-symbolism",
+      "semanticTags": [
+        "mandala",
+        "enclosure",
+        "layers"
+      ],
+      "parameters": {}
+    }
+  ],
+  "mechanisms": [
+    {
+      "id": "lotus-unfold",
+      "description": "A lotus opens through path growth rather than opacity alone.",
+      "relations": [
+        "emergence",
+        "sequence"
+      ],
+      "operators": [
+        "unfold",
+        "sequence"
+      ],
+      "semanticTags": [
+        "lotus",
+        "unfolding"
+      ],
+      "motionProof": "Petals trim outward in ordered radial succession.",
+      "epistemicMode": "formal-symbolic-model",
+      "parameters": {}
+    },
+    {
+      "id": "yantra-construction",
+      "description": "A yantra is causally assembled from bindu, polarity triangles, petals and enclosure.",
+      "relations": [
+        "dependency",
+        "sequence"
+      ],
+      "operators": [
+        "construct",
+        "sequence"
+      ],
+      "semanticTags": [
+        "yantra",
+        "construction"
+      ],
+      "motionProof": "Every layer is built from the previous layer's spatial constraint.",
+      "epistemicMode": "traditional-iconographic-symbolism",
+      "parameters": {}
+    },
+    {
+      "id": "mandala-entry",
+      "description": "Attention crosses enclosure, ring, lotus and core as a staged spatial operation.",
+      "relations": [
+        "sequence",
+        "containment",
+        "inquiry"
+      ],
+      "operators": [
+        "sequence",
+        "frame",
+        "reveal"
+      ],
+      "semanticTags": [
+        "mandala",
+        "entry",
+        "attention"
+      ],
+      "motionProof": "The active locus moves inward through each boundary without teleporting.",
+      "epistemicMode": "traditional-iconographic-symbolism",
+      "parameters": {}
+    }
+  ],
+  "selectionPolicy": {
+    "maximumConsecutiveMechanism": 2,
+    "requireMotionProof": true
+  }
+}
