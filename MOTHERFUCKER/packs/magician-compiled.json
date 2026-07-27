@@ -1,0 +1,201 @@
+{
+  "version": "1.0",
+  "id": "you-are-already-a-magician",
+  "title": "You Are Already a Magician",
+  "description": "Visual companion to expansion-essay32 on Crowley's magical system.",
+  "theme": "ivoryManuscript",
+  "seed": 320726,
+  "render": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "crf": 18,
+    "preset": "medium",
+    "sceneDuration": 8,
+    "transitionDuration": 0.5
+  },
+  "scenes": [
+    {
+      "id": "mg01",
+      "title": "The Definition of Magic",
+      "subtitle": "Magic is the art and science of causing change in conformity with will.",
+      "term": "Thelema",
+      "devanagari": "\u0925\u0947\u0932\u0947\u092e\u093e",
+      "motif": "semantic-essay",
+      "duration": 13.5,
+      "params": {
+        "visual": "constraint-field",
+        "caption": "Change in conformity with will."
+      }
+    },
+    {
+      "id": "mg02",
+      "title": "The Systematic Discipline",
+      "subtitle": "Aleister Crowley stripped magic to a systematic discipline of consciousness.",
+      "term": "Yoga",
+      "devanagari": "\u092f\u094b\u0917",
+      "motif": "semantic-essay",
+      "duration": 28,
+      "params": {
+        "visual": "five-lenses",
+        "caption": "Four limbs: asana, pranayama, dharana, dhyana, theurgy."
+      }
+    },
+    {
+      "id": "mg03",
+      "title": "Liber Resh \u2014 Solar Adorations",
+      "subtitle": "Four times daily, the aspirant faces the solar station.",
+      "term": "S\u016brya",
+      "devanagari": "\u0938\u0942\u0930\u094d\u092f",
+      "motif": "semantic-essay",
+      "duration": 28,
+      "params": {
+        "visual": "melody-time",
+        "caption": "Solar adoration \u2014 four times daily."
+      }
+    },
+    {
+      "id": "mg04",
+      "title": "Three Functions",
+      "subtitle": "Three functions: reminder, relationship, and theurgic contact.",
+      "term": "Smara\u1e47a",
+      "devanagari": "\u0938\u094d\u092e\u0930\u0923",
+      "motif": "semantic-essay",
+      "duration": 28,
+      "params": {
+        "visual": "attention-beam",
+        "caption": "Three functions: mnemonic, relational, theurgic."
+      }
+    },
+    {
+      "id": "mg05",
+      "title": "The Four Adorations",
+      "subtitle": "The four adorations anchor the day in sacred structure.",
+      "term": "K\u0101la",
+      "devanagari": "\u0915\u093e\u0932",
+      "motif": "semantic-essay",
+      "duration": 28,
+      "params": {
+        "visual": "melody-time",
+        "caption": "The sun becomes a clock."
+      }
+    },
+    {
+      "id": "mg06",
+      "title": "Liber E \u2014 The Fourfold Training",
+      "subtitle": "Asana, pranayama, dharana, dhyana \u2014 the indispensable foundation.",
+      "term": "Yoga",
+      "devanagari": "\u092f\u094b\u0917",
+      "motif": "semantic-essay",
+      "duration": 23.5,
+      "params": {
+        "visual": "practice-folds",
+        "caption": "Asana, pranayama, dharana, dhyana."
+      }
+    },
+    {
+      "id": "mg07",
+      "title": "The Foundation",
+      "subtitle": "The foundation is boring, physical, and non-negotiable.",
+      "term": "\u0100sana",
+      "devanagari": "\u0906\u0938\u0928",
+      "motif": "semantic-essay",
+      "duration": 28,
+      "params": {
+        "visual": "practice-folds",
+        "caption": "Boring, physical, non-negotiable."
+      }
+    },
+    {
+      "id": "mg08",
+      "title": "Liber Astarte \u2014 Devotion",
+      "subtitle": "Constant mindfulness of the Beloved in every moment.",
+      "term": "Bhakti",
+      "devanagari": "\u092d\u0915\u094d\u0924\u093f",
+      "motif": "semantic-essay",
+      "duration": 28,
+      "params": {
+        "visual": "desire-orbit",
+        "caption": "Constant mindfulness of the Beloved."
+      }
+    },
+    {
+      "id": "mg09",
+      "title": "Love as Magical Force",
+      "subtitle": "Love as a directed energy transforms the lover into the beloved.",
+      "term": "Prema",
+      "devanagari": "\u092a\u094d\u0930\u0947\u092e",
+      "motif": "semantic-essay",
+      "duration": 28,
+      "params": {
+        "visual": "desire-orbit",
+        "caption": "Love transforms the lover into the beloved."
+      }
+    },
+    {
+      "id": "mg10",
+      "title": "The Mass of the Phoenix",
+      "subtitle": "The magician prepares the Cake of Light at sunset.",
+      "term": "Yaj\u00f1a",
+      "devanagari": "\u092f\u091c\u094d\u091e",
+      "motif": "semantic-essay",
+      "duration": 24.5,
+      "params": {
+        "visual": "powered-prison",
+        "caption": "The Cake of Light \u2014 the life-force offered."
+      }
+    },
+    {
+      "id": "mg11",
+      "title": "Carrying the Sun Through Night",
+      "subtitle": "The magician carries the sun's essence through the night.",
+      "term": "Jyoti",
+      "devanagari": "\u091c\u094d\u092f\u094b\u0924\u093f",
+      "motif": "semantic-essay",
+      "duration": 28,
+      "params": {
+        "visual": "smallness-cage",
+        "caption": "The magician carries the sun through night."
+      }
+    },
+    {
+      "id": "mg12",
+      "title": "The Star Ruby \u2014 Circle and Point",
+      "subtitle": "The circle is the body of Nuit. The point is Hadit.",
+      "term": "Nuit",
+      "devanagari": "\u0928\u0941\u0907\u0924",
+      "motif": "semantic-essay",
+      "duration": 24.5,
+      "params": {
+        "visual": "constraint-field",
+        "caption": "The circle is infinite space. The point is awareness."
+      }
+    },
+    {
+      "id": "mg13",
+      "title": "The Union",
+      "subtitle": "The magician is the union of space and point.",
+      "term": "Advaita",
+      "devanagari": "\u0905\u0926\u094d\u0935\u0948\u0924",
+      "motif": "semantic-essay",
+      "duration": 28,
+      "params": {
+        "visual": "opening-fist",
+        "caption": "The union \u2014 the Great Work realized."
+      }
+    },
+    {
+      "id": "mg14",
+      "title": "Recognition",
+      "subtitle": "The infinite never became finite. It learned how finitude appears.",
+      "term": "Pratyabhij\u00f1\u0101",
+      "devanagari": "\u092a\u094d\u0930\u0924\u094d\u092f\u092d\u093f\u091c\u094d\u091e\u093e",
+      "motif": "semantic-essay",
+      "duration": 28,
+      "params": {
+        "visual": "upsurge",
+        "caption": "The infinite never became finite. It learned how finitude appears."
+      }
+    }
+  ]
+}

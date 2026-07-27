@@ -1,0 +1,315 @@
+{
+  "version": "1.0",
+  "id": "you-are-already-a-magician",
+  "title": "You Are Already a Magician",
+  "sourceEssay": "expansion-essay32.md",
+  "visualThesis": "The magician's path is a progressive realization that the finite self is continuous with infinite awareness \u2014 each practice reveals this identity rather than constructing it.",
+  "theme": "ivoryManuscript",
+  "seed": 320726,
+  "timing": {
+    "wordsPerMinute": 180,
+    "tailPadding": 0.2
+  },
+  "render": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "crf": 18,
+    "preset": "medium",
+    "transitionDuration": 0.5
+  },
+  "continuitySystems": [
+    {
+      "id": "luminous-field",
+      "meaning": "Infinite awareness, Nuit, the sun, the All \u2014 centerless, unbounded, always present.",
+      "treatment": "A gold-white radial field that fills frame or appears as a soft glow behind the action. Never completely absent once introduced."
+    },
+    {
+      "id": "local-point",
+      "meaning": "The finite self, Hadit, the aspirant \u2014 a point of concentrated awareness that can contract, expand, or dissolve.",
+      "treatment": "A small crimson or indigo node that moves through the field. Can be encircled, caged, or opened."
+    },
+    {
+      "id": "five-arcs",
+      "meaning": "The practices \u2014 four limbs of yoga plus ritual theurgy. Enclosing structures that can relax or open.",
+      "treatment": "Five curved arcs around the local point. They tighten during practice descriptions and relax during recognition."
+    },
+    {
+      "id": "breath-pulse",
+      "meaning": "The rhythmic heartbeat of the Work \u2014 solar cycle, breath cycle, life force.",
+      "treatment": "A pulsing radial wave or expanding ring at the boundary of the luminous field."
+    }
+  ],
+  "captionPolicy": "Narration carries the prose. Footer shows title, subtitle, term and Devanagari where applicable.",
+  "shots": [
+    {
+      "id": "mg01",
+      "paragraphs": [
+        1,
+        1
+      ],
+      "chapter": "I. The Definition",
+      "title": "Magic Is Will",
+      "subtitle": "Change in conformity with will.",
+      "term": "Thelema",
+      "devanagari": "\u0925\u0947\u0932\u0947\u092e\u093e",
+      "semanticRole": "thesis",
+      "visualOperator": "reveal",
+      "continuityObject": "luminous field; local point appears",
+      "visualRationale": "The field is the All. The point is the self.",
+      "visual": "constraint-field",
+      "params": {
+        "centerText": "I will"
+      }
+    },
+    {
+      "id": "mg02",
+      "paragraphs": [
+        2,
+        2
+      ],
+      "chapter": "II. The Four Limbs",
+      "title": "Systematic Discipline",
+      "subtitle": "Four limbs and theurgy.",
+      "term": "Yoga",
+      "devanagari": "\u092f\u094b\u0917",
+      "semanticRole": "definition",
+      "visualOperator": "reveal",
+      "continuityObject": "five arcs form",
+      "visualRationale": "Four limbs plus theurgy are five structures.",
+      "visual": "five-lenses",
+      "params": {
+        "count": 5
+      }
+    },
+    {
+      "id": "mg03",
+      "paragraphs": [
+        3,
+        3
+      ],
+      "chapter": "III. Liber Resh",
+      "title": "Practice Begins With the Sun",
+      "subtitle": "Solar adoration as spiritual presence.",
+      "term": "S\u016brya",
+      "devanagari": "\u0938\u0942\u0930\u094d\u092f",
+      "semanticRole": "mechanism",
+      "visualOperator": "sequence",
+      "continuityObject": "field pulses in four stations",
+      "visualRationale": "The sun is the center. Four stations. One day.",
+      "visual": "melody-time",
+      "params": {
+        "sequence": [
+          "dawn",
+          "noon",
+          "sunset",
+          "midnight"
+        ]
+      }
+    },
+    {
+      "id": "mg04",
+      "paragraphs": [
+        4,
+        4
+      ],
+      "chapter": "III. Liber Resh",
+      "title": "Three Functions",
+      "subtitle": "Mnemonic, relational, theurgic.",
+      "term": "Smara\u1e47a",
+      "devanagari": "\u0938\u094d\u092e\u0930\u0923",
+      "semanticRole": "mechanism",
+      "visualOperator": "coordinate",
+      "continuityObject": "three rings around point",
+      "visualRationale": "Three functions build on each other: remember, relate, draw force.",
+      "visual": "attention-beam",
+      "params": {
+        "triple": true
+      }
+    },
+    {
+      "id": "mg05",
+      "paragraphs": [
+        5,
+        5
+      ],
+      "chapter": "III. Liber Resh",
+      "title": "The Four Adorations",
+      "subtitle": "The sun becomes a clock.",
+      "term": "K\u0101la",
+      "devanagari": "\u0915\u093e\u0932",
+      "semanticRole": "mechanism",
+      "visualOperator": "sequence",
+      "continuityObject": "clock-circle marks stations",
+      "visualRationale": "The four adorations are the structure of sacred time.",
+      "visual": "melody-time",
+      "params": {
+        "stations": 4
+      }
+    },
+    {
+      "id": "mg06",
+      "paragraphs": [
+        6,
+        6
+      ],
+      "chapter": "IV. Liber E",
+      "title": "The Fourfold Training",
+      "subtitle": "Asana, pranayama, dharana, dhyana.",
+      "term": "Yoga",
+      "devanagari": "\u092f\u094b\u0917",
+      "semanticRole": "mechanism",
+      "visualOperator": "reveal",
+      "continuityObject": "four layers stack around point",
+      "visualRationale": "Four limbs of training \u2014 each is a layer of structure around the self.",
+      "visual": "practice-folds",
+      "params": {
+        "layers": 4
+      }
+    },
+    {
+      "id": "mg07",
+      "paragraphs": [
+        7,
+        7
+      ],
+      "chapter": "IV. Liber E",
+      "title": "The Foundation",
+      "subtitle": "Boring, physical, non-negotiable.",
+      "term": "\u0100sana",
+      "devanagari": "\u0906\u0938\u0928",
+      "semanticRole": "mechanism",
+      "visualOperator": "contract",
+      "continuityObject": "arcs tighten around still point",
+      "visualRationale": "The body mastered before will acts.",
+      "visual": "practice-folds",
+      "params": {
+        "intensity": 0.6,
+        "settling": true
+      }
+    },
+    {
+      "id": "mg08",
+      "paragraphs": [
+        8,
+        8
+      ],
+      "chapter": "V. Liber Astarte",
+      "title": "Devotion as Method",
+      "subtitle": "Constant mindfulness of the Beloved.",
+      "term": "Bhakti",
+      "devanagari": "\u092d\u0915\u094d\u0924\u093f",
+      "semanticRole": "mechanism",
+      "visualOperator": "reach",
+      "continuityObject": "point reaches toward field",
+      "visualRationale": "The self directs all attention toward the Beloved.",
+      "visual": "desire-orbit",
+      "params": {
+        "reach": 0.6
+      }
+    },
+    {
+      "id": "mg09",
+      "paragraphs": [
+        9,
+        9
+      ],
+      "chapter": "V. Liber Astarte",
+      "title": "Love as Force",
+      "subtitle": "Love transforms the lover into the beloved.",
+      "term": "Prema",
+      "devanagari": "\u092a\u094d\u0930\u0947\u092e",
+      "semanticRole": "mechanism",
+      "visualOperator": "transform",
+      "continuityObject": "point and field merge partially",
+      "visualRationale": "Love as directed energy \u2014 the self becomes what it contemplates.",
+      "visual": "desire-orbit",
+      "params": {
+        "reach": 0.95,
+        "merge": true
+      }
+    },
+    {
+      "id": "mg10",
+      "paragraphs": [
+        10,
+        10
+      ],
+      "chapter": "VI. Mass of the Phoenix",
+      "title": "The Cake of Light",
+      "subtitle": "The magician consecrates the offering.",
+      "term": "Eucharistia",
+      "devanagari": "\u092f\u091c\u094d\u091e",
+      "semanticRole": "mechanism",
+      "visualOperator": "transform",
+      "continuityObject": "luminous field enters the point",
+      "visualRationale": "The sun essence enters the self \u2014 the offering is the life-force itself.",
+      "visual": "powered-prison",
+      "params": {
+        "innerGlow": 0.7
+      }
+    },
+    {
+      "id": "mg11",
+      "paragraphs": [
+        11,
+        11
+      ],
+      "chapter": "VI. Mass of the Phoenix",
+      "title": "Carrying the Sun",
+      "subtitle": "Continuity through the dark.",
+      "term": "Jyoti",
+      "devanagari": "\u091c\u094d\u092f\u094b\u0924\u093f",
+      "semanticRole": "mechanism",
+      "visualOperator": "transform",
+      "continuityObject": "point glows while field dims",
+      "visualRationale": "The point carries the light when the field is absent \u2014 the magician becomes the vessel.",
+      "visual": "smallness-cage",
+      "params": {
+        "innerGlow": 0.9,
+        "outerDim": true
+      }
+    },
+    {
+      "id": "mg12",
+      "paragraphs": [
+        12,
+        12
+      ],
+      "chapter": "VII. The Star Ruby",
+      "title": "The Circle and the Point",
+      "subtitle": "Nuit and Hadit.",
+      "term": "LVX",
+      "devanagari": "\u092a\u094d\u0930\u0915\u093e\u0936",
+      "semanticRole": "mechanism",
+      "visualOperator": "reveal",
+      "continuityObject": "circle forms around point",
+      "visualRationale": "The circle is infinite space. The point is concentrated awareness.",
+      "visual": "constraint-field",
+      "params": {
+        "ring": true
+      }
+    },
+    {
+      "id": "mg13",
+      "paragraphs": [
+        13,
+        13
+      ],
+      "chapter": "VII. The Star Ruby",
+      "title": "The Union",
+      "subtitle": "You are the union of space and point.",
+      "term": "Advaita",
+      "devanagari": "\u0905\u0926\u094d\u0935\u0948\u0924",
+      "semanticRole": "recognition",
+      "visualOperator": "open",
+      "continuityObject": "point expands into field; arcs release",
+      "visualRationale": "The recognition: the point and field are not two. This is the Great Work realized.",
+      "visual": "opening-fist",
+      "params": {
+        "release": 1,
+        "merge": true
+      }
+    }
+  ]
+}
