@@ -1,0 +1,188 @@
+{
+  "version": "1.0",
+  "id": "logicvid-04-typography",
+  "title": "Logicvid 04 \u2014 Why Does Reality Appear? (Typography)",
+  "description": "Dynamic argument diagram with italic/bold typography for Sanskrit terms and logical symbols.",
+  "theme": "ivoryManuscript",
+  "seed": 260727,
+  "render": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "crf": 18,
+    "preset": "medium",
+    "sceneDuration": 12,
+    "transitionDuration": 0.5
+  },
+  "scenes": [
+    {
+      "id": "lv01",
+      "title": "The Question",
+      "subtitle": "Why manifest?",
+      "term": "Prazna",
+      "devanagari": "\u092a\u094d\u0930\u0936\u094d\u0928",
+      "motif": "argument-diagram",
+      "duration": 12,
+      "params": {
+        "moves": [
+          {
+            "type": "claim",
+            "text": "Physics describes\n*fields* and *dynamics*",
+            "size": 28
+          },
+          {
+            "type": "subclaim",
+            "text": "but not **felt presence**",
+            "y": 410,
+            "size": 24,
+            "color": "#59646d",
+            "drift": true,
+            "dir": -1
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "claim",
+            "text": "Why is any process **manifest**\nrather than merely occurring?",
+            "size": 30,
+            "status": "highlight"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lv02",
+      "title": "Abhinavagupta",
+      "subtitle": "Threefold answer",
+      "term": "Spanda",
+      "devanagari": "\u0938\u094d\u092a\u0928\u094d\u0926",
+      "motif": "argument-diagram",
+      "duration": 14,
+      "params": {
+        "moves": [
+          {
+            "type": "claim",
+            "text": "*prak\u0101\u015ba* + *vimar\u015ba* + *spanda*",
+            "size": 32
+          },
+          {
+            "type": "subclaim",
+            "text": "presence \u2192 self-articulation \u2192 dynamic pulsation",
+            "y": 400,
+            "size": 17,
+            "color": "#3b7a9e",
+            "arrow": true
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "side-by-side",
+            "left": "**unity**\nimplicit",
+            "right": "**multiplicity**\nexplicit",
+            "leftColor": "#3b7a9e",
+            "rightColor": "#c4445a"
+          },
+          {
+            "type": "subclaim",
+            "text": "*spanda* is the active transition between them",
+            "y": 490,
+            "size": 16,
+            "color": "#d2a744"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lv03",
+      "title": "Formal Proof",
+      "subtitle": "A1\u2013A5",
+      "term": "Pram\u0101\u1e47a",
+      "devanagari": "\u092a\u094d\u0930\u092e\u093e\u0923",
+      "motif": "argument-diagram",
+      "duration": 16,
+      "params": {
+        "moves": [
+          {
+            "type": "premises",
+            "premises": [
+              "A1. Experience entails *manifestation*",
+              "A2. Structure alone does not entail **manifestation**",
+              "A3. Manifestation cannot be supplied by another state",
+              "A4. Bare manifestation cannot explain determinate reality",
+              "A5. Differentiation requires **dynamism**"
+            ],
+            "conclusion": "Nature is self-manifesting pulsation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lv04",
+      "title": "QFT vs Spanda",
+      "subtitle": "Deep difference",
+      "term": "Bheda",
+      "devanagari": "\u092d\u0947\u0926",
+      "motif": "argument-diagram",
+      "duration": 10,
+      "params": {
+        "moves": [
+          {
+            "type": "side-by-side",
+            "left": "Quantum fluctuation\nchange in a *physical* field",
+            "right": "*Spanda*\nself-manifesting\ndifferentiation",
+            "leftColor": "#59646d",
+            "rightColor": "#3b7a9e"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "claim",
+            "text": "QFT models *dynamics*\nbut not **manifestation**",
+            "size": 26,
+            "status": "refuted"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lv05",
+      "title": "Three Positions",
+      "subtitle": "The frontier",
+      "term": "S\u012bm\u0101",
+      "devanagari": "\u0938\u0940\u092e\u093e",
+      "motif": "argument-diagram",
+      "duration": 14,
+      "params": {
+        "moves": [
+          {
+            "type": "branch",
+            "branches": [
+              {
+                "label": "**Physical structuralism**\norganization \u2192 presence?\nMissing bridge",
+                "color": "#59646d"
+              },
+              {
+                "label": "**Russellian monism**\nintrinsic qualities \u2192 unity?\nMissing: self-apprehension",
+                "color": "#d2a744"
+              },
+              {
+                "label": "**Abhinavagupta**\n*prak\u0101\u015ba+vimar\u015ba+spanda*\nMost complete architecture",
+                "color": "#3b7a9e"
+              }
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "converge",
+            "text": "The unresolved **contention**:\nis manifestation the ground\nor inseparable from the vortex?"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,7 +1,8 @@
 import { TAU, clamp, easeInOutCubic, easeOutCubic, rgba, smoothstep, wave } from "../math.mjs";
 import { drawGlowOrb, drawRing, drawNode, drawArrowHead, drawPartialPath } from "../primitives.mjs";
 
-const CX = 640, CY = 320;
+const CX = 640, CY = 310;
+const FW = 1280, FH = 720;
 
 const STATUS_COLORS = {
   active: null, refuted: "#c4445a", resolved: "#3b8c5a",
@@ -10,6 +11,38 @@ const STATUS_COLORS = {
 
 function resolveColor(move, theme) {
   return STATUS_COLORS[move.status || "active"] || move.color || theme.ink;
+}
+
+function styledText(ctx, text, x, y, baseSize, color, alpha, align) {
+  const parts = text.split(/(\*[^*]+\*|\*\*[^*]+\*\*)/g);
+  let cx = x;
+  ctx.textBaseline = "middle";
+  if (align === "center") ctx.textAlign = "center";
+  else ctx.textAlign = "left";
+  for (const part of parts) {
+    if (!part) continue;
+    if (part.startsWith("**") && part.endsWith("**")) {
+      ctx.font = "700 " + baseSize + 'px "EB Garamond", "Tantra Garamond", serif';
+      const t = part.slice(2, -2);
+      ctx.fillStyle = rgba(color, alpha);
+      if (align === "center") { ctx.fillText(t, x, y); break; }
+      ctx.fillText(t, cx, y);
+      cx += ctx.measureText(t).width + 4;
+    } else if (part.startsWith("*") && part.endsWith("*")) {
+      ctx.font = "italic 400 " + baseSize + 'px "EB Garamond", "Tantra Garamond", serif';
+      const t = part.slice(1, -1);
+      ctx.fillStyle = rgba(color, alpha);
+      if (align === "center") { ctx.fillText(t, x, y); break; }
+      ctx.fillText(t, cx, y);
+      cx += ctx.measureText(t).width + 4;
+    } else {
+      ctx.font = "400 " + baseSize + 'px "EB Garamond", "Tantra Garamond", serif';
+      ctx.fillStyle = rgba(color, alpha);
+      if (align === "center") { ctx.fillText(part, x, y); break; }
+      ctx.fillText(part, cx, y);
+      cx += ctx.measureText(part).width + 4;
+    }
+  }
 }
 
 function drawSubtleField(ctx, t, theme) {
@@ -45,14 +78,10 @@ function renderClaim(ctx, t, move, theme) {
   ctx.globalAlpha = a;
   ctx.translate(CX, CY);
   ctx.scale(scale, scale);
-  ctx.font = "400 " + size + 'px "EB Garamond", "Tantra Garamond", serif';
-  ctx.textAlign = "center";
-  ctx.textBaseline = "middle";
   for (let i = 0; i < lines.length; i++) {
     const la = smoothstep(0.03 + i * 0.06, 0.1 + i * 0.06, t);
     ctx.globalAlpha = a * la;
-    ctx.fillStyle = rgba(color, a * la * 0.92);
-    ctx.fillText(lines[i], 0, startY + i * lineH);
+    styledText(ctx, lines[i], 0, startY + i * lineH, size, color, a * la * 0.92, "center");
   }
   ctx.restore();
   if (move.status === "refuted" && t > 0.4) {
@@ -73,15 +102,11 @@ function renderSubclaim(ctx, t, move, theme) {
   const a = smoothstep(0, 0.15, t);
   const size = move.size || 20;
   const color = resolveColor(move, theme);
-  const y = move.y || 380;
+  const y = typeof move.y === "number" ? move.y : 410;
   const drift = move.drift ? 40 * (1 - easeOutCubic(smoothstep(0, 0.3, t))) : 0;
   ctx.save();
   ctx.globalAlpha = a;
-  ctx.font = "400 " + size + 'px "EB Garamond", "Tantra Garamond", serif';
-  ctx.textAlign = "center";
-  ctx.textBaseline = "middle";
-  ctx.fillStyle = rgba(color, a * 0.85);
-  ctx.fillText(move.text, CX + drift * (move.dir || 1), y);
+  styledText(ctx, move.text, CX + drift * (move.dir || 1), y, size, color, a * 0.85, "center");
   if (move.arrow && t > 0.3) {
     const arrT = smoothstep(0.3, 0.5, t);
     ctx.strokeStyle = rgba(color, a * 0.3 * arrT);
@@ -249,23 +274,19 @@ function renderSideBySide(ctx, t, move, theme) {
   const rightReveal = smoothstep(0.15, 0.4, t);
   if (leftReveal > 0) {
     ctx.globalAlpha = a * leftReveal;
-    ctx.font = "400 " + size + 'px "EB Garamond", "Tantra Garamond", serif';
-    ctx.textAlign = "center"; ctx.textBaseline = "middle";
     const lLines = move.left.split("\n");
     for (let i = 0; i < lLines.length; i++) {
-      ctx.fillStyle = rgba(lColor, a * leftReveal * 0.9);
-      ctx.fillText(lLines[i], CX - colW / 2 - 20, CY - (lLines.length - 1) * size * 0.65 + i * size * 1.3);
+      styledText(ctx, lLines[i], CX - colW / 2 - 20, CY - (lLines.length - 1) * size * 0.65 + i * size * 1.3,
+        size, lColor, a * leftReveal * 0.9, "center");
     }
     drawRing(ctx, CX - colW / 2 - 20, CY, 160 + 8 * wave(t, 0.2), lColor, a * leftReveal * 0.08, 0.8);
   }
   if (rightReveal > 0) {
     ctx.globalAlpha = a * rightReveal;
-    ctx.font = "400 " + size + 'px "EB Garamond", "Tantra Garamond", serif';
-    ctx.textAlign = "center"; ctx.textBaseline = "middle";
     const rLines = move.right.split("\n");
     for (let i = 0; i < rLines.length; i++) {
-      ctx.fillStyle = rgba(rColor, a * rightReveal * 0.9);
-      ctx.fillText(rLines[i], CX + colW / 2 + 20, CY - (rLines.length - 1) * size * 0.65 + i * size * 1.3);
+      styledText(ctx, rLines[i], CX + colW / 2 + 20, CY - (rLines.length - 1) * size * 0.65 + i * size * 1.3,
+        size, rColor, a * rightReveal * 0.9, "center");
     }
     drawRing(ctx, CX + colW / 2 + 20, CY, 160 + 8 * wave(t, 0.2), rColor, a * rightReveal * 0.08, 0.8);
   }
