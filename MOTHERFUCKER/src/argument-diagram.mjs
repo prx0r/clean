@@ -4,6 +4,7 @@ import { drawGlowOrb, drawRing, drawNode, drawArrowHead, drawPartialPath } from 
 const CX = 640, CY = 310;
 const FW = 1280, FH = 720;
 
+const FONT = '"Source Serif 4", "EB Garamond", serif';
 const MONO = "#1a1a1a";
 const MUTED = "#555555";
 const REFUTE = "#b33a3a";
@@ -26,21 +27,21 @@ function styledText(ctx, text, x, y, baseSize, color, alpha, align) {
   for (const part of parts) {
     if (!part) continue;
     if (part.startsWith("**") && part.endsWith("**")) {
-      ctx.font = "700 " + baseSize + 'px "EB Garamond", "Tantra Garamond", serif';
+      ctx.font = "700 " + baseSize + 'px ' + FONT;
       const t = part.slice(2, -2);
       ctx.fillStyle = rgba(color, alpha);
       if (align === "center") { ctx.fillText(t, x, y); break; }
       ctx.fillText(t, cx, y);
       cx += ctx.measureText(t).width + 4;
     } else if (part.startsWith("*") && part.endsWith("*")) {
-      ctx.font = "italic 400 " + baseSize + 'px "EB Garamond", "Tantra Garamond", serif';
+      ctx.font = "italic 400 " + baseSize + 'px ' + FONT;
       const t = part.slice(1, -1);
       ctx.fillStyle = rgba(color, alpha);
       if (align === "center") { ctx.fillText(t, x, y); break; }
       ctx.fillText(t, cx, y);
       cx += ctx.measureText(t).width + 4;
     } else {
-      ctx.font = "400 " + baseSize + 'px "EB Garamond", "Tantra Garamond", serif';
+      ctx.font = "400 " + baseSize + 'px ' + FONT;
       ctx.fillStyle = rgba(color, alpha);
       if (align === "center") { ctx.fillText(part, x, y); break; }
       ctx.fillText(part, cx, y);
@@ -191,7 +192,7 @@ function renderConverge(ctx, t, move, theme) {
   for (let i = 0; i < lines.length; i++) {
     const la = smoothstep(0.05 + i * 0.08, 0.12 + i * 0.08, t);
     ctx.globalAlpha = a * la;
-    ctx.font = "400 " + size + 'px "EB Garamond", "Tantra Garamond", serif';
+    ctx.font = "400 " + size + 'px ' + FONT;
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
     ctx.fillStyle = rgba(color, a * la * 0.92);
@@ -221,7 +222,7 @@ function renderPremiseList(ctx, t, move, theme) {
     if (pa > 0) {
       ctx.globalAlpha = a * pa;
       drawNode(ctx, 200, startY + i * lineH, 3.5, { fill: theme.secondary, stroke: theme.secondary, alpha: a * pa * 0.5 });
-      ctx.font = "400 " + size + 'px "EB Garamond", "Tantra Garamond", serif';
+      ctx.font = "400 " + size + 'px ' + FONT;
       ctx.textAlign = "left";
       ctx.textBaseline = "middle";
       ctx.fillStyle = rgba(theme.ink, a * pa * 0.8);
@@ -247,7 +248,7 @@ function renderPremiseList(ctx, t, move, theme) {
     ctx.lineTo(1060, lineY);
     ctx.stroke();
     drawGlowOrb(ctx, 180, lineY, 3, theme.accent || "#3b7a9e", a * ca * 0.4);
-    ctx.font = "500 " + (size + 2) + 'px "EB Garamond", "Tantra Garamond", serif';
+    ctx.font = "500 " + (size + 2) + 'px ' + FONT;
     ctx.textAlign = "left";
     ctx.textBaseline = "middle";
     ctx.fillStyle = rgba(theme.accent || "#3b7a9e", a * ca * 0.92);

@@ -31,6 +31,21 @@ export function initializeFonts() {
     typography.devanagari.family,
   );
 
+  try {
+    const HERE = dirname(fileURLToPath(import.meta.url));
+    const srcSerifDir = join(HERE, "node_modules/source-serif/VAR");
+    registerFont(
+      join(srcSerifDir, "SourceSerif4Variable-Roman.ttf"),
+      "Source Serif 4",
+    );
+    registerFont(
+      join(srcSerifDir, "SourceSerif4Variable-Italic.ttf"),
+      "Source Serif 4",
+    );
+  } catch (e) {
+    console.warn("Source Serif 4 not available:", e.message);
+  }
+
   initialized = true;
 }
 
