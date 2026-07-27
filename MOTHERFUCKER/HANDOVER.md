@@ -67,8 +67,35 @@ Destroyed. Spin up a new one (`~$0.08/hr` on RTX 3060) when rendering. Install d
 
 ## Next priorities
 
+### Phase 1 — Foundation fixes (1-2 days)
 1. Wire style pack resolution into `renderer.mjs` — `stylePack` field selects theme + material tokens
-2. Build vertical short template (1080×1920, big text, 4-5 scenes at 5-8s each)
-3. Expand argument-diagram with radial hierarchy layout mode for concept-map
-4. Connect audio reactivity to more mechanisms
-5. Build Anakhya brand style pack (ivory manuscript, warm gold/crimson/indigo, EB Garamond)
+2. Add `"format": "short"` flag → auto-resolution 1080×1920, text size ×1.5, scene timing ×0.6, suppress footer
+3. Build batch short renderer — given a long scene pack, extract 3-5 short packs (hook, insight, punchline), render all vertical
+4. Connect audio reactivity to invariant-composition and intelligent-others mechanisms
+5. Add HSB color utility to `src/materials/color.mjs` — hue wheel interpolation, not RGB lerp
+
+### Phase 2 — Intelligent Others launch (3-5 days)
+6. Build `science-diagram` motif with move types: network (force-directed), field (wave propagation), membrane (cell boundary), tree (phylogenetic), sequence (data track), oscillation (waveform)
+7. Wire `intelligent-others` pack to render correctly — test all 9 science-visuals mechanisms
+8. Build derivative-trajectory demo (position, velocity, acceleration) — core science viz primitive
+9. Port the 20 scientific visualization techniques from `pratyabhijnahrdayam_SOURCE_NOTES.md` as Skia mechanisms (harmonograph, L-system, Lissajous, Voronoi, Clifford attractor, Chladni patterns)
+
+### Phase 3 — Scaling (ongoing)
+10. Batch short renderer → produce 5 shorts from each long video
+11. YouTube title data integration — short titles use breakout patterns from channel analysis
+12. Build Anakhya brand style pack (ivory manuscript, warm gold/crimson/indigo, EB Garamond)
+13. Expand argument-diagram concept-map with radial/hierarchy/chain/dialectical layout modes
+14. Full Hermes pipeline: research → essay → IR → beat-map → scene pack → render → shorts → publish
+
+## Key references added this session
+
+| File | Content |
+|---|---|
+| `magnum-opus/21-ANAKHYA.md` | Anakhya channel identity |
+| `magnum-opus/22-TANTRAFILES.md` | Tantrafiles channel + beat-map pipeline |
+| `magnum-opus/23-OCHEMA.md` | Ochema channel identity |
+| `magnum-opus/24-INTELLIGENT-OTHERS.md` | Intelligent Others pack + science viz refs |
+| `magnum-opus/25-SHORTS-PIPELINE.md` | Shorts format, 2-skill system, YouTube title data |
+| `capability-packs/intelligent-others/pack.json` | Extends scientific-diagrams + invariant-composition |
+| `agent-guide/chatgpt-process-notes/` | 9 ChatGPT process notes + 20 visualization techniques |
+| `FOR_CHATGPT.md` | Full framework context for LLM agents |
