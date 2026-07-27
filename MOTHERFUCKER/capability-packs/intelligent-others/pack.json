@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "id": "intelligent-others",
+  "title": "Intelligent Others — Science Visualization",
+  "description": "Scientific visualization mechanisms for machine consciousness, synthetic biology, astrobiology, and complex systems. Includes rate plots, phase space, barrier dynamics, molecular gates, energy landscapes, temporal processes, and derivative trajectories.",
+  "extends": ["scientific-diagrams", "invariant-composition"],
+  "defaultTheme": "whiteScientific",
+  "runtimeModule": "../../extensionpacks/science-visuals.mjs",
+  "themes": [],
+  "assets": [],
+  "mechanisms": [],
+  "selectionPolicy": {
+    "preferredSemanticTags": ["measurement", "causality", "propagation", "emergence", "feedback", "network"],
+    "forbiddenLiteralizations": ["unlabelled axes", "decorative diagrams without encoded relation", "brain-as-circuit-board without epistemic caveat"],
+    "maximumConsecutiveMechanism": 2,
+    "requireMotionProof": true
+  }
+}
