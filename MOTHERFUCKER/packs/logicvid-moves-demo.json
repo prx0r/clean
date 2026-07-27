@@ -1,0 +1,100 @@
+{
+  "version": "1.0",
+  "id": "logicvid-moves-demo",
+  "title": "Dialogue & Concept Map Demo",
+  "description": "Two new move types for the argument-diagram motif.",
+  "theme": "ivoryManuscript",
+  "seed": 260727,
+  "render": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "crf": 18,
+    "preset": "medium",
+    "sceneDuration": 12,
+    "transitionDuration": 0.5
+  },
+  "scenes": [
+    {
+      "id": "dm01",
+      "title": "Dialogue",
+      "subtitle": "Abhinavagupta vs \u00d1\u0101\u1e47ananda",
+      "term": "Samv\u0101da",
+      "devanagari": "\u0938\u0902\u0935\u093e\u0926",
+      "motif": "argument-diagram",
+      "duration": 16,
+      "params": {
+        "moves": [
+          {
+            "type": "dialogue",
+            "turns": [
+              {
+                "speaker": "Abhinavagupta",
+                "text": "Experience is\nconsciousness manifesting itself",
+                "side": "left"
+              },
+              {
+                "speaker": "\u00d1\u0101\u1e47ananda",
+                "text": "But consciousness is\nconditioned by name-and-form",
+                "side": "right"
+              },
+              {
+                "speaker": "Abhinavagupta",
+                "text": "What makes the\nvortex manifest at all?",
+                "side": "left"
+              },
+              {
+                "speaker": "\u00d1\u0101\u1e47ananda",
+                "text": "Manifestation is inseparable\nfrom the vortex itself",
+                "side": "right"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "dm02",
+      "title": "Concept Map",
+      "subtitle": "The threefold answer",
+      "term": "Spanda",
+      "devanagari": "\u0938\u094d\u092a\u0928\u094d\u0926",
+      "motif": "argument-diagram",
+      "duration": 14,
+      "params": {
+        "moves": [
+          {
+            "type": "concept-map",
+            "central": "Spanda",
+            "nodes": [
+              {
+                "label": "Prak\u0101\u015ba",
+                "relation": "presence",
+                "x": -320,
+                "y": -140
+              },
+              {
+                "label": "Vimar\u015ba",
+                "relation": "self-articulation",
+                "x": 320,
+                "y": -140
+              },
+              {
+                "label": "Unity",
+                "relation": "implicit",
+                "x": -320,
+                "y": 140
+              },
+              {
+                "label": "Multiplicity",
+                "relation": "explicit",
+                "x": 320,
+                "y": 140
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

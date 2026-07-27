@@ -314,10 +314,93 @@ function renderDivider(ctx, t, move, theme) {
   ctx.restore();
 }
 
+function renderDialogue(ctx, t, move, theme) {
+  const a = smoothstep(0, 0.12, t);
+  const turns = move.turns || [];
+  const size = move.size || 18;
+  const colW = 480;
+  const totalDur = 1 / Math.max(turns.length, 1);
+  ctx.save();
+  for (let i = 0; i < turns.length; i++) {
+    const turnStart = i * totalDur;
+    const turnT = smoothstep(turnStart, turnStart + totalDur * 0.4, t);
+    if (turnT <= 0) continue;
+    const isLeft = turns[i].side === "left";
+    const x = isLeft ? CX - colW / 2 - 20 : CX + colW / 2 + 20;
+    const color = isLeft ? MONO : MUTED;
+    if (turnT > 0) {
+      ctx.globalAlpha = a * smoothstep(0, 0.15, turnT);
+      const lines = turns[i].text.split("\n");
+      for (let li = 0; li < lines.length; li++) {
+        styledText(ctx, lines[li], x, CY - 60 + li * (size + 8) + (i * 10),
+          size, color, a * 0.92, "center");
+      }
+      if (isLeft) drawRing(ctx, x - 160, CY - 80 + i * 10, 100, color, a * 0.05, 0.5);
+      else drawRing(ctx, x + 160, CY - 80 + i * 10, 100, color, a * 0.05, 0.5);
+    }
+    if (i > 0) {
+      const lineT = smoothstep(turnStart - 0.08, turnStart, t);
+      if (lineT > 0) {
+        ctx.globalAlpha = a * lineT * 0.3;
+        ctx.strokeStyle = rgba(MUTED, a * lineT * 0.3);
+        ctx.lineWidth = 0.5;
+        ctx.setLineDash([4, 6]);
+        const prevSide = turns[i - 1].side;
+        const fromX = prevSide === "left" ? CX - 60 : CX + 60;
+        const toX = isLeft ? CX - 60 : CX + 60;
+        ctx.beginPath();
+        ctx.moveTo(fromX, CY - 40 + (i - 1) * 20);
+        ctx.lineTo(toX, CY - 40 + i * 20);
+        ctx.stroke();
+        ctx.setLineDash([]);
+      }
+    }
+  }
+  ctx.restore();
+}
+
+function renderConceptMap(ctx, t, move, theme) {
+  const a = smoothstep(0, 0.1, t);
+  const nodes = move.nodes || [];
+  const size = move.size || 16;
+  ctx.save();
+  const centralReveal = smoothstep(0, 0.2, t);
+  if (centralReveal > 0 && move.central) {
+    ctx.globalAlpha = a * centralReveal;
+    drawGlowOrb(ctx, CX, CY, 12, MONO, a * centralReveal * 0.15);
+    drawRing(ctx, CX, CY, 48 + 6 * wave(t, 0.3), MONO, a * centralReveal * 0.12, 0.6);
+    styledText(ctx, "**" + move.central + "**", CX, CY, size + 4, MONO, a * centralReveal * 0.92, "center");
+  }
+  for (let i = 0; i < nodes.length; i++) {
+    const n = nodes[i];
+    const nx = CX + (n.x || 0);
+    const ny = CY + (n.y || 0);
+    const nodeT = smoothstep(0.15 + i * 0.08, 0.25 + i * 0.08, t);
+    if (nodeT <= 0 || !move.central) continue;
+    ctx.globalAlpha = a * nodeT;
+    ctx.strokeStyle = rgba(MUTED, a * nodeT * 0.25);
+    ctx.lineWidth = 0.5;
+    ctx.setLineDash([3, 5]);
+    ctx.beginPath();
+    ctx.moveTo(CX, CY);
+    const cpx = (CX + nx) / 2;
+      ctx.quadraticCurveTo(cpx + (i % 3 - 1) * 30, (CY + ny) / 2 - 20 + (i % 2) * 20, nx, ny);
+    ctx.stroke();
+    ctx.setLineDash([]);
+    drawGlowOrb(ctx, nx, ny, 4, MONO, a * nodeT * 0.2);
+    styledText(ctx, n.label, nx, ny + 24, size, MONO, a * nodeT * 0.88, "center");
+    if (n.relation && nodeT > 0.3) {
+      styledText(ctx, n.relation, nx, ny - 28, size - 4, MUTED, a * nodeT * 0.5, "center");
+    }
+  }
+  ctx.restore();
+}
+
 const RENDERERS = {
   claim: renderClaim, subclaim: renderSubclaim, refutation: renderRefutation,
   branch: renderBranch, converge: renderConverge, divider: renderDivider,
   premises: renderPremiseList, "side-by-side": renderSideBySide,
+  dialogue: renderDialogue, "concept-map": renderConceptMap,
 };
 
 export function renderArgumentDiagram(ctx, t, scene, env) {
