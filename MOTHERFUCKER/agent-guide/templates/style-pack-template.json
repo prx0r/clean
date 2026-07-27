@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "id": "replace-style",
+  "title": "Replace Style",
+  "theme": "ivoryManuscript",
+  "materialProfile": "mineral-manuscript",
+  "geometryDefaults": {},
+  "motionDefaults": {},
+  "presentationDefaults": {},
+  "forbiddenEffects": []
+}

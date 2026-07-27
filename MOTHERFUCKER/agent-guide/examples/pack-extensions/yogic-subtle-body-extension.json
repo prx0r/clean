@@ -1,0 +1,33 @@
+{
+  "dependencies": [
+    "pathkit-geometry",
+    "particle-fields",
+    "audio-reactive"
+  ],
+  "styleProfiles": [
+    "luminous-subtle-body",
+    "luminous-tantric",
+    "mineral-manuscript"
+  ],
+  "newAssets": [
+    "ida-spline",
+    "pingala-spline",
+    "sushumna-spline",
+    "chakra-intersection-nodes",
+    "granthi-regions"
+  ],
+  "newMechanisms": [
+    "nadi-alternation",
+    "central-channel-entrainment",
+    "breath-current",
+    "ascending-packet",
+    "descending-return",
+    "channel-obstruction",
+    "channel-release",
+    "chakra-exchange",
+    "granthi-unbinding"
+  ],
+  "signalRoutingProfiles": [
+    "nadi-harmonic-prana"
+  ]
+}

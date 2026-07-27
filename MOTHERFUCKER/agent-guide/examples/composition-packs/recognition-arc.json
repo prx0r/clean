@@ -1,0 +1,37 @@
+{
+  "version": "1.0",
+  "id": "recognition-arc",
+  "title": "Recognition Arc",
+  "stages": [
+    {
+      "id": "assumption",
+      "verb": "localize",
+      "audienceFunction": "establish ordinary model"
+    },
+    {
+      "id": "instability",
+      "verb": "differentiate",
+      "audienceFunction": "expose contradiction"
+    },
+    {
+      "id": "preparation",
+      "verb": "remember",
+      "audienceFunction": "prepare invariant"
+    },
+    {
+      "id": "recognition",
+      "verb": "reveal",
+      "audienceFunction": "shift from carrier to relation"
+    },
+    {
+      "id": "assimilation",
+      "verb": "recontextualize",
+      "audienceFunction": "ordinary world remains transformed"
+    }
+  ],
+  "forbiddenDefaults": [
+    "mandatory silence",
+    "automatic whiteout",
+    "automatic zero-state ending"
+  ]
+}

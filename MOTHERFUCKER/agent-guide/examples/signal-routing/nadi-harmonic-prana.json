@@ -1,0 +1,55 @@
+{
+  "id": "nadi-harmonic-prana",
+  "routes": [
+    {
+      "bus": "music",
+      "source": "onset",
+      "target": "particles.emission",
+      "minimum": 3,
+      "maximum": 65,
+      "attack": 0.01,
+      "release": 0.18,
+      "curve": "ease-out"
+    },
+    {
+      "bus": "music",
+      "source": "harmonicEnergy",
+      "target": "particles.trailLength",
+      "minimum": 8,
+      "maximum": 38,
+      "attack": 0.08,
+      "release": 0.7,
+      "curve": "linear"
+    },
+    {
+      "bus": "music",
+      "source": "beatPulse",
+      "target": "chakra.contraction",
+      "minimum": 0,
+      "maximum": 1,
+      "attack": 0.01,
+      "release": 0.24,
+      "curve": "ease-out"
+    },
+    {
+      "bus": "narration",
+      "source": "speechDensity",
+      "target": "scene.informationSuppression",
+      "minimum": 0,
+      "maximum": 0.62,
+      "attack": 0.12,
+      "release": 0.45,
+      "curve": "linear"
+    },
+    {
+      "bus": "narration",
+      "source": "emphasis",
+      "target": "attention.focusStrength",
+      "minimum": 0.2,
+      "maximum": 1,
+      "attack": 0.04,
+      "release": 0.3,
+      "curve": "ease-out"
+    }
+  ]
+}

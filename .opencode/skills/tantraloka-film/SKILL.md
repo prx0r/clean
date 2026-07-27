@@ -8,60 +8,89 @@ description: |
 
 # Tantraloka Skia Essay-Film Framework
 
-Deterministic motion-graphics framework for turning philosophical essays into narrated visual films. Located at `MOTHERFUCKER/`.
+Deterministic motion-graphics framework at `MOTHERFUCKER/`. Turns essays into narrated visual films by communicating **relations through motion** — not a slideshow of noun illustrations.
 
-## Core Principle
+## Non-negotiable order
 
-**Illustrate relations, not nouns.** A viewer should be able to infer the logic of each beat from the motion alone. Do not choose visual mechanisms by keyword — choose the mechanism whose geometry demonstrates the passage's proposition.
+Do not collapse passes. Choosing a visual while summarizing a paragraph makes the first association feel inevitable and produces literal, repetitive films.
 
-## The 4-Pass Decision Protocol
+1. Read the complete source.
+2. Build a visual-free argument IR (roles, relations, states, invariants).
+3. Identify continuity systems and invariants.
+4. Select composition structure.
+5. Activate capability packs.
+6. Generate at least three mechanism candidates per beat.
+7. Select by relation preservation and motion proof.
+8. Apply geometry, material, motion and style profiles.
+9. Route music and narration signals independently.
+10. Validate and render review frames.
+11. Repair failed mechanisms only.
+12. Render final video and mux audio.
 
-Do not collapse passes. Choosing an image while summarizing a paragraph makes the first association feel inevitable.
+## Mechanism selection rubric
 
-### Pass 1: Visual-Free Argument Analysis
+Score every candidate on: relation preservation, topology, temporal order, invariant preservation, silent legibility, domain appropriateness, epistemic integrity, novelty relative to adjacent scenes.
 
-Read the essay. Remove headings. Number paragraphs 1-N.
+Reject any candidate that is merely beautiful and interchangeable.
 
-For each paragraph, identify WITHOUT naming any visual:
-- **Semantic role** — hook, thesis, definition, mechanism, analogy, consequence, objection, reversal, practice, recognition, synthesis, coda
-- **Relation type** — identity-across-change, dependency, interface, emergence, containment, selection, sequence, feedback, transformation, cessation, self-modification, etc.
-- **Source state** → **Target state**
-- **Preserved invariant**
-- **Likely misreading** — what a literal illustration would get wrong
+## Hard failures
 
-### Pass 2: Define Continuity Systems (BEFORE mechanisms)
+- missing pack activation;
+- unsupported mechanism;
+- unregistered theme;
+- non-deterministic output;
+- arbitrary symbol substitution;
+- biomedical and symbolic models collapsed;
+- scene legible only through its title;
+- narration printed as caption.
 
-Choose 2-9 recurring visual systems. Each must have one stable meaning, one stable treatment, and a lifecycle (introduction → development → return → resolution).
+## Planning output
 
-### Pass 3: Generate Scored Mechanism Candidates
+Produce before writing any scene JSON:
 
-For each beat, generate 3+ candidates scored by: relation correspondence (30), motion performs the claim (20), domain/scale match (15), continuity handoff (15), legibility (10), novelty (10). Select only candidates scoring ≥72.
+```json
+{
+  "central_claim": "",
+  "audience_transformation": {
+    "initial_model": "",
+    "destabilization": "",
+    "recognition": "",
+    "aftertaste": ""
+  },
+  "continuity_systems": [],
+  "composition_profile": "",
+  "required_capabilities": [],
+  "style_profile": "",
+  "signal_strategy": {}
+}
+```
 
-### Pass 4: Audit
+## Available mechanism packs
 
-Every shot needs a rationale stating: what relation, what changes, what persists, why explanatory. Reject "make it beautiful" or "show consciousness."
+Read manifests at `MOTHERFUCKER/capability-packs/*/pack.json`.
 
-## Available Mechanisms
+**Base** (15): constraint-field, point-of-view, five-lenses, local-power, melody-time, attention-beam, desire-orbit, smallness-cage, powered-prison, practice-folds, upsurge, wave-ocean, textures-display, limitation-reversal, opening-fist
 
-Read `MOTHERFUCKER/capability-packs/*/pack.json` for full descriptions and motion proofs.
+**Human-anatomy**: embodied-awareness-field, body-scan, meditation-settling, breath-cycle, breath-attention-coupling, nervous-signal-propagation, interoceptive-map, body-world-interface, heart-breath-entrainment
 
-### Base pack (15 mechanisms, always available)
-constraint-field, point-of-view, five-lenses, local-power, melody-time, attention-beam, desire-orbit, smallness-cage, powered-prison, practice-folds, upsurge, wave-ocean, textures-display, limitation-reversal, opening-fist
+**Neurocognition**: attention-selection, predictive-loop, pattern-completion, memory-consolidation, neural-propagation, competitive-binding, temporal-integration, error-driven-learning
 
-### Human-anatomy (requires capabilityPacks: ["human-anatomy"])
-embodied-awareness-field, body-scan, meditation-settling, breath-cycle, breath-attention-coupling, nervous-signal-propagation, interoceptive-map, body-world-interface, heart-breath-entrainment
+**Invariant-composition**: transformation-invariance, carrier-transfer, causal-memory, derivative-trajectory, lead-lag-counterpoint, conservation-filter, semantic-transition, polyphonic-identity, recognition-transaction, climax-assimilation, structural-homology, constraint-tournament
 
-### Neurocognition (requires capabilityPacks: ["neurocognition"])
-attention-selection, predictive-loop, pattern-completion, memory-consolidation, neural-propagation, competitive-binding, temporal-integration, error-driven-learning
+**PathKit-geometry**: lotus-unfold, yantra-construction, mandala-entry
 
-### Invariant-composition (requires capabilityPacks: ["invariant-composition"])
-transformation-invariance, carrier-transfer, causal-memory, derivative-trajectory, lead-lag-counterpoint, conservation-filter, semantic-transition, polyphonic-identity, recognition-transaction, climax-assimilation, structural-homology, constraint-tournament
+## Pack types
 
-## Visual Operators (choose one per shot)
+| Type | What it answers |
+|---|---|
+| Capability pack | What relation or domain can be shown? |
+| Style pack | How should it feel? |
+| Composition pack | Why does this event follow the previous? |
+| Signal pack | Which audio/narration feature controls which visual? |
 
-reveal, contract, frame, filter, sequence, select, reach, enclose, construct, unfold, invert, differentiate, recontextualize, open
+Never place all four responsibilities in one theme.
 
-## Scene Format
+## Scene format
 
 ```json
 {
@@ -72,27 +101,23 @@ reveal, contract, frame, filter, sequence, select, reach, enclose, construct, un
   "devanagari": "देवनागरी",
   "motif": "semantic-essay",
   "duration": 6.0,
-  "params": { "visual": "mechanism-id", "caption": "Short label" }
+  "params": { "visual": "mechanism-id", "caption": "Short label" },
+  "styleProfile": null,
+  "materialProfile": null,
+  "motionProfile": null,
+  "signalRouting": null
 }
 ```
 
 ## Render
 
-### Base mechanisms only:
 ```bash
 cd MOTHERFUCKER
-node cli.mjs render packs/your-pack.json --out build/film.mp4
+# Base mechanisms:
+node cli.mjs render packs/pack.json --out build/film.mp4
+# Custom packs (with capabilityPack field):
+node -e "import('./tools/render-pack.mjs').then(m=>m.main('./packs/pack.json'))"
 ```
-
-### Custom packs (capabilityPack field in JSON):
-```js
-import { loadCapabilityScenePack } from "./src/load-capability-scene-pack.mjs";
-import { renderVideo } from "./renderer.mjs";
-const pack = await loadCapabilityScenePack("./packs/your-pack.json");
-await renderVideo(pack, "build/film.mp4");
-```
-
-See `MOTHERFUCKER/tools/test-neuro-pack.mjs` and `MOTHERFUCKER/tools/test-anatomy-pack.mjs` for working examples.
 
 ## TTS + Mux
 
@@ -102,10 +127,15 @@ ffmpeg -f concat -safe 0 -i concat.txt -c copy full.mp3
 ffmpeg -i video.mp4 -i full.mp3 -c:v copy -filter:a "atempo=RATIO" -c:a aac -map 0:v:0 -map 1:a:0 -shortest final.mp4
 ```
 
-## Reference Docs
+## Narration rules
 
-- `MOTHERFUCKER/VISUAL_DECISION_PROTOCOL.md` — full 4-pass protocol
-- `MOTHERFUCKER/VISUAL_CODING_LANGUAGE.md` — composition grammar
+When narration is dense: reduce particle emission, simplify background motion, preserve main explanatory geometry, keep continuity objects present.
+When narration withdraws: allow the visual process to complete, do not automatically fade to black.
+
+## Reference docs
+
+- `MOTHERFUCKER/VISUAL_DECISION_PROTOCOL.md` — 4-pass protocol
+- `MOTHERFUCKER/VISUAL_CODING_LANGUAGE.md` — grammar
 - `MOTHERFUCKER/ESSAY_VISUAL_MODEL_PROMPT.md` — agent prompt
-- `MOTHERFUCKER/ESSAY_TO_VISUAL_WORKFLOW.md` — end-to-end workflow
+- `MOTHERFUCKER/agent-guide/agent-skill/SKILL.md` — improved skill
 - `MOTHERFUCKER/infinite_learned_film_pack/visual_program.json` — validated 44-shot example

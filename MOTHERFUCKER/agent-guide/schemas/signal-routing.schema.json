@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "routes"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "routes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "bus",
+          "source",
+          "target"
+        ],
+        "properties": {
+          "bus": {
+            "enum": [
+              "score",
+              "music",
+              "narration"
+            ]
+          },
+          "source": {
+            "type": "string"
+          },
+          "target": {
+            "type": "string"
+          },
+          "minimum": {
+            "type": "number"
+          },
+          "maximum": {
+            "type": "number"
+          },
+          "attack": {
+            "type": "number",
+            "minimum": 0
+          },
+          "release": {
+            "type": "number",
+            "minimum": 0
+          },
+          "curve": {
+            "enum": [
+              "linear",
+              "square",
+              "sqrt",
+              "ease-out",
+              "threshold"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

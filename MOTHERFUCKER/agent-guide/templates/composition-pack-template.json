@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "id": "replace-composition",
+  "title": "Replace Composition",
+  "stages": [
+    {
+      "id": "opening",
+      "function": "establish initial model"
+    },
+    {
+      "id": "destabilize",
+      "function": "make the model insufficient"
+    },
+    {
+      "id": "mechanism",
+      "function": "show causal alternative"
+    },
+    {
+      "id": "recognition",
+      "function": "make invariant directly available"
+    },
+    {
+      "id": "assimilation",
+      "function": "return to ordinary experience transformed"
+    }
+  ],
+  "transitionPolicy": "Every transition must declare a causal verb.",
+  "recognitionPolicy": "Recognition signature is thesis-derived, not universal."
+}

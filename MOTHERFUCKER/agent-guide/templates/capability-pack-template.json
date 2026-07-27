@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "id": "replace-me",
+  "title": "Replace Me",
+  "description": "Describe the domain capability.",
+  "extends": [
+    "base"
+  ],
+  "defaultTheme": "ivoryManuscript",
+  "runtimeModule": "../../src/replace-me-visuals.mjs",
+  "themes": [],
+  "assets": [],
+  "mechanisms": [],
+  "selectionPolicy": {
+    "requireMotionProof": true,
+    "maximumConsecutiveMechanism": 2
+  }
+}

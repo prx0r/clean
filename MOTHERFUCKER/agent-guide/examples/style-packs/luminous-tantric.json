@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "id": "luminous-tantric",
+  "title": "Luminous Tantric",
+  "theme": "midnightVellum",
+  "materialProfile": "luminous-subtle-body",
+  "geometryDefaults": {
+    "lineWidth": 1.4,
+    "symmetryPrecision": 0.95
+  },
+  "motionDefaults": {
+    "pulseRate": 0.3,
+    "trailPersistence": 0.68
+  },
+  "presentationDefaults": {
+    "labels": "minimal",
+    "border": "ritual-folio"
+  },
+  "forbiddenEffects": [
+    "generic rainbow chakra palette",
+    "constant maximum glow",
+    "decorative particle noise"
+  ]
+}
