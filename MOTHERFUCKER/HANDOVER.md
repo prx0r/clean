@@ -87,6 +87,10 @@ Destroyed. Spin up a new one (`~$0.08/hr` on RTX 3060) when rendering. Install d
 13. Expand argument-diagram concept-map with radial/hierarchy/chain/dialectical layout modes
 14. Full Hermes pipeline: research → essay → IR → beat-map → scene pack → render → shorts → publish
 
+## DevNext
+
+Full build notes for meditation motif, sleeper pipeline, voice cloning, music themes, and shorts batch at `MOTHERFUCKER/devnext.md`.
+
 ## Key references added this session
 
 | File | Content |
