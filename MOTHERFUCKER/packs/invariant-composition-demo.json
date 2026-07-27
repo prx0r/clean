@@ -1,0 +1,197 @@
+{
+  "version": "1.0",
+  "id": "invariant-composition-demo",
+  "title": "Invariant Composition — Capability Demonstration",
+  "description": "Twelve theorem-level scenes proving the Invariant Composition capability pack.",
+  "capabilityPacks": [
+    "invariant-composition"
+  ],
+  "theme": "kineticIvory",
+  "seed": 260727,
+  "render": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "sceneDuration": 5.2,
+    "crf": 16,
+    "preset": "medium",
+    "transitionDuration": 0.28
+  },
+  "scenes": [
+    {
+      "id": "inv01",
+      "title": "The Subject Survives",
+      "subtitle": "Identity remains relational through transformed appearance.",
+      "term": "Dhruva",
+      "devanagari": "ध्रुव",
+      "motif": "semantic-essay",
+      "params": {
+        "visual": "transformation-invariance",
+        "operation": "mixed",
+        "lobes": 5
+      },
+      "duration": 5.2,
+      "seed": 260727
+    },
+    {
+      "id": "inv02",
+      "title": "No Carrier Is Permanent",
+      "subtitle": "The same relation migrates through incompatible material embodiments.",
+      "term": "Saṃkrānti",
+      "devanagari": "संक्रान्ति",
+      "motif": "semantic-essay",
+      "params": {
+        "visual": "carrier-transfer",
+        "carriers": 5,
+        "fidelity": 0.9
+      },
+      "duration": 5.2,
+      "seed": 260824
+    },
+    {
+      "id": "inv03",
+      "title": "The Present Has A Past",
+      "subtitle": "A decaying trace makes current state depend on its route.",
+      "term": "Saṃskāra",
+      "devanagari": "संस्कार",
+      "motif": "semantic-essay",
+      "params": {
+        "visual": "causal-memory",
+        "tau": 0.46,
+        "path": "hysteresis"
+      },
+      "duration": 5.2,
+      "seed": 260921
+    },
+    {
+      "id": "inv04",
+      "title": "Value Is Not Direction",
+      "subtitle": "Velocity and acceleration distinguish equal scalar states.",
+      "term": "Gati",
+      "devanagari": "गति",
+      "motif": "semantic-essay",
+      "params": {
+        "visual": "derivative-trajectory",
+        "profile": "overshoot"
+      },
+      "duration": 5.2,
+      "seed": 261018
+    },
+    {
+      "id": "inv05",
+      "title": "Meaning Arrives Offbeat",
+      "subtitle": "Modalities coordinate through deliberate anticipation and delay.",
+      "term": "Vilamba",
+      "devanagari": "विलम्ब",
+      "motif": "semantic-essay",
+      "params": {
+        "visual": "lead-lag-counterpoint",
+        "musicLead": 0.14,
+        "semanticLag": 0.18
+      },
+      "duration": 5.2,
+      "seed": 261115
+    },
+    {
+      "id": "inv06",
+      "title": "Continuity Has Laws",
+      "subtitle": "Permitted changes pass; arbitrary replacement is refused.",
+      "term": "Niyama",
+      "devanagari": "नियम",
+      "motif": "semantic-essay",
+      "params": {
+        "visual": "conservation-filter",
+        "strictness": 0.8
+      },
+      "duration": 5.2,
+      "seed": 261212
+    },
+    {
+      "id": "inv07",
+      "title": "Change Needs A Verb",
+      "subtitle": "The transition itself explains how one world produces another.",
+      "term": "Pariṇāma",
+      "devanagari": "परिणाम",
+      "motif": "semantic-essay",
+      "params": {
+        "visual": "semantic-transition",
+        "verb": "germinate"
+      },
+      "duration": 5.2,
+      "seed": 261309
+    },
+    {
+      "id": "inv08",
+      "title": "Multiplicity Keeps Identity",
+      "subtitle": "Independent voices transform one subject without collapsing together.",
+      "term": "Anekatā",
+      "devanagari": "अनेकता",
+      "motif": "semantic-essay",
+      "params": {
+        "visual": "polyphonic-identity",
+        "voices": 6,
+        "entrySpread": 0.42
+      },
+      "duration": 5.2,
+      "seed": 261406
+    },
+    {
+      "id": "inv09",
+      "title": "Recognition Changes The Object",
+      "subtitle": "Attention moves from carriers to the relation surviving them.",
+      "term": "Pratyabhijñā",
+      "devanagari": "प्रत्यभिज्ञा",
+      "motif": "semantic-essay",
+      "params": {
+        "visual": "recognition-transaction",
+        "recognitionTime": 0.67
+      },
+      "duration": 5.2,
+      "seed": 261503
+    },
+    {
+      "id": "inv10",
+      "title": "The Peak Is Not The End",
+      "subtitle": "Recognition contracts into an altered ordinary world.",
+      "term": "Samāveśa",
+      "devanagari": "समावेश",
+      "motif": "semantic-essay",
+      "params": {
+        "visual": "climax-assimilation",
+        "climaxTime": 0.56,
+        "afterlife": 0.76
+      },
+      "duration": 5.2,
+      "seed": 261600
+    },
+    {
+      "id": "inv11",
+      "title": "Three Media One Causality",
+      "subtitle": "Argument, music and image obey the same transformation law.",
+      "term": "Sāmya",
+      "devanagari": "साम्य",
+      "motif": "semantic-essay",
+      "params": {
+        "visual": "structural-homology",
+        "relation": "invariance"
+      },
+      "duration": 5.2,
+      "seed": 261697
+    },
+    {
+      "id": "inv12",
+      "title": "The Critic Becomes Form",
+      "subtitle": "Candidates survive only when every necessary relation holds.",
+      "term": "Parīkṣā",
+      "devanagari": "परीक्षा",
+      "motif": "semantic-essay",
+      "params": {
+        "visual": "constraint-tournament",
+        "candidates": 6,
+        "gates": 4
+      },
+      "duration": 5.2,
+      "seed": 261794
+    }
+  ]
+}

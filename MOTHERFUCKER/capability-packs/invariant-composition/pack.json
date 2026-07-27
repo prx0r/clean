@@ -1,0 +1,918 @@
+{
+  "version": "1.0",
+  "id": "invariant-composition",
+  "title": "Invariant Composition",
+  "description": "A theorem-level visual composition pack for transformation-invariance, carrier transfer, causal memory, derivative-aware trajectories, modality counterpoint, conservation laws, semantic transitions, recognition transactions, and post-climax assimilation.",
+  "extends": [
+    "systems-dynamics",
+    "temporal-processes",
+    "comparative-epistemology"
+  ],
+  "defaultTheme": "kineticIvory",
+  "runtimeModule": "../../src/invariant-visuals.mjs",
+  "themes": [
+    {
+      "name": "kineticIvory",
+      "tokens": {
+        "background": "#f4f0e7",
+        "backgroundLight": "#fffdf8",
+        "backgroundEdge": "#ded7ca",
+        "ink": "#201f23",
+        "structure": "#53545b",
+        "border": "#4b5867",
+        "accent": "#a64252",
+        "secondary": "#304f73",
+        "luminous": "#e2b74f",
+        "panel": "#faf6ed",
+        "particle": "#70879a",
+        "trace": "#8d7893",
+        "carrier": "#467985",
+        "invariant": "#d5a83d",
+        "break": "#c86155",
+        "lead": "#b54f63",
+        "lag": "#526b99",
+        "field": "#668d78",
+        "textureOpacity": 0.028,
+        "chrome": {
+          "borderStyle": "measured-manuscript",
+          "footerStyle": "analytical",
+          "gridOpacity": 0.008,
+          "cornerMarks": true,
+          "calibrationTicks": true
+        },
+        "motion": {
+          "glowScale": 0.72,
+          "pulseRate": 0.62,
+          "defaultTransition": "causal-transform"
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "continuity-seed",
+      "description": "A parametrically lobed continuity contour whose relational signature remains measurable across scale, rotation, reflection and material changes.",
+      "category": "continuity-object",
+      "epistemicMode": "formal-structural-model",
+      "semanticTags": [
+        "continuity",
+        "seed",
+        "invariant",
+        "identity",
+        "contour"
+      ],
+      "parameters": {
+        "lobes": {
+          "type": "integer",
+          "minimum": 3,
+          "maximum": 12,
+          "default": 5
+        },
+        "radius": {
+          "type": "number",
+          "minimum": 12,
+          "maximum": 220,
+          "default": 64
+        },
+        "harmonic": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.45,
+          "default": 0.22
+        }
+      },
+      "provenance": [
+        "Forest transmission: five-lobed seed as conserved operator, generalized beyond one composition"
+      ]
+    },
+    {
+      "id": "relational-signature",
+      "description": "A compact circular or linear signature encoding interval relations rather than literal shape, allowing identity to survive transformed appearances.",
+      "category": "formal-annotation",
+      "epistemicMode": "formal-structural-model",
+      "semanticTags": [
+        "signature",
+        "relation",
+        "interval",
+        "identity",
+        "measurement"
+      ],
+      "parameters": {
+        "values": {
+          "type": "array"
+        },
+        "mode": {
+          "enum": [
+            "radial",
+            "linear"
+          ],
+          "default": "radial"
+        }
+      },
+      "provenance": [
+        "Fugue subject defined by fixed rhythmic-intervallic identity"
+      ]
+    },
+    {
+      "id": "transformation-orbit",
+      "description": "A family of transformed instances arranged around a shared invariant gauge, with position, scale, orientation and parity varied independently.",
+      "category": "formal-field",
+      "epistemicMode": "formal-structural-model",
+      "semanticTags": [
+        "transformation",
+        "orbit",
+        "group-action",
+        "invariance"
+      ],
+      "parameters": {
+        "count": {
+          "type": "integer",
+          "minimum": 3,
+          "maximum": 16,
+          "default": 7
+        },
+        "operation": {
+          "enum": [
+            "rotate",
+            "scale",
+            "reflect",
+            "mixed"
+          ],
+          "default": "mixed"
+        }
+      },
+      "provenance": [
+        "Transformation-invariant motif identity across inversion, augmentation, diminution, transposition and retrograde"
+      ]
+    },
+    {
+      "id": "carrier-shell",
+      "description": "A material carrier frame that can change between vessel, lattice, ribbon, wave and branch while preserving an embedded relational identity.",
+      "category": "material-carrier",
+      "epistemicMode": "formal-structural-model",
+      "semanticTags": [
+        "carrier",
+        "material",
+        "substrate",
+        "transfer",
+        "identity"
+      ],
+      "parameters": {
+        "kind": {
+          "enum": [
+            "vessel",
+            "lattice",
+            "ribbon",
+            "wave",
+            "branch"
+          ],
+          "default": "vessel"
+        },
+        "integrity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.85
+        }
+      },
+      "provenance": [
+        "Migrating passacaglia: relational ground survives transfer between carriers"
+      ]
+    },
+    {
+      "id": "causal-trace",
+      "description": "A decaying history field computed from prior states rather than current values alone, exposing temporal memory and path dependence.",
+      "category": "temporal-field",
+      "epistemicMode": "formal-dynamical-model",
+      "semanticTags": [
+        "memory",
+        "trace",
+        "history",
+        "lag",
+        "path-dependence"
+      ],
+      "parameters": {
+        "tau": {
+          "type": "number",
+          "minimum": 0.05,
+          "maximum": 4,
+          "default": 0.55
+        },
+        "samples": {
+          "type": "integer",
+          "minimum": 3,
+          "maximum": 48,
+          "default": 18
+        }
+      },
+      "provenance": [
+        "Causal-memory filter and history-dependent composition requirement"
+      ]
+    },
+    {
+      "id": "trajectory-ribbon",
+      "description": "A derivative-aware trajectory ribbon encoding current value, direction, velocity and acceleration as separate visual channels.",
+      "category": "temporal-annotation",
+      "epistemicMode": "formal-dynamical-model",
+      "semanticTags": [
+        "trajectory",
+        "derivative",
+        "velocity",
+        "acceleration",
+        "state"
+      ],
+      "parameters": {
+        "values": {
+          "type": "array"
+        },
+        "emphasis": {
+          "enum": [
+            "value",
+            "velocity",
+            "acceleration"
+          ],
+          "default": "velocity"
+        }
+      },
+      "provenance": [
+        "Six-dimensional state understood as six trajectories rather than six scalar values"
+      ]
+    },
+    {
+      "id": "lead-lag-lanes",
+      "description": "Three or four parallel modality lanes with independently offset events, showing proposal, complication, reorientation and completion without forced synchrony.",
+      "category": "cross-modal-control",
+      "epistemicMode": "compositional-control-model",
+      "semanticTags": [
+        "lead",
+        "lag",
+        "counterpoint",
+        "music",
+        "visual",
+        "narration"
+      ],
+      "parameters": {
+        "musicLead": {
+          "type": "number",
+          "minimum": -0.5,
+          "maximum": 0.5,
+          "default": 0.12
+        },
+        "semanticLag": {
+          "type": "number",
+          "minimum": -0.5,
+          "maximum": 0.5,
+          "default": 0.14
+        }
+      },
+      "provenance": [
+        "Music proposes, visual complicates, narration reorients, silence permits completion"
+      ]
+    },
+    {
+      "id": "invariant-gauge",
+      "description": "A continuously updated gauge comparing transformed geometry with a normalized relational signature, revealing preservation or rupture.",
+      "category": "formal-measurement",
+      "epistemicMode": "formal-structural-model",
+      "semanticTags": [
+        "invariant",
+        "gauge",
+        "distance",
+        "preservation",
+        "rupture"
+      ],
+      "parameters": {
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.95
+        },
+        "threshold": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.78
+        }
+      },
+      "provenance": [
+        "Conservation laws: conserved, transformable and forbidden properties"
+      ]
+    },
+    {
+      "id": "topology-thread",
+      "description": "A connectivity-preserving thread or graph that may bend, scale, nest and branch while retaining a declared adjacency invariant.",
+      "category": "continuity-object",
+      "epistemicMode": "formal-topological-model",
+      "semanticTags": [
+        "topology",
+        "thread",
+        "connectivity",
+        "adjacency",
+        "continuity"
+      ],
+      "parameters": {
+        "nodes": {
+          "type": "integer",
+          "minimum": 3,
+          "maximum": 20,
+          "default": 8
+        },
+        "branching": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.35
+        }
+      },
+      "provenance": [
+        "Continuity identity capable of topology change while preserving another invariant"
+      ]
+    },
+    {
+      "id": "semantic-verb-mark",
+      "description": "A transition glyph generated from a causal verb such as germinate, fracture, invert, entrain, unbind, condense or remember.",
+      "category": "transition-operator",
+      "epistemicMode": "compositional-control-model",
+      "semanticTags": [
+        "transition",
+        "verb",
+        "causality",
+        "operator",
+        "change"
+      ],
+      "parameters": {
+        "verb": {
+          "enum": [
+            "germinate",
+            "fracture",
+            "invert",
+            "entrain",
+            "unbind",
+            "condense",
+            "remember"
+          ],
+          "default": "germinate"
+        }
+      },
+      "provenance": [
+        "Transitions treated as semantic scenes rather than generic packaging"
+      ]
+    },
+    {
+      "id": "attention-budget",
+      "description": "A cross-modal density allocator showing how visual, musical and verbal complexity trade against one another under a finite attention budget.",
+      "category": "cross-modal-control",
+      "epistemicMode": "compositional-control-model",
+      "semanticTags": [
+        "attention",
+        "density",
+        "budget",
+        "music",
+        "image",
+        "language"
+      ],
+      "parameters": {
+        "visual": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.55
+        },
+        "music": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.75
+        },
+        "narration": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.25
+        }
+      },
+      "provenance": [
+        "Maximum density in every medium produces minimum comprehension"
+      ]
+    },
+    {
+      "id": "recognition-field",
+      "description": "A field that gradually stops responding to material appearance and begins responding to the conserved relational signature.",
+      "category": "recognition-operator",
+      "epistemicMode": "formal-perceptual-model",
+      "semanticTags": [
+        "recognition",
+        "invariance",
+        "relation",
+        "perception",
+        "identity"
+      ],
+      "parameters": {
+        "relationalWeight": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.75
+        }
+      },
+      "provenance": [
+        "Recognition transaction designed backward from what must become directly available"
+      ]
+    }
+  ],
+  "mechanisms": [
+    {
+      "id": "transformation-invariance",
+      "description": "One relational identity undergoes rotation, scaling, reflection and deformation while a normalized signature remains stable.",
+      "relations": [
+        "identity-across-change",
+        "transformation",
+        "comparison"
+      ],
+      "operators": [
+        "transform",
+        "compare",
+        "recontextualize"
+      ],
+      "semanticTags": [
+        "invariance",
+        "identity",
+        "transformation",
+        "motif"
+      ],
+      "motionProof": "Appearance changes continuously while the invariant gauge stays stable, making persistence inferable without literal repetition.",
+      "epistemicMode": "formal-structural-model",
+      "parameters": {
+        "operation": {
+          "enum": [
+            "rotation",
+            "scale",
+            "reflection",
+            "mixed"
+          ],
+          "default": "mixed"
+        },
+        "lobes": {
+          "type": "integer",
+          "minimum": 3,
+          "maximum": 12,
+          "default": 5
+        }
+      },
+      "provenance": [
+        "Relational fugue subject and transformable five-lobed seed"
+      ]
+    },
+    {
+      "id": "carrier-transfer",
+      "description": "A conserved relational signature migrates through materially different carriers without any single carrier remaining permanent.",
+      "relations": [
+        "translation",
+        "identity-across-change",
+        "sequence"
+      ],
+      "operators": [
+        "translate",
+        "sequence",
+        "recontextualize"
+      ],
+      "semanticTags": [
+        "carrier",
+        "transfer",
+        "identity",
+        "persistence",
+        "passacaglia"
+      ],
+      "motionProof": "The original carrier withdraws before a different carrier completes the same relation, proving persistence through transfer rather than hidden material continuity.",
+      "epistemicMode": "formal-structural-model",
+      "parameters": {
+        "carriers": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 6,
+          "default": 4
+        },
+        "fidelity": {
+          "type": "number",
+          "minimum": 0.2,
+          "maximum": 1,
+          "default": 0.88
+        }
+      },
+      "provenance": [
+        "Migrating passacaglia and carrier-turnover thesis"
+      ]
+    },
+    {
+      "id": "causal-memory",
+      "description": "Current state and decaying history diverge, so identical present values produce different appearances depending on the path taken.",
+      "relations": [
+        "sequence",
+        "feedback",
+        "self-modification"
+      ],
+      "operators": [
+        "loop",
+        "recontextualize",
+        "transform"
+      ],
+      "semanticTags": [
+        "memory",
+        "history",
+        "trace",
+        "path-dependence",
+        "lag"
+      ],
+      "motionProof": "The trace persists after the driving state reverses, demonstrating memory as history-dependent dynamics rather than a static memory icon.",
+      "epistemicMode": "formal-dynamical-model",
+      "parameters": {
+        "tau": {
+          "type": "number",
+          "minimum": 0.08,
+          "maximum": 2.5,
+          "default": 0.52
+        },
+        "path": {
+          "enum": [
+            "rise-fall",
+            "pulse-return",
+            "hysteresis"
+          ],
+          "default": "rise-fall"
+        }
+      },
+      "provenance": [
+        "dm/dt = (d-m)/tau and the requirement that the same state render differently by history"
+      ]
+    },
+    {
+      "id": "derivative-trajectory",
+      "description": "A behavioral state is shown together with velocity and acceleration, distinguishing rising, falling, accelerating and held conditions at equal values.",
+      "relations": [
+        "sequence",
+        "transformation",
+        "comparison"
+      ],
+      "operators": [
+        "sequence",
+        "compare",
+        "transform"
+      ],
+      "semanticTags": [
+        "trajectory",
+        "derivative",
+        "velocity",
+        "acceleration",
+        "behavior"
+      ],
+      "motionProof": "The marker can occupy the same value while ribbon direction and curvature differ, proving that trajectory carries information absent from a scalar state.",
+      "epistemicMode": "formal-dynamical-model",
+      "parameters": {
+        "profile": {
+          "enum": [
+            "accelerate",
+            "decelerate",
+            "overshoot",
+            "oscillate"
+          ],
+          "default": "overshoot"
+        }
+      },
+      "provenance": [
+        "u_state and u_dState separation"
+      ]
+    },
+    {
+      "id": "lead-lag-counterpoint",
+      "description": "Music, image and narration follow related but offset trajectories so each modality has independent causal agency.",
+      "relations": [
+        "coordination",
+        "sequence",
+        "divergence"
+      ],
+      "operators": [
+        "coordinate",
+        "sequence",
+        "differentiate"
+      ],
+      "semanticTags": [
+        "counterpoint",
+        "lead",
+        "lag",
+        "music",
+        "visual",
+        "narration"
+      ],
+      "motionProof": "Related events enter in different lanes at different times and only later align, demonstrating designed anticipation and semantic delay.",
+      "epistemicMode": "compositional-control-model",
+      "parameters": {
+        "musicLead": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.4,
+          "default": 0.12
+        },
+        "semanticLag": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.4,
+          "default": 0.16
+        }
+      },
+      "provenance": [
+        "Music proposes; visual complicates; narration reorients; completion follows"
+      ]
+    },
+    {
+      "id": "conservation-filter",
+      "description": "Candidate transformations pass or fail according to declared conserved, transformable and forbidden properties.",
+      "relations": [
+        "selection",
+        "comparison",
+        "cessation"
+      ],
+      "operators": [
+        "compare",
+        "filter",
+        "select"
+      ],
+      "semanticTags": [
+        "conservation",
+        "constraint",
+        "forbidden",
+        "identity",
+        "evaluation"
+      ],
+      "motionProof": "Permitted transformations continue through the gate while an identity-breaking substitution is visibly arrested and removed.",
+      "epistemicMode": "formal-evaluative-model",
+      "parameters": {
+        "strictness": {
+          "type": "number",
+          "minimum": 0.2,
+          "maximum": 1,
+          "default": 0.78
+        }
+      },
+      "provenance": [
+        "Transfer the evaluator that rejected weaker possibilities"
+      ]
+    },
+    {
+      "id": "semantic-transition",
+      "description": "A transition enacts a named causal law rather than crossfading between unrelated completed states.",
+      "relations": [
+        "transformation",
+        "dependency",
+        "sequence"
+      ],
+      "operators": [
+        "transform",
+        "sequence",
+        "construct"
+      ],
+      "semanticTags": [
+        "transition",
+        "causality",
+        "verb",
+        "state-change"
+      ],
+      "motionProof": "The outgoing geometry is materially reorganized into the incoming geometry by the selected verb, so the transition itself carries the explanation.",
+      "epistemicMode": "compositional-control-model",
+      "parameters": {
+        "verb": {
+          "enum": [
+            "germinate",
+            "fracture",
+            "invert",
+            "entrain",
+            "unbind",
+            "condense",
+            "remember"
+          ],
+          "default": "germinate"
+        }
+      },
+      "provenance": [
+        "Transitions are semantic scenes"
+      ]
+    },
+    {
+      "id": "polyphonic-identity",
+      "description": "Several independent transformations carry one relational subject simultaneously without collapsing into unison.",
+      "relations": [
+        "differentiation",
+        "coordination",
+        "identity-across-change"
+      ],
+      "operators": [
+        "differentiate",
+        "coordinate",
+        "recontextualize"
+      ],
+      "semanticTags": [
+        "polyphony",
+        "multiplicity",
+        "identity",
+        "counterpoint",
+        "subject"
+      ],
+      "motionProof": "Independent voices preserve different transformations and phases of the same signature, making coordinated multiplicity visible.",
+      "epistemicMode": "formal-structural-model",
+      "parameters": {
+        "voices": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 8,
+          "default": 5
+        },
+        "entrySpread": {
+          "type": "number",
+          "minimum": 0.05,
+          "maximum": 0.8,
+          "default": 0.34
+        }
+      },
+      "provenance": [
+        "Counterpoint enacts multiplicity rather than illustrating it"
+      ]
+    },
+    {
+      "id": "recognition-transaction",
+      "description": "Perceptual emphasis shifts from the continuity object's changing material appearances to the relation that survived every change.",
+      "relations": [
+        "inquiry",
+        "transformation",
+        "recursion"
+      ],
+      "operators": [
+        "reveal",
+        "invert",
+        "recontextualize"
+      ],
+      "semanticTags": [
+        "recognition",
+        "invariance",
+        "audience",
+        "relation",
+        "identity"
+      ],
+      "motionProof": "Material carriers fade from emphasis while the invariant relation becomes the stable foreground, enacting recognition before explanatory language arrives.",
+      "epistemicMode": "formal-perceptual-model",
+      "parameters": {
+        "recognitionTime": {
+          "type": "number",
+          "minimum": 0.35,
+          "maximum": 0.9,
+          "default": 0.68
+        }
+      },
+      "provenance": [
+        "Recognition transaction designed backward from the climax"
+      ]
+    },
+    {
+      "id": "climax-assimilation",
+      "description": "A high-intensity recognition event is followed by a distinct assimilation phase in which the world remains transformed without sustaining the climax.",
+      "relations": [
+        "transformation",
+        "sequence",
+        "emergence"
+      ],
+      "operators": [
+        "emerge",
+        "sequence",
+        "recontextualize"
+      ],
+      "semanticTags": [
+        "climax",
+        "assimilation",
+        "afterlife",
+        "integration",
+        "ending"
+      ],
+      "motionProof": "The peak contracts while a persistent transformed relation remains, distinguishing the climax from the endpoint and avoiding automatic collapse.",
+      "epistemicMode": "compositional-control-model",
+      "parameters": {
+        "climaxTime": {
+          "type": "number",
+          "minimum": 0.35,
+          "maximum": 0.8,
+          "default": 0.58
+        },
+        "afterlife": {
+          "type": "number",
+          "minimum": 0.1,
+          "maximum": 1,
+          "default": 0.72
+        }
+      },
+      "provenance": [
+        "Forest climax at 545–548 seconds and 52-second assimilation"
+      ]
+    },
+    {
+      "id": "structural-homology",
+      "description": "Argument, music and image perform the same abstract causal relation through different materials without becoming redundant copies.",
+      "relations": [
+        "comparison",
+        "translation",
+        "coordination"
+      ],
+      "operators": [
+        "compare",
+        "translate",
+        "coordinate"
+      ],
+      "semanticTags": [
+        "homology",
+        "argument",
+        "music",
+        "visual",
+        "causality"
+      ],
+      "motionProof": "Three lanes undergo matching source-to-target transformations with distinct marks and timings, proving shared structure without modal duplication.",
+      "epistemicMode": "comparative-formal-model",
+      "parameters": {
+        "relation": {
+          "enum": [
+            "feedback",
+            "transfer",
+            "invariance",
+            "constraint",
+            "emergence"
+          ],
+          "default": "invariance"
+        }
+      },
+      "provenance": [
+        "Argument causal structure to musical form to visual world"
+      ]
+    },
+    {
+      "id": "constraint-tournament",
+      "description": "Several formally plausible candidates are tested against causal necessity, invariant continuity and epistemic restraint before one survives.",
+      "relations": [
+        "selection",
+        "inquiry",
+        "comparison"
+      ],
+      "operators": [
+        "compare",
+        "filter",
+        "select"
+      ],
+      "semanticTags": [
+        "critic",
+        "evaluation",
+        "candidate",
+        "selection",
+        "quality"
+      ],
+      "motionProof": "Candidates fail for different visible reasons rather than merely losing opacity, while the survivor remains because it satisfies all declared constraints.",
+      "epistemicMode": "formal-evaluative-model",
+      "parameters": {
+        "candidates": {
+          "type": "integer",
+          "minimum": 3,
+          "maximum": 7,
+          "default": 5
+        },
+        "gates": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 5,
+          "default": 3
+        }
+      },
+      "provenance": [
+        "The accumulated critic as the transferable state"
+      ]
+    }
+  ],
+  "selectionPolicy": {
+    "captionPolicy": "Labels name formal relations, invariants, derivatives or causal verbs; narration carries philosophical prose.",
+    "preferredSemanticTags": [
+      "invariance",
+      "continuity",
+      "memory",
+      "trajectory",
+      "counterpoint",
+      "recognition",
+      "transition",
+      "evaluation"
+    ],
+    "forbiddenLiteralizations": [
+      "continuity object replaced by an unrelated symbol",
+      "generic crossfade where a causal transformation is required",
+      "all modalities peaking simultaneously without attention-budget justification",
+      "recognition represented only by brighter glow",
+      "ending collapsed to zero merely because the composition is finished"
+    ],
+    "epistemicRule": "Formal homology is an artistic comparison, not empirical proof that two domains are ontologically identical.",
+    "maximumConsecutiveMechanism": 2,
+    "minimumCandidateCount": 3,
+    "requireMotionProof": true,
+    "requireCaptionIndependence": true
+  }
+}
