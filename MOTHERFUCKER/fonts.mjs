@@ -33,17 +33,19 @@ export function initializeFonts() {
 
   try {
     const HERE = dirname(fileURLToPath(import.meta.url));
-    const srcSerifDir = join(HERE, "node_modules/source-serif/VAR");
-    registerFont(
-      join(srcSerifDir, "SourceSerif4Variable-Roman.ttf"),
-      "Source Serif 4",
-    );
-    registerFont(
-      join(srcSerifDir, "SourceSerif4Variable-Italic.ttf"),
-      "Source Serif 4",
-    );
+    const katexDir = join(HERE, "node_modules/katex/dist/fonts");
+    registerFont(join(katexDir, "KaTeX_Main-Regular.ttf"), "KaTeX Main");
+    registerFont(join(katexDir, "KaTeX_Math-Italic.ttf"), "KaTeX Math");
+    registerFont(join(katexDir, "KaTeX_Main-Bold.ttf"), "KaTeX Main");
+    registerFont(join(katexDir, "KaTeX_Main-Italic.ttf"), "KaTeX Main");
+    registerFont(join(katexDir, "KaTeX_AMS-Regular.ttf"), "KaTeX AMS");
+    registerFont(join(katexDir, "KaTeX_Size4-Regular.ttf"), "KaTeX Size4");
+    registerFont(join(katexDir, "KaTeX_Caligraphic-Regular.ttf"), "KaTeX Caligraphic");
+    registerFont(join(katexDir, "KaTeX_Typewriter-Regular.ttf"), "KaTeX Typewriter");
+    registerFont(join(katexDir, "KaTeX_Fraktur-Regular.ttf"), "KaTeX Fraktur");
+    registerFont(join(katexDir, "KaTeX_Script-Regular.ttf"), "KaTeX Script");
   } catch (e) {
-    console.warn("Source Serif 4 not available:", e.message);
+    console.warn("KaTeX fonts not available:", e.message);
   }
 
   initialized = true;

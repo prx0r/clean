@@ -4,7 +4,10 @@ import { drawGlowOrb, drawRing, drawNode, drawArrowHead, drawPartialPath } from 
 const CX = 640, CY = 310;
 const FW = 1280, FH = 720;
 
-const FONT = '"Source Serif 4", "EB Garamond", serif';
+const FONT_MAIN = '"KaTeX Main", "Source Serif 4", serif';
+const FONT_MATH = '"KaTeX Math", "KaTeX Main", serif';
+const FONT_BOLD = '"KaTeX Main", "Source Serif 4", serif';
+const FONT = FONT_MAIN;
 const MONO = "#1a1a1a";
 const MUTED = "#555555";
 const REFUTE = "#b33a3a";
@@ -27,21 +30,21 @@ function styledText(ctx, text, x, y, baseSize, color, alpha, align) {
   for (const part of parts) {
     if (!part) continue;
     if (part.startsWith("**") && part.endsWith("**")) {
-      ctx.font = "700 " + baseSize + 'px ' + FONT;
+      ctx.font = "700 " + baseSize + 'px ' + FONT_BOLD;
       const t = part.slice(2, -2);
       ctx.fillStyle = rgba(color, alpha);
       if (align === "center") { ctx.fillText(t, x, y); break; }
       ctx.fillText(t, cx, y);
       cx += ctx.measureText(t).width + 4;
     } else if (part.startsWith("*") && part.endsWith("*")) {
-      ctx.font = "italic 400 " + baseSize + 'px ' + FONT;
+      ctx.font = baseSize + 'px ' + FONT_MATH;
       const t = part.slice(1, -1);
       ctx.fillStyle = rgba(color, alpha);
       if (align === "center") { ctx.fillText(t, x, y); break; }
       ctx.fillText(t, cx, y);
       cx += ctx.measureText(t).width + 4;
     } else {
-      ctx.font = "400 " + baseSize + 'px ' + FONT;
+      ctx.font = baseSize + 'px ' + FONT_MAIN;
       ctx.fillStyle = rgba(color, alpha);
       if (align === "center") { ctx.fillText(part, x, y); break; }
       ctx.fillText(part, cx, y);

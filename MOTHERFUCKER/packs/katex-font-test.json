@@ -1,0 +1,51 @@
+{
+  "version": "1.0",
+  "id": "katex-font-test",
+  "title": "KaTeX Font Test",
+  "description": "Testing KaTeX fonts in argument-diagram motif",
+  "theme": "ivoryManuscript",
+  "seed": 260727,
+  "render": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "crf": 18,
+    "preset": "medium",
+    "sceneDuration": 12,
+    "transitionDuration": 0.5
+  },
+  "scenes": [
+    {
+      "id": "kt01",
+      "title": "KaTeX Test",
+      "subtitle": "Font rendering test",
+      "term": "Par\u012bk\u1e63\u0101",
+      "devanagari": "\u092a\u0930\u0940\u0915\u094d\u0937\u093e",
+      "motif": "argument-diagram",
+      "duration": 10,
+      "params": {
+        "moves": [
+          {
+            "type": "claim",
+            "text": "*prak\u0101\u015ba* + *vimar\u015ba* + *spanda*",
+            "size": 38
+          },
+          {
+            "type": "subclaim",
+            "text": "Manifestation \u2192 self-articulation \u2192 dynamism",
+            "y": 420,
+            "size": 22
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "claim",
+            "text": "**Why** is any process **manifest**\nrather than merely occurring?",
+            "size": 32
+          }
+        ]
+      }
+    }
+  ]
+}
