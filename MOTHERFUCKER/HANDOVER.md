@@ -2,11 +2,13 @@
 
 ## Channels
 
-| Channel | Identity | Motif | Style | Content |
-|---|---|---|---|---|
-| **Anakhya** | Future Sanskrit brand, publishing, academic papers | `semantic-essay` + `logical-argument` | Ivory manuscript, EB Garamond, gold/crimson/indigo | Tantraloka translations, academic papers, yogi documentaries, deep dives |
-| **Tantrafiles** | Tantraloka popular explainers | `semantic-essay` | Warm, devotional-academic | Essay companions, practice guides, accessible tantra |
-| **Ochema** | Sharp comparative metaphysics | `argument-diagram` | Monochrome + status colors, Source Serif 4 | Formal logicvids, proofs, concept maps, debates |
+| Channel | Identity | Motif | Style | Content | Location |
+|---|---|---|---|---|---|
+| **Anakhya** | Sanskrit brand, publishing, academic papers | `semantic-essay` + `logical-argument` | Ivory manuscript, EB Garamond, gold/crimson/indigo | Tantraloka translations, academic papers, deep dives | MOTHERFUCKER |
+| **Tantrafiles** | Tantraloka popular explainers, yogi docs | `semantic-essay` (GLSL signature film system) | Warm, devotional-academic, semantic primitives | Essay companions, practice guides, Alan Watts-style gold films | `/root/projects/blog/` — uses SIGNATURE-FILM-SYSTEM from `FATHERFUCKER/` bundles |
+| **Ochema** | Sharp comparative metaphysics | `argument-diagram` | Monochrome + status colors, Source Serif 4 | Formal logicvids, proofs, concept maps, debates | MOTHERFUCKER |
+
+Tantrafiles uses the **Signature Film System** from `FATHERFUCKER/integrated-composition-1/beautify-archive/framework/SIGNATURE-FILM-SYSTEM.md` — semantic primitives (Field, Focus, Agent, Boundary, Channel, Attractor, Trace, Witness) and visual verbs (emerge, gather, split, exclude, bind, transmit, recognize). This is the gold format used for existing Alan Watts-style explainers. The blog project (`/root/projects/blog/`) is the production home for this format; the framework (`MOTHERFUCKER/`) is the renderer it calls.
 
 ## Video types per channel
 
