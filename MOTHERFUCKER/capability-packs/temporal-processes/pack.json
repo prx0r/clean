@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "id": "temporal-processes",
+  "title": "Temporal Process Base",
+  "description": "An inheritance root for sequence, retention, anticipation, rhythmic coordination, decay, recurrence and transformation through time.",
+  "extends": [
+    "base"
+  ],
+  "defaultTheme": "ivoryManuscript",
+  "themes": [],
+  "assets": [],
+  "mechanisms": [],
+  "selectionPolicy": {
+    "preferredSemanticTags": [
+      "time",
+      "sequence",
+      "memory",
+      "rhythm",
+      "anticipation",
+      "decay"
+    ],
+    "maximumConsecutiveMechanism": 2
+  }
+}

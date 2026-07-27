@@ -92,6 +92,8 @@ export const encodingChannels = Object.freeze([
   "text",
 ]);
 
+const dynamicMechanismRelations = new Map();
+
 export const mechanismRelations = Object.freeze({
   "constraint-field": ["containment", "transformation", "emergence"],
   "point-of-view": ["interface", "selection", "containment"],
@@ -153,8 +155,26 @@ const aliases = Object.freeze({
   resolve: "recontextualize",
 });
 
+export function registerMechanismRelations(mechanismId, relations) {
+  if (!mechanismId || !Array.isArray(relations) || relations.length === 0) {
+    throw new Error("registerMechanismRelations requires mechanism id and relations");
+  }
+  const invalid = relations.filter((relation) => !relationTypes.includes(relation));
+  if (invalid.length) throw new Error(`Unknown relation types: ${invalid.join(", ")}`);
+  const existing = dynamicMechanismRelations.get(mechanismId);
+  if (existing) {
+    if (JSON.stringify(existing) === JSON.stringify(relations)) return;
+    throw new Error(`Relations for "${mechanismId}" are already registered`);
+  }
+  dynamicMechanismRelations.set(mechanismId, Object.freeze([...relations]));
+}
+
+export function getMechanismRelations(visual) {
+  return mechanismRelations[visual] ?? dynamicMechanismRelations.get(visual) ?? [];
+}
+
 export function isMechanismCompatible(visual, relationType) {
-  return mechanismRelations[visual]?.includes(relationType) ?? false;
+  return getMechanismRelations(visual).includes(relationType);
 }
 
 export function isRoleOperatorCompatible(role, operator) {
@@ -165,7 +185,7 @@ export function isRoleOperatorCompatible(role, operator) {
 }
 
 export function compatibilityExplanation(visual, relationType) {
-  const supported = mechanismRelations[visual] ?? [];
+  const supported = getMechanismRelations(visual);
   return `"${visual}" encodes ${supported.join(", ") || "no registered relations"}; ` +
     `it cannot be used for "${relationType}" without an explicit custom composition.`;
 }

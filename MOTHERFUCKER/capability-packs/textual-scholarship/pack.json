@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "id": "textual-scholarship",
+  "title": "Textual Scholarship Base",
+  "description": "An inheritance root for manuscripts, quotations, philological comparison, commentary layers, textual transmission and source criticism.",
+  "extends": [
+    "base"
+  ],
+  "defaultTheme": "ivoryManuscript",
+  "themes": [],
+  "assets": [],
+  "mechanisms": [],
+  "selectionPolicy": {
+    "preferredSemanticTags": [
+      "text",
+      "manuscript",
+      "quotation",
+      "commentary",
+      "translation",
+      "source"
+    ],
+    "captionPolicy": "Textual evidence may be longer than ordinary diagram labels but must remain readable and source-attributed."
+  }
+}

@@ -716,15 +716,36 @@ const staticRenderers = Object.freeze({
 });
 
 const dynamicRenderers = new Map();
+const dynamicRendererMetadata = new Map();
 
-export function registerDynamicRenderer(name, renderer) {
+export function registerDynamicRenderer(nameOrDefinition, rendererArg, descriptionArg) {
+  const definition = typeof nameOrDefinition === "object"
+    ? nameOrDefinition
+    : { name: nameOrDefinition, renderer: rendererArg, description: descriptionArg };
+  const { name, renderer, description = "Dynamically registered semantic mechanism." } = definition;
   if (!name || typeof renderer !== "function") {
-    throw new Error(`registerDynamicRenderer requires name and function renderer`);
+    throw new Error("registerDynamicRenderer requires a name and renderer function");
   }
-  if (staticRenderers[name] || dynamicRenderers.has(name)) {
+  const existing = dynamicRenderers.get(name);
+  if (staticRenderers[name]) throw new Error(`Renderer "${name}" is already built in`);
+  if (existing) {
+    if (existing === renderer) return;
     throw new Error(`Renderer "${name}" is already registered`);
   }
   dynamicRenderers.set(name, renderer);
+  dynamicRendererMetadata.set(name, Object.freeze({ name, description }));
+}
+
+export function hasSemanticVisual(name) {
+  return Boolean(staticRenderers[name] || dynamicRenderers.has(name) || systemVisualNames.includes(name));
+}
+
+export function listSemanticVisualNames() {
+  return Object.freeze([...new Set([...semanticVisualNames, ...dynamicRenderers.keys()])]);
+}
+
+export function listDynamicSemanticVisuals() {
+  return Object.freeze([...dynamicRendererMetadata.values()]);
 }
 
 export function getDynamicRenderer(name) {
@@ -742,7 +763,7 @@ export function renderSemanticEssay(ctx, t, scene, env) {
   if (!renderer) {
     throw new Error(
       `Unknown semantic visual "${name}" in scene "${scene.id}". ` +
-      `Choose one of: ${semanticVisualNames.join(", ")}`,
+      `Choose one of: ${listSemanticVisualNames().join(", ")}`,
     );
   }
   renderer(ctx, clamp(t), scene, env);

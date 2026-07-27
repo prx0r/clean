@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "id": "tantric-cosmology",
+  "title": "Tantric Cosmology Base",
+  "description": "An inheritance root for tattvas, adhvans, mantra systems, śakti processes, ritual mappings and nondual cosmological transformations.",
+  "extends": [
+    "base"
+  ],
+  "defaultTheme": "ivoryManuscript",
+  "themes": [],
+  "assets": [],
+  "mechanisms": [],
+  "selectionPolicy": {
+    "preferredSemanticTags": [
+      "tantra",
+      "tattva",
+      "shakti",
+      "mantra",
+      "cosmology",
+      "recognition"
+    ],
+    "forbiddenLiteralizations": [
+      "generic chakra rainbow",
+      "maya presented as evil matter",
+      "recognition presented as escape from embodiment"
+    ],
+    "maximumConsecutiveMechanism": 2
+  }
+}

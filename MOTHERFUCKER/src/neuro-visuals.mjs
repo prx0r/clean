@@ -1,3 +1,5 @@
+import { Path2D } from "@napi-rs/canvas";
+
 import {
   TAU,
   clamp,
@@ -8,7 +10,7 @@ import {
   wave,
   lerp,
   seededRandom,
-} from "./math.mjs";
+} from "../math.mjs";
 import {
   drawArrowHead,
   drawEllipseRing,
@@ -17,9 +19,8 @@ import {
   drawLabel,
   drawNode,
   drawPartialPath,
-  drawRing,
-  drawGrid,
-} from "./primitives.mjs";
+  drawRing
+} from "../primitives.mjs";
 
 function reveal(t) {
   return smoothstep(0, 0.08, t);

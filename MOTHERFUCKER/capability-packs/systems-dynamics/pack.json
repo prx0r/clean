@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "id": "systems-dynamics",
+  "title": "Systems Dynamics Base",
+  "description": "A granular inheritance root for networks, feedback, emergence, multiscale agency, regulation and distributed coordination.",
+  "extends": [
+    "base"
+  ],
+  "defaultTheme": "whiteScientific",
+  "themes": [],
+  "assets": [],
+  "mechanisms": [],
+  "selectionPolicy": {
+    "preferredSemanticTags": [
+      "feedback",
+      "network",
+      "emergence",
+      "coordination",
+      "boundary",
+      "multiscale"
+    ],
+    "maximumConsecutiveMechanism": 2
+  }
+}

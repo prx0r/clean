@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "id": "data-visualization",
+  "title": "Data Visualization Base",
+  "description": "An inheritance root for quantities, distributions, trajectories, matrices, uncertainty, evidence strength and comparative measurement.",
+  "extends": [
+    "scientific-diagrams"
+  ],
+  "defaultTheme": "whiteScientific",
+  "themes": [],
+  "assets": [],
+  "mechanisms": [],
+  "selectionPolicy": {
+    "preferredSemanticTags": [
+      "data",
+      "measurement",
+      "distribution",
+      "matrix",
+      "uncertainty",
+      "comparison"
+    ],
+    "forbiddenLiteralizations": [
+      "unlabelled axes",
+      "decorative charts without data semantics"
+    ]
+  }
+}

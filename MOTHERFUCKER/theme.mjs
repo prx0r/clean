@@ -71,10 +71,28 @@ export const themes = Object.freeze({
   },
 });
 
+const dynamicThemes = new Map();
+
+export function registerTheme(name, tokens) {
+  if (!name || !tokens || typeof tokens !== "object") throw new Error("registerTheme requires name and token object");
+  const existing = themes[name] ?? dynamicThemes.get(name);
+  if (existing) {
+    if (JSON.stringify(existing) === JSON.stringify({ name, ...tokens })) return existing;
+    throw new Error(`Theme "${name}" is already registered with different tokens`);
+  }
+  const theme = Object.freeze({ name, ...tokens });
+  dynamicThemes.set(name, theme);
+  return theme;
+}
+
+export function listThemeNames() {
+  return Object.freeze([...Object.keys(themes), ...dynamicThemes.keys()]);
+}
+
 export function getTheme(name = "ivoryManuscript") {
-  const theme = themes[name];
+  const theme = themes[name] ?? dynamicThemes.get(name);
   if (!theme) {
-    throw new Error(`Unknown theme "${name}". Available themes: ${Object.keys(themes).join(", ")}`);
+    throw new Error(`Unknown theme "${name}". Available themes: ${listThemeNames().join(", ")}`);
   }
   return theme;
 }

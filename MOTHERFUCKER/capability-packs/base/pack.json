@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "id": "base",
+  "title": "Core Visual Grammar",
+  "description": "The stable built-in semantic vocabulary, renderer primitives, core themes and default essay-film selection policy.",
+  "extends": [],
+  "includeBuiltins": true,
+  "defaultTheme": "ivoryManuscript",
+  "themes": [],
+  "assets": [],
+  "mechanisms": [],
+  "selectionPolicy": {
+    "maximumConsecutiveMechanism": 2,
+    "requireMotionProof": true,
+    "requireCaptionIndependence": true
+  }
+}

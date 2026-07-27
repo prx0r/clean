@@ -1,7 +1,7 @@
 import { motifRegistry } from "./motifs.mjs";
 import { layerTypes } from "./composition.mjs";
-import { semanticVisualNames } from "./semantic-visuals.mjs";
-import { themes } from "./theme.mjs";
+import { hasSemanticVisual, listSemanticVisualNames } from "./semantic-visuals.mjs";
+import { getTheme } from "./theme.mjs";
 
 const ID_PATTERN = /^[a-z][a-z0-9-]{2,63}$/;
 const SCENE_ID_PATTERN = /^[a-z][a-z0-9-]{2,31}$/;
@@ -29,7 +29,7 @@ export function assertPack(pack) {
   assertString(pack.id, "pack.id", 3, 64);
   if (!ID_PATTERN.test(pack.id)) throw new Error("pack.id must use lowercase kebab-case");
   assertString(pack.title, "pack.title", 3, 120);
-  if (!themes[pack.theme]) throw new Error(`Unknown pack theme "${pack.theme}"`);
+  getTheme(pack.theme);
   assertNumber(pack.seed, "pack.seed", 0, 4294967295, true);
 
   if (!pack.render || typeof pack.render !== "object") throw new Error("pack.render is required");
@@ -80,15 +80,13 @@ export function assertPack(pack) {
       }
     }
     if (scene.motif === "semantic-essay") {
-      if (!scene.params || !semanticVisualNames.includes(scene.params.visual)) {
+      if (!scene.params || !hasSemanticVisual(scene.params.visual)) {
         throw new Error(
-          `${path}.params.visual must be one of: ${semanticVisualNames.join(", ")}`,
+          `${path}.params.visual must be one of: ${listSemanticVisualNames().join(", ")}`,
         );
       }
     }
-    if (scene.theme !== undefined && !themes[scene.theme]) {
-      throw new Error(`${path}.theme has unknown value "${scene.theme}"`);
-    }
+    if (scene.theme !== undefined) getTheme(scene.theme);
     if (scene.duration !== undefined) assertNumber(scene.duration, `${path}.duration`, 1, 30);
     if (scene.seed !== undefined) assertNumber(scene.seed, `${path}.seed`, 0, 4294967295, true);
   }

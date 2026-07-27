@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "id": "embodied-phenomenology",
+  "title": "Embodied Phenomenology Base",
+  "description": "An inheritance root for attention, interoception, body-world boundaries, meditation, felt location and embodied perspective.",
+  "extends": [
+    "base"
+  ],
+  "defaultTheme": "ivoryManuscript",
+  "themes": [],
+  "assets": [],
+  "mechanisms": [],
+  "selectionPolicy": {
+    "preferredSemanticTags": [
+      "body",
+      "attention",
+      "interoception",
+      "meditation",
+      "perspective"
+    ],
+    "epistemicRule": "Keep phenomenological, biomedical and metaphysical claims explicitly distinct."
+  }
+}

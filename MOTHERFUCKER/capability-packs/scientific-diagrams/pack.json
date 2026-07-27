@@ -1,0 +1,25 @@
+{
+  "version": "1.0",
+  "id": "scientific-diagrams",
+  "title": "Scientific Diagram Base",
+  "description": "A precise inheritance root for biomedical, physical, computational and laboratory-style capability packs.",
+  "extends": [
+    "base"
+  ],
+  "defaultTheme": "whiteScientific",
+  "themes": [],
+  "assets": [],
+  "mechanisms": [],
+  "selectionPolicy": {
+    "preferredSemanticTags": [
+      "mechanism",
+      "measurement",
+      "comparison",
+      "causality"
+    ],
+    "forbiddenLiteralizations": [
+      "decorative laboratory iconography without encoded relation"
+    ],
+    "maximumConsecutiveMechanism": 2
+  }
+}
