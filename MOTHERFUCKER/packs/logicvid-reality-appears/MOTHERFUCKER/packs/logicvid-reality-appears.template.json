@@ -1,0 +1,433 @@
+{
+  "version": "1.0",
+  "id": "logicvid-reality-appears",
+  "title": "Why Does Reality Appear?",
+  "description": "A clean animated reconstruction of the manifestation argument.",
+  "theme": "ivoryManuscript",
+  "seed": 260727,
+  "audioManifest": "build/logicvid-reality-appears/features.json",
+  "render": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "crf": 16,
+    "preset": "medium",
+    "sceneDuration": 12,
+    "transitionDuration": 0
+  },
+  "scenes": [
+    {
+      "id": "lv01",
+      "title": "The Unanswered Question",
+      "subtitle": "Dynamics do not yet entail manifestation.",
+      "term": "Praśna",
+      "devanagari": "प्रश्न",
+      "motif": "argument-diagram-v2",
+      "params": {
+        "moves": [
+          {
+            "type": "claim",
+            "text": "Physics describes\n*fields*, *symmetries*, and *dynamics*",
+            "size": 31,
+            "start": 0.02,
+            "end": 0.42
+          },
+          {
+            "type": "subclaim",
+            "text": "description does not yet explain **felt presence**",
+            "y": 448,
+            "size": 20,
+            "start": 0.18,
+            "end": 0.54
+          },
+          {
+            "type": "divider",
+            "y": 520,
+            "start": 0.38,
+            "end": 0.62
+          },
+          {
+            "type": "claim",
+            "text": "Why is any process **manifest**\nrather than merely occurring?",
+            "size": 33,
+            "status": "highlight",
+            "start": 0.51,
+            "end": 0.98
+          }
+        ]
+      },
+      "duration": 12
+    },
+    {
+      "id": "lv02",
+      "title": "Two Different Questions",
+      "subtitle": "Physical change and manifestation must not be conflated.",
+      "term": "Bheda",
+      "devanagari": "भेद",
+      "motif": "argument-diagram-v2",
+      "params": {
+        "moves": [
+          {
+            "type": "side-by-side",
+            "left": "How does a\n*physical system change*?",
+            "right": "Why is change\n**present at all**?",
+            "size": 23,
+            "start": 0.03,
+            "end": 0.66,
+            "persist": true
+          },
+          {
+            "type": "subclaim",
+            "text": "QFT answers the left question with extraordinary precision",
+            "y": 520,
+            "size": 18,
+            "color": "#2d6685",
+            "start": 0.35,
+            "end": 0.75
+          },
+          {
+            "type": "claim",
+            "text": "It does not, by itself,\nanswer the **right** question",
+            "size": 27,
+            "status": "highlight",
+            "start": 0.65,
+            "end": 0.98
+          }
+        ]
+      },
+      "duration": 12
+    },
+    {
+      "id": "lv03",
+      "title": "The Threefold Trika Answer",
+      "subtitle": "Presence, self-articulation, and dynamism form one architecture.",
+      "term": "Spanda",
+      "devanagari": "स्पन्द",
+      "motif": "argument-diagram-v2",
+      "params": {
+        "moves": [
+          {
+            "type": "concept-map",
+            "central": "Manifest reality",
+            "size": 16,
+            "start": 0.02,
+            "end": 0.86,
+            "persist": true,
+            "nodes": [
+              {
+                "label": "*prakāśa*",
+                "relation": "manifest presence",
+                "x": -300,
+                "y": -120,
+                "color": "#a9782f"
+              },
+              {
+                "label": "*vimarśa*",
+                "relation": "self-articulation",
+                "x": 300,
+                "y": -120,
+                "color": "#3e7857"
+              },
+              {
+                "label": "*spanda*",
+                "relation": "dynamic differentiation",
+                "x": 0,
+                "y": 190,
+                "color": "#2d6685"
+              }
+            ]
+          },
+          {
+            "type": "pulse-path",
+            "color": "#a9782f",
+            "start": 0.38,
+            "end": 0.85
+          },
+          {
+            "type": "converge",
+            "text": "implicit unity becomes explicit difference\nwithout becoming a second reality",
+            "size": 23,
+            "status": "resolved",
+            "y": 542,
+            "ringRadius": 165,
+            "start": 0.62,
+            "end": 0.99
+          }
+        ]
+      },
+      "duration": 12
+    },
+    {
+      "id": "lv04",
+      "title": "Formal Argument",
+      "subtitle": "A1–A5 expose the structure of the proposal.",
+      "term": "Pramāṇa",
+      "devanagari": "प्रमाण",
+      "motif": "argument-diagram-v2",
+      "params": {
+        "moves": [
+          {
+            "type": "premises",
+            "size": 17,
+            "lineHeight": 43,
+            "start": 0.02,
+            "end": 0.9,
+            "premises": [
+              "A1. Experience entails *manifestation*.",
+              "A2. Abstract structure alone does not entail manifestation.",
+              "A3. Another unmanifest state only repeats the problem.",
+              "A4. Bare manifestation cannot explain determinate reality.",
+              "A5. Differentiation requires **dynamism**."
+            ],
+            "conclusion": "∴ The proposed ground is self-manifesting pulsation."
+          }
+        ]
+      },
+      "duration": 12
+    },
+    {
+      "id": "lv05",
+      "title": "The Functionalist Objection",
+      "subtitle": "Organization explains discrimination, but does it derive presence?",
+      "term": "Pūrvapakṣa",
+      "devanagari": "पूर्वपक्ष",
+      "motif": "argument-diagram-v2",
+      "params": {
+        "moves": [
+          {
+            "type": "claim",
+            "text": "Perhaps sufficiently complex\n**organization simply is presence**",
+            "size": 30,
+            "start": 0.02,
+            "end": 0.48
+          },
+          {
+            "type": "concept-map",
+            "central": "functional organization",
+            "size": 14,
+            "start": 0.22,
+            "end": 0.72,
+            "nodes": [
+              {
+                "label": "discrimination",
+                "relation": "supports",
+                "x": -300,
+                "y": -120
+              },
+              {
+                "label": "report",
+                "relation": "supports",
+                "x": 300,
+                "y": -120
+              },
+              {
+                "label": "integration",
+                "relation": "supports",
+                "x": 0,
+                "y": 185
+              }
+            ]
+          },
+          {
+            "type": "claim",
+            "text": "The functions are modeled.\nThe **manifestation bridge** remains asserted.",
+            "size": 27,
+            "status": "refuted",
+            "start": 0.62,
+            "end": 0.98
+          }
+        ]
+      },
+      "duration": 12
+    },
+    {
+      "id": "lv06",
+      "title": "QFT Is Not Spanda",
+      "subtitle": "A structural comparison is not an identity claim.",
+      "term": "Maryādā",
+      "devanagari": "मर्यादा",
+      "motif": "argument-diagram-v2",
+      "params": {
+        "moves": [
+          {
+            "type": "side-by-side",
+            "left": "**Quantum fluctuation**\nchange in a specified\nphysical field",
+            "right": "**Spanda**\nself-manifesting\ndifferentiation",
+            "size": 21,
+            "start": 0.03,
+            "end": 0.68,
+            "persist": true
+          },
+          {
+            "type": "divider",
+            "y": 515,
+            "start": 0.38,
+            "end": 0.65
+          },
+          {
+            "type": "converge",
+            "text": "Comparable as **structures**\nnot interchangeable as explanations",
+            "size": 26,
+            "status": "resolved",
+            "y": 548,
+            "ringRadius": 150,
+            "start": 0.62,
+            "end": 0.98
+          }
+        ]
+      },
+      "duration": 12
+    },
+    {
+      "id": "lv07",
+      "title": "Three Live Positions",
+      "subtitle": "Each solves one part of the bind and leaves another exposed.",
+      "term": "Vikalpa",
+      "devanagari": "विकल्प",
+      "motif": "argument-diagram-v2",
+      "params": {
+        "moves": [
+          {
+            "type": "branch",
+            "topY": 215,
+            "bottomY": 355,
+            "size": 15,
+            "start": 0.02,
+            "end": 0.72,
+            "persist": true,
+            "branches": [
+              {
+                "label": "**Physical structuralism**\norganization → presence\n*bridge owed*",
+                "color": "#2d6685"
+              },
+              {
+                "label": "**Russellian monism**\nintrinsic nature → unity\n*self-apprehension owed*",
+                "color": "#5c626a"
+              },
+              {
+                "label": "**Abhinavagupta**\nmanifestation + reflection + pulsation\n*empirical status owed*",
+                "color": "#a9782f"
+              }
+            ]
+          },
+          {
+            "type": "converge",
+            "text": "Most complete architecture here\n≠ established scientific result",
+            "size": 25,
+            "status": "highlight",
+            "y": 560,
+            "ringRadius": 165,
+            "start": 0.68,
+            "end": 0.99
+          }
+        ]
+      },
+      "duration": 12
+    },
+    {
+      "id": "lv08",
+      "title": "Epistemic Ledger",
+      "subtitle": "Evidence, metaphysics, bridge, and non-claim remain distinct.",
+      "term": "Viveka",
+      "devanagari": "विवेक",
+      "motif": "argument-diagram-v2",
+      "params": {
+        "moves": [
+          {
+            "type": "concept-map",
+            "central": "Disciplined comparison",
+            "size": 15,
+            "start": 0.02,
+            "end": 0.82,
+            "persist": true,
+            "nodes": [
+              {
+                "label": "**Empirical**",
+                "relation": "dynamics, access, report",
+                "x": -330,
+                "y": -135,
+                "color": "#2d6685"
+              },
+              {
+                "label": "**Metaphysical**",
+                "relation": "manifestation is fundamental",
+                "x": 330,
+                "y": -135,
+                "color": "#a9782f"
+              },
+              {
+                "label": "**Bridge**",
+                "relation": "dynamic differentiation",
+                "x": -300,
+                "y": 180,
+                "color": "#3e7857"
+              },
+              {
+                "label": "**Non-claim**",
+                "relation": "physics verified spanda",
+                "x": 300,
+                "y": 180,
+                "color": "#a43e46"
+              }
+            ]
+          },
+          {
+            "type": "claim",
+            "text": "The explanatory gap is not a failure of the film.\nIt is the **negative space** the film must preserve.",
+            "size": 24,
+            "status": "highlight",
+            "y": 555,
+            "start": 0.68,
+            "end": 0.99
+          }
+        ]
+      },
+      "duration": 12
+    },
+    {
+      "id": "lv09",
+      "title": "The Strongest Answer",
+      "subtitle": "Appearance is treated as the ground, not an added property.",
+      "term": "Pratyabhijñā",
+      "devanagari": "प्रत्यभिज्ञा",
+      "motif": "argument-diagram-v2",
+      "params": {
+        "moves": [
+          {
+            "type": "claim",
+            "text": "Reality does not first exist in darkness\nand later acquire **appearance**",
+            "size": 29,
+            "status": "refuted",
+            "start": 0.02,
+            "end": 0.42
+          },
+          {
+            "type": "pulse-path",
+            "color": "#a9782f",
+            "start": 0.28,
+            "end": 0.66
+          },
+          {
+            "type": "claim",
+            "text": "Reality is manifestation\ncapable of **articulating itself**",
+            "size": 34,
+            "status": "resolved",
+            "start": 0.48,
+            "end": 0.82
+          },
+          {
+            "type": "converge",
+            "text": "The frontier remains:\nnecessary ground of experience,\nor profound metaphysical interpretation?",
+            "size": 25,
+            "status": "highlight",
+            "y": 520,
+            "ringRadius": 185,
+            "start": 0.75,
+            "end": 0.99
+          }
+        ]
+      },
+      "duration": 12
+    }
+  ]
+}
