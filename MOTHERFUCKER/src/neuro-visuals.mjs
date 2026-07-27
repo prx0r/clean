@@ -419,7 +419,7 @@ export const mechanismImplementations = Object.freeze({
 
 function attentionSelection(ctx, t, scene, env) {
   const { theme } = env;
-  const { primary, secondary, luminous, line } = ink(scene, theme);
+  const { primary, secondary, luminous, line: structure } = ink(scene, theme);
   const alpha = reveal(t);
   const count = scene.params?.itemCount ?? 6;
   const apertureSize = scene.params?.apertureSize ?? 0.18;
@@ -467,7 +467,7 @@ function attentionSelection(ctx, t, scene, env) {
 
 function predictiveLoop(ctx, t, scene, env) {
   const { theme } = env;
-  const { primary, secondary, luminous, prediction, error, signal, line } = ink(scene, theme);
+  const { primary, secondary, luminous, prediction, error, signal, line: structure } = ink(scene, theme);
   const alpha = reveal(t);
   const hierarchy = scene.params?.hierarchy ?? 2;
   const convergenceTime = scene.params?.convergenceTime ?? 0.55;
@@ -513,7 +513,7 @@ function predictiveLoop(ctx, t, scene, env) {
 
 function patternCompletion(ctx, t, scene, env) {
   const { theme } = env;
-  const { primary, secondary, luminous, line } = ink(scene, theme);
+  const { primary, secondary, luminous, line: structure } = ink(scene, theme);
   const alpha = reveal(t);
   const count = scene.params?.nodeCount ?? 10;
   const degradation = scene.params?.degradation ?? 0.45;
@@ -553,7 +553,7 @@ function patternCompletion(ctx, t, scene, env) {
 
 function memoryConsolidation(ctx, t, scene, env) {
   const { theme } = env;
-  const { primary, secondary, luminous, line } = ink(scene, theme);
+  const { primary, secondary, luminous, line: structure } = ink(scene, theme);
   const alpha = reveal(t);
   const count = scene.params?.traceCount ?? 10;
   const retention = scene.params?.retention ?? 0.55;
@@ -594,7 +594,7 @@ function memoryConsolidation(ctx, t, scene, env) {
 
 function neuralPropagation(ctx, t, scene, env) {
   const { theme } = env;
-  const { primary, secondary, luminous, line } = ink(scene, theme);
+  const { primary, secondary, luminous, line: structure } = ink(scene, theme);
   const alpha = reveal(t);
   const layers = 4;
   const nodesPerLayer = 5;
@@ -642,7 +642,7 @@ function neuralPropagation(ctx, t, scene, env) {
 
 function competitiveBinding(ctx, t, scene, env) {
   const { theme } = env;
-  const { primary, secondary, luminous, line } = ink(scene, theme);
+  const { primary, secondary, luminous, line: structure } = ink(scene, theme);
   const alpha = reveal(t);
   const candidates = scene.params?.candidates ?? 3;
   const resolution = scene.params?.resolution ?? "winner-take-all";
@@ -686,7 +686,7 @@ function competitiveBinding(ctx, t, scene, env) {
 
 function temporalIntegration(ctx, t, scene, env) {
   const { theme } = env;
-  const { primary, secondary, luminous, line } = ink(scene, theme);
+  const { primary, secondary, luminous, line: structure } = ink(scene, theme);
   const alpha = reveal(t);
   const count = scene.params?.itemCount ?? 5;
   const decay = scene.params?.retentionDecay ?? 0.25;
@@ -721,7 +721,7 @@ function temporalIntegration(ctx, t, scene, env) {
 
 function errorDrivenLearning(ctx, t, scene, env) {
   const { theme } = env;
-  const { primary, secondary, luminous, prediction, signal, error, line } = ink(scene, theme);
+  const { primary, secondary, luminous, prediction, signal, error, line: structure } = ink(scene, theme);
   const alpha = reveal(t);
   const epochs = scene.params?.epochs ?? 2;
   const learningRate = scene.params?.learningRate ?? 0.3;

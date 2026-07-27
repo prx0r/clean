@@ -1,0 +1,61 @@
+{
+  "version": "1.0",
+  "id": "anatomy-test",
+  "title": "Anatomy Test",
+  "description": "Single scene test of anatomy pack.",
+  "capabilityPacks": [
+    "human-anatomy"
+  ],
+  "theme": "anatomyIvory",
+  "seed": 260727,
+  "render": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "crf": 18,
+    "preset": "medium",
+    "sceneDuration": 6,
+    "transitionDuration": 0.35
+  },
+  "scenes": [
+    {
+      "id": "anat-body",
+      "title": "Embodied Awareness Field",
+      "subtitle": "Attention moves between bodily regions.",
+      "term": "Deha",
+      "devanagari": "\u0926\u0947\u0939",
+      "motif": "semantic-essay",
+      "duration": 6,
+      "params": {
+        "visual": "embodied-awareness-field",
+        "caption": "felt location is produced by selective relevance"
+      }
+    },
+    {
+      "id": "anat-breath",
+      "title": "Breath Cycle",
+      "subtitle": "One complete respiratory cycle.",
+      "term": "Pr\u0101\u1e47a",
+      "devanagari": "\u092a\u094d\u0930\u093e\u0923",
+      "motif": "semantic-essay",
+      "duration": 6,
+      "params": {
+        "visual": "breath-cycle",
+        "caption": "air direction, lung volume and diaphragm form one cycle"
+      }
+    },
+    {
+      "id": "anat-heart",
+      "title": "Heart-Breath Entrainment",
+      "subtitle": "Two rhythms coordinate.",
+      "term": "H\u1e5bdaya",
+      "devanagari": "\u0939\u0943\u0926\u092f",
+      "motif": "semantic-essay",
+      "duration": 6,
+      "params": {
+        "visual": "heart-breath-entrainment",
+        "caption": "rhythms entrain while retaining separate traces"
+      }
+    }
+  ]
+}

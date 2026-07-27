@@ -7,15 +7,15 @@ import test from "node:test";
 
 import { createCanvas } from "@napi-rs/canvas";
 
-import { applyTextStyle, fontStatus, initializeFonts } from "../src/fonts.mjs";
+import { applyTextStyle, fontStatus, initializeFonts } from "../fonts.mjs";
 import {
   FrameRenderer,
   loadPack,
   renderVideo,
   validateVideo,
-} from "../src/renderer.mjs";
-import { assertPack } from "../src/schema.mjs";
-import { typography } from "../src/theme.mjs";
+} from "../renderer.mjs";
+import { assertPack } from "../schema.mjs";
+import { typography } from "../theme.mjs";
 
 const packPath = new URL("../packs/hrdaya-original.json", import.meta.url);
 

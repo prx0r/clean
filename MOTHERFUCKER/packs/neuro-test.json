@@ -1,0 +1,64 @@
+{
+  "version": "1.0",
+  "id": "neuro-test",
+  "title": "Neurocognition Test",
+  "description": "Single scene test of neuro pack mechanisms.",
+  "capabilityPacks": [
+    "neurocognition"
+  ],
+  "theme": "neuralIvory",
+  "seed": 260727,
+  "render": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "crf": 18,
+    "preset": "medium",
+    "sceneDuration": 6,
+    "transitionDuration": 0.35
+  },
+  "scenes": [
+    {
+      "id": "neuro-attention",
+      "title": "Attention Selection",
+      "subtitle": "A field narrows to select one item.",
+      "term": "Attention",
+      "devanagari": "\u0927\u094d\u092f\u093e\u0928",
+      "motif": "semantic-essay",
+      "duration": 6,
+      "params": {
+        "visual": "attention-selection",
+        "itemCount": 6,
+        "caption": "attention selects by enhancing some contents while suppressing others"
+      }
+    },
+    {
+      "id": "neuro-prediction",
+      "title": "Predictive Loop",
+      "subtitle": "Top-down and bottom-up converge.",
+      "term": "Prediction",
+      "devanagari": "\u092a\u0942\u0930\u094d\u0935\u093e\u0928\u0941\u092e\u093e\u0928",
+      "motif": "semantic-essay",
+      "duration": 6,
+      "params": {
+        "visual": "predictive-loop",
+        "hierarchy": 2,
+        "caption": "prediction and sensory input converge; residual error drives revision"
+      }
+    },
+    {
+      "id": "neuro-memory",
+      "title": "Memory Consolidation",
+      "subtitle": "Traces reorganise over time.",
+      "term": "Memory",
+      "devanagari": "\u0938\u094d\u092e\u0943\u0924\u093f",
+      "motif": "semantic-essay",
+      "duration": 6,
+      "params": {
+        "visual": "memory-consolidation",
+        "traceCount": 10,
+        "caption": "traces reorganise: some stabilise, others decay"
+      }
+    }
+  ]
+}

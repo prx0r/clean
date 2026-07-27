@@ -122,12 +122,31 @@ Format:
 
 ### Step 5: Render the Video
 
+There are two render paths:
+
+**For packs using only built-in mechanisms (base pack):**
 ```bash
 cd MOTHERFUCKER
 node cli.mjs render packs/your-pack.json --out build/your-film/your-film.mp4
 ```
 
-This produces an MP4 with validated H.264 video.
+**For packs using custom mechanisms (neurocognition, human-anatomy, invariant-composition):**
+The pack JSON must have a `capabilityPacks` array at the top level. Render using a capability-aware loader:
+
+```js
+import { loadCapabilityScenePack } from "./src/load-capability-scene-pack.mjs";
+import { renderVideo } from "./renderer.mjs";
+
+const pack = await loadCapabilityScenePack("./packs/your-pack.json");
+const result = await renderVideo(pack, "build/your-film/your-film.mp4");
+```
+
+Or use the included demo render scripts as templates:
+```bash
+node tools/render-invariant-demo.mjs
+node tools/test-neuro-pack.mjs
+node tools/test-anatomy-pack.mjs
+```
 
 ### Step 6: Generate TTS Narration
 
