@@ -1,0 +1,276 @@
+{
+  "version": "1.0",
+  "id": "neurocognition",
+  "title": "Neurocognitive Architecture",
+  "description": "Brain anatomy assets, neural network overlays, and semantic mechanisms for attention, prediction, memory, error-driven learning, pattern completion, and temporal integration — grounded in neuroscientific models without reducing cognition to anatomy.",
+  "extends": ["base"],
+  "defaultTheme": "neuralIvory",
+  "runtimeModule": "../../src/neuro-visuals.mjs",
+  "themes": [
+    {
+      "name": "neuralIvory",
+      "tokens": {
+        "background": "#f4f5f2",
+        "backgroundLight": "#fcfcfa",
+        "backgroundEdge": "#e2e4e0",
+        "ink": "#1e232a",
+        "structure": "#4a5563",
+        "border": "#3a6b8c",
+        "accent": "#c4445a",
+        "secondary": "#3b7a9e",
+        "luminous": "#e8b84a",
+        "panel": "#f8f9f7",
+        "particle": "#5a8ca0",
+        "signal": "#d45c6c",
+        "prediction": "#6ab0c6",
+        "error": "#e8845a",
+        "textureOpacity": 0.015,
+        "chrome": {
+          "borderStyle": "technical",
+          "footerStyle": "technical",
+          "gridOpacity": 0.01,
+          "cornerMarks": true
+        },
+        "motion": {
+          "glowScale": 0.85,
+          "pulseRate": 0.8,
+          "defaultTransition": "crossfade"
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "brain-schematic",
+      "description": "A canonical lateral brain silhouette with labelled cortical lobes (frontal, parietal, temporal, occipital, cerebellum, brainstem).",
+      "category": "structural-base",
+      "epistemicMode": "biomedical-schematic",
+      "semanticTags": ["brain", "neuroanatomy", "cortex", "lobes"],
+      "parameters": {
+        "cx": { "type": "number", "default": 640 },
+        "cy": { "type": "number", "default": 300 },
+        "scale": { "type": "number", "minimum": 0.4, "maximum": 1.2, "default": 0.85 },
+        "labels": { "type": "boolean", "default": false }
+      },
+      "provenance": ["embryo_flashes_brain_platinum.py: developing neural architecture"]
+    },
+    {
+      "id": "neural-network",
+      "description": "A layered node-and-edge graph representing neural populations with adjustable depth, branching and connection density.",
+      "category": "functional-overlay",
+      "epistemicMode": "computational-model",
+      "semanticTags": ["network", "nodes", "connections", "layers", "neural"],
+      "parameters": {
+        "layers": { "type": "integer", "minimum": 2, "maximum": 8, "default": 4 },
+        "nodesPerLayer": { "type": "integer", "minimum": 2, "maximum": 16, "default": 6 },
+        "density": { "type": "number", "minimum": 0.1, "maximum": 1, "default": 0.6 }
+      },
+      "provenance": ["cells_solving_problem_platinum.py: distributed computation", "cooperation_platinum.py: collective coordination"]
+    },
+    {
+      "id": "cortical-column",
+      "description": "A schematic cortical column with layered input, processing and output zones and vertical integration paths.",
+      "category": "structural-base",
+      "epistemicMode": "biomedical-schematic",
+      "semanticTags": ["cortex", "column", "layer", "microcircuit"],
+      "parameters": {
+        "cx": { "type": "number", "default": 640 },
+        "cy": { "type": "number", "default": 340 },
+        "height": { "type": "number", "minimum": 120, "maximum": 400, "default": 280 },
+        "labels": { "type": "boolean", "default": false }
+      },
+      "provenance": ["breath_clock_brain_platinum.py: layered rhythmic architecture"]
+    },
+    {
+      "id": "attention-field",
+      "description": "A graded spatial field with a high-resolution center fading into peripheral suppression — can be positioned anywhere in frame.",
+      "category": "functional-overlay",
+      "epistemicMode": "functional-model",
+      "semanticTags": ["attention", "focus", "selection", "field"],
+      "parameters": {
+        "cx": { "type": "number", "default": 640 },
+        "cy": { "type": "number", "default": 320 },
+        "radius": { "type": "number", "minimum": 30, "maximum": 500, "default": 200 },
+        "intensity": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.7 }
+      },
+      "provenance": ["attention_creates_finite_self_platinum.py: narrow field of selective awareness"]
+    },
+    {
+      "id": "prediction-signal",
+      "description": "A forward-propagating wave or arrow that travels from a source toward a target, with optional intensity envelope.",
+      "category": "motion-overlay",
+      "epistemicMode": "computational-model",
+      "semanticTags": ["prediction", "signal", "forward", "top-down", "expectation"],
+      "parameters": {
+        "from": { "type": "string", "default": "left" },
+        "to": { "type": "string", "default": "right" },
+        "width": { "type": "number", "minimum": 1, "maximum": 8, "default": 3 },
+        "style": { "enum": ["wave", "arrow", "pulse"], "default": "wave" }
+      },
+      "provenance": ["organism_survives_predicting_platinum.py: anticipatory modelling"]
+    },
+    {
+      "id": "memory-trace",
+      "description": "A fading or consolidating path that can be reinforced, decayed, or overwritten over time.",
+      "category": "functional-overlay",
+      "epistemicMode": "functional-model",
+      "semanticTags": ["memory", "trace", "consolidation", "decay", "path"],
+      "parameters": {
+        "nodes": { "type": "integer", "minimum": 2, "maximum": 12, "default": 5 },
+        "decay": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.3 },
+        "reinforce": { "type": "boolean", "default": false }
+      },
+      "provenance": ["memory_before_brains_platinum.py: trace as condition of access"]
+    },
+    {
+      "id": "error-signal",
+      "description": "A salient mismatch marker — a flash, spike or discordant oscillation — that appears where prediction and input diverge.",
+      "category": "motion-overlay",
+      "epistemicMode": "computational-model",
+      "semanticTags": ["error", "mismatch", "surprise", "prediction-error", "learning"],
+      "parameters": {
+        "x": { "type": "number", "default": 640 },
+        "y": { "type": "number", "default": 320 },
+        "magnitude": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.7 }
+      },
+      "provenance": ["cells_that_solve_problems_platinum.py: problem signals as error-guided correction"]
+    },
+    {
+      "id": "neural-oscillation",
+      "description": "A rhythmic waveform trace (theta, alpha, beta, gamma) with adjustable frequency, amplitude and phase — can be shown as Lissajous figures or line traces.",
+      "category": "functional-overlay",
+      "epistemicMode": "biomedical-schematic",
+      "semanticTags": ["oscillation", "rhythm", "frequency", "brainwave", "phase"],
+      "parameters": {
+        "band": { "enum": ["delta", "theta", "alpha", "beta", "gamma"], "default": "alpha" },
+        "amplitude": { "type": "number", "minimum": 0.1, "maximum": 1, "default": 0.7 },
+        "channels": { "type": "integer", "minimum": 1, "maximum": 4, "default": 2 }
+      },
+      "provenance": ["breath_clock_brain_platinum.py: embodied time and cortical rhythms"]
+    }
+  ],
+  "mechanisms": [
+    {
+      "id": "attention-selection",
+      "description": "A wide field of equipotential items is narrowed by a moving aperture that selects one region while suppressing others, demonstrating that attention is selective enhancement, not merely revealing what was already there.",
+      "relations": ["selection", "differentiation", "interface"],
+      "operators": ["select", "frame", "contract"],
+      "semanticTags": ["attention", "selection", "awareness", "salience", "bottleneck"],
+      "motionProof": "Items outside the aperture change opacity or relevance as the aperture moves, proving that selection actively modifies access rather than passively illuminating pre-existing content.",
+      "epistemicMode": "functional-model",
+      "parameters": {
+        "itemCount": { "type": "integer", "minimum": 3, "maximum": 12, "default": 6 },
+        "apertureSize": { "type": "number", "minimum": 0.05, "maximum": 0.5, "default": 0.18 }
+      },
+      "provenance": ["attention_creates_finite_self_platinum.py: selective awareness constructs a finite self"]
+    },
+    {
+      "id": "predictive-loop",
+      "description": "A top-down prediction signal meets a bottom-up sensory signal; their convergence produces an updated prediction, while their divergence produces a salient error signal that drives revision.",
+      "relations": ["feedback", "comparison", "self-modification"],
+      "operators": ["compare", "propagate", "coordinate", "transform"],
+      "semanticTags": ["prediction", "error", "feedback", "learning", "hierarchy", "bayesian-brain"],
+      "motionProof": "The prediction and input remain visibly separate until convergence, and the error marker appears only where they fail to align — proving the temporal process of predictive inference rather than a static label.",
+      "epistemicMode": "computational-model",
+      "parameters": {
+        "hierarchy": { "type": "integer", "minimum": 1, "maximum": 4, "default": 2 },
+        "convergenceTime": { "type": "number", "minimum": 0.2, "maximum": 0.9, "default": 0.55 }
+      },
+      "provenance": ["organism_survives_predicting_platinum.py: free-energy minimisation", "cells_that_solve_problems_platinum.py: problem solving as error correction"]
+    },
+    {
+      "id": "pattern-completion",
+      "description": "A partial or degraded input pattern progressively reconstructs into a complete stored template through spreading activation across a network.",
+      "relations": ["emergence", "translation", "self-modification"],
+      "operators": ["complete", "emerge", "propagate"],
+      "semanticTags": ["pattern", "completion", "memory", "association", "holistic"],
+      "motionProof": "The reconstruction proceeds from fragment to whole along associative paths, proving that completion is an active process of spreading activation — not a lookup of a pre-stored image.",
+      "epistemicMode": "computational-model",
+      "parameters": {
+        "nodeCount": { "type": "integer", "minimum": 4, "maximum": 24, "default": 10 },
+        "degradation": { "type": "number", "minimum": 0.1, "maximum": 0.8, "default": 0.45 }
+      },
+      "provenance": ["memory_before_brains_platinum.py: memory is reconstruction, not storage"]
+    },
+    {
+      "id": "memory-consolidation",
+      "description": "Multiple parallel traces reorganise over time: some stabilise and strengthen, others decay and are pruned, producing a consolidated network that differs from the initial encoding.",
+      "relations": ["transformation", "selection", "cessation"],
+      "operators": ["consolidate", "prune", "stabilise", "transform"],
+      "semanticTags": ["memory", "consolidation", "stabilisation", "pruning", "sleep"],
+      "motionProof": "The trace set changes visibly from a dense simultaneous pattern to a sparser structured one — proving consolidation as reorganisation rather than mere preservation.",
+      "epistemicMode": "functional-model",
+      "parameters": {
+        "traceCount": { "type": "integer", "minimum": 4, "maximum": 20, "default": 10 },
+        "retention": { "type": "number", "minimum": 0.1, "maximum": 1, "default": 0.55 }
+      },
+      "provenance": ["memory_before_brains_platinum.py", "veils_of_forgetting_platinum.py: necessary forgetting"]
+    },
+    {
+      "id": "neural-propagation",
+      "description": "A local activation event produces timed waves of activity that spread through a network along weighted connections, with amplitude diminishing or amplifying at each junction.",
+      "relations": ["propagation", "sequence", "transformation"],
+      "operators": ["propagate", "sequence", "amplify"],
+      "semanticTags": ["propagation", "neural", "spread", "activation", "network"],
+      "motionProof": "The activation reaches different nodes at different times with different magnitudes — performing propagation rather than merely illuminating a static graph.",
+      "epistemicMode": "computational-model",
+      "parameters": {
+        "sourceLayer": { "type": "integer", "default": 0 },
+        "amplification": { "type": "number", "minimum": 0.1, "maximum": 2, "default": 1 }
+      },
+      "provenance": ["cells_solving_problem_platinum.py: signal propagation through cellular networks"]
+    },
+    {
+      "id": "competitive-binding",
+      "description": "Several candidate features or interpretations compete for a unified binding; one stabilises as the dominant percept while alternatives remain present as suppressed traces.",
+      "relations": ["selection", "emergence", "convergence"],
+      "operators": ["compete", "bind", "select", "emerge"],
+      "semanticTags": ["binding", "competition", "integration", "perception", "consciousness"],
+      "motionProof": "Multiple candidates remain active until one visibly suppresses the others, proving binding as a competitive temporal process rather than a one-shot assignment.",
+      "epistemicMode": "functional-model",
+      "parameters": {
+        "candidates": { "type": "integer", "minimum": 2, "maximum": 6, "default": 3 },
+        "resolution": { "enum": ["winner-take-all", "integrated", "alternating"], "default": "winner-take-all" }
+      },
+      "provenance": ["consciousness_container_platinum.py: unified field from competing contents", "constructed_self_platinum.py: self as competitive synthesis"]
+    },
+    {
+      "id": "temporal-integration",
+      "description": "Sequentially presented items leave persistent traces that accumulate into a single episodic representation, with earlier items fading but remaining structurally present.",
+      "relations": ["sequence", "convergence", "containment"],
+      "operators": ["sequence", "integrate", "contain", "retain"],
+      "semanticTags": ["time", "integration", "episode", "sequence", "working-memory"],
+      "motionProof": "Earlier items visibly persist in modified form as later items arrive, proving that temporal integration is cumulative retention — not replacement of one frame by the next.",
+      "epistemicMode": "functional-model",
+      "parameters": {
+        "itemCount": { "type": "integer", "minimum": 2, "maximum": 8, "default": 5 },
+        "retentionDecay": { "type": "number", "minimum": 0, "maximum": 0.8, "default": 0.25 }
+      },
+      "provenance": ["time_is_produced_by_forgetting_platinum.py: sequence produced by retention and loss", "melody-time mechanism: simultaneity becoming sequence"]
+    },
+    {
+      "id": "error-driven-learning",
+      "description": "A prediction error signal propagates backward through a network, modifying connection weights so that subsequent predictions more closely match the input.",
+      "relations": ["feedback", "transformation", "self-modification"],
+      "operators": ["propagate", "transform", "coordinate", "differentiate"],
+      "semanticTags": ["learning", "error", "plasticity", "backpropagation", "adaptation"],
+      "motionProof": "The weight of each connection changes measurably following the error signal, and the subsequent prediction differs from the first — proving learning as weight modification driven by error, not mere exposure.",
+      "epistemicMode": "computational-model",
+      "parameters": {
+        "learningRate": { "type": "number", "minimum": 0.01, "maximum": 0.9, "default": 0.3 },
+        "epochs": { "type": "integer", "minimum": 1, "maximum": 5, "default": 2 }
+      },
+      "provenance": ["cells_that_solve_problems_platinum.py: adaptive problem solving"]
+    }
+  ],
+  "selectionPolicy": {
+    "captionPolicy": "Use neuroanatomical labels only to disambiguate structures; narration carries the cognitive or phenomenological prose.",
+    "preferredSemanticTags": ["attention", "prediction", "memory", "learning", "integration", "binding", "propagation", "error"],
+    "forbiddenLiteralizations": ["brain-as-circuit-board metaphor without epistemic caveat", "glowing neuron icon with no encoded relation", "homunculus-style inner observer", "static brain region colouring without temporal process"],
+    "epistemicRule": "Mark computational models, biomedical schematics, phenomenological reports and functional models separately. Never imply that a computational diagram proves a phenomenological claim or vice versa.",
+    "maximumConsecutiveMechanism": 2,
+    "minimumCandidateCount": 3,
+    "requireMotionProof": true,
+    "requireCaptionIndependence": true
+  }
+}
