@@ -1,0 +1,184 @@
+{
+  "version": "1.0",
+  "id": "argument-diagram-demo",
+  "title": "What Is Experience? \u2014 Argument Diagram",
+  "description": "Abhinavagupta vs \u00d1\u0101\u1e47ananda \u2014 animated argument diagram.",
+  "theme": "ivoryManuscript",
+  "seed": 260727,
+  "render": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "crf": 18,
+    "preset": "medium",
+    "sceneDuration": 12,
+    "transitionDuration": 0.5
+  },
+  "scenes": [
+    {
+      "id": "ad01",
+      "title": "The Question",
+      "subtitle": "What is experience?",
+      "term": "Prazna",
+      "devanagari": "\u092a\u094d\u0930\u0936\u094d\u0928",
+      "motif": "argument-diagram",
+      "duration": 8,
+      "params": {
+        "moves": [
+          {
+            "type": "claim",
+            "text": "What is the internal structure\nof an actual experience?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ad02",
+      "title": "The Thesis",
+      "subtitle": "Subject and object are generated within experience",
+      "term": "Prak\u0101\u015ba",
+      "devanagari": "\u092a\u094d\u0930\u0915\u093e\u0936",
+      "motif": "argument-diagram",
+      "duration": 10,
+      "params": {
+        "moves": [
+          {
+            "type": "claim",
+            "text": "Experience is not S \u2192 O",
+            "size": 32
+          },
+          {
+            "type": "subclaim",
+            "text": "That already assumes two completed entities",
+            "y": 380,
+            "size": 20
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "claim",
+            "text": "C \u2192 \u27e8S, O, S\u2212O\u27e9",
+            "size": 34
+          }
+        ]
+      }
+    },
+    {
+      "id": "ad03",
+      "title": "Formal Proof",
+      "subtitle": "Abhinavagupta",
+      "term": "Pram\u0101\u1e47a",
+      "devanagari": "\u092a\u094d\u0930\u092e\u093e\u0923",
+      "motif": "argument-diagram",
+      "duration": 12,
+      "params": {
+        "moves": [
+          {
+            "type": "premises",
+            "premises": [
+              "A1. Experience entails manifestation",
+              "A2. Manifestation cannot be added by another cognition",
+              "A3. Bare manifestation is insufficient",
+              "A4. The object cannot stand outside manifestation"
+            ],
+            "conclusion": "Consciousness must be self-articulating: prak\u0101\u015ba-vimar\u015ba"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ad04",
+      "title": "The Vortex",
+      "subtitle": "\u00d1\u0101\u1e47ananda",
+      "term": "Vi\u00f1\u00f1\u0101\u1e47a",
+      "devanagari": "\u0935\u093f\u091e\u094d\u091e\u093e\u0923",
+      "motif": "argument-diagram",
+      "duration": 10,
+      "params": {
+        "moves": [
+          {
+            "type": "side-by-side",
+            "left": "vi\u00f1\u00f1\u0101\u1e47a\nconsciousness",
+            "right": "n\u0101mar\u016bpa\nphenomenal form",
+            "leftColor": "#3b7a9e",
+            "rightColor": "#c4445a"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "claim",
+            "text": "V \u2194 N",
+            "size": 36
+          },
+          {
+            "type": "subclaim",
+            "text": "Neither is independently foundational",
+            "y": 400,
+            "size": 18
+          }
+        ]
+      }
+    },
+    {
+      "id": "ad05",
+      "title": "The Clash",
+      "subtitle": "Two positions",
+      "term": "Virodha",
+      "devanagari": "\u0935\u093f\u0930\u094b\u0927",
+      "motif": "argument-diagram",
+      "duration": 10,
+      "params": {
+        "moves": [
+          {
+            "type": "claim",
+            "text": "The decisive difference",
+            "size": 28
+          },
+          {
+            "type": "branch",
+            "branches": [
+              {
+                "label": "Abhinavagupta: C \u2192 N\nConsciousness is ontologically primary",
+                "color": "#3b7a9e"
+              },
+              {
+                "label": "\u00d1\u0101\u1e47ananda: V \u2194 N\nNeither side is self-grounding",
+                "color": "#c4445a"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ad06",
+      "title": "Resolution",
+      "subtitle": "The unanswered question",
+      "term": "Nir\u1e47aya",
+      "devanagari": "\u0928\u093f\u0930\u094d\u0923\u092f",
+      "motif": "argument-diagram",
+      "duration": 10,
+      "params": {
+        "moves": [
+          {
+            "type": "side-by-side",
+            "left": "Abhinavagupta\nstrongest on\nmanifestation",
+            "right": "\u00d1\u0101\u1e47ananda\nstrongest refutation\nof universal subject",
+            "leftColor": "#3b7a9e",
+            "rightColor": "#c4445a"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "claim",
+            "text": "Is manifestation the ground\nof the vortex, or is it\ninseparable from it?",
+            "size": 28
+          }
+        ]
+      }
+    }
+  ]
+}

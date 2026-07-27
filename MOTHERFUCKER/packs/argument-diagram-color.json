@@ -1,0 +1,101 @@
+{
+  "version": "1.0",
+  "id": "argument-diagram-color-demo",
+  "title": "Argument Diagram \u2014 Color Dynamics",
+  "description": "Claims transition through status colors: active, refuted, resolved.",
+  "theme": "ivoryManuscript",
+  "seed": 260727,
+  "render": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "crf": 18,
+    "preset": "medium",
+    "sceneDuration": 10,
+    "transitionDuration": 0.5
+  },
+  "scenes": [
+    {
+      "id": "color01",
+      "title": "Active Claim",
+      "subtitle": "Initial thesis",
+      "term": "Siddh\u0101nta",
+      "devanagari": "\u0938\u093f\u0926\u094d\u0927\u093e\u0928\u094d\u0924",
+      "motif": "argument-diagram",
+      "duration": 8,
+      "params": {
+        "moves": [
+          {
+            "type": "claim",
+            "text": "Consciousness is\nontologically primary",
+            "status": "active",
+            "size": 34
+          }
+        ]
+      }
+    },
+    {
+      "id": "color02",
+      "title": "Refuted",
+      "subtitle": "The objection lands",
+      "term": "Kha\u1e47\u1e0dana",
+      "devanagari": "\u0916\u0923\u094d\u0921\u0928",
+      "motif": "argument-diagram",
+      "duration": 8,
+      "params": {
+        "moves": [
+          {
+            "type": "claim",
+            "text": "Consciousness is\nontologically primary",
+            "statusTransition": true,
+            "status": "refuted",
+            "size": 34
+          },
+          {
+            "type": "subclaim",
+            "text": "\u2190 \u00d1\u0101\u1e47ananda: no independent footing outside relation",
+            "y": 420,
+            "size": 18,
+            "color": "#c4445a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "color03",
+      "title": "Resolution",
+      "subtitle": "Both sides contribute",
+      "term": "Samanvaya",
+      "devanagari": "\u0938\u092e\u0928\u094d\u0935\u092f",
+      "motif": "argument-diagram",
+      "duration": 8,
+      "params": {
+        "moves": [
+          {
+            "type": "claim",
+            "text": "Abhinavagupta wins on\nmanifestation itself",
+            "statusTransition": true,
+            "status": "resolved",
+            "size": 30
+          },
+          {
+            "type": "subclaim",
+            "text": "\u00d1\u0101\u1e47ananda wins on refutation of universal subject",
+            "y": 400,
+            "size": 18,
+            "color": "#3b8c5a"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "claim",
+            "text": "The contention remains open",
+            "size": 26,
+            "color": "#d2a744"
+          }
+        ]
+      }
+    }
+  ]
+}
