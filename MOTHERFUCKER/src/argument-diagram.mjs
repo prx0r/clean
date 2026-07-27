@@ -4,13 +4,17 @@ import { drawGlowOrb, drawRing, drawNode, drawArrowHead, drawPartialPath } from 
 const CX = 640, CY = 310;
 const FW = 1280, FH = 720;
 
-const STATUS_COLORS = {
-  active: null, refuted: "#c4445a", resolved: "#3b8c5a",
-  neutral: "#59646d", highlight: "#d2a744",
-};
+const MONO = "#1a1a1a";
+const MUTED = "#555555";
+const REFUTE = "#b33a3a";
+const RESOLVE = "#3a7a4a";
 
-function resolveColor(move, theme) {
-  return STATUS_COLORS[move.status || "active"] || move.color || theme.ink;
+function resolveColor(move) {
+  if (move.status === "refuted") return REFUTE;
+  if (move.status === "resolved") return RESOLVE;
+  if (move.status === "neutral") return MUTED;
+  if (move.status === "highlight") return MONO;
+  return move.color || MONO;
 }
 
 function styledText(ctx, text, x, y, baseSize, color, alpha, align) {
@@ -62,34 +66,29 @@ function drawSubtleField(ctx, t, theme) {
 
 function renderClaim(ctx, t, move, theme) {
   const a = smoothstep(0, 0.12, t);
-  const color = resolveColor(move, theme);
+  const color = resolveColor(move);
   const size = move.size || 34;
   const scale = 0.94 + 0.06 * (1 - easeOutCubic(smoothstep(0, 0.2, t)));
   const lines = move.text.split("\n");
-  const lineH = size * 1.25;
+  const lineH = size * 1.3;
   const startY = -(lines.length - 1) * lineH / 2;
-  if (move.status === "refuted") {
-    drawGlowOrb(ctx, CX, CY, 140 + 20 * wave(t, 0.6), STATUS_COLORS.refuted, 0.06 * a);
-  }
-  if (move.status === "resolved") {
-    drawGlowOrb(ctx, CX, CY, 120 + 15 * wave(t, 0.4), STATUS_COLORS.resolved, 0.05 * a);
-  }
   ctx.save();
   ctx.globalAlpha = a;
   ctx.translate(CX, CY);
   ctx.scale(scale, scale);
+  ctx.textRendering = "geometricPrecision";
   for (let i = 0; i < lines.length; i++) {
     const la = smoothstep(0.03 + i * 0.06, 0.1 + i * 0.06, t);
     ctx.globalAlpha = a * la;
-    styledText(ctx, lines[i], 0, startY + i * lineH, size, color, a * la * 0.92, "center");
+    styledText(ctx, lines[i], 0, startY + i * lineH, size, color, a * la * 0.95, "center");
   }
   ctx.restore();
   if (move.status === "refuted" && t > 0.4) {
     const strikeT = smoothstep(0.4, 0.55, t);
     ctx.save();
-    ctx.globalAlpha = a * strikeT * 0.7;
-    ctx.strokeStyle = rgba(STATUS_COLORS.refuted, a * strikeT * 0.6);
-    ctx.lineWidth = 2;
+    ctx.globalAlpha = a * strikeT * 0.6;
+    ctx.strokeStyle = rgba(REFUTE, a * strikeT * 0.5);
+    ctx.lineWidth = 1.5;
     ctx.beginPath();
     ctx.moveTo(CX - 280, CY);
     ctx.lineTo(CX + 280, CY);
@@ -101,11 +100,12 @@ function renderClaim(ctx, t, move, theme) {
 function renderSubclaim(ctx, t, move, theme) {
   const a = smoothstep(0, 0.15, t);
   const size = move.size || 20;
-  const color = resolveColor(move, theme);
+  const color = resolveColor(move);
   const y = typeof move.y === "number" ? move.y : 410;
   const drift = move.drift ? 40 * (1 - easeOutCubic(smoothstep(0, 0.3, t))) : 0;
   ctx.save();
   ctx.globalAlpha = a;
+  ctx.textRendering = "geometricPrecision";
   styledText(ctx, move.text, CX + drift * (move.dir || 1), y, size, color, a * 0.85, "center");
   if (move.arrow && t > 0.3) {
     const arrT = smoothstep(0.3, 0.5, t);
@@ -125,15 +125,12 @@ function renderSubclaim(ctx, t, move, theme) {
 function renderRefutation(ctx, t, move, theme) {
   const a = smoothstep(0, 0.15, t);
   const size = move.size || 26;
-  const color = move.color || STATUS_COLORS.refuted;
+  const color = REFUTE;
   const slideIn = 140 * (1 - easeOutCubic(smoothstep(0, 0.3, t)));
   ctx.save();
   ctx.globalAlpha = a;
-  ctx.font = "400 " + size + 'px "EB Garamond", "Tantra Garamond", serif';
-  ctx.textAlign = "center";
-  ctx.textBaseline = "middle";
-  ctx.fillStyle = rgba(color, a * 0.9);
-  ctx.fillText(move.text, CX + slideIn, CY);
+  ctx.textRendering = "geometricPrecision";
+  styledText(ctx, move.text, CX + slideIn, CY, size, color, a * 0.9, "center");
   if (slideIn > 20 && t < 0.6) {
     const lineT = smoothstep(0.1, 0.25, t);
     ctx.strokeStyle = rgba(color, a * 0.25 * (1 - lineT));
@@ -159,30 +156,26 @@ function renderBranch(ctx, t, move, theme) {
   for (let i = 0; i < branches.length; i++) {
     const ba = smoothstep(0.05 + i * 0.12, 0.18 + i * 0.12, t);
     const x = startX + (i - (branches.length - 1) / 2) * spread;
-    const color = branches[i].color || (i === 0 ? "#3b7a9e" : i === branches.length - 1 ? "#c4445a" : theme.secondary || "#59646d");
+    const color = branches[i].color || MONO;
     if (ba > 0) {
       ctx.globalAlpha = a * ba;
-      ctx.strokeStyle = rgba(color, a * ba * 0.45);
-      ctx.lineWidth = 1.2;
+      ctx.strokeStyle = rgba(MUTED, a * ba * 0.35);
+      ctx.lineWidth = 0.8;
       ctx.beginPath();
       ctx.moveTo(startX, topY + 10);
-      const cp = { x: (startX + x) / 2, y: botY - 60 + 40 * wave(t + i, 0.3) };
+      const cp = { x: (startX + x) / 2, y: botY - 60 };
       ctx.quadraticCurveTo(cp.x, cp.y, x, botY);
       ctx.stroke();
-      drawNode(ctx, x, botY, 5, { fill: theme.backgroundLight || "#fafaf8", stroke: color, alpha: a * ba * 0.8, glow: color });
-      ctx.font = "400 16px \"EB Garamond\", \"Tantra Garamond\", serif";
+      ctx.font = "400 15px \"EB Garamond\", \"Tantra Garamond\", serif";
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
-      ctx.fillStyle = rgba(color, a * ba * 0.88);
+      ctx.fillStyle = rgba(MONO, a * ba * 0.88);
       const lines = branches[i].label.split("\n");
       for (let li = 0; li < lines.length; li++) {
-        ctx.fillText(lines[li], x, botY + 30 + li * 22);
+        ctx.fillText(lines[li], x, botY + 28 + li * 20);
       }
-      if (i === 0) drawArrowHead(ctx, cp.x, cp.y + 10, Math.PI / 2, 7, color, a * ba * 0.5);
-      if (i === branches.length - 1) drawArrowHead(ctx, cp.x, cp.y + 10, Math.PI / 2, 7, color, a * ba * 0.5);
     }
   }
-  drawGlowOrb(ctx, startX, topY + 5, 8, theme.secondary, a * 0.4);
   ctx.restore();
 }
 
@@ -267,8 +260,8 @@ function renderSideBySide(ctx, t, move, theme) {
   const a = smoothstep(0, 0.12, t);
   const size = move.size || 20;
   const colW = 380;
-  const lColor = move.leftColor || theme.accent || "#3b7a9e";
-  const rColor = move.rightColor || "#c4445a";
+  const lColor = MONO;
+  const rColor = MONO;
   ctx.save();
   const leftReveal = smoothstep(0, 0.25, t);
   const rightReveal = smoothstep(0.15, 0.4, t);
