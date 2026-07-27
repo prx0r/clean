@@ -46,14 +46,15 @@ A new motif for guided meditation content (Vijñāna Bhairava 112 dhāraṇās, 
 
 A pipeline that takes YouTube URLs, extracts audio + captions, curates segments, and produces long ambient videos with minimal visuals.
 
-### Known issue: yt-dlp needs browser cookies
-`yt-dlp` inside a headless environment (our vast instance, this machine) cannot access YouTube's age-restricted or logged-in content without cookies. Hermes needs to:
+### Working command (confirmed 27 Jul 2026)
 ```bash
-yt-dlp --cookies-from-browser chromium URL
-```
-But there's no browser installed on the vast instance and this machine runs headless. **Workaround:** export cookies once from a desktop browser (`Get cookies.txt` extension), upload the file, and use:
-```bash
-yt-dlp --cookies cookies.txt URL
+# Download subtitles only (free, no transcription needed):
+yt-dlp --remote-components ejs:npm --cookies cookies.txt --write-auto-subs --sub-lang en --skip-download URL
+
+# Download audio segment for sleeper clip:
+yt-dlp --remote-components ejs:npm --cookies cookies.txt -x --audio-format mp3 --download-sections "*START-END" URL
+
+# Dependencies: cookies.txt from R2 (blog-video-assets/cookies.txt), deno installed, npm package `@dist/youtube-dlp-ejs` auto-installed
 ```
 
 ### Pipeline steps
