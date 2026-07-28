@@ -160,4 +160,56 @@ The main loop still normalizes `at`/`duration` to scene progress (`t` going 0→
 ## R2 Uploads from This Session
 - `blog-video-assets/logicvids/logicvid-reality-appears-final.mp4` — v2 render
 - `blog-video-assets/logicvids/logicvid-v4-final.mp4` — v4 render (broken bold text)
-- `blog-video-assets/logicvids/logicvid-v5-final.mp4` — v5 current render
+- `blog-video-assets/logicvids/logicvid-v5-final.mp4` — v5 renders
+- `blog-video-assets/logicvids/logicvid-v6-final-*.mp4` — v6: Edge TTS WordBoundary, semantic anchors, replacement groups, frame-native
+- `blog-video-assets/logicvids/logicvid-v7-chatgpt-style-*.mp4` — v7: ChatGPT typography from Google Vision analysis
+
+---
+
+## v7 — ChatGPT Style Analysis
+
+### Process
+Used Google Vision API (with API key AIzaSyA7-ZK5BGBxDwGCGx1Wiro0fB7NfX68KIc) to analyze a ChatGPT response image (`ideal.png` uploaded to R2 bucket `blog-video-assets/logicvids/`). The image was a peer review of a Tantraloka document.
+
+### What Vision API Detected
+- Dimensions: 752x548, PNG
+- Background: `#f5f5f5` (near-white, 84.9% of pixels)
+- Divider lines: `#c1c1c1` (light gray, 8.2%)
+- Secondary text: `#9f9f9f` (medium gray, 5.4%)
+- Main text: `#242424` (near-black)
+- 15 text blocks with clear hierarchy
+- Horizontal divider at y=155
+- Headers at y=103-129 (26px tall) and y=489-547 (58px)
+
+### Typographic Techniques Found
+1. **Numbered headers** (e.g., "3. New hypotheses produced by your synthesis") — bold, larger, left-aligned
+2. **Bold verdict statements** (e.g., "Major revision, with a very strong underlying argument.") — standalone emphasis
+3. **Numbered sub-sections** (1., 2., 3.) — clear hierarchical structure
+4. **Inline code/notation** (e.g., "M→D B→N→W→R") — visually distinct from prose
+5. **Sanskrit/italic terms inline** — italic styling within body text
+6. **Thin horizontal divider lines** — separate sections cleanly
+7. **Consistent left margin** (~22-30px) throughout
+8. **Content width** ~689px on 752px canvas
+9. **Monochrome palette** — meaning comes entirely from typography, no color accents
+
+### Applied to Logicvid
+| ChatGPT Technique | Logicvid v7 |
+|---|---|
+| Near-white background | `#fafaf8` (existing) |
+| Near-black main text | COLORS.ink from statuses.mjs |
+| Medium gray secondary | COLORS.muted for subclaims |
+| Thin `#c1c1c1` divider rules | New `divider` move type, `verdict` shows rule above |
+| Bold verdict statements | New `verdict` move type — left-aligned, bold, optional rule |
+| Left-aligned body text | `"layout": "left"` on claims, subclaims use left alignment |
+| Inline bold/italic | Already supported via `**bold**` and `*italic*` in rich-text.mjs |
+| Monochrome | Status colors (blue/red/green/gold) reserved for semantic meaning |
+
+### New Move Types
+- **`verdict`** — ChatGPT-style bold statement with optional horizontal rule above. Left-aligned. Supports status colors. Used for conclusions and key judgments.
+- **`divider`** — Thin horizontal rule at specified y-position. RGB `rgba(193,193,193,0.35)`. Used to separate argument sections.
+
+### Alignment Options
+- Claims now support `"layout": "left"` for left-aligned text (ChatGPT style). Default is centered (for emphasis moves).
+- Subclaims always left-aligned with 80px margins, body text size.
+- Verdict always left-aligned with optional rule.
+
