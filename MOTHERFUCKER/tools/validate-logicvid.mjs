@@ -6,7 +6,7 @@ const packPath = resolve(process.argv[2] ?? "packs/compiled/logicvid-reality-app
 const pack = JSON.parse(await readFile(packPath, "utf8"));
 
 const DIAGRAM_TYPES = ["side-by-side", "concept-map", "branch"];
-const ALLOWED_TYPES = ["claim", "subclaim", "side-by-side", "branch", "premises", "concept-map", "converge"];
+const ALLOWED_TYPES = ["claim", "subclaim", "side-by-side", "branch", "premises", "concept-map", "verdict", "divider"];
 
 let passed = 0, failed = 0;
 function check(ok, msg) {

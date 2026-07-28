@@ -55,7 +55,7 @@
             "conclusion": null,
             "nodes": null,
             "central": null,
-            "size": 32,
+            "size": 34,
             "color": null,
             "status": "highlight",
             "y": null,
@@ -155,7 +155,7 @@
         "moves": [
           {
             "type": "claim",
-            "text": "Abhinavagupta's answer\nhas **three terms**.",
+            "text": "Abhinavagupta's answer has **three terms**.",
             "left": null,
             "right": null,
             "branches": null,
@@ -163,7 +163,7 @@
             "conclusion": null,
             "nodes": null,
             "central": null,
-            "size": 28,
+            "size": 30,
             "color": null,
             "status": null,
             "y": null,
@@ -335,7 +335,7 @@
             "replacementGroup": "default"
           },
           {
-            "type": "claim",
+            "type": "verdict",
             "text": "Comparable **as structures**.\nNot interchangeable as explanations.",
             "left": null,
             "right": null,
@@ -344,7 +344,7 @@
             "conclusion": null,
             "nodes": null,
             "central": null,
-            "size": 27,
+            "size": 24,
             "color": null,
             "status": "resolved",
             "y": null,
