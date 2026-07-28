@@ -1,0 +1,556 @@
+{
+  "version": "1.0",
+  "id": "logicvid-reality-appears",
+  "title": "Why Does Reality Appear?",
+  "theme": "ivoryManuscript",
+  "seed": 260727,
+  "render": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "crf": 16,
+    "preset": "medium",
+    "sceneDuration": 12,
+    "transitionDuration": 0
+  },
+  "scenes": [
+    {
+      "id": "lv01",
+      "title": "The Unanswered Question",
+      "subtitle": "Dynamics do not yet entail manifestation.",
+      "term": "Praśna",
+      "devanagari": "प्रश्न",
+      "motif": "logicvid",
+      "duration": 15.075,
+      "frameCount": 362,
+      "params": {
+        "moves": [
+          {
+            "type": "side-by-side",
+            "text": null,
+            "left": "Physics describes\nfields, symmetries, dynamics",
+            "right": "But leaves one question\n**untouched**",
+            "branches": null,
+            "premises": null,
+            "conclusion": null,
+            "nodes": null,
+            "central": null,
+            "size": 22,
+            "color": null,
+            "status": null,
+            "y": null,
+            "enterFrame": 3,
+            "settleFrame": 3,
+            "exitFrame": null,
+            "slot": "columns",
+            "replacementGroup": "bg"
+          },
+          {
+            "type": "claim",
+            "text": "Why is any process **manifest**\nrather than merely occurring?",
+            "left": null,
+            "right": null,
+            "branches": null,
+            "premises": null,
+            "conclusion": null,
+            "nodes": null,
+            "central": null,
+            "size": 32,
+            "color": null,
+            "status": "highlight",
+            "y": null,
+            "enterFrame": 212,
+            "settleFrame": 212,
+            "exitFrame": null,
+            "slot": "center",
+            "replacementGroup": "prop"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lv02",
+      "title": "Two Different Questions",
+      "subtitle": "Physical change and manifestation must not be conflated.",
+      "term": "Bheda",
+      "devanagari": "भेद",
+      "motif": "logicvid",
+      "duration": 16.55,
+      "frameCount": 397,
+      "params": {
+        "moves": [
+          {
+            "type": "side-by-side",
+            "text": null,
+            "left": "How does a\n*physical system change*?",
+            "right": "Why is change\n**present** to itself?",
+            "branches": null,
+            "premises": null,
+            "conclusion": null,
+            "nodes": null,
+            "central": null,
+            "size": 22,
+            "color": null,
+            "status": null,
+            "y": null,
+            "enterFrame": 15,
+            "settleFrame": 15,
+            "exitFrame": null,
+            "slot": "columns",
+            "replacementGroup": "bg"
+          },
+          {
+            "type": "subclaim",
+            "text": "QFT addresses the first with extraordinary precision.",
+            "left": null,
+            "right": null,
+            "branches": null,
+            "premises": null,
+            "conclusion": null,
+            "nodes": null,
+            "central": null,
+            "size": 18,
+            "color": null,
+            "status": "scientific",
+            "y": 480,
+            "enterFrame": 215,
+            "settleFrame": 215,
+            "exitFrame": null,
+            "slot": "sub",
+            "replacementGroup": "qualify"
+          },
+          {
+            "type": "claim",
+            "text": "It does **not** answer the second.",
+            "left": null,
+            "right": null,
+            "branches": null,
+            "premises": null,
+            "conclusion": null,
+            "nodes": null,
+            "central": null,
+            "size": 30,
+            "color": null,
+            "status": null,
+            "y": null,
+            "enterFrame": 332,
+            "settleFrame": 332,
+            "exitFrame": null,
+            "slot": "center",
+            "replacementGroup": "prop"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lv03",
+      "title": "The Threefold Trika Answer",
+      "subtitle": "Presence, self-articulation, and dynamism form one architecture.",
+      "term": "Spanda",
+      "devanagari": "स्पन्द",
+      "motif": "logicvid",
+      "duration": 20.35,
+      "frameCount": 488,
+      "params": {
+        "moves": [
+          {
+            "type": "claim",
+            "text": "Abhinavagupta's answer\nhas **three terms**.",
+            "left": null,
+            "right": null,
+            "branches": null,
+            "premises": null,
+            "conclusion": null,
+            "nodes": null,
+            "central": null,
+            "size": 28,
+            "color": null,
+            "status": null,
+            "y": null,
+            "enterFrame": 50,
+            "settleFrame": 50,
+            "exitFrame": null,
+            "slot": "center",
+            "replacementGroup": "prop"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lv04",
+      "title": "Formal Argument",
+      "subtitle": "The structure of the manifestation proposal.",
+      "term": "Pramāṇa",
+      "devanagari": "प्रमाण",
+      "motif": "logicvid",
+      "duration": 29.5,
+      "frameCount": 708,
+      "params": {
+        "moves": [
+          {
+            "type": "premises",
+            "text": null,
+            "left": null,
+            "right": null,
+            "branches": null,
+            "premises": [
+              "Experience entails manifestation.",
+              "Structure alone does not entail manifestation.",
+              "Another unmanifest state repeats the problem.",
+              "Bare manifestation cannot explain a determinate world.",
+              "Determination requires dynamism."
+            ],
+            "conclusion": "The ground is self-manifesting pulsation.",
+            "nodes": null,
+            "central": null,
+            "size": 18,
+            "color": null,
+            "status": null,
+            "y": null,
+            "enterFrame": 64,
+            "settleFrame": 64,
+            "exitFrame": null,
+            "slot": "center",
+            "replacementGroup": "default"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lv05",
+      "title": "The Functionalist Objection",
+      "subtitle": "Organization explains discrimination, but does it derive presence?",
+      "term": "Pūrvapakṣa",
+      "devanagari": "पूर्वपक्ष",
+      "motif": "logicvid",
+      "duration": 21.337,
+      "frameCount": 512,
+      "params": {
+        "moves": [
+          {
+            "type": "claim",
+            "text": "Perhaps sufficiently complex **organization**\nsimply **is** presence.",
+            "left": null,
+            "right": null,
+            "branches": null,
+            "premises": null,
+            "conclusion": null,
+            "nodes": null,
+            "central": null,
+            "size": 30,
+            "color": null,
+            "status": null,
+            "y": null,
+            "enterFrame": 60,
+            "settleFrame": 60,
+            "exitFrame": null,
+            "slot": "center",
+            "replacementGroup": "default"
+          },
+          {
+            "type": "side-by-side",
+            "text": null,
+            "left": "Explains\ndiscrimination\nand report",
+            "right": "Does **not** derive\nwhy manifest",
+            "branches": null,
+            "premises": null,
+            "conclusion": null,
+            "nodes": null,
+            "central": null,
+            "size": 20,
+            "color": null,
+            "status": null,
+            "y": null,
+            "enterFrame": 250,
+            "settleFrame": 250,
+            "exitFrame": null,
+            "slot": "center",
+            "replacementGroup": "default"
+          },
+          {
+            "type": "subclaim",
+            "text": "The bridge is asserted, not demonstrated.",
+            "left": null,
+            "right": null,
+            "branches": null,
+            "premises": null,
+            "conclusion": null,
+            "nodes": null,
+            "central": null,
+            "size": 18,
+            "color": "muted",
+            "status": null,
+            "y": 490,
+            "enterFrame": 449,
+            "settleFrame": 449,
+            "exitFrame": null,
+            "slot": "center",
+            "replacementGroup": "default"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lv06",
+      "title": "QFT Is Not Spanda",
+      "subtitle": "A structural comparison is not an identity claim.",
+      "term": "Maryādā",
+      "devanagari": "मर्यादा",
+      "motif": "logicvid",
+      "duration": 19.637,
+      "frameCount": 471,
+      "params": {
+        "moves": [
+          {
+            "type": "concept-map",
+            "text": null,
+            "left": null,
+            "right": null,
+            "branches": null,
+            "premises": null,
+            "conclusion": null,
+            "nodes": [
+              {
+                "label": "**Quantum fluctuation**\nchange within a\nphysical field",
+                "x": -260,
+                "y": -110,
+                "color": "90,98,106"
+              },
+              {
+                "label": "**Spanda**\nself-manifesting\ndifferentiation",
+                "x": 260,
+                "y": -110,
+                "color": "169,120,47"
+              }
+            ],
+            "central": null,
+            "size": 16,
+            "color": null,
+            "status": null,
+            "y": null,
+            "enterFrame": 18,
+            "settleFrame": 18,
+            "exitFrame": null,
+            "slot": "center",
+            "replacementGroup": "default"
+          },
+          {
+            "type": "claim",
+            "text": "Comparable **as structures**.\nNot interchangeable as explanations.",
+            "left": null,
+            "right": null,
+            "branches": null,
+            "premises": null,
+            "conclusion": null,
+            "nodes": null,
+            "central": null,
+            "size": 27,
+            "color": null,
+            "status": "resolved",
+            "y": null,
+            "enterFrame": 368,
+            "settleFrame": 368,
+            "exitFrame": null,
+            "slot": "center",
+            "replacementGroup": "prop"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lv07",
+      "title": "Three Live Positions",
+      "subtitle": "Each solves one part and leaves another exposed.",
+      "term": "Vikalpa",
+      "devanagari": "विकल्प",
+      "motif": "logicvid",
+      "duration": 26.675,
+      "frameCount": 640,
+      "params": {
+        "moves": [
+          {
+            "type": "branch",
+            "text": null,
+            "left": null,
+            "right": null,
+            "branches": [
+              {
+                "label": "Physical structuralism\norganization → presence?\n**Bridge owed**",
+                "color": "45,102,133"
+              },
+              {
+                "label": "Russellian monism\nintrinsic nature → unity?\n**Self-apprehension owed**",
+                "color": "90,98,106"
+              },
+              {
+                "label": "Abhinavagupta\nmanifestation + self-articulation\n+ dynamism",
+                "color": "169,120,47"
+              }
+            ],
+            "premises": null,
+            "conclusion": null,
+            "nodes": null,
+            "central": null,
+            "size": null,
+            "color": null,
+            "status": null,
+            "y": null,
+            "enterFrame": 21,
+            "settleFrame": 21,
+            "exitFrame": null,
+            "slot": "center",
+            "replacementGroup": "default"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lv08",
+      "title": "Epistemic Ledger",
+      "subtitle": "Evidence, metaphysics, bridge, and non-claim remain distinct.",
+      "term": "Viveka",
+      "devanagari": "विवेक",
+      "motif": "logicvid",
+      "duration": 25.425,
+      "frameCount": 610,
+      "params": {
+        "moves": [
+          {
+            "type": "claim",
+            "text": "Physics: dynamical structure",
+            "left": null,
+            "right": null,
+            "branches": null,
+            "premises": null,
+            "conclusion": null,
+            "nodes": null,
+            "central": null,
+            "size": 22,
+            "color": null,
+            "status": "scientific",
+            "y": null,
+            "enterFrame": 81,
+            "settleFrame": 81,
+            "exitFrame": null,
+            "slot": "center",
+            "replacementGroup": "default"
+          },
+          {
+            "type": "claim",
+            "text": "Trika: manifestation is fundamental",
+            "left": null,
+            "right": null,
+            "branches": null,
+            "premises": null,
+            "conclusion": null,
+            "nodes": null,
+            "central": null,
+            "size": 22,
+            "color": null,
+            "status": "highlight",
+            "y": null,
+            "enterFrame": 315,
+            "settleFrame": 315,
+            "exitFrame": null,
+            "slot": "center",
+            "replacementGroup": "default"
+          },
+          {
+            "type": "claim",
+            "text": "The gap is **not** a failure.\nIt is what the film must preserve.",
+            "left": null,
+            "right": null,
+            "branches": null,
+            "premises": null,
+            "conclusion": null,
+            "nodes": null,
+            "central": null,
+            "size": 24,
+            "color": null,
+            "status": "highlight",
+            "y": null,
+            "enterFrame": 0,
+            "settleFrame": 0,
+            "exitFrame": null,
+            "slot": "center",
+            "replacementGroup": "prop"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lv09",
+      "title": "The Strongest Answer",
+      "subtitle": "Appearance is treated as the ground, not an added property.",
+      "term": "Pratyabhijñā",
+      "devanagari": "प्रत्यभिज्ञा",
+      "motif": "logicvid",
+      "duration": 25.0,
+      "frameCount": 600,
+      "params": {
+        "moves": [
+          {
+            "type": "claim",
+            "text": "Reality does **not** first exist in darkness\nand later acquire appearance.",
+            "left": null,
+            "right": null,
+            "branches": null,
+            "premises": null,
+            "conclusion": null,
+            "nodes": null,
+            "central": null,
+            "size": 28,
+            "color": null,
+            "status": "refuted",
+            "y": null,
+            "enterFrame": 34,
+            "settleFrame": 34,
+            "exitFrame": null,
+            "slot": "center",
+            "replacementGroup": "default"
+          },
+          {
+            "type": "claim",
+            "text": "Reality **is** manifestation\ncapable of articulating itself.",
+            "left": null,
+            "right": null,
+            "branches": null,
+            "premises": null,
+            "conclusion": null,
+            "nodes": null,
+            "central": null,
+            "size": 34,
+            "color": null,
+            "status": "resolved",
+            "y": null,
+            "enterFrame": 201,
+            "settleFrame": 201,
+            "exitFrame": null,
+            "slot": "center",
+            "replacementGroup": "prop"
+          },
+          {
+            "type": "claim",
+            "text": "Necessary ground of experience,\nor profound interpretation\nof an unexplained fact?",
+            "left": null,
+            "right": null,
+            "branches": null,
+            "premises": null,
+            "conclusion": null,
+            "nodes": null,
+            "central": null,
+            "size": 24,
+            "color": null,
+            "status": "highlight",
+            "y": null,
+            "enterFrame": 417,
+            "settleFrame": 417,
+            "exitFrame": null,
+            "slot": "center",
+            "replacementGroup": "prop"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -41,6 +41,7 @@ import { renderArgumentDiagramV2 } from "./src/argument-diagram-v2.mjs";
 import { renderArgumentDiagramV3 } from "./src/argument-diagram-v3.mjs";
 import { renderArgumentDiagramV4 } from "./src/argument-diagram-v4.mjs";
 import { renderArgumentDiagramV5 } from "./src/argument-diagram-v5.mjs";
+import { renderLogicvid } from "./logicvid/render.mjs";
 
 function sceneColor(scene, key, fallback) {
   return scene.palette?.[key] ?? scene.params?.[key] ?? fallback;
@@ -524,6 +525,7 @@ export const motifRegistry = Object.freeze({
   "argument-diagram-v3": renderArgumentDiagramV3,
   "argument-diagram-v4": renderArgumentDiagramV4,
   "argument-diagram-v5": renderArgumentDiagramV5,
+  "logicvid": renderLogicvid,
   "heart-lattice": heartLattice,
   "attention-lens": attentionLens,
   "phoneme-forge": phonemeForge,

@@ -1,0 +1,232 @@
+{
+  "version": "2.0",
+  "id": "logicvid-reality-appears",
+  "title": "Why Does Reality Appear?",
+  "seed": 260727,
+  "scenes": [
+    {
+      "id": "lv01",
+      "title": "The Unanswered Question",
+      "subtitle": "Dynamics do not yet entail manifestation.",
+      "term": "Praśna",
+      "devanagari": "प्रश्न",
+      "moves": [
+        {"type": "side-by-side",
+          "left": "Physics describes\nfields, symmetries, dynamics",
+          "right": "But leaves one question\n**untouched**",
+          "size": 22,
+          "slot": "columns",
+          "replacementGroup": "bg",
+          "enter": {"after": "Physics"},
+          "exit": "scene-end"},
+        {"type": "claim",
+          "text": "Why is any process **manifest**\nrather than merely occurring?",
+          "size": 32,
+          "status": "highlight",
+          "replacementGroup": "prop",
+          "slot": "center",
+          "enter": {"after": "manifest"},
+          "exit": "scene-end"}
+      ]
+    },
+    {
+      "id": "lv02",
+      "title": "Two Different Questions",
+      "subtitle": "Physical change and manifestation must not be conflated.",
+      "term": "Bheda",
+      "devanagari": "भेद",
+      "moves": [
+        {"type": "side-by-side",
+          "left": "How does a\n*physical system change*?",
+          "right": "Why is change\n**present** to itself?",
+          "size": 22,
+          "slot": "columns",
+          "replacementGroup": "bg",
+          "enter": {"after": "separate"},
+          "exit": "scene-end"},
+        {"type": "subclaim",
+          "text": "QFT addresses the first with extraordinary precision.",
+          "y": 480,
+          "size": 18,
+          "status": "scientific",
+          "slot": "sub",
+          "replacementGroup": "qualify",
+          "enter": {"after": "Quantum"},
+          "exit": "scene-end"},
+        {"type": "claim",
+          "text": "It does **not** answer the second.",
+          "size": 30,
+          "replacementGroup": "prop",
+          "slot": "center",
+          "enter": {"after": "not"},
+          "exit": "scene-end"}
+      ]
+    },
+    {
+      "id": "lv03",
+      "title": "The Threefold Trika Answer",
+      "subtitle": "Presence, self-articulation, and dynamism form one architecture.",
+      "term": "Spanda",
+      "devanagari": "स्पन्द",
+      "moves": [
+        {"type": "claim",
+          "text": "Abhinavagupta's answer\nhas **three terms**.",
+          "size": 28,
+          "replacementGroup": "prop",
+          "slot": "center",
+          "enter": {"after": "terms"},
+          "exit": "scene-end"}
+      ]
+    },
+    {
+      "id": "lv04",
+      "title": "Formal Argument",
+      "subtitle": "The structure of the manifestation proposal.",
+      "term": "Pramāṇa",
+      "devanagari": "प्रमाण",
+      "moves": [
+        {"type": "premises",
+          "premises": [
+            "Experience entails manifestation.",
+            "Structure alone does not entail manifestation.",
+            "Another unmanifest state repeats the problem.",
+            "Bare manifestation cannot explain a determinate world.",
+            "Determination requires dynamism."
+          ],
+          "conclusion": "The ground is self-manifesting pulsation.",
+          "size": 18,
+          "enter": {"after": "experience"},
+          "exit": "scene-end"}
+      ]
+    },
+    {
+      "id": "lv05",
+      "title": "The Functionalist Objection",
+      "subtitle": "Organization explains discrimination, but does it derive presence?",
+      "term": "Pūrvapakṣa",
+      "devanagari": "पूर्वपक्ष",
+      "moves": [
+        {"type": "claim",
+          "text": "Perhaps sufficiently complex **organization**\nsimply **is** presence.",
+          "size": 30,
+          "enter": {"after": "Perhaps"},
+          "exit": {"beforeMove": "lv05-split"}},
+        {"type": "side-by-side",
+          "left": "Explains\ndiscrimination\nand report",
+          "right": "Does **not** derive\nwhy manifest",
+          "size": 20,
+          "enter": {"after": "explains"},
+          "exit": "scene-end"},
+        {"type": "subclaim",
+          "text": "The bridge is asserted, not demonstrated.",
+          "y": 490,
+          "size": 18,
+          "color": "muted",
+          "enter": {"after": "bridge"},
+          "exit": "scene-end"}
+      ]
+    },
+    {
+      "id": "lv06",
+      "title": "QFT Is Not Spanda",
+      "subtitle": "A structural comparison is not an identity claim.",
+      "term": "Maryādā",
+      "devanagari": "मर्यादा",
+      "moves": [
+        {"type": "concept-map",
+          "size": 16,
+          "enter": {"after": "Spanda"},
+          "exit": "scene-end",
+          "nodes": [
+            {"label": "**Quantum fluctuation**\nchange within a\nphysical field", "x": -260, "y": -110, "color": "90,98,106"},
+            {"label": "**Spanda**\nself-manifesting\ndifferentiation", "x": 260, "y": -110, "color": "169,120,47"}
+          ]},
+        {"type": "claim",
+          "text": "Comparable **as structures**.\nNot interchangeable as explanations.",
+          "size": 27,
+          "status": "resolved",
+          "replacementGroup": "prop",
+          "slot": "center",
+          "enter": {"after": "structures"},
+          "exit": "scene-end"}
+      ]
+    },
+    {
+      "id": "lv07",
+      "title": "Three Live Positions",
+      "subtitle": "Each solves one part and leaves another exposed.",
+      "term": "Vikalpa",
+      "devanagari": "विकल्प",
+      "moves": [
+        {"type": "branch",
+          "branches": [
+            {"label": "Physical structuralism\norganization → presence?\n**Bridge owed**", "color": "45,102,133"},
+            {"label": "Russellian monism\nintrinsic nature → unity?\n**Self-apprehension owed**", "color": "90,98,106"},
+            {"label": "Abhinavagupta\nmanifestation + self-articulation\n+ dynamism", "color": "169,120,47"}
+          ],
+          "enter": {"after": "positions"},
+          "exit": "scene-end"}
+      ]
+    },
+    {
+      "id": "lv08",
+      "title": "Epistemic Ledger",
+      "subtitle": "Evidence, metaphysics, bridge, and non-claim remain distinct.",
+      "term": "Viveka",
+      "devanagari": "विवेक",
+      "moves": [
+        {"type": "claim",
+          "text": "Physics: dynamical structure",
+          "size": 22,
+          "status": "scientific",
+          "enter": {"after": "Physics"},
+          "exit": {"beforeMove": "lv08-ledger-manifest"}},
+        {"type": "claim",
+          "text": "Trika: manifestation is fundamental",
+          "size": 22,
+          "status": "highlight",
+          "enter": {"after": "manifestation", "occurrence": 2},
+          "exit": {"beforeMove": "lv08-ledger-gap"}},
+        {"type": "claim",
+          "text": "The gap is **not** a failure.\nIt is what the film must preserve.",
+          "size": 24,
+          "status": "highlight",
+          "replacementGroup": "prop",
+          "slot": "center",
+          "enter": {"after": "gap"},
+          "exit": "scene-end"}
+      ]
+    },
+    {
+      "id": "lv09",
+      "title": "The Strongest Answer",
+      "subtitle": "Appearance is treated as the ground, not an added property.",
+      "term": "Pratyabhijñā",
+      "devanagari": "प्रत्यभिज्ञा",
+      "moves": [
+        {"type": "claim",
+          "text": "Reality does **not** first exist in darkness\nand later acquire appearance.",
+          "size": 28,
+          "status": "refuted",
+          "enter": {"after": "appear"},
+          "exit": {"beforeMove": "lv09-reality"}},
+        {"type": "claim",
+          "text": "Reality **is** manifestation\ncapable of articulating itself.",
+          "size": 34,
+          "status": "resolved",
+          "replacementGroup": "prop",
+          "slot": "center",
+          "enter": {"after": "Reality", "occurrence": 2},
+          "exit": {"beforeMove": "lv09-frontier"}},
+        {"type": "claim",
+          "text": "Necessary ground of experience,\nor profound interpretation\nof an unexplained fact?",
+          "size": 24,
+          "status": "highlight",
+          "replacementGroup": "prop",
+          "slot": "center",
+          "enter": {"after": "frontier"},
+          "exit": "scene-end"}
+      ]
+    }
+  ]
+}
