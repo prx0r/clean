@@ -37,6 +37,10 @@ import {
 } from "./semantic-visuals.mjs";
 import { renderArgumentDisplay } from "./src/argument-display.mjs";
 import { renderArgumentDiagram } from "./src/argument-diagram.mjs";
+import { renderArgumentDiagramV2 } from "./src/argument-diagram-v2.mjs";
+import { renderArgumentDiagramV3 } from "./src/argument-diagram-v3.mjs";
+import { renderArgumentDiagramV4 } from "./src/argument-diagram-v4.mjs";
+import { renderArgumentDiagramV5 } from "./src/argument-diagram-v5.mjs";
 
 function sceneColor(scene, key, fallback) {
   return scene.palette?.[key] ?? scene.params?.[key] ?? fallback;
@@ -516,6 +520,10 @@ export const motifRegistry = Object.freeze({
   "semantic-essay": renderSemanticEssay,
   "logical-argument": renderArgumentDisplay,
   "argument-diagram": renderArgumentDiagram,
+  "argument-diagram-v2": renderArgumentDiagramV2,
+  "argument-diagram-v3": renderArgumentDiagramV3,
+  "argument-diagram-v4": renderArgumentDiagramV4,
+  "argument-diagram-v5": renderArgumentDiagramV5,
   "heart-lattice": heartLattice,
   "attention-lens": attentionLens,
   "phoneme-forge": phonemeForge,

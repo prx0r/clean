@@ -1,0 +1,255 @@
+{
+  "version": "1.0",
+  "id": "logicvid-v3",
+  "title": "Why Does Reality Appear?",
+  "description": "Guided argument film with ChatGPT-style typographic rhythm.",
+  "theme": "ivoryManuscript",
+  "seed": 260727,
+  "audioManifest": "build/logicvid-reality-appears/features.json",
+  "render": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "crf": 16,
+    "preset": "medium",
+    "sceneDuration": 12,
+    "transitionDuration": 0
+  },
+  "scenes": [
+    {
+      "id": "lv01",
+      "title": "The Unanswered Question",
+      "subtitle": "Dynamics do not yet entail manifestation.",
+      "term": "Praśna",
+      "devanagari": "प्रश्न",
+      "motif": "argument-diagram-v3",
+      "duration": 15.5,
+      "params": {
+        "background": "dark-field",
+        "utterances": [
+          {"type": "say", "text": "Physics can describe", "at": 0.0, "duration": 1.2},
+          {"type": "say", "text": "fields, symmetries, and dynamics", "at": 1.4, "duration": 1.6},
+          {"type": "pause", "at": 3.2, "duration": 0.8},
+          {"type": "emphasize", "text": "But description leaves one question untouched", "at": 4.2, "duration": 2.0},
+          {"type": "pause", "at": 6.4, "duration": 1.0},
+          {"type": "statement", "text": "Why is any process manifest at all?", "at": 7.6, "duration": 2.2},
+          {"type": "say", "text": "Why is there felt presence,", "at": 10.0, "duration": 1.5},
+          {"type": "aside", "text": "rather than events merely occurring without appearance?", "at": 11.7, "duration": 2.5}
+        ]
+      }
+    },
+    {
+      "id": "lv02",
+      "title": "Two Different Questions",
+      "subtitle": "Physical change and manifestation must not be conflated.",
+      "term": "Bheda",
+      "devanagari": "भेद",
+      "motif": "argument-diagram-v3",
+      "duration": 16.9,
+      "params": {
+        "background": "tension-split",
+        "utterances": [
+          {"type": "emphasize", "text": "We must separate two questions.", "at": 0.0, "duration": 1.8},
+          {"type": "pause", "at": 2.0, "duration": 0.6},
+          {"type": "diagram", "diagram": "split",
+            "left": "How does a physical system change?", "leftColor": "#2d6685",
+            "right": "Why is change present at all?", "rightColor": "#171a1e",
+            "caption": "One is causal. The other is manifest.",
+            "at": 2.8, "duration": 5.5},
+          {"type": "say", "text": "Quantum field theory addresses the first", "at": 8.5, "duration": 1.8},
+          {"type": "aside", "text": "with extraordinary precision.", "at": 10.5, "duration": 1.5},
+          {"type": "pause", "at": 12.2, "duration": 0.6},
+          {"type": "statement", "text": "It does not answer the second.", "at": 13.0, "duration": 2.2},
+          {"type": "aside", "text": "Description is not explanation.", "at": 15.4, "duration": 1.2}
+        ]
+      }
+    },
+    {
+      "id": "lv03",
+      "title": "The Threefold Trika Answer",
+      "subtitle": "Presence, self-articulation, and dynamism form one architecture.",
+      "term": "Spanda",
+      "devanagari": "स्पन्द",
+      "motif": "argument-diagram-v3",
+      "duration": 20.7,
+      "params": {
+        "background": "warm-glow",
+        "utterances": [
+          {"type": "emphasize", "text": "Abhinavagupta's answer has three terms.", "at": 0.0, "duration": 2.0},
+          {"type": "pause", "at": 2.2, "duration": 0.8},
+          {"type": "term", "term": "Prakāśa", "devanagari": "प्रकाश", "translation": "luminous presence", "at": 3.2, "duration": 2.8},
+          {"type": "say", "text": "the fact that anything appears at all", "at": 6.2, "duration": 2.0},
+          {"type": "term", "term": "Vimarśa", "devanagari": "विमर्श", "translation": "self-articulation", "at": 8.5, "duration": 2.8},
+          {"type": "say", "text": "presence aware of itself", "at": 11.5, "duration": 1.5},
+          {"type": "term", "term": "Spanda", "devanagari": "स्पन्द", "translation": "dynamic pulsation", "at": 13.2, "duration": 2.8},
+          {"type": "pause", "at": 16.2, "duration": 0.6},
+          {"type": "diagram", "diagram": "triangle",
+            "nodes": [
+              {"label": "prakāśa", "x": -200, "y": -100, "color": "#a9782f"},
+              {"label": "vimarśa", "x": 200, "y": -100, "color": "#2d6685"},
+              {"label": "spanda", "x": 0, "y": 130, "color": "#3e7857"}
+            ],
+            "caption": "Implicit unity becomes explicit difference without becoming two.",
+            "at": 17.0, "duration": 3.5}
+        ]
+      }
+    },
+    {
+      "id": "lv04",
+      "title": "Formal Argument",
+      "subtitle": "A1–A5 expose the structure of the proposal.",
+      "term": "Pramāṇa",
+      "devanagari": "प्रमाण",
+      "motif": "argument-diagram-v3",
+      "duration": 29.9,
+      "params": {
+        "background": "clean-white",
+        "utterances": [
+          {"type": "say", "text": "The argument can be stated formally.", "at": 0.0, "duration": 1.5},
+          {"type": "pause", "at": 1.7, "duration": 0.5},
+          {"type": "diagram", "diagram": "stack",
+            "items": [
+              "Experience entails manifestation.",
+              "Structure alone does not entail manifestation.",
+              "Another unmanifest state repeats the problem.",
+              "Bare manifestation cannot explain a determinate world.",
+              "Determination requires dynamism."
+            ],
+            "itemColor": "#2d6685",
+            "caption": "Therefore the ground is self-manifesting pulsation.",
+            "at": 2.4, "duration": 18},
+          {"type": "statement", "text": "The ground is self-manifesting pulsation.", "at": 20.6, "duration": 3.0},
+          {"type": "aside", "text": "Not inert awareness. Active self-disclosure.", "at": 24.0, "duration": 3.5}
+        ]
+      }
+    },
+    {
+      "id": "lv05",
+      "title": "The Functionalist Objection",
+      "subtitle": "Organization explains discrimination, but does it derive presence?",
+      "term": "Pūrvapakṣa",
+      "devanagari": "पूर्वपक्ष",
+      "motif": "argument-diagram-v3",
+      "duration": 21.7,
+      "params": {
+        "background": "tension-split",
+        "utterances": [
+          {"type": "say", "text": "A serious objection remains.", "at": 0.0, "duration": 1.5},
+          {"type": "emphasize", "text": "Perhaps organization is enough.", "at": 1.8, "duration": 2.0},
+          {"type": "say", "text": "Perhaps complex information processing simply is presence.", "at": 4.0, "duration": 2.5},
+          {"type": "pause", "at": 6.7, "duration": 0.8},
+          {"type": "controversial", "text": "This explains discrimination and report.", "at": 7.7, "duration": 2.0},
+          {"type": "statement", "text": "It does not explain why those functions are manifest.", "at": 10.0, "duration": 2.5},
+          {"type": "aside", "text": "The bridge is asserted, not demonstrated.", "at": 12.8, "duration": 2.0},
+          {"type": "diagram", "diagram": "scale",
+            "left": "Functional organization", "leftColor": "#2d6685",
+            "right": "Felt presence", "rightColor": "#a43e46",
+            "center": "The gap remains open",
+            "y": 400,
+            "at": 15.0, "duration": 5.5}
+        ]
+      }
+    },
+    {
+      "id": "lv06",
+      "title": "QFT Is Not Spanda",
+      "subtitle": "A structural comparison is not an identity claim.",
+      "term": "Maryādā",
+      "devanagari": "मर्यादा",
+      "motif": "argument-diagram-v3",
+      "duration": 20.0,
+      "params": {
+        "background": "clean-white",
+        "utterances": [
+          {"type": "emphasize", "text": "Spanda should not be equated with quantum fluctuation.", "at": 0.0, "duration": 2.5},
+          {"type": "pause", "at": 2.7, "duration": 0.6},
+          {"type": "diagram", "diagram": "split",
+            "left": "Quantum fluctuation", "leftSub": "Change within a physical field", "leftColor": "#5c626a",
+            "right": "Spanda", "rightSub": "Self-manifesting differentiation", "rightColor": "#a9782f",
+            "caption": "Comparable as structures. Not interchangeable as explanations.",
+            "at": 3.5, "duration": 7},
+          {"type": "say", "text": "The structures may be compared artistically,", "at": 10.7, "duration": 2.0},
+          {"type": "statement", "text": "but one does not prove the other.", "at": 13.0, "duration": 2.0},
+          {"type": "resolution", "text": "Structural comparison is not identity.", "at": 15.3, "duration": 3.0}
+        ]
+      }
+    },
+    {
+      "id": "lv07",
+      "title": "Three Live Positions",
+      "subtitle": "Each solves one part of the bind and leaves another exposed.",
+      "term": "Vikalpa",
+      "devanagari": "विकल्प",
+      "motif": "argument-diagram-v3",
+      "duration": 27.0,
+      "params": {
+        "background": "tension-split",
+        "utterances": [
+          {"type": "emphasize", "text": "Three broad positions remain.", "at": 0.0, "duration": 1.8},
+          {"type": "pause", "at": 2.0, "duration": 0.5},
+          {"type": "diagram", "diagram": "split",
+            "left": "Physical structuralism", "leftSub": "organization → presence, bridge owed", "leftColor": "#2d6685",
+            "right": "Russellian monism", "rightSub": "intrinsic nature → unity, self-apprehension owed", "rightColor": "#5c626a",
+            "caption": "Both treat presence as derivative.",
+            "at": 2.7, "duration": 7},
+          {"type": "say", "text": "Abhinavagupta begins with manifestation,", "at": 10.0, "duration": 1.5},
+          {"type": "say", "text": "self-articulation, and dynamism as inseparable.", "at": 11.7, "duration": 2.0},
+          {"type": "emphasize", "text": "It is the most complete architecture here,", "at": 14.0, "duration": 2.0},
+          {"type": "aside", "text": "but it is still a metaphysical proposal, not an empirical result.", "at": 16.3, "duration": 3.0},
+          {"type": "pause", "at": 19.5, "duration": 0.8},
+          {"type": "resolution", "text": "Most complete architecture ≠ established science", "at": 20.5, "duration": 4.0}
+        ]
+      }
+    },
+    {
+      "id": "lv08",
+      "title": "Epistemic Ledger",
+      "subtitle": "Evidence, metaphysics, bridge, and non-claim remain distinct.",
+      "term": "Viveka",
+      "devanagari": "विवेक",
+      "motif": "argument-diagram-v3",
+      "duration": 25.8,
+      "params": {
+        "background": "warm-glow",
+        "utterances": [
+          {"type": "emphasize", "text": "The epistemic ledger must remain explicit.", "at": 0.0, "duration": 2.0},
+          {"type": "pause", "at": 2.2, "duration": 0.5},
+          {"type": "say", "text": "Physics supports dynamical structure.", "at": 2.9, "duration": 1.5},
+          {"type": "say", "text": "Consciousness science studies access, report, and integration.", "at": 4.6, "duration": 2.5},
+          {"type": "pause", "at": 7.3, "duration": 0.5},
+          {"type": "math", "text": "manifestation is fundamental", "sub": "Trika's metaphysical claim", "at": 8.0, "duration": 2.5},
+          {"type": "math", "text": "dynamic differentiation within an already manifest field", "sub": "The bridge is structural comparison", "at": 10.8, "duration": 3.0},
+          {"type": "pause", "at": 14.0, "duration": 0.5},
+          {"type": "controversial", "text": "Non-claim: physics has verified spanda.", "at": 14.7, "duration": 2.5},
+          {"type": "statement", "text": "This is NOT an empirical result.", "at": 17.5, "duration": 2.0},
+          {"type": "aside", "text": "The explanatory gap is the negative space the film must preserve.", "at": 19.8, "duration": 3.5}
+        ]
+      }
+    },
+    {
+      "id": "lv09",
+      "title": "The Strongest Answer",
+      "subtitle": "Appearance is treated as the ground, not an added property.",
+      "term": "Pratyabhijñā",
+      "devanagari": "प्रत्यभिज्ञा",
+      "motif": "argument-diagram-v3",
+      "duration": 25.4,
+      "params": {
+        "background": "resolve",
+        "utterances": [
+          {"type": "controversial", "text": "Reality does not first exist in darkness", "at": 0.0, "duration": 2.0},
+          {"type": "controversial", "text": "and later acquire appearance.", "at": 2.2, "duration": 1.8},
+          {"type": "pause", "at": 4.2, "duration": 0.8},
+          {"type": "statement", "text": "Appearing is not an added property.", "at": 5.2, "duration": 2.0},
+          {"type": "statement", "text": "It is the nature of reality itself.", "at": 7.5, "duration": 2.0},
+          {"type": "pause", "at": 9.7, "duration": 0.8},
+          {"type": "term", "term": "Prakāśa", "devanagari": "प्रकाश", "translation": "Reality is manifestation", "at": 10.7, "duration": 3.0},
+          {"type": "math", "text": "reality = manifestation + self-articulation + pulsation", "sub": "Three inseparable terms of one act", "at": 14.0, "duration": 4.0},
+          {"type": "pause", "at": 18.2, "duration": 0.6},
+          {"type": "aside", "text": "The frontier: necessary ground of experience,", "at": 19.0, "duration": 2.0},
+          {"type": "aside", "text": "or a profound interpretation of a fact science has not yet explained?", "at": 21.3, "duration": 3.5}
+        ]
+      }
+    }
+  ]
+}

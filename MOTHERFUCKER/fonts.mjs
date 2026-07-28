@@ -31,6 +31,16 @@ export function initializeFonts() {
     typography.devanagari.family,
   );
 
+  for (const candidate of [
+    "assets/fonts/source-serif-4/SourceSerif4-Variable.ttf",
+    "assets/fonts/source-serif-4/SourceSerif4-Regular.ttf",
+  ]) {
+    try {
+      registerFont(join(FRAMEWORK_ROOT, candidate), "Source Serif 4");
+      break;
+    } catch {}
+  }
+
   try {
     const HERE = dirname(fileURLToPath(import.meta.url));
     const katexDir = join(HERE, "node_modules/katex/dist/fonts");

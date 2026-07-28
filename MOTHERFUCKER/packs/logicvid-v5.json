@@ -1,0 +1,178 @@
+{
+  "version": "1.0",
+  "id": "logicvid-v5",
+  "title": "Why Does Reality Appear?",
+  "description": "Whisper-timed argument film with instant rendering.",
+  "theme": "ivoryManuscript",
+  "seed": 260727,
+  "render": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "crf": 16,
+    "preset": "medium",
+    "sceneDuration": 12,
+    "transitionDuration": 0
+  },
+  "scenes": [
+    {
+      "id": "lv01", "title": "The Unanswered Question",
+      "subtitle": "Dynamics do not yet entail manifestation.",
+      "term": "Praśna", "devanagari": "प्रश्न",
+      "motif": "argument-diagram-v5", "duration": 15.456,
+      "params": {
+        "moves": [
+          {"type": "side-by-side",
+            "left": "Physics describes\nfields, symmetries, dynamics",
+            "right": "But leaves one question\n**untouched**",
+            "size": 22, "at": 0, "duration": 7.74},
+          {"type": "claim", "text": "Why is any process **manifest**\nrather than merely occurring?", "size": 32, "status": "highlight", "at": 7.74, "duration": 7.716}
+        ]
+      }
+    },
+    {
+      "id": "lv02", "title": "Two Different Questions",
+      "subtitle": "Physical change and manifestation must not be conflated.",
+      "term": "Bheda", "devanagari": "भेद",
+      "motif": "argument-diagram-v5", "duration": 16.92,
+      "params": {
+        "moves": [
+          {"type": "side-by-side",
+            "left": "How does a\n*physical system change*?",
+            "right": "Why is change\n**present** to itself?",
+            "size": 22, "at": 0, "duration": 13.48},
+          {"type": "claim", "text": "It does **not** answer the second.", "size": 30, "at": 13.48, "duration": 3.44}
+        ]
+      }
+    },
+    {
+      "id": "lv03", "title": "The Threefold Trika Answer",
+      "subtitle": "Presence, self-articulation, and dynamism form one architecture.",
+      "term": "Spanda", "devanagari": "स्पन्द",
+      "motif": "argument-diagram-v5", "duration": 20.712,
+      "params": {
+        "moves": [
+          {"type": "concept-map",
+            "central": "",
+            "size": 16,
+            "nodes": [
+              {"label": "**prakāśa**\nluminous presence", "x": -280, "y": -110, "at": 3.26},
+              {"label": "**vimarśa**\nself-articulation", "x": 280, "y": -110, "at": 7.0},
+              {"label": "**spanda**\ndynamic pulsation", "x": 0, "y": 180, "at": 13.4}
+            ],
+            "at": 0, "duration": 20.712}
+        ]
+      }
+    },
+    {
+      "id": "lv04", "title": "Formal Argument",
+      "subtitle": "The structure of the manifestation proposal.",
+      "term": "Pramāṇa", "devanagari": "प्रमाण",
+      "motif": "argument-diagram-v5", "duration": 29.88,
+      "params": {
+        "moves": [
+          {"type": "side-by-side",
+            "left": "Experience\n*entails* manifestation",
+            "right": "Structure\nalone does **not**",
+            "size": 21, "at": 0, "duration": 14.72},
+          {"type": "side-by-side",
+            "left": "Bare manifestation\ncannot explain\n*determination*",
+            "right": "Determination\n*requires* dynamism",
+            "size": 21, "at": 14.72, "duration": 9.76},
+          {"type": "claim", "text": "The ground is **self-manifesting pulsation**", "size": 30, "status": "resolved", "at": 24.48, "duration": 5.4}
+        ]
+      }
+    },
+    {
+      "id": "lv05", "title": "The Functionalist Objection",
+      "subtitle": "Organization explains discrimination, but does it derive presence?",
+      "term": "Pūrvapakṣa", "devanagari": "पूर्वपक्ष",
+      "motif": "argument-diagram-v5", "duration": 21.72,
+      "params": {
+        "moves": [
+          {"type": "claim", "text": "Perhaps sufficiently complex **organization**\nsimply **is** presence.", "size": 30, "at": 0, "duration": 10.14},
+          {"type": "side-by-side",
+            "left": "Explains\ndiscrimination\nand report",
+            "right": "Does **not** derive\nwhy manifest",
+            "size": 20, "at": 10.14, "duration": 8.52},
+          {"type": "subclaim", "text": "The bridge is asserted, not demonstrated.", "y": 510, "size": 18, "color": "#5c626a", "at": 18.66, "duration": 3.06}
+        ]
+      }
+    },
+    {
+      "id": "lv06", "title": "QFT Is Not Spanda",
+      "subtitle": "A structural comparison is not an identity claim.",
+      "term": "Maryādā", "devanagari": "मर्यादा",
+      "motif": "argument-diagram-v5", "duration": 20.016,
+      "params": {
+        "moves": [
+          {"type": "side-by-side",
+            "left": "**Quantum fluctuation**\nchange within a\nphysical field",
+            "right": "**Spanda**\nself-manifesting\ndifferentiation",
+            "size": 20, "at": 0, "duration": 15.3},
+          {"type": "claim", "text": "Comparable **as structures**.\nNot interchangeable as explanations.", "size": 27, "status": "resolved", "at": 15.3, "duration": 4.716}
+        ]
+      }
+    },
+    {
+      "id": "lv07", "title": "Three Live Positions",
+      "subtitle": "Each solves one part and leaves another exposed.",
+      "term": "Vikalpa", "devanagari": "विकल्प",
+      "motif": "argument-diagram-v5", "duration": 27.048,
+      "params": {
+        "moves": [
+          {"type": "branch",
+            "branches": [
+              {"label": "Physical structuralism\norganization → presence?\n**Bridge owed**", "color": "#2d6685"},
+              {"label": "Russellian monism\nintrinsic nature → unity?\n**Self-apprehension owed**", "color": "#5c626a"},
+              {"label": "Abhinavagupta\nmanifestation + self-articulation\n+ dynamism", "color": "#a9782f"}
+            ],
+            "at": 0, "duration": 20.4},
+          {"type": "converge", "text": "Most complete architecture here\n≠ established scientific result", "size": 26, "status": "highlight", "at": 20.4, "duration": 6.648}
+        ]
+      }
+    },
+    {
+      "id": "lv08", "title": "Epistemic Ledger",
+      "subtitle": "Evidence, metaphysics, bridge, and non-claim remain distinct.",
+      "term": "Viveka", "devanagari": "विवेक",
+      "motif": "argument-diagram-v5", "duration": 25.8,
+      "params": {
+        "moves": [
+          {"type": "concept-map",
+            "central": "Disciplined comparison",
+            "size": 15,
+            "nodes": [
+              {"label": "**Empirical**", "relation": "dynamics, access, report", "x": -300, "y": -130},
+              {"label": "**Metaphysical**", "relation": "manifestation is fundamental", "x": 300, "y": -130},
+              {"label": "**Bridge**", "relation": "structural comparison", "x": -280, "y": 170},
+              {"label": "**Non-claim**", "relation": "physics verified spanda", "x": 280, "y": 170}
+            ],
+            "at": 0, "duration": 19.8},
+          {"type": "claim", "text": "The gap is **not** a failure.\nIt is what the film must preserve.", "size": 24, "status": "highlight", "at": 19.8, "duration": 6.0}
+        ]
+      }
+    },
+    {
+      "id": "lv09", "title": "The Strongest Answer",
+      "subtitle": "Appearance is treated as the ground, not an added property.",
+      "term": "Pratyabhijñā", "devanagari": "प्रत्यभिज्ञा",
+      "motif": "argument-diagram-v5", "duration": 25.368,
+      "params": {
+        "moves": [
+          {"type": "claim", "text": "Reality does **not** first exist in darkness\nand later acquire appearance.", "size": 28, "status": "refuted", "at": 0, "duration": 8.62},
+          {"type": "concept-map",
+            "central": "Reality",
+            "size": 15,
+            "nodes": [
+              {"label": "*manifestation*", "relation": "presence as ground", "x": -280, "y": -110},
+              {"label": "*self-articulation*", "relation": "presence aware of itself", "x": 280, "y": -110},
+              {"label": "*multiplicity*", "relation": "the activity", "x": 0, "y": 180}
+            ],
+            "at": 8.62, "duration": 8.08},
+          {"type": "converge", "text": "Necessary ground of experience,\nor profound interpretation\nof an unexplained fact?", "size": 24, "status": "highlight", "at": 16.7, "duration": 8.668}
+        ]
+      }
+    }
+  ]
+}

@@ -54,7 +54,7 @@ export class FrameRenderer {
 
   render(scene, t) {
     const theme = getTheme(scene.theme ?? this.pack.theme);
-    const isClean = scene.motif === "argument-diagram" || scene.motif === "logical-argument";
+    const isClean = scene.motif === "argument-diagram" || scene.motif === "argument-diagram-v2" || scene.motif === "argument-diagram-v3" || scene.motif === "argument-diagram-v4" || scene.motif === "argument-diagram-v5" || scene.motif === "logical-argument";
     if (isClean) {
       this.ctx.fillStyle = "#fafaf8";
       this.ctx.fillRect(0, 0, this.width, this.height);
@@ -68,6 +68,11 @@ export class FrameRenderer {
       seed: (scene.seed ?? this.pack.seed) >>> 0,
       width: this.width,
       height: this.height,
+      fps: this.fps,
+      frame: this.frame ?? 0,
+      seconds,
+      sceneProgress: t,
+      sceneSeconds: t * (scene.duration ?? this.pack.render.sceneDuration),
       audio: this.audio ? sampleAudioFeatures(this.audio, seconds) : null,
     });
     if (!isClean) {
