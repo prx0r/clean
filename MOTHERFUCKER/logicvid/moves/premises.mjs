@@ -1,28 +1,32 @@
-import { drawRichText } from "../typography/rich-text.mjs";
-import { COLORS, statusColor } from "../statuses.mjs";
+import { drawRichText, wrapLines } from "../typography/rich-text.mjs";
+import { COLORS, rgba } from "../statuses.mjs";
+import { resolveSize, resolveLineHeight, LAYOUT, SPACING } from "../typography/scale.mjs";
 
 export function premises(frame, move, ctx, W, H) {
-  const CX = W / 2, CY = H / 2;
-  const size = move.size || 18;
-  const lh = 36;
+  const CY = H / 2, LM = LAYOUT.marginX;
+  const size = resolveSize(move);
+  const lh = resolveLineHeight(move);
   const ps = move.premises || [];
-  const totalH = (ps.length + 1) * lh + 24;
-  const sy = CY - totalH / 2;
+  const maxW = Math.min(W - LM * 2, 900);
   ctx.save();
+  const totalH = (ps.length + 1) * lh + SPACING.lg;
+  const sy = CY - totalH / 2;
   for (let i = 0; i < ps.length; i++) {
-    const mf = i; // frame is relative to enterFrame; use simple even spacing for premises
-    const v = mf >= 0 ? 1 : 0;
-    drawRichText(ctx, [{ t: ps[i], w: 400, i: false }], CX, sy + i * lh, size, COLORS.ink, 0.85 * v, "center");
+    const lines = wrapLines(ps[i], size, maxW, ctx);
+    let ly = sy + i * lh;
+    for (let li = 0; li < lines.length; li++)
+      drawRichText(ctx, lines[li], LM, ly + li * resolveLineHeight({size}), size, COLORS.ink, 0.85, "left");
   }
   if (move.conclusion) {
-    const ly = sy + ps.length * lh + 6;
-    ctx.strokeStyle = `rgba(45,102,133,0.35)`;
+    const ly = sy + ps.length * lh + SPACING.sm;
+    ctx.strokeStyle = rgba(COLORS.blue, 0.35);
     ctx.lineWidth = 0.5;
     ctx.beginPath();
-    ctx.moveTo(240, ly);
-    ctx.lineTo(W - 240, ly);
+    ctx.moveTo(LM, ly);
+    ctx.lineTo(W - LM, ly);
     ctx.stroke();
-    drawRichText(ctx, [{ t: move.conclusion, w: 500, i: false }], CX, ly + 32, size + 2, COLORS.blue, 0.92, "center");
+    const lines = wrapLines(move.conclusion, size + 2, maxW, ctx);
+    drawRichText(ctx, lines[0] || [{t: move.conclusion, w:500, i:false}], LM, ly + SPACING.lg, size + 2, COLORS.blue, 0.92, "left");
   }
   ctx.restore();
 }
