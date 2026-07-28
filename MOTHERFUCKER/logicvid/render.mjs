@@ -69,31 +69,31 @@ export function renderLogicvid(ctx, t, scene, env) {
   ctx.fillRect(0, 0, W, H);
   const moves = scene.params?.moves || [];
   if (!moves.length) return;
-  const active = new Map();
+  // Two-pass replacement group system:
+  // Pass 1: iterate backwards to find the highest-index (latest) move owning each slot
+  const slotOwner = new Map();
+  for (let i = moves.length - 1; i >= 0; i--) {
+    const m = moves[i];
+    const enter = m.enterFrame ?? 0;
+    const exit = m.exitFrame != null ? m.exitFrame : frameCount;
+    if (frame < enter || frame >= exit) continue;
+    const key = `${m.replacementGroup || "default"}:${m.slot || "center"}`;
+    if (!slotOwner.has(key)) slotOwner.set(key, i);
+  }
+  // Pass 2: render only the owner of each slot
   for (let i = 0; i < moves.length; i++) {
     const m = moves[i];
     const enter = m.enterFrame ?? 0;
     const settle = m.settleFrame ?? enter;
-    const rawExit = m.exitFrame;
-    const exit = rawExit != null ? rawExit : frameCount;
-    if (frame < enter || frame >= exit) {
-      active.delete(`${m.replacementGroup || "default"}:${m.slot || "center"}`);
-      continue;
-    }
-    const slotKey = `${m.replacementGroup || "default"}:${m.slot || "center"}`;
-    const occupant = active.get(slotKey);
-    if (occupant != null && occupant > i) continue;
-    active.set(slotKey, i);
+    const exit = m.exitFrame != null ? m.exitFrame : frameCount;
+    if (frame < enter || frame >= exit) continue;
+    const key = `${m.replacementGroup || "default"}:${m.slot || "center"}`;
+    if (slotOwner.get(key) !== i) continue;
     const relFrames = frame - enter;
     const settleFrames = settle - enter;
     const settled = settleFrames <= 0 ? 1 : Math.min(1, relFrames / settleFrames);
     if (settled <= 0) continue;
     const fn = MOVE_RENDERERS[m.type];
-    if (fn) {
-      ctx.save();
-      ctx.globalAlpha = settled;
-      fn(frame, m, ctx, W, H);
-      ctx.restore();
-    }
+    if (fn) { ctx.save(); ctx.globalAlpha = settled; fn(frame, m, ctx, W, H); ctx.restore(); }
   }
 }
